@@ -29,14 +29,25 @@ export const cityColor = (slug) => CITY_COLORS[slug] ?? INK_3;
 
 // Regime is a state, not a series: it uses the reserved status palette and is
 // always drawn with a glyph and a word beside it, never colour alone.
+// Ordered by severity, not alphabetically, so the legend reads as a scale.
+// Two states may share a hue where they are the same family (heat, or crisis) —
+// the glyph and the word always travel with the colour, so nothing is carried by
+// hue alone. Any regime the rules can emit must appear here, or it falls through
+// to neutral and a real state is rendered as "nothing happening".
 export const REGIMES = {
   expansion: {label: "Expansion", color: "#0ca30c", glyph: "▲", rank: 0},
-  hot_decelerating: {label: "Hot but decelerating", color: "#fab219", glyph: "◆", rank: 1},
-  orderly_cooling: {label: "Orderly cooling", color: "#898781", glyph: "▽", rank: 2},
-  stress: {label: "Stress", color: "#ec835a", glyph: "◉", rank: 3},
-  dislocation: {label: "Dislocation", color: "#d03b3b", glyph: "✖", rank: 4},
-  neutral: {label: "No clear regime", color: "#6e6e6b", glyph: "·", rank: 5}
+  orderly_cooling: {label: "Orderly cooling", color: "#898781", glyph: "▽", rank: 1},
+  hot: {label: "Hot", color: "#fab219", glyph: "◆", rank: 2},
+  hot_decelerating: {label: "Hot but decelerating", color: "#fab219", glyph: "◇", rank: 3},
+  supply_squeeze: {label: "Pressure without supply", color: "#ec835a", glyph: "◉", rank: 4},
+  stress: {label: "Stress", color: "#d03b3b", glyph: "✖", rank: 5},
+  dislocation: {label: "Dislocation", color: "#d03b3b", glyph: "‼", rank: 6},
+  neutral: {label: "No clear regime", color: "#6e6e6b", glyph: "·", rank: 7}
 };
+
+export const REGIME_ORDER = Object.entries(REGIMES)
+  .sort((a, b) => a[1].rank - b[1].rank)
+  .map(([id]) => id);
 
 export const regime = (id) => REGIMES[id] ?? REGIMES.neutral;
 

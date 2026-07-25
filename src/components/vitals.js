@@ -7,7 +7,7 @@
 // the two never borrow each other's colours.
 
 import * as Plot from "npm:@observablehq/plot";
-import {GRID, INK_3, INK_4, RULE, SURFACE, cityColor, el, formatPeriod, periodToDate, regime} from "./theme.js";
+import {GRID, INK_3, INK_4, REGIME_ORDER, RULE, SURFACE, cityColor, el, formatPeriod, periodToDate, regime} from "./theme.js";
 
 export function ribbon(city, {width = 520, height = 46, index = "demand_momentum"} = {}) {
   const timeline = (city.timeline ?? []).filter((d) => d.period);
@@ -90,14 +90,9 @@ export function ribbon(city, {width = 520, height = 46, index = "demand_momentum
 }
 
 export function regimeLegend() {
-  const items = [
-    "expansion",
-    "hot_decelerating",
-    "orderly_cooling",
-    "stress",
-    "dislocation",
-    "neutral"
-  ].map((id) => {
+  // Generated from the regime table so a rule set that adds a state cannot leave
+  // the legend silently behind.
+  const items = REGIME_ORDER.map((id) => {
     const meta = regime(id);
     return el("span", {
       style:

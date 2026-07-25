@@ -454,3 +454,27 @@ table.cs-table td.cs-num { font-variant-numeric: tabular-nums; }
     50% { opacity: 0.35; }
   }
 }
+
+/* v2 regime states. Colours come from the reserved status palette and are
+   always paired with a glyph and a word, so hue never carries meaning alone. */
+.regime-hot { color: var(--cs-hot); }
+.regime-supply_squeeze { color: var(--cs-stress); }
+.regime-stress { color: var(--cs-dislocation); }
+
+/* The vitals panel is the densest thing on the site and wants room: eight
+   ribbons of eight years each. Observable's default reading column is set for
+   prose, so widen the main column while leaving prose blocks measured. */
+#observablehq-main {
+  max-width: 1180px;
+}
+.cs-lede,
+.cs-note,
+.cs-plain {
+  max-width: 68ch;
+}
+.cs-vitals {
+  gap: 3px 18px;
+}
+.cs-vitals-city {
+  font-size: 0.9rem;
+}
