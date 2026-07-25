@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T18:15:10+00:00",
+ "generated_at": "2026-07-25T18:35:49+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4202,5 +4202,13 @@
    "direction": 1
   }
  ],
- "attention": []
+ "attention": [
+  {
+   "source_id": "trends_manual",
+   "status": "failed",
+   "latest_observation": null,
+   "staleness_days": null,
+   "last_error": "no exports found in /home/runner/work/citysignal/citysignal/data/manual/trends. Export a basket from trends.google.com and save it as <metric_id>__<geo_id>.csv — the README there lists the baskets this build expects."
+  }
+ ]
 }
