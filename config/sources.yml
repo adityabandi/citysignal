@@ -183,8 +183,12 @@ sources:
     cadence: monthly
     max_age_days: 120
     redistribute: false
+    enabled: false
     notes: >
-      Hand-exported baskets committed to data/manual/trends/. The unofficial
+      Off until someone adds an export. This source reads hand-exported CSVs from
+      data/manual/trends/; with none present it has nothing to do, and leaving it
+      enabled would keep a failure issue open permanently for a state that is not
+      a failure. Drop a file in that directory and set enabled: true. The unofficial
       Trends endpoints rate-limit on the first request, which makes them unfit
       for a scheduled build; a manual export is allowed, reproducible and never
       breaks the weekly run. Trends rescales 0-100 per request, so each file is
