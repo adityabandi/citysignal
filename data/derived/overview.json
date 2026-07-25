@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:40:01+00:00",
+ "generated_at": "2026-07-25T19:41:52+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4005,6 +4005,34 @@
  ],
  "movers": [
   {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "news_tone",
+   "geo_id": "mun-07040",
+   "label": "News coverage tone",
+   "yoy": 100.85297624507017,
+   "value": 0.0093,
+   "unit": "tone",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
+   "city": "sevilla",
+   "city_name": "Sevilla",
+   "metric_id": "news_tone",
+   "geo_id": "mun-41091",
+   "label": "News coverage tone",
+   "yoy": -91.73032215210894,
+   "value": 0.0249,
+   "unit": "tone",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
    "city": "zaragoza",
    "city_name": "Zaragoza",
    "metric_id": "housing_completions",
@@ -4016,6 +4044,20 @@
    "period": "2025-Q4",
    "geo_level": "province",
    "scope_label": "province",
+   "direction": 1
+  },
+  {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "news_volume",
+   "geo_id": "mun-07040",
+   "label": "News coverage volume",
+   "yoy": -66.66666666666666,
+   "value": 0.0001,
+   "unit": "percent",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
    "direction": 1
   },
   {
@@ -4296,48 +4338,6 @@
    "period": "2026-Q2",
    "geo_level": "municipality",
    "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "malaga",
-   "city_name": "Málaga",
-   "metric_id": "contracts_registered",
-   "geo_id": "mun-29067",
-   "label": "New contracts registered",
-   "yoy": 28.507619548081976,
-   "value": 29346.0,
-   "unit": "contracts",
-   "period": "2026-06",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "sevilla",
-   "city_name": "Sevilla",
-   "metric_id": "search_tenure_switch",
-   "geo_id": "mun-41091",
-   "label": "Buy-vs-rent search spread",
-   "yoy": 27.992991096798644,
-   "value": 27.027,
-   "unit": "index",
-   "period": "2026-06",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "housing_completions",
-   "geo_id": "prov-48",
-   "label": "Housing completions",
-   "yoy": -27.848101265822784,
-   "value": 741.0,
-   "unit": "dwellings",
-   "period": "2025-Q4",
-   "geo_level": "province",
-   "scope_label": "province",
    "direction": 1
   }
  ],
