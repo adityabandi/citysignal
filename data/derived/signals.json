@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T17:55:41+00:00",
+ "generated_at": "2026-07-25T17:55:51+00:00",
  "version": "leadlag-v1",
  "method": "Signals and outcomes are compared as year-over-year change. The lag is chosen on the earlier part of each series and scored on a held-out tail the search never saw, then required to beat a seasonal-naive baseline.",
  "pairs": [
@@ -105,6 +105,114 @@
      "in_sample_r": -0.6491,
      "holdout_r": -0.0588,
      "baseline_r": -0.6678,
+     "observations": 12,
+     "verdict": "no_evidence",
+     "city_name": "Zaragoza"
+    }
+   ]
+  },
+  {
+   "signal_metric": "wiki_hardship_index",
+   "signal_label": "Hardship attention (Euribor, eviction, benefits)",
+   "outcome_metric": "unemployment_registered",
+   "outcome_label": "Registered unemployment",
+   "cities_tested": 8,
+   "cities_leading": 2,
+   "median_lag": 11,
+   "verdict": "no_evidence",
+   "rows": [
+    {
+     "signal_metric": "wiki_hardship_index",
+     "outcome_metric": "unemployment_registered",
+     "city": "barcelona",
+     "best_lag": 11,
+     "in_sample_r": 0.3567,
+     "holdout_r": 0.2156,
+     "baseline_r": -0.1445,
+     "observations": 12,
+     "verdict": "no_evidence",
+     "city_name": "Barcelona"
+    },
+    {
+     "signal_metric": "wiki_hardship_index",
+     "outcome_metric": "unemployment_registered",
+     "city": "bilbao",
+     "best_lag": 9,
+     "in_sample_r": 0.3824,
+     "holdout_r": -0.3235,
+     "baseline_r": -0.4143,
+     "observations": 12,
+     "verdict": "no_evidence",
+     "city_name": "Bilbao"
+    },
+    {
+     "signal_metric": "wiki_hardship_index",
+     "outcome_metric": "unemployment_registered",
+     "city": "madrid",
+     "best_lag": 12,
+     "in_sample_r": 0.3652,
+     "holdout_r": -0.2337,
+     "baseline_r": -0.7216,
+     "observations": 12,
+     "verdict": "no_evidence",
+     "city_name": "Madrid"
+    },
+    {
+     "signal_metric": "wiki_hardship_index",
+     "outcome_metric": "unemployment_registered",
+     "city": "malaga",
+     "best_lag": 11,
+     "in_sample_r": 0.3585,
+     "holdout_r": 0.8626,
+     "baseline_r": -0.0539,
+     "observations": 12,
+     "verdict": "leading",
+     "city_name": "Málaga"
+    },
+    {
+     "signal_metric": "wiki_hardship_index",
+     "outcome_metric": "unemployment_registered",
+     "city": "palma",
+     "best_lag": 11,
+     "in_sample_r": 0.4512,
+     "holdout_r": -0.0251,
+     "baseline_r": -0.1413,
+     "observations": 12,
+     "verdict": "no_evidence",
+     "city_name": "Palma"
+    },
+    {
+     "signal_metric": "wiki_hardship_index",
+     "outcome_metric": "unemployment_registered",
+     "city": "sevilla",
+     "best_lag": 10,
+     "in_sample_r": 0.3583,
+     "holdout_r": 0.7363,
+     "baseline_r": -0.1946,
+     "observations": 12,
+     "verdict": "leading",
+     "city_name": "Sevilla"
+    },
+    {
+     "signal_metric": "wiki_hardship_index",
+     "outcome_metric": "unemployment_registered",
+     "city": "valencia",
+     "best_lag": 8,
+     "in_sample_r": 0.3867,
+     "holdout_r": 0.0595,
+     "baseline_r": -0.9624,
+     "observations": 12,
+     "verdict": "no_evidence",
+     "city_name": "València"
+    },
+    {
+     "signal_metric": "wiki_hardship_index",
+     "outcome_metric": "unemployment_registered",
+     "city": "zaragoza",
+     "best_lag": 9,
+     "in_sample_r": 0.4372,
+     "holdout_r": -0.5739,
+     "baseline_r": -0.6972,
      "observations": 12,
      "verdict": "no_evidence",
      "city_name": "Zaragoza"
@@ -1936,114 +2044,6 @@
     {
      "signal_metric": "wiki_hardship_index",
      "outcome_metric": "foreclosures",
-     "city": "zaragoza",
-     "best_lag": null,
-     "in_sample_r": null,
-     "holdout_r": null,
-     "baseline_r": null,
-     "observations": 0,
-     "verdict": "insufficient_data",
-     "city_name": "Zaragoza"
-    }
-   ]
-  },
-  {
-   "signal_metric": "wiki_hardship_index",
-   "signal_label": "Hardship attention (Euribor, eviction, benefits)",
-   "outcome_metric": "unemployment_registered",
-   "outcome_label": "Registered unemployment",
-   "cities_tested": 0,
-   "cities_leading": 0,
-   "median_lag": null,
-   "verdict": "insufficient_data",
-   "rows": [
-    {
-     "signal_metric": "wiki_hardship_index",
-     "outcome_metric": "unemployment_registered",
-     "city": "barcelona",
-     "best_lag": null,
-     "in_sample_r": null,
-     "holdout_r": null,
-     "baseline_r": null,
-     "observations": 0,
-     "verdict": "insufficient_data",
-     "city_name": "Barcelona"
-    },
-    {
-     "signal_metric": "wiki_hardship_index",
-     "outcome_metric": "unemployment_registered",
-     "city": "bilbao",
-     "best_lag": null,
-     "in_sample_r": null,
-     "holdout_r": null,
-     "baseline_r": null,
-     "observations": 0,
-     "verdict": "insufficient_data",
-     "city_name": "Bilbao"
-    },
-    {
-     "signal_metric": "wiki_hardship_index",
-     "outcome_metric": "unemployment_registered",
-     "city": "madrid",
-     "best_lag": null,
-     "in_sample_r": null,
-     "holdout_r": null,
-     "baseline_r": null,
-     "observations": 0,
-     "verdict": "insufficient_data",
-     "city_name": "Madrid"
-    },
-    {
-     "signal_metric": "wiki_hardship_index",
-     "outcome_metric": "unemployment_registered",
-     "city": "malaga",
-     "best_lag": null,
-     "in_sample_r": null,
-     "holdout_r": null,
-     "baseline_r": null,
-     "observations": 0,
-     "verdict": "insufficient_data",
-     "city_name": "Málaga"
-    },
-    {
-     "signal_metric": "wiki_hardship_index",
-     "outcome_metric": "unemployment_registered",
-     "city": "palma",
-     "best_lag": null,
-     "in_sample_r": null,
-     "holdout_r": null,
-     "baseline_r": null,
-     "observations": 0,
-     "verdict": "insufficient_data",
-     "city_name": "Palma"
-    },
-    {
-     "signal_metric": "wiki_hardship_index",
-     "outcome_metric": "unemployment_registered",
-     "city": "sevilla",
-     "best_lag": null,
-     "in_sample_r": null,
-     "holdout_r": null,
-     "baseline_r": null,
-     "observations": 0,
-     "verdict": "insufficient_data",
-     "city_name": "Sevilla"
-    },
-    {
-     "signal_metric": "wiki_hardship_index",
-     "outcome_metric": "unemployment_registered",
-     "city": "valencia",
-     "best_lag": null,
-     "in_sample_r": null,
-     "holdout_r": null,
-     "baseline_r": null,
-     "observations": 0,
-     "verdict": "insufficient_data",
-     "city_name": "València"
-    },
-    {
-     "signal_metric": "wiki_hardship_index",
-     "outcome_metric": "unemployment_registered",
      "city": "zaragoza",
      "best_lag": null,
      "in_sample_r": null,

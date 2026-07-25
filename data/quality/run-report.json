@@ -1,28 +1,29 @@
 {
- "run_id": "2f8a6b5b0a18",
- "finished_at": "2026-07-25T17:54:26+00:00",
+ "run_id": "8eef9569cc90",
+ "finished_at": "2026-07-25T17:55:12+00:00",
  "ok": [
-  "aena"
+  "sepe"
  ],
  "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "aena",
+   "source_id": "sepe",
    "status": "ok",
-   "records": 672,
-   "added": 672,
+   "records": 1424,
+   "added": 1424,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 86,
-   "skipped_unchanged": 2,
+   "plans": 720,
+   "skipped_unchanged": 8,
    "error": null,
    "error_type": null,
-   "duration_s": 18.49,
-   "latest_observation": "2025-12",
+   "duration_s": 69.42,
+   "latest_observation": "2026-05",
    "metrics": [
-    "airport_passengers"
+    "contracts_registered",
+    "unemployment_registered"
    ],
    "notes": []
   }

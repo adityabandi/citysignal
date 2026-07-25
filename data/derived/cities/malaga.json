@@ -23,10 +23,10 @@
   "expression": "true",
   "rules_version": "regimes-v1",
   "inputs": {
-   "demand_momentum": -0.337,
+   "demand_momentum": 0.1394,
    "housing_pressure": null,
    "supply_response": null,
-   "distress": 0.5869
+   "distress": 0.5488
   },
   "available_indices": [
    "demand_momentum",
@@ -37,104 +37,544 @@
  },
  "regime_timeline": [
   {
-   "period": "2025-06",
+   "period": "2022-01",
+   "rule_id": "expansion",
+   "label": "Expansion",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 1.2378,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.4838
+  },
+  {
+   "period": "2022-02",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": 0.0311,
+   "index_demand_momentum": 1.33,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.33
+   "index_distress": 0.5044
   },
   {
-   "period": "2025-07",
+   "period": "2022-03",
+   "rule_id": "expansion",
+   "label": "Expansion",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 1.1466,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3991
+  },
+  {
+   "period": "2022-04",
+   "rule_id": "expansion",
+   "label": "Expansion",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 1.2631,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.488
+  },
+  {
+   "period": "2022-05",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.924,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.6453
+  },
+  {
+   "period": "2022-06",
+   "rule_id": "expansion",
+   "label": "Expansion",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.6834,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.4478
+  },
+  {
+   "period": "2022-07",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.3676,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.2154
+  },
+  {
+   "period": "2022-08",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1457,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.0933
+  },
+  {
+   "period": "2022-09",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0923,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.2726
+  },
+  {
+   "period": "2022-10",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0475,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.0836
+  },
+  {
+   "period": "2022-11",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0486,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.2646
+  },
+  {
+   "period": "2022-12",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0594,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3062
+  },
+  {
+   "period": "2023-01",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1234,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.4152
+  },
+  {
+   "period": "2023-02",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1627,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3306
+  },
+  {
+   "period": "2023-03",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.244,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3587
+  },
+  {
+   "period": "2023-04",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0928,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.5719
+  },
+  {
+   "period": "2023-05",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.2029,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3508
+  },
+  {
+   "period": "2023-06",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0717,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.499
+  },
+  {
+   "period": "2023-07",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0924,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.7423
+  },
+  {
+   "period": "2023-08",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1025,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.7824
+  },
+  {
+   "period": "2023-09",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0897,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.5411
+  },
+  {
+   "period": "2023-10",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0147,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.4138
+  },
+  {
+   "period": "2023-11",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1247,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.349
+  },
+  {
+   "period": "2023-12",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1019,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.1458
+  },
+  {
+   "period": "2024-01",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1208,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.0698
+  },
+  {
+   "period": "2024-02",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0839,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.268
+  },
+  {
+   "period": "2024-03",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": -0.0921,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.303
+  },
+  {
+   "period": "2024-04",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1413,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": -0.2264
+  },
+  {
+   "period": "2024-05",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": -0.0861,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": -0.1778
+  },
+  {
+   "period": "2024-06",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": -0.0237,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": -0.2174
+  },
+  {
+   "period": "2024-07",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0462,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": -0.9258
+  },
+  {
+   "period": "2024-08",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": -0.0128,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": -0.8658
+  },
+  {
+   "period": "2024-09",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1653,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": -0.7005
+  },
+  {
+   "period": "2024-10",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.3429,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.1285
+  },
+  {
+   "period": "2024-11",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.057,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3222
+  },
+  {
+   "period": "2024-12",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0274,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3278
+  },
+  {
+   "period": "2025-01",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0903,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.072
+  },
+  {
+   "period": "2025-02",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0686,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.2037
+  },
+  {
+   "period": "2025-03",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0317,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3376
+  },
+  {
+   "period": "2025-04",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
    "index_demand_momentum": -0.0143,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.4278
+   "index_distress": 0.3225
+  },
+  {
+   "period": "2025-05",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.0408,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3083
+  },
+  {
+   "period": "2025-06",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1443,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3246
+  },
+  {
+   "period": "2025-07",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1191,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.3747
   },
   {
    "period": "2025-08",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.472,
+   "index_demand_momentum": -0.0699,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.4266
+   "index_distress": 0.369
   },
   {
    "period": "2025-09",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": 0.0641,
+   "index_demand_momentum": 0.1812,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.4602
+   "index_distress": 0.4012
   },
   {
    "period": "2025-10",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.798,
+   "index_demand_momentum": -0.1727,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.6276
+   "index_distress": 0.5485
   },
   {
    "period": "2025-11",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.1783,
+   "index_demand_momentum": 0.0833,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.5906
+   "index_distress": 0.5162
   },
   {
    "period": "2025-12",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.3078,
+   "index_demand_momentum": 0.0922,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.4999
+   "index_distress": 0.4538
   },
   {
    "period": "2026-01",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.504,
+   "index_demand_momentum": -0.1384,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.5966
+   "index_distress": 0.543
   },
   {
    "period": "2026-02",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -1.0049,
+   "index_demand_momentum": -0.333,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.7177
+   "index_distress": 0.6407
   },
   {
    "period": "2026-03",
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.422,
+   "index_demand_momentum": 0.0732,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.4362
+   "index_distress": 0.4428
+  },
+  {
+   "period": "2026-04",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.276,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.7876
+  },
+  {
+   "period": "2026-05",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": -0.0332,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.5959
+  },
+  {
+   "period": "2026-06",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1911,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.7067
   }
  ],
  "indices": {
@@ -142,10 +582,38 @@
    "index_id": "demand_momentum",
    "label": "Demand momentum",
    "question": "Is underlying demand strengthening?",
-   "value": -0.337,
+   "value": 0.1394,
    "period": "2026-06",
    "insufficient": false,
    "components": [
+    {
+     "metric_id": "unemployment_registered",
+     "label": "Registered unemployment",
+     "transform": "yoy",
+     "geo_id": "mun-29067",
+     "geo_level": "municipality",
+     "weight": 1.2,
+     "period": "2026-06",
+     "raw": -9.3382,
+     "z": -0.4308,
+     "oriented": 0.4308,
+     "source_id": "sepe",
+     "unit": "persons"
+    },
+    {
+     "metric_id": "contracts_registered",
+     "label": "New contracts registered",
+     "transform": "yoy",
+     "geo_id": "mun-29067",
+     "geo_level": "municipality",
+     "weight": 0.8,
+     "period": "2026-06",
+     "raw": 28.5076,
+     "z": 0.774,
+     "oriented": 0.774,
+     "source_id": "sepe",
+     "unit": "contracts"
+    },
     {
      "metric_id": "property_transfers",
      "label": "Property transfers (registered)",
@@ -191,8 +659,6 @@
    ],
    "missing": [
     "affiliations",
-    "unemployment_registered",
-    "contracts_registered",
     "population_padron"
    ]
   },
@@ -247,7 +713,7 @@
    "index_id": "distress",
    "label": "Distress",
    "question": "Is an orderly slowdown turning into financial stress?",
-   "value": 0.5869,
+   "value": 0.5488,
    "period": "2026-06",
    "insufficient": false,
    "components": [
@@ -280,6 +746,20 @@
      "unit": "cases"
     },
     {
+     "metric_id": "unemployment_registered",
+     "label": "Registered unemployment",
+     "transform": "yoy",
+     "geo_id": "mun-29067",
+     "geo_level": "municipality",
+     "weight": 1.0,
+     "period": "2026-06",
+     "raw": -9.3382,
+     "z": -0.4308,
+     "oriented": 0.4308,
+     "source_id": "sepe",
+     "unit": "persons"
+    },
+    {
      "metric_id": "wiki_hardship_index",
      "label": "Hardship attention (Euribor, eviction, benefits)",
      "transform": "yoy",
@@ -296,7 +776,6 @@
    ],
    "missing": [
     "auctions_realestate",
-    "unemployment_registered",
     "insolvencies",
     "company_dissolutions",
     "euribor_12m",
@@ -307,73 +786,225 @@
  "index_history": {
   "demand_momentum": [
    {
-    "period": "2025-06",
-    "value": 0.0311
+    "period": "2022-01",
+    "value": 1.2378
    },
    {
-    "period": "2025-07",
+    "period": "2022-02",
+    "value": 1.33
+   },
+   {
+    "period": "2022-03",
+    "value": 1.1466
+   },
+   {
+    "period": "2022-04",
+    "value": 1.2631
+   },
+   {
+    "period": "2022-05",
+    "value": 0.924
+   },
+   {
+    "period": "2022-06",
+    "value": 0.6834
+   },
+   {
+    "period": "2022-07",
+    "value": 0.3676
+   },
+   {
+    "period": "2022-08",
+    "value": 0.1457
+   },
+   {
+    "period": "2022-09",
+    "value": 0.0923
+   },
+   {
+    "period": "2022-10",
+    "value": 0.0475
+   },
+   {
+    "period": "2022-11",
+    "value": 0.0486
+   },
+   {
+    "period": "2022-12",
+    "value": 0.0594
+   },
+   {
+    "period": "2023-01",
+    "value": 0.1234
+   },
+   {
+    "period": "2023-02",
+    "value": 0.1627
+   },
+   {
+    "period": "2023-03",
+    "value": 0.244
+   },
+   {
+    "period": "2023-04",
+    "value": 0.0928
+   },
+   {
+    "period": "2023-05",
+    "value": 0.2029
+   },
+   {
+    "period": "2023-06",
+    "value": 0.0717
+   },
+   {
+    "period": "2023-07",
+    "value": 0.0924
+   },
+   {
+    "period": "2023-08",
+    "value": 0.1025
+   },
+   {
+    "period": "2023-09",
+    "value": 0.0897
+   },
+   {
+    "period": "2023-10",
+    "value": 0.0147
+   },
+   {
+    "period": "2023-11",
+    "value": 0.1247
+   },
+   {
+    "period": "2023-12",
+    "value": 0.1019
+   },
+   {
+    "period": "2024-01",
+    "value": 0.1208
+   },
+   {
+    "period": "2024-02",
+    "value": 0.0839
+   },
+   {
+    "period": "2024-03",
+    "value": -0.0921
+   },
+   {
+    "period": "2024-04",
+    "value": 0.1413
+   },
+   {
+    "period": "2024-05",
+    "value": -0.0861
+   },
+   {
+    "period": "2024-06",
+    "value": -0.0237
+   },
+   {
+    "period": "2024-07",
+    "value": 0.0462
+   },
+   {
+    "period": "2024-08",
+    "value": -0.0128
+   },
+   {
+    "period": "2024-09",
+    "value": 0.1653
+   },
+   {
+    "period": "2024-10",
+    "value": 0.3429
+   },
+   {
+    "period": "2024-11",
+    "value": 0.057
+   },
+   {
+    "period": "2024-12",
+    "value": 0.0274
+   },
+   {
+    "period": "2025-01",
+    "value": 0.0903
+   },
+   {
+    "period": "2025-02",
+    "value": 0.0686
+   },
+   {
+    "period": "2025-03",
+    "value": 0.0317
+   },
+   {
+    "period": "2025-04",
     "value": -0.0143
    },
    {
+    "period": "2025-05",
+    "value": 0.0408
+   },
+   {
+    "period": "2025-06",
+    "value": 0.1443
+   },
+   {
+    "period": "2025-07",
+    "value": 0.1191
+   },
+   {
     "period": "2025-08",
-    "value": -0.472
+    "value": -0.0699
    },
    {
     "period": "2025-09",
-    "value": 0.0641
+    "value": 0.1812
    },
    {
     "period": "2025-10",
-    "value": -0.798
+    "value": -0.1727
    },
    {
     "period": "2025-11",
-    "value": -0.1783
+    "value": 0.0833
    },
    {
     "period": "2025-12",
-    "value": -0.3078
+    "value": 0.0922
    },
    {
     "period": "2026-01",
-    "value": -0.504
+    "value": -0.1384
    },
    {
     "period": "2026-02",
-    "value": -1.0049
+    "value": -0.333
    },
    {
     "period": "2026-03",
-    "value": -0.422
+    "value": 0.0732
    },
    {
     "period": "2026-04",
-    "value": 0.1295
+    "value": 0.276
    },
    {
     "period": "2026-05",
-    "value": -0.5373
+    "value": -0.0332
    },
    {
     "period": "2026-06",
-    "value": -0.563
+    "value": 0.1911
    }
   ],
   "housing_pressure": [],
   "supply_response": [],
   "distress": [
-   {
-    "period": "2018-04",
-    "value": 0.7416
-   },
-   {
-    "period": "2018-05",
-    "value": 0.7416
-   },
-   {
-    "period": "2018-06",
-    "value": 0.7416
-   },
    {
     "period": "2018-07",
     "value": 0.4029
@@ -544,207 +1175,219 @@
    },
    {
     "period": "2022-01",
-    "value": 0.1455
+    "value": 0.4838
    },
    {
     "period": "2022-02",
-    "value": 0.1689
+    "value": 0.5044
    },
    {
     "period": "2022-03",
-    "value": 0.0791
+    "value": 0.3991
    },
    {
     "period": "2022-04",
-    "value": 0.1887
+    "value": 0.488
    },
    {
     "period": "2022-05",
-    "value": 0.4105
+    "value": 0.6453
    },
    {
     "period": "2022-06",
-    "value": 0.2552
+    "value": 0.4478
    },
    {
     "period": "2022-07",
-    "value": 0.0779
+    "value": 0.2154
    },
    {
     "period": "2022-08",
-    "value": 0.0018
+    "value": 0.0933
    },
    {
     "period": "2022-09",
-    "value": 0.2277
+    "value": 0.2726
    },
    {
     "period": "2022-10",
-    "value": -0.0357
+    "value": 0.0836
    },
    {
     "period": "2022-11",
-    "value": 0.2069
+    "value": 0.2646
    },
    {
     "period": "2022-12",
-    "value": 0.2604
+    "value": 0.3062
    },
    {
     "period": "2023-01",
-    "value": 0.413
+    "value": 0.4152
    },
    {
     "period": "2023-02",
-    "value": 0.3251
+    "value": 0.3306
    },
    {
     "period": "2023-03",
-    "value": 0.3381
+    "value": 0.3587
    },
    {
     "period": "2023-04",
-    "value": 0.631
+    "value": 0.5719
    },
    {
     "period": "2023-05",
-    "value": 0.3552
+    "value": 0.3508
    },
    {
     "period": "2023-06",
-    "value": 0.5458
+    "value": 0.499
    },
    {
     "period": "2023-07",
-    "value": 0.867
+    "value": 0.7423
    },
    {
     "period": "2023-08",
-    "value": 0.9096
+    "value": 0.7824
    },
    {
     "period": "2023-09",
-    "value": 0.6189
+    "value": 0.5411
    },
    {
     "period": "2023-10",
-    "value": 0.4851
+    "value": 0.4138
    },
    {
     "period": "2023-11",
-    "value": 0.3939
+    "value": 0.349
    },
    {
     "period": "2023-12",
-    "value": 0.132
+    "value": 0.1458
    },
    {
     "period": "2024-01",
-    "value": 0.0261
+    "value": 0.0698
    },
    {
     "period": "2024-02",
-    "value": 0.277
+    "value": 0.268
    },
    {
     "period": "2024-03",
-    "value": 0.328
+    "value": 0.303
    },
    {
     "period": "2024-04",
-    "value": -0.3743
+    "value": -0.2264
    },
    {
     "period": "2024-05",
-    "value": -0.3243
+    "value": -0.1778
    },
    {
     "period": "2024-06",
-    "value": -0.3673
+    "value": -0.2174
    },
    {
     "period": "2024-07",
-    "value": -1.3286
+    "value": -0.9258
    },
    {
     "period": "2024-08",
-    "value": -1.2634
+    "value": -0.8658
    },
    {
     "period": "2024-09",
-    "value": -1.0666
+    "value": -0.7005
    },
    {
     "period": "2024-10",
-    "value": 0.0259
+    "value": 0.1285
    },
    {
     "period": "2024-11",
-    "value": 0.287
+    "value": 0.3222
    },
    {
     "period": "2024-12",
-    "value": 0.3006
+    "value": 0.3278
    },
    {
     "period": "2025-01",
-    "value": -0.0544
+    "value": 0.072
    },
    {
     "period": "2025-02",
-    "value": 0.1261
+    "value": 0.2037
    },
    {
     "period": "2025-03",
-    "value": 0.3442
+    "value": 0.3376
    },
    {
     "period": "2025-04",
-    "value": 0.3064
+    "value": 0.3225
    },
    {
     "period": "2025-05",
-    "value": 0.3108
+    "value": 0.3083
    },
    {
     "period": "2025-06",
-    "value": 0.33
+    "value": 0.3246
    },
    {
     "period": "2025-07",
-    "value": 0.4278
+    "value": 0.3747
    },
    {
     "period": "2025-08",
-    "value": 0.4266
+    "value": 0.369
    },
    {
     "period": "2025-09",
-    "value": 0.4602
+    "value": 0.4012
    },
    {
     "period": "2025-10",
-    "value": 0.6276
+    "value": 0.5485
    },
    {
     "period": "2025-11",
-    "value": 0.5906
+    "value": 0.5162
    },
    {
     "period": "2025-12",
-    "value": 0.4999
+    "value": 0.4538
    },
    {
     "period": "2026-01",
-    "value": 0.5966
+    "value": 0.543
    },
    {
     "period": "2026-02",
-    "value": 0.7177
+    "value": 0.6407
    },
    {
     "period": "2026-03",
-    "value": 0.4362
+    "value": 0.4428
+   },
+   {
+    "period": "2026-04",
+    "value": 0.7876
+   },
+   {
+    "period": "2026-05",
+    "value": 0.5959
+   },
+   {
+    "period": "2026-06",
+    "value": 0.7067
    }
   ]
  },
@@ -754,10 +1397,10 @@
    "label": "Orderly cooling",
    "summary": "Heat leaving the market without anyone being forced. Prices and transactions decelerate while employment holds and the distress measures stay flat. This is the benign case, and it is worth being able to name it.",
    "firing": 1,
-   "available": 2,
+   "available": 3,
    "total": 9,
-   "coverage": 0.222,
-   "score": 0.5,
+   "coverage": 0.333,
+   "score": 0.333,
    "insufficient_coverage": true,
    "signals_firing": [
     {
@@ -773,6 +1416,17 @@
     }
    ],
    "signals_against": [
+    {
+     "metric_id": "unemployment_registered",
+     "label": "Registered unemployment",
+     "expect": "down",
+     "z": -0.4308,
+     "raw": -9.3382,
+     "unit": "persons",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "sepe"
+    },
     {
      "metric_id": "foreclosures",
      "label": "Mortgage foreclosures filed",
@@ -791,8 +1445,7 @@
     "housing_transactions",
     "locales_vacancy_rate",
     "rent_reference",
-    "str_listings",
-    "unemployment_registered"
+    "str_listings"
    ],
    "signatures_version": "signatures-v1"
   },
@@ -867,14 +1520,37 @@
    "archetype_id": "boom",
    "label": "Boom",
    "summary": "People and money arriving faster than the city can house them. Rents and transactions rise together, business formation accelerates, and attention from outside the country runs ahead of the official population count.",
-   "firing": 0,
-   "available": 7,
+   "firing": 1,
+   "available": 9,
    "total": 19,
-   "coverage": 0.368,
-   "score": 0.0,
+   "coverage": 0.474,
+   "score": 0.111,
    "insufficient_coverage": false,
-   "signals_firing": [],
+   "signals_firing": [
+    {
+     "metric_id": "contracts_registered",
+     "label": "New contracts registered",
+     "expect": "up",
+     "z": 0.774,
+     "raw": 28.5076,
+     "unit": "contracts",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "sepe"
+    }
+   ],
    "signals_against": [
+    {
+     "metric_id": "unemployment_registered",
+     "label": "Registered unemployment",
+     "expect": "down",
+     "z": -0.4308,
+     "raw": -9.3382,
+     "unit": "persons",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "sepe"
+    },
     {
      "metric_id": "property_transfers",
      "label": "Property transfers (registered)",
@@ -956,7 +1632,6 @@
    "signals_unavailable": [
     "affiliations",
     "appraised_value",
-    "contracts_registered",
     "horeca_openings",
     "housing_starts",
     "housing_transactions",
@@ -964,53 +1639,7 @@
     "locales_vacancy_rate",
     "population_padron",
     "rent_reference",
-    "str_listings",
-    "unemployment_registered"
-   ],
-   "signatures_version": "signatures-v1"
-  },
-  {
-   "archetype_id": "regulatory_shock",
-   "label": "Regulatory shock",
-   "summary": "Short-term-rental supply contracts while visitor demand does not. Listings and licensed tourist dwellings fall together with hotel demand steady or rising — the fingerprint of a rule change rather than a demand change.",
-   "firing": 0,
-   "available": 2,
-   "total": 8,
-   "coverage": 0.25,
-   "score": 0.0,
-   "insufficient_coverage": true,
-   "signals_firing": [],
-   "signals_against": [
-    {
-     "metric_id": "hotel_adr",
-     "label": "Average daily rate",
-     "expect": "up",
-     "z": 0.2781,
-     "raw": 7.3428,
-     "unit": "eur",
-     "period": "2026-06",
-     "geo_level": "municipality",
-     "source_id": "ine"
-    },
-    {
-     "metric_id": "airport_flights",
-     "label": "Airport flights (daily traffic)",
-     "expect": "up",
-     "z": -0.6446,
-     "raw": 5.0094,
-     "unit": "flights",
-     "period": "2026-06",
-     "geo_level": "airport",
-     "source_id": "eurocontrol"
-    }
-   ],
-   "signals_unavailable": [
-    "hotel_nights",
-    "rent_reference",
-    "str_entire_home_share",
-    "str_listings",
-    "tourist_dwellings",
-    "vut_licensed"
+    "str_listings"
    ],
    "signatures_version": "signatures-v1"
   },
@@ -1019,13 +1648,35 @@
    "label": "Distress",
    "summary": "Jobs go first, then the storefronts, then the courts. Foreclosures, evictions and insolvencies rise together while hiring and business formation fall; hardship attention climbs before the judicial series, which are the slowest evidence we have.",
    "firing": 0,
-   "available": 4,
+   "available": 6,
    "total": 17,
-   "coverage": 0.235,
+   "coverage": 0.353,
    "score": 0.0,
-   "insufficient_coverage": true,
+   "insufficient_coverage": false,
    "signals_firing": [],
    "signals_against": [
+    {
+     "metric_id": "unemployment_registered",
+     "label": "Registered unemployment",
+     "expect": "up",
+     "z": -0.4308,
+     "raw": -9.3382,
+     "unit": "persons",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "sepe"
+    },
+    {
+     "metric_id": "contracts_registered",
+     "label": "New contracts registered",
+     "expect": "down",
+     "z": 0.774,
+     "raw": 28.5076,
+     "unit": "contracts",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "sepe"
+    },
     {
      "metric_id": "foreclosures",
      "label": "Mortgage foreclosures filed",
@@ -1076,15 +1727,58 @@
     "auctions_realestate",
     "company_dissolutions",
     "company_incorporations",
-    "contracts_registered",
     "euribor_12m",
     "horeca_closures",
     "housing_transactions",
     "insolvencies",
     "locales_closures",
     "locales_vacancy_rate",
-    "news_tone",
-    "unemployment_registered"
+    "news_tone"
+   ],
+   "signatures_version": "signatures-v1"
+  },
+  {
+   "archetype_id": "regulatory_shock",
+   "label": "Regulatory shock",
+   "summary": "Short-term-rental supply contracts while visitor demand does not. Listings and licensed tourist dwellings fall together with hotel demand steady or rising — the fingerprint of a rule change rather than a demand change.",
+   "firing": 0,
+   "available": 2,
+   "total": 8,
+   "coverage": 0.25,
+   "score": 0.0,
+   "insufficient_coverage": true,
+   "signals_firing": [],
+   "signals_against": [
+    {
+     "metric_id": "hotel_adr",
+     "label": "Average daily rate",
+     "expect": "up",
+     "z": 0.2781,
+     "raw": 7.3428,
+     "unit": "eur",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "ine"
+    },
+    {
+     "metric_id": "airport_flights",
+     "label": "Airport flights (daily traffic)",
+     "expect": "up",
+     "z": -0.6446,
+     "raw": 5.0094,
+     "unit": "flights",
+     "period": "2026-06",
+     "geo_level": "airport",
+     "source_id": "eurocontrol"
+    }
+   ],
+   "signals_unavailable": [
+    "hotel_nights",
+    "rent_reference",
+    "str_entire_home_share",
+    "str_listings",
+    "tourist_dwellings",
+    "vut_licensed"
    ],
    "signatures_version": "signatures-v1"
   },
@@ -1208,12 +1902,12 @@
    "signal_metric": "wiki_hardship_index",
    "outcome_metric": "unemployment_registered",
    "city": "malaga",
-   "best_lag": null,
-   "in_sample_r": null,
-   "holdout_r": null,
-   "baseline_r": null,
-   "observations": 0,
-   "verdict": "insufficient_data"
+   "best_lag": 11,
+   "in_sample_r": 0.3585,
+   "holdout_r": 0.8626,
+   "baseline_r": -0.0539,
+   "observations": 12,
+   "verdict": "leading"
   },
   {
    "signal_metric": "wiki_relocation_index",
@@ -2024,12 +2718,368 @@
     "latest": {
      "period": "2026-06",
      "value": 29346.0,
-     "yoy": null
+     "yoy": 28.507619548081976
     },
     "suspect": false,
-    "outlier_score": null,
+    "outlier_score": 2.59,
     "suspect_note": null,
     "series": [
+     {
+      "period": "2019-01",
+      "value": 25547.0
+     },
+     {
+      "period": "2019-02",
+      "value": 22314.0
+     },
+     {
+      "period": "2019-03",
+      "value": 25303.0
+     },
+     {
+      "period": "2019-04",
+      "value": 26106.0
+     },
+     {
+      "period": "2019-05",
+      "value": 29983.0
+     },
+     {
+      "period": "2019-06",
+      "value": 29184.0
+     },
+     {
+      "period": "2019-07",
+      "value": 32057.0
+     },
+     {
+      "period": "2019-08",
+      "value": 22798.0
+     },
+     {
+      "period": "2019-09",
+      "value": 30086.0
+     },
+     {
+      "period": "2019-10",
+      "value": 34614.0
+     },
+     {
+      "period": "2019-11",
+      "value": 27684.0
+     },
+     {
+      "period": "2019-12",
+      "value": 23748.0
+     },
+     {
+      "period": "2020-01",
+      "value": 25263.0
+     },
+     {
+      "period": "2020-02",
+      "value": 23460.0
+     },
+     {
+      "period": "2020-03",
+      "value": 18876.0
+     },
+     {
+      "period": "2020-04",
+      "value": 7594.0
+     },
+     {
+      "period": "2020-05",
+      "value": 10411.0
+     },
+     {
+      "period": "2020-06",
+      "value": 14760.0
+     },
+     {
+      "period": "2020-07",
+      "value": 20071.0
+     },
+     {
+      "period": "2020-08",
+      "value": 15257.0
+     },
+     {
+      "period": "2020-09",
+      "value": 21577.0
+     },
+     {
+      "period": "2020-10",
+      "value": 22659.0
+     },
+     {
+      "period": "2020-11",
+      "value": 19749.0
+     },
+     {
+      "period": "2020-12",
+      "value": 17145.0
+     },
+     {
+      "period": "2021-01",
+      "value": 18336.0
+     },
+     {
+      "period": "2021-02",
+      "value": 16084.0
+     },
+     {
+      "period": "2021-03",
+      "value": 20139.0
+     },
+     {
+      "period": "2021-04",
+      "value": 19129.0
+     },
+     {
+      "period": "2021-05",
+      "value": 23517.0
+     },
+     {
+      "period": "2021-06",
+      "value": 26611.0
+     },
+     {
+      "period": "2021-07",
+      "value": 28591.0
+     },
+     {
+      "period": "2021-08",
+      "value": 24625.0
+     },
+     {
+      "period": "2021-09",
+      "value": 29967.0
+     },
+     {
+      "period": "2021-10",
+      "value": 30764.0
+     },
+     {
+      "period": "2021-11",
+      "value": 33851.0
+     },
+     {
+      "period": "2021-12",
+      "value": 25182.0
+     },
+     {
+      "period": "2022-01",
+      "value": 23150.0
+     },
+     {
+      "period": "2022-02",
+      "value": 22447.0
+     },
+     {
+      "period": "2022-03",
+      "value": 27676.0
+     },
+     {
+      "period": "2022-04",
+      "value": 23663.0
+     },
+     {
+      "period": "2022-05",
+      "value": 26472.0
+     },
+     {
+      "period": "2022-06",
+      "value": 30411.0
+     },
+     {
+      "period": "2022-07",
+      "value": 26936.0
+     },
+     {
+      "period": "2022-08",
+      "value": 22366.0
+     },
+     {
+      "period": "2022-09",
+      "value": 24466.0
+     },
+     {
+      "period": "2022-10",
+      "value": 23745.0
+     },
+     {
+      "period": "2022-11",
+      "value": 24892.0
+     },
+     {
+      "period": "2022-12",
+      "value": 18591.0
+     },
+     {
+      "period": "2023-01",
+      "value": 16567.0
+     },
+     {
+      "period": "2023-02",
+      "value": 15798.0
+     },
+     {
+      "period": "2023-03",
+      "value": 21137.0
+     },
+     {
+      "period": "2023-04",
+      "value": 18169.0
+     },
+     {
+      "period": "2023-05",
+      "value": 24630.0
+     },
+     {
+      "period": "2023-06",
+      "value": 23740.0
+     },
+     {
+      "period": "2023-07",
+      "value": 22222.0
+     },
+     {
+      "period": "2023-08",
+      "value": 17309.0
+     },
+     {
+      "period": "2023-09",
+      "value": 20144.0
+     },
+     {
+      "period": "2023-10",
+      "value": 19690.0
+     },
+     {
+      "period": "2023-11",
+      "value": 21744.0
+     },
+     {
+      "period": "2023-12",
+      "value": 17001.0
+     },
+     {
+      "period": "2024-01",
+      "value": 16432.0
+     },
+     {
+      "period": "2024-02",
+      "value": 17028.0
+     },
+     {
+      "period": "2024-03",
+      "value": 17676.0
+     },
+     {
+      "period": "2024-04",
+      "value": 20703.0
+     },
+     {
+      "period": "2024-05",
+      "value": 21051.0
+     },
+     {
+      "period": "2024-06",
+      "value": 22267.0
+     },
+     {
+      "period": "2024-07",
+      "value": 22027.0
+     },
+     {
+      "period": "2024-08",
+      "value": 16588.0
+     },
+     {
+      "period": "2024-09",
+      "value": 20933.0
+     },
+     {
+      "period": "2024-10",
+      "value": 23496.0
+     },
+     {
+      "period": "2024-11",
+      "value": 19393.0
+     },
+     {
+      "period": "2024-12",
+      "value": 16746.0
+     },
+     {
+      "period": "2025-01",
+      "value": 17151.0
+     },
+     {
+      "period": "2025-02",
+      "value": 16086.0
+     },
+     {
+      "period": "2025-03",
+      "value": 17589.0
+     },
+     {
+      "period": "2025-04",
+      "value": 18502.0
+     },
+     {
+      "period": "2025-05",
+      "value": 20192.0
+     },
+     {
+      "period": "2025-06",
+      "value": 22836.0
+     },
+     {
+      "period": "2025-07",
+      "value": 23543.0
+     },
+     {
+      "period": "2025-08",
+      "value": 17491.0
+     },
+     {
+      "period": "2025-09",
+      "value": 23315.0
+     },
+     {
+      "period": "2025-10",
+      "value": 24014.0
+     },
+     {
+      "period": "2025-11",
+      "value": 20688.0
+     },
+     {
+      "period": "2025-12",
+      "value": 19045.0
+     },
+     {
+      "period": "2026-01",
+      "value": 16698.0
+     },
+     {
+      "period": "2026-02",
+      "value": 16618.0
+     },
+     {
+      "period": "2026-03",
+      "value": 21491.0
+     },
+     {
+      "period": "2026-04",
+      "value": 20577.0
+     },
+     {
+      "period": "2026-05",
+      "value": 23158.0
+     },
      {
       "period": "2026-06",
       "value": 29346.0
@@ -2044,7 +3094,7 @@
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-25T17:38:44+00:00",
+    "last_checked": "2026-07-25T17:55:12+00:00",
     "staleness_days": 25,
     "max_age_days": 75,
     "fresh": "fresh"
@@ -2066,12 +3116,368 @@
     "latest": {
      "period": "2026-06",
      "value": 40359.0,
-     "yoy": null
+     "yoy": -9.338215473088328
     },
-    "suspect": false,
-    "outlier_score": null,
-    "suspect_note": null,
+    "suspect": true,
+    "outlier_score": 11.97,
+    "suspect_note": "The latest release sits 11.97 median absolute deviations from this measure's recent normal. Treated as provisional — publishers commonly release a partial period first — and kept off the front page until a later release confirms it.",
     "series": [
+     {
+      "period": "2019-01",
+      "value": 61588.0
+     },
+     {
+      "period": "2019-02",
+      "value": 61492.0
+     },
+     {
+      "period": "2019-03",
+      "value": 60991.0
+     },
+     {
+      "period": "2019-04",
+      "value": 59040.0
+     },
+     {
+      "period": "2019-05",
+      "value": 57776.0
+     },
+     {
+      "period": "2019-06",
+      "value": 56127.0
+     },
+     {
+      "period": "2019-07",
+      "value": 55380.0
+     },
+     {
+      "period": "2019-08",
+      "value": 55540.0
+     },
+     {
+      "period": "2019-09",
+      "value": 55721.0
+     },
+     {
+      "period": "2019-10",
+      "value": 57201.0
+     },
+     {
+      "period": "2019-11",
+      "value": 58294.0
+     },
+     {
+      "period": "2019-12",
+      "value": 57532.0
+     },
+     {
+      "period": "2020-01",
+      "value": 59601.0
+     },
+     {
+      "period": "2020-02",
+      "value": 59488.0
+     },
+     {
+      "period": "2020-03",
+      "value": 70496.0
+     },
+     {
+      "period": "2020-04",
+      "value": 72888.0
+     },
+     {
+      "period": "2020-05",
+      "value": 72556.0
+     },
+     {
+      "period": "2020-06",
+      "value": 71577.0
+     },
+     {
+      "period": "2020-07",
+      "value": 69316.0
+     },
+     {
+      "period": "2020-08",
+      "value": 69724.0
+     },
+     {
+      "period": "2020-09",
+      "value": 70103.0
+     },
+     {
+      "period": "2020-10",
+      "value": 72285.0
+     },
+     {
+      "period": "2020-11",
+      "value": 73356.0
+     },
+     {
+      "period": "2020-12",
+      "value": 73604.0
+     },
+     {
+      "period": "2021-01",
+      "value": 75135.0
+     },
+     {
+      "period": "2021-02",
+      "value": 76465.0
+     },
+     {
+      "period": "2021-03",
+      "value": 74831.0
+     },
+     {
+      "period": "2021-04",
+      "value": 74710.0
+     },
+     {
+      "period": "2021-05",
+      "value": 72861.0
+     },
+     {
+      "period": "2021-06",
+      "value": 66680.0
+     },
+     {
+      "period": "2021-07",
+      "value": 60595.0
+     },
+     {
+      "period": "2021-08",
+      "value": 57854.0
+     },
+     {
+      "period": "2021-09",
+      "value": 58551.0
+     },
+     {
+      "period": "2021-10",
+      "value": 59145.0
+     },
+     {
+      "period": "2021-11",
+      "value": 58968.0
+     },
+     {
+      "period": "2021-12",
+      "value": 58106.0
+     },
+     {
+      "period": "2022-01",
+      "value": 59917.0
+     },
+     {
+      "period": "2022-02",
+      "value": 59401.0
+     },
+     {
+      "period": "2022-03",
+      "value": 58979.0
+     },
+     {
+      "period": "2022-04",
+      "value": 57451.0
+     },
+     {
+      "period": "2022-05",
+      "value": 55589.0
+     },
+     {
+      "period": "2022-06",
+      "value": 54434.0
+     },
+     {
+      "period": "2022-07",
+      "value": 54000.0
+     },
+     {
+      "period": "2022-08",
+      "value": 54475.0
+     },
+     {
+      "period": "2022-09",
+      "value": 54645.0
+     },
+     {
+      "period": "2022-10",
+      "value": 54634.0
+     },
+     {
+      "period": "2022-11",
+      "value": 54488.0
+     },
+     {
+      "period": "2022-12",
+      "value": 53555.0
+     },
+     {
+      "period": "2023-01",
+      "value": 55438.0
+     },
+     {
+      "period": "2023-02",
+      "value": 55715.0
+     },
+     {
+      "period": "2023-03",
+      "value": 54443.0
+     },
+     {
+      "period": "2023-04",
+      "value": 53319.0
+     },
+     {
+      "period": "2023-05",
+      "value": 52055.0
+     },
+     {
+      "period": "2023-06",
+      "value": 50765.0
+     },
+     {
+      "period": "2023-07",
+      "value": 50296.0
+     },
+     {
+      "period": "2023-08",
+      "value": 50388.0
+     },
+     {
+      "period": "2023-09",
+      "value": 51335.0
+     },
+     {
+      "period": "2023-10",
+      "value": 52296.0
+     },
+     {
+      "period": "2023-11",
+      "value": 51979.0
+     },
+     {
+      "period": "2023-12",
+      "value": 51259.0
+     },
+     {
+      "period": "2024-01",
+      "value": 52886.0
+     },
+     {
+      "period": "2024-02",
+      "value": 52810.0
+     },
+     {
+      "period": "2024-03",
+      "value": 51712.0
+     },
+     {
+      "period": "2024-04",
+      "value": 50567.0
+     },
+     {
+      "period": "2024-05",
+      "value": 48979.0
+     },
+     {
+      "period": "2024-06",
+      "value": 47979.0
+     },
+     {
+      "period": "2024-07",
+      "value": 46913.0
+     },
+     {
+      "period": "2024-08",
+      "value": 46628.0
+     },
+     {
+      "period": "2024-09",
+      "value": 46937.0
+     },
+     {
+      "period": "2024-10",
+      "value": 47680.0
+     },
+     {
+      "period": "2024-11",
+      "value": 47474.0
+     },
+     {
+      "period": "2024-12",
+      "value": 46933.0
+     },
+     {
+      "period": "2025-01",
+      "value": 47977.0
+     },
+     {
+      "period": "2025-02",
+      "value": 48024.0
+     },
+     {
+      "period": "2025-03",
+      "value": 47975.0
+     },
+     {
+      "period": "2025-04",
+      "value": 46480.0
+     },
+     {
+      "period": "2025-05",
+      "value": 45512.0
+     },
+     {
+      "period": "2025-06",
+      "value": 44516.0
+     },
+     {
+      "period": "2025-07",
+      "value": 44174.0
+     },
+     {
+      "period": "2025-08",
+      "value": 44027.0
+     },
+     {
+      "period": "2025-09",
+      "value": 44120.0
+     },
+     {
+      "period": "2025-10",
+      "value": 44233.0
+     },
+     {
+      "period": "2025-11",
+      "value": 44145.0
+     },
+     {
+      "period": "2025-12",
+      "value": 43459.0
+     },
+     {
+      "period": "2026-01",
+      "value": 43970.0
+     },
+     {
+      "period": "2026-02",
+      "value": 43828.0
+     },
+     {
+      "period": "2026-03",
+      "value": 43357.0
+     },
+     {
+      "period": "2026-04",
+      "value": 41833.0
+     },
+     {
+      "period": "2026-05",
+      "value": 41203.0
+     },
      {
       "period": "2026-06",
       "value": 40359.0
@@ -2086,7 +3492,7 @@
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-25T17:38:44+00:00",
+    "last_checked": "2026-07-25T17:55:12+00:00",
     "staleness_days": 25,
     "max_age_days": 75,
     "fresh": "fresh"
@@ -2692,7 +4098,7 @@
      "docs_url": "https://www.aena.es/es/estadisticas/inicio.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-25T17:54:26+00:00",
+    "last_checked": "2026-07-25T17:38:43+00:00",
     "staleness_days": 25,
     "max_age_days": 75,
     "fresh": "fresh"
@@ -6617,5 +8023,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T17:55:41+00:00"
+ "generated_at": "2026-07-25T17:55:50+00:00"
 }
