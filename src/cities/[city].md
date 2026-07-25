@@ -5,6 +5,7 @@ toc: true
 ```js
 import {cardGrid, sparkline} from "../components/metricCard.js";
 import {fingerprint, signatureSummary} from "../components/fingerprint.js";
+import {ribbon, regimeLegend} from "../components/vitals.js";
 import {el, cityColor, formatPeriod, regime, describeIndex, shortZ, describeZ} from "../components/theme.js";
 
 const all = await FileAttachment("../data/cities.json").json();
@@ -50,6 +51,25 @@ display(
     )
   ])
 );
+```
+
+```js
+// The city's own regime history. Eight years of the same rules replayed, so the
+// label at the top of this page can be read against how it got here rather than
+// as a standalone verdict.
+const timelineCity = {
+  slug: city.slug,
+  name: city.name,
+  timeline: city.regime_timeline ?? []
+};
+
+if (timelineCity.timeline.length > 2) {
+  display(el("div", {class: "cs-panel", style: "margin-bottom:1.2rem"}, [
+    el("div", {class: "cs-kicker", text: "How it got here"}),
+    ribbon(timelineCity, {width: Math.max(280, width - 60), height: 64}),
+    regimeLegend()
+  ]));
+}
 ```
 
 ## The four questions
