@@ -1,31 +1,200 @@
 {
- "run_id": "30df5aede2b2",
- "finished_at": "2026-07-25T17:43:22+00:00",
+ "run_id": "2b679d18189b",
+ "finished_at": "2026-07-25T17:49:07+00:00",
  "ok": [
-  "cgpj"
+  "aena",
+  "borme",
+  "cgpj",
+  "eurocontrol",
+  "ine",
+  "insideairbnb",
+  "wikipedia"
  ],
- "failed": [],
- "partial": [],
+ "failed": [
+  "trends_manual"
+ ],
+ "partial": [
+  "sepe"
+ ],
  "results": [
   {
-   "source_id": "cgpj",
+   "source_id": "aena",
    "status": "ok",
-   "records": 1040,
+   "records": 8,
    "added": 0,
    "revised": 0,
-   "unchanged": 1040,
+   "unchanged": 8,
    "quarantined": 0,
-   "plans": 1,
+   "plans": 6,
+   "skipped_unchanged": 5,
+   "error": null,
+   "error_type": null,
+   "duration_s": 2.17,
+   "latest_observation": "2026-02",
+   "metrics": [
+    "airport_passengers"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "borme",
+   "status": "ok",
+   "records": 24,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 24,
+   "quarantined": 0,
+   "plans": 107,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 4.37,
-   "latest_observation": "2026-Q1",
+   "duration_s": 23.78,
+   "latest_observation": "2026-07",
    "metrics": [
-    "evictions",
-    "foreclosures"
+    "company_dissolutions",
+    "company_incorporations",
+    "insolvencies"
    ],
    "notes": []
+  },
+  {
+   "source_id": "cgpj",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 1,
+   "error": null,
+   "error_type": null,
+   "duration_s": 6.83,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "eurocontrol",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 4,
+   "skipped_unchanged": 4,
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.93,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "ine",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 9,
+   "skipped_unchanged": 9,
+   "error": null,
+   "error_type": null,
+   "duration_s": 2.31,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "insideairbnb",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 7,
+   "skipped_unchanged": 7,
+   "error": null,
+   "error_type": null,
+   "duration_s": 1.83,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "sepe",
+   "status": "partial",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 16,
+   "skipped_unchanged": 8,
+   "error": null,
+   "error_type": null,
+   "duration_s": 5.47,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "8/16 optional fetches skipped: sepe:2026-05:BARCELONA: CompDocError; sepe:2026-05:BIZKAIA: CompDocError; sepe:2026-05:BALEARES: CompDocError; sepe:2026-05:MADRID: CompDocError; sepe:2026-05:MALAGA: CompDocError",
+    "fetched successfully but produced no records"
+   ]
+  },
+  {
+   "source_id": "trends_manual",
+   "status": "failed",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 0,
+   "skipped_unchanged": 0,
+   "error": "no exports found in /home/runner/work/citysignal/citysignal/data/manual/trends. Export a basket from trends.google.com and save it as <metric_id>__<geo_id>.csv — the README there lists the baskets this build expects.",
+   "error_type": "AdapterFailure",
+   "duration_s": 0.0,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": []
+  },
+  {
+   "source_id": "wikipedia",
+   "status": "ok",
+   "records": 2652,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 2039,
+   "quarantined": 613,
+   "plans": 77,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 20.72,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "wiki_city_attention",
+    "wiki_city_foreign_share",
+    "wiki_city_views",
+    "wiki_hardship_index",
+    "wiki_relocation_index"
+   ],
+   "notes": [
+    "3/77 optional fetches skipped: barcelona:nl: NotFoundError; zaragoza:es: NotFoundError; hardship:Ley_de_la_segunda_oportunidad: NotFoundError",
+    "613 unexpected revisions quarantined — re-run with --accept-revision wikipedia if the restatement is genuine"
+   ]
   }
  ]
 }

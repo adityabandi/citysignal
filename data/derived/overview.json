@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T17:44:32+00:00",
+ "generated_at": "2026-07-25T17:49:08+00:00",
  "cities": [
   {
    "slug": "madrid",
@@ -1750,5 +1750,20 @@
    "direction": 1
   }
  ],
- "attention": []
+ "attention": [
+  {
+   "source_id": "aena",
+   "status": "ok",
+   "latest_observation": "2026-02",
+   "staleness_days": 147,
+   "last_error": null
+  },
+  {
+   "source_id": "trends_manual",
+   "status": "failed",
+   "latest_observation": null,
+   "staleness_days": null,
+   "last_error": "no exports found in /home/runner/work/citysignal/citysignal/data/manual/trends. Export a basket from trends.google.com and save it as <metric_id>__<geo_id>.csv — the README there lists the baskets this build expects."
+  }
+ ]
 }
