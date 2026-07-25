@@ -1,0 +1,1754 @@
+{
+ "generated_at": "2026-07-25T17:44:32+00:00",
+ "cities": [
+  {
+   "slug": "madrid",
+   "name": "Madrid",
+   "regime": {
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
+    "rules_version": "regimes-v1",
+    "inputs": {
+     "demand_momentum": -0.0374,
+     "housing_pressure": null,
+     "supply_response": null,
+     "distress": 0.4209
+    },
+    "available_indices": [
+     "demand_momentum",
+     "distress"
+    ],
+    "confident": false,
+    "period": "2026-06"
+   },
+   "indices": {
+    "demand_momentum": -0.0374,
+    "housing_pressure": null,
+    "supply_response": null,
+    "distress": 0.4209
+   },
+   "top_signature": {
+    "archetype_id": "regulatory_shock",
+    "label": "Regulatory shock",
+    "summary": "Short-term-rental supply contracts while visitor demand does not. Listings and licensed tourist dwellings fall together with hotel demand steady or rising — the fingerprint of a rule change rather than a demand change.",
+    "firing": 1,
+    "available": 2,
+    "total": 8,
+    "coverage": 0.25,
+    "score": 0.5,
+    "insufficient_coverage": true,
+    "signals_firing": [
+     {
+      "metric_id": "airport_flights",
+      "label": "Airport flights (daily traffic)",
+      "expect": "up",
+      "z": 0.5511,
+      "raw": 7.1366,
+      "unit": "flights",
+      "period": "2026-06",
+      "geo_level": "airport",
+      "source_id": "eurocontrol"
+     }
+    ],
+    "signals_against": [
+     {
+      "metric_id": "hotel_adr",
+      "label": "Average daily rate",
+      "expect": "up",
+      "z": -1.0136,
+      "raw": 5.1867,
+      "unit": "eur",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "ine"
+     }
+    ],
+    "signals_unavailable": [
+     "hotel_nights",
+     "rent_reference",
+     "str_entire_home_share",
+     "str_listings",
+     "tourist_dwellings",
+     "vut_licensed"
+    ],
+    "signatures_version": "signatures-v1"
+   },
+   "timeline": [
+    {
+     "period": "2025-06",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2019,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.0905
+    },
+    {
+     "period": "2025-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.038,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2139
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2228,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2128
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.3399,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2463
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.7299,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.6408
+    },
+    {
+     "period": "2025-11",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.4791,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.6038
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.1035,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5131
+    },
+    {
+     "period": "2026-01",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.6094,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4306
+    },
+    {
+     "period": "2026-02",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2278,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5518
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.1448,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2702
+    }
+   ]
+  },
+  {
+   "slug": "barcelona",
+   "name": "Barcelona",
+   "regime": {
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
+    "rules_version": "regimes-v1",
+    "inputs": {
+     "demand_momentum": -0.237,
+     "housing_pressure": null,
+     "supply_response": null,
+     "distress": -0.0832
+    },
+    "available_indices": [
+     "demand_momentum",
+     "distress"
+    ],
+    "confident": false,
+    "period": "2026-06"
+   },
+   "indices": {
+    "demand_momentum": -0.237,
+    "housing_pressure": null,
+    "supply_response": null,
+    "distress": -0.0832
+   },
+   "top_signature": {
+    "archetype_id": "tourism_shock",
+    "label": "Tourism shock",
+    "summary": "Visitor demand moves independently of the local economy. Flights, hotel nights and port arrivals turn together while employment and housing lag behind — a shock arriving from outside the city rather than inside it.",
+    "firing": 1,
+    "available": 3,
+    "total": 9,
+    "coverage": 0.333,
+    "score": 0.333,
+    "insufficient_coverage": true,
+    "signals_firing": [
+     {
+      "metric_id": "hotel_revpar",
+      "label": "Revenue per available room",
+      "expect": "down",
+      "z": -0.8575,
+      "raw": -0.5801,
+      "unit": "eur",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "ine"
+     }
+    ],
+    "signals_against": [
+     {
+      "metric_id": "airport_flights",
+      "label": "Airport flights (daily traffic)",
+      "expect": "down",
+      "z": -0.244,
+      "raw": 4.8464,
+      "unit": "flights",
+      "period": "2026-06",
+      "geo_level": "airport",
+      "source_id": "eurocontrol"
+     },
+     {
+      "metric_id": "wiki_city_foreign_share",
+      "label": "Non-Spanish share of city article views",
+      "expect": "down",
+      "z": -0.3049,
+      "raw": -0.8229,
+      "unit": "percent",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "wikipedia"
+     }
+    ],
+    "signals_unavailable": [
+     "airport_passengers",
+     "horeca_closures",
+     "hotel_nights",
+     "hotel_occupancy_rate",
+     "hotel_travellers",
+     "port_passengers"
+    ],
+    "signatures_version": "signatures-v1"
+   },
+   "timeline": [
+    {
+     "period": "2025-06",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.2271,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.5774
+    },
+    {
+     "period": "2025-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.095,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.2478
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2901,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.249
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.299,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.2154
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.4552,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.3353
+    },
+    {
+     "period": "2025-11",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.3979,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.3723
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0013,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.463
+    },
+    {
+     "period": "2026-01",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.9499,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.0735
+    },
+    {
+     "period": "2026-02",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.6305,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.0477
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.5119,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.2339
+    }
+   ]
+  },
+  {
+   "slug": "valencia",
+   "name": "València",
+   "regime": {
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
+    "rules_version": "regimes-v1",
+    "inputs": {
+     "demand_momentum": -0.2222,
+     "housing_pressure": null,
+     "supply_response": null,
+     "distress": 0.1434
+    },
+    "available_indices": [
+     "demand_momentum",
+     "distress"
+    ],
+    "confident": false,
+    "period": "2026-06"
+   },
+   "indices": {
+    "demand_momentum": -0.2222,
+    "housing_pressure": null,
+    "supply_response": null,
+    "distress": 0.1434
+   },
+   "top_signature": {
+    "archetype_id": "overheating",
+    "label": "Overheating",
+    "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
+    "firing": 1,
+    "available": 2,
+    "total": 11,
+    "coverage": 0.182,
+    "score": 0.5,
+    "insufficient_coverage": true,
+    "signals_firing": [
+     {
+      "metric_id": "mortgages_count",
+      "label": "New mortgages on dwellings",
+      "expect": "down",
+      "z": -0.794,
+      "raw": -16.1572,
+      "unit": "mortgages",
+      "period": "2026-05",
+      "geo_level": "province",
+      "source_id": "ine"
+     }
+    ],
+    "signals_against": [
+     {
+      "metric_id": "hotel_adr",
+      "label": "Average daily rate",
+      "expect": "up",
+      "z": -0.1569,
+      "raw": 3.3654,
+      "unit": "eur",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "ine"
+     }
+    ],
+    "signals_unavailable": [
+     "affiliations",
+     "appraised_value",
+     "euribor_12m",
+     "housing_starts",
+     "housing_transactions",
+     "population_padron",
+     "rent_reference",
+     "str_listings",
+     "tourist_dwellings"
+    ],
+    "signatures_version": "signatures-v1"
+   },
+   "timeline": [
+    {
+     "period": "2025-06",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.3365,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5163
+    },
+    {
+     "period": "2025-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0054,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.7507
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2625,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.7495
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0493,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.783
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -1.0004,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.1499
+    },
+    {
+     "period": "2025-11",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2069,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.1129
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.1686,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.0222
+    },
+    {
+     "period": "2026-01",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.6608,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.153
+    },
+    {
+     "period": "2026-02",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.9018,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2742
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2903,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.0073
+    }
+   ]
+  },
+  {
+   "slug": "malaga",
+   "name": "Málaga",
+   "regime": {
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
+    "rules_version": "regimes-v1",
+    "inputs": {
+     "demand_momentum": -0.337,
+     "housing_pressure": null,
+     "supply_response": null,
+     "distress": 0.5869
+    },
+    "available_indices": [
+     "demand_momentum",
+     "distress"
+    ],
+    "confident": false,
+    "period": "2026-06"
+   },
+   "indices": {
+    "demand_momentum": -0.337,
+    "housing_pressure": null,
+    "supply_response": null,
+    "distress": 0.5869
+   },
+   "top_signature": {
+    "archetype_id": "orderly_cooling",
+    "label": "Orderly cooling",
+    "summary": "Heat leaving the market without anyone being forced. Prices and transactions decelerate while employment holds and the distress measures stay flat. This is the benign case, and it is worth being able to name it.",
+    "firing": 1,
+    "available": 2,
+    "total": 9,
+    "coverage": 0.222,
+    "score": 0.5,
+    "insufficient_coverage": true,
+    "signals_firing": [
+     {
+      "metric_id": "evictions",
+      "label": "Evictions carried out",
+      "expect": "down",
+      "z": -0.7068,
+      "raw": -72.3529,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
+     }
+    ],
+    "signals_against": [
+     {
+      "metric_id": "foreclosures",
+      "label": "Mortgage foreclosures filed",
+      "expect": "down",
+      "z": -0.2086,
+      "raw": -0.7353,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
+     }
+    ],
+    "signals_unavailable": [
+     "affiliations",
+     "appraised_value",
+     "housing_transactions",
+     "locales_vacancy_rate",
+     "rent_reference",
+     "str_listings",
+     "unemployment_registered"
+    ],
+    "signatures_version": "signatures-v1"
+   },
+   "timeline": [
+    {
+     "period": "2025-06",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.0311,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.33
+    },
+    {
+     "period": "2025-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0143,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4278
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.472,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4266
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.0641,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4602
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.798,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.6276
+    },
+    {
+     "period": "2025-11",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.1783,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5906
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.3078,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4999
+    },
+    {
+     "period": "2026-01",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.504,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5966
+    },
+    {
+     "period": "2026-02",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -1.0049,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.7177
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.422,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4362
+    }
+   ]
+  },
+  {
+   "slug": "sevilla",
+   "name": "Sevilla",
+   "regime": {
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
+    "rules_version": "regimes-v1",
+    "inputs": {
+     "demand_momentum": 0.3323,
+     "housing_pressure": null,
+     "supply_response": null,
+     "distress": 0.8472
+    },
+    "available_indices": [
+     "demand_momentum",
+     "distress"
+    ],
+    "confident": false,
+    "period": "2026-06"
+   },
+   "indices": {
+    "demand_momentum": 0.3323,
+    "housing_pressure": null,
+    "supply_response": null,
+    "distress": 0.8472
+   },
+   "top_signature": {
+    "archetype_id": "regulatory_shock",
+    "label": "Regulatory shock",
+    "summary": "Short-term-rental supply contracts while visitor demand does not. Listings and licensed tourist dwellings fall together with hotel demand steady or rising — the fingerprint of a rule change rather than a demand change.",
+    "firing": 1,
+    "available": 2,
+    "total": 8,
+    "coverage": 0.25,
+    "score": 0.5,
+    "insufficient_coverage": true,
+    "signals_firing": [
+     {
+      "metric_id": "airport_flights",
+      "label": "Airport flights (daily traffic)",
+      "expect": "up",
+      "z": 1.0799,
+      "raw": 14.4655,
+      "unit": "flights",
+      "period": "2026-06",
+      "geo_level": "airport",
+      "source_id": "eurocontrol"
+     }
+    ],
+    "signals_against": [
+     {
+      "metric_id": "hotel_adr",
+      "label": "Average daily rate",
+      "expect": "up",
+      "z": -1.2452,
+      "raw": -1.7882,
+      "unit": "eur",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "ine"
+     }
+    ],
+    "signals_unavailable": [
+     "hotel_nights",
+     "rent_reference",
+     "str_entire_home_share",
+     "str_listings",
+     "tourist_dwellings",
+     "vut_licensed"
+    ],
+    "signatures_version": "signatures-v1"
+   },
+   "timeline": [
+    {
+     "period": "2025-06",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.1672,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.062
+    },
+    {
+     "period": "2025-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.2491,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2792
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.1272,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.278
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.2785,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.3116
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.072,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4993
+    },
+    {
+     "period": "2025-11",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.1908,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4623
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.4758,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.3715
+    },
+    {
+     "period": "2026-01",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0931,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.8569
+    },
+    {
+     "period": "2026-02",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0881,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.9781
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0466,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.6965
+    }
+   ]
+  },
+  {
+   "slug": "palma",
+   "name": "Palma",
+   "regime": {
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
+    "rules_version": "regimes-v1",
+    "inputs": {
+     "demand_momentum": -0.4004,
+     "housing_pressure": null,
+     "supply_response": null,
+     "distress": 0.6047
+    },
+    "available_indices": [
+     "demand_momentum",
+     "distress"
+    ],
+    "confident": false,
+    "period": "2026-06"
+   },
+   "indices": {
+    "demand_momentum": -0.4004,
+    "housing_pressure": null,
+    "supply_response": null,
+    "distress": 0.6047
+   },
+   "top_signature": {
+    "archetype_id": "orderly_cooling",
+    "label": "Orderly cooling",
+    "summary": "Heat leaving the market without anyone being forced. Prices and transactions decelerate while employment holds and the distress measures stay flat. This is the benign case, and it is worth being able to name it.",
+    "firing": 1,
+    "available": 2,
+    "total": 9,
+    "coverage": 0.222,
+    "score": 0.5,
+    "insufficient_coverage": true,
+    "signals_firing": [
+     {
+      "metric_id": "evictions",
+      "label": "Evictions carried out",
+      "expect": "down",
+      "z": -0.5983,
+      "raw": -80.1471,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
+     }
+    ],
+    "signals_against": [
+     {
+      "metric_id": "foreclosures",
+      "label": "Mortgage foreclosures filed",
+      "expect": "down",
+      "z": -0.3596,
+      "raw": -11.9658,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
+     }
+    ],
+    "signals_unavailable": [
+     "affiliations",
+     "appraised_value",
+     "housing_transactions",
+     "locales_vacancy_rate",
+     "rent_reference",
+     "str_listings",
+     "unemployment_registered"
+    ],
+    "signatures_version": "signatures-v1"
+   },
+   "timeline": [
+    {
+     "period": "2025-06",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.0031,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.591
+    },
+    {
+     "period": "2025-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.2713,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4434
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.1989,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4422
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.3271,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4757
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.4462,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2884
+    },
+    {
+     "period": "2025-11",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2519,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2514
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.0163,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.1606
+    },
+    {
+     "period": "2026-01",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.7497,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.6144
+    },
+    {
+     "period": "2026-02",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.9302,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.7356
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.0067,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.454
+    }
+   ]
+  },
+  {
+   "slug": "bilbao",
+   "name": "Bilbao",
+   "regime": {
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
+    "rules_version": "regimes-v1",
+    "inputs": {
+     "demand_momentum": -0.7901,
+     "housing_pressure": null,
+     "supply_response": null,
+     "distress": 0.5926
+    },
+    "available_indices": [
+     "demand_momentum",
+     "distress"
+    ],
+    "confident": false,
+    "period": "2026-06"
+   },
+   "indices": {
+    "demand_momentum": -0.7901,
+    "housing_pressure": null,
+    "supply_response": null,
+    "distress": 0.5926
+   },
+   "top_signature": {
+    "archetype_id": "orderly_cooling",
+    "label": "Orderly cooling",
+    "summary": "Heat leaving the market without anyone being forced. Prices and transactions decelerate while employment holds and the distress measures stay flat. This is the benign case, and it is worth being able to name it.",
+    "firing": 1,
+    "available": 2,
+    "total": 9,
+    "coverage": 0.222,
+    "score": 0.5,
+    "insufficient_coverage": true,
+    "signals_firing": [
+     {
+      "metric_id": "foreclosures",
+      "label": "Mortgage foreclosures filed",
+      "expect": "down",
+      "z": -0.9411,
+      "raw": -32.9897,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
+     }
+    ],
+    "signals_against": [
+     {
+      "metric_id": "evictions",
+      "label": "Evictions carried out",
+      "expect": "down",
+      "z": 0.012,
+      "raw": 21.6418,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
+     }
+    ],
+    "signals_unavailable": [
+     "affiliations",
+     "appraised_value",
+     "housing_transactions",
+     "locales_vacancy_rate",
+     "rent_reference",
+     "str_listings",
+     "unemployment_registered"
+    ],
+    "signatures_version": "signatures-v1"
+   },
+   "timeline": [
+    {
+     "period": "2025-06",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0215,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.0532
+    },
+    {
+     "period": "2025-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.7686,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.1941
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.0797,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.1929
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.3053,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.2265
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.3856,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.6838
+    },
+    {
+     "period": "2025-11",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.9029,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.6468
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.5946,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5561
+    },
+    {
+     "period": "2026-01",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.4338,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.6023
+    },
+    {
+     "period": "2026-02",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -1.043,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.7235
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.6168,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4419
+    }
+   ]
+  },
+  {
+   "slug": "zaragoza",
+   "name": "Zaragoza",
+   "regime": {
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
+    "rules_version": "regimes-v1",
+    "inputs": {
+     "demand_momentum": -0.2679,
+     "housing_pressure": null,
+     "supply_response": null,
+     "distress": 0.9931
+    },
+    "available_indices": [
+     "demand_momentum",
+     "distress"
+    ],
+    "confident": false,
+    "period": "2026-06"
+   },
+   "indices": {
+    "demand_momentum": -0.2679,
+    "housing_pressure": null,
+    "supply_response": null,
+    "distress": 0.9931
+   },
+   "top_signature": {
+    "archetype_id": "orderly_cooling",
+    "label": "Orderly cooling",
+    "summary": "Heat leaving the market without anyone being forced. Prices and transactions decelerate while employment holds and the distress measures stay flat. This is the benign case, and it is worth being able to name it.",
+    "firing": 1,
+    "available": 2,
+    "total": 9,
+    "coverage": 0.222,
+    "score": 0.5,
+    "insufficient_coverage": true,
+    "signals_firing": [
+     {
+      "metric_id": "evictions",
+      "label": "Evictions carried out",
+      "expect": "down",
+      "z": -1.8419,
+      "raw": -82.1429,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
+     }
+    ],
+    "signals_against": [
+     {
+      "metric_id": "foreclosures",
+      "label": "Mortgage foreclosures filed",
+      "expect": "down",
+      "z": -0.0423,
+      "raw": 6.3291,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
+     }
+    ],
+    "signals_unavailable": [
+     "affiliations",
+     "appraised_value",
+     "housing_transactions",
+     "locales_vacancy_rate",
+     "rent_reference",
+     "str_listings",
+     "unemployment_registered"
+    ],
+    "signatures_version": "signatures-v1"
+   },
+   "timeline": [
+    {
+     "period": "2025-06",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.21,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": -0.1757
+    },
+    {
+     "period": "2025-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.3579,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5159
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.2784,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5147
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.7038,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5483
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.7144,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5467
+    },
+    {
+     "period": "2025-11",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.6415,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5097
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.189,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.419
+    },
+    {
+     "period": "2026-01",
+     "rule_id": "stress",
+     "label": "Stress",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.3439,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 1.0028
+    },
+    {
+     "period": "2026-02",
+     "rule_id": "stress",
+     "label": "Stress",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.4506,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 1.124
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "stress",
+     "label": "No clear regime",
+     "held_by_hysteresis": true,
+     "index_demand_momentum": 0.6651,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.8425
+    }
+   ]
+  }
+ ],
+ "movers": [
+  {
+   "city": "zaragoza",
+   "city_name": "Zaragoza",
+   "metric_id": "evictions",
+   "label": "Evictions carried out",
+   "yoy": -82.14285714285714,
+   "value": 25.0,
+   "unit": "cases",
+   "period": "2026-Q1",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": -1
+  },
+  {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "evictions",
+   "label": "Evictions carried out",
+   "yoy": -80.1470588235294,
+   "value": 54.0,
+   "unit": "cases",
+   "period": "2026-Q1",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": -1
+  },
+  {
+   "city": "barcelona",
+   "city_name": "Barcelona",
+   "metric_id": "foreclosures",
+   "label": "Mortgage foreclosures filed",
+   "yoy": 74.42143727161998,
+   "value": 1432.0,
+   "unit": "cases",
+   "period": "2026-Q1",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": -1
+  },
+  {
+   "city": "malaga",
+   "city_name": "Málaga",
+   "metric_id": "evictions",
+   "label": "Evictions carried out",
+   "yoy": -72.3529411764706,
+   "value": 94.0,
+   "unit": "cases",
+   "period": "2026-Q1",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": -1
+  },
+  {
+   "city": "barcelona",
+   "city_name": "Barcelona",
+   "metric_id": "evictions",
+   "label": "Evictions carried out",
+   "yoy": -66.4928292046936,
+   "value": 514.0,
+   "unit": "cases",
+   "period": "2026-Q1",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": -1
+  },
+  {
+   "city": "sevilla",
+   "city_name": "Sevilla",
+   "metric_id": "evictions",
+   "label": "Evictions carried out",
+   "yoy": -61.333333333333336,
+   "value": 87.0,
+   "unit": "cases",
+   "period": "2026-Q1",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": -1
+  },
+  {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "tourist_dwellings",
+   "label": "Tourist dwellings (official)",
+   "yoy": -43.60587002096436,
+   "value": 538.0,
+   "unit": "dwellings",
+   "period": "2026-Q2",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "wiki_hardship_index",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -35.04590089669967,
+   "value": 4.875,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
+   "city": "barcelona",
+   "city_name": "Barcelona",
+   "metric_id": "wiki_hardship_index",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -35.04590089669967,
+   "value": 4.875,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
+   "city": "valencia",
+   "city_name": "València",
+   "metric_id": "wiki_hardship_index",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -35.04590089669967,
+   "value": 4.875,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
+   "city": "malaga",
+   "city_name": "Málaga",
+   "metric_id": "wiki_hardship_index",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -35.04590089669967,
+   "value": 4.875,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
+   "city": "sevilla",
+   "city_name": "Sevilla",
+   "metric_id": "wiki_hardship_index",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -35.04590089669967,
+   "value": 4.875,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "wiki_hardship_index",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -35.04590089669967,
+   "value": 4.875,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "wiki_hardship_index",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -35.04590089669967,
+   "value": 4.875,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
+   "city": "zaragoza",
+   "city_name": "Zaragoza",
+   "metric_id": "wiki_hardship_index",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -35.04590089669967,
+   "value": 4.875,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "foreclosures",
+   "label": "Mortgage foreclosures filed",
+   "yoy": -32.98969072164948,
+   "value": 65.0,
+   "unit": "cases",
+   "period": "2026-Q1",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": -1
+  },
+  {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "tourist_dwelling_places",
+   "label": "Tourist dwelling bed places",
+   "yoy": -31.207130608745356,
+   "value": 38513.0,
+   "unit": "places",
+   "period": "2026-Q2",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "tourist_dwelling_places",
+   "label": "Tourist dwelling bed places",
+   "yoy": -29.9379627776666,
+   "value": 3501.0,
+   "unit": "places",
+   "period": "2026-Q2",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "tourist_dwellings",
+   "label": "Tourist dwellings (official)",
+   "yoy": -28.906967589555176,
+   "value": 10836.0,
+   "unit": "dwellings",
+   "period": "2026-Q2",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
+   "city": "sevilla",
+   "city_name": "Sevilla",
+   "metric_id": "mortgages_count",
+   "label": "New mortgages on dwellings",
+   "yoy": 26.51834034876729,
+   "value": 2104.0,
+   "unit": "mortgages",
+   "period": "2026-05",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": 1
+  },
+  {
+   "city": "sevilla",
+   "city_name": "Sevilla",
+   "metric_id": "wiki_city_views",
+   "label": "Wikipedia views, city article (all languages)",
+   "yoy": -22.31481555461453,
+   "value": 97230.0,
+   "unit": "views",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "property_transfers",
+   "label": "Property transfers (registered)",
+   "yoy": -22.27116984826236,
+   "value": 1588.0,
+   "unit": "transactions",
+   "period": "2026-05",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": 1
+  },
+  {
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "evictions",
+   "label": "Evictions carried out",
+   "yoy": 21.64179104477612,
+   "value": 163.0,
+   "unit": "cases",
+   "period": "2026-Q1",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": -1
+  },
+  {
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "mortgages_count",
+   "label": "New mortgages on dwellings",
+   "yoy": -21.106382978723403,
+   "value": 927.0,
+   "unit": "mortgages",
+   "period": "2026-05",
+   "geo_level": "province",
+   "scope_label": "province",
+   "direction": 1
+  }
+ ],
+ "attention": []
+}

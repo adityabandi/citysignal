@@ -1,0 +1,117 @@
+name: weekly refresh
+
+# A non-round minute keeps this off the top-of-hour stampede that delays
+# scheduled runs on shared infrastructure.
+on:
+  schedule:
+    - cron: "43 5 * * 2"
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Refresh a single source_id (blank = all)"
+        required: false
+        type: string
+      force:
+        description: "Ignore content-hash skipping"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: citysignal-pipeline
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    outputs:
+      committed: ${{ steps.commit.outputs.committed }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+        with:
+          enable-cache: true
+
+      - name: Install
+        run: uv sync --extra dev
+
+      # Each adapter is isolated inside the runner: one source failing is recorded
+      # in the run report and leaves its history untouched, rather than stopping
+      # the pipeline. Only framework-level breakage exits non-zero here.
+      - name: Fetch
+        run: |
+          uv run citysignal fetch \
+            ${{ inputs.source && format('--source {0}', inputs.source) || '' }} \
+            ${{ inputs.force && '--force' || '' }}
+
+      - name: Derive
+        run: uv run citysignal derive
+
+      # The gate: nothing is committed and nothing is deployed unless the freshly
+      # derived data passes its tests.
+      - name: Test
+        run: uv run pytest
+
+      - name: Commit snapshots
+        id: commit
+        run: |
+          git config user.name "citysignal-bot"
+          git config user.email "citysignal-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "No data changed this run."
+          else
+            git commit -m "data: weekly refresh $(date -u +%F)"
+            git push
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Sync failure issues
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: uv run python scripts/issue_sync.py
+
+      # GitHub disables scheduled workflows on public repositories after 60 days
+      # without activity. The weekly data commit usually counts, but a long run of
+      # no-change weeks would not — so re-enable unconditionally.
+      - name: Keep the schedule alive
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow enable "weekly refresh" || true
+
+  build-deploy:
+    needs: pipeline
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      # Checked out after the pipeline job pushed, so the build sees the new data.
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.ref }}
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: dist
+      - id: deploy
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

@@ -1,0 +1,336 @@
+@import url("observablehq:default.css");
+@import url("observablehq:theme-near-midnight.css");
+
+/* CitySignal reads as an instrument rather than a dashboard: a dark console
+   surface, hairline rules, monospaced numerals, and micro-labels that behave
+   like panel legends. Colour is spent only where it carries meaning — regime
+   state and city identity — and every status colour is paired with a glyph and
+   a word, never left to carry meaning alone. */
+
+:root {
+  --cs-plane: #08090b;
+  --cs-surface: #0c0d10;
+  --cs-surface-raised: #121419;
+  --cs-grid: #1c1e24;
+  --cs-rule: #24272e;
+  --cs-ink: #ffffff;
+  --cs-ink-2: #c3c2b7;
+  --cs-ink-3: #898781;
+  --cs-ink-4: #5f5e59;
+
+  /* Regime status — ordinal severity, never used for a data series. */
+  --cs-expansion: #0ca30c;
+  --cs-orderly: #898781;
+  --cs-hot: #fab219;
+  --cs-stress: #ec835a;
+  --cs-dislocation: #d03b3b;
+  --cs-none: #6e6e6b;
+
+  /* City identity — validated categorical order, fixed per city for the whole
+     site so a reader who learns "Barcelona is orange" is never re-taught. */
+  --cs-city-madrid: #3987e5;
+  --cs-city-barcelona: #d95926;
+  --cs-city-valencia: #199e70;
+  --cs-city-malaga: #c98500;
+  --cs-city-sevilla: #d55181;
+  --cs-city-palma: #008300;
+  --cs-city-bilbao: #9085e9;
+  --cs-city-zaragoza: #e66767;
+
+  --cs-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+  --cs-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --serif: var(--cs-sans);
+}
+
+html {
+  background: var(--cs-plane);
+}
+
+body {
+  font-family: var(--cs-sans);
+  background:
+    radial-gradient(120% 80% at 50% -10%, #14161d 0%, var(--cs-plane) 62%);
+  background-attachment: fixed;
+}
+
+#observablehq-main a[href],
+#observablehq-center a[href] {
+  text-underline-offset: 3px;
+}
+
+/* ---------------------------------------------------------------- typography */
+
+h1 {
+  font-family: var(--cs-sans);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  text-wrap: balance;
+  margin-bottom: 0.4rem;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  border-top: 1px solid var(--cs-rule);
+  padding-top: 1.1rem;
+  margin-top: 3rem;
+}
+
+.cs-kicker {
+  font-family: var(--cs-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cs-ink-3);
+  display: block;
+  margin-bottom: 0.9rem;
+}
+
+.cs-lede {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--cs-ink-2);
+  max-width: 62ch;
+}
+
+.cs-num {
+  font-family: var(--cs-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------------------------------------------- panels */
+
+.cs-panel {
+  background: var(--cs-surface);
+  border: 1px solid var(--cs-rule);
+  border-radius: 3px;
+  padding: 1rem 1.05rem 0.9rem;
+  position: relative;
+}
+
+/* Corner ticks — the console conceit, purely decorative and never on a data mark. */
+.cs-panel::before,
+.cs-panel::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-color: var(--cs-ink-4);
+  border-style: solid;
+  opacity: 0.7;
+}
+.cs-panel::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+.cs-panel::after {
+  bottom: -1px;
+  right: -1px;
+  border-width: 0 1px 1px 0;
+}
+
+.cs-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+}
+
+/* --------------------------------------------------------------- metric card */
+
+.cs-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.cs-card-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cs-ink);
+  letter-spacing: -0.01em;
+}
+
+.cs-card-value {
+  font-family: var(--cs-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.85rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-top: 0.35rem;
+}
+
+.cs-card-unit {
+  font-size: 0.72rem;
+  color: var(--cs-ink-3);
+  margin-left: 0.35rem;
+  font-family: var(--cs-sans);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.cs-delta {
+  font-family: var(--cs-mono);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+.cs-delta-up { color: var(--cs-expansion); }
+.cs-delta-down { color: var(--cs-stress); }
+.cs-delta-flat { color: var(--cs-ink-3); }
+
+.cs-meta {
+  font-size: 0.68rem;
+  color: var(--cs-ink-3);
+  line-height: 1.5;
+  margin-top: 0.55rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--cs-grid);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.6rem;
+  align-items: center;
+}
+
+/* A scope pill states the geography every single time a series is drawn: a
+   provincial number shown on a city page must never read as the city's own. */
+.cs-scope {
+  font-family: var(--cs-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.13rem 0.36rem;
+  border: 1px solid var(--cs-rule);
+  border-radius: 2px;
+  color: var(--cs-ink-2);
+  white-space: nowrap;
+}
+.cs-scope-wider {
+  border-color: #4a3f22;
+  color: #d8b25f;
+}
+
+.cs-freshness {
+  font-family: var(--cs-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.cs-freshness::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.cs-fresh { color: var(--cs-expansion); }
+.cs-stale { color: var(--cs-hot); }
+.cs-failing { color: var(--cs-dislocation); }
+.cs-unknown { color: var(--cs-ink-4); }
+
+.cs-kind {
+  font-family: var(--cs-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--cs-ink-4);
+}
+.cs-kind-research { color: #b09be0; }
+.cs-kind-commercial { color: var(--cs-hot); }
+
+/* ------------------------------------------------------------------ regimes */
+
+.cs-regime {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--cs-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+}
+.cs-regime .cs-glyph { font-size: 0.85rem; line-height: 1; }
+
+.regime-expansion { color: var(--cs-expansion); }
+.regime-orderly_cooling { color: var(--cs-orderly); }
+.regime-hot_decelerating { color: var(--cs-hot); }
+.regime-stress { color: var(--cs-stress); }
+.regime-dislocation { color: var(--cs-dislocation); }
+.regime-neutral { color: var(--cs-none); }
+
+/* ----------------------------------------------------------- vitals ribbons */
+
+.cs-vitals {
+  display: grid;
+  grid-template-columns: minmax(84px, auto) 1fr minmax(120px, auto);
+  align-items: center;
+  gap: 2px 14px;
+}
+.cs-vitals-city {
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-align: right;
+  padding: 0.3rem 0;
+}
+.cs-vitals-city a { color: inherit; text-decoration: none; }
+.cs-vitals-city a:hover { text-decoration: underline; }
+
+table.cs-table {
+  font-size: 0.8rem;
+  width: 100%;
+}
+table.cs-table th {
+  font-family: var(--cs-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cs-ink-3);
+  font-weight: 400;
+  text-align: left;
+  border-bottom: 1px solid var(--cs-rule);
+  padding-bottom: 0.4rem;
+}
+table.cs-table td {
+  padding: 0.42rem 0.7rem 0.42rem 0;
+  border-bottom: 1px solid var(--cs-grid);
+  vertical-align: baseline;
+}
+table.cs-table td.cs-num { font-variant-numeric: tabular-nums; }
+
+.cs-empty {
+  color: var(--cs-ink-3);
+  font-size: 0.85rem;
+  border: 1px dashed var(--cs-rule);
+  border-radius: 3px;
+  padding: 1.1rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.cs-note {
+  font-size: 0.78rem;
+  color: var(--cs-ink-3);
+  line-height: 1.6;
+  max-width: 68ch;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cs-live {
+    animation: cs-pulse 3.2s ease-in-out infinite;
+  }
+  @keyframes cs-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+  }
+}

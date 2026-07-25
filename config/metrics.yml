@@ -1,0 +1,655 @@
+# Metric registry. Every canonical record must name a metric_id defined here, and
+# its unit and cadence must match. `direction` is +1 when a rising value means a
+# hotter/stronger market and -1 when rising means weaker or more distressed —
+# the derive engine uses it to orient z-scores before combining them.
+# `lag` records whether the measure leads, coincides with, or lags the cycle;
+# the lead-lag lab can demote a "leading" claim that stops holding.
+
+metrics:
+  # ---------------------------------------------------------------- population
+  population_padron:
+    label: Population (padrón)
+    label_es: Población (padrón)
+    unit: persons
+    cadence: annual
+    geo_level: municipality
+    source_id: ine
+    section: people
+    direction: 1
+    lag: lagging
+    range: [1000, 4000000]
+  population_foreign_share:
+    label: Foreign-national share
+    unit: percent
+    cadence: annual
+    geo_level: municipality
+    source_id: ine
+    section: people
+    direction: 1
+    lag: lagging
+    range: [0, 80]
+  net_migration:
+    label: Net migration
+    unit: persons
+    cadence: annual
+    geo_level: municipality
+    source_id: ine
+    section: people
+    direction: 1
+    lag: coincident
+    range: [-200000, 200000]
+
+  # ------------------------------------------------------------------- housing
+  rent_reference:
+    label: Reference rent
+    label_es: Precio de referencia del alquiler
+    unit: eur_m2_month
+    cadence: annual
+    geo_level: municipality
+    source_id: mivau
+    section: housing
+    direction: 1
+    lag: coincident
+    range: [1, 60]
+  dwelling_stock:
+    label: Dwelling stock
+    unit: dwellings
+    cadence: annual
+    geo_level: municipality
+    source_id: mivau
+    section: supply
+    direction: 1
+    lag: lagging
+    range: [500, 2000000]
+  housing_transactions:
+    label: Housing transactions
+    unit: transactions
+    cadence: quarterly
+    geo_level: municipality
+    source_id: mivau
+    section: housing
+    direction: 1
+    lag: leading
+    range: [0, 60000]
+  appraised_value:
+    label: Appraised housing value
+    unit: eur_m2
+    cadence: quarterly
+    geo_level: province
+    source_id: mivau
+    section: housing
+    direction: 1
+    lag: lagging
+    range: [200, 8000]
+  land_price:
+    label: Urban land price
+    unit: eur_m2
+    cadence: quarterly
+    geo_level: province
+    source_id: mivau
+    section: supply
+    direction: 1
+    lag: leading
+    range: [10, 5000]
+  housing_starts:
+    label: Housing starts
+    unit: dwellings
+    cadence: quarterly
+    geo_level: province
+    source_id: mivau
+    section: supply
+    direction: 1
+    lag: leading
+    range: [0, 60000]
+  housing_completions:
+    label: Housing completions
+    unit: dwellings
+    cadence: quarterly
+    geo_level: province
+    source_id: mivau
+    section: supply
+    direction: 1
+    lag: lagging
+    range: [0, 60000]
+  house_price_index:
+    label: House price index
+    unit: index
+    cadence: quarterly
+    geo_level: ccaa
+    source_id: ine
+    section: housing
+    direction: 1
+    lag: lagging
+    range: [30, 400]
+  property_transfers:
+    label: Property transfers (registered)
+    unit: transactions
+    cadence: monthly
+    geo_level: province
+    source_id: ine
+    section: housing
+    direction: 1
+    lag: leading
+    range: [0, 40000]
+  mortgages_count:
+    label: New mortgages on dwellings
+    unit: mortgages
+    cadence: monthly
+    geo_level: province
+    source_id: ine
+    section: credit
+    direction: 1
+    lag: leading
+    range: [0, 30000]
+  mortgage_amount_avg:
+    label: Average mortgage amount
+    unit: eur
+    cadence: monthly
+    geo_level: province
+    source_id: ine
+    section: credit
+    direction: 1
+    lag: coincident
+    range: [20000, 700000]
+
+  # -------------------------------------------------------------------- labour
+  unemployment_registered:
+    label: Registered unemployment
+    label_es: Paro registrado
+    unit: persons
+    cadence: monthly
+    geo_level: municipality
+    source_id: sepe
+    section: work
+    direction: -1
+    lag: coincident
+    range: [0, 600000]
+  contracts_registered:
+    label: New contracts registered
+    unit: contracts
+    cadence: monthly
+    geo_level: municipality
+    source_id: sepe
+    section: work
+    direction: 1
+    lag: leading
+    range: [0, 400000]
+  affiliations:
+    label: Social Security affiliations
+    unit: persons
+    cadence: monthly
+    geo_level: province
+    source_id: segsocial
+    section: work
+    direction: 1
+    lag: coincident
+    range: [1000, 4000000]
+
+  # ------------------------------------------------------------------- tourism
+  hotel_travellers:
+    label: Hotel travellers
+    unit: persons
+    cadence: monthly
+    geo_level: municipality
+    source_id: ine
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [0, 2000000]
+  hotel_nights:
+    label: Hotel overnight stays
+    unit: nights
+    cadence: monthly
+    geo_level: municipality
+    source_id: ine
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [0, 6000000]
+  hotel_occupancy_rate:
+    label: Hotel occupancy rate
+    unit: percent
+    cadence: monthly
+    geo_level: municipality
+    source_id: ine
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [0, 100]
+  hotel_adr:
+    label: Average daily rate
+    unit: eur
+    cadence: monthly
+    geo_level: municipality
+    source_id: ine
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [10, 600]
+  hotel_revpar:
+    label: Revenue per available room
+    unit: eur
+    cadence: monthly
+    geo_level: municipality
+    source_id: ine
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [0, 500]
+  airport_passengers:
+    label: Airport passengers
+    unit: passengers
+    cadence: monthly
+    geo_level: airport
+    source_id: aena
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [0, 8000000]
+  airport_flights:
+    label: Airport flights (daily traffic)
+    unit: flights
+    cadence: monthly
+    geo_level: airport
+    source_id: eurocontrol
+    section: tourism
+    direction: 1
+    lag: leading
+    range: [0, 60000]
+  port_passengers:
+    label: Port passengers
+    unit: passengers
+    cadence: monthly
+    geo_level: port
+    source_id: puertos
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [0, 1500000]
+
+  # ----------------------------------------------------------- short-term rent
+  tourist_dwellings:
+    label: Tourist dwellings (official)
+    unit: dwellings
+    cadence: quarterly
+    geo_level: municipality
+    source_id: ine
+    section: str
+    direction: 1
+    lag: coincident
+    range: [0, 100000]
+  tourist_dwelling_places:
+    label: Tourist dwelling bed places
+    unit: places
+    cadence: quarterly
+    geo_level: municipality
+    source_id: ine
+    section: str
+    direction: 1
+    lag: coincident
+    range: [0, 500000]
+  str_listings:
+    label: Airbnb listings (research)
+    unit: listings
+    cadence: monthly
+    geo_level: municipality
+    source_id: insideairbnb
+    section: str
+    direction: 1
+    lag: leading
+    range: [0, 100000]
+  str_entire_home_share:
+    label: Entire-home share of listings
+    unit: percent
+    cadence: monthly
+    geo_level: municipality
+    source_id: insideairbnb
+    section: str
+    direction: 1
+    lag: leading
+    range: [0, 100]
+  str_multi_host_share:
+    label: Multi-listing host share
+    unit: percent
+    cadence: monthly
+    geo_level: municipality
+    source_id: insideairbnb
+    section: str
+    direction: 1
+    lag: leading
+    range: [0, 100]
+
+  # ------------------------------------------------------------------- credit
+  euribor_12m:
+    label: Euribor 12-month
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: bde
+    section: credit
+    direction: -1
+    lag: leading
+    range: [-1.5, 20]
+  mortgage_rate_new:
+    label: New mortgage rate
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: bde
+    section: credit
+    direction: -1
+    lag: leading
+    range: [0, 20]
+  npl_ratio:
+    label: Doubtful loan ratio
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: bde
+    section: credit
+    direction: -1
+    lag: lagging
+    range: [0, 25]
+
+  # ------------------------------------------------------------------ distress
+  foreclosures:
+    label: Mortgage foreclosures filed
+    label_es: Ejecuciones hipotecarias
+    unit: cases
+    cadence: quarterly
+    geo_level: province
+    source_id: cgpj
+    section: distress
+    direction: -1
+    lag: lagging
+    range: [0, 20000]
+  evictions:
+    label: Evictions carried out
+    label_es: Lanzamientos
+    unit: cases
+    cadence: quarterly
+    geo_level: province
+    source_id: cgpj
+    section: distress
+    direction: -1
+    lag: lagging
+    range: [0, 20000]
+  auctions_realestate:
+    label: Judicial property auctions
+    unit: auctions
+    cadence: monthly
+    geo_level: province
+    source_id: boe_subastas
+    section: distress
+    direction: -1
+    lag: coincident
+    range: [0, 5000]
+  company_incorporations:
+    label: Companies incorporated
+    unit: companies
+    cadence: monthly
+    geo_level: province
+    source_id: borme
+    section: distress
+    direction: 1
+    lag: leading
+    range: [0, 12000]
+  company_dissolutions:
+    label: Companies dissolved
+    unit: companies
+    cadence: monthly
+    geo_level: province
+    source_id: borme
+    section: distress
+    direction: -1
+    lag: coincident
+    range: [0, 8000]
+  insolvencies:
+    label: Insolvency proceedings
+    unit: cases
+    cadence: monthly
+    geo_level: province
+    source_id: borme
+    section: distress
+    direction: -1
+    lag: lagging
+    range: [0, 4000]
+
+  # ----------------------------------------------------- attention (not demand)
+  wiki_city_views:
+    label: Wikipedia views, city article (all languages)
+    unit: views
+    cadence: monthly
+    geo_level: municipality
+    source_id: wikipedia
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 20000000]
+  wiki_city_foreign_share:
+    label: Non-Spanish share of city article views
+    unit: percent
+    cadence: monthly
+    geo_level: municipality
+    source_id: wikipedia
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100]
+  wiki_city_attention:
+    label: City attention share
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wikipedia
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 10000]
+    note: >
+      City article views per million views of the same language editions. Raw
+      pageview counts fell about 45% between 2021 and 2026 as search behaviour
+      changed, so only the share is comparable across years.
+  wiki_hardship_index:
+    label: Hardship attention (Euribor, eviction, benefits)
+    unit: per_million
+    cadence: monthly
+    geo_level: nation
+    source_id: wikipedia
+    section: attention
+    direction: -1
+    lag: leading
+    range: [0, 10000]
+  wiki_relocation_index:
+    label: Relocation attention (padrón, NIE, visas)
+    unit: per_million
+    cadence: monthly
+    geo_level: nation
+    source_id: wikipedia
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 10000]
+  search_rental_pressure:
+    label: Rental search pressure
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: trends_manual
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100]
+  search_buy_momentum:
+    label: Buyer search momentum
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: trends_manual
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100]
+  search_relocation:
+    label: Relocation search intent
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: trends_manual
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100]
+  search_hardship:
+    label: Household hardship search
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: trends_manual
+    section: attention
+    direction: -1
+    lag: leading
+    range: [0, 100]
+  search_travel_intent:
+    label: Inbound travel search intent
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: trends_manual
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100]
+  search_commercial_distress:
+    label: Business-exit search (traspaso local)
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: trends_manual
+    section: attention
+    direction: -1
+    lag: leading
+    range: [0, 100]
+
+  news_volume:
+    label: News coverage volume
+    unit: percent
+    cadence: monthly
+    geo_level: municipality
+    source_id: gdelt
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100]
+  news_tone:
+    label: News coverage tone
+    unit: tone
+    cadence: monthly
+    geo_level: municipality
+    source_id: gdelt
+    section: attention
+    direction: 1
+    lag: leading
+    range: [-25, 25]
+  news_housing_volume:
+    label: Housing-themed coverage volume
+    unit: percent
+    cadence: monthly
+    geo_level: municipality
+    source_id: gdelt
+    section: attention
+    direction: -1
+    lag: leading
+    range: [0, 100]
+
+  # ------------------------------------------------------------ Madrid deep dive
+  padron_district:
+    label: Population by district (monthly)
+    unit: persons
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_padron
+    section: people
+    direction: 1
+    lag: coincident
+    range: [1000, 500000]
+  locales_stock:
+    label: Business premises in use
+    unit: premises
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_locales
+    section: work
+    direction: 1
+    lag: coincident
+    range: [0, 60000]
+  locales_openings:
+    label: Business premises opened
+    unit: premises
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_locales
+    section: work
+    direction: 1
+    lag: leading
+    range: [0, 5000]
+  locales_closures:
+    label: Business premises closed
+    unit: premises
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_locales
+    section: work
+    direction: -1
+    lag: leading
+    range: [0, 5000]
+  locales_vacancy_rate:
+    label: Storefront vacancy rate
+    unit: percent
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_locales
+    section: work
+    direction: -1
+    lag: coincident
+    range: [0, 100]
+  horeca_openings:
+    label: Restaurants and bars opened
+    unit: premises
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_locales
+    section: work
+    direction: 1
+    lag: leading
+    range: [0, 2000]
+  horeca_closures:
+    label: Restaurants and bars closed
+    unit: premises
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_locales
+    section: work
+    direction: -1
+    lag: leading
+    range: [0, 2000]
+  horeca_stock:
+    label: Restaurants and bars in use
+    unit: premises
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_locales
+    section: work
+    direction: 1
+    lag: coincident
+    range: [0, 20000]
+  vut_licensed:
+    label: Licensed tourist dwellings
+    unit: dwellings
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_vut
+    section: str
+    direction: 1
+    lag: coincident
+    range: [0, 20000]

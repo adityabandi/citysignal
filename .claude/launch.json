@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "citysignal",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["observable", "preview", "--port", "3311", "--no-open"],
+      "port": 3311
+    }
+  ]
+}

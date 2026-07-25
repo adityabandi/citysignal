@@ -1,0 +1,52 @@
+# Wikipedia pageview baskets.
+#
+# This is an ATTENTION measure, not demand. It is here because it is daily,
+# keyless, language-split and long-running — which lets us watch what a country
+# is worrying about, and which languages are looking at a given city, without
+# depending on an application-gated search API.
+#
+# Baskets are frozen and versioned before they are evaluated. Terms are never
+# deleted retroactively; a replacement basket gets a new version and both are
+# reported until the old one is retired.
+
+version: wikipedia-v1
+frozen_at: "2026-07-25"
+
+# Language editions read for each city article. The mix approximates an
+# origin-market attention matrix: who is currently looking this city up.
+city_languages: [es, en, de, fr, it, nl, pt]
+
+# Spanish-language articles people reach for when household finances tighten.
+# Euríbor is the anchor: it is the reference rate on most Spanish variable-rate
+# mortgages, so its pageviews jump when repayments are about to.
+hardship:
+  project: es.wikipedia
+  articles:
+    - Euríbor
+    - Desahucio
+    - Hipoteca
+    - Ingreso_mínimo_vital
+    - Ley_de_la_segunda_oportunidad
+    - Ejecución_hipotecaria
+    - Concurso_de_acreedores
+    - Prestación_por_desempleo
+
+# Articles that spike when people are preparing to arrive rather than to survive.
+relocation:
+  project: es.wikipedia
+  articles:
+    - Padrón_municipal
+    - Número_de_identidad_de_extranjero
+    - Permiso_de_residencia
+    - Visado
+    - Nacionalidad_española
+    - Empadronamiento
+
+# Rising STR attention shows up as regulatory interest as often as guest interest,
+# so this basket is reported on its own rather than folded into tourism.
+short_term_rental:
+  project: es.wikipedia
+  articles:
+    - Airbnb
+    - Vivienda_de_uso_turístico
+    - Alquiler_vacacional

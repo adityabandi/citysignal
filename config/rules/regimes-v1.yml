@@ -1,0 +1,55 @@
+# Rule-based regime classification. Ordered; first match wins; the fallback
+# always matches. Every published classification records the rule that fired and
+# this version string, so any past label can be reproduced from git history.
+# Changing thresholds means writing regimes-v2.yml — this file is never edited
+# once data has been published against it.
+
+version: regimes-v1
+frozen_at: "2026-07-25"
+
+# Leaving a stressed regime requires the exit condition to hold twice running.
+# Entering one does not: a false calm is more costly than a false alarm here.
+hysteresis_periods: 2
+sticky_regimes: [stress, dislocation]
+
+rules:
+  - id: dislocation
+    label: Dislocation
+    when: "distress > 2.0 and demand_momentum < -1.0"
+    reading: >
+      Distress measures are far above this city's own history while demand is
+      contracting. Historically the configuration that precedes forced selling.
+
+  - id: stress
+    label: Stress
+    when: "distress > 1.0"
+    reading: >
+      Foreclosure, eviction, insolvency or unemployment measures are elevated
+      against this city's own record, whatever prices are doing.
+
+  - id: hot_decelerating
+    label: Hot but decelerating
+    when: "housing_pressure > 1.0 and delta(housing_pressure, 2) < 0"
+    reading: >
+      Housing pressure is still high but has been easing for two periods. Levels
+      stay high long after momentum turns; this is where that gap opens.
+
+  - id: orderly_cooling
+    label: Orderly cooling
+    when: "housing_pressure < 0 and distress <= 0.5 and demand_momentum > -0.5"
+    reading: >
+      Pressure has come out of the market without distress measures responding.
+      A slowdown, not a break.
+
+  - id: expansion
+    label: Expansion
+    when: "demand_momentum > 0.5 and distress < 0.5"
+    reading: >
+      Demand is strengthening and distress measures are quiet.
+
+  - id: neutral
+    label: No clear regime
+    when: "true"
+    reading: >
+      No rule fired. The city's measures are within their ordinary range, or too
+      few of them are currently available to classify.

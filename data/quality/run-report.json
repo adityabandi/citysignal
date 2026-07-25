@@ -1,0 +1,31 @@
+{
+ "run_id": "30df5aede2b2",
+ "finished_at": "2026-07-25T17:43:22+00:00",
+ "ok": [
+  "cgpj"
+ ],
+ "failed": [],
+ "partial": [],
+ "results": [
+  {
+   "source_id": "cgpj",
+   "status": "ok",
+   "records": 1040,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 1040,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 4.37,
+   "latest_observation": "2026-Q1",
+   "metrics": [
+    "evictions",
+    "foreclosures"
+   ],
+   "notes": []
+  }
+ ]
+}

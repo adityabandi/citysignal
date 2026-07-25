@@ -1,0 +1,9 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
+unemployment_registered,mun-07040,municipality,2026-06,11321,persons,sepe,2026-06-30,,2026-07-25,ok,0
+unemployment_registered,mun-08019,municipality,2026-06,61175,persons,sepe,2026-06-30,,2026-07-25,ok,0
+unemployment_registered,mun-28079,municipality,2026-06,129327,persons,sepe,2026-06-30,,2026-07-25,ok,0
+unemployment_registered,mun-29067,municipality,2026-06,40359,persons,sepe,2026-06-30,,2026-07-25,ok,0
+unemployment_registered,mun-41091,municipality,2026-06,49130,persons,sepe,2026-06-30,,2026-07-25,ok,0
+unemployment_registered,mun-46250,municipality,2026-06,41172,persons,sepe,2026-06-30,,2026-07-25,ok,0
+unemployment_registered,mun-48020,municipality,2026-06,20458,persons,sepe,2026-06-30,,2026-07-25,ok,0
+unemployment_registered,mun-50297,municipality,2026-06,27783,persons,sepe,2026-06-30,,2026-07-25,ok,0

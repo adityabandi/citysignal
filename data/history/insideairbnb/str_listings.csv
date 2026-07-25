@@ -1,0 +1,8 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
+str_listings,mun-07040,municipality,2026-06,949,listings,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_listings,mun-08019,municipality,2026-06,15293,listings,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_listings,mun-28079,municipality,2026-06,22708,listings,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_listings,mun-29067,municipality,2026-06,9568,listings,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_listings,mun-41091,municipality,2026-06,8245,listings,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_listings,mun-46250,municipality,2026-06,7851,listings,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_listings,mun-48020,municipality,2026-06,1599,listings,insideairbnb,2026-06-30,,2026-07-25,ok,0

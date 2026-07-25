@@ -1,0 +1,9 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
+contracts_registered,mun-07040,municipality,2026-06,18640,contracts,sepe,2026-06-30,,2026-07-25,ok,0
+contracts_registered,mun-08019,municipality,2026-06,79326,contracts,sepe,2026-06-30,,2026-07-25,ok,0
+contracts_registered,mun-28079,municipality,2026-06,146379,contracts,sepe,2026-06-30,,2026-07-25,ok,0
+contracts_registered,mun-29067,municipality,2026-06,29346,contracts,sepe,2026-06-30,,2026-07-25,ok,0
+contracts_registered,mun-41091,municipality,2026-06,29228,contracts,sepe,2026-06-30,,2026-07-25,ok,0
+contracts_registered,mun-46250,municipality,2026-06,28886,contracts,sepe,2026-06-30,,2026-07-25,ok,0
+contracts_registered,mun-48020,municipality,2026-06,14783,contracts,sepe,2026-06-30,,2026-07-25,ok,0
+contracts_registered,mun-50297,municipality,2026-06,23577,contracts,sepe,2026-06-30,,2026-07-25,ok,0

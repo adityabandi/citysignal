@@ -1,0 +1,179 @@
+# Eight-city registry. Geography is a first-class field: every series records the
+# level it was actually published at, and the site never silently substitutes one
+# level for another.
+cities:
+  - slug: madrid
+    name: Madrid
+    ine_mun: "28079"
+    ine_prov: "28"
+    ine_ccaa: "13"
+    ccaa_name: Comunidad de Madrid
+    province_name: Madrid
+    airports: [MAD]
+    ports: []
+    fua_id: ES001L2
+    insideairbnb: madrid
+    deep_dive: true
+    wikipedia:
+      es: Madrid
+      en: Madrid
+      de: Madrid
+      fr: Madrid
+      it: Madrid
+      nl: Madrid
+      pt: Madrid
+    aliases: [Madrid capital]
+
+  - slug: barcelona
+    name: Barcelona
+    ine_mun: "08019"
+    ine_prov: "08"
+    ine_ccaa: "09"
+    ccaa_name: Cataluña
+    province_name: Barcelona
+    airports: [BCN]
+    ports: [BCN]
+    fua_id: ES002L2
+    insideairbnb: barcelona
+    deep_dive: false
+    wikipedia:
+      es: Barcelona
+      en: Barcelona
+      de: Barcelona
+      fr: Barcelone
+      it: Barcellona
+      nl: Barcelona
+      pt: Barcelona
+    aliases: []
+
+  - slug: valencia
+    name: València
+    ine_mun: "46250"
+    ine_prov: "46"
+    ine_ccaa: "10"
+    ccaa_name: Comunitat Valenciana
+    province_name: Valencia
+    airports: [VLC]
+    ports: [VLC]
+    fua_id: ES003L3
+    insideairbnb: valencia
+    deep_dive: false
+    wikipedia:
+      es: Valencia
+      en: Valencia
+      de: Valencia
+      fr: Valence (Espagne)
+      it: Valencia
+      nl: Valencia (stad)
+      pt: Valência (Espanha)
+    aliases: [Valencia]
+
+  - slug: malaga
+    name: Málaga
+    ine_mun: "29067"
+    ine_prov: "29"
+    ine_ccaa: "01"
+    ccaa_name: Andalucía
+    province_name: Málaga
+    airports: [AGP]
+    ports: [AGP]
+    fua_id: ES006L2
+    insideairbnb: malaga
+    deep_dive: false
+    wikipedia:
+      es: Málaga
+      en: Málaga
+      de: Málaga
+      fr: Malaga
+      it: Malaga
+      nl: Málaga
+      pt: Málaga
+    aliases: [Malaga]
+
+  - slug: sevilla
+    name: Sevilla
+    ine_mun: "41091"
+    ine_prov: "41"
+    ine_ccaa: "01"
+    ccaa_name: Andalucía
+    province_name: Sevilla
+    airports: [SVQ]
+    ports: [SVQ]
+    fua_id: ES004L2
+    insideairbnb: sevilla
+    deep_dive: false
+    wikipedia:
+      es: Sevilla
+      en: Seville
+      de: Sevilla
+      fr: Séville
+      it: Siviglia
+      nl: Sevilla
+      pt: Sevilha
+    aliases: [Seville]
+
+  - slug: palma
+    name: Palma
+    ine_mun: "07040"
+    ine_prov: "07"
+    ine_ccaa: "04"
+    ccaa_name: Illes Balears
+    province_name: Balears, Illes
+    airports: [PMI]
+    ports: [PMI]
+    fua_id: ES019L2
+    insideairbnb: mallorca
+    deep_dive: false
+    wikipedia:
+      es: Palma de Mallorca
+      en: Palma de Mallorca
+      de: Palma
+      fr: Palma
+      it: Palma di Maiorca
+      nl: Palma de Mallorca
+      pt: Palma de Maiorca
+    aliases: [Palma de Mallorca]
+
+  - slug: bilbao
+    name: Bilbao
+    ine_mun: "48020"
+    ine_prov: "48"
+    ine_ccaa: "16"
+    ccaa_name: País Vasco
+    province_name: Bizkaia
+    airports: [BIO]
+    ports: [BIO]
+    fua_id: ES009L2
+    insideairbnb: euskadi
+    deep_dive: false
+    wikipedia:
+      es: Bilbao
+      en: Bilbao
+      de: Bilbao
+      fr: Bilbao
+      it: Bilbao
+      nl: Bilbao
+      pt: Bilbau
+    aliases: []
+
+  - slug: zaragoza
+    name: Zaragoza
+    ine_mun: "50297"
+    ine_prov: "50"
+    ine_ccaa: "02"
+    ccaa_name: Aragón
+    province_name: Zaragoza
+    airports: [ZAZ]
+    ports: []
+    fua_id: ES005L2
+    insideairbnb: null
+    deep_dive: false
+    wikipedia:
+      es: Zaragoza
+      en: Zaragoza
+      de: Saragossa
+      fr: Saragosse
+      it: Saragozza
+      nl: Zaragoza
+      pt: Saragoça
+    aliases: [Saragossa]

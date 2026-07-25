@@ -1,0 +1,5 @@
+data/history/** linguist-generated=true
+data/derived/** linguist-generated=true
+data/geo/** linguist-generated=true
+*.csv text eol=lf
+*.json text eol=lf

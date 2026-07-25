@@ -1,0 +1,63 @@
+# Four interpretable sub-indices instead of one opaque crash probability.
+#
+# Each component is standardised against its own history, then oriented by the
+# metric's `direction` in metrics.yml so that positive always means "hotter".
+# An index is the weighted mean of the components that are actually available;
+# below `min_components` it reports insufficient data rather than guessing.
+
+version: indices-v1
+frozen_at: "2026-07-25"
+zscore_min_observations: 24
+zscore_clip: 4.0
+
+indices:
+  demand_momentum:
+    label: Demand momentum
+    question: Is underlying demand strengthening?
+    min_components: 2
+    components:
+      - {metric: affiliations, transform: yoy, weight: 1.2}
+      - {metric: unemployment_registered, transform: yoy, weight: 1.2}
+      - {metric: contracts_registered, transform: yoy, weight: 0.8}
+      - {metric: population_padron, transform: yoy, weight: 1.0}
+      - {metric: property_transfers, transform: yoy, weight: 0.8}
+      - {metric: airport_flights, transform: yoy, weight: 0.6}
+      - {metric: wiki_city_attention, transform: yoy, weight: 0.4}
+
+  housing_pressure:
+    label: Housing pressure
+    question: Is demand outrunning the housing available?
+    min_components: 2
+    components:
+      - {metric: rent_reference, transform: yoy, weight: 1.3}
+      - {metric: appraised_value, transform: yoy, weight: 1.0}
+      - {metric: house_price_index, transform: yoy, weight: 1.0}
+      - {metric: housing_transactions, transform: per_1000_dwellings, weight: 0.8}
+      - {metric: tourist_dwellings, transform: per_1000_dwellings, weight: 0.8}
+      - {metric: hotel_occupancy_rate, transform: level, weight: 0.5}
+      - {metric: str_listings, transform: per_1000_dwellings, weight: 0.6}
+
+  supply_response:
+    label: Supply response
+    question: Is supply catching up?
+    min_components: 2
+    components:
+      - {metric: housing_starts, transform: yoy, weight: 1.2}
+      - {metric: housing_completions, transform: yoy, weight: 1.0}
+      - {metric: dwelling_stock, transform: yoy, weight: 0.8}
+      - {metric: locales_openings, transform: yoy, weight: 0.4}
+
+  distress:
+    label: Distress
+    question: Is an orderly slowdown turning into financial stress?
+    min_components: 2
+    components:
+      - {metric: foreclosures, transform: yoy, weight: 1.3}
+      - {metric: evictions, transform: yoy, weight: 1.3}
+      - {metric: auctions_realestate, transform: yoy, weight: 0.9}
+      - {metric: unemployment_registered, transform: yoy, weight: 1.0}
+      - {metric: insolvencies, transform: yoy, weight: 0.8}
+      - {metric: company_dissolutions, transform: yoy, weight: 0.6}
+      - {metric: euribor_12m, transform: change_12, weight: 0.7}
+      - {metric: wiki_hardship_index, transform: yoy, weight: 0.5}
+      - {metric: locales_closures, transform: yoy, weight: 0.5}

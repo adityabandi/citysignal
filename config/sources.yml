@@ -1,0 +1,225 @@
+# Source registry. `redistribute: false` means we commit derived aggregates only,
+# never the source's rows. `kind` separates official statistics from research and
+# commercial products so the site can label evidence honestly.
+
+sources:
+  ine:
+    publisher: Instituto Nacional de Estadística
+    license: INE reuse conditions (attribution)
+    attribution: "Source: INE (ine.es)"
+    docs_url: https://ine.es/dyngs/DAB/index.htm?cid=1100
+    kind: official
+    cadence: monthly
+    max_age_days: 120
+    redistribute: true
+
+  mivau:
+    publisher: Ministerio de Vivienda y Agenda Urbana
+    license: Reuse permitted (datos.gob.es, attribution)
+    attribution: "Source: MIVAU / datos.gob.es"
+    docs_url: https://www.mivau.gob.es/vivienda/estadisticas
+    kind: official
+    cadence: quarterly
+    max_age_days: 270
+    redistribute: true
+
+  sepe:
+    publisher: Servicio Público de Empleo Estatal
+    license: Reuse permitted (attribution)
+    attribution: "Source: SEPE"
+    docs_url: https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html
+    kind: official
+    cadence: monthly
+    max_age_days: 75
+    redistribute: true
+
+  segsocial:
+    publisher: Seguridad Social
+    license: Reuse permitted (attribution)
+    attribution: "Source: Seguridad Social"
+    docs_url: https://www.seg-social.es/wps/portal/wss/internet/EstadisticasPresupuestosEstudios
+    kind: official
+    cadence: monthly
+    max_age_days: 75
+    redistribute: true
+
+  bde:
+    publisher: Banco de España
+    license: Reuse permitted (attribution)
+    attribution: "Source: Banco de España"
+    docs_url: https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html
+    kind: official
+    cadence: monthly
+    max_age_days: 75
+    redistribute: true
+
+  aena:
+    publisher: Aena
+    license: Reuse permitted (attribution)
+    attribution: "Source: Aena"
+    docs_url: https://www.aena.es/es/estadisticas/inicio.html
+    kind: official
+    cadence: monthly
+    max_age_days: 75
+    redistribute: true
+
+  eurocontrol:
+    publisher: EUROCONTROL
+    license: EUROCONTROL open data terms (attribution, non-commercial research)
+    attribution: "Source: EUROCONTROL Aviation Intelligence Portal"
+    docs_url: https://ansperformance.eu/data/
+    kind: official
+    cadence: daily
+    max_age_days: 30
+    redistribute: false
+
+  puertos:
+    publisher: Puertos del Estado
+    license: Reuse permitted (attribution)
+    attribution: "Source: Puertos del Estado"
+    docs_url: https://www.puertos.es/es-es/estadisticas
+    kind: official
+    cadence: monthly
+    max_age_days: 120
+    redistribute: true
+
+  insideairbnb:
+    publisher: Inside Airbnb
+    license: CC BY 4.0 (independent research project)
+    attribution: "Source: Inside Airbnb (insideairbnb.com), a non-official research dataset"
+    docs_url: https://insideairbnb.com/data-assumptions/
+    kind: research
+    cadence: quarterly
+    max_age_days: 210
+    redistribute: false
+    notes: >
+      Scraped snapshots, not a register. Listings are not dwellings and not all
+      listings are active. Always shown beside the official INE tourist-dwelling
+      series rather than in place of it.
+
+  cgpj:
+    publisher: Consejo General del Poder Judicial
+    license: Reuse permitted (attribution)
+    attribution: "Source: CGPJ, Estadística Judicial"
+    docs_url: https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/
+    kind: official
+    cadence: quarterly
+    max_age_days: 210
+    redistribute: true
+
+  boe_subastas:
+    publisher: Agencia Estatal Boletín Oficial del Estado
+    license: Reuse permitted (attribution)
+    attribution: "Source: BOE, Portal de Subastas"
+    docs_url: https://www.boe.es/datosabiertos/
+    kind: official
+    cadence: monthly
+    max_age_days: 45
+    redistribute: true
+    enabled: false
+    notes: >
+      Not collected. Judicial property auctions have no open-data API; the only
+      route is the Portal de Subastas search, which is CAPTCHA-gated by IP —
+      a fresh client is challenged on its first request. Working around bot
+      detection is out of scope, so `auctions_realestate` stays unpopulated and
+      the distress index runs without it rather than on invented numbers. The
+      metric stays declared so the gap is visible instead of forgotten.
+
+  borme:
+    publisher: Registro Mercantil / BOE
+    license: Reuse permitted (attribution)
+    attribution: "Source: BORME (boe.es)"
+    docs_url: https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf
+    kind: official
+    cadence: monthly
+    max_age_days: 45
+    redistribute: true
+
+  wikipedia:
+    publisher: Wikimedia Foundation
+    license: CC0 (pageview data)
+    attribution: "Source: Wikimedia REST API pageviews"
+    docs_url: https://wikimedia.org/api/rest_v1/
+    kind: research
+    cadence: monthly
+    max_age_days: 45
+    redistribute: true
+    notes: >
+      Attention, not demand. Pageviews respond to news and seasonality as well as
+      to intent; the lead-lag lab publishes whether each basket actually leads an
+      observable outcome, and demotes it when it stops.
+
+  gdelt:
+    publisher: The GDELT Project
+    license: Open, attribution requested
+    attribution: "Source: The GDELT Project (gdeltproject.org)"
+    docs_url: https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/
+    kind: research
+    cadence: monthly
+    max_age_days: 45
+    redistribute: true
+    notes: News attention and tone. Never mixed into demand measures.
+
+  trends:
+    publisher: Google
+    license: Google Trends API terms (alpha)
+    attribution: "Source: Google Trends"
+    docs_url: https://developers.google.com/search/apis/trends
+    kind: commercial
+    cadence: weekly
+    max_age_days: 21
+    redistribute: false
+    enabled: false
+    notes: >
+      Dormant. The API is alpha and application-gated as of July 2026; the adapter
+      and its query baskets ship disabled and switch on when credentials exist.
+
+  trends_manual:
+    publisher: Google Trends (manual export)
+    license: Google Trends terms — exported by hand, not scraped
+    attribution: "Source: Google Trends, exported manually"
+    docs_url: https://trends.google.com/trends/explore
+    kind: commercial
+    cadence: monthly
+    max_age_days: 120
+    redistribute: false
+    notes: >
+      Hand-exported baskets committed to data/manual/trends/. The unofficial
+      Trends endpoints rate-limit on the first request, which makes them unfit
+      for a scheduled build; a manual export is allowed, reproducible and never
+      breaks the weekly run. Trends rescales 0-100 per request, so each file is
+      its own series and is never compared across files.
+
+  madrid_padron:
+    publisher: Ayuntamiento de Madrid
+    license: Reuse permitted (attribution)
+    attribution: "Source: Ayuntamiento de Madrid, datos.madrid.es"
+    docs_url: https://datos.madrid.es/portal/site/egob
+    kind: official
+    cadence: monthly
+    max_age_days: 75
+    redistribute: true
+
+  madrid_locales:
+    publisher: Ayuntamiento de Madrid
+    license: Reuse permitted (attribution)
+    attribution: "Source: Ayuntamiento de Madrid, Censo de Locales y Actividades"
+    docs_url: https://datos.madrid.es/dataset/200085-0-censo-locales
+    kind: official
+    cadence: monthly
+    max_age_days: 45
+    redistribute: false
+    notes: >
+      Published as a daily-refreshed current state with no history. CitySignal
+      builds history itself as a hash-chained base snapshot plus monthly diffs,
+      and commits only district-level aggregates.
+
+  madrid_vut:
+    publisher: Ayuntamiento de Madrid
+    license: Reuse permitted (attribution)
+    attribution: "Source: Ayuntamiento de Madrid, viviendas de uso turístico"
+    docs_url: https://datos.madrid.es/dataset/300694-0-viviendas-turisticas-geoportal
+    kind: official
+    cadence: monthly
+    max_age_days: 120
+    redistribute: true

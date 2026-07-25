@@ -1,0 +1,47 @@
+# Declared candidate signal → outcome pairs for the lead-lag lab.
+#
+# These are written down BEFORE the correlations are computed. Pairs are never
+# removed because they scored badly — a signal that fails is a published result,
+# not a mistake to hide. New candidates go in a leadlag-v2.yml.
+
+version: leadlag-v1
+frozen_at: "2026-07-25"
+
+max_lag: 12            # periods to search, in the outcome series' own cadence
+holdout_periods: 12    # the tail the lag search never sees
+min_observations: 30
+
+pairs:
+  # Does attention on a city precede people actually arriving?
+  - {signal: wiki_city_attention, outcome: hotel_nights}
+  - {signal: wiki_city_attention, outcome: airport_flights}
+  - {signal: wiki_city_foreign_share, outcome: hotel_travellers}
+  - {signal: wiki_city_attention, outcome: population_padron}
+
+  # Does national hardship attention precede the judicial record of hardship?
+  - {signal: wiki_hardship_index, outcome: foreclosures}
+  - {signal: wiki_hardship_index, outcome: evictions}
+  - {signal: wiki_hardship_index, outcome: unemployment_registered}
+
+  # Does relocation attention precede measured population change?
+  - {signal: wiki_relocation_index, outcome: population_padron}
+
+  # Does news coverage precede or merely report?
+  - {signal: news_volume, outcome: housing_transactions}
+  - {signal: news_tone, outcome: unemployment_registered}
+
+  # Do flights nowcast the slower official passenger and hotel series?
+  - {signal: airport_flights, outcome: airport_passengers}
+  - {signal: airport_flights, outcome: hotel_nights}
+
+  # Do the fast official series lead the slow ones?
+  - {signal: contracts_registered, outcome: affiliations}
+  - {signal: property_transfers, outcome: housing_transactions}
+  - {signal: mortgages_count, outcome: appraised_value}
+  - {signal: euribor_12m, outcome: mortgages_count}
+  - {signal: unemployment_registered, outcome: foreclosures}
+
+  # Does storefront churn lead the labour-market measures, or follow them?
+  - {signal: locales_closures, outcome: unemployment_registered}
+  - {signal: horeca_openings, outcome: affiliations}
+  - {signal: str_listings, outcome: rent_reference}

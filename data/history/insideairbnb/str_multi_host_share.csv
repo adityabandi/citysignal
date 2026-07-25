@@ -1,0 +1,8 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
+str_multi_host_share,mun-07040,municipality,2026-06,69.02,percent,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_multi_host_share,mun-08019,municipality,2026-06,80.462,percent,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_multi_host_share,mun-28079,municipality,2026-06,73.19,percent,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_multi_host_share,mun-29067,municipality,2026-06,77.435,percent,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_multi_host_share,mun-41091,municipality,2026-06,76.192,percent,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_multi_host_share,mun-46250,municipality,2026-06,72.921,percent,insideairbnb,2026-06-30,,2026-07-25,ok,0
+str_multi_host_share,mun-48020,municipality,2026-06,64.978,percent,insideairbnb,2026-06-30,,2026-07-25,ok,0

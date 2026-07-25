@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+node_modules/
+dist/
+.observablehq/
+data/work/
+.DS_Store
+*.duckdb
+.env
