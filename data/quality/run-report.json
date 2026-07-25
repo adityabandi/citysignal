@@ -1,6 +1,6 @@
 {
- "run_id": "33409222e969",
- "finished_at": "2026-07-25T19:09:53+00:00",
+ "run_id": "0966962e8a94",
+ "finished_at": "2026-07-25T19:17:47+00:00",
  "ok": [
   "madrid_vut"
  ],
@@ -9,22 +9,22 @@
  "results": [
   {
    "source_id": "madrid_vut",
-   "status": "ok",
-   "records": 21,
-   "added": 21,
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 1,
-   "skipped_unchanged": 0,
+   "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
    "duration_s": 0.38,
-   "latest_observation": "2026-07",
-   "metrics": [
-    "vut_licensed"
-   ],
-   "notes": []
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   }
  ]
 }

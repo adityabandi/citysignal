@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:10:51+00:00",
+ "generated_at": "2026-07-25T19:20:27+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -21,6 +21,7 @@
   "euribor_12m",
   "evictions",
   "foreclosures",
+  "horeca_stock",
   "hotel_adr",
   "hotel_nights",
   "hotel_occupancy_rate",
@@ -31,10 +32,14 @@
   "housing_starts",
   "insolvencies",
   "land_price",
+  "locales_stock",
+  "locales_vacancy_rate",
   "mortgage_rate_new",
   "mortgages_count",
   "npl_ratio",
+  "padron_district",
   "population_padron",
+  "port_passengers",
   "property_transfers",
   "rent_reference",
   "search_buy_momentum",
@@ -47,6 +52,7 @@
   "tourist_dwelling_places",
   "tourist_dwellings",
   "unemployment_registered",
+  "vehicle_registrations",
   "vut_licensed",
   "wiki_city_attention",
   "wiki_city_foreign_share",
@@ -61,7 +67,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 305,
-  "observations": 13986
+  "series": 402,
+  "observations": 15391
  }
 }

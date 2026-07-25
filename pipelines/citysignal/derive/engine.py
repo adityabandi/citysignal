@@ -135,6 +135,7 @@ class DeriveEngine:
                 k: [{"period": p, "value": v} for p, v in sorted(hist.items())[-SERIES_TAIL:]]
                 for k, hist in histories.items()
             },
+            "districts": self._districts(city),
             "signatures": self.signatures.match(city),
             "leadlag": [r.to_dict() for r in self.lab.evaluate_city(city)],
             "sections": sections,
@@ -212,6 +213,49 @@ class DeriveEngine:
             "max_age_days": health.get("max_age_days"),
             "fresh": self._freshness(latest_period, health.get("max_age_days")),
         }
+
+    def _districts(self, city: City) -> dict[str, Any]:
+        """Sub-city series, for cities that actually publish them.
+
+        Only Madrid does, and only for a handful of measures. A city with no
+        district data gets an empty payload rather than a map interpolated from
+        the municipal total — a coarse map is honest, an invented one is not.
+        """
+        out: dict[str, Any] = {"metrics": {}, "codes": []}
+        codes: set[str] = set()
+
+        for metric_id, meta in self.config.metrics.items():
+            if meta.get("geo_level") != "district":
+                continue
+            series_list = self.store.districts_of(city, metric_id)
+            if not series_list:
+                continue
+
+            per_district: dict[str, Any] = {}
+            for series in series_list:
+                if not series.values:
+                    continue
+                code = series.key.geo_id.rsplit("-", 1)[-1]
+                codes.add(code)
+                periods = sorted(series.values)[-SERIES_TAIL:]
+                latest = periods[-1]
+                per_district[code] = {
+                    "latest": {"period": latest, "value": series.values[latest]},
+                    "yoy": yoy(series.values).get(latest),
+                    "series": [{"period": p, "value": series.values[p]} for p in periods],
+                }
+
+            if per_district:
+                out["metrics"][metric_id] = {
+                    "label": meta.get("label", metric_id),
+                    "plain": (meta.get("plain") or "").strip() or None,
+                    "unit": meta["unit"],
+                    "section": meta.get("section", "other"),
+                    "districts": per_district,
+                }
+
+        out["codes"] = sorted(codes)
+        return out
 
     @staticmethod
     def _freshness(period: str, max_age_days: int | None) -> str:

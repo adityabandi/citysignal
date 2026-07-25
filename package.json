@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "@observablehq/framework": "^1.13.0",
-    "d3": "^7.9.0",
-    "maplibre-gl": "^4.7.1"
+    "d3": "^7.9.0"
   },
   "engines": {
     "node": ">=22"

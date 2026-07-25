@@ -1,0 +1,10 @@
+{
+  "base": {
+    "file": "base-2026-07.csv",
+    "period": "2026-07",
+    "rows": 203483,
+    "sha256": "dbafbf5b173e639c1c6e1c7c1595707ed41694502286e0e28fc942ba9eec0c99",
+    "state_sha256": "a894137dc88ebf48619a1c90d7cdc06fa84bea4424ecd8a29a9da7b459214115"
+  },
+  "diffs": []
+}

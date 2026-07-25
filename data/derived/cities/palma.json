@@ -2593,6 +2593,10 @@
    }
   ]
  },
+ "districts": {
+  "metrics": {},
+  "codes": []
+ },
  "signatures": [
   {
    "archetype_id": "overheating",
@@ -7404,6 +7408,233 @@
     "staleness_days": 25,
     "max_age_days": 75,
     "fresh": "fresh"
+   },
+   {
+    "metric_id": "vehicle_registrations",
+    "label": "New vehicle registrations",
+    "plain": "How many vehicles were newly registered — a fast, keyless read on household and business confidence.",
+    "label_es": "Matriculaciones de vehículos",
+    "unit": "vehicles",
+    "cadence": "monthly",
+    "section": "work",
+    "lag": "leading",
+    "direction": 1,
+    "note": "Counts DGT transaction code 1 (\"Matriculación ordinaria y de ciclomotores\") only — new registrations, not transfers, temporary plates or de-registrations. Madrid province runs an order of magnitude above the others because national fleet, leasing and rental-car registrations concentrate there administratively; that is a real feature of how Spain registers vehicles, not a data error.",
+    "geo_id": "prov-07",
+    "geo_level": "province",
+    "scope_label": "province",
+    "is_city_level": false,
+    "latest": {
+     "period": "2026-06",
+     "value": 4985.0,
+     "yoy": 16.09222170470424
+    },
+    "suspect": false,
+    "outlier_score": 1.18,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2022-07",
+      "value": 3351.0
+     },
+     {
+      "period": "2022-08",
+      "value": 2463.0
+     },
+     {
+      "period": "2022-09",
+      "value": 2438.0
+     },
+     {
+      "period": "2022-10",
+      "value": 2464.0
+     },
+     {
+      "period": "2022-11",
+      "value": 2685.0
+     },
+     {
+      "period": "2022-12",
+      "value": 2280.0
+     },
+     {
+      "period": "2023-01",
+      "value": 2210.0
+     },
+     {
+      "period": "2023-02",
+      "value": 3007.0
+     },
+     {
+      "period": "2023-03",
+      "value": 4054.0
+     },
+     {
+      "period": "2023-04",
+      "value": 3527.0
+     },
+     {
+      "period": "2023-05",
+      "value": 3969.0
+     },
+     {
+      "period": "2023-06",
+      "value": 4064.0
+     },
+     {
+      "period": "2023-07",
+      "value": 3207.0
+     },
+     {
+      "period": "2023-08",
+      "value": 2531.0
+     },
+     {
+      "period": "2023-09",
+      "value": 2409.0
+     },
+     {
+      "period": "2023-10",
+      "value": 2663.0
+     },
+     {
+      "period": "2023-11",
+      "value": 2503.0
+     },
+     {
+      "period": "2023-12",
+      "value": 2354.0
+     },
+     {
+      "period": "2024-01",
+      "value": 2217.0
+     },
+     {
+      "period": "2024-02",
+      "value": 2872.0
+     },
+     {
+      "period": "2024-03",
+      "value": 4174.0
+     },
+     {
+      "period": "2024-04",
+      "value": 3748.0
+     },
+     {
+      "period": "2024-05",
+      "value": 4346.0
+     },
+     {
+      "period": "2024-06",
+      "value": 3750.0
+     },
+     {
+      "period": "2024-07",
+      "value": 3422.0
+     },
+     {
+      "period": "2024-08",
+      "value": 2297.0
+     },
+     {
+      "period": "2024-09",
+      "value": 3040.0
+     },
+     {
+      "period": "2024-10",
+      "value": 3056.0
+     },
+     {
+      "period": "2024-11",
+      "value": 2665.0
+     },
+     {
+      "period": "2024-12",
+      "value": 3158.0
+     },
+     {
+      "period": "2025-01",
+      "value": 2171.0
+     },
+     {
+      "period": "2025-02",
+      "value": 3331.0
+     },
+     {
+      "period": "2025-03",
+      "value": 4383.0
+     },
+     {
+      "period": "2025-04",
+      "value": 4058.0
+     },
+     {
+      "period": "2025-05",
+      "value": 4100.0
+     },
+     {
+      "period": "2025-06",
+      "value": 4294.0
+     },
+     {
+      "period": "2025-07",
+      "value": 4012.0
+     },
+     {
+      "period": "2025-08",
+      "value": 2723.0
+     },
+     {
+      "period": "2025-09",
+      "value": 2802.0
+     },
+     {
+      "period": "2025-10",
+      "value": 3134.0
+     },
+     {
+      "period": "2025-12",
+      "value": 2938.0
+     },
+     {
+      "period": "2026-01",
+      "value": 2240.0
+     },
+     {
+      "period": "2026-02",
+      "value": 2730.0
+     },
+     {
+      "period": "2026-03",
+      "value": 5809.0
+     },
+     {
+      "period": "2026-04",
+      "value": 5443.0
+     },
+     {
+      "period": "2026-05",
+      "value": 4643.0
+     },
+     {
+      "period": "2026-06",
+      "value": 4985.0
+     }
+    ],
+    "source_id": "dgt",
+    "source": {
+     "publisher": null,
+     "license": null,
+     "attribution": null,
+     "kind": "official",
+     "docs_url": null
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": null,
+    "staleness_days": 25,
+    "max_age_days": null,
+    "fresh": "unknown"
    },
    {
     "metric_id": "unemployment_registered",
@@ -12631,5 +12862,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T19:10:51+00:00"
+ "generated_at": "2026-07-25T19:20:27+00:00"
 }

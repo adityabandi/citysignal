@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:10:51+00:00",
+ "generated_at": "2026-07-25T19:20:27+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -245,6 +245,73 @@
    }
   },
   {
+   "attribution": "Source: Ayuntamiento de Madrid, Censo de Locales y Actividades",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://datos.madrid.es/dataset/200085-0-censo-locales",
+   "fresh": true,
+   "geo_level": "district",
+   "kind": "official",
+   "last_checked": "2026-07-25T19:15:34+00:00",
+   "last_error": null,
+   "last_success": "2026-07-25T19:15:34+00:00",
+   "latest_observation": "2026-07",
+   "license": "Reuse permitted (attribution)",
+   "max_age_days": 45,
+   "metrics": [
+    "horeca_stock",
+    "locales_stock",
+    "locales_vacancy_rate"
+   ],
+   "publisher": "Ayuntamiento de Madrid",
+   "source_id": "madrid_locales",
+   "staleness_days": -6,
+   "status": "ok",
+   "declared": {
+    "publisher": "Ayuntamiento de Madrid",
+    "license": "Reuse permitted (attribution)",
+    "attribution": "Source: Ayuntamiento de Madrid, Censo de Locales y Actividades",
+    "docs_url": "https://datos.madrid.es/dataset/200085-0-censo-locales",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 45,
+    "redistribute": false,
+    "notes": "Published as a daily-refreshed current state with no history. CitySignal builds history itself as a hash-chained base snapshot plus monthly diffs, and commits only district-level aggregates.\n"
+   }
+  },
+  {
+   "attribution": "Source: Ayuntamiento de Madrid, datos.madrid.es",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://datos.madrid.es/portal/site/egob",
+   "fresh": true,
+   "geo_level": "district",
+   "kind": "official",
+   "last_checked": "2026-07-25T19:17:44+00:00",
+   "last_error": null,
+   "last_success": "2026-07-25T19:17:44+00:00",
+   "latest_observation": "2026-07",
+   "license": "Reuse permitted (attribution)",
+   "max_age_days": 75,
+   "metrics": [
+    "padron_district"
+   ],
+   "publisher": "Ayuntamiento de Madrid",
+   "source_id": "madrid_padron",
+   "staleness_days": -6,
+   "status": "skipped",
+   "declared": {
+    "publisher": "Ayuntamiento de Madrid",
+    "license": "Reuse permitted (attribution)",
+    "attribution": "Source: Ayuntamiento de Madrid, datos.madrid.es",
+    "docs_url": "https://datos.madrid.es/portal/site/egob",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 75,
+    "redistribute": true
+   }
+  },
+  {
    "attribution": "Source: Ayuntamiento de Madrid, viviendas de uso turístico",
    "cadence": "monthly",
    "consecutive_failures": 0,
@@ -252,9 +319,9 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-25T19:09:53+00:00",
+   "last_checked": "2026-07-25T19:17:47+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:09:53+00:00",
+   "last_success": "2026-07-25T19:17:47+00:00",
    "latest_observation": "2026-07",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 120,
@@ -264,7 +331,7 @@
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_vut",
    "staleness_days": -6,
-   "status": "ok",
+   "status": "skipped",
    "declared": {
     "publisher": "Ayuntamiento de Madrid",
     "license": "Reuse permitted (attribution)",
@@ -310,6 +377,38 @@
     "kind": "official",
     "cadence": "quarterly",
     "max_age_days": 270,
+    "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: Puertos del Estado",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.puertos.es/es-es/estadisticas",
+   "fresh": true,
+   "geo_level": "port",
+   "kind": "official",
+   "last_checked": "2026-07-25T19:15:15+00:00",
+   "last_error": null,
+   "last_success": "2026-07-25T19:15:15+00:00",
+   "latest_observation": "2026-06",
+   "license": "Reuse permitted (attribution)",
+   "max_age_days": 120,
+   "metrics": [
+    "port_passengers"
+   ],
+   "publisher": "Puertos del Estado",
+   "source_id": "puertos",
+   "staleness_days": 25,
+   "status": "ok",
+   "declared": {
+    "publisher": "Puertos del Estado",
+    "license": "Reuse permitted (attribution)",
+    "attribution": "Source: Puertos del Estado",
+    "docs_url": "https://www.puertos.es/es-es/estadisticas",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 120,
     "redistribute": true
    }
   },

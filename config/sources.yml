@@ -160,6 +160,22 @@ sources:
     redistribute: true
     notes: News attention and tone. Never mixed into demand measures.
 
+  dgt:
+    publisher: Dirección General de Tráfico
+    license: Reuse permitted (attribution)
+    attribution: "Source: DGT (dgt.es)"
+    docs_url: https://www.dgt.es/menusecundario/dgt-en-cifras/
+    kind: official
+    cadence: monthly
+    max_age_days: 90
+    redistribute: true
+    notes: >
+      Provincial vehicle-registration counts built from DGT's monthly
+      microdata export (one row per registration transaction nationwide),
+      aggregated to province by this adapter since DGT's own pre-aggregated
+      tables are annual only. A clean, keyless consumer-confidence coincident
+      indicator.
+
   trends:
     publisher: Google
     license: Google Trends API terms (alpha)

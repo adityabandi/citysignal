@@ -486,3 +486,22 @@ table.cs-table td.cs-num { font-variant-numeric: tabular-nums; }
 .regime-affordability_improving { color: var(--cs-expansion); }
 .regime-supply_catching_up { color: var(--cs-expansion); }
 .regime-cooling_reversing { color: var(--cs-orderly); }
+
+/* Choropleth hover label. The map is plain SVG, so this is the only chrome it
+   needs. */
+.cs-map-tip {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  background: var(--cs-surface-raised);
+  border: 1px solid var(--cs-rule);
+  border-radius: 3px;
+  color: var(--cs-ink-2);
+  font-size: 0.75rem;
+  line-height: 1.45;
+  padding: 0.45rem 0.6rem;
+  white-space: nowrap;
+  z-index: 5;
+}
+.cs-map-tip strong { color: var(--cs-ink); }

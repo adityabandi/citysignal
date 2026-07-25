@@ -657,6 +657,26 @@ metrics:
     lag: leading
     range: [0, 100]
 
+  vehicle_registrations:
+    label: New vehicle registrations
+    plain: How many vehicles were newly registered — a fast, keyless read on household and business confidence.
+    label_es: Matriculaciones de vehículos
+    unit: vehicles
+    cadence: monthly
+    geo_level: province
+    source_id: dgt
+    section: work
+    direction: 1
+    lag: leading
+    range: [0, 200000]
+    note: >
+      Counts DGT transaction code 1 ("Matriculación ordinaria y de
+      ciclomotores") only — new registrations, not transfers, temporary
+      plates or de-registrations. Madrid province runs an order of magnitude
+      above the others because national fleet, leasing and rental-car
+      registrations concentrate there administratively; that is a real
+      feature of how Spain registers vehicles, not a data error.
+
   # ------------------------------------------------------------ Madrid deep dive
   padron_district:
     label: Population by district (monthly)

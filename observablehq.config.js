@@ -27,6 +27,7 @@ export default {
         path: `/cities/${slug}`
       }))
     },
+    {name: "Madrid districts", path: "/madrid-map"},
     {name: "Signals", path: "/signals"},
     {name: "Sources", path: "/sources"},
     {name: "Method", path: "/methodology"}

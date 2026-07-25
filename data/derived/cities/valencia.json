@@ -2606,6 +2606,10 @@
    }
   ]
  },
+ "districts": {
+  "metrics": {},
+  "codes": []
+ },
  "signatures": [
   {
    "archetype_id": "overheating",
@@ -3014,6 +3018,83 @@
    "signatures_version": "signatures-v2"
   },
   {
+   "archetype_id": "tourism_shock",
+   "label": "Tourism shock",
+   "summary": "Visitor demand moves independently of the local economy. Flights, hotel nights and port arrivals turn together while employment and housing lag behind — a shock arriving from outside the city rather than inside it.",
+   "firing": 1,
+   "available": 5,
+   "total": 9,
+   "coverage": 0.556,
+   "score": 0.2,
+   "insufficient_coverage": false,
+   "signals_firing": [
+    {
+     "metric_id": "port_passengers",
+     "label": "Port passengers",
+     "expect": "down",
+     "z": -1.0694,
+     "raw": -13.915,
+     "unit": "passengers",
+     "period": "2026-06",
+     "geo_level": "port",
+     "source_id": "puertos"
+    }
+   ],
+   "signals_against": [
+    {
+     "metric_id": "airport_flights",
+     "label": "Airport flights (daily traffic)",
+     "expect": "down",
+     "z": -0.038,
+     "raw": 6.0184,
+     "unit": "flights",
+     "period": "2026-06",
+     "geo_level": "airport",
+     "source_id": "eurocontrol"
+    },
+    {
+     "metric_id": "airport_passengers",
+     "label": "Airport passengers",
+     "expect": "down",
+     "z": -0.2016,
+     "raw": 8.7647,
+     "unit": "passengers",
+     "period": "2026-06",
+     "geo_level": "airport",
+     "source_id": "aena"
+    },
+    {
+     "metric_id": "hotel_revpar",
+     "label": "Revenue per available room",
+     "expect": "down",
+     "z": 0.7471,
+     "raw": 15.375,
+     "unit": "eur",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "ine"
+    },
+    {
+     "metric_id": "wiki_city_foreign_share",
+     "label": "Non-Spanish share of city article views",
+     "expect": "down",
+     "z": -0.1101,
+     "raw": 0.8831,
+     "unit": "percent",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "wikipedia"
+    }
+   ],
+   "signals_unavailable": [
+    "horeca_closures",
+    "hotel_nights",
+    "hotel_occupancy_rate",
+    "hotel_travellers"
+   ],
+   "signatures_version": "signatures-v2"
+  },
+  {
    "archetype_id": "orderly_cooling",
    "label": "Orderly cooling",
    "summary": "Heat leaving the market without anyone being forced. Prices and transactions decelerate while employment holds and the distress measures stay flat. This is the benign case, and it is worth being able to name it.",
@@ -3086,72 +3167,6 @@
     "housing_transactions",
     "locales_vacancy_rate",
     "str_listings"
-   ],
-   "signatures_version": "signatures-v2"
-  },
-  {
-   "archetype_id": "tourism_shock",
-   "label": "Tourism shock",
-   "summary": "Visitor demand moves independently of the local economy. Flights, hotel nights and port arrivals turn together while employment and housing lag behind — a shock arriving from outside the city rather than inside it.",
-   "firing": 0,
-   "available": 4,
-   "total": 9,
-   "coverage": 0.444,
-   "score": 0.0,
-   "insufficient_coverage": false,
-   "signals_firing": [],
-   "signals_against": [
-    {
-     "metric_id": "airport_flights",
-     "label": "Airport flights (daily traffic)",
-     "expect": "down",
-     "z": -0.038,
-     "raw": 6.0184,
-     "unit": "flights",
-     "period": "2026-06",
-     "geo_level": "airport",
-     "source_id": "eurocontrol"
-    },
-    {
-     "metric_id": "airport_passengers",
-     "label": "Airport passengers",
-     "expect": "down",
-     "z": -0.2016,
-     "raw": 8.7647,
-     "unit": "passengers",
-     "period": "2026-06",
-     "geo_level": "airport",
-     "source_id": "aena"
-    },
-    {
-     "metric_id": "hotel_revpar",
-     "label": "Revenue per available room",
-     "expect": "down",
-     "z": 0.7471,
-     "raw": 15.375,
-     "unit": "eur",
-     "period": "2026-06",
-     "geo_level": "municipality",
-     "source_id": "ine"
-    },
-    {
-     "metric_id": "wiki_city_foreign_share",
-     "label": "Non-Spanish share of city article views",
-     "expect": "down",
-     "z": -0.1101,
-     "raw": 0.8831,
-     "unit": "percent",
-     "period": "2026-06",
-     "geo_level": "municipality",
-     "source_id": "wikipedia"
-    }
-   ],
-   "signals_unavailable": [
-    "horeca_closures",
-    "hotel_nights",
-    "hotel_occupancy_rate",
-    "hotel_travellers",
-    "port_passengers"
    ],
    "signatures_version": "signatures-v2"
   },
@@ -7462,6 +7477,233 @@
     "fresh": "fresh"
    },
    {
+    "metric_id": "vehicle_registrations",
+    "label": "New vehicle registrations",
+    "plain": "How many vehicles were newly registered — a fast, keyless read on household and business confidence.",
+    "label_es": "Matriculaciones de vehículos",
+    "unit": "vehicles",
+    "cadence": "monthly",
+    "section": "work",
+    "lag": "leading",
+    "direction": 1,
+    "note": "Counts DGT transaction code 1 (\"Matriculación ordinaria y de ciclomotores\") only — new registrations, not transfers, temporary plates or de-registrations. Madrid province runs an order of magnitude above the others because national fleet, leasing and rental-car registrations concentrate there administratively; that is a real feature of how Spain registers vehicles, not a data error.",
+    "geo_id": "prov-46",
+    "geo_level": "province",
+    "scope_label": "province",
+    "is_city_level": false,
+    "latest": {
+     "period": "2026-06",
+     "value": 6861.0,
+     "yoy": -4.7612437534702945
+    },
+    "suspect": false,
+    "outlier_score": 0.91,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2022-07",
+      "value": 4444.0
+     },
+     {
+      "period": "2022-08",
+      "value": 3120.0
+     },
+     {
+      "period": "2022-09",
+      "value": 3983.0
+     },
+     {
+      "period": "2022-10",
+      "value": 4316.0
+     },
+     {
+      "period": "2022-11",
+      "value": 5021.0
+     },
+     {
+      "period": "2022-12",
+      "value": 4372.0
+     },
+     {
+      "period": "2023-01",
+      "value": 4044.0
+     },
+     {
+      "period": "2023-02",
+      "value": 4046.0
+     },
+     {
+      "period": "2023-03",
+      "value": 4908.0
+     },
+     {
+      "period": "2023-04",
+      "value": 3736.0
+     },
+     {
+      "period": "2023-05",
+      "value": 5006.0
+     },
+     {
+      "period": "2023-06",
+      "value": 4664.0
+     },
+     {
+      "period": "2023-07",
+      "value": 4509.0
+     },
+     {
+      "period": "2023-08",
+      "value": 3308.0
+     },
+     {
+      "period": "2023-09",
+      "value": 4018.0
+     },
+     {
+      "period": "2023-10",
+      "value": 5208.0
+     },
+     {
+      "period": "2023-11",
+      "value": 4708.0
+     },
+     {
+      "period": "2023-12",
+      "value": 4318.0
+     },
+     {
+      "period": "2024-01",
+      "value": 3988.0
+     },
+     {
+      "period": "2024-02",
+      "value": 4165.0
+     },
+     {
+      "period": "2024-03",
+      "value": 3900.0
+     },
+     {
+      "period": "2024-04",
+      "value": 4545.0
+     },
+     {
+      "period": "2024-05",
+      "value": 4943.0
+     },
+     {
+      "period": "2024-06",
+      "value": 4618.0
+     },
+     {
+      "period": "2024-07",
+      "value": 5554.0
+     },
+     {
+      "period": "2024-08",
+      "value": 3209.0
+     },
+     {
+      "period": "2024-09",
+      "value": 4552.0
+     },
+     {
+      "period": "2024-10",
+      "value": 4788.0
+     },
+     {
+      "period": "2024-11",
+      "value": 5210.0
+     },
+     {
+      "period": "2024-12",
+      "value": 7523.0
+     },
+     {
+      "period": "2025-01",
+      "value": 7143.0
+     },
+     {
+      "period": "2025-02",
+      "value": 8017.0
+     },
+     {
+      "period": "2025-03",
+      "value": 7806.0
+     },
+     {
+      "period": "2025-04",
+      "value": 7224.0
+     },
+     {
+      "period": "2025-05",
+      "value": 7581.0
+     },
+     {
+      "period": "2025-06",
+      "value": 7204.0
+     },
+     {
+      "period": "2025-07",
+      "value": 7466.0
+     },
+     {
+      "period": "2025-08",
+      "value": 4000.0
+     },
+     {
+      "period": "2025-09",
+      "value": 6241.0
+     },
+     {
+      "period": "2025-10",
+      "value": 6574.0
+     },
+     {
+      "period": "2025-12",
+      "value": 5485.0
+     },
+     {
+      "period": "2026-01",
+      "value": 4910.0
+     },
+     {
+      "period": "2026-02",
+      "value": 5471.0
+     },
+     {
+      "period": "2026-03",
+      "value": 5879.0
+     },
+     {
+      "period": "2026-04",
+      "value": 5468.0
+     },
+     {
+      "period": "2026-05",
+      "value": 6253.0
+     },
+     {
+      "period": "2026-06",
+      "value": 6861.0
+     }
+    ],
+    "source_id": "dgt",
+    "source": {
+     "publisher": null,
+     "license": null,
+     "attribution": null,
+     "kind": "official",
+     "docs_url": null
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": null,
+    "staleness_days": 25,
+    "max_age_days": null,
+    "fresh": "unknown"
+   },
+   {
     "metric_id": "unemployment_registered",
     "label": "Registered unemployment",
     "plain": "How many people are signed on as unemployed at the job office.",
@@ -9028,6 +9270,213 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-07-25T18:35:18+00:00",
+    "staleness_days": 25,
+    "max_age_days": 120,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "port_passengers",
+    "label": "Port passengers",
+    "plain": "How many passengers came through the port, including cruise arrivals.",
+    "label_es": null,
+    "unit": "passengers",
+    "cadence": "monthly",
+    "section": "tourism",
+    "lag": "coincident",
+    "direction": 1,
+    "note": null,
+    "geo_id": "port-VLC",
+    "geo_level": "port",
+    "scope_label": "port",
+    "is_city_level": false,
+    "latest": {
+     "period": "2026-06",
+     "value": 156116.0,
+     "yoy": -13.915004604330829
+    },
+    "suspect": false,
+    "outlier_score": 0.46,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2023-01",
+      "value": 51663.0
+     },
+     {
+      "period": "2023-02",
+      "value": 45080.0
+     },
+     {
+      "period": "2023-03",
+      "value": 58374.0
+     },
+     {
+      "period": "2023-04",
+      "value": 114147.0
+     },
+     {
+      "period": "2023-05",
+      "value": 157163.0
+     },
+     {
+      "period": "2023-06",
+      "value": 184014.0
+     },
+     {
+      "period": "2023-07",
+      "value": 194162.0
+     },
+     {
+      "period": "2023-08",
+      "value": 229065.0
+     },
+     {
+      "period": "2023-09",
+      "value": 167942.0
+     },
+     {
+      "period": "2023-10",
+      "value": 194781.0
+     },
+     {
+      "period": "2023-11",
+      "value": 88491.0
+     },
+     {
+      "period": "2023-12",
+      "value": 78606.0
+     },
+     {
+      "period": "2024-01",
+      "value": 75337.0
+     },
+     {
+      "period": "2024-02",
+      "value": 52098.0
+     },
+     {
+      "period": "2024-03",
+      "value": 84038.0
+     },
+     {
+      "period": "2024-04",
+      "value": 130463.0
+     },
+     {
+      "period": "2024-05",
+      "value": 150595.0
+     },
+     {
+      "period": "2024-06",
+      "value": 175923.0
+     },
+     {
+      "period": "2024-07",
+      "value": 196119.0
+     },
+     {
+      "period": "2024-08",
+      "value": 270024.0
+     },
+     {
+      "period": "2024-09",
+      "value": 163804.0
+     },
+     {
+      "period": "2024-10",
+      "value": 162591.0
+     },
+     {
+      "period": "2024-11",
+      "value": 69104.0
+     },
+     {
+      "period": "2024-12",
+      "value": 76286.0
+     },
+     {
+      "period": "2025-01",
+      "value": 69434.0
+     },
+     {
+      "period": "2025-02",
+      "value": 48717.0
+     },
+     {
+      "period": "2025-03",
+      "value": 72051.0
+     },
+     {
+      "period": "2025-04",
+      "value": 154238.0
+     },
+     {
+      "period": "2025-05",
+      "value": 151777.0
+     },
+     {
+      "period": "2025-06",
+      "value": 181351.0
+     },
+     {
+      "period": "2025-07",
+      "value": 218576.0
+     },
+     {
+      "period": "2025-08",
+      "value": 245933.0
+     },
+     {
+      "period": "2025-09",
+      "value": 174795.0
+     },
+     {
+      "period": "2025-10",
+      "value": 156480.0
+     },
+     {
+      "period": "2025-11",
+      "value": 94251.0
+     },
+     {
+      "period": "2025-12",
+      "value": 93195.0
+     },
+     {
+      "period": "2026-01",
+      "value": 77777.0
+     },
+     {
+      "period": "2026-02",
+      "value": 53644.0
+     },
+     {
+      "period": "2026-03",
+      "value": 76474.0
+     },
+     {
+      "period": "2026-04",
+      "value": 122360.0
+     },
+     {
+      "period": "2026-05",
+      "value": 125935.0
+     },
+     {
+      "period": "2026-06",
+      "value": 156116.0
+     }
+    ],
+    "source_id": "puertos",
+    "source": {
+     "publisher": "Puertos del Estado",
+     "license": "Reuse permitted (attribution)",
+     "attribution": "Source: Puertos del Estado",
+     "kind": "official",
+     "docs_url": "https://www.puertos.es/es-es/estadisticas"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-25T19:15:15+00:00",
     "staleness_days": 25,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -13520,5 +13969,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T19:10:50+00:00"
+ "generated_at": "2026-07-25T19:20:26+00:00"
 }
