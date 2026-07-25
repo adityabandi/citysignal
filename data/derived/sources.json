@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:28:36+00:00",
+ "generated_at": "2026-07-25T19:40:01+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -224,6 +224,7 @@
    "staleness_days": 25,
    "status": "ok",
    "declared": {
+    "enabled": false,
     "publisher": "The GDELT Project",
     "license": "Open, attribution requested",
     "attribution": "Source: The GDELT Project (gdeltproject.org)",
@@ -232,7 +233,7 @@
     "cadence": "monthly",
     "max_age_days": 45,
     "redistribute": true,
-    "notes": "News attention and tone. Never mixed into demand measures."
+    "notes": "Collected but NOT published, pending verification. The adapter runs and returns plausible numbers, but coverage differs per metric without a stated reason — housing volume landed five cities, tone a different five, total volume six — which is the shape of intermittent fetch failures being absorbed rather than of a rule about what is measurable. Barcelona and Sevilla also swap rank mid-series, which is not obviously real. News attention is genuinely hard here: \"Valencia\" is also a city in Venezuela and \"Malaga\" one in Colombia, so a plausible-looking series of the wrong city is worse than no series. The history stays in the repository so the question can be settled; nothing reaches the site until it is.\n"
    }
   },
   {

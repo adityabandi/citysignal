@@ -150,6 +150,7 @@ sources:
       observable outcome, and demotes it when it stops.
 
   gdelt:
+    enabled: false
     publisher: The GDELT Project
     license: Open, attribution requested
     attribution: "Source: The GDELT Project (gdeltproject.org)"
@@ -158,7 +159,17 @@ sources:
     cadence: monthly
     max_age_days: 45
     redistribute: true
-    notes: News attention and tone. Never mixed into demand measures.
+    notes: >
+      Collected but NOT published, pending verification. The adapter runs and
+      returns plausible numbers, but coverage differs per metric without a stated
+      reason — housing volume landed five cities, tone a different five, total
+      volume six — which is the shape of intermittent fetch failures being
+      absorbed rather than of a rule about what is measurable. Barcelona and
+      Sevilla also swap rank mid-series, which is not obviously real.
+      News attention is genuinely hard here: "Valencia" is also a city in
+      Venezuela and "Malaga" one in Colombia, so a plausible-looking series of
+      the wrong city is worse than no series. The history stays in the repository
+      so the question can be settled; nothing reaches the site until it is.
 
   dgt:
     publisher: Dirección General de Tráfico
