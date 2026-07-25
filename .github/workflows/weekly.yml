@@ -68,11 +68,26 @@ jobs:
           if git diff --cached --quiet; then
             echo "committed=false" >> "$GITHUB_OUTPUT"
             echo "No data changed this run."
-          else
-            git commit -m "data: weekly refresh $(date -u +%F)"
-            git push
-            echo "committed=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+          git commit -m "data: weekly refresh $(date -u +%F)"
+
+          # Fetching every source takes many minutes, so main can move while this
+          # job runs. Everything under data/ is regenerated from scratch each run,
+          # so on a collision the freshly generated version is the correct one —
+          # `-X theirs` keeps the commit being replayed. Any code change that
+          # landed meanwhile is preserved, because this commit never touches code.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "committed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — reconciling with origin/main"
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; exit 1; }
+          done
+          echo "could not push after 3 attempts"
+          exit 1
 
       - name: Sync failure issues
         if: always()
