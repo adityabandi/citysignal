@@ -9,6 +9,7 @@ metrics:
   # ---------------------------------------------------------------- population
   population_padron:
     label: Population (padrón)
+    plain: How many people are officially registered as living in the city.
     label_es: Población (padrón)
     unit: persons
     cadence: annual
@@ -20,6 +21,7 @@ metrics:
     range: [1000, 4000000]
   population_foreign_share:
     label: Foreign-national share
+    plain: What share of registered residents hold a foreign nationality.
     unit: percent
     cadence: annual
     geo_level: municipality
@@ -30,6 +32,7 @@ metrics:
     range: [0, 80]
   net_migration:
     label: Net migration
+    plain: People moving in minus people moving out.
     unit: persons
     cadence: annual
     geo_level: municipality
@@ -42,6 +45,7 @@ metrics:
   # ------------------------------------------------------------------- housing
   rent_reference:
     label: Reference rent
+    plain: What a square metre of rented housing costs per month, from the government's rent index.
     label_es: Precio de referencia del alquiler
     unit: eur_m2_month
     cadence: annual
@@ -53,6 +57,7 @@ metrics:
     range: [1, 60]
   dwelling_stock:
     label: Dwelling stock
+    plain: How many homes exist in total.
     unit: dwellings
     cadence: annual
     geo_level: province
@@ -69,6 +74,7 @@ metrics:
       on it inherit that scope and are labelled accordingly.
   housing_transactions:
     label: Housing transactions
+    plain: How many homes changed hands.
     unit: transactions
     cadence: quarterly
     geo_level: province
@@ -85,6 +91,7 @@ metrics:
       The metric stays declared so the gap is visible rather than forgotten.
   appraised_value:
     label: Appraised housing value
+    plain: What valuers say a square metre of housing is worth — the number banks lend against.
     unit: eur_m2
     cadence: quarterly
     geo_level: province
@@ -95,6 +102,7 @@ metrics:
     range: [200, 8000]
   land_price:
     label: Urban land price
+    plain: What building land costs per square metre. It moves before construction does.
     unit: eur_m2
     cadence: quarterly
     geo_level: province
@@ -105,6 +113,7 @@ metrics:
     range: [10, 5000]
   housing_starts:
     label: Housing starts
+    plain: How many homes builders began. The earliest signal that supply is coming.
     unit: dwellings
     cadence: quarterly
     geo_level: province
@@ -115,6 +124,7 @@ metrics:
     range: [0, 60000]
   housing_completions:
     label: Housing completions
+    plain: How many homes were finished and can actually be lived in.
     unit: dwellings
     cadence: quarterly
     geo_level: province
@@ -125,6 +135,7 @@ metrics:
     range: [0, 60000]
   house_price_index:
     label: House price index
+    plain: The official measure of how house prices are moving, set to 100 in a base year.
     unit: index
     cadence: quarterly
     geo_level: ccaa
@@ -135,6 +146,7 @@ metrics:
     range: [30, 400]
   property_transfers:
     label: Property transfers (registered)
+    plain: How many properties were legally transferred, from the land registry. Faster than the price statistics.
     unit: transactions
     cadence: monthly
     geo_level: province
@@ -145,6 +157,7 @@ metrics:
     range: [0, 40000]
   mortgages_count:
     label: New mortgages on dwellings
+    plain: How many new mortgages were signed on homes.
     unit: mortgages
     cadence: monthly
     geo_level: province
@@ -155,6 +168,7 @@ metrics:
     range: [0, 30000]
   mortgage_amount_avg:
     label: Average mortgage amount
+    plain: The average size of a new mortgage.
     unit: eur
     cadence: monthly
     geo_level: province
@@ -167,6 +181,7 @@ metrics:
   # -------------------------------------------------------------------- labour
   unemployment_registered:
     label: Registered unemployment
+    plain: How many people are signed on as unemployed at the job office.
     label_es: Paro registrado
     unit: persons
     cadence: monthly
@@ -178,6 +193,7 @@ metrics:
     range: [0, 600000]
   contracts_registered:
     label: New contracts registered
+    plain: How many new employment contracts were registered. Hiring shows up here first.
     unit: contracts
     cadence: monthly
     geo_level: municipality
@@ -188,6 +204,7 @@ metrics:
     range: [0, 400000]
   affiliations:
     label: Social Security affiliations
+    plain: How many people are paying into social security — the closest thing to a live headcount of who is working.
     unit: persons
     cadence: monthly
     geo_level: province
@@ -200,6 +217,7 @@ metrics:
   # ------------------------------------------------------------------- tourism
   hotel_travellers:
     label: Hotel travellers
+    plain: How many guests checked into hotels.
     unit: persons
     cadence: monthly
     geo_level: municipality
@@ -210,6 +228,7 @@ metrics:
     range: [0, 2000000]
   hotel_nights:
     label: Hotel overnight stays
+    plain: How many nights guests actually stayed. Catches longer trips that guest counts miss.
     unit: nights
     cadence: monthly
     geo_level: municipality
@@ -220,6 +239,7 @@ metrics:
     range: [0, 6000000]
   hotel_occupancy_rate:
     label: Hotel occupancy rate
+    plain: What share of hotel rooms were filled.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -230,6 +250,7 @@ metrics:
     range: [0, 100]
   hotel_adr:
     label: Average daily rate
+    plain: The average price paid for a hotel room per night.
     unit: eur
     cadence: monthly
     geo_level: municipality
@@ -240,6 +261,7 @@ metrics:
     range: [10, 600]
   hotel_revpar:
     label: Revenue per available room
+    plain: Room revenue per available room — price and occupancy combined, so it falls if either does.
     unit: eur
     cadence: monthly
     geo_level: municipality
@@ -250,6 +272,7 @@ metrics:
     range: [0, 500]
   airport_passengers:
     label: Airport passengers
+    plain: How many passengers passed through the city's airport.
     unit: passengers
     cadence: monthly
     geo_level: airport
@@ -260,6 +283,7 @@ metrics:
     range: [0, 8000000]
   airport_flights:
     label: Airport flights (daily traffic)
+    plain: How many flights the airport handled. Counted daily, so it arrives weeks before passenger figures.
     unit: flights
     cadence: monthly
     geo_level: airport
@@ -270,6 +294,7 @@ metrics:
     range: [0, 60000]
   port_passengers:
     label: Port passengers
+    plain: How many passengers came through the port, including cruise arrivals.
     unit: passengers
     cadence: monthly
     geo_level: port
@@ -282,6 +307,7 @@ metrics:
   # ----------------------------------------------------------- short-term rent
   tourist_dwellings:
     label: Tourist dwellings (official)
+    plain: How many homes are officially registered as tourist lets.
     unit: dwellings
     cadence: quarterly
     geo_level: municipality
@@ -292,6 +318,7 @@ metrics:
     range: [0, 100000]
   tourist_dwelling_places:
     label: Tourist dwelling bed places
+    plain: How many beds those registered tourist lets offer.
     unit: places
     cadence: quarterly
     geo_level: municipality
@@ -302,6 +329,7 @@ metrics:
     range: [0, 500000]
   str_listings:
     label: Airbnb listings (research)
+    plain: How many Airbnb listings are visible in the city. A scraped snapshot, not an official register.
     unit: listings
     cadence: monthly
     geo_level: municipality
@@ -312,6 +340,7 @@ metrics:
     range: [0, 100000]
   str_entire_home_share:
     label: Entire-home share of listings
+    plain: What share of Airbnb listings are whole homes rather than a spare room — whole homes are the ones taken off the long-term market.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -322,6 +351,7 @@ metrics:
     range: [0, 100]
   str_multi_host_share:
     label: Multi-listing host share
+    plain: What share of listings belong to hosts running several. High means professional operators, not people letting a spare room.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -334,6 +364,7 @@ metrics:
   # ------------------------------------------------------------------- credit
   euribor_12m:
     label: Euribor 12-month
+    plain: The interest rate most Spanish variable-rate mortgages are priced off. When this rises, monthly repayments follow.
     unit: percent
     cadence: monthly
     geo_level: nation
@@ -344,6 +375,7 @@ metrics:
     range: [-1.5, 20]
   mortgage_rate_new:
     label: New mortgage rate
+    plain: The interest rate banks are charging on new mortgages.
     unit: percent
     cadence: monthly
     geo_level: nation
@@ -354,6 +386,7 @@ metrics:
     range: [0, 20]
   npl_ratio:
     label: Doubtful loan ratio
+    plain: What share of bank loans are not being repaid. Rises late, after trouble has already happened.
     unit: percent
     cadence: monthly
     geo_level: nation
@@ -366,6 +399,7 @@ metrics:
   # ------------------------------------------------------------------ distress
   foreclosures:
     label: Mortgage foreclosures filed
+    plain: How many times a lender started court proceedings to take a home over unpaid mortgage debt.
     label_es: Ejecuciones hipotecarias
     unit: cases
     cadence: quarterly
@@ -377,6 +411,7 @@ metrics:
     range: [0, 20000]
   evictions:
     label: Evictions carried out
+    plain: How many evictions courts actually carried out.
     label_es: Lanzamientos practicados
     unit: cases
     cadence: quarterly
@@ -396,6 +431,7 @@ metrics:
       revised upward, so treat it as incomplete rather than as a turning point.
   auctions_realestate:
     label: Judicial property auctions
+    plain: How many properties were put up for judicial auction.
     unit: auctions
     cadence: monthly
     geo_level: province
@@ -406,6 +442,7 @@ metrics:
     range: [0, 5000]
   company_incorporations:
     label: Companies incorporated
+    plain: How many new companies were registered.
     unit: companies
     cadence: monthly
     geo_level: province
@@ -416,6 +453,7 @@ metrics:
     range: [0, 12000]
   company_dissolutions:
     label: Companies dissolved
+    plain: How many companies were wound up.
     unit: companies
     cadence: monthly
     geo_level: province
@@ -426,6 +464,7 @@ metrics:
     range: [0, 8000]
   insolvencies:
     label: Insolvency proceedings
+    plain: How many businesses formally went insolvent.
     unit: cases
     cadence: monthly
     geo_level: province
@@ -438,6 +477,7 @@ metrics:
   # ----------------------------------------------------- attention (not demand)
   wiki_city_views:
     label: Wikipedia views, city article (all languages)
+    plain: How many times people read this city's Wikipedia article.
     unit: views
     cadence: monthly
     geo_level: municipality
@@ -448,6 +488,7 @@ metrics:
     range: [0, 20000000]
   wiki_city_foreign_share:
     label: Non-Spanish share of city article views
+    plain: What share of the city's Wikipedia readers are reading in a language other than Spanish — a rough read on interest from abroad.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -458,6 +499,7 @@ metrics:
     range: [0, 100]
   wiki_city_attention:
     label: City attention share
+    plain: How much of Wikipedia's traffic goes to this city, so years can be compared as reading habits change.
     unit: per_million
     cadence: monthly
     geo_level: municipality
@@ -472,6 +514,7 @@ metrics:
       changed, so only the share is comparable across years.
   wiki_hardship_index:
     label: Hardship attention (Euribor, eviction, benefits)
+    plain: How often people look up Euribor, evictions, mortgages and unemployment benefits. Worry, not hardship itself.
     unit: per_million
     cadence: monthly
     geo_level: nation
@@ -482,6 +525,7 @@ metrics:
     range: [0, 10000]
   wiki_relocation_index:
     label: Relocation attention (padrón, NIE, visas)
+    plain: How often people look up residency registration, visas and foreigner ID — the paperwork of moving to Spain.
     unit: per_million
     cadence: monthly
     geo_level: nation
@@ -492,6 +536,7 @@ metrics:
     range: [0, 10000]
   search_rental_pressure:
     label: Rental search pressure
+    plain: How hard people are searching for somewhere to rent here.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -502,6 +547,7 @@ metrics:
     range: [0, 100]
   search_buy_momentum:
     label: Buyer search momentum
+    plain: How hard people are searching to buy here.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -512,6 +558,7 @@ metrics:
     range: [0, 100]
   search_relocation:
     label: Relocation search intent
+    plain: How hard people are searching about moving here.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -520,8 +567,31 @@ metrics:
     direction: 1
     lag: leading
     range: [0, 100]
+  search_room_share:
+    label: Room-vs-flat search spread
+    plain: How often people search for a room compared with a whole flat. Rising means households are compressing — taking a room because a flat is out of reach.
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: trends_manual
+    section: attention
+    direction: -1
+    lag: leading
+    range: [0, 400]
+  search_tenure_switch:
+    label: Buy-vs-rent search spread
+    plain: How often people search to buy compared with to rent. Rising means attention is shifting from renting toward buying.
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: trends_manual
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 400]
   search_hardship:
     label: Household hardship search
+    plain: How hard people are searching for help with money — benefits, debt, eviction.
     unit: index
     cadence: monthly
     geo_level: nation
@@ -532,6 +602,7 @@ metrics:
     range: [0, 100]
   search_travel_intent:
     label: Inbound travel search intent
+    plain: How hard people are searching about visiting.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -542,6 +613,7 @@ metrics:
     range: [0, 100]
   search_commercial_distress:
     label: Business-exit search (traspaso local)
+    plain: How hard people are searching to hand over a business lease, which is how a struggling shop or bar exits.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -553,6 +625,7 @@ metrics:
 
   news_volume:
     label: News coverage volume
+    plain: How much news coverage the city is getting.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -563,6 +636,7 @@ metrics:
     range: [0, 100]
   news_tone:
     label: News coverage tone
+    plain: Whether coverage of the city reads positive or negative.
     unit: tone
     cadence: monthly
     geo_level: municipality
@@ -573,6 +647,7 @@ metrics:
     range: [-25, 25]
   news_housing_volume:
     label: Housing-themed coverage volume
+    plain: How much of the city's coverage is about housing, rents and evictions.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -585,6 +660,7 @@ metrics:
   # ------------------------------------------------------------ Madrid deep dive
   padron_district:
     label: Population by district (monthly)
+    plain: How many people are registered as living in each district of the city.
     unit: persons
     cadence: monthly
     geo_level: district
@@ -595,6 +671,7 @@ metrics:
     range: [1000, 500000]
   locales_stock:
     label: Business premises in use
+    plain: How many business premises are in use.
     unit: premises
     cadence: monthly
     geo_level: district
@@ -605,6 +682,7 @@ metrics:
     range: [0, 60000]
   locales_openings:
     label: Business premises opened
+    plain: How many business premises opened.
     unit: premises
     cadence: monthly
     geo_level: district
@@ -615,6 +693,7 @@ metrics:
     range: [0, 5000]
   locales_closures:
     label: Business premises closed
+    plain: How many business premises closed.
     unit: premises
     cadence: monthly
     geo_level: district
@@ -625,6 +704,7 @@ metrics:
     range: [0, 5000]
   locales_vacancy_rate:
     label: Storefront vacancy rate
+    plain: What share of business premises sit empty — shuttered shopfronts, counted.
     unit: percent
     cadence: monthly
     geo_level: district
@@ -635,6 +715,7 @@ metrics:
     range: [0, 100]
   horeca_openings:
     label: Restaurants and bars opened
+    plain: How many bars, cafés and restaurants opened.
     unit: premises
     cadence: monthly
     geo_level: district
@@ -645,6 +726,7 @@ metrics:
     range: [0, 2000]
   horeca_closures:
     label: Restaurants and bars closed
+    plain: How many bars, cafés and restaurants closed.
     unit: premises
     cadence: monthly
     geo_level: district
@@ -655,6 +737,7 @@ metrics:
     range: [0, 2000]
   horeca_stock:
     label: Restaurants and bars in use
+    plain: How many bars, cafés and restaurants are trading.
     unit: premises
     cadence: monthly
     geo_level: district
@@ -665,6 +748,7 @@ metrics:
     range: [0, 20000]
   vut_licensed:
     label: Licensed tourist dwellings
+    plain: How many homes hold a licence to operate as a tourist let.
     unit: dwellings
     cadence: monthly
     geo_level: district

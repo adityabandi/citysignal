@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T18:35:46+00:00",
+ "generated_at": "2026-07-25T18:59:28+00:00",
  "sources": {
   "aena": {
    "attribution": "Source: Aena",
@@ -226,21 +226,28 @@
   "trends_manual": {
    "attribution": "Source: Google Trends, exported manually",
    "cadence": "monthly",
-   "consecutive_failures": 1,
+   "consecutive_failures": 0,
    "docs_url": "https://trends.google.com/trends/explore",
-   "fresh": false,
+   "fresh": true,
    "geo_level": "municipality",
    "kind": "commercial",
-   "last_checked": "2026-07-25T18:35:32+00:00",
-   "last_error": "no exports found in /home/runner/work/citysignal/citysignal/data/manual/trends. Export a basket from trends.google.com and save it as <metric_id>__<geo_id>.csv — the README there lists the baskets this build expects.",
-   "last_error_type": "AdapterFailure",
+   "last_checked": "2026-07-25T18:59:28+00:00",
+   "last_error": null,
+   "last_error_type": "ValueError",
+   "last_success": "2026-07-25T18:59:28+00:00",
+   "latest_observation": "2026-06",
    "license": "Google Trends terms — exported by hand, not scraped",
    "max_age_days": 120,
-   "metrics": [],
+   "metrics": [
+    "search_buy_momentum",
+    "search_rental_pressure",
+    "search_room_share",
+    "search_tenure_switch"
+   ],
    "publisher": "Google Trends (manual export)",
    "source_id": "trends_manual",
-   "staleness_days": null,
-   "status": "failed"
+   "staleness_days": 25,
+   "status": "ok"
   },
   "wikipedia": {
    "attribution": "Source: Wikimedia REST API pageviews",

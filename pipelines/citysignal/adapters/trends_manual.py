@@ -1,4 +1,4 @@
-"""Google Trends without the API: hand-exported CSVs, read from the repository.
+"""Google Trends without the API: exported baskets, read from the repository.
 
 The official Trends API is alpha and application-gated. The unofficial endpoints
 the scraping libraries use are not a viable substitute for a scheduled build —
@@ -6,23 +6,31 @@ the scraping libraries use are not a viable substitute for a scheduled build —
 and a shared CI runner fares worse. Building the weekly pipeline on that would
 mean a public site whose search layer silently stops updating.
 
-So the search layer takes the honest route. A person exports a basket from
-trends.google.com — which is allowed, reproducible and costs nothing — and drops
-the CSV into `data/manual/trends/`. This adapter reads whatever is there, records
-when each file was exported, and marks the series stale when nobody has refreshed
-it. No scraping, no credentials, no silent failure.
+So the search layer takes the honest route. A basket is exported from
+trends.google.com — which is allowed, reproducible and costs nothing — and lands
+as a CSV in `data/manual/trends/`. This adapter reads whatever is there and marks
+the series stale when nobody has refreshed it. No scraping in the weekly job, no
+credentials, no silent failure.
 
-The important caveat travels with the data: Trends rescales its 0–100 index per
-request, so two separately exported files do not share a scale. Each file is
-therefore treated as its own series and only ever compared with itself over time,
-never across files. When API access arrives, `trends.py` can replace this with
-consistently scaled data and the metric ids stay the same.
+Two properties of Trends data shape everything below.
+
+**The scale is per-request.** Trends rescales 0-100 for each query, so two
+separately exported files share no scale and can never be combined. Terms
+exported *together* do share one — which is why a basket is a single file with
+one column per term, and why the ratios between those columns are the honest
+unit. A level can fall because Spain searched less in total; the ratio of rooms
+to flats within one export cannot.
+
+**Absence is reported as zero.** A term with too little volume comes back as 0,
+not as missing. Left alone that reads as "nobody searched this", which is a much
+stronger claim than the data supports. Any series whose months are mostly zeros
+is therefore dropped rather than published — which is why the smaller cities
+carry fewer search metrics than Madrid, and should.
 """
 
 from __future__ import annotations
 
 import csv
-import io
 import re
 from datetime import date
 from pathlib import Path
@@ -34,12 +42,8 @@ from ..framework.adapter import AdapterFailure, BaseAdapter, RunContext, SourceM
 from ..framework.fetch import FetchPlan, RawPayload
 from ..framework.record import CanonicalRecord
 
-# data/manual/trends/<metric_id>__<geo_id>.csv — e.g.
-#   search_rental_pressure__mun-28079.csv
-#   search_hardship__es.csv
-FILENAME = re.compile(r"^(?P<metric>[a-z_]+)__(?P<geo>[a-z]+-?\d*|es)\.csv$")
-
-DATE_ROW = re.compile(r"^(?P<date>\d{4}-\d{2}(-\d{2})?)\s*,")
+# data/manual/trends/<basket>__<geo_id>.csv
+FILENAME = re.compile(r"^(?P<basket>[a-z_]+)__(?P<geo>[a-z]+-?\d*|es)\.csv$")
 
 
 class TrendsManualAdapter(BaseAdapter):
@@ -58,7 +62,7 @@ class TrendsManualAdapter(BaseAdapter):
         revisions_allowed=True,
         notes=(
             "Hand-exported baskets. Trends rescales 0-100 per request, so each file "
-            "is its own series and is never compared across files."
+            "is its own series; only ratios within a file are comparable over time."
         ),
     )
 
@@ -76,78 +80,71 @@ class TrendsManualAdapter(BaseAdapter):
                 continue
             plans.append(
                 FetchPlan(
-                    url=path.as_uri(),
+                    url=f"file://{path.resolve()}",
                     fmt="csv",
                     label=path.name,
                     optional=True,
-                    meta={
-                        "path": str(path),
-                        "metric_id": match["metric"],
-                        "geo_id": match["geo"],
-                    },
+                    meta={"path": str(path), "basket": match["basket"], "geo_id": match["geo"]},
                 )
             )
 
         if not plans:
             raise AdapterFailure(
-                f"no exports found in {directory}. Export a basket from trends.google.com "
-                "and save it as <metric_id>__<geo_id>.csv — the README there lists the "
-                "baskets this build expects."
+                f"no exports found in {directory} — see the README there for how to add one"
             )
         return plans
 
     def parse(self, payload: RawPayload, ctx: RunContext) -> pd.DataFrame:
-        text = payload.text()
-        # Trends exports carry a two-or-three line preamble ("Categoría: …", a
-        # blank line, then the header) whose wording depends on the export locale,
-        # so the data is found by shape rather than by skipping a fixed count.
-        lines = text.splitlines()
-        start = next((i for i, line in enumerate(lines) if DATE_ROW.match(line)), None)
-        if start is None:
-            raise AdapterFailure(f"{payload.plan.label}: no dated rows found")
-
-        header_index = start - 1
-        header = lines[header_index] if header_index >= 0 else "period,value"
-        body = "\n".join([header, *lines[start:]])
-
-        frame = pd.read_csv(io.StringIO(body))
-        frame.columns = ["period", *[f"value_{i}" for i in range(1, len(frame.columns))]]
+        frame = pd.read_csv(payload.plan.meta["path"])
+        if "period" not in frame.columns:
+            raise AdapterFailure(f"{payload.plan.label}: first column must be 'period'")
         return frame
 
     def normalize(
         self, frame: pd.DataFrame, plan: FetchPlan, ctx: RunContext
     ) -> Iterable[CanonicalRecord]:
-        metric_id = plan.meta["metric_id"]
+        config = ctx.config.baskets.get("trends_manual")
+        if not config:
+            raise AdapterFailure("config/baskets/trends_manual.yml is missing")
+
+        spec = config["baskets"].get(plan.meta["basket"])
+        if spec is None:
+            raise AdapterFailure(f"{plan.label}: no basket named {plan.meta['basket']!r}")
+
         geo_id = plan.meta["geo_id"]
-        meta = ctx.config.metrics.get(metric_id)
-        if meta is None:
-            raise AdapterFailure(
-                f"{plan.label}: {metric_id!r} is not in config/metrics.yml"
-            )
-
+        min_coverage = float(config.get("min_coverage", 0.7))
         exported = date.fromtimestamp(Path(plan.meta["path"]).stat().st_mtime).isoformat()
-        value_columns = [c for c in frame.columns if c.startswith("value_")]
 
-        for row in frame.itertuples():
-            period = str(row.period)[:7]
-            if len(period) != 7:
-                continue
-            # A multi-term export becomes one basket: the mean of its terms, which
-            # is defensible only because they were exported together and therefore
-            # do share a scale.
-            values = [
-                pd.to_numeric(getattr(row, column), errors="coerce") for column in value_columns
-            ]
-            values = [v for v in values if pd.notna(v)]
-            if not values:
+        for entry in spec["metrics"]:
+            metric_id = entry["metric"]
+            meta = ctx.config.metrics.get(metric_id)
+            if meta is None:
+                raise AdapterFailure(f"{plan.label}: {metric_id!r} is not in config/metrics.yml")
+
+            if "column" in entry:
+                values = pd.to_numeric(frame[entry["column"]], errors="coerce")
+                coverage_source = values
+            else:
+                numerator = pd.to_numeric(frame[entry["ratio"][0]], errors="coerce")
+                denominator = pd.to_numeric(frame[entry["ratio"][1]], errors="coerce")
+                # A ratio is only as trustworthy as its scarcer term.
+                coverage_source = numerator.where(denominator > 0)
+                values = (numerator / denominator.replace(0, pd.NA)) * float(entry.get("scale", 1))
+
+            coverage = float((coverage_source > 0).sum()) / max(len(frame), 1)
+            if coverage < min_coverage:
+                # Too many months came back as zero for this to mean anything.
                 continue
 
-            yield CanonicalRecord(
-                metric_id=metric_id,
-                geo_id=geo_id,
-                period=period,
-                value=float(sum(values) / len(values)),
-                unit=meta["unit"],
-                source_id=self.manifest.source_id,
-                published_at=exported,
-            )
+            for period, value in zip(frame["period"], values):
+                if pd.isna(value) or value == 0:
+                    continue
+                yield CanonicalRecord(
+                    metric_id=metric_id,
+                    geo_id=geo_id,
+                    period=str(period)[:7],
+                    value=round(float(value), 3),
+                    unit=meta["unit"],
+                    source_id=self.manifest.source_id,
+                    published_at=exported,
+                )

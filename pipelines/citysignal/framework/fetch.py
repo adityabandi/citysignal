@@ -202,6 +202,18 @@ class Fetcher:
 
     def get(self, plan: FetchPlan, *, headers: dict[str, str] | None = None) -> RawPayload | None:
         """Return the payload, or None when the server says 304 Not Modified."""
+        # Some sources are files a person committed rather than a URL to fetch —
+        # hand-exported search baskets, for instance. They go through the same
+        # sniffing, validation and history machinery as anything downloaded.
+        if plan.url.startswith("file://"):
+            path = Path(plan.url.removeprefix("file://"))
+            if not path.exists():
+                raise NotFoundError(f"{path} does not exist")
+            content = path.read_bytes()
+            return RawPayload(
+                plan=plan, content=content, sha256=hashlib.sha256(content).hexdigest()
+            )
+
         if self.offline:
             raise FetchError(f"offline mode: refusing to fetch {plan.url}")
 

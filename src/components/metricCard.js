@@ -85,7 +85,7 @@ export function metricCard(card, {color} = {}) {
   const delta = formatDelta(card.latest.yoy);
 
   const head = el("div", {class: "cs-card-head"}, [
-    el("span", {class: "cs-card-label", text: card.label}),
+    el("span", {class: "cs-card-label", text: card.label, title: card.plain ?? ""}),
     delta
       ? el("span", {
           class: `cs-delta ${deltaClass(card.latest.yoy, card.direction)}`,
@@ -124,6 +124,8 @@ export function metricCard(card, {color} = {}) {
 
   return el("div", {class: "cs-panel"}, [
     head,
+    // What the measure actually is, in plain words, before any number is read.
+    card.plain ? el("div", {class: "cs-plain", text: card.plain}) : null,
     value,
     sparkline(card.series, {color: hue, direction: card.direction}),
     meta,

@@ -104,11 +104,18 @@ h2 {
 /* ------------------------------------------------------------------- panels */
 
 .cs-panel {
-  background: var(--cs-surface);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.022) 0%, rgba(255, 255, 255, 0) 42%),
+    var(--cs-surface);
   border: 1px solid var(--cs-rule);
   border-radius: 3px;
-  padding: 1rem 1.05rem 0.9rem;
+  padding: 1rem 1.05rem 0.95rem;
   position: relative;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.cs-panel:hover {
+  border-color: #333844;
 }
 
 /* Corner ticks — the console conceit, purely decorative and never on a data mark. */
@@ -315,6 +322,64 @@ h2 {
 }
 .cs-vitals-city a { color: inherit; text-decoration: none; }
 .cs-vitals-city a:hover { text-decoration: underline; }
+
+/* ------------------------------------------------- plain-language furniture */
+
+/* What a measure actually is, before any number is read. This sits above the
+   figure deliberately: a reader who does not know what "reference rent" means
+   cannot be helped by knowing it is 13.16. */
+.cs-plain {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--cs-ink-2);
+  margin-top: 0.4rem;
+  text-wrap: pretty;
+}
+
+.cs-index-verdict {
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  margin: 0.55rem 0 0.5rem;
+  text-wrap: pretty;
+  color: var(--cs-ink);
+}
+
+.cs-index-figure {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--cs-grid);
+}
+.cs-index-figure .cs-num {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--cs-ink-2);
+}
+.cs-index-figure .cs-card-unit {
+  margin-left: 0;
+  line-height: 1.35;
+}
+
+/* The city page opens with a coloured spine in its regime's status colour, so
+   the state is legible before a word is read — with the word right beside it. */
+.cs-situation {
+  border-left: 3px solid currentColor;
+  padding: 0.2rem 0 0.2rem 1.15rem;
+  margin: 1.4rem 0 2rem;
+}
+.cs-situation-text {
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  line-height: 1.32;
+  color: var(--cs-ink);
+  max-width: 46ch;
+  text-wrap: pretty;
+}
 
 table.cs-table {
   font-size: 0.8rem;

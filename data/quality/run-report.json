@@ -1,238 +1,33 @@
 {
- "run_id": "4946e0797529",
- "finished_at": "2026-07-25T18:35:46+00:00",
+ "run_id": "6b52b0dbd847",
+ "finished_at": "2026-07-25T18:59:28+00:00",
  "ok": [
-  "aena",
-  "bde",
-  "borme",
-  "cgpj",
-  "eurocontrol",
-  "ine",
-  "insideairbnb",
-  "mivau",
-  "sepe",
-  "wikipedia"
- ],
- "failed": [
   "trends_manual"
  ],
+ "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "aena",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 2,
-   "skipped_unchanged": 2,
-   "error": null,
-   "error_type": null,
-   "duration_s": 9.29,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "bde",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 3,
-   "skipped_unchanged": 3,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.48,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "borme",
-   "status": "ok",
-   "records": 24,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 24,
-   "quarantined": 0,
-   "plans": 107,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 12.81,
-   "latest_observation": "2026-07",
-   "metrics": [
-    "company_dissolutions",
-    "company_incorporations",
-    "insolvencies"
-   ],
-   "notes": []
-  },
-  {
-   "source_id": "cgpj",
-   "status": "ok",
-   "records": 1040,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 1040,
-   "quarantined": 0,
-   "plans": 1,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 6.75,
-   "latest_observation": "2026-Q1",
-   "metrics": [
-    "evictions",
-    "foreclosures"
-   ],
-   "notes": []
-  },
-  {
-   "source_id": "eurocontrol",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 4,
-   "skipped_unchanged": 4,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.77,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "ine",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 9,
-   "skipped_unchanged": 9,
-   "error": null,
-   "error_type": null,
-   "duration_s": 1.52,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "insideairbnb",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 7,
-   "skipped_unchanged": 7,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.7,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "mivau",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 5,
-   "skipped_unchanged": 5,
-   "error": null,
-   "error_type": null,
-   "duration_s": 8.03,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "sepe",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 16,
-   "skipped_unchanged": 16,
-   "error": null,
-   "error_type": null,
-   "duration_s": 5.63,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
    "source_id": "trends_manual",
-   "status": "failed",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 1572,
+   "added": 1572,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 0,
-   "skipped_unchanged": 0,
-   "error": "no exports found in /home/runner/work/citysignal/citysignal/data/manual/trends. Export a basket from trends.google.com and save it as <metric_id>__<geo_id>.csv — the README there lists the baskets this build expects.",
-   "error_type": "AdapterFailure",
-   "duration_s": 0.0,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": []
-  },
-  {
-   "source_id": "wikipedia",
-   "status": "ok",
-   "records": 2652,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 2652,
-   "quarantined": 0,
-   "plans": 77,
+   "plans": 8,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 13.79,
+   "duration_s": 0.04,
    "latest_observation": "2026-06",
    "metrics": [
-    "wiki_city_attention",
-    "wiki_city_foreign_share",
-    "wiki_city_views",
-    "wiki_hardship_index",
-    "wiki_relocation_index"
+    "search_buy_momentum",
+    "search_rental_pressure",
+    "search_room_share",
+    "search_tenure_switch"
    ],
-   "notes": [
-    "1/77 optional fetches skipped: hardship:Ley_de_la_segunda_oportunidad: NotFoundError"
-   ]
+   "notes": []
   }
  ]
 }

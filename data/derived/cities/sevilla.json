@@ -17,16 +17,16 @@
  },
  "deep_dive": false,
  "regime": {
-  "rule_id": "hot",
-  "label": "Hot",
-  "reading": "Housing pressure is well above this city's own history and has not yet turned. Supply is at least keeping pace, so this is heat rather than a squeeze.",
-  "expression": "housing_pressure > 0.75",
+  "rule_id": "neutral",
+  "label": "No clear regime",
+  "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+  "expression": "true",
   "rules_version": "regimes-v2",
   "inputs": {
    "demand_momentum": 0.356,
-   "housing_pressure": 0.9045,
+   "housing_pressure": 0.7148,
    "supply_response": -0.0804,
-   "distress": 0.5463
+   "distress": 0.5622
   },
   "available_indices": [
    "demand_momentum",
@@ -760,23 +760,23 @@
   },
   {
    "period": "2024-07",
-   "rule_id": "neutral",
-   "label": "No clear regime",
+   "rule_id": "orderly_cooling",
+   "label": "Orderly cooling",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.1932,
-   "index_housing_pressure": 0.2518,
+   "index_housing_pressure": -0.0085,
    "index_supply_response": -0.0445,
    "index_distress": -0.3121
   },
   {
    "period": "2024-08",
-   "rule_id": "neutral",
-   "label": "No clear regime",
+   "rule_id": "orderly_cooling",
+   "label": "Orderly cooling",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.0215,
-   "index_housing_pressure": 0.2518,
+   "index_housing_pressure": -0.0405,
    "index_supply_response": -0.0445,
-   "index_distress": -0.2296
+   "index_distress": -0.2012
   },
   {
    "period": "2024-09",
@@ -784,9 +784,9 @@
    "label": "No clear regime",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.1277,
-   "index_housing_pressure": 0.2518,
+   "index_housing_pressure": 0.0114,
    "index_supply_response": -0.0445,
-   "index_distress": -0.0502
+   "index_distress": -0.1904
   },
   {
    "period": "2024-10",
@@ -794,9 +794,9 @@
    "label": "No clear regime",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.2662,
-   "index_housing_pressure": 0.2934,
+   "index_housing_pressure": 0.0899,
    "index_supply_response": 0.1784,
-   "index_distress": 0.34
+   "index_distress": 0.346
   },
   {
    "period": "2024-11",
@@ -804,9 +804,9 @@
    "label": "No clear regime",
    "held_by_hysteresis": false,
    "index_demand_momentum": -0.0025,
-   "index_housing_pressure": 0.2934,
+   "index_housing_pressure": 0.092,
    "index_supply_response": 0.1784,
-   "index_distress": 0.5056
+   "index_distress": 0.4996
   },
   {
    "period": "2024-12",
@@ -814,19 +814,19 @@
    "label": "No clear regime",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.1395,
-   "index_housing_pressure": 0.2934,
+   "index_housing_pressure": 0.2022,
    "index_supply_response": 0.1784,
-   "index_distress": 0.4786
+   "index_distress": 0.2164
   },
   {
    "period": "2025-01",
-   "rule_id": "neutral",
-   "label": "No clear regime",
+   "rule_id": "orderly_cooling",
+   "label": "Orderly cooling",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.0167,
-   "index_housing_pressure": null,
+   "index_housing_pressure": -0.272,
    "index_supply_response": 0.6111,
-   "index_distress": 0.1791
+   "index_distress": 0.2031
   },
   {
    "period": "2025-02",
@@ -834,7 +834,7 @@
    "label": "No clear regime",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.0826,
-   "index_housing_pressure": null,
+   "index_housing_pressure": 0.0631,
    "index_supply_response": 0.6111,
    "index_distress": 0.3077
   },
@@ -844,9 +844,9 @@
    "label": "No clear regime",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.1575,
-   "index_housing_pressure": null,
+   "index_housing_pressure": 0.2365,
    "index_supply_response": 0.6111,
-   "index_distress": 0.4429
+   "index_distress": 0.4711
   },
   {
    "period": "2025-04",
@@ -854,9 +854,9 @@
    "label": "Hot",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.0698,
-   "index_housing_pressure": 0.9843,
+   "index_housing_pressure": 0.826,
    "index_supply_response": 0.0349,
-   "index_distress": 0.2932
+   "index_distress": 0.2221
   },
   {
    "period": "2025-05",
@@ -864,7 +864,7 @@
    "label": "Hot",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.5877,
-   "index_housing_pressure": 0.9843,
+   "index_housing_pressure": 0.8084,
    "index_supply_response": 0.0349,
    "index_distress": 0.2911
   },
@@ -874,39 +874,39 @@
    "label": "Hot",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.3546,
-   "index_housing_pressure": 0.9843,
+   "index_housing_pressure": 0.9818,
    "index_supply_response": 0.0349,
-   "index_distress": 0.3044
+   "index_distress": 0.3484
   },
   {
    "period": "2025-07",
-   "rule_id": "hot_decelerating",
-   "label": "Hot but decelerating",
-   "held_by_hysteresis": false,
-   "index_demand_momentum": 0.2717,
-   "index_housing_pressure": 0.9513,
-   "index_supply_response": -0.771,
-   "index_distress": 0.4145
-  },
-  {
-   "period": "2025-08",
-   "rule_id": "hot_decelerating",
-   "label": "Hot but decelerating",
-   "held_by_hysteresis": false,
-   "index_demand_momentum": 0.1171,
-   "index_housing_pressure": 0.9513,
-   "index_supply_response": -0.771,
-   "index_distress": 0.3561
-  },
-  {
-   "period": "2025-09",
    "rule_id": "supply_squeeze",
    "label": "Pressure without supply",
    "held_by_hysteresis": false,
-   "index_demand_momentum": 0.3536,
-   "index_housing_pressure": 0.9513,
+   "index_demand_momentum": 0.2717,
+   "index_housing_pressure": 1.0423,
    "index_supply_response": -0.771,
-   "index_distress": 0.3432
+   "index_distress": 0.2372
+  },
+  {
+   "period": "2025-08",
+   "rule_id": "supply_squeeze",
+   "label": "Pressure without supply",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.1171,
+   "index_housing_pressure": 1.0792,
+   "index_supply_response": -0.771,
+   "index_distress": 0.1773
+  },
+  {
+   "period": "2025-09",
+   "rule_id": "hot_decelerating",
+   "label": "Hot but decelerating",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": 0.3536,
+   "index_housing_pressure": 0.9349,
+   "index_supply_response": -0.771,
+   "index_distress": 0.4517
   },
   {
    "period": "2025-10",
@@ -914,27 +914,27 @@
    "label": "Hot",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.1197,
-   "index_housing_pressure": 0.9552,
+   "index_housing_pressure": 1.0847,
    "index_supply_response": -0.0804,
-   "index_distress": 0.4416
+   "index_distress": 0.4932
   },
   {
    "period": "2025-11",
-   "rule_id": "hot",
-   "label": "Hot",
+   "rule_id": "hot_decelerating",
+   "label": "Hot but decelerating",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.3146,
-   "index_housing_pressure": 0.9552,
+   "index_housing_pressure": 0.8234,
    "index_supply_response": -0.0804,
-   "index_distress": 0.4024
+   "index_distress": 0.4
   },
   {
    "period": "2025-12",
-   "rule_id": "hot",
-   "label": "Hot",
+   "rule_id": "hot_decelerating",
+   "label": "Hot but decelerating",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.454,
-   "index_housing_pressure": 0.9552,
+   "index_housing_pressure": 0.84,
    "index_supply_response": -0.0804,
    "index_distress": 0.3449
   },
@@ -944,7 +944,7 @@
    "label": "Hot",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.0833,
-   "index_housing_pressure": 1.1231,
+   "index_housing_pressure": 1.1557,
    "index_supply_response": null,
    "index_distress": 0.6755
   },
@@ -954,19 +954,19 @@
    "label": "Hot",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.1235,
-   "index_housing_pressure": 1.1231,
+   "index_housing_pressure": 1.0333,
    "index_supply_response": null,
    "index_distress": 0.736
   },
   {
    "period": "2026-03",
-   "rule_id": "hot",
-   "label": "Hot",
+   "rule_id": "hot_decelerating",
+   "label": "Hot but decelerating",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.2927,
-   "index_housing_pressure": 1.1231,
+   "index_housing_pressure": 0.788,
    "index_supply_response": null,
-   "index_distress": 0.5197
+   "index_distress": 0.3174
   },
   {
    "period": "2026-04",
@@ -996,7 +996,7 @@
    "index_demand_momentum": 0.3614,
    "index_housing_pressure": null,
    "index_supply_response": null,
-   "index_distress": 0.2842
+   "index_distress": 0.3563
   }
  ],
  "indices": {
@@ -1088,8 +1088,8 @@
    "index_id": "housing_pressure",
    "label": "Housing pressure",
    "question": "Is demand outrunning the housing available?",
-   "value": 0.9045,
-   "period": "2026-03",
+   "value": 0.7148,
+   "period": "2026-06",
    "insufficient": false,
    "components": [
     {
@@ -1132,6 +1132,20 @@
      "z": 1.2243,
      "oriented": 1.2243,
      "source_id": "ine",
+     "unit": "index"
+    },
+    {
+     "metric_id": "search_rental_pressure",
+     "label": "Rental search pressure",
+     "transform": "yoy",
+     "geo_id": "mun-41091",
+     "geo_level": "municipality",
+     "weight": 0.4,
+     "period": "2026-06",
+     "raw": -26.2948,
+     "z": -0.8509,
+     "oriented": -0.8509,
+     "source_id": "trends_manual",
      "unit": "index"
     }
    ],
@@ -1201,7 +1215,7 @@
    "index_id": "distress",
    "label": "Distress",
    "question": "Is an orderly slowdown turning into financial stress?",
-   "value": 0.5463,
+   "value": 0.5622,
    "period": "2026-06",
    "insufficient": false,
    "components": [
@@ -1274,6 +1288,20 @@
      "oriented": 1.2586,
      "source_id": "wikipedia",
      "unit": "per_million"
+    },
+    {
+     "metric_id": "search_room_share",
+     "label": "Room-vs-flat search spread",
+     "transform": "yoy",
+     "geo_id": "mun-41091",
+     "geo_level": "municipality",
+     "weight": 0.4,
+     "period": "2026-06",
+     "raw": -35.401,
+     "z": -0.7532,
+     "oriented": 0.7532,
+     "source_id": "trends_manual",
+     "unit": "index"
     }
    ],
    "missing": [
@@ -1722,75 +1750,87 @@
    },
    {
     "period": "2024-07",
-    "value": 0.2518
+    "value": -0.0085
    },
    {
     "period": "2024-08",
-    "value": 0.2518
+    "value": -0.0405
    },
    {
     "period": "2024-09",
-    "value": 0.2518
+    "value": 0.0114
    },
    {
     "period": "2024-10",
-    "value": 0.2934
+    "value": 0.0899
    },
    {
     "period": "2024-11",
-    "value": 0.2934
+    "value": 0.092
    },
    {
     "period": "2024-12",
-    "value": 0.2934
+    "value": 0.2022
+   },
+   {
+    "period": "2025-01",
+    "value": -0.272
+   },
+   {
+    "period": "2025-02",
+    "value": 0.0631
+   },
+   {
+    "period": "2025-03",
+    "value": 0.2365
    },
    {
     "period": "2025-04",
-    "value": 0.9843
+    "value": 0.826
    },
    {
     "period": "2025-05",
-    "value": 0.9843
+    "value": 0.8084
    },
    {
     "period": "2025-06",
-    "value": 0.9843
+    "value": 0.9818
    },
    {
     "period": "2025-07",
-    "value": 0.9513
+    "value": 1.0423
    },
    {
     "period": "2025-08",
-    "value": 0.9513
+    "value": 1.0792
    },
    {
     "period": "2025-09",
-    "value": 0.9513
+    "value": 0.9349
    },
    {
     "period": "2025-10",
-    "value": 0.9552
+    "value": 1.0847
    },
    {
     "period": "2025-11",
-    "value": 0.9552
+    "value": 0.8234
    },
    {
     "period": "2025-12",
-    "value": 0.9552
+    "value": 0.84
    },
    {
     "period": "2026-01",
-    "value": 1.1231
+    "value": 1.1557
    },
    {
     "period": "2026-02",
-    "value": 1.1231
+    "value": 1.0333
    },
    {
     "period": "2026-03",
-    "value": 1.1231
+    "value": 0.788
    }
   ],
   "supply_response": [
@@ -2474,27 +2514,27 @@
    },
    {
     "period": "2024-08",
-    "value": -0.2296
+    "value": -0.2012
    },
    {
     "period": "2024-09",
-    "value": -0.0502
+    "value": -0.1904
    },
    {
     "period": "2024-10",
-    "value": 0.34
+    "value": 0.346
    },
    {
     "period": "2024-11",
-    "value": 0.5056
+    "value": 0.4996
    },
    {
     "period": "2024-12",
-    "value": 0.4786
+    "value": 0.2164
    },
    {
     "period": "2025-01",
-    "value": 0.1791
+    "value": 0.2031
    },
    {
     "period": "2025-02",
@@ -2502,11 +2542,11 @@
    },
    {
     "period": "2025-03",
-    "value": 0.4429
+    "value": 0.4711
    },
    {
     "period": "2025-04",
-    "value": 0.2932
+    "value": 0.2221
    },
    {
     "period": "2025-05",
@@ -2514,27 +2554,27 @@
    },
    {
     "period": "2025-06",
-    "value": 0.3044
+    "value": 0.3484
    },
    {
     "period": "2025-07",
-    "value": 0.4145
+    "value": 0.2372
    },
    {
     "period": "2025-08",
-    "value": 0.3561
+    "value": 0.1773
    },
    {
     "period": "2025-09",
-    "value": 0.3432
+    "value": 0.4517
    },
    {
     "period": "2025-10",
-    "value": 0.4416
+    "value": 0.4932
    },
    {
     "period": "2025-11",
-    "value": 0.4024
+    "value": 0.4
    },
    {
     "period": "2025-12",
@@ -2550,7 +2590,7 @@
    },
    {
     "period": "2026-03",
-    "value": 0.5197
+    "value": 0.3174
    },
    {
     "period": "2026-04",
@@ -2562,7 +2602,7 @@
    },
    {
     "period": "2026-06",
-    "value": 0.2842
+    "value": 0.3563
    }
   ]
  },
@@ -2571,10 +2611,10 @@
    "archetype_id": "overheating",
    "label": "Overheating",
    "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
-   "firing": 3,
-   "available": 6,
-   "total": 11,
-   "coverage": 0.545,
+   "firing": 4,
+   "available": 8,
+   "total": 13,
+   "coverage": 0.615,
    "score": 0.5,
    "insufficient_coverage": false,
    "signals_firing": [
@@ -2610,6 +2650,17 @@
      "period": "2026-06",
      "geo_level": "nation",
      "source_id": "bde"
+    },
+    {
+     "metric_id": "search_tenure_switch",
+     "label": "Buy-vs-rent search spread",
+     "expect": "up",
+     "z": 0.6372,
+     "raw": 27.993,
+     "unit": "index",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "trends_manual"
     }
    ],
    "signals_against": [
@@ -2645,6 +2696,17 @@
      "period": "2025-12",
      "geo_level": "province",
      "source_id": "mivau"
+    },
+    {
+     "metric_id": "search_room_share",
+     "label": "Room-vs-flat search spread",
+     "expect": "up",
+     "z": -0.7532,
+     "raw": -35.401,
+     "unit": "index",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "trends_manual"
     }
    ],
    "signals_unavailable": [
@@ -2654,17 +2716,17 @@
     "str_listings",
     "tourist_dwellings"
    ],
-   "signatures_version": "signatures-v1"
+   "signatures_version": "signatures-v2"
   },
   {
    "archetype_id": "boom",
    "label": "Boom",
    "summary": "People and money arriving faster than the city can house them. Rents and transactions rise together, business formation accelerates, and attention from outside the country runs ahead of the official population count.",
-   "firing": 4,
-   "available": 12,
-   "total": 19,
-   "coverage": 0.632,
-   "score": 0.333,
+   "firing": 5,
+   "available": 13,
+   "total": 20,
+   "coverage": 0.65,
+   "score": 0.385,
    "insufficient_coverage": false,
    "signals_firing": [
     {
@@ -2710,6 +2772,17 @@
      "period": "2026-06",
      "geo_level": "airport",
      "source_id": "eurocontrol"
+    },
+    {
+     "metric_id": "search_tenure_switch",
+     "label": "Buy-vs-rent search spread",
+     "expect": "up",
+     "z": 0.6372,
+     "raw": 27.993,
+     "unit": "index",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "trends_manual"
     }
    ],
    "signals_against": [
@@ -2811,7 +2884,7 @@
     "population_padron",
     "str_listings"
    ],
-   "signatures_version": "signatures-v1"
+   "signatures_version": "signatures-v2"
   },
   {
    "archetype_id": "regulatory_shock",
@@ -2867,7 +2940,7 @@
     "tourist_dwellings",
     "vut_licensed"
    ],
-   "signatures_version": "signatures-v1"
+   "signatures_version": "signatures-v2"
   },
   {
    "archetype_id": "tourism_shock",
@@ -2934,7 +3007,134 @@
     "hotel_travellers",
     "port_passengers"
    ],
-   "signatures_version": "signatures-v1"
+   "signatures_version": "signatures-v2"
+  },
+  {
+   "archetype_id": "distress",
+   "label": "Distress",
+   "summary": "Jobs go first, then the storefronts, then the courts. Foreclosures, evictions and insolvencies rise together while hiring and business formation fall; hardship attention climbs before the judicial series, which are the slowest evidence we have.",
+   "firing": 2,
+   "available": 9,
+   "total": 19,
+   "coverage": 0.474,
+   "score": 0.222,
+   "insufficient_coverage": false,
+   "signals_firing": [
+    {
+     "metric_id": "euribor_12m",
+     "label": "Euribor 12-month",
+     "expect": "up",
+     "z": 0.6298,
+     "raw": 0.717,
+     "unit": "percent",
+     "period": "2026-06",
+     "geo_level": "nation",
+     "source_id": "bde"
+    },
+    {
+     "metric_id": "search_rental_pressure",
+     "label": "Rental search pressure",
+     "expect": "down",
+     "z": -0.8509,
+     "raw": -26.2948,
+     "unit": "index",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "trends_manual"
+    }
+   ],
+   "signals_against": [
+    {
+     "metric_id": "unemployment_registered",
+     "label": "Registered unemployment",
+     "expect": "up",
+     "z": -0.4367,
+     "raw": -8.3942,
+     "unit": "persons",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "sepe"
+    },
+    {
+     "metric_id": "contracts_registered",
+     "label": "New contracts registered",
+     "expect": "down",
+     "z": 0.2882,
+     "raw": 6.0522,
+     "unit": "contracts",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "sepe"
+    },
+    {
+     "metric_id": "foreclosures",
+     "label": "Mortgage foreclosures filed",
+     "expect": "up",
+     "z": -0.4281,
+     "raw": -11.4983,
+     "unit": "cases",
+     "period": "2026-03",
+     "geo_level": "province",
+     "source_id": "cgpj"
+    },
+    {
+     "metric_id": "evictions",
+     "label": "Evictions carried out",
+     "expect": "up",
+     "z": -1.1081,
+     "raw": -61.3333,
+     "unit": "cases",
+     "period": "2026-03",
+     "geo_level": "province",
+     "source_id": "cgpj"
+    },
+    {
+     "metric_id": "mortgages_count",
+     "label": "New mortgages on dwellings",
+     "expect": "down",
+     "z": 0.6527,
+     "raw": 26.5183,
+     "unit": "mortgages",
+     "period": "2026-05",
+     "geo_level": "province",
+     "source_id": "ine"
+    },
+    {
+     "metric_id": "wiki_hardship_index",
+     "label": "Hardship attention (Euribor, eviction, benefits)",
+     "expect": "up",
+     "z": -1.2586,
+     "raw": -35.0459,
+     "unit": "per_million",
+     "period": "2026-06",
+     "geo_level": "nation",
+     "source_id": "wikipedia"
+    },
+    {
+     "metric_id": "search_room_share",
+     "label": "Room-vs-flat search spread",
+     "expect": "up",
+     "z": -0.7532,
+     "raw": -35.401,
+     "unit": "index",
+     "period": "2026-06",
+     "geo_level": "municipality",
+     "source_id": "trends_manual"
+    }
+   ],
+   "signals_unavailable": [
+    "affiliations",
+    "auctions_realestate",
+    "company_dissolutions",
+    "company_incorporations",
+    "horeca_closures",
+    "housing_transactions",
+    "insolvencies",
+    "locales_closures",
+    "locales_vacancy_rate",
+    "news_tone"
+   ],
+   "signatures_version": "signatures-v2"
   },
   {
    "archetype_id": "orderly_cooling",
@@ -3011,112 +3211,7 @@
     "locales_vacancy_rate",
     "str_listings"
    ],
-   "signatures_version": "signatures-v1"
-  },
-  {
-   "archetype_id": "distress",
-   "label": "Distress",
-   "summary": "Jobs go first, then the storefronts, then the courts. Foreclosures, evictions and insolvencies rise together while hiring and business formation fall; hardship attention climbs before the judicial series, which are the slowest evidence we have.",
-   "firing": 1,
-   "available": 7,
-   "total": 17,
-   "coverage": 0.412,
-   "score": 0.143,
-   "insufficient_coverage": false,
-   "signals_firing": [
-    {
-     "metric_id": "euribor_12m",
-     "label": "Euribor 12-month",
-     "expect": "up",
-     "z": 0.6298,
-     "raw": 0.717,
-     "unit": "percent",
-     "period": "2026-06",
-     "geo_level": "nation",
-     "source_id": "bde"
-    }
-   ],
-   "signals_against": [
-    {
-     "metric_id": "unemployment_registered",
-     "label": "Registered unemployment",
-     "expect": "up",
-     "z": -0.4367,
-     "raw": -8.3942,
-     "unit": "persons",
-     "period": "2026-06",
-     "geo_level": "municipality",
-     "source_id": "sepe"
-    },
-    {
-     "metric_id": "contracts_registered",
-     "label": "New contracts registered",
-     "expect": "down",
-     "z": 0.2882,
-     "raw": 6.0522,
-     "unit": "contracts",
-     "period": "2026-06",
-     "geo_level": "municipality",
-     "source_id": "sepe"
-    },
-    {
-     "metric_id": "foreclosures",
-     "label": "Mortgage foreclosures filed",
-     "expect": "up",
-     "z": -0.4281,
-     "raw": -11.4983,
-     "unit": "cases",
-     "period": "2026-03",
-     "geo_level": "province",
-     "source_id": "cgpj"
-    },
-    {
-     "metric_id": "evictions",
-     "label": "Evictions carried out",
-     "expect": "up",
-     "z": -1.1081,
-     "raw": -61.3333,
-     "unit": "cases",
-     "period": "2026-03",
-     "geo_level": "province",
-     "source_id": "cgpj"
-    },
-    {
-     "metric_id": "mortgages_count",
-     "label": "New mortgages on dwellings",
-     "expect": "down",
-     "z": 0.6527,
-     "raw": 26.5183,
-     "unit": "mortgages",
-     "period": "2026-05",
-     "geo_level": "province",
-     "source_id": "ine"
-    },
-    {
-     "metric_id": "wiki_hardship_index",
-     "label": "Hardship attention (Euribor, eviction, benefits)",
-     "expect": "up",
-     "z": -1.2586,
-     "raw": -35.0459,
-     "unit": "per_million",
-     "period": "2026-06",
-     "geo_level": "nation",
-     "source_id": "wikipedia"
-    }
-   ],
-   "signals_unavailable": [
-    "affiliations",
-    "auctions_realestate",
-    "company_dissolutions",
-    "company_incorporations",
-    "horeca_closures",
-    "housing_transactions",
-    "insolvencies",
-    "locales_closures",
-    "locales_vacancy_rate",
-    "news_tone"
-   ],
-   "signatures_version": "signatures-v1"
+   "signatures_version": "signatures-v2"
   }
  ],
  "leadlag": [
@@ -3346,6 +3441,7 @@
    {
     "metric_id": "population_padron",
     "label": "Population (padrón)",
+    "plain": "How many people are officially registered as living in the city.",
     "label_es": "Población (padrón)",
     "unit": "persons",
     "cadence": "annual",
@@ -3410,6 +3506,7 @@
    {
     "metric_id": "appraised_value",
     "label": "Appraised housing value",
+    "plain": "What valuers say a square metre of housing is worth — the number banks lend against.",
     "label_es": null,
     "unit": "eur_m2",
     "cadence": "quarterly",
@@ -3832,6 +3929,7 @@
    {
     "metric_id": "house_price_index",
     "label": "House price index",
+    "plain": "The official measure of how house prices are moving, set to 100 in a base year.",
     "label_es": null,
     "unit": "index",
     "cadence": "quarterly",
@@ -3950,6 +4048,7 @@
    {
     "metric_id": "property_transfers",
     "label": "Property transfers (registered)",
+    "plain": "How many properties were legally transferred, from the land registry. Faster than the price statistics.",
     "label_es": null,
     "unit": "transactions",
     "cadence": "monthly",
@@ -4180,6 +4279,7 @@
    {
     "metric_id": "rent_reference",
     "label": "Reference rent",
+    "plain": "What a square metre of rented housing costs per month, from the government's rent index.",
     "label_es": "Precio de referencia del alquiler",
     "unit": "eur_m2_month",
     "cadence": "annual",
@@ -4276,6 +4376,7 @@
    {
     "metric_id": "dwelling_stock",
     "label": "Dwelling stock",
+    "plain": "How many homes exist in total.",
     "label_es": null,
     "unit": "dwellings",
     "cadence": "annual",
@@ -4414,6 +4515,7 @@
    {
     "metric_id": "housing_completions",
     "label": "Housing completions",
+    "plain": "How many homes were finished and can actually be lived in.",
     "label_es": null,
     "unit": "dwellings",
     "cadence": "quarterly",
@@ -4740,6 +4842,7 @@
    {
     "metric_id": "housing_starts",
     "label": "Housing starts",
+    "plain": "How many homes builders began. The earliest signal that supply is coming.",
     "label_es": null,
     "unit": "dwellings",
     "cadence": "quarterly",
@@ -5066,6 +5169,7 @@
    {
     "metric_id": "land_price",
     "label": "Urban land price",
+    "plain": "What building land costs per square metre. It moves before construction does.",
     "label_es": null,
     "unit": "eur_m2",
     "cadence": "quarterly",
@@ -5462,6 +5566,7 @@
    {
     "metric_id": "npl_ratio",
     "label": "Doubtful loan ratio",
+    "plain": "What share of bank loans are not being repaid. Rises late, after trouble has already happened.",
     "label_es": null,
     "unit": "percent",
     "cadence": "monthly",
@@ -5884,6 +5989,7 @@
    {
     "metric_id": "euribor_12m",
     "label": "Euribor 12-month",
+    "plain": "The interest rate most Spanish variable-rate mortgages are priced off. When this rises, monthly repayments follow.",
     "label_es": null,
     "unit": "percent",
     "cadence": "monthly",
@@ -6306,6 +6412,7 @@
    {
     "metric_id": "mortgage_rate_new",
     "label": "New mortgage rate",
+    "plain": "The interest rate banks are charging on new mortgages.",
     "label_es": null,
     "unit": "percent",
     "cadence": "monthly",
@@ -6728,6 +6835,7 @@
    {
     "metric_id": "mortgages_count",
     "label": "New mortgages on dwellings",
+    "plain": "How many new mortgages were signed on homes.",
     "label_es": null,
     "unit": "mortgages",
     "cadence": "monthly",
@@ -6960,6 +7068,7 @@
    {
     "metric_id": "contracts_registered",
     "label": "New contracts registered",
+    "plain": "How many new employment contracts were registered. Hiring shows up here first.",
     "label_es": null,
     "unit": "contracts",
     "cadence": "monthly",
@@ -7358,6 +7467,7 @@
    {
     "metric_id": "unemployment_registered",
     "label": "Registered unemployment",
+    "plain": "How many people are signed on as unemployed at the job office.",
     "label_es": "Paro registrado",
     "unit": "persons",
     "cadence": "monthly",
@@ -7758,6 +7868,7 @@
    {
     "metric_id": "airport_flights",
     "label": "Airport flights (daily traffic)",
+    "plain": "How many flights the airport handled. Counted daily, so it arrives weeks before passenger figures.",
     "label_es": null,
     "unit": "flights",
     "cadence": "monthly",
@@ -7964,6 +8075,7 @@
    {
     "metric_id": "airport_passengers",
     "label": "Airport passengers",
+    "plain": "How many passengers passed through the city's airport.",
     "label_es": null,
     "unit": "passengers",
     "cadence": "monthly",
@@ -8362,6 +8474,7 @@
    {
     "metric_id": "hotel_adr",
     "label": "Average daily rate",
+    "plain": "The average price paid for a hotel room per night.",
     "label_es": null,
     "unit": "eur",
     "cadence": "monthly",
@@ -8592,6 +8705,7 @@
    {
     "metric_id": "hotel_occupancy_rate",
     "label": "Hotel occupancy rate",
+    "plain": "What share of hotel rooms were filled.",
     "label_es": null,
     "unit": "percent",
     "cadence": "monthly",
@@ -8702,6 +8816,7 @@
    {
     "metric_id": "hotel_nights",
     "label": "Hotel overnight stays",
+    "plain": "How many nights guests actually stayed. Catches longer trips that guest counts miss.",
     "label_es": null,
     "unit": "nights",
     "cadence": "monthly",
@@ -8812,6 +8927,7 @@
    {
     "metric_id": "hotel_travellers",
     "label": "Hotel travellers",
+    "plain": "How many guests checked into hotels.",
     "label_es": null,
     "unit": "persons",
     "cadence": "monthly",
@@ -8922,6 +9038,7 @@
    {
     "metric_id": "hotel_revpar",
     "label": "Revenue per available room",
+    "plain": "Room revenue per available room — price and occupancy combined, so it falls if either does.",
     "label_es": null,
     "unit": "eur",
     "cadence": "monthly",
@@ -9154,6 +9271,7 @@
    {
     "metric_id": "str_listings",
     "label": "Airbnb listings (research)",
+    "plain": "How many Airbnb listings are visible in the city. A scraped snapshot, not an official register.",
     "label_es": null,
     "unit": "listings",
     "cadence": "monthly",
@@ -9196,6 +9314,7 @@
    {
     "metric_id": "str_entire_home_share",
     "label": "Entire-home share of listings",
+    "plain": "What share of Airbnb listings are whole homes rather than a spare room — whole homes are the ones taken off the long-term market.",
     "label_es": null,
     "unit": "percent",
     "cadence": "monthly",
@@ -9238,6 +9357,7 @@
    {
     "metric_id": "str_multi_host_share",
     "label": "Multi-listing host share",
+    "plain": "What share of listings belong to hosts running several. High means professional operators, not people letting a spare room.",
     "label_es": null,
     "unit": "percent",
     "cadence": "monthly",
@@ -9280,6 +9400,7 @@
    {
     "metric_id": "tourist_dwelling_places",
     "label": "Tourist dwelling bed places",
+    "plain": "How many beds those registered tourist lets offer.",
     "label_es": null,
     "unit": "places",
     "cadence": "quarterly",
@@ -9350,6 +9471,7 @@
    {
     "metric_id": "tourist_dwellings",
     "label": "Tourist dwellings (official)",
+    "plain": "How many homes are officially registered as tourist lets.",
     "label_es": null,
     "unit": "dwellings",
     "cadence": "quarterly",
@@ -9422,6 +9544,7 @@
    {
     "metric_id": "company_dissolutions",
     "label": "Companies dissolved",
+    "plain": "How many companies were wound up.",
     "label_es": null,
     "unit": "companies",
     "cadence": "monthly",
@@ -9472,6 +9595,7 @@
    {
     "metric_id": "company_incorporations",
     "label": "Companies incorporated",
+    "plain": "How many new companies were registered.",
     "label_es": null,
     "unit": "companies",
     "cadence": "monthly",
@@ -9522,6 +9646,7 @@
    {
     "metric_id": "evictions",
     "label": "Evictions carried out",
+    "plain": "How many evictions courts actually carried out.",
     "label_es": "Lanzamientos practicados",
     "unit": "cases",
     "cadence": "quarterly",
@@ -9772,6 +9897,7 @@
    {
     "metric_id": "insolvencies",
     "label": "Insolvency proceedings",
+    "plain": "How many businesses formally went insolvent.",
     "label_es": null,
     "unit": "cases",
     "cadence": "monthly",
@@ -9822,6 +9948,7 @@
    {
     "metric_id": "foreclosures",
     "label": "Mortgage foreclosures filed",
+    "plain": "How many times a lender started court proceedings to take a home over unpaid mortgage debt.",
     "label_es": "Ejecuciones hipotecarias",
     "unit": "cases",
     "cadence": "quarterly",
@@ -10168,8 +10295,567 @@
   ],
   "attention": [
    {
+    "metric_id": "search_tenure_switch",
+    "label": "Buy-vs-rent search spread",
+    "plain": "How often people search to buy compared with to rent. Rising means attention is shifting from renting toward buying.",
+    "label_es": null,
+    "unit": "index",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-41091",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 27.027,
+     "yoy": 27.992991096798644
+    },
+    "suspect": false,
+    "outlier_score": 0.94,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2021-07",
+      "value": 13.333
+     },
+     {
+      "period": "2021-08",
+      "value": 20.339
+     },
+     {
+      "period": "2021-09",
+      "value": 17.534
+     },
+     {
+      "period": "2021-10",
+      "value": 26.797
+     },
+     {
+      "period": "2021-11",
+      "value": 25.088
+     },
+     {
+      "period": "2021-12",
+      "value": 28.81
+     },
+     {
+      "period": "2022-01",
+      "value": 20.917
+     },
+     {
+      "period": "2022-02",
+      "value": 21.429
+     },
+     {
+      "period": "2022-03",
+      "value": 20.897
+     },
+     {
+      "period": "2022-04",
+      "value": 26.119
+     },
+     {
+      "period": "2022-05",
+      "value": 21.97
+     },
+     {
+      "period": "2022-06",
+      "value": 19.459
+     },
+     {
+      "period": "2022-07",
+      "value": 17.647
+     },
+     {
+      "period": "2022-08",
+      "value": 20.516
+     },
+     {
+      "period": "2022-09",
+      "value": 23.662
+     },
+     {
+      "period": "2022-10",
+      "value": 23.762
+     },
+     {
+      "period": "2022-11",
+      "value": 24.848
+     },
+     {
+      "period": "2022-12",
+      "value": 28.298
+     },
+     {
+      "period": "2023-01",
+      "value": 27.419
+     },
+     {
+      "period": "2023-02",
+      "value": 24.196
+     },
+     {
+      "period": "2023-03",
+      "value": 22.951
+     },
+     {
+      "period": "2023-04",
+      "value": 25.676
+     },
+     {
+      "period": "2023-05",
+      "value": 16.715
+     },
+     {
+      "period": "2023-06",
+      "value": 17.021
+     },
+     {
+      "period": "2023-07",
+      "value": 19.822
+     },
+     {
+      "period": "2023-08",
+      "value": 24.882
+     },
+     {
+      "period": "2023-09",
+      "value": 19.907
+     },
+     {
+      "period": "2023-10",
+      "value": 26.531
+     },
+     {
+      "period": "2023-11",
+      "value": 19.868
+     },
+     {
+      "period": "2023-12",
+      "value": 30.159
+     },
+     {
+      "period": "2024-01",
+      "value": 30.019
+     },
+     {
+      "period": "2024-02",
+      "value": 26.282
+     },
+     {
+      "period": "2024-03",
+      "value": 27.966
+     },
+     {
+      "period": "2024-04",
+      "value": 25.926
+     },
+     {
+      "period": "2024-05",
+      "value": 25.0
+     },
+     {
+      "period": "2024-06",
+      "value": 18.797
+     },
+     {
+      "period": "2024-07",
+      "value": 22.991
+     },
+     {
+      "period": "2024-08",
+      "value": 31.646
+     },
+     {
+      "period": "2024-09",
+      "value": 24.286
+     },
+     {
+      "period": "2024-10",
+      "value": 29.254
+     },
+     {
+      "period": "2024-11",
+      "value": 34.091
+     },
+     {
+      "period": "2024-12",
+      "value": 30.612
+     },
+     {
+      "period": "2025-01",
+      "value": 30.172
+     },
+     {
+      "period": "2025-02",
+      "value": 23.81
+     },
+     {
+      "period": "2025-03",
+      "value": 21.905
+     },
+     {
+      "period": "2025-04",
+      "value": 34.535
+     },
+     {
+      "period": "2025-05",
+      "value": 20.619
+     },
+     {
+      "period": "2025-06",
+      "value": 21.116
+     },
+     {
+      "period": "2025-07",
+      "value": 23.077
+     },
+     {
+      "period": "2025-08",
+      "value": 29.327
+     },
+     {
+      "period": "2025-09",
+      "value": 28.392
+     },
+     {
+      "period": "2025-10",
+      "value": 34.916
+     },
+     {
+      "period": "2025-11",
+      "value": 29.323
+     },
+     {
+      "period": "2025-12",
+      "value": 34.109
+     },
+     {
+      "period": "2026-01",
+      "value": 35.211
+     },
+     {
+      "period": "2026-02",
+      "value": 34.286
+     },
+     {
+      "period": "2026-03",
+      "value": 44.444
+     },
+     {
+      "period": "2026-04",
+      "value": 27.515
+     },
+     {
+      "period": "2026-05",
+      "value": 33.862
+     },
+     {
+      "period": "2026-06",
+      "value": 27.027
+     }
+    ],
+    "source_id": "trends_manual",
+    "source": {
+     "publisher": "Google Trends (manual export)",
+     "license": "Google Trends terms — exported by hand, not scraped",
+     "attribution": "Source: Google Trends, exported manually",
+     "kind": "commercial",
+     "docs_url": "https://trends.google.com/trends/explore"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-25T18:59:28+00:00",
+    "staleness_days": 25,
+    "max_age_days": 120,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "search_buy_momentum",
+    "label": "Buyer search momentum",
+    "plain": "How hard people are searching to buy here.",
+    "label_es": null,
+    "unit": "index",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-41091",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 10.0,
+     "yoy": -5.660377358490563
+    },
+    "suspect": false,
+    "outlier_score": 1.01,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2021-07",
+      "value": 10.0
+     },
+     {
+      "period": "2021-08",
+      "value": 14.4
+     },
+     {
+      "period": "2021-09",
+      "value": 12.8
+     },
+     {
+      "period": "2021-10",
+      "value": 16.4
+     },
+     {
+      "period": "2021-11",
+      "value": 14.3
+     },
+     {
+      "period": "2021-12",
+      "value": 15.5
+     },
+     {
+      "period": "2022-01",
+      "value": 14.6
+     },
+     {
+      "period": "2022-02",
+      "value": 16.5
+     },
+     {
+      "period": "2022-03",
+      "value": 16.3
+     },
+     {
+      "period": "2022-04",
+      "value": 17.5
+     },
+     {
+      "period": "2022-05",
+      "value": 17.4
+     },
+     {
+      "period": "2022-06",
+      "value": 18.0
+     },
+     {
+      "period": "2022-07",
+      "value": 15.6
+     },
+     {
+      "period": "2022-08",
+      "value": 17.5
+     },
+     {
+      "period": "2022-09",
+      "value": 16.8
+     },
+     {
+      "period": "2022-10",
+      "value": 14.4
+     },
+     {
+      "period": "2022-11",
+      "value": 12.3
+     },
+     {
+      "period": "2022-12",
+      "value": 13.3
+     },
+     {
+      "period": "2023-01",
+      "value": 17.0
+     },
+     {
+      "period": "2023-02",
+      "value": 15.8
+     },
+     {
+      "period": "2023-03",
+      "value": 14.0
+     },
+     {
+      "period": "2023-04",
+      "value": 15.2
+     },
+     {
+      "period": "2023-05",
+      "value": 11.5
+     },
+     {
+      "period": "2023-06",
+      "value": 12.0
+     },
+     {
+      "period": "2023-07",
+      "value": 13.4
+     },
+     {
+      "period": "2023-08",
+      "value": 15.8
+     },
+     {
+      "period": "2023-09",
+      "value": 12.8
+     },
+     {
+      "period": "2023-10",
+      "value": 13.0
+     },
+     {
+      "period": "2023-11",
+      "value": 9.0
+     },
+     {
+      "period": "2023-12",
+      "value": 11.4
+     },
+     {
+      "period": "2024-01",
+      "value": 16.0
+     },
+     {
+      "period": "2024-02",
+      "value": 12.3
+     },
+     {
+      "period": "2024-03",
+      "value": 13.2
+     },
+     {
+      "period": "2024-04",
+      "value": 10.5
+     },
+     {
+      "period": "2024-05",
+      "value": 12.0
+     },
+     {
+      "period": "2024-06",
+      "value": 10.0
+     },
+     {
+      "period": "2024-07",
+      "value": 10.3
+     },
+     {
+      "period": "2024-08",
+      "value": 12.5
+     },
+     {
+      "period": "2024-09",
+      "value": 10.2
+     },
+     {
+      "period": "2024-10",
+      "value": 9.8
+     },
+     {
+      "period": "2024-11",
+      "value": 10.5
+     },
+     {
+      "period": "2024-12",
+      "value": 9.0
+     },
+     {
+      "period": "2025-01",
+      "value": 10.5
+     },
+     {
+      "period": "2025-02",
+      "value": 9.0
+     },
+     {
+      "period": "2025-03",
+      "value": 9.2
+     },
+     {
+      "period": "2025-04",
+      "value": 11.5
+     },
+     {
+      "period": "2025-05",
+      "value": 8.0
+     },
+     {
+      "period": "2025-06",
+      "value": 10.6
+     },
+     {
+      "period": "2025-07",
+      "value": 10.5
+     },
+     {
+      "period": "2025-08",
+      "value": 12.2
+     },
+     {
+      "period": "2025-09",
+      "value": 11.3
+     },
+     {
+      "period": "2025-10",
+      "value": 12.5
+     },
+     {
+      "period": "2025-11",
+      "value": 7.8
+     },
+     {
+      "period": "2025-12",
+      "value": 8.8
+     },
+     {
+      "period": "2026-01",
+      "value": 12.5
+     },
+     {
+      "period": "2026-02",
+      "value": 12.0
+     },
+     {
+      "period": "2026-03",
+      "value": 13.6
+     },
+     {
+      "period": "2026-04",
+      "value": 9.3
+     },
+     {
+      "period": "2026-05",
+      "value": 12.8
+     },
+     {
+      "period": "2026-06",
+      "value": 10.0
+     }
+    ],
+    "source_id": "trends_manual",
+    "source": {
+     "publisher": "Google Trends (manual export)",
+     "license": "Google Trends terms — exported by hand, not scraped",
+     "attribution": "Source: Google Trends, exported manually",
+     "kind": "commercial",
+     "docs_url": "https://trends.google.com/trends/explore"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-25T18:59:28+00:00",
+    "staleness_days": 25,
+    "max_age_days": 120,
+    "fresh": "fresh"
+   },
+   {
     "metric_id": "wiki_city_attention",
     "label": "City attention share",
+    "plain": "How much of Wikipedia's traffic goes to this city, so years can be compared as reading habits change.",
     "label_es": null,
     "unit": "per_million",
     "cadence": "monthly",
@@ -10592,6 +11278,7 @@
    {
     "metric_id": "wiki_hardship_index",
     "label": "Hardship attention (Euribor, eviction, benefits)",
+    "plain": "How often people look up Euribor, evictions, mortgages and unemployment benefits. Worry, not hardship itself.",
     "label_es": null,
     "unit": "per_million",
     "cadence": "monthly",
@@ -11014,6 +11701,7 @@
    {
     "metric_id": "wiki_city_foreign_share",
     "label": "Non-Spanish share of city article views",
+    "plain": "What share of the city's Wikipedia readers are reading in a language other than Spanish — a rough read on interest from abroad.",
     "label_es": null,
     "unit": "percent",
     "cadence": "monthly",
@@ -11436,6 +12124,7 @@
    {
     "metric_id": "wiki_relocation_index",
     "label": "Relocation attention (padrón, NIE, visas)",
+    "plain": "How often people look up residency registration, visas and foreigner ID — the paperwork of moving to Spain.",
     "label_es": null,
     "unit": "per_million",
     "cadence": "monthly",
@@ -11856,8 +12545,543 @@
     "fresh": "fresh"
    },
    {
+    "metric_id": "search_rental_pressure",
+    "label": "Rental search pressure",
+    "plain": "How hard people are searching for somewhere to rent here.",
+    "label_es": null,
+    "unit": "index",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-41091",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 37.0,
+     "yoy": -26.294820717131476
+    },
+    "suspect": false,
+    "outlier_score": 0.2,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2021-07",
+      "value": 75.0
+     },
+     {
+      "period": "2021-08",
+      "value": 70.8
+     },
+     {
+      "period": "2021-09",
+      "value": 73.0
+     },
+     {
+      "period": "2021-10",
+      "value": 61.2
+     },
+     {
+      "period": "2021-11",
+      "value": 57.0
+     },
+     {
+      "period": "2021-12",
+      "value": 53.8
+     },
+     {
+      "period": "2022-01",
+      "value": 69.8
+     },
+     {
+      "period": "2022-02",
+      "value": 77.0
+     },
+     {
+      "period": "2022-03",
+      "value": 78.0
+     },
+     {
+      "period": "2022-04",
+      "value": 67.0
+     },
+     {
+      "period": "2022-05",
+      "value": 79.2
+     },
+     {
+      "period": "2022-06",
+      "value": 92.5
+     },
+     {
+      "period": "2022-07",
+      "value": 88.4
+     },
+     {
+      "period": "2022-08",
+      "value": 85.3
+     },
+     {
+      "period": "2022-09",
+      "value": 71.0
+     },
+     {
+      "period": "2022-10",
+      "value": 60.6
+     },
+     {
+      "period": "2022-11",
+      "value": 49.5
+     },
+     {
+      "period": "2022-12",
+      "value": 47.0
+     },
+     {
+      "period": "2023-01",
+      "value": 62.0
+     },
+     {
+      "period": "2023-02",
+      "value": 65.3
+     },
+     {
+      "period": "2023-03",
+      "value": 61.0
+     },
+     {
+      "period": "2023-04",
+      "value": 59.2
+     },
+     {
+      "period": "2023-05",
+      "value": 68.8
+     },
+     {
+      "period": "2023-06",
+      "value": 70.5
+     },
+     {
+      "period": "2023-07",
+      "value": 67.6
+     },
+     {
+      "period": "2023-08",
+      "value": 63.5
+     },
+     {
+      "period": "2023-09",
+      "value": 64.3
+     },
+     {
+      "period": "2023-10",
+      "value": 49.0
+     },
+     {
+      "period": "2023-11",
+      "value": 45.3
+     },
+     {
+      "period": "2023-12",
+      "value": 37.8
+     },
+     {
+      "period": "2024-01",
+      "value": 53.3
+     },
+     {
+      "period": "2024-02",
+      "value": 46.8
+     },
+     {
+      "period": "2024-03",
+      "value": 47.2
+     },
+     {
+      "period": "2024-04",
+      "value": 40.5
+     },
+     {
+      "period": "2024-05",
+      "value": 48.0
+     },
+     {
+      "period": "2024-06",
+      "value": 53.2
+     },
+     {
+      "period": "2024-07",
+      "value": 44.8
+     },
+     {
+      "period": "2024-08",
+      "value": 39.5
+     },
+     {
+      "period": "2024-09",
+      "value": 42.0
+     },
+     {
+      "period": "2024-10",
+      "value": 33.5
+     },
+     {
+      "period": "2024-11",
+      "value": 30.8
+     },
+     {
+      "period": "2024-12",
+      "value": 29.4
+     },
+     {
+      "period": "2025-01",
+      "value": 34.8
+     },
+     {
+      "period": "2025-02",
+      "value": 37.8
+     },
+     {
+      "period": "2025-03",
+      "value": 42.0
+     },
+     {
+      "period": "2025-04",
+      "value": 33.3
+     },
+     {
+      "period": "2025-05",
+      "value": 38.8
+     },
+     {
+      "period": "2025-06",
+      "value": 50.2
+     },
+     {
+      "period": "2025-07",
+      "value": 45.5
+     },
+     {
+      "period": "2025-08",
+      "value": 41.6
+     },
+     {
+      "period": "2025-09",
+      "value": 39.8
+     },
+     {
+      "period": "2025-10",
+      "value": 35.8
+     },
+     {
+      "period": "2025-11",
+      "value": 26.6
+     },
+     {
+      "period": "2025-12",
+      "value": 25.8
+     },
+     {
+      "period": "2026-01",
+      "value": 35.5
+     },
+     {
+      "period": "2026-02",
+      "value": 35.0
+     },
+     {
+      "period": "2026-03",
+      "value": 30.6
+     },
+     {
+      "period": "2026-04",
+      "value": 33.8
+     },
+     {
+      "period": "2026-05",
+      "value": 37.8
+     },
+     {
+      "period": "2026-06",
+      "value": 37.0
+     }
+    ],
+    "source_id": "trends_manual",
+    "source": {
+     "publisher": "Google Trends (manual export)",
+     "license": "Google Trends terms — exported by hand, not scraped",
+     "attribution": "Source: Google Trends, exported manually",
+     "kind": "commercial",
+     "docs_url": "https://trends.google.com/trends/explore"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-25T18:59:28+00:00",
+    "staleness_days": 25,
+    "max_age_days": 120,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "search_room_share",
+    "label": "Room-vs-flat search spread",
+    "plain": "How often people search for a room compared with a whole flat. Rising means households are compressing — taking a room because a flat is out of reach.",
+    "label_es": null,
+    "unit": "index",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": -1,
+    "note": null,
+    "geo_id": "mun-41091",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 5.405,
+     "yoy": -35.40098004063583
+    },
+    "suspect": false,
+    "outlier_score": 0.9,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2021-07",
+      "value": 13.333
+     },
+     {
+      "period": "2021-08",
+      "value": 15.254
+     },
+     {
+      "period": "2021-09",
+      "value": 14.795
+     },
+     {
+      "period": "2021-10",
+      "value": 10.131
+     },
+     {
+      "period": "2021-11",
+      "value": 10.175
+     },
+     {
+      "period": "2022-01",
+      "value": 9.169
+     },
+     {
+      "period": "2022-02",
+      "value": 12.078
+     },
+     {
+      "period": "2022-03",
+      "value": 12.179
+     },
+     {
+      "period": "2022-04",
+      "value": 11.194
+     },
+     {
+      "period": "2022-05",
+      "value": 13.889
+     },
+     {
+      "period": "2022-06",
+      "value": 7.351
+     },
+     {
+      "period": "2022-07",
+      "value": 12.217
+     },
+     {
+      "period": "2022-08",
+      "value": 13.247
+     },
+     {
+      "period": "2022-09",
+      "value": 13.38
+     },
+     {
+      "period": "2022-10",
+      "value": 16.172
+     },
+     {
+      "period": "2022-11",
+      "value": 13.131
+     },
+     {
+      "period": "2022-12",
+      "value": 9.149
+     },
+     {
+      "period": "2023-01",
+      "value": 12.258
+     },
+     {
+      "period": "2023-02",
+      "value": 5.819
+     },
+     {
+      "period": "2023-03",
+      "value": 11.475
+     },
+     {
+      "period": "2023-04",
+      "value": 11.824
+     },
+     {
+      "period": "2023-05",
+      "value": 6.977
+     },
+     {
+      "period": "2023-06",
+      "value": 11.064
+     },
+     {
+      "period": "2023-07",
+      "value": 13.609
+     },
+     {
+      "period": "2023-08",
+      "value": 5.197
+     },
+     {
+      "period": "2023-09",
+      "value": 12.442
+     },
+     {
+      "period": "2023-10",
+      "value": 14.286
+     },
+     {
+      "period": "2023-11",
+      "value": 9.492
+     },
+     {
+      "period": "2023-12",
+      "value": 3.704
+     },
+     {
+      "period": "2024-01",
+      "value": 14.071
+     },
+     {
+      "period": "2024-02",
+      "value": 9.188
+     },
+     {
+      "period": "2024-03",
+      "value": 11.864
+     },
+     {
+      "period": "2024-04",
+      "value": 5.679
+     },
+     {
+      "period": "2024-05",
+      "value": 4.167
+     },
+     {
+      "period": "2024-06",
+      "value": 13.534
+     },
+     {
+      "period": "2024-07",
+      "value": 5.134
+     },
+     {
+      "period": "2024-08",
+      "value": 4.557
+     },
+     {
+      "period": "2024-09",
+      "value": 20.0
+     },
+     {
+      "period": "2024-10",
+      "value": 11.343
+     },
+     {
+      "period": "2024-11",
+      "value": 7.468
+     },
+     {
+      "period": "2024-12",
+      "value": 7.483
+     },
+     {
+      "period": "2025-01",
+      "value": 10.92
+     },
+     {
+      "period": "2025-03",
+      "value": 7.619
+     },
+     {
+      "period": "2025-04",
+      "value": 6.907
+     },
+     {
+      "period": "2025-06",
+      "value": 8.367
+     },
+     {
+      "period": "2025-07",
+      "value": 8.791
+     },
+     {
+      "period": "2025-08",
+      "value": 8.173
+     },
+     {
+      "period": "2025-09",
+      "value": 5.025
+     },
+     {
+      "period": "2025-10",
+      "value": 5.587
+     },
+     {
+      "period": "2025-11",
+      "value": 6.015
+     },
+     {
+      "period": "2026-02",
+      "value": 6.571
+     },
+     {
+      "period": "2026-03",
+      "value": 14.379
+     },
+     {
+      "period": "2026-05",
+      "value": 4.233
+     },
+     {
+      "period": "2026-06",
+      "value": 5.405
+     }
+    ],
+    "source_id": "trends_manual",
+    "source": {
+     "publisher": "Google Trends (manual export)",
+     "license": "Google Trends terms — exported by hand, not scraped",
+     "attribution": "Source: Google Trends, exported manually",
+     "kind": "commercial",
+     "docs_url": "https://trends.google.com/trends/explore"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-25T18:59:28+00:00",
+    "staleness_days": 25,
+    "max_age_days": 120,
+    "fresh": "fresh"
+   },
+   {
     "metric_id": "wiki_city_views",
     "label": "Wikipedia views, city article (all languages)",
+    "plain": "How many times people read this city's Wikipedia article.",
     "label_es": null,
     "unit": "views",
     "cadence": "monthly",
@@ -12279,5 +13503,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T18:37:58+00:00"
+ "generated_at": "2026-07-25T19:00:12+00:00"
 }

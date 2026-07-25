@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T18:37:58+00:00",
+ "generated_at": "2026-07-25T19:00:12+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -21,16 +21,16 @@
    "slug": "madrid",
    "name": "Madrid",
    "regime": {
-    "rule_id": "supply_squeeze",
-    "label": "Pressure without supply",
-    "reading": "Rents and prices are running above this city's own record while starts and completions are not responding. Pressure here is a supply problem rather than a demand surge, and it does not resolve on its own.",
-    "expression": "housing_pressure > 0.75 and supply_response < -0.25",
+    "rule_id": "hot_decelerating",
+    "label": "Hot but decelerating",
+    "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+    "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v2",
     "inputs": {
      "demand_momentum": 0.0143,
-     "housing_pressure": 1.2525,
+     "housing_pressure": 1.1836,
      "supply_response": -0.9389,
-     "distress": 0.1757
+     "distress": 0.1344
     },
     "available_indices": [
      "demand_momentum",
@@ -43,19 +43,19 @@
    },
    "indices": {
     "demand_momentum": 0.0143,
-    "housing_pressure": 1.2525,
+    "housing_pressure": 1.1836,
     "supply_response": -0.9389,
-    "distress": 0.1757
+    "distress": 0.1344
    },
    "top_signature": {
     "archetype_id": "overheating",
     "label": "Overheating",
     "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
     "firing": 4,
-    "available": 6,
-    "total": 11,
-    "coverage": 0.545,
-    "score": 0.667,
+    "available": 8,
+    "total": 13,
+    "coverage": 0.615,
+    "score": 0.5,
     "insufficient_coverage": false,
     "signals_firing": [
      {
@@ -125,6 +125,28 @@
       "period": "2026-05",
       "geo_level": "province",
       "source_id": "ine"
+     },
+     {
+      "metric_id": "search_room_share",
+      "label": "Room-vs-flat search spread",
+      "expect": "up",
+      "z": 0.3619,
+      "raw": 3.0537,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
+     },
+     {
+      "metric_id": "search_tenure_switch",
+      "label": "Buy-vs-rent search spread",
+      "expect": "up",
+      "z": -0.3093,
+      "raw": 3.6637,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_unavailable": [
@@ -134,7 +156,7 @@
      "str_listings",
      "tourist_dwellings"
     ],
-    "signatures_version": "signatures-v1"
+    "signatures_version": "signatures-v2"
    },
    "timeline": [
     {
@@ -259,63 +281,63 @@
     },
     {
      "period": "2024-07",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0561,
-     "index_housing_pressure": 0.7599,
+     "index_housing_pressure": 0.1351,
      "index_supply_response": -0.0611,
-     "index_distress": -0.3663
+     "index_distress": -0.3294
     },
     {
      "period": "2024-08",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1765,
-     "index_housing_pressure": 0.7599,
+     "index_housing_pressure": 0.2772,
      "index_supply_response": -0.0611,
-     "index_distress": -0.2862
+     "index_distress": -0.2661
     },
     {
      "period": "2024-09",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0992,
-     "index_housing_pressure": 0.7599,
+     "index_housing_pressure": 0.3193,
      "index_supply_response": -0.0611,
-     "index_distress": -0.1186
+     "index_distress": -0.1677
     },
     {
      "period": "2024-10",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0885,
-     "index_housing_pressure": 0.7889,
+     "index_housing_pressure": 0.3622,
      "index_supply_response": 2.1548,
-     "index_distress": 0.1799
+     "index_distress": 0.1979
     },
     {
      "period": "2024-11",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0824,
-     "index_housing_pressure": 0.7889,
+     "index_housing_pressure": 0.3532,
      "index_supply_response": 2.1548,
-     "index_distress": 0.3503
+     "index_distress": 0.3442
     },
     {
      "period": "2024-12",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0595,
-     "index_housing_pressure": 0.7889,
+     "index_housing_pressure": 0.5377,
      "index_supply_response": 2.1548,
-     "index_distress": 0.3295
+     "index_distress": 0.4161
     },
     {
      "period": "2025-01",
@@ -323,9 +345,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1298,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.3007,
      "index_supply_response": -0.5988,
-     "index_distress": 0.0331
+     "index_distress": -0.0437
     },
     {
      "period": "2025-02",
@@ -333,9 +355,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1109,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.544,
      "index_supply_response": -0.5988,
-     "index_distress": 0.1548
+     "index_distress": 0.1145
     },
     {
      "period": "2025-03",
@@ -343,9 +365,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0441,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.7085,
      "index_supply_response": -0.5988,
-     "index_distress": 0.2985
+     "index_distress": 0.2425
     },
     {
      "period": "2025-04",
@@ -353,9 +375,9 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2718,
-     "index_housing_pressure": 1.9373,
+     "index_housing_pressure": 1.6177,
      "index_supply_response": -0.2173,
-     "index_distress": 0.2458
+     "index_distress": 0.2721
     },
     {
      "period": "2025-05",
@@ -363,49 +385,49 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0643,
-     "index_housing_pressure": 1.9373,
+     "index_housing_pressure": 1.715,
      "index_supply_response": -0.2173,
-     "index_distress": 0.2636
+     "index_distress": 0.2398
     },
     {
      "period": "2025-06",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0176,
-     "index_housing_pressure": 1.9373,
+     "index_housing_pressure": 1.6038,
      "index_supply_response": -0.2173,
-     "index_distress": 0.2797
+     "index_distress": 0.3233
     },
     {
      "period": "2025-07",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0678,
-     "index_housing_pressure": 1.8005,
-     "index_supply_response": -0.6925,
-     "index_distress": 0.3417
-    },
-    {
-     "period": "2025-08",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0461,
-     "index_housing_pressure": 1.8005,
-     "index_supply_response": -0.6925,
-     "index_distress": 0.2798
-    },
-    {
-     "period": "2025-09",
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0163,
-     "index_housing_pressure": 1.8005,
+     "index_demand_momentum": 0.0678,
+     "index_housing_pressure": 1.9347,
      "index_supply_response": -0.6925,
-     "index_distress": 0.2789
+     "index_distress": 0.4416
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "supply_squeeze",
+     "label": "Pressure without supply",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0461,
+     "index_housing_pressure": 1.6906,
+     "index_supply_response": -0.6925,
+     "index_distress": 0.3339
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0163,
+     "index_housing_pressure": 1.5137,
+     "index_supply_response": -0.6925,
+     "index_distress": 0.2064
     },
     {
      "period": "2025-10",
@@ -413,29 +435,29 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2669,
-     "index_housing_pressure": 1.6734,
+     "index_housing_pressure": 1.6177,
      "index_supply_response": -0.9389,
-     "index_distress": 0.4899
+     "index_distress": 0.435
     },
     {
      "period": "2025-11",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1603,
-     "index_housing_pressure": 1.6734,
-     "index_supply_response": -0.9389,
-     "index_distress": 0.4387
-    },
-    {
-     "period": "2025-12",
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0164,
-     "index_housing_pressure": 1.6734,
+     "index_demand_momentum": -0.1603,
+     "index_housing_pressure": 1.6855,
      "index_supply_response": -0.9389,
-     "index_distress": 0.3538
+     "index_distress": 0.5189
+    },
+    {
+     "period": "2025-12",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0164,
+     "index_housing_pressure": 1.4268,
+     "index_supply_response": -0.9389,
+     "index_distress": 0.3111
     },
     {
      "period": "2026-01",
@@ -443,29 +465,29 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.3174,
-     "index_housing_pressure": 1.4865,
+     "index_housing_pressure": 1.2299,
      "index_supply_response": null,
-     "index_distress": 0.3105
+     "index_distress": 0.4473
     },
     {
      "period": "2026-02",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1117,
-     "index_housing_pressure": 1.4865,
-     "index_supply_response": null,
-     "index_distress": 0.3831
-    },
-    {
-     "period": "2026-03",
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0184,
-     "index_housing_pressure": 1.4865,
+     "index_demand_momentum": -0.1117,
+     "index_housing_pressure": 1.4368,
      "index_supply_response": null,
-     "index_distress": 0.169
+     "index_distress": 0.3281
+    },
+    {
+     "period": "2026-03",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0184,
+     "index_housing_pressure": 1.2277,
+     "index_supply_response": null,
+     "index_distress": 0.2453
     },
     {
      "period": "2026-04",
@@ -475,7 +497,7 @@
      "index_demand_momentum": 0.0819,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.2101
+     "index_distress": 0.2855
     },
     {
      "period": "2026-05",
@@ -485,7 +507,7 @@
      "index_demand_momentum": -0.0243,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.0322
+     "index_distress": -0.0443
     },
     {
      "period": "2026-06",
@@ -495,7 +517,7 @@
      "index_demand_momentum": 0.1764,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.0764
+     "index_distress": 0.009
     }
    ]
   },
@@ -510,9 +532,9 @@
     "rules_version": "regimes-v2",
     "inputs": {
      "demand_momentum": -0.0166,
-     "housing_pressure": 0.8088,
+     "housing_pressure": 0.7674,
      "supply_response": 0.5433,
-     "distress": -0.1355
+     "distress": -0.0035
     },
     "available_indices": [
      "demand_momentum",
@@ -525,19 +547,19 @@
    },
    "indices": {
     "demand_momentum": -0.0166,
-    "housing_pressure": 0.8088,
+    "housing_pressure": 0.7674,
     "supply_response": 0.5433,
-    "distress": -0.1355
+    "distress": -0.0035
    },
    "top_signature": {
     "archetype_id": "overheating",
     "label": "Overheating",
     "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
     "firing": 2,
-    "available": 6,
-    "total": 11,
-    "coverage": 0.545,
-    "score": 0.333,
+    "available": 8,
+    "total": 13,
+    "coverage": 0.615,
+    "score": 0.25,
     "insufficient_coverage": false,
     "signals_firing": [
      {
@@ -607,6 +629,28 @@
       "period": "2025-12",
       "geo_level": "province",
       "source_id": "mivau"
+     },
+     {
+      "metric_id": "search_room_share",
+      "label": "Room-vs-flat search spread",
+      "expect": "up",
+      "z": -1.5813,
+      "raw": -38.907,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
+     },
+     {
+      "metric_id": "search_tenure_switch",
+      "label": "Buy-vs-rent search spread",
+      "expect": "up",
+      "z": -1.3196,
+      "raw": -8.3367,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_unavailable": [
@@ -616,7 +660,7 @@
      "str_listings",
      "tourist_dwellings"
     ],
-    "signatures_version": "signatures-v1"
+    "signatures_version": "signatures-v2"
    },
    "timeline": [
     {
@@ -741,23 +785,23 @@
     },
     {
      "period": "2024-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1171,
-     "index_housing_pressure": 0.2563,
+     "index_housing_pressure": -0.1771,
      "index_supply_response": 0.2543,
-     "index_distress": -0.8499
+     "index_distress": -0.81
     },
     {
      "period": "2024-08",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2251,
-     "index_housing_pressure": 0.2563,
+     "index_housing_pressure": -0.0561,
      "index_supply_response": 0.2543,
-     "index_distress": -0.7685
+     "index_distress": -0.6703
     },
     {
      "period": "2024-09",
@@ -765,9 +809,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1054,
-     "index_housing_pressure": 0.2563,
+     "index_housing_pressure": 0.0293,
      "index_supply_response": 0.2543,
-     "index_distress": -0.5999
+     "index_distress": -0.5426
     },
     {
      "period": "2024-10",
@@ -775,9 +819,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.06,
-     "index_housing_pressure": 0.345,
+     "index_housing_pressure": 0.1297,
      "index_supply_response": -0.4779,
-     "index_distress": 0.1806
+     "index_distress": 0.2042
     },
     {
      "period": "2024-11",
@@ -785,9 +829,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.3561,
-     "index_housing_pressure": 0.345,
+     "index_housing_pressure": 0.0447,
      "index_supply_response": -0.4779,
-     "index_distress": 0.3588
+     "index_distress": 0.3459
     },
     {
      "period": "2024-12",
@@ -795,9 +839,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1211,
-     "index_housing_pressure": 0.345,
+     "index_housing_pressure": 0.2957,
      "index_supply_response": -0.4779,
-     "index_distress": 0.3392
+     "index_distress": 0.3324
     },
     {
      "period": "2025-01",
@@ -805,9 +849,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1898,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.2197,
      "index_supply_response": -0.3726,
-     "index_distress": 0.0797
+     "index_distress": -0.0668
     },
     {
      "period": "2025-02",
@@ -815,19 +859,19 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1505,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.1301,
      "index_supply_response": -0.3726,
-     "index_distress": 0.2226
+     "index_distress": 0.1662
     },
     {
      "period": "2025-03",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0083,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.2505,
      "index_supply_response": -0.3726,
-     "index_distress": 0.3788
+     "index_distress": 0.219
     },
     {
      "period": "2025-04",
@@ -835,9 +879,9 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2461,
-     "index_housing_pressure": 1.3761,
+     "index_housing_pressure": 0.8725,
      "index_supply_response": -0.5915,
-     "index_distress": -0.1799
+     "index_distress": -0.2937
     },
     {
      "period": "2025-05",
@@ -845,9 +889,9 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0683,
-     "index_housing_pressure": 1.3761,
+     "index_housing_pressure": 1.0452,
      "index_supply_response": -0.5915,
-     "index_distress": -0.1842
+     "index_distress": -0.1642
     },
     {
      "period": "2025-06",
@@ -855,19 +899,19 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0845,
-     "index_housing_pressure": 1.3761,
+     "index_housing_pressure": 1.1757,
      "index_supply_response": -0.5915,
-     "index_distress": -0.1798
+     "index_distress": -0.1176
     },
     {
      "period": "2025-07",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "supply_squeeze",
+     "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0515,
-     "index_housing_pressure": 1.255,
+     "index_housing_pressure": 1.1334,
      "index_supply_response": -0.4052,
-     "index_distress": 0.0099
+     "index_distress": 0.0893
     },
     {
      "period": "2025-08",
@@ -875,29 +919,29 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.116,
-     "index_housing_pressure": 1.255,
+     "index_housing_pressure": 0.9972,
      "index_supply_response": -0.4052,
-     "index_distress": -0.0383
+     "index_distress": -0.0875
     },
     {
      "period": "2025-09",
-     "rule_id": "supply_squeeze",
-     "label": "Pressure without supply",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0751,
-     "index_housing_pressure": 1.255,
-     "index_supply_response": -0.4052,
-     "index_distress": -0.0495
-    },
-    {
-     "period": "2025-10",
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0751,
+     "index_housing_pressure": 1.1262,
+     "index_supply_response": -0.4052,
+     "index_distress": -0.0325
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "hot",
+     "label": "Hot",
+     "held_by_hysteresis": false,
      "index_demand_momentum": -0.1974,
-     "index_housing_pressure": 1.1354,
+     "index_housing_pressure": 1.0097,
      "index_supply_response": 0.5433,
-     "index_distress": -0.158
+     "index_distress": -0.0861
     },
     {
      "period": "2025-11",
@@ -905,19 +949,19 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1556,
-     "index_housing_pressure": 1.1354,
+     "index_housing_pressure": 1.0164,
      "index_supply_response": 0.5433,
-     "index_distress": -0.2024
+     "index_distress": -0.1202
     },
     {
      "period": "2025-12",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0701,
-     "index_housing_pressure": 1.1354,
+     "index_housing_pressure": 0.7299,
      "index_supply_response": 0.5433,
-     "index_distress": -0.2763
+     "index_distress": -0.2936
     },
     {
      "period": "2026-01",
@@ -925,19 +969,19 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.4525,
-     "index_housing_pressure": 1.0549,
+     "index_housing_pressure": 0.9629,
      "index_supply_response": null,
-     "index_distress": -0.0099
+     "index_distress": 0.1057
     },
     {
      "period": "2026-02",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "hot",
+     "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2759,
-     "index_housing_pressure": 1.0549,
+     "index_housing_pressure": 0.9681,
      "index_supply_response": null,
-     "index_distress": 0.0447
+     "index_distress": 0.0476
     },
     {
      "period": "2026-03",
@@ -945,9 +989,9 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2552,
-     "index_housing_pressure": 1.0549,
+     "index_housing_pressure": 1.4632,
      "index_supply_response": null,
-     "index_distress": -0.1897
+     "index_distress": -0.0031
     },
     {
      "period": "2026-04",
@@ -957,7 +1001,7 @@
      "index_demand_momentum": -0.0348,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.1532
+     "index_distress": 0.4041
     },
     {
      "period": "2026-05",
@@ -967,7 +1011,7 @@
      "index_demand_momentum": -0.1216,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.054
+     "index_distress": 0.0757
     },
     {
      "period": "2026-06",
@@ -977,7 +1021,7 @@
      "index_demand_momentum": 0.0844,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.1076
+     "index_distress": 0.3343
     }
    ]
   },
@@ -985,16 +1029,16 @@
    "slug": "valencia",
    "name": "València",
    "regime": {
-    "rule_id": "supply_squeeze",
-    "label": "Pressure without supply",
-    "reading": "Rents and prices are running above this city's own record while starts and completions are not responding. Pressure here is a supply problem rather than a demand surge, and it does not resolve on its own.",
-    "expression": "housing_pressure > 0.75 and supply_response < -0.25",
+    "rule_id": "hot_decelerating",
+    "label": "Hot but decelerating",
+    "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+    "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v2",
     "inputs": {
      "demand_momentum": -0.0752,
-     "housing_pressure": 1.5014,
+     "housing_pressure": 1.2761,
      "supply_response": -0.6999,
-     "distress": 0.0047
+     "distress": 0.0811
     },
     "available_indices": [
      "demand_momentum",
@@ -1007,19 +1051,19 @@
    },
    "indices": {
     "demand_momentum": -0.0752,
-    "housing_pressure": 1.5014,
+    "housing_pressure": 1.2761,
     "supply_response": -0.6999,
-    "distress": 0.0047
+    "distress": 0.0811
    },
    "top_signature": {
     "archetype_id": "overheating",
     "label": "Overheating",
     "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
-    "firing": 4,
-    "available": 6,
-    "total": 11,
-    "coverage": 0.545,
-    "score": 0.667,
+    "firing": 5,
+    "available": 8,
+    "total": 13,
+    "coverage": 0.615,
+    "score": 0.625,
     "insufficient_coverage": false,
     "signals_firing": [
      {
@@ -1065,6 +1109,17 @@
       "period": "2026-06",
       "geo_level": "nation",
       "source_id": "bde"
+     },
+     {
+      "metric_id": "search_tenure_switch",
+      "label": "Buy-vs-rent search spread",
+      "expect": "up",
+      "z": 0.6194,
+      "raw": 24.091,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_against": [
@@ -1089,6 +1144,17 @@
       "period": "2025-12",
       "geo_level": "province",
       "source_id": "mivau"
+     },
+     {
+      "metric_id": "search_room_share",
+      "label": "Room-vs-flat search spread",
+      "expect": "up",
+      "z": -0.9981,
+      "raw": -43.3904,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_unavailable": [
@@ -1098,7 +1164,7 @@
      "str_listings",
      "tourist_dwellings"
     ],
-    "signatures_version": "signatures-v1"
+    "signatures_version": "signatures-v2"
    },
    "timeline": [
     {
@@ -1223,93 +1289,93 @@
     },
     {
      "period": "2024-07",
-     "rule_id": "supply_squeeze",
-     "label": "Pressure without supply",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0208,
-     "index_housing_pressure": 0.9638,
+     "index_housing_pressure": 0.5856,
      "index_supply_response": -0.4014,
-     "index_distress": -1.0877
+     "index_distress": -1.0224
     },
     {
      "period": "2024-08",
-     "rule_id": "supply_squeeze",
-     "label": "Pressure without supply",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0059,
-     "index_housing_pressure": 0.9638,
+     "index_housing_pressure": 0.6649,
      "index_supply_response": -0.4014,
-     "index_distress": -1.0118
+     "index_distress": -0.8381
     },
     {
      "period": "2024-09",
-     "rule_id": "supply_squeeze",
-     "label": "Pressure without supply",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0175,
-     "index_housing_pressure": 0.9638,
+     "index_housing_pressure": 0.6604,
      "index_supply_response": -0.4014,
-     "index_distress": -0.8494
+     "index_distress": -0.7201
     },
     {
      "period": "2024-10",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.7928,
-     "index_housing_pressure": 0.9383,
+     "index_housing_pressure": 0.6087,
      "index_supply_response": -0.1058,
-     "index_distress": 0.3234
+     "index_distress": 0.5178
     },
     {
      "period": "2024-11",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.5523,
-     "index_housing_pressure": 0.9383,
+     "index_housing_pressure": 0.6751,
      "index_supply_response": -0.1058,
-     "index_distress": 0.4629
+     "index_distress": 0.5676
     },
     {
      "period": "2024-12",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0927,
-     "index_housing_pressure": 0.9383,
+     "index_housing_pressure": 0.6712,
      "index_supply_response": -0.1058,
-     "index_distress": 0.4252
+     "index_distress": 0.4974
     },
     {
      "period": "2025-01",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "hot",
+     "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1294,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.8164,
      "index_supply_response": -0.1659,
-     "index_distress": 0.1952
+     "index_distress": 0.3366
     },
     {
      "period": "2025-02",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "hot",
+     "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1576,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.8153,
      "index_supply_response": -0.1659,
-     "index_distress": 0.3499
+     "index_distress": 0.5628
     },
     {
      "period": "2025-03",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0739,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.7762,
      "index_supply_response": -0.1659,
-     "index_distress": 0.5269
+     "index_distress": 0.5296
     },
     {
      "period": "2025-04",
@@ -1317,9 +1383,9 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0168,
-     "index_housing_pressure": 1.5513,
+     "index_housing_pressure": 1.1095,
      "index_supply_response": -0.4377,
-     "index_distress": 0.5536
+     "index_distress": 0.8127
     },
     {
      "period": "2025-05",
@@ -1327,9 +1393,9 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1227,
-     "index_housing_pressure": 1.5513,
+     "index_housing_pressure": 1.3792,
      "index_supply_response": -0.4377,
-     "index_distress": 0.5753
+     "index_distress": 0.5637
     },
     {
      "period": "2025-06",
@@ -1337,9 +1403,9 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3532,
-     "index_housing_pressure": 1.5513,
+     "index_housing_pressure": 1.6098,
      "index_supply_response": -0.4377,
-     "index_distress": 0.5892
+     "index_distress": 0.5453
     },
     {
      "period": "2025-07",
@@ -1347,49 +1413,49 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2042,
-     "index_housing_pressure": 1.6482,
+     "index_housing_pressure": 1.6705,
      "index_supply_response": -0.1331,
-     "index_distress": 0.7256
+     "index_distress": 0.7347
     },
     {
      "period": "2025-08",
-     "rule_id": "hot",
-     "label": "Hot",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": 0.067,
-     "index_housing_pressure": 1.6482,
-     "index_supply_response": -0.1331,
-     "index_distress": 0.6761
-    },
-    {
-     "period": "2025-09",
-     "rule_id": "hot",
-     "label": "Hot",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2487,
-     "index_housing_pressure": 1.6482,
-     "index_supply_response": -0.1331,
-     "index_distress": 0.6713
-    },
-    {
-     "period": "2025-10",
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
+     "index_demand_momentum": 0.067,
+     "index_housing_pressure": 1.4554,
+     "index_supply_response": -0.1331,
+     "index_distress": 0.6248
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.2487,
+     "index_housing_pressure": 1.4263,
+     "index_supply_response": -0.1331,
+     "index_distress": 0.8466
+    },
+    {
+     "period": "2025-10",
+     "rule_id": "supply_squeeze",
+     "label": "Pressure without supply",
+     "held_by_hysteresis": false,
      "index_demand_momentum": -0.1857,
-     "index_housing_pressure": 1.6315,
+     "index_housing_pressure": 1.4578,
      "index_supply_response": -0.6999,
      "index_distress": 0.2267
     },
     {
      "period": "2025-11",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "supply_squeeze",
+     "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2177,
-     "index_housing_pressure": 1.6315,
+     "index_housing_pressure": 1.4713,
      "index_supply_response": -0.6999,
-     "index_distress": 0.2019
+     "index_distress": 0.3948
     },
     {
      "period": "2025-12",
@@ -1397,9 +1463,9 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3156,
-     "index_housing_pressure": 1.6315,
+     "index_housing_pressure": 1.6239,
      "index_supply_response": -0.6999,
-     "index_distress": 0.1543
+     "index_distress": 0.2783
     },
     {
      "period": "2026-01",
@@ -1407,29 +1473,29 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1199,
-     "index_housing_pressure": 1.7622,
+     "index_housing_pressure": 1.6553,
      "index_supply_response": null,
-     "index_distress": 0.2647
+     "index_distress": 0.0577
     },
     {
      "period": "2026-02",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2809,
-     "index_housing_pressure": 1.7622,
+     "index_housing_pressure": 1.508,
      "index_supply_response": null,
-     "index_distress": 0.3035
+     "index_distress": 0.3319
     },
     {
      "period": "2026-03",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0052,
-     "index_housing_pressure": 1.7622,
+     "index_housing_pressure": 1.6385,
      "index_supply_response": null,
-     "index_distress": 0.0487
+     "index_distress": 0.0331
     },
     {
      "period": "2026-04",
@@ -1439,7 +1505,7 @@
      "index_demand_momentum": 0.0761,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.267
+     "index_distress": -0.3895
     },
     {
      "period": "2026-05",
@@ -1449,7 +1515,7 @@
      "index_demand_momentum": -0.019,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.0584
+     "index_distress": 0.066
     },
     {
      "period": "2026-06",
@@ -1459,7 +1525,7 @@
      "index_demand_momentum": -0.0268,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.0942
+     "index_distress": 0.2333
     }
    ]
   },
@@ -1467,16 +1533,16 @@
    "slug": "malaga",
    "name": "Málaga",
    "regime": {
-    "rule_id": "supply_squeeze",
-    "label": "Pressure without supply",
-    "reading": "Rents and prices are running above this city's own record while starts and completions are not responding. Pressure here is a supply problem rather than a demand surge, and it does not resolve on its own.",
-    "expression": "housing_pressure > 0.75 and supply_response < -0.25",
+    "rule_id": "hot_decelerating",
+    "label": "Hot but decelerating",
+    "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+    "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v2",
     "inputs": {
      "demand_momentum": 0.1394,
-     "housing_pressure": 1.0557,
+     "housing_pressure": 0.9062,
      "supply_response": -0.3526,
-     "distress": 0.3769
+     "distress": 0.4291
     },
     "available_indices": [
      "demand_momentum",
@@ -1489,19 +1555,19 @@
    },
    "indices": {
     "demand_momentum": 0.1394,
-    "housing_pressure": 1.0557,
+    "housing_pressure": 0.9062,
     "supply_response": -0.3526,
-    "distress": 0.3769
+    "distress": 0.4291
    },
    "top_signature": {
     "archetype_id": "overheating",
     "label": "Overheating",
     "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
     "firing": 3,
-    "available": 6,
-    "total": 11,
-    "coverage": 0.545,
-    "score": 0.5,
+    "available": 8,
+    "total": 13,
+    "coverage": 0.615,
+    "score": 0.375,
     "insufficient_coverage": false,
     "signals_firing": [
      {
@@ -1571,6 +1637,28 @@
       "period": "2025-12",
       "geo_level": "province",
       "source_id": "mivau"
+     },
+     {
+      "metric_id": "search_room_share",
+      "label": "Room-vs-flat search spread",
+      "expect": "up",
+      "z": -1.0557,
+      "raw": -51.4443,
+      "unit": "index",
+      "period": "2026-01",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
+     },
+     {
+      "metric_id": "search_tenure_switch",
+      "label": "Buy-vs-rent search spread",
+      "expect": "up",
+      "z": -1.4074,
+      "raw": -53.9225,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_unavailable": [
@@ -1580,7 +1668,7 @@
      "str_listings",
      "tourist_dwellings"
     ],
-    "signatures_version": "signatures-v1"
+    "signatures_version": "signatures-v2"
    },
    "timeline": [
     {
@@ -1705,61 +1793,61 @@
     },
     {
      "period": "2024-07",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0462,
-     "index_housing_pressure": 0.7839,
+     "index_housing_pressure": 0.5186,
      "index_supply_response": -0.0919,
      "index_distress": -0.7118
     },
     {
      "period": "2024-08",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0128,
-     "index_housing_pressure": 0.7839,
+     "index_housing_pressure": 0.5299,
      "index_supply_response": -0.0919,
-     "index_distress": -0.6261
+     "index_distress": -0.4576
     },
     {
      "period": "2024-09",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1653,
-     "index_housing_pressure": 0.7839,
+     "index_housing_pressure": 0.4841,
      "index_supply_response": -0.0919,
-     "index_distress": -0.4481
+     "index_distress": -0.3614
     },
     {
      "period": "2024-10",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3429,
-     "index_housing_pressure": 0.8511,
+     "index_housing_pressure": 0.5911,
      "index_supply_response": 0.4483,
      "index_distress": 0.2906
     },
     {
      "period": "2024-11",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.057,
-     "index_housing_pressure": 0.8511,
+     "index_housing_pressure": 0.5342,
      "index_supply_response": 0.4483,
-     "index_distress": 0.4611
+     "index_distress": 0.2181
     },
     {
      "period": "2024-12",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0274,
-     "index_housing_pressure": 0.8511,
+     "index_housing_pressure": 0.5267,
      "index_supply_response": 0.4483,
      "index_distress": 0.4319
     },
@@ -1769,9 +1857,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0903,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.3589,
      "index_supply_response": -0.2636,
-     "index_distress": 0.1936
+     "index_distress": 0.1868
     },
     {
      "period": "2025-02",
@@ -1779,7 +1867,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0686,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.5218,
      "index_supply_response": -0.2636,
      "index_distress": 0.3276
     },
@@ -1789,7 +1877,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0317,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.4376,
      "index_supply_response": -0.2636,
      "index_distress": 0.4482
     },
@@ -1799,9 +1887,9 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0143,
-     "index_housing_pressure": 1.1701,
+     "index_housing_pressure": 1.0731,
      "index_supply_response": -0.1218,
-     "index_distress": 0.4638
+     "index_distress": 0.4935
     },
     {
      "period": "2025-05",
@@ -1809,7 +1897,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0408,
-     "index_housing_pressure": 1.1701,
+     "index_housing_pressure": 0.9466,
      "index_supply_response": -0.1218,
      "index_distress": 0.4556
     },
@@ -1819,7 +1907,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1443,
-     "index_housing_pressure": 1.1701,
+     "index_housing_pressure": 1.1134,
      "index_supply_response": -0.1218,
      "index_distress": 0.465
     },
@@ -1829,9 +1917,9 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1191,
-     "index_housing_pressure": 1.0473,
+     "index_housing_pressure": 0.9216,
      "index_supply_response": -0.25,
-     "index_distress": 0.4922
+     "index_distress": 0.5183
     },
     {
      "period": "2025-08",
@@ -1839,39 +1927,39 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0699,
-     "index_housing_pressure": 1.0473,
+     "index_housing_pressure": 0.8665,
      "index_supply_response": -0.25,
      "index_distress": 0.4389
     },
     {
      "period": "2025-09",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1812,
-     "index_housing_pressure": 1.0473,
+     "index_housing_pressure": 0.8774,
      "index_supply_response": -0.25,
      "index_distress": 0.4313
     },
     {
      "period": "2025-10",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "supply_squeeze",
+     "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1727,
-     "index_housing_pressure": 0.9359,
+     "index_housing_pressure": 0.9344,
      "index_supply_response": -0.3526,
      "index_distress": 0.5254
     },
     {
      "period": "2025-11",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "supply_squeeze",
+     "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0833,
-     "index_housing_pressure": 0.9359,
+     "index_housing_pressure": 0.8909,
      "index_supply_response": -0.3526,
-     "index_distress": 0.4716
+     "index_distress": 0.4899
     },
     {
      "period": "2025-12",
@@ -1879,37 +1967,37 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0922,
-     "index_housing_pressure": 0.9359,
+     "index_housing_pressure": 0.9424,
      "index_supply_response": -0.3526,
      "index_distress": 0.4038
     },
     {
      "period": "2026-01",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1384,
-     "index_housing_pressure": 1.0107,
+     "index_housing_pressure": 0.8802,
      "index_supply_response": null,
-     "index_distress": 0.4934
+     "index_distress": 0.5366
     },
     {
      "period": "2026-02",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.333,
-     "index_housing_pressure": 1.0107,
+     "index_housing_pressure": 0.8906,
      "index_supply_response": null,
      "index_distress": 0.5653
     },
     {
      "period": "2026-03",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0732,
-     "index_housing_pressure": 1.0107,
+     "index_housing_pressure": 0.7349,
      "index_supply_response": null,
      "index_distress": 0.3532
     },
@@ -1949,16 +2037,16 @@
    "slug": "sevilla",
    "name": "Sevilla",
    "regime": {
-    "rule_id": "hot",
-    "label": "Hot",
-    "reading": "Housing pressure is well above this city's own history and has not yet turned. Supply is at least keeping pace, so this is heat rather than a squeeze.",
-    "expression": "housing_pressure > 0.75",
+    "rule_id": "neutral",
+    "label": "No clear regime",
+    "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
+    "expression": "true",
     "rules_version": "regimes-v2",
     "inputs": {
      "demand_momentum": 0.356,
-     "housing_pressure": 0.9045,
+     "housing_pressure": 0.7148,
      "supply_response": -0.0804,
-     "distress": 0.5463
+     "distress": 0.5622
     },
     "available_indices": [
      "demand_momentum",
@@ -1971,18 +2059,18 @@
    },
    "indices": {
     "demand_momentum": 0.356,
-    "housing_pressure": 0.9045,
+    "housing_pressure": 0.7148,
     "supply_response": -0.0804,
-    "distress": 0.5463
+    "distress": 0.5622
    },
    "top_signature": {
     "archetype_id": "overheating",
     "label": "Overheating",
     "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
-    "firing": 3,
-    "available": 6,
-    "total": 11,
-    "coverage": 0.545,
+    "firing": 4,
+    "available": 8,
+    "total": 13,
+    "coverage": 0.615,
     "score": 0.5,
     "insufficient_coverage": false,
     "signals_firing": [
@@ -2018,6 +2106,17 @@
       "period": "2026-06",
       "geo_level": "nation",
       "source_id": "bde"
+     },
+     {
+      "metric_id": "search_tenure_switch",
+      "label": "Buy-vs-rent search spread",
+      "expect": "up",
+      "z": 0.6372,
+      "raw": 27.993,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_against": [
@@ -2053,6 +2152,17 @@
       "period": "2025-12",
       "geo_level": "province",
       "source_id": "mivau"
+     },
+     {
+      "metric_id": "search_room_share",
+      "label": "Room-vs-flat search spread",
+      "expect": "up",
+      "z": -0.7532,
+      "raw": -35.401,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_unavailable": [
@@ -2062,7 +2172,7 @@
      "str_listings",
      "tourist_dwellings"
     ],
-    "signatures_version": "signatures-v1"
+    "signatures_version": "signatures-v2"
    },
    "timeline": [
     {
@@ -2187,23 +2297,23 @@
     },
     {
      "period": "2024-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1932,
-     "index_housing_pressure": 0.2518,
+     "index_housing_pressure": -0.0085,
      "index_supply_response": -0.0445,
      "index_distress": -0.3121
     },
     {
      "period": "2024-08",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0215,
-     "index_housing_pressure": 0.2518,
+     "index_housing_pressure": -0.0405,
      "index_supply_response": -0.0445,
-     "index_distress": -0.2296
+     "index_distress": -0.2012
     },
     {
      "period": "2024-09",
@@ -2211,9 +2321,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1277,
-     "index_housing_pressure": 0.2518,
+     "index_housing_pressure": 0.0114,
      "index_supply_response": -0.0445,
-     "index_distress": -0.0502
+     "index_distress": -0.1904
     },
     {
      "period": "2024-10",
@@ -2221,9 +2331,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2662,
-     "index_housing_pressure": 0.2934,
+     "index_housing_pressure": 0.0899,
      "index_supply_response": 0.1784,
-     "index_distress": 0.34
+     "index_distress": 0.346
     },
     {
      "period": "2024-11",
@@ -2231,9 +2341,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0025,
-     "index_housing_pressure": 0.2934,
+     "index_housing_pressure": 0.092,
      "index_supply_response": 0.1784,
-     "index_distress": 0.5056
+     "index_distress": 0.4996
     },
     {
      "period": "2024-12",
@@ -2241,19 +2351,19 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1395,
-     "index_housing_pressure": 0.2934,
+     "index_housing_pressure": 0.2022,
      "index_supply_response": 0.1784,
-     "index_distress": 0.4786
+     "index_distress": 0.2164
     },
     {
      "period": "2025-01",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0167,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.272,
      "index_supply_response": 0.6111,
-     "index_distress": 0.1791
+     "index_distress": 0.2031
     },
     {
      "period": "2025-02",
@@ -2261,7 +2371,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0826,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.0631,
      "index_supply_response": 0.6111,
      "index_distress": 0.3077
     },
@@ -2271,9 +2381,9 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1575,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.2365,
      "index_supply_response": 0.6111,
-     "index_distress": 0.4429
+     "index_distress": 0.4711
     },
     {
      "period": "2025-04",
@@ -2281,9 +2391,9 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0698,
-     "index_housing_pressure": 0.9843,
+     "index_housing_pressure": 0.826,
      "index_supply_response": 0.0349,
-     "index_distress": 0.2932
+     "index_distress": 0.2221
     },
     {
      "period": "2025-05",
@@ -2291,7 +2401,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.5877,
-     "index_housing_pressure": 0.9843,
+     "index_housing_pressure": 0.8084,
      "index_supply_response": 0.0349,
      "index_distress": 0.2911
     },
@@ -2301,39 +2411,39 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3546,
-     "index_housing_pressure": 0.9843,
+     "index_housing_pressure": 0.9818,
      "index_supply_response": 0.0349,
-     "index_distress": 0.3044
+     "index_distress": 0.3484
     },
     {
      "period": "2025-07",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2717,
-     "index_housing_pressure": 0.9513,
-     "index_supply_response": -0.771,
-     "index_distress": 0.4145
-    },
-    {
-     "period": "2025-08",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1171,
-     "index_housing_pressure": 0.9513,
-     "index_supply_response": -0.771,
-     "index_distress": 0.3561
-    },
-    {
-     "period": "2025-09",
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3536,
-     "index_housing_pressure": 0.9513,
+     "index_demand_momentum": 0.2717,
+     "index_housing_pressure": 1.0423,
      "index_supply_response": -0.771,
-     "index_distress": 0.3432
+     "index_distress": 0.2372
+    },
+    {
+     "period": "2025-08",
+     "rule_id": "supply_squeeze",
+     "label": "Pressure without supply",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.1171,
+     "index_housing_pressure": 1.0792,
+     "index_supply_response": -0.771,
+     "index_distress": 0.1773
+    },
+    {
+     "period": "2025-09",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.3536,
+     "index_housing_pressure": 0.9349,
+     "index_supply_response": -0.771,
+     "index_distress": 0.4517
     },
     {
      "period": "2025-10",
@@ -2341,27 +2451,27 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1197,
-     "index_housing_pressure": 0.9552,
+     "index_housing_pressure": 1.0847,
      "index_supply_response": -0.0804,
-     "index_distress": 0.4416
+     "index_distress": 0.4932
     },
     {
      "period": "2025-11",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3146,
-     "index_housing_pressure": 0.9552,
+     "index_housing_pressure": 0.8234,
      "index_supply_response": -0.0804,
-     "index_distress": 0.4024
+     "index_distress": 0.4
     },
     {
      "period": "2025-12",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.454,
-     "index_housing_pressure": 0.9552,
+     "index_housing_pressure": 0.84,
      "index_supply_response": -0.0804,
      "index_distress": 0.3449
     },
@@ -2371,7 +2481,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0833,
-     "index_housing_pressure": 1.1231,
+     "index_housing_pressure": 1.1557,
      "index_supply_response": null,
      "index_distress": 0.6755
     },
@@ -2381,19 +2491,19 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1235,
-     "index_housing_pressure": 1.1231,
+     "index_housing_pressure": 1.0333,
      "index_supply_response": null,
      "index_distress": 0.736
     },
     {
      "period": "2026-03",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2927,
-     "index_housing_pressure": 1.1231,
+     "index_housing_pressure": 0.788,
      "index_supply_response": null,
-     "index_distress": 0.5197
+     "index_distress": 0.3174
     },
     {
      "period": "2026-04",
@@ -2423,7 +2533,7 @@
      "index_demand_momentum": 0.3614,
      "index_housing_pressure": null,
      "index_supply_response": null,
-     "index_distress": 0.2842
+     "index_distress": 0.3563
     }
    ]
   },
@@ -2438,7 +2548,7 @@
     "rules_version": "regimes-v2",
     "inputs": {
      "demand_momentum": -0.102,
-     "housing_pressure": 1.1267,
+     "housing_pressure": 0.9907,
      "supply_response": -0.0774,
      "distress": 0.3053
     },
@@ -2453,7 +2563,7 @@
    },
    "indices": {
     "demand_momentum": -0.102,
-    "housing_pressure": 1.1267,
+    "housing_pressure": 0.9907,
     "supply_response": -0.0774,
     "distress": 0.3053
    },
@@ -2463,8 +2573,8 @@
     "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
     "firing": 4,
     "available": 6,
-    "total": 11,
-    "coverage": 0.545,
+    "total": 13,
+    "coverage": 0.462,
     "score": 0.667,
     "insufficient_coverage": false,
     "signals_firing": [
@@ -2541,10 +2651,12 @@
      "affiliations",
      "housing_transactions",
      "population_padron",
+     "search_room_share",
+     "search_tenure_switch",
      "str_listings",
      "tourist_dwellings"
     ],
-    "signatures_version": "signatures-v1"
+    "signatures_version": "signatures-v2"
    },
    "timeline": [
     {
@@ -2673,7 +2785,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1652,
-     "index_housing_pressure": 0.6626,
+     "index_housing_pressure": 0.5102,
      "index_supply_response": 0.023,
      "index_distress": -0.5422
     },
@@ -2683,7 +2795,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2192,
-     "index_housing_pressure": 0.6626,
+     "index_housing_pressure": 0.4017,
      "index_supply_response": 0.023,
      "index_distress": -0.4668
     },
@@ -2693,37 +2805,37 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1455,
-     "index_housing_pressure": 0.6626,
+     "index_housing_pressure": 0.5458,
      "index_supply_response": 0.023,
      "index_distress": -0.2977
     },
     {
      "period": "2024-10",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0469,
-     "index_housing_pressure": 0.7833,
+     "index_housing_pressure": 0.477,
      "index_supply_response": 0.2217,
      "index_distress": 0.2241
     },
     {
      "period": "2024-11",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1482,
-     "index_housing_pressure": 0.7833,
+     "index_housing_pressure": 0.4404,
      "index_supply_response": 0.2217,
      "index_distress": 0.3907
     },
     {
      "period": "2024-12",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1074,
-     "index_housing_pressure": 0.7833,
+     "index_housing_pressure": 0.3564,
      "index_supply_response": 0.2217,
      "index_distress": 0.3583
     },
@@ -2733,17 +2845,17 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.264,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.6739,
      "index_supply_response": -0.669,
      "index_distress": -0.0612
     },
     {
      "period": "2025-02",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "supply_squeeze",
+     "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1668,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 1.0197,
      "index_supply_response": -0.669,
      "index_distress": 0.0758
     },
@@ -2753,7 +2865,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0969,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.2405,
      "index_supply_response": -0.669,
      "index_distress": 0.2132
     },
@@ -2763,7 +2875,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1873,
-     "index_housing_pressure": 1.548,
+     "index_housing_pressure": 1.2803,
      "index_supply_response": -0.1948,
      "index_distress": 0.5775
     },
@@ -2773,7 +2885,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1613,
-     "index_housing_pressure": 1.548,
+     "index_housing_pressure": 1.2915,
      "index_supply_response": -0.1948,
      "index_distress": 0.5733
     },
@@ -2783,7 +2895,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0226,
-     "index_housing_pressure": 1.548,
+     "index_housing_pressure": 1.2976,
      "index_supply_response": -0.1948,
      "index_distress": 0.5873
     },
@@ -2793,7 +2905,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0772,
-     "index_housing_pressure": 1.6223,
+     "index_housing_pressure": 1.4948,
      "index_supply_response": 0.0289,
      "index_distress": 0.4845
     },
@@ -2803,7 +2915,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0984,
-     "index_housing_pressure": 1.6223,
+     "index_housing_pressure": 1.8383,
      "index_supply_response": 0.0289,
      "index_distress": 0.4375
     },
@@ -2813,7 +2925,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0484,
-     "index_housing_pressure": 1.6223,
+     "index_housing_pressure": 1.5382,
      "index_supply_response": 0.0289,
      "index_distress": 0.4197
     },
@@ -2823,7 +2935,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1686,
-     "index_housing_pressure": 1.5516,
+     "index_housing_pressure": 1.2745,
      "index_supply_response": -0.0774,
      "index_distress": 0.2698
     },
@@ -2833,7 +2945,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.07,
-     "index_housing_pressure": 1.5516,
+     "index_housing_pressure": 1.2204,
      "index_supply_response": -0.0774,
      "index_distress": 0.2133
     },
@@ -2843,7 +2955,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0396,
-     "index_housing_pressure": 1.5516,
+     "index_housing_pressure": 1.335,
      "index_supply_response": -0.0774,
      "index_distress": 0.1378
     },
@@ -2853,7 +2965,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.35,
-     "index_housing_pressure": 1.3264,
+     "index_housing_pressure": 1.1306,
      "index_supply_response": null,
      "index_distress": 0.4486
     },
@@ -2863,7 +2975,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.4308,
-     "index_housing_pressure": 1.3264,
+     "index_housing_pressure": 0.9653,
      "index_supply_response": null,
      "index_distress": 0.5196
     },
@@ -2873,7 +2985,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0533,
-     "index_housing_pressure": 1.3264,
+     "index_housing_pressure": 1.235,
      "index_supply_response": null,
      "index_distress": 0.2979
     },
@@ -2920,7 +3032,7 @@
     "rules_version": "regimes-v2",
     "inputs": {
      "demand_momentum": -0.3101,
-     "housing_pressure": 0.9813,
+     "housing_pressure": 1.2658,
      "supply_response": -0.3312,
      "distress": 0.2655
     },
@@ -2935,7 +3047,7 @@
    },
    "indices": {
     "demand_momentum": -0.3101,
-    "housing_pressure": 0.9813,
+    "housing_pressure": 1.2658,
     "supply_response": -0.3312,
     "distress": 0.2655
    },
@@ -2944,10 +3056,10 @@
     "label": "Overheating",
     "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
     "firing": 3,
-    "available": 5,
-    "total": 11,
-    "coverage": 0.455,
-    "score": 0.6,
+    "available": 6,
+    "total": 13,
+    "coverage": 0.462,
+    "score": 0.5,
     "insufficient_coverage": false,
     "signals_firing": [
      {
@@ -3006,6 +3118,17 @@
       "period": "2025-12",
       "geo_level": "province",
       "source_id": "mivau"
+     },
+     {
+      "metric_id": "search_tenure_switch",
+      "label": "Buy-vs-rent search spread",
+      "expect": "up",
+      "z": -0.1129,
+      "raw": 3.6506,
+      "unit": "index",
+      "period": "2026-04",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_unavailable": [
@@ -3013,10 +3136,11 @@
      "housing_transactions",
      "population_padron",
      "rent_reference",
+     "search_room_share",
      "str_listings",
      "tourist_dwellings"
     ],
-    "signatures_version": "signatures-v1"
+    "signatures_version": "signatures-v2"
    },
    "timeline": [
     {
@@ -3141,71 +3265,71 @@
     },
     {
      "period": "2024-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1474,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.6216,
      "index_supply_response": 0.6482,
      "index_distress": -0.3083
     },
     {
      "period": "2024-08",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.3011,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.3912,
      "index_supply_response": 0.6482,
      "index_distress": -0.2458
     },
     {
      "period": "2024-09",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.187,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.7496,
      "index_supply_response": 0.6482,
      "index_distress": -0.0812
     },
     {
      "period": "2024-10",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0863,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.5672,
      "index_supply_response": -0.0144,
      "index_distress": -0.065
     },
     {
      "period": "2024-11",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1484,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.5392,
      "index_supply_response": -0.0144,
      "index_distress": 0.1069
     },
     {
      "period": "2024-12",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0947,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.7514,
      "index_supply_response": -0.0144,
      "index_distress": 0.0784
     },
     {
      "period": "2025-01",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "orderly_cooling",
+     "label": "Orderly cooling",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2052,
-     "index_housing_pressure": null,
+     "index_housing_pressure": -0.0659,
      "index_supply_response": 0.0447,
      "index_distress": -0.4447
     },
@@ -3215,7 +3339,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1591,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.0033,
      "index_supply_response": 0.0447,
      "index_distress": -0.3004
     },
@@ -3225,7 +3349,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1189,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.0494,
      "index_supply_response": 0.0447,
      "index_distress": -0.1183
     },
@@ -3235,7 +3359,7 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1527,
-     "index_housing_pressure": 1.2172,
+     "index_housing_pressure": 0.909,
      "index_supply_response": -0.7572,
      "index_distress": 0.2478
     },
@@ -3245,17 +3369,17 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3846,
-     "index_housing_pressure": 1.2172,
+     "index_housing_pressure": 0.8794,
      "index_supply_response": -0.7572,
      "index_distress": 0.2433
     },
     {
      "period": "2025-06",
-     "rule_id": "supply_squeeze",
-     "label": "Pressure without supply",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1336,
-     "index_housing_pressure": 1.2172,
+     "index_housing_pressure": 0.6604,
      "index_supply_response": -0.7572,
      "index_distress": 0.2601
     },
@@ -3265,7 +3389,7 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1634,
-     "index_housing_pressure": 1.2458,
+     "index_housing_pressure": 0.9157,
      "index_supply_response": -0.5227,
      "index_distress": 0.3439
     },
@@ -3275,7 +3399,7 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0817,
-     "index_housing_pressure": 1.2458,
+     "index_housing_pressure": 0.9652,
      "index_supply_response": -0.5227,
      "index_distress": 0.2835
     },
@@ -3285,7 +3409,7 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1818,
-     "index_housing_pressure": 1.2458,
+     "index_housing_pressure": 1.108,
      "index_supply_response": -0.5227,
      "index_distress": 0.2556
     },
@@ -3295,7 +3419,7 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2345,
-     "index_housing_pressure": 1.3915,
+     "index_housing_pressure": 1.1832,
      "index_supply_response": -0.3312,
      "index_distress": 0.4978
     },
@@ -3305,37 +3429,37 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3711,
-     "index_housing_pressure": 1.3915,
+     "index_housing_pressure": 1.1224,
      "index_supply_response": -0.3312,
      "index_distress": 0.4688
     },
     {
      "period": "2025-12",
-     "rule_id": "supply_squeeze",
-     "label": "Pressure without supply",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3184,
-     "index_housing_pressure": 1.3915,
+     "index_housing_pressure": 1.1696,
      "index_supply_response": -0.3312,
      "index_distress": 0.3745
     },
     {
      "period": "2026-01",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1975,
-     "index_housing_pressure": 0.9813,
+     "index_housing_pressure": 0.6976,
      "index_supply_response": null,
      "index_distress": 0.4341
     },
     {
      "period": "2026-02",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "hot",
+     "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.4366,
-     "index_housing_pressure": 0.9813,
+     "index_housing_pressure": 1.3208,
      "index_supply_response": null,
      "index_distress": 0.5099
     },
@@ -3345,7 +3469,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.3381,
-     "index_housing_pressure": 0.9813,
+     "index_housing_pressure": 0.9991,
      "index_supply_response": null,
      "index_distress": 0.2739
     },
@@ -3385,14 +3509,14 @@
    "slug": "zaragoza",
    "name": "Zaragoza",
    "regime": {
-    "rule_id": "hot",
-    "label": "Hot",
-    "reading": "Housing pressure is well above this city's own history and has not yet turned. Supply is at least keeping pace, so this is heat rather than a squeeze.",
-    "expression": "housing_pressure > 0.75",
+    "rule_id": "hot_decelerating",
+    "label": "Hot but decelerating",
+    "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+    "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v2",
     "inputs": {
      "demand_momentum": -0.1875,
-     "housing_pressure": 1.5412,
+     "housing_pressure": 1.4954,
      "supply_response": 0.9588,
      "distress": 0.4931
     },
@@ -3407,7 +3531,7 @@
    },
    "indices": {
     "demand_momentum": -0.1875,
-    "housing_pressure": 1.5412,
+    "housing_pressure": 1.4954,
     "supply_response": 0.9588,
     "distress": 0.4931
    },
@@ -3416,10 +3540,10 @@
     "label": "Overheating",
     "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
     "firing": 4,
-    "available": 6,
-    "total": 11,
-    "coverage": 0.545,
-    "score": 0.667,
+    "available": 7,
+    "total": 13,
+    "coverage": 0.538,
+    "score": 0.571,
     "insufficient_coverage": false,
     "signals_firing": [
      {
@@ -3489,16 +3613,28 @@
       "period": "2025-12",
       "geo_level": "province",
       "source_id": "mivau"
+     },
+     {
+      "metric_id": "search_tenure_switch",
+      "label": "Buy-vs-rent search spread",
+      "expect": "up",
+      "z": -1.1785,
+      "raw": -16.9481,
+      "unit": "index",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "trends_manual"
      }
     ],
     "signals_unavailable": [
      "affiliations",
      "housing_transactions",
      "population_padron",
+     "search_room_share",
      "str_listings",
      "tourist_dwellings"
     ],
-    "signatures_version": "signatures-v1"
+    "signatures_version": "signatures-v2"
    },
    "timeline": [
     {
@@ -3623,11 +3759,11 @@
     },
     {
      "period": "2024-07",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2765,
-     "index_housing_pressure": 1.0334,
+     "index_housing_pressure": 0.6146,
      "index_supply_response": -0.2621,
      "index_distress": -0.8358
     },
@@ -3637,27 +3773,27 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.3687,
-     "index_housing_pressure": 1.0334,
+     "index_housing_pressure": 0.7968,
      "index_supply_response": -0.2621,
      "index_distress": -0.7585
     },
     {
      "period": "2024-09",
-     "rule_id": "supply_squeeze",
-     "label": "Pressure without supply",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0865,
-     "index_housing_pressure": 1.0334,
+     "index_housing_pressure": 0.5651,
      "index_supply_response": -0.2621,
      "index_distress": -0.6049
     },
     {
      "period": "2024-10",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "neutral",
+     "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0286,
-     "index_housing_pressure": 1.1759,
+     "index_housing_pressure": 0.722,
      "index_supply_response": 0.3752,
      "index_distress": 0.03
     },
@@ -3667,7 +3803,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0645,
-     "index_housing_pressure": 1.1759,
+     "index_housing_pressure": 0.8789,
      "index_supply_response": 0.3752,
      "index_distress": 0.2266
     },
@@ -3677,7 +3813,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0212,
-     "index_housing_pressure": 1.1759,
+     "index_housing_pressure": 0.7829,
      "index_supply_response": 0.3752,
      "index_distress": 0.1965
     },
@@ -3687,7 +3823,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.2666,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.2103,
      "index_supply_response": -0.308,
      "index_distress": -0.4223
     },
@@ -3697,7 +3833,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1424,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.6805,
      "index_supply_response": -0.308,
      "index_distress": -0.276
     },
@@ -3707,7 +3843,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1177,
-     "index_housing_pressure": null,
+     "index_housing_pressure": 0.6219,
      "index_supply_response": -0.308,
      "index_distress": -0.1302
     },
@@ -3717,7 +3853,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1903,
-     "index_housing_pressure": 1.3816,
+     "index_housing_pressure": 1.0305,
      "index_supply_response": -0.0442,
      "index_distress": 0.0646
     },
@@ -3727,17 +3863,17 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0263,
-     "index_housing_pressure": 1.3816,
+     "index_housing_pressure": 1.1524,
      "index_supply_response": -0.0442,
      "index_distress": 0.0628
     },
     {
      "period": "2025-06",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0575,
-     "index_housing_pressure": 1.3816,
+     "index_housing_pressure": 1.0005,
      "index_supply_response": -0.0442,
      "index_distress": 0.0908
     },
@@ -3747,7 +3883,7 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1381,
-     "index_housing_pressure": 1.4762,
+     "index_housing_pressure": 1.3766,
      "index_supply_response": -0.4978,
      "index_distress": 0.5214
     },
@@ -3757,27 +3893,27 @@
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0341,
-     "index_housing_pressure": 1.4762,
+     "index_housing_pressure": 1.1995,
      "index_supply_response": -0.4978,
      "index_distress": 0.4803
     },
     {
      "period": "2025-09",
-     "rule_id": "supply_squeeze",
-     "label": "Pressure without supply",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1392,
-     "index_housing_pressure": 1.4762,
+     "index_housing_pressure": 1.2951,
      "index_supply_response": -0.4978,
      "index_distress": 0.4721
     },
     {
      "period": "2025-10",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "hot",
+     "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.196,
-     "index_housing_pressure": 1.3627,
+     "index_housing_pressure": 1.3439,
      "index_supply_response": 0.9588,
      "index_distress": 0.4452
     },
@@ -3787,17 +3923,17 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.269,
-     "index_housing_pressure": 1.3627,
+     "index_housing_pressure": 0.9635,
      "index_supply_response": 0.9588,
      "index_distress": 0.3776
     },
     {
      "period": "2025-12",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1882,
-     "index_housing_pressure": 1.3627,
+     "index_housing_pressure": 1.2405,
      "index_supply_response": 0.9588,
      "index_distress": 0.2978
     },
@@ -3807,7 +3943,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.1928,
-     "index_housing_pressure": 1.5057,
+     "index_housing_pressure": 1.6108,
      "index_supply_response": null,
      "index_distress": 0.6994
     },
@@ -3817,17 +3953,17 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2266,
-     "index_housing_pressure": 1.5057,
+     "index_housing_pressure": 1.5027,
      "index_supply_response": null,
      "index_distress": 0.7478
     },
     {
      "period": "2026-03",
-     "rule_id": "hot",
-     "label": "Hot",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3472,
-     "index_housing_pressure": 1.5057,
+     "index_housing_pressure": 1.2231,
      "index_supply_response": null,
      "index_distress": 0.5194
     },
@@ -3880,6 +4016,20 @@
    "direction": 1
   },
   {
+   "city": "malaga",
+   "city_name": "Málaga",
+   "metric_id": "search_buy_momentum",
+   "geo_id": "mun-29067",
+   "label": "Buyer search momentum",
+   "yoy": -64.70588235294117,
+   "value": 6.0,
+   "unit": "index",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
    "city": "madrid",
    "city_name": "Madrid",
    "metric_id": "housing_starts",
@@ -3891,6 +4041,20 @@
    "period": "2025-Q4",
    "geo_level": "province",
    "scope_label": "province",
+   "direction": 1
+  },
+  {
+   "city": "malaga",
+   "city_name": "Málaga",
+   "metric_id": "search_tenure_switch",
+   "geo_id": "mun-29067",
+   "label": "Buy-vs-rent search spread",
+   "yoy": -53.92254440094664,
+   "value": 20.833,
+   "unit": "index",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
    "direction": 1
   },
   {
@@ -3908,6 +4072,34 @@
    "direction": 1
   },
   {
+   "city": "valencia",
+   "city_name": "València",
+   "metric_id": "search_room_share",
+   "geo_id": "mun-46250",
+   "label": "Room-vs-flat search spread",
+   "yoy": -43.39039467427485,
+   "value": 11.905,
+   "unit": "index",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": -1
+  },
+  {
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "search_rental_pressure",
+   "geo_id": "mun-48020",
+   "label": "Rental search pressure",
+   "yoy": 40.697674418604635,
+   "value": 36.3,
+   "unit": "index",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
    "city": "palma",
    "city_name": "Palma",
    "metric_id": "housing_starts",
@@ -3920,6 +4112,20 @@
    "geo_level": "province",
    "scope_label": "province",
    "direction": 1
+  },
+  {
+   "city": "barcelona",
+   "city_name": "Barcelona",
+   "metric_id": "search_room_share",
+   "geo_id": "mun-08019",
+   "label": "Room-vs-flat search spread",
+   "yoy": -38.90697573468768,
+   "value": 14.074,
+   "unit": "index",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": -1
   },
   {
    "city": "barcelona",
@@ -3948,6 +4154,20 @@
    "geo_level": "province",
    "scope_label": "province",
    "direction": 1
+  },
+  {
+   "city": "sevilla",
+   "city_name": "Sevilla",
+   "metric_id": "search_room_share",
+   "geo_id": "mun-41091",
+   "label": "Room-vs-flat search spread",
+   "yoy": -35.40098004063583,
+   "value": 5.405,
+   "unit": "index",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": -1
   },
   {
    "city": "bilbao",
@@ -4090,6 +4310,20 @@
    "direction": 1
   },
   {
+   "city": "sevilla",
+   "city_name": "Sevilla",
+   "metric_id": "search_tenure_switch",
+   "geo_id": "mun-41091",
+   "label": "Buy-vs-rent search spread",
+   "yoy": 27.992991096798644,
+   "value": 27.027,
+   "unit": "index",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
    "city": "bilbao",
    "city_name": "Bilbao",
    "metric_id": "housing_completions",
@@ -4102,113 +4336,7 @@
    "geo_level": "province",
    "scope_label": "province",
    "direction": 1
-  },
-  {
-   "city": "sevilla",
-   "city_name": "Sevilla",
-   "metric_id": "mortgages_count",
-   "geo_id": "prov-41",
-   "label": "New mortgages on dwellings",
-   "yoy": 26.51834034876729,
-   "value": 2104.0,
-   "unit": "mortgages",
-   "period": "2026-05",
-   "geo_level": "province",
-   "scope_label": "province",
-   "direction": 1
-  },
-  {
-   "city": "sevilla",
-   "city_name": "Sevilla",
-   "metric_id": "housing_completions",
-   "geo_id": "prov-41",
-   "label": "Housing completions",
-   "yoy": 25.840336134453782,
-   "value": 1797.0,
-   "unit": "dwellings",
-   "period": "2025-Q4",
-   "geo_level": "province",
-   "scope_label": "province",
-   "direction": 1
-  },
-  {
-   "city": "sevilla",
-   "city_name": "Sevilla",
-   "metric_id": "wiki_city_views",
-   "geo_id": "mun-41091",
-   "label": "Wikipedia views, city article (all languages)",
-   "yoy": -22.31481555461453,
-   "value": 97230.0,
-   "unit": "views",
-   "period": "2026-06",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "property_transfers",
-   "geo_id": "prov-48",
-   "label": "Property transfers (registered)",
-   "yoy": -22.27116984826236,
-   "value": 1588.0,
-   "unit": "transactions",
-   "period": "2026-05",
-   "geo_level": "province",
-   "scope_label": "province",
-   "direction": 1
-  },
-  {
-   "city": "palma",
-   "city_name": "Palma",
-   "metric_id": "contracts_registered",
-   "geo_id": "mun-07040",
-   "label": "New contracts registered",
-   "yoy": 21.52823053853175,
-   "value": 18640.0,
-   "unit": "contracts",
-   "period": "2026-06",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "mortgages_count",
-   "geo_id": "prov-48",
-   "label": "New mortgages on dwellings",
-   "yoy": -21.106382978723403,
-   "value": 927.0,
-   "unit": "mortgages",
-   "period": "2026-05",
-   "geo_level": "province",
-   "scope_label": "province",
-   "direction": 1
-  },
-  {
-   "city": "sevilla",
-   "city_name": "Sevilla",
-   "metric_id": "wiki_city_attention",
-   "geo_id": "mun-41091",
-   "label": "City attention share",
-   "yoy": -19.948414924698902,
-   "value": 10.987,
-   "unit": "per_million",
-   "period": "2026-06",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
   }
  ],
- "attention": [
-  {
-   "source_id": "trends_manual",
-   "status": "failed",
-   "latest_observation": null,
-   "staleness_days": null,
-   "last_error": "no exports found in /home/runner/work/citysignal/citysignal/data/manual/trends. Export a basket from trends.google.com and save it as <metric_id>__<geo_id>.csv — the README there lists the baskets this build expects."
-  }
- ]
+ "attention": []
 }

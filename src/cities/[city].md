@@ -3,9 +3,9 @@ toc: true
 ---
 
 ```js
-import {cardGrid} from "../components/metricCard.js";
+import {cardGrid, sparkline} from "../components/metricCard.js";
 import {fingerprint, signatureSummary} from "../components/fingerprint.js";
-import {el, cityColor, formatPeriod, regime} from "../components/theme.js";
+import {el, cityColor, formatPeriod, regime, describeIndex, shortZ, describeZ} from "../components/theme.js";
 
 const all = await FileAttachment("../data/cities.json").json();
 const city = all[observable.params.city];
@@ -29,30 +29,37 @@ display(
 );
 ```
 
-<div class="cs-lede">${city.regime.reading}</div>
+```js
+display(
+  el("div", {class: `cs-situation regime-${city.regime.rule_id}`}, [
+    el("div", {class: "cs-situation-text", text: city.regime.reading})
+  ])
+);
+```
 
 ```js
 display(
-  el("div", {class: "cs-note", style: "margin-top:.8rem"}, [
+  el("div", {class: "cs-note"}, [
     document.createTextNode(
       city.regime.confident
-        ? `This classification fired because \`${city.regime.expression}\` held. `
-        : `Fewer than three of the four sub-indices have data for ${city.name}, so this classification is provisional. `
+        ? `This label was produced by a published rule, not a judgement call: it fired because \`${city.regime.expression}\` held. `
+        : `Fewer than three of the four indices have data for ${city.name}, so this label is provisional. `
     ),
     document.createTextNode(
-      "Every rule and threshold is published on the Method page, and the same rules are replayed over history to draw the timeline below."
+      "Every rule and threshold is on the Method page, and the same rules are replayed over history to draw the timeline."
     )
   ])
 );
 ```
 
-## The four sub-indices
+## The four questions
 
-<div class="cs-note" style="margin-bottom:.6rem">
+<div class="cs-note" style="margin-bottom:.9rem">
 
-Each index is a weighted mean of measures standardised against this city's own
-record, oriented so positive always means hotter. An index with too few
-components available reports insufficient data instead of guessing.
+Every measure below is compared against <em>this city's own past</em>, not against
+other cities — Palma and Madrid share no scale, but each can be unusual for
+itself. "Clearly higher" means roughly one to two standard deviations above what
+this city normally does.
 
 </div>
 
@@ -63,10 +70,13 @@ display(
       el("div", {class: "cs-panel"}, [
         el("div", {class: "cs-card-head"}, [
           el("span", {class: "cs-card-label", text: index.label}),
-          el("span", {class: "cs-kind", text: `${index.components.length}/${index.components.length + index.missing.length} inputs`})
+          el("span", {class: "cs-kind", text: `${index.components.length} of ${index.components.length + index.missing.length} inputs`})
         ]),
-        el("div", {class: "cs-card-value cs-num", text: index.value == null ? "—" : `${index.value > 0 ? "+" : ""}${index.value.toFixed(2)} σ`}),
-        el("div", {class: "cs-note", style: "margin-top:.3rem", text: index.insufficient ? "Not enough components have data to compute this index." : index.question}),
+        el("div", {class: "cs-index-verdict", text: describeIndex(index.index_id, index.value)}),
+        el("div", {class: "cs-index-figure"}, [
+          el("span", {class: "cs-num", text: index.value == null ? "—" : `${index.value > 0 ? "+" : ""}${index.value.toFixed(2)}`}),
+          el("span", {class: "cs-card-unit", text: index.value == null ? "no reading" : "standard deviations from this city's normal"})
+        ]),
         index.components.length
           ? el("div", {class: "cs-meta"},
               index.components
@@ -75,8 +85,8 @@ display(
                 .slice(0, 4)
                 .map((c) =>
                   el("span", {
-                    title: `${c.label}: ${c.oriented > 0 ? "+" : ""}${c.oriented.toFixed(2)} σ (${c.transform}, ${c.geo_level}, ${formatPeriod(c.period)})`,
-                    text: `${c.label} ${c.oriented > 0 ? "+" : ""}${c.oriented.toFixed(1)}`
+                    title: `${c.label} — ${describeZ(c.oriented, {noun: "It"})} (${c.transform}, ${c.geo_level}, ${formatPeriod(c.period)})`,
+                    text: `${c.label}: ${shortZ(c.oriented)}`
                   })
                 )
             )
@@ -115,6 +125,67 @@ display(
         )
       )
     : el("div", {class: "cs-empty", text: "Too few signals have data for this city to draw an archetype shape yet."})
+);
+```
+
+## What people are searching
+
+<div class="cs-note" style="margin-bottom:.9rem">
+
+Search interest is <em>attention</em>, not demand — and its raw level is not
+comparable across years, because Google rescales it for every query. What <em>is</em>
+comparable is the ratio between terms that were searched for together, which is
+what these two spreads are. Whether they lead anything real is tested on the
+<a href="../signals">Signals</a> page, and reported either way.
+
+</div>
+
+```js
+const SPREADS = {
+  search_room_share: {
+    title: "Are people looking for rooms instead of flats?",
+    up: "More people are searching for a room rather than a whole flat than a year ago — households compressing.",
+    down: "Fewer people are searching for a room rather than a whole flat than a year ago."
+  },
+  search_tenure_switch: {
+    title: "Are people looking to buy instead of rent?",
+    up: "Attention has shifted further toward buying and away from renting over the past year.",
+    down: "Attention has shifted back toward renting and away from buying over the past year."
+  },
+  search_rental_pressure: {
+    title: "How hard are people looking for somewhere to rent?",
+    up: "More rental searching than a year ago.",
+    down: "Less rental searching than a year ago."
+  },
+  search_buy_momentum: {
+    title: "How hard are people looking to buy?",
+    up: "More buyer searching than a year ago.",
+    down: "Less buyer searching than a year ago."
+  }
+};
+
+const searchCards = (city.sections.attention ?? []).filter((c) => c.metric_id in SPREADS);
+
+display(
+  searchCards.length
+    ? el("div", {class: "cs-grid"},
+        searchCards.map((card) => {
+          const copy = SPREADS[card.metric_id];
+          const change = card.latest.yoy;
+          return el("div", {class: "cs-panel"}, [
+            el("div", {class: "cs-kicker", text: copy.title}),
+            el("div", {class: "cs-index-verdict", text: change == null ? "Not enough history yet to compare." : (change > 0 ? copy.up : copy.down)}),
+            sparkline(card.series, {color: hue, width: 250, height: 44}),
+            el("div", {class: "cs-meta"}, [
+              el("span", {class: "cs-num", text: `${change > 0 ? "+" : ""}${change?.toFixed(1) ?? "—"}% year on year`}),
+              el("span", {class: "cs-kind cs-kind-commercial", text: "search attention"}),
+              el("span", {text: formatPeriod(card.latest.period)})
+            ])
+          ]);
+        })
+      )
+    : el("div", {class: "cs-empty", text:
+        "No search baskets for this city yet. Google reports low-volume terms as zero rather than as missing, and a series that is mostly zeros is dropped rather than published — which is why the smaller cities carry fewer of these."})
 );
 ```
 

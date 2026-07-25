@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T18:37:58+00:00",
+ "generated_at": "2026-07-25T19:00:12+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -37,6 +37,10 @@
   "population_padron",
   "property_transfers",
   "rent_reference",
+  "search_buy_momentum",
+  "search_rental_pressure",
+  "search_room_share",
+  "search_tenure_switch",
   "str_entire_home_share",
   "str_listings",
   "str_multi_host_share",
@@ -50,13 +54,13 @@
   "wiki_relocation_index"
  ],
  "rules": {
-  "indices": "indices-v1",
+  "indices": "indices-v2",
   "regimes": "regimes-v2",
-  "signatures": "signatures-v1",
+  "signatures": "signatures-v2",
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 257,
-  "observations": 12393
+  "series": 284,
+  "observations": 13965
  }
 }

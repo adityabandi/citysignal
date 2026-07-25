@@ -104,6 +104,64 @@ export function periodToDate(period) {
   return new Date(Date.UTC(+year, +month - 1, 15));
 }
 
+// "+1.25 σ" is not a fact about a city, it is a fact about a distribution. These
+// turn the statistics back into the sentence a person would actually say.
+
+export function describeZ(z, {noun = "This"} = {}) {
+  if (z == null) return "Not enough history yet to judge what is normal here.";
+  const magnitude = Math.abs(z);
+  const side = z > 0 ? "higher" : "lower";
+  if (magnitude < 0.5) return `${noun} is about normal for this city.`;
+  if (magnitude < 1) return `${noun} is a little ${side} than normal for this city.`;
+  if (magnitude < 2) return `${noun} is clearly ${side} than this city's own record.`;
+  if (magnitude < 3) return `${noun} is far ${side} than anything usual for this city.`;
+  return `${noun} is at an extreme against this city's own history.`;
+}
+
+// The same scale, compressed to a chip.
+export function shortZ(z) {
+  if (z == null) return "no reading";
+  const magnitude = Math.abs(z);
+  const side = z > 0 ? "high" : "low";
+  if (magnitude < 0.5) return "normal";
+  if (magnitude < 1) return `slightly ${side}`;
+  if (magnitude < 2) return `clearly ${side}`;
+  if (magnitude < 3) return `very ${side}`;
+  return `extreme ${side}`;
+}
+
+export const INDEX_PLAIN = {
+  demand_momentum: {
+    high: "More people are arriving, working and buying than usual here.",
+    low: "Fewer people are arriving, working and buying than usual here.",
+    flat: "Arrivals, jobs and purchases are running at about the usual pace."
+  },
+  housing_pressure: {
+    high: "Housing costs more, and is fought over harder, than is normal here.",
+    low: "The squeeze on housing has eased below what is normal here.",
+    flat: "Housing is about as tight as it usually is here."
+  },
+  supply_response: {
+    high: "Building is running ahead of its usual pace, so supply is answering.",
+    low: "Building has slowed below its usual pace, so supply is not answering.",
+    flat: "Building is running at about its usual pace."
+  },
+  distress: {
+    high: "More people are losing jobs, homes or businesses than is normal here.",
+    low: "Fewer people are losing jobs, homes or businesses than is normal here.",
+    flat: "Job, home and business losses are at about their usual level."
+  }
+};
+
+export function describeIndex(indexId, value) {
+  if (value == null) return "Not enough of this index's inputs are reporting yet.";
+  const copy = INDEX_PLAIN[indexId];
+  if (!copy) return describeZ(value);
+  if (value > 0.5) return copy.high;
+  if (value < -0.5) return copy.low;
+  return copy.flat;
+}
+
 export function el(tag, attrs = {}, children = []) {
   const node = document.createElement(tag);
   for (const [key, value] of Object.entries(attrs)) {

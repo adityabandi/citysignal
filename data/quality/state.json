@@ -1,4 +1,60 @@
 {
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-07040.csv": {
+  "bytes": 1304,
+  "etag": null,
+  "last_checked": "2026-07-25T18:59:28+00:00",
+  "last_modified": null,
+  "sha256": "7a051e24b5289f10f5db7079775b50156ca9766e6b2ba20e364ad2ec3bef44c3"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-08019.csv": {
+  "bytes": 1581,
+  "etag": null,
+  "last_checked": "2026-07-25T18:59:28+00:00",
+  "last_modified": null,
+  "sha256": "a7fd808a6b197d808f1fede678b41b9134d39684aed64ab1674b487825366ab1"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-28079.csv": {
+  "bytes": 1589,
+  "etag": null,
+  "last_checked": "2026-07-25T18:59:28+00:00",
+  "last_modified": null,
+  "sha256": "733132a8e20b93daff190af7b1d9e2d73260e3d10536fe108112338de16c7381"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-29067.csv": {
+  "bytes": 1356,
+  "etag": null,
+  "last_checked": "2026-07-25T18:59:28+00:00",
+  "last_modified": null,
+  "sha256": "0f9871b726a4997ea639fd4e0bafe138b4f232240b3d5fdfcc2678fbeb964c57"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-41091.csv": {
+  "bytes": 1353,
+  "etag": null,
+  "last_checked": "2026-07-25T18:59:28+00:00",
+  "last_modified": null,
+  "sha256": "e752ec3e00df613953370f37cd2a37dbc7af3d6fa83c56aa4b26a802b4ab487f"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-46250.csv": {
+  "bytes": 1396,
+  "etag": null,
+  "last_checked": "2026-07-25T18:59:28+00:00",
+  "last_modified": null,
+  "sha256": "552d0d9a92605b925a63c2415f183e9540d592b81756484c6e96f6c62940d720"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-48020.csv": {
+  "bytes": 1332,
+  "etag": null,
+  "last_checked": "2026-07-25T18:59:28+00:00",
+  "last_modified": null,
+  "sha256": "fda4eb197bb6e852e3a7b7d7f9906e7fd4a037f14ef82b31740e89d13e6c9ebe"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-50297.csv": {
+  "bytes": 1357,
+  "etag": null,
+  "last_checked": "2026-07-25T18:59:28+00:00",
+  "last_modified": null,
+  "sha256": "92bf33918ddb428a2237d3ceea1cb9fa926dc77c471242ed55303e981cfefb5b"
+ },
  "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP001_01.csv": {
   "bytes": 37788115,
   "etag": "0x8DEB7E15ED4225D",

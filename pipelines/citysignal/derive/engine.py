@@ -159,6 +159,7 @@ class DeriveEngine:
         return {
             "metric_id": metric_id,
             "label": meta.get("label", metric_id),
+            "plain": (meta.get("plain") or "").strip() or None,
             "label_es": meta.get("label_es"),
             "unit": series.unit,
             "cadence": meta["cadence"],

@@ -1,0 +1,148 @@
+# Archetype signatures.
+#
+# A city does not have "a 43% chance of a crash". It has a set of measures, some
+# of which currently look like a boom and some of which do not. Each archetype
+# below is a declared list of signals and the direction each should move if that
+# archetype is what is happening. The score is simply how many of the AVAILABLE
+# signals agree — reported as "14 of 19 firing", with the dissenting signals
+# named. Signals we have no data for are excluded from both numerator and
+# denominator, and the coverage is shown.
+#
+# Nothing here is fitted. These are hypotheses about what a pattern looks like,
+# stated in advance so they can be wrong in public.
+
+version: signatures-v2
+supersedes: signatures-v1
+frozen_at: "2026-07-25"
+
+# A signal "fires" when its standardised value passes this, in the stated direction.
+threshold: 0.5
+min_coverage: 0.34   # below a third of signals available, report insufficient coverage
+
+archetypes:
+  boom:
+    label: Boom
+    summary: >
+      People and money arriving faster than the city can house them. Rents and
+      transactions rise together, business formation accelerates, and attention
+      from outside the country runs ahead of the official population count.
+    signals:
+      - {metric: population_padron, transform: yoy, expect: up}
+      - {metric: affiliations, transform: yoy, expect: up}
+      - {metric: contracts_registered, transform: yoy, expect: up}
+      - {metric: unemployment_registered, transform: yoy, expect: down}
+      - {metric: rent_reference, transform: yoy, expect: up}
+      - {metric: housing_transactions, transform: yoy, expect: up}
+      - {metric: appraised_value, transform: yoy, expect: up}
+      - {metric: property_transfers, transform: yoy, expect: up}
+      - {metric: mortgages_count, transform: yoy, expect: up}
+      - {metric: locales_openings, transform: yoy, expect: up}
+      - {metric: horeca_openings, transform: yoy, expect: up}
+      - {metric: locales_vacancy_rate, transform: yoy, expect: down}
+      - {metric: airport_flights, transform: yoy, expect: up}
+      - {metric: hotel_revpar, transform: yoy, expect: up}
+      - {metric: str_listings, transform: yoy, expect: up}
+      - {metric: wiki_city_attention, transform: yoy, expect: up}
+      - {metric: wiki_city_foreign_share, transform: yoy, expect: up}
+      - {metric: wiki_relocation_index, transform: yoy, expect: up}
+      - {metric: housing_starts, transform: yoy, expect: up}
+      - {metric: search_tenure_switch, transform: yoy, expect: up}
+
+  overheating:
+    label: Overheating
+    summary: >
+      The boom's second act: prices and short-term-rental supply keep climbing
+      while the things that fund them stop. Transactions and permits roll over
+      first, and the storefront churn rate rises before net closures do.
+    signals:
+      - {metric: rent_reference, transform: yoy, expect: up}
+      - {metric: appraised_value, transform: yoy, expect: up}
+      - {metric: str_listings, transform: yoy, expect: up}
+      - {metric: tourist_dwellings, transform: yoy, expect: up}
+      - {metric: hotel_adr, transform: yoy, expect: up}
+      - {metric: housing_transactions, transform: yoy, expect: down}
+      - {metric: mortgages_count, transform: yoy, expect: down}
+      - {metric: housing_starts, transform: yoy, expect: down}
+      - {metric: affiliations, transform: yoy, expect: down}
+      - {metric: euribor_12m, transform: change_12, expect: up}
+      - {metric: population_padron, transform: yoy, expect: down}
+      - {metric: search_room_share, transform: yoy, expect: up}
+      - {metric: search_tenure_switch, transform: yoy, expect: up}
+
+  orderly_cooling:
+    label: Orderly cooling
+    summary: >
+      Heat leaving the market without anyone being forced. Prices and
+      transactions decelerate while employment holds and the distress measures
+      stay flat. This is the benign case, and it is worth being able to name it.
+    signals:
+      - {metric: rent_reference, transform: yoy, expect: down}
+      - {metric: appraised_value, transform: yoy, expect: down}
+      - {metric: housing_transactions, transform: yoy, expect: down}
+      - {metric: str_listings, transform: yoy, expect: down}
+      - {metric: unemployment_registered, transform: yoy, expect: down}
+      - {metric: affiliations, transform: yoy, expect: up}
+      - {metric: foreclosures, transform: yoy, expect: down}
+      - {metric: evictions, transform: yoy, expect: down}
+      - {metric: locales_vacancy_rate, transform: yoy, expect: down}
+
+  distress:
+    label: Distress
+    summary: >
+      Jobs go first, then the storefronts, then the courts. Foreclosures,
+      evictions and insolvencies rise together while hiring and business
+      formation fall; hardship attention climbs before the judicial series,
+      which are the slowest evidence we have.
+    signals:
+      - {metric: unemployment_registered, transform: yoy, expect: up}
+      - {metric: affiliations, transform: yoy, expect: down}
+      - {metric: contracts_registered, transform: yoy, expect: down}
+      - {metric: foreclosures, transform: yoy, expect: up}
+      - {metric: evictions, transform: yoy, expect: up}
+      - {metric: auctions_realestate, transform: yoy, expect: up}
+      - {metric: insolvencies, transform: yoy, expect: up}
+      - {metric: company_dissolutions, transform: yoy, expect: up}
+      - {metric: company_incorporations, transform: yoy, expect: down}
+      - {metric: locales_closures, transform: yoy, expect: up}
+      - {metric: horeca_closures, transform: yoy, expect: up}
+      - {metric: locales_vacancy_rate, transform: yoy, expect: up}
+      - {metric: housing_transactions, transform: yoy, expect: down}
+      - {metric: mortgages_count, transform: yoy, expect: down}
+      - {metric: wiki_hardship_index, transform: yoy, expect: up}
+      - {metric: news_tone, transform: yoy, expect: down}
+      - {metric: euribor_12m, transform: change_12, expect: up}
+      - {metric: search_room_share, transform: yoy, expect: up}
+      - {metric: search_rental_pressure, transform: yoy, expect: down}
+
+  tourism_shock:
+    label: Tourism shock
+    summary: >
+      Visitor demand moves independently of the local economy. Flights, hotel
+      nights and port arrivals turn together while employment and housing lag
+      behind — a shock arriving from outside the city rather than inside it.
+    signals:
+      - {metric: airport_flights, transform: yoy, expect: down}
+      - {metric: airport_passengers, transform: yoy, expect: down}
+      - {metric: hotel_nights, transform: yoy, expect: down}
+      - {metric: hotel_travellers, transform: yoy, expect: down}
+      - {metric: hotel_occupancy_rate, transform: yoy, expect: down}
+      - {metric: hotel_revpar, transform: yoy, expect: down}
+      - {metric: port_passengers, transform: yoy, expect: down}
+      - {metric: wiki_city_foreign_share, transform: yoy, expect: down}
+      - {metric: horeca_closures, transform: yoy, expect: up}
+
+  regulatory_shock:
+    label: Regulatory shock
+    summary: >
+      Short-term-rental supply contracts while visitor demand does not. Listings
+      and licensed tourist dwellings fall together with hotel demand steady or
+      rising — the fingerprint of a rule change rather than a demand change.
+    signals:
+      - {metric: str_listings, transform: yoy, expect: down}
+      - {metric: tourist_dwellings, transform: yoy, expect: down}
+      - {metric: vut_licensed, transform: yoy, expect: down}
+      - {metric: str_entire_home_share, transform: yoy, expect: down}
+      - {metric: hotel_nights, transform: yoy, expect: up}
+      - {metric: hotel_adr, transform: yoy, expect: up}
+      - {metric: airport_flights, transform: yoy, expect: up}
+      - {metric: rent_reference, transform: yoy, expect: down}
