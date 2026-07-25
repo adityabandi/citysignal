@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:00:12+00:00",
+ "generated_at": "2026-07-25T19:10:51+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -23,9 +23,9 @@
    "regime": {
     "rule_id": "hot_decelerating",
     "label": "Hot but decelerating",
-    "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+    "reading": "Housing costs and competition are well above this city's own record, but have been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
-    "rules_version": "regimes-v2",
+    "rules_version": "regimes-v3",
     "inputs": {
      "demand_momentum": 0.0143,
      "housing_pressure": 1.1836,
@@ -527,9 +527,9 @@
    "regime": {
     "rule_id": "hot",
     "label": "Hot",
-    "reading": "Housing pressure is well above this city's own history and has not yet turned. Supply is at least keeping pace, so this is heat rather than a squeeze.",
+    "reading": "Housing costs more and is competed for harder than is usual in this city, and has not yet turned.",
     "expression": "housing_pressure > 0.75",
-    "rules_version": "regimes-v2",
+    "rules_version": "regimes-v3",
     "inputs": {
      "demand_momentum": -0.0166,
      "housing_pressure": 0.7674,
@@ -1031,9 +1031,9 @@
    "regime": {
     "rule_id": "hot_decelerating",
     "label": "Hot but decelerating",
-    "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+    "reading": "Housing costs and competition are well above this city's own record, but have been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
-    "rules_version": "regimes-v2",
+    "rules_version": "regimes-v3",
     "inputs": {
      "demand_momentum": -0.0752,
      "housing_pressure": 1.2761,
@@ -1535,9 +1535,9 @@
    "regime": {
     "rule_id": "hot_decelerating",
     "label": "Hot but decelerating",
-    "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+    "reading": "Housing costs and competition are well above this city's own record, but have been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
-    "rules_version": "regimes-v2",
+    "rules_version": "regimes-v3",
     "inputs": {
      "demand_momentum": 0.1394,
      "housing_pressure": 0.9062,
@@ -2041,7 +2041,7 @@
     "label": "No clear regime",
     "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
     "expression": "true",
-    "rules_version": "regimes-v2",
+    "rules_version": "regimes-v3",
     "inputs": {
      "demand_momentum": 0.356,
      "housing_pressure": 0.7148,
@@ -2543,9 +2543,9 @@
    "regime": {
     "rule_id": "hot",
     "label": "Hot",
-    "reading": "Housing pressure is well above this city's own history and has not yet turned. Supply is at least keeping pace, so this is heat rather than a squeeze.",
+    "reading": "Housing costs more and is competed for harder than is usual in this city, and has not yet turned.",
     "expression": "housing_pressure > 0.75",
-    "rules_version": "regimes-v2",
+    "rules_version": "regimes-v3",
     "inputs": {
      "demand_momentum": -0.102,
      "housing_pressure": 0.9907,
@@ -3027,9 +3027,9 @@
    "regime": {
     "rule_id": "supply_squeeze",
     "label": "Pressure without supply",
-    "reading": "Rents and prices are running above this city's own record while starts and completions are not responding. Pressure here is a supply problem rather than a demand surge, and it does not resolve on its own.",
+    "reading": "Costs and competition are above this city's own record while building runs below its usual pace. Whether that reads as a shortage or as a strong market depends on which side of it you are on.",
     "expression": "housing_pressure > 0.75 and supply_response < -0.25",
-    "rules_version": "regimes-v2",
+    "rules_version": "regimes-v3",
     "inputs": {
      "demand_momentum": -0.3101,
      "housing_pressure": 1.2658,
@@ -3315,8 +3315,8 @@
     },
     {
      "period": "2024-12",
-     "rule_id": "orderly_cooling",
-     "label": "Orderly cooling",
+     "rule_id": "affordability_improving",
+     "label": "Easing",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0947,
      "index_housing_pressure": -0.7514,
@@ -3511,9 +3511,9 @@
    "regime": {
     "rule_id": "hot_decelerating",
     "label": "Hot but decelerating",
-    "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+    "reading": "Housing costs and competition are well above this city's own record, but have been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
-    "rules_version": "regimes-v2",
+    "rules_version": "regimes-v3",
     "inputs": {
      "demand_momentum": -0.1875,
      "housing_pressure": 1.4954,

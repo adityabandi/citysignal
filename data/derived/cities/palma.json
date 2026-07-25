@@ -19,9 +19,9 @@
  "regime": {
   "rule_id": "hot",
   "label": "Hot",
-  "reading": "Housing pressure is well above this city's own history and has not yet turned. Supply is at least keeping pace, so this is heat rather than a squeeze.",
+  "reading": "Housing costs more and is competed for harder than is usual in this city, and has not yet turned.",
   "expression": "housing_pressure > 0.75",
-  "rules_version": "regimes-v2",
+  "rules_version": "regimes-v3",
   "inputs": {
    "demand_momentum": -0.102,
    "housing_pressure": 0.9907,
@@ -12631,5 +12631,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T19:00:12+00:00"
+ "generated_at": "2026-07-25T19:10:51+00:00"
 }

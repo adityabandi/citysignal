@@ -139,6 +139,13 @@
   "last_modified": "Fri, 03 Jul 2026 03:39:58 GMT",
   "sha256": "1e8b8c2fe84b1be886825160561469d51d117707ea1a3748e0ca2ff3e1a55d4f"
  },
+ "https://datos.madrid.es/dataset/300694-0-viviendas-turisticas-geoportal/resource/300694-0-viviendas-turisticas-geoportal/download/300694-0-viviendas-turisticas-geoportal.zip": {
+  "bytes": 71214,
+  "etag": "\"1162e-65589ba2ecf4e\"",
+  "last_checked": "2026-07-25T19:09:53+00:00",
+  "last_modified": "Wed, 01 Jul 2026 09:58:02 GMT",
+  "sha256": "ff83f121ba2503e0aa5f4f1a98a953ff0849953b45903053fec27863db7e7202"
+ },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/29005?det=2&nult=6&tip=AM": {
   "bytes": 40802038,
   "etag": "\"1785001238:dtagent10341260622154106wSIL\"",

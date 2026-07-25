@@ -8,6 +8,7 @@
 import * as Plot from "npm:@observablehq/plot";
 import {
   FRESHNESS,
+  deltaArrow,
   GRID,
   INK_3,
   cityColor,
@@ -16,7 +17,8 @@ import {
   formatDelta,
   formatPeriod,
   formatValue,
-  periodToDate
+  periodToDate,
+  regime
 } from "./theme.js";
 
 export function sparkline(series, {color = "#3987e5", width = 236, height = 34, direction = 1} = {}) {
@@ -88,9 +90,11 @@ export function metricCard(card, {color} = {}) {
     el("span", {class: "cs-card-label", text: card.label, title: card.plain ?? ""}),
     delta
       ? el("span", {
-          class: `cs-delta ${deltaClass(card.latest.yoy, card.direction)}`,
-          text: delta,
-          title: "Change against the same period a year earlier"
+          class: `cs-delta ${deltaClass()}`,
+          text: `${deltaArrow(card.latest.yoy)} ${delta}`,
+          title:
+            "Change against the same period a year earlier. Shown without a good-or-bad " +
+            "colour on purpose — whether a rise is welcome depends on who is reading."
         })
       : null
   ]);
@@ -147,20 +151,11 @@ export function cardGrid(cards, {color} = {}) {
 }
 
 export function regimeBadge(regimeInfo) {
-  const {regime} = {regime: regimeInfo};
-  return el("span", {class: `cs-regime regime-${regime.rule_id}`}, [
-    el("span", {class: "cs-glyph", text: regimeGlyph(regime.rule_id)}),
-    document.createTextNode(regime.label)
+  // Glyph and label both come from the shared regime table, so a rule set that
+  // adds a state cannot end up rendered as a bare dot here.
+  const meta = regime(regimeInfo.rule_id);
+  return el("span", {class: `cs-regime regime-${regimeInfo.rule_id}`}, [
+    el("span", {class: "cs-glyph", text: meta.glyph}),
+    document.createTextNode(regimeInfo.label ?? meta.label)
   ]);
-}
-
-function regimeGlyph(id) {
-  return {
-    expansion: "▲",
-    hot_decelerating: "◆",
-    orderly_cooling: "▽",
-    stress: "◉",
-    dislocation: "✖",
-    neutral: "·"
-  }[id] ?? "·";
 }

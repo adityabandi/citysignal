@@ -19,9 +19,9 @@
  "regime": {
   "rule_id": "supply_squeeze",
   "label": "Pressure without supply",
-  "reading": "Rents and prices are running above this city's own record while starts and completions are not responding. Pressure here is a supply problem rather than a demand surge, and it does not resolve on its own.",
+  "reading": "Costs and competition are above this city's own record while building runs below its usual pace. Whether that reads as a shortage or as a strong market depends on which side of it you are on.",
   "expression": "housing_pressure > 0.75 and supply_response < -0.25",
-  "rules_version": "regimes-v2",
+  "rules_version": "regimes-v3",
   "inputs": {
    "demand_momentum": -0.3101,
    "housing_pressure": 1.2658,
@@ -810,8 +810,8 @@
   },
   {
    "period": "2024-12",
-   "rule_id": "orderly_cooling",
-   "label": "Orderly cooling",
+   "rule_id": "affordability_improving",
+   "label": "Easing",
    "held_by_hysteresis": false,
    "index_demand_momentum": -0.0947,
    "index_housing_pressure": -0.7514,
@@ -12585,5 +12585,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T19:00:12+00:00"
+ "generated_at": "2026-07-25T19:10:51+00:00"
 }

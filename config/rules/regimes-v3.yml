@@ -1,0 +1,114 @@
+# Regime classification, version 3.
+#
+# v2 was asymmetric, and the asymmetry was introduced by the author rather than
+# by the data. v1 classified every city as "no clear regime", so v2 added two
+# states — `hot` and `supply_squeeze` — that let the rules name what the first
+# full dataset happened to show. No equivalent states were added for the other
+# side. A rule set extended only in the direction the data already pointed will
+# keep finding what it was extended to find, which is how a monitor turns into a
+# confirmation machine.
+#
+# v3 restores the symmetry. For every heat state there is now a matching state
+# for the opposite condition, written to the same thresholds:
+#
+#   hot                (pressure high)            ↔  affordability_improving (pressure low)
+#   supply_squeeze     (pressure up, building down) ↔ supply_catching_up   (pressure down, building up)
+#   hot_decelerating   (high but easing)          ↔  cooling_reversing     (low but tightening)
+#
+# The thresholds are mirrored deliberately: ±0.75 on housing pressure, ∓0.25 on
+# supply response. If the rules are more willing to say "hot" than "affordable",
+# that is now visible as an asymmetry in the numbers rather than hidden in which
+# rules happen to exist.
+#
+# A note on what "hot" means here: it describes the market's temperature, not
+# whether that is welcome. Rising rents are good news for a landlord and bad
+# news for a tenant, and this project takes no position on which reader it is
+# written for. The regime names describe conditions; the reader supplies the
+# judgement.
+
+version: regimes-v3
+frozen_at: "2026-07-25"
+supersedes: regimes-v2
+
+hysteresis_periods: 2
+sticky_regimes: [stress, dislocation]
+
+rules:
+  - id: dislocation
+    label: Dislocation
+    when: "distress > 2.0 and demand_momentum < -1.0"
+    reading: >
+      Distress measures are far above this city's own history while demand is
+      contracting. Historically the configuration that precedes forced selling.
+
+  - id: stress
+    label: Stress
+    when: "distress > 1.0"
+    reading: >
+      Foreclosure, eviction, insolvency or unemployment measures are elevated
+      against this city's own record, whatever prices are doing.
+
+  - id: hot_decelerating
+    label: Hot but decelerating
+    when: "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0"
+    reading: >
+      Housing costs and competition are well above this city's own record, but
+      have been easing for two periods. Levels stay high long after momentum
+      turns, and this is where that gap opens.
+
+  - id: cooling_reversing
+    label: Cheap but tightening
+    when: "housing_pressure < -0.75 and delta(housing_pressure, 2) > 0"
+    reading: >
+      Housing costs and competition are well below this city's own record, but
+      have been rising for two periods. The mirror image of a hot market losing
+      steam.
+
+  - id: supply_squeeze
+    label: Pressure without supply
+    when: "housing_pressure > 0.75 and supply_response < -0.25"
+    reading: >
+      Costs and competition are above this city's own record while building runs
+      below its usual pace. Whether that reads as a shortage or as a strong
+      market depends on which side of it you are on.
+
+  - id: supply_catching_up
+    label: Supply catching up
+    when: "housing_pressure < -0.75 and supply_response > 0.25"
+    reading: >
+      Costs and competition are below this city's own record while building runs
+      above its usual pace — the configuration in which housing gets easier to
+      find.
+
+  - id: hot
+    label: Hot
+    when: "housing_pressure > 0.75"
+    reading: >
+      Housing costs more and is competed for harder than is usual in this city,
+      and has not yet turned.
+
+  - id: affordability_improving
+    label: Easing
+    when: "housing_pressure < -0.75"
+    reading: >
+      Housing costs less and is competed for less than is usual in this city.
+
+  - id: orderly_cooling
+    label: Orderly cooling
+    when: "housing_pressure < 0 and distress <= 0.5 and demand_momentum > -0.5"
+    reading: >
+      Pressure has come out of the market without distress measures responding.
+      A slowdown, not a break.
+
+  - id: expansion
+    label: Expansion
+    when: "demand_momentum > 0.5 and distress < 0.5"
+    reading: >
+      Demand is strengthening and distress measures are quiet.
+
+  - id: neutral
+    label: No clear regime
+    when: "true"
+    reading: >
+      No rule fired. The city's measures are within their ordinary range, or too
+      few of them are currently available to classify.

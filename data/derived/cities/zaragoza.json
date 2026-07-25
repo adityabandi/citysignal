@@ -17,9 +17,9 @@
  "regime": {
   "rule_id": "hot_decelerating",
   "label": "Hot but decelerating",
-  "reading": "Housing pressure is still high but has been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
+  "reading": "Housing costs and competition are well above this city's own record, but have been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens.",
   "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
-  "rules_version": "regimes-v2",
+  "rules_version": "regimes-v3",
   "inputs": {
    "demand_momentum": -0.1875,
    "housing_pressure": 1.4954,
@@ -13067,5 +13067,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T19:00:12+00:00"
+ "generated_at": "2026-07-25T19:10:51+00:00"
 }

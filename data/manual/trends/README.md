@@ -20,7 +20,34 @@ breaks the weekly build. Export a basket by hand, drop the CSV here, and the
 3. Download the *Interest over time* CSV.
 4. Rename it `<metric_id>__<geo_id>.csv` and save it in this directory.
 
-## Why all terms must be in one export
+## One export or several? Both, for different jobs
+
+Measured against the live API, July 2026:
+
+| | Grouped export (terms together) | Single-term export |
+|---|---|---|
+| Shared scale | yes — ratios are valid | no — ratios are meaningless |
+| Largest term in the basket | full resolution | **identical**, byte for byte |
+| Smaller terms | compressed toward zero | full resolution |
+
+The dominant term is scaled to 100 either way, so exporting it alone gains
+nothing. The compression only bites the *minor* terms: in a grouped
+Madrid basket, "alquiler habitacion madrid" returned several zero months;
+queried on its own it returned none.
+
+That gives a clean division of labour. **Ratios must come from a grouped
+export**, because only terms measured on one scale can be divided. **Levels of a
+minor term are better from a single-term export**, because that is where the
+resolution is lost.
+
+It is not a cure for everything. Queried entirely on their own, "alquiler
+habitacion palma", "alquiler habitacion zaragoza" and "alquiler habitacion
+bilbao" still came back as zero in 28 to 36 months out of 60. Those terms are
+genuinely not searched enough in Spain to measure — the zeros are the finding,
+not an artifact, and the coverage rule below drops them rather than charting
+them.
+
+## Why terms that are divided must be in one export
 
 Trends rescales its 0–100 index **per request**. Two separately downloaded charts
 do not share a scale, so their numbers cannot be added, averaged or compared.

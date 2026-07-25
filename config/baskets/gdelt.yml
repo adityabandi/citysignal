@@ -1,0 +1,54 @@
+# GDELT DOC 2.0 news-coverage queries.
+#
+# GDELT's DOC API is full-text search over the outlets it monitors, not a
+# geography index — a bare city name pulls in every place on earth that shares
+# it. Two of our eight cities collide with something bigger: "Valencia" is also
+# a state capital in Venezuela, and "Málaga" is also a small municipality in
+# Colombia (and a town in the Philippines). `sourcecountry:SP` narrows every
+# query to outlets physically based in Spain, which removes most of the noise
+# on its own; the two ambiguous cities add an explicit exclusion on top rather
+# than relying on `sourcecountry` alone, because Spanish outlets do sometimes
+# cover Venezuelan or Colombian news.
+#
+# Every query string here was run against the live API before being frozen —
+# see the adapter's module docstring for how they were checked. Queries are
+# versioned the same way the Wikipedia baskets are: frozen once evaluated,
+# never edited in place. A revised query gets a new version.
+
+version: gdelt-v1
+frozen_at: "2026-07-25"
+
+# First full day of coverage requested. GDELT's own archive starts in 2015;
+# 2018 comfortably covers "several years" for every city without asking the
+# (aggressively rate-limited) API for more history than the indices need.
+start: "2018-01-01"
+
+# ANDed onto every city query (as a parenthesised OR group) to build the
+# news_housing_volume query. Plain Spanish, no stemming assumed.
+housing_terms: [vivienda, alquiler, desahucio, hipoteca]
+
+cities:
+  madrid:
+    query: '"Madrid" sourcecountry:SP'
+  barcelona:
+    query: '"Barcelona" sourcecountry:SP'
+  valencia:
+    # "Valencia" alone also means Valencia, Venezuela (Carabobo state) — a city
+    # of comparable size that Spanish outlets do report on.
+    query: '(Valencia OR "València") sourcecountry:SP -Venezuela -Carabobo'
+  malaga:
+    # "Málaga" alone also means Málaga, Santander, Colombia, and a municipality
+    # in Bukidnon, Philippines.
+    query: '(Málaga OR Malaga) sourcecountry:SP -Colombia -Filipinas'
+  sevilla:
+    query: '(Sevilla OR Seville) sourcecountry:SP'
+  palma:
+    # The bare "Palma" also matches "Las Palmas de Gran Canaria" (a different,
+    # larger city in this same registry) and various Latin American places
+    # named Palma. The full "Palma de Mallorca" form used on the city's own
+    # Spanish Wikipedia article is unambiguous and still carries good volume.
+    query: '"Palma de Mallorca" sourcecountry:SP'
+  bilbao:
+    query: '"Bilbao" sourcecountry:SP'
+  zaragoza:
+    query: '(Zaragoza OR Saragossa) sourcecountry:SP'

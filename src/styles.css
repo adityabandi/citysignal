@@ -478,3 +478,11 @@ table.cs-table td.cs-num { font-variant-numeric: tabular-nums; }
 .cs-vitals-city {
   font-size: 0.9rem;
 }
+
+/* The delta is deliberately not coloured good-or-bad: whether a rise is welcome
+   depends on whether you are the landlord or the tenant. */
+.cs-delta-neutral { color: var(--cs-ink-2); }
+
+.regime-affordability_improving { color: var(--cs-expansion); }
+.regime-supply_catching_up { color: var(--cs-expansion); }
+.regime-cooling_reversing { color: var(--cs-orderly); }

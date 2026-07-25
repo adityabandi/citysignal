@@ -1,31 +1,28 @@
 {
- "run_id": "6b52b0dbd847",
- "finished_at": "2026-07-25T18:59:28+00:00",
+ "run_id": "33409222e969",
+ "finished_at": "2026-07-25T19:09:53+00:00",
  "ok": [
-  "trends_manual"
+  "madrid_vut"
  ],
  "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "trends_manual",
+   "source_id": "madrid_vut",
    "status": "ok",
-   "records": 1572,
-   "added": 1572,
+   "records": 21,
+   "added": 21,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 8,
+   "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.04,
-   "latest_observation": "2026-06",
+   "duration_s": 0.38,
+   "latest_observation": "2026-07",
    "metrics": [
-    "search_buy_momentum",
-    "search_rental_pressure",
-    "search_room_share",
-    "search_tenure_switch"
+    "vut_licensed"
    ],
    "notes": []
   }

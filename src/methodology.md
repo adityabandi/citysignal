@@ -74,10 +74,12 @@ deviation so one extreme reading cannot flatten the score meant to reveal it.
 Scores are clipped at four standard deviations, because an outlier should read
 as extreme rather than as infinite.
 
-Scores are then oriented by the metric's declared direction, so positive always
-means "hotter market" no matter which way the raw number moved. Rising
-unemployment and rising rents both push their indices the way they actually
-mean.
+Scores are then oriented by the metric's declared direction so that an index has
+a consistent sense: positive means more pressure, more activity, more heat.
+"Hotter" here is a description of the market's temperature, not a verdict on it —
+rising rents and rising unemployment both push their indices in the direction
+that matches what they measure, and whether either is welcome depends entirely on
+who is reading.
 
 </div>
 
@@ -173,10 +175,54 @@ display(
 Sub-city evidence exists only where a municipality publishes it; most of these
 cities do not, and a coarse map is more honest than an invented one.
 Judicial distress measures are provincial and slow — they are the confirmation,
-not the warning. Search interest from the official Google Trends API is not
-included: the API is application-gated, and the unofficial endpoints rate-limit
-immediately, which makes them unfit for a scheduled build. Where an attention
-measure appears, it comes from a source that permits automated access and is
-labelled as attention.
+not the warning.
+
+Google Trends is present, but by hand rather than by API. The official API is
+alpha and application-gated, and the unofficial endpoints rate-limit on a first
+request, which makes them unfit for a scheduled build. Baskets are therefore
+exported manually and committed, and they go stale on the Sources page like any
+other source when nobody refreshes them. Two properties of that data shape how it
+is used: Trends rescales 0-100 for every query, so only terms exported *together*
+share a scale and only ratios between them are comparable across years; and a
+term with too little volume is reported as zero rather than as missing, so a
+series that is mostly zeros is dropped rather than published. That is why the
+smaller cities carry fewer search metrics than Madrid, and why they should.
+
+</div>
+
+## The site takes no view on whether prices should rise
+
+<div class="cs-note">
+
+A rise in rents is good news for a landlord and bad news for a tenant. This
+project has no standing to decide which of those readers it is written for, so
+it tries not to decide by accident either.
+
+Three places where it previously did, and what changed:
+
+**Year-on-year changes were coloured good-or-bad.** A change that moved the way
+the metric registry calls "hotter" was rendered green — which told a renter that
+rising rents were good news. Deltas are now shown in neutral ink with an arrow
+for direction. Status colour is reserved for regime states and source health,
+where it marks a defined condition rather than an opinion.
+
+**The regime rules were asymmetric.** The first rule set could not classify any
+city, so states were added — `Hot` and `Pressure without supply` — that let the
+rules name what the first full dataset happened to show. Nothing equivalent was
+added for the opposite condition. A rule set extended only in the direction the
+data already points will keep finding what it was extended to find. Version 3
+mirrors every heat state with its opposite at the same thresholds: `Easing`,
+`Supply catching up`, `Cheap but tightening`. If the rules still say "hot" more
+often than "easing", that is now a fact about the data rather than about which
+rules happen to exist.
+
+**Wording carried judgement.** "Supply is not answering" implies it ought to.
+The index descriptions now state what the measures did, not what they should
+have done.
+
+What remains, unavoidably, is that someone chose which measures to collect and
+how to group them into four indices. Those choices are in
+`config/metrics.yml` and `config/rules/`, in the open, and the regime label on
+every page prints the rule that produced it.
 
 </div>

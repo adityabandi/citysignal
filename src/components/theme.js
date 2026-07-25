@@ -36,13 +36,16 @@ export const cityColor = (slug) => CITY_COLORS[slug] ?? INK_3;
 // to neutral and a real state is rendered as "nothing happening".
 export const REGIMES = {
   expansion: {label: "Expansion", color: "#0ca30c", glyph: "▲", rank: 0},
-  orderly_cooling: {label: "Orderly cooling", color: "#898781", glyph: "▽", rank: 1},
-  hot: {label: "Hot", color: "#fab219", glyph: "◆", rank: 2},
-  hot_decelerating: {label: "Hot but decelerating", color: "#fab219", glyph: "◇", rank: 3},
-  supply_squeeze: {label: "Pressure without supply", color: "#ec835a", glyph: "◉", rank: 4},
-  stress: {label: "Stress", color: "#d03b3b", glyph: "✖", rank: 5},
-  dislocation: {label: "Dislocation", color: "#d03b3b", glyph: "‼", rank: 6},
-  neutral: {label: "No clear regime", color: "#6e6e6b", glyph: "·", rank: 7}
+  orderly_cooling: {label: "Orderly cooling", color: "#898781", glyph: "▽", rank: 0.5},
+  affordability_improving: {label: "Easing", color: "#0ca30c", glyph: "▼", rank: 1},
+  supply_catching_up: {label: "Supply catching up", color: "#0ca30c", glyph: "▼", rank: 2},
+  cooling_reversing: {label: "Cheap but tightening", color: "#898781", glyph: "△", rank: 3},
+  hot: {label: "Hot", color: "#fab219", glyph: "◆", rank: 4},
+  hot_decelerating: {label: "Hot but decelerating", color: "#fab219", glyph: "◇", rank: 5},
+  supply_squeeze: {label: "Pressure without supply", color: "#ec835a", glyph: "◉", rank: 6},
+  stress: {label: "Stress", color: "#d03b3b", glyph: "✖", rank: 7},
+  dislocation: {label: "Dislocation", color: "#d03b3b", glyph: "‼", rank: 8},
+  neutral: {label: "No clear regime", color: "#6e6e6b", glyph: "·", rank: 9}
 };
 
 export const REGIME_ORDER = Object.entries(REGIMES)
@@ -87,12 +90,24 @@ export function formatDelta(value) {
   return `${sign}${value.toFixed(1)}%`;
 }
 
-// A rise is not automatically good. `direction` from the metric registry says
-// whether up means a hotter market or a worse one, so the delta is coloured by
-// meaning rather than by arithmetic sign.
-export function deltaClass(value, direction = 1) {
-  if (value == null || Math.abs(value) < 0.05) return "cs-delta-flat";
-  return value * direction > 0 ? "cs-delta-up" : "cs-delta-down";
+// Deliberately NOT coloured good-or-bad.
+//
+// An earlier version coloured a change green when it moved the way the metric's
+// `direction` called "hotter". That renders rising rents green, which tells a
+// renter that their problem is good news. Whether a rise is welcome depends
+// entirely on who is reading — owner or tenant, seller or buyer — and that is
+// not a question this project has any standing to answer.
+//
+// So the delta shows magnitude and an arrow for sense, in neutral ink. Status
+// colour is reserved for the regime chips and for source health, where it means
+// a defined state rather than an opinion.
+export function deltaClass() {
+  return "cs-delta-neutral";
+}
+
+export function deltaArrow(value) {
+  if (value == null || Math.abs(value) < 0.05) return "→";
+  return value > 0 ? "↑" : "↓";
 }
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -153,8 +168,8 @@ export const INDEX_PLAIN = {
     flat: "Housing is about as tight as it usually is here."
   },
   supply_response: {
-    high: "Building is running ahead of its usual pace, so supply is answering.",
-    low: "Building has slowed below its usual pace, so supply is not answering.",
+    high: "Building is running ahead of its usual pace here.",
+    low: "Building has slowed below its usual pace here.",
     flat: "Building is running at about its usual pace."
   },
   distress: {

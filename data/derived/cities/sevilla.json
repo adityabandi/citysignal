@@ -21,7 +21,7 @@
   "label": "No clear regime",
   "reading": "No rule fired. The city's measures are within their ordinary range, or too few of them are currently available to classify.",
   "expression": "true",
-  "rules_version": "regimes-v2",
+  "rules_version": "regimes-v3",
   "inputs": {
    "demand_momentum": 0.356,
    "housing_pressure": 0.7148,
@@ -13503,5 +13503,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T19:00:12+00:00"
+ "generated_at": "2026-07-25T19:10:50+00:00"
 }

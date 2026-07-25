@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:00:12+00:00",
+ "generated_at": "2026-07-25T19:10:51+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -47,6 +47,7 @@
   "tourist_dwelling_places",
   "tourist_dwellings",
   "unemployment_registered",
+  "vut_licensed",
   "wiki_city_attention",
   "wiki_city_foreign_share",
   "wiki_city_views",
@@ -55,12 +56,12 @@
  ],
  "rules": {
   "indices": "indices-v2",
-  "regimes": "regimes-v2",
+  "regimes": "regimes-v3",
   "signatures": "signatures-v2",
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 284,
-  "observations": 13965
+  "series": 305,
+  "observations": 13986
  }
 }
