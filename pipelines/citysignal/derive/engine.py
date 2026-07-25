@@ -19,9 +19,13 @@ from .indices import IndexEngine, SignatureEngine
 from .leadlag import LeadLagLab
 from .rules import classify
 from .store import SCOPE_LABELS, HistoryStore
-from .transforms import yoy
+from .transforms import robust_outlier_score, yoy
 
 SERIES_TAIL = 96  # periods of history shipped per metric — eight years of months
+# 3.5 median absolute deviations is the conventional robust-outlier cut. Set
+# against real releases: a partial quarter of court statistics scores above 4,
+# while genuine seasonal swings in tourism and hiring stay well below.
+OUTLIER_THRESHOLD = 3.5
 
 
 def _now() -> str:
@@ -45,6 +49,44 @@ class DeriveEngine:
         self.lab = LeadLagLab(config, self.store)
         self.regime_rules = config.rules["regimes-v1"]
         self.health = self._load_health()
+        self.provisional = self._provisional_releases()
+
+    def _provisional_releases(self) -> set[tuple[str, str]]:
+        """Metric-periods where every geography moved sharply the same way.
+
+        Official statistics rarely swing 40% in the same direction in eight
+        provinces at once. When the newest release does that, the likely causes
+        are a partial period, a definition change or a parsing error — not a
+        simultaneous national event. Flagging the release as provisional keeps it
+        visible on the city page, with a note, while keeping it off the front page
+        until a later release either confirms or corrects it.
+
+        This is deliberately cross-sectional: a per-series outlier test cannot see
+        it, because each individual series looks merely unusual rather than wrong.
+        """
+        by_metric: dict[str, dict[str, dict[str, float]]] = {}
+        for series in self.store:
+            by_metric.setdefault(series.key.metric_id, {})[series.key.geo_id] = series.values
+
+        flagged: set[tuple[str, str]] = set()
+        for metric_id, geographies in by_metric.items():
+            if len(geographies) < 4:
+                continue  # too few geographies to read a cross-section from
+            latest = max(max(values) for values in geographies.values() if values)
+            changes = [
+                change
+                for values in geographies.values()
+                if (change := yoy(values).get(latest)) is not None
+            ]
+            if len(changes) < 4:
+                continue
+            same_direction = max(
+                sum(1 for c in changes if c > 0), sum(1 for c in changes if c < 0)
+            )
+            median_move = sorted(abs(c) for c in changes)[len(changes) // 2]
+            if same_direction / len(changes) >= 0.6 and median_move > 40:
+                flagged.add((metric_id, latest))
+        return flagged
 
     def _load_health(self) -> dict[str, Any]:
         path = self.config.data_dir / "quality" / "health.json"
@@ -107,6 +149,13 @@ class DeriveEngine:
         latest_period = periods[-1]
         health = self.health.get(series.source_id, {})
 
+        # A publisher's most recent period is routinely partial or restated. If it
+        # is a wild departure from its own recent normal, say so on the card and
+        # keep it out of the headline rather than presenting it as a discovery.
+        outlier = robust_outlier_score(series.values, latest_period)
+        cross_sectional = (metric_id, latest_period) in self.provisional
+        suspect = cross_sectional or (outlier is not None and outlier >= OUTLIER_THRESHOLD)
+
         return {
             "metric_id": metric_id,
             "label": meta.get("label", metric_id),
@@ -128,6 +177,23 @@ class DeriveEngine:
                 "value": series.values[latest_period],
                 "yoy": changes.get(latest_period),
             },
+            "suspect": suspect,
+            "outlier_score": outlier,
+            "suspect_note": (
+                (
+                    "Every city moved sharply the same way in this release, which is far "
+                    "more often a partial period, a definition change or a parsing error "
+                    "than a simultaneous national event. Treated as provisional and kept "
+                    "off the front page until a later release confirms it."
+                    if cross_sectional
+                    else f"The latest release sits {outlier} median absolute deviations from "
+                    "this measure's recent normal. Treated as provisional — publishers "
+                    "commonly release a partial period first — and kept off the front page "
+                    "until a later release confirms it."
+                )
+                if suspect
+                else None
+            ),
             "series": [{"period": p, "value": series.values[p]} for p in periods],
             "source_id": series.source_id,
             "source": {
@@ -280,13 +346,14 @@ class DeriveEngine:
             for cards in payload["sections"].values():
                 for card in cards:
                     change = card["latest"].get("yoy")
-                    if change is None or card["fresh"] == "failing":
+                    if change is None or card["fresh"] == "failing" or card["suspect"]:
                         continue
                     movers.append(
                         {
                             "city": payload["slug"],
                             "city_name": payload["name"],
                             "metric_id": card["metric_id"],
+                            "geo_id": card["geo_id"],
                             "label": card["label"],
                             "yoy": change,
                             "value": card["latest"]["value"],
@@ -298,6 +365,19 @@ class DeriveEngine:
                         }
                     )
         movers.sort(key=lambda m: abs(m["yoy"]), reverse=True)
+
+        # A national or shared-region series belongs to every city that reads it,
+        # so it would otherwise fill the table with eight identical rows. Keep the
+        # first occurrence of each distinct series.
+        seen: set[tuple[str, str]] = set()
+        deduped: list[dict[str, Any]] = []
+        for mover in movers:
+            key = (mover["metric_id"], mover["geo_id"])
+            if key in seen:
+                continue
+            seen.add(key)
+            deduped.append(mover)
+        movers = deduped
 
         stale = [
             {
@@ -313,6 +393,7 @@ class DeriveEngine:
 
         return {
             "generated_at": _now(),
+            "headline": self._headline(movers),
             "cities": [
                 {
                     "slug": p["slug"],
@@ -326,6 +407,40 @@ class DeriveEngine:
             ],
             "movers": movers[:24],
             "attention": stale,
+        }
+
+    @staticmethod
+    def _headline(movers: list[dict[str, Any]]) -> dict[str, Any] | None:
+        """The single most striking change, stated as a sentence.
+
+        Composed deterministically from the same numbers the table shows, so the
+        front page can lead with a finding without anyone writing copy each week
+        and without a language model inventing one. Attention measures are
+        excluded: "Wikipedia views rose 40%" is not a finding about a city.
+        """
+        candidates = [
+            m
+            for m in movers
+            if m["geo_level"] in {"municipality", "province"}
+            and not m["metric_id"].startswith(("wiki_", "news_", "search_"))
+            and abs(m["yoy"]) >= 5
+        ]
+        if not candidates:
+            return None
+
+        top = candidates[0]
+        direction = "rose" if top["yoy"] > 0 else "fell"
+        return {
+            **top,
+            "sentence": (
+                f"{top['label']} in {top['city_name']} {direction} "
+                f"{abs(top['yoy']):.0f}% over the year to {top['period']}."
+            ),
+            "qualifier": (
+                f"Published at {top['scope_label']} level."
+                if top["geo_level"] != "municipality"
+                else "Published for the municipality itself."
+            ),
         }
 
     def _signals(self, payloads: list[dict[str, Any]]) -> dict[str, Any]:

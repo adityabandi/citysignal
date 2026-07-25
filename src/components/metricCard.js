@@ -105,6 +105,13 @@ export function metricCard(card, {color} = {}) {
   const meta = el("div", {class: "cs-meta"}, [
     scopePill(card),
     freshnessTag(card),
+    card.suspect
+      ? el("span", {
+          class: "cs-scope cs-scope-wider",
+          text: "provisional",
+          title: card.suspect_note ?? "Latest release treated as provisional."
+        })
+      : null,
     el("span", {
       class: `cs-kind cs-kind-${card.source.kind ?? "official"}`,
       text: card.source.kind ?? "official"
@@ -120,6 +127,9 @@ export function metricCard(card, {color} = {}) {
     value,
     sparkline(card.series, {color: hue, direction: card.direction}),
     meta,
+    card.suspect_note
+      ? el("div", {class: "cs-note", style: "margin-top:.5rem;color:var(--cs-hot)", text: card.suspect_note})
+      : null,
     card.note ? el("div", {class: "cs-note", style: "margin-top:.5rem", text: card.note}) : null
   ]);
 }

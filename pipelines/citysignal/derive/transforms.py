@@ -119,6 +119,46 @@ def forward_fill(series: Series, target_periods: list[str], *, max_gap: int) -> 
     return out
 
 
+def robust_outlier_score(series: Series, period: str, *, window: int = 12) -> float | None:
+    """How far the value at `period` sits from its recent normal, in MADs.
+
+    Median absolute deviation rather than a standard deviation, because the thing
+    being detected — one wildly wrong value — is exactly what inflates a standard
+    deviation until the outlier looks unremarkable.
+
+    This exists because a publisher's latest period is routinely partial,
+    restated, or parsed out of the wrong column, and those look like enormous
+    real movements. A measure that jumps beyond this threshold is marked suspect
+    and kept off the front page until it is confirmed by the next release, rather
+    than being published as a discovery.
+    """
+    periods = sorted_periods(series)
+    if period not in series:
+        return None
+    index = periods.index(period)
+    history = [series[p] for p in periods[max(0, index - window) : index] if series[p] is not None]
+    if len(history) < 6:
+        return None
+
+    ordered = sorted(history)
+    middle = len(ordered) // 2
+    median = (
+        ordered[middle] if len(ordered) % 2 else (ordered[middle - 1] + ordered[middle]) / 2
+    )
+    deviations = sorted(abs(value - median) for value in history)
+    middle = len(deviations) // 2
+    mad = (
+        deviations[middle]
+        if len(deviations) % 2
+        else (deviations[middle - 1] + deviations[middle]) / 2
+    )
+    if mad == 0:
+        return None
+    # 1.4826 scales the MAD so that, for normally distributed data, the result is
+    # comparable to a standard z-score.
+    return round(abs(series[period] - median) / (1.4826 * mad), 2)
+
+
 def latest(series: Series) -> tuple[str, float] | None:
     if not series:
         return None

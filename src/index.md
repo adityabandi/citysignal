@@ -25,6 +25,27 @@ the evidence currently says, including where the evidence disagrees with itself.
 
 </div>
 
+```js
+const headline = overview.headline;
+
+display(
+  headline
+    ? el("div", {class: "cs-headline"}, [
+        el("div", {class: "cs-kicker", text: "Largest verified change this build"}),
+        el("div", {class: "cs-headline-text"}, [
+          document.createTextNode(headline.sentence.replace(/(\d+)%/, "")),
+          el("span", {class: "cs-headline-figure cs-num", text: `${Math.abs(headline.yoy).toFixed(0)}%`})
+        ]),
+        el("div", {class: "cs-meta"}, [
+          el("span", {class: `cs-scope${headline.geo_level === "municipality" ? "" : " cs-scope-wider"}`, text: headline.scope_label}),
+          el("span", {text: `${formatPeriod(headline.period)} · ${headline.label} · ${formatValue(headline.value, headline.unit)}`}),
+          el("a", {href: `./cities/${headline.city}`, text: `${headline.city_name} →`})
+        ])
+      ])
+    : null
+);
+```
+
 ## Vital signs
 
 <div class="cs-note" style="margin-bottom:.4rem">

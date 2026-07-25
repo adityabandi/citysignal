@@ -365,7 +365,7 @@ metrics:
     range: [0, 20000]
   evictions:
     label: Evictions carried out
-    label_es: Lanzamientos
+    label_es: Lanzamientos practicados
     unit: cases
     cadence: quarterly
     geo_level: province
@@ -374,6 +374,14 @@ metrics:
     direction: -1
     lag: lagging
     range: [0, 20000]
+    note: >
+      Evictions actually carried out, which is the sum of the mortgage, rental-law
+      and other categories CGPJ publishes. It moves separately from eviction orders
+      received, because each court district works through its own enforcement
+      backlog: in the first quarter of 2026, orders received rose sharply almost
+      everywhere while executions fell in Zaragoza and the Balearics and rose in
+      Madrid and Bizkaia. The most recent quarter is provisional and is usually
+      revised upward, so treat it as incomplete rather than as a turning point.
   auctions_realestate:
     label: Judicial property auctions
     unit: auctions
