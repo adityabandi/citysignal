@@ -9,7 +9,9 @@ export default {
   title: "CitySignal",
   root: "src",
   cleanUrls: true,
-  typographomicon: false,
+  // GitHub Pages serves a project site under /<repo>/, so links must be built
+  // against that prefix. Local preview stays at the root.
+  base: process.env.CI ? "/citysignal/" : "/",
   dynamicPaths: cities.map((slug) => `/cities/${slug}`),
   head: `<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="What is changing in housing demand, economic stress, tourism and supply across eight Spanish cities — with auditable sources, exact geographies and visible data freshness.">
