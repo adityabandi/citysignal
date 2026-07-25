@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:22:19+00:00",
+ "generated_at": "2026-07-25T19:28:36+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -136,6 +136,39 @@
    }
   },
   {
+   "attribution": "Source: DGT (dgt.es)",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.dgt.es/menusecundario/dgt-en-cifras/",
+   "fresh": true,
+   "geo_level": "province",
+   "kind": "official",
+   "last_checked": "2026-07-25T19:16:19+00:00",
+   "last_error": null,
+   "last_success": "2026-07-25T19:16:19+00:00",
+   "latest_observation": "2026-06",
+   "license": "Reuse permitted (attribution)",
+   "max_age_days": 90,
+   "metrics": [
+    "vehicle_registrations"
+   ],
+   "publisher": "Dirección General de Tráfico",
+   "source_id": "dgt",
+   "staleness_days": 25,
+   "status": "ok",
+   "declared": {
+    "publisher": "Dirección General de Tráfico",
+    "license": "Reuse permitted (attribution)",
+    "attribution": "Source: DGT (dgt.es)",
+    "docs_url": "https://www.dgt.es/menusecundario/dgt-en-cifras/",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 90,
+    "redistribute": true,
+    "notes": "Provincial vehicle-registration counts built from DGT's monthly microdata export (one row per registration transaction nationwide), aggregated to province by this adapter since DGT's own pre-aggregated tables are annual only. A clean, keyless consumer-confidence coincident indicator.\n"
+   }
+  },
+  {
    "attribution": "Source: EUROCONTROL Aviation Intelligence Portal",
    "cadence": "monthly",
    "consecutive_failures": 0,
@@ -165,6 +198,41 @@
     "cadence": "daily",
     "max_age_days": 30,
     "redistribute": false
+   }
+  },
+  {
+   "attribution": "Source: The GDELT Project (gdeltproject.org)",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+   "fresh": true,
+   "geo_level": "municipality",
+   "kind": "research",
+   "last_checked": "2026-07-25T19:26:54+00:00",
+   "last_error": null,
+   "last_success": "2026-07-25T19:26:54+00:00",
+   "latest_observation": "2026-06",
+   "license": "Open, attribution requested",
+   "max_age_days": 45,
+   "metrics": [
+    "news_housing_volume",
+    "news_tone",
+    "news_volume"
+   ],
+   "publisher": "The GDELT Project",
+   "source_id": "gdelt",
+   "staleness_days": 25,
+   "status": "ok",
+   "declared": {
+    "publisher": "The GDELT Project",
+    "license": "Open, attribution requested",
+    "attribution": "Source: The GDELT Project (gdeltproject.org)",
+    "docs_url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "kind": "research",
+    "cadence": "monthly",
+    "max_age_days": 45,
+    "redistribute": true,
+    "notes": "News attention and tone. Never mixed into demand measures."
    }
   },
   {
@@ -252,9 +320,9 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-25T19:15:34+00:00",
+   "last_checked": "2026-07-25T19:14:34+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:15:34+00:00",
+   "last_success": "2026-07-25T19:14:34+00:00",
    "latest_observation": "2026-07",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 45,
@@ -287,9 +355,9 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-25T19:17:44+00:00",
+   "last_checked": "2026-07-25T19:13:31+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:17:44+00:00",
+   "last_success": "2026-07-25T19:13:31+00:00",
    "latest_observation": "2026-07",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 75,
@@ -299,7 +367,7 @@
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_padron",
    "staleness_days": -6,
-   "status": "skipped",
+   "status": "ok",
    "declared": {
     "publisher": "Ayuntamiento de Madrid",
     "license": "Reuse permitted (attribution)",
@@ -319,9 +387,9 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-25T19:17:47+00:00",
+   "last_checked": "2026-07-25T19:09:53+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:17:47+00:00",
+   "last_success": "2026-07-25T19:09:53+00:00",
    "latest_observation": "2026-07",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 120,
@@ -331,7 +399,7 @@
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_vut",
    "staleness_days": -6,
-   "status": "skipped",
+   "status": "ok",
    "declared": {
     "publisher": "Ayuntamiento de Madrid",
     "license": "Reuse permitted (attribution)",

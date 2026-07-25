@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:22:19+00:00",
+ "generated_at": "2026-07-25T19:28:36+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -13,7 +13,10 @@
   "geo_level": "province",
   "scope_label": "province",
   "direction": 1,
-  "sentence": "Housing completions in Zaragoza fell 79% over the year to 2025-Q4.",
+  "lead": "Housing completions in Zaragoza fell",
+  "figure": "79%",
+  "tail": "over the year to Q4 2025.",
+  "sentence": "Housing completions in Zaragoza fell 79% over the year to Q4 2025.",
   "qualifier": "Published at province level."
  },
  "cities": [
@@ -4016,6 +4019,20 @@
    "direction": 1
   },
   {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "news_volume",
+   "geo_id": "mun-07040",
+   "label": "News coverage volume",
+   "yoy": -66.66666666666666,
+   "value": 0.0001,
+   "unit": "percent",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
    "city": "malaga",
    "city_name": "Málaga",
    "metric_id": "search_buy_momentum",
@@ -4321,20 +4338,6 @@
    "period": "2026-06",
    "geo_level": "municipality",
    "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "housing_completions",
-   "geo_id": "prov-48",
-   "label": "Housing completions",
-   "yoy": -27.848101265822784,
-   "value": 741.0,
-   "unit": "dwellings",
-   "period": "2025-Q4",
-   "geo_level": "province",
-   "scope_label": "province",
    "direction": 1
   }
  ],

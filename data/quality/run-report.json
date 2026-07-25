@@ -1,29 +1,33 @@
 {
- "run_id": "0966962e8a94",
- "finished_at": "2026-07-25T19:17:47+00:00",
+ "run_id": "573289cc2016",
+ "finished_at": "2026-07-25T19:26:54+00:00",
  "ok": [
-  "madrid_vut"
+  "gdelt"
  ],
  "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "madrid_vut",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "source_id": "gdelt",
+   "status": "ok",
+   "records": 1632,
+   "added": 1632,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 1,
-   "skipped_unchanged": 1,
+   "plans": 24,
+   "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.38,
-   "latest_observation": null,
-   "metrics": [],
+   "duration_s": 626.64,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "news_housing_volume",
+    "news_tone",
+    "news_volume"
+   ],
    "notes": [
-    "all sources unchanged since last run"
+    "8/24 optional fetches skipped: barcelona:news_housing_volume: FetchError; valencia:news_volume: FetchError; valencia:news_housing_volume: FetchError; sevilla:news_tone: FetchError; palma:news_tone: FetchError"
    ]
   }
  ]

@@ -28,6 +28,21 @@ SERIES_TAIL = 96  # periods of history shipped per metric — eight years of mon
 OUTLIER_THRESHOLD = 3.5
 
 
+_MONTHS = ["January", "February", "March", "April", "May", "June",
+           "July", "August", "September", "October", "November", "December"]
+
+
+def _pretty_period(period: str) -> str:
+    """Periods are machine-readable by design; headlines are not."""
+    if "-Q" in period:
+        year, quarter = period.split("-Q")
+        return f"Q{quarter} {year}"
+    if len(period) == 7:
+        year, month = period.split("-")
+        return f"{_MONTHS[int(month) - 1]} {year}"
+    return period
+
+
 def _now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -475,11 +490,17 @@ class DeriveEngine:
 
         top = candidates[0]
         direction = "rose" if top["yoy"] > 0 else "fell"
+        # Emitted as parts rather than one string. The figure is rendered large,
+        # and pulling it back out of a finished sentence with a regex produced
+        # broken grammar ("fell  over the year to 2025-Q4. 79%").
         return {
             **top,
+            "lead": f"{top['label']} in {top['city_name']} {direction}",
+            "figure": f"{abs(top['yoy']):.0f}%",
+            "tail": f"over the year to {_pretty_period(top['period'])}.",
             "sentence": (
                 f"{top['label']} in {top['city_name']} {direction} "
-                f"{abs(top['yoy']):.0f}% over the year to {top['period']}."
+                f"{abs(top['yoy']):.0f}% over the year to {_pretty_period(top['period'])}."
             ),
             "qualifier": (
                 f"Published at {top['scope_label']} level."

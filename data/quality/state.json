@@ -55,6 +55,118 @@
   "last_modified": null,
   "sha256": "92bf33918ddb428a2237d3ceea1cb9fa926dc77c471242ed55303e981cfefb5b"
  },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinetone&query=\"Barcelona\" sourcecountry:SP&startdatetime=20180101000000": {
+  "bytes": 151234,
+  "etag": null,
+  "last_checked": "2026-07-25T19:18:41+00:00",
+  "last_modified": null,
+  "sha256": "422a1d6593d3bbf72190b186eff408565fee6ce7ae4cd0202a9e4f398b6bce19"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinetone&query=\"Madrid\" sourcecountry:SP&startdatetime=20180101000000": {
+  "bytes": 151362,
+  "etag": null,
+  "last_checked": "2026-07-25T19:17:24+00:00",
+  "last_modified": null,
+  "sha256": "43b2a26c3f42fde95bfe7b931caddd6bc14da79b580c8076680c68939234ccc4"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinetone&query=(M\u00e1laga OR Malaga) sourcecountry:SP -Colombia -Filipinas&startdatetime=20180101000000": {
+  "bytes": 150538,
+  "etag": null,
+  "last_checked": "2026-07-25T19:20:57+00:00",
+  "last_modified": null,
+  "sha256": "b49a6776a3fdfbdde538940593c2240f38657526569ea5623b3bf8456151b87c"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinetone&query=(Valencia OR \"Val\u00e8ncia\") sourcecountry:SP -Venezuela -Carabobo&startdatetime=20180101000000": {
+  "bytes": 151387,
+  "etag": null,
+  "last_checked": "2026-07-25T19:19:51+00:00",
+  "last_modified": null,
+  "sha256": "d2bf59fa0e4f68a12a7657321b6a2e52e0e3bf7a5b97c2b2e4c4514f0192d7dd"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinetone&query=(Zaragoza OR Saragossa) sourcecountry:SP&startdatetime=20180101000000": {
+  "bytes": 150750,
+  "etag": null,
+  "last_checked": "2026-07-25T19:26:15+00:00",
+  "last_modified": null,
+  "sha256": "19bf4a022e2cd110af069a5ae5307664402d1b5e0ae39b7011fbf66d73f29b39"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=\"Barcelona\" sourcecountry:SP&startdatetime=20180101000000": {
+  "bytes": 148825,
+  "etag": null,
+  "last_checked": "2026-07-25T19:18:22+00:00",
+  "last_modified": null,
+  "sha256": "37978378c24881a097fd24f07647297a9076af8bdbdf9ed1856da662817d79fb"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=\"Bilbao\" sourcecountry:SP&startdatetime=20180101000000": {
+  "bytes": 148831,
+  "etag": null,
+  "last_checked": "2026-07-25T19:24:30+00:00",
+  "last_modified": null,
+  "sha256": "c9fc65294ff6874fe066f3fad80515e8e3a139fd88183dc9325460ee8c108c71"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=\"Madrid\" sourcecountry:SP (vivienda OR alquiler OR desahucio OR hipoteca)&startdatetime=20180101000000": {
+  "bytes": 134738,
+  "etag": null,
+  "last_checked": "2026-07-25T19:17:52+00:00",
+  "last_modified": null,
+  "sha256": "5b827c0d04b178a9b628aace7fb95e4e8652bff81898b923381bd562b7c9f697"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=\"Madrid\" sourcecountry:SP&startdatetime=20180101000000": {
+  "bytes": 148820,
+  "etag": null,
+  "last_checked": "2026-07-25T19:16:42+00:00",
+  "last_modified": null,
+  "sha256": "748e359004a95e614ed5b16689715b07c7b75be30b6ee3cb23e450f10c341c41"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=\"Palma de Mallorca\" sourcecountry:SP (vivienda OR alquiler OR desahucio OR hipoteca)&startdatetime=20180101000000": {
+  "bytes": 133756,
+  "etag": null,
+  "last_checked": "2026-07-25T19:24:04+00:00",
+  "last_modified": null,
+  "sha256": "6adfe6a076ef01ba2d64669dee6fce519ec46a06332b26fc5b4519e9a35fab21"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=\"Palma de Mallorca\" sourcecountry:SP&startdatetime=20180101000000": {
+  "bytes": 139585,
+  "etag": null,
+  "last_checked": "2026-07-25T19:23:15+00:00",
+  "last_modified": null,
+  "sha256": "36aa00417d17bdb362188a5947caf6c9b08124c4f271937bf295f3e40b58f66a"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=(M\u00e1laga OR Malaga) sourcecountry:SP -Colombia -Filipinas (vivienda OR alquiler OR desahucio OR hipoteca)&startdatetime=20180101000000": {
+  "bytes": 133856,
+  "etag": null,
+  "last_checked": "2026-07-25T19:21:27+00:00",
+  "last_modified": null,
+  "sha256": "ac0fab98fb03b2d602457bc8464afcda2e5d54b2c0fdd5d5e3f6b80f3d0708e4"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=(M\u00e1laga OR Malaga) sourcecountry:SP -Colombia -Filipinas&startdatetime=20180101000000": {
+  "bytes": 148880,
+  "etag": null,
+  "last_checked": "2026-07-25T19:20:14+00:00",
+  "last_modified": null,
+  "sha256": "0592bef7f2b1578ce46bf7e476dd8f5b6946e67b48208cf4004345265c9e60c6"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=(Sevilla OR Seville) sourcecountry:SP (vivienda OR alquiler OR desahucio OR hipoteca)&startdatetime=20180101000000": {
+  "bytes": 133880,
+  "etag": null,
+  "last_checked": "2026-07-25T19:22:59+00:00",
+  "last_modified": null,
+  "sha256": "de467587c7e0dad12041914516b6249f25dfa580af272453d99ea5c1f4b9f360"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=(Sevilla OR Seville) sourcecountry:SP&startdatetime=20180101000000": {
+  "bytes": 148827,
+  "etag": null,
+  "last_checked": "2026-07-25T19:22:08+00:00",
+  "last_modified": null,
+  "sha256": "4e75888fed675db868c896d939de8ad8681e332c08157a581391bb9899f81d0c"
+ },
+ "https://api.gdeltproject.org/api/v2/doc/doc?enddatetime=20260725191627&format=json&mode=timelinevol&query=(Zaragoza OR Saragossa) sourcecountry:SP (vivienda OR alquiler OR desahucio OR hipoteca)&startdatetime=20180101000000": {
+  "bytes": 133823,
+  "etag": null,
+  "last_checked": "2026-07-25T19:26:54+00:00",
+  "last_modified": null,
+  "sha256": "af15d9c1e73548da1b2e179c909b8db57507599c4ddb4f869038fc27571b3c1b"
+ },
  "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP001_01.csv": {
   "bytes": 37788115,
   "etag": "0x8DEB7E15ED4225D",
@@ -142,266 +254,266 @@
  "https://datos.madrid.es/dataset/200085-0-censo-locales/resource/200085-5-censo-locales/download/200085-5-censo-locales.csv": {
   "bytes": 124796832,
   "etag": "\"1784957792.7073767-124796832-2379288616\"",
-  "last_checked": "2026-07-25T19:15:34+00:00",
+  "last_checked": "2026-07-25T19:14:34+00:00",
   "last_modified": "Sat, 25 Jul 2026 05:36:32 GMT",
   "sha256": "f3cc20b6379b4f513e5b3e37b884ad88cab32d25445d1104c4caebc73326df78"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-0-padron-municipal-historico-csv/download/209163-0-padron-municipal-historico-csv.csv": {
   "bytes": 34247794,
   "etag": "\"1771195999.574629-34247794-3733591790\"",
-  "last_checked": "2026-07-25T19:16:57+00:00",
+  "last_checked": "2026-07-25T19:12:00+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:53:19 GMT",
   "sha256": "7e04d88f819a1266477d436c3c4a9084a81a301fa6fed7018fcd1d5dd438ecbe"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-1-padron-municipal-historico-csv/download/209163-1-padron-municipal-historico-csv.csv": {
   "bytes": 33996220,
   "etag": "\"1771196369.279788-33996220-3735688943\"",
-  "last_checked": "2026-07-25T19:17:32+00:00",
+  "last_checked": "2026-07-25T19:13:09+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:59:29 GMT",
   "sha256": "c27e7f45c2bd201452ed199a636445f13e11cc5bb1a7b8287ddbe492c74a18bc"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-102-padron-municipal-historico-csv/download/209163-102-padron-municipal-historico-csv.csv": {
   "bytes": 34254762,
   "etag": "\"1771195996.654517-34254762-13834065\"",
-  "last_checked": "2026-07-25T19:16:37+00:00",
+  "last_checked": "2026-07-25T19:11:22+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:53:16 GMT",
   "sha256": "bbd10709bc0563fd232c734fce5fccfa79362ec4fa169e95c78cd96bbfb75840"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-118-padron-municipal-historico-csv/download/209163-118-padron-municipal-historico-csv.csv": {
   "bytes": 34049535,
   "etag": "\"1771196070.982571-34049535-28579672\"",
-  "last_checked": "2026-07-25T19:17:15+00:00",
+  "last_checked": "2026-07-25T19:12:35+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:54:30 GMT",
   "sha256": "7341e06380eaeec66f767209fc791e054426c847d131f13c8715b1374a80e874"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-135-padron-municipal-historico-csv/download/209163-135-padron-municipal-historico-csv.csv": {
   "bytes": 34060353,
   "etag": "\"1771196137.465675-34060353-26613591\"",
-  "last_checked": "2026-07-25T19:17:18+00:00",
+  "last_checked": "2026-07-25T19:12:40+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:55:37 GMT",
   "sha256": "cfbc6821711a795784c488b54518fb30a84218a4a761e6f0d49cfbc3db5cb45e"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-136-padron-municipal-historico-csv/download/209163-136-padron-municipal-historico-csv.csv": {
   "bytes": 34266410,
   "etag": "\"1771196139.794775-34266410-28710744\"",
-  "last_checked": "2026-07-25T19:16:42+00:00",
+  "last_checked": "2026-07-25T19:11:34+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:55:39 GMT",
   "sha256": "3c974d5c4de17849eae03c0fcce4f87250e19611ef6f6cd4166b3c01acddf12d"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-168-padron-municipal-historico-csv/download/209163-168-padron-municipal-historico-csv.csv": {
   "bytes": 34259240,
   "etag": "\"1771196268.8026-34259240-39393117\"",
-  "last_checked": "2026-07-25T19:16:48+00:00",
+  "last_checked": "2026-07-25T19:11:45+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:57:48 GMT",
   "sha256": "e0a47e498d5cbd061b52f1758747e4e5fa6c0d2ce65482cb892c40fb9a04261e"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-169-padron-municipal-historico-csv/download/209163-169-padron-municipal-historico-csv.csv": {
   "bytes": 34038018,
   "etag": "\"1771196271.095771-34038018-41490270\"",
-  "last_checked": "2026-07-25T19:17:24+00:00",
+  "last_checked": "2026-07-25T19:12:51+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:57:51 GMT",
   "sha256": "4a1a0ef849721eb439ff7c09b030ef2062f69fdbf292c350ecfcbcba39cc2c19"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-183-padron-municipal-historico-csv/download/209163-183-padron-municipal-historico-csv.csv": {
   "bytes": 33789582,
   "etag": "\"1771196328.09131-33789582-33232730\"",
-  "last_checked": "2026-07-25T19:17:27+00:00",
+  "last_checked": "2026-07-25T19:12:56+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:58:48 GMT",
   "sha256": "c98752c63002930b6318aa2b22d45f8b2b632945344a5da3c988062a261ca912"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-2-padron-municipal-historico-csv/download/209163-2-padron-municipal-historico-csv.csv": {
   "bytes": 34307082,
   "etag": "\"1771196802.318272-34307082-3737786096\"",
-  "last_checked": "2026-07-25T19:16:15+00:00",
+  "last_checked": "2026-07-25T19:10:43+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:06:42 GMT",
   "sha256": "00d4b918c3ab316c0c73c459f8a8e13e5f802ea7b5ded15da4dce9b16f80276c"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-202-padron-municipal-historico-csv/download/209163-202-padron-municipal-historico-csv.csv": {
   "bytes": 34017598,
   "etag": "\"1771196398.203733-34017598-16062290\"",
-  "last_checked": "2026-07-25T19:17:30+00:00",
+  "last_checked": "2026-07-25T19:13:03+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:59:58 GMT",
   "sha256": "58d42bbe86c035ab525606b6d42628df5863e0625d8dd7d650203008cf730bd0"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-228-padron-municipal-historico-csv/download/209163-228-padron-municipal-historico-csv.csv": {
   "bytes": 34101433,
   "etag": "\"1771196494.147653-34101433-32970586\"",
-  "last_checked": "2026-07-25T19:17:04+00:00",
+  "last_checked": "2026-07-25T19:12:13+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:01:34 GMT",
   "sha256": "6f24b88ec502196110e60764118ab024a46f4c9c8e79b7cb7063ab77645b80f8"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-239-padron-municipal-historico-csv/download/209163-239-padron-municipal-historico-csv.csv": {
   "bytes": 34261354,
   "etag": "\"1771196546.555359-34261354-37230428\"",
-  "last_checked": "2026-07-25T19:16:52+00:00",
+  "last_checked": "2026-07-25T19:11:51+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:02:26 GMT",
   "sha256": "e00e9840d9e2e2f5c6dffdd92c4116eedbb7d78c8a902e4b2523f5056deee030"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-240-padron-municipal-historico-csv/download/209163-240-padron-municipal-historico-csv.csv": {
   "bytes": 34278547,
   "etag": "\"1771196557.81936-34278547-20518740\"",
-  "last_checked": "2026-07-25T19:16:45+00:00",
+  "last_checked": "2026-07-25T19:11:39+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:02:37 GMT",
   "sha256": "65f7c6fba71a1b8b51d0da405c01a8ac2c94e31c03baa8d3143f364f182bb5e3"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-246-padron-municipal-historico-csv/download/209163-246-padron-municipal-historico-csv.csv": {
   "bytes": 23944205,
   "etag": "\"1771196575.908776-23944205-33101658\"",
-  "last_checked": "2026-07-25T19:16:24+00:00",
+  "last_checked": "2026-07-25T19:11:00+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:02:55 GMT",
   "sha256": "e1f0e1812f9c6d82024114fa6e31ec5933b07b24afbeb9795ef2c4c032aae90c"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-25-padron-municipal-historico-csv/download/209163-25-padron-municipal-historico-csv.csv": {
   "bytes": 34247219,
   "etag": "\"1771196637.363645-34247219-4030732069\"",
-  "last_checked": "2026-07-25T19:17:00+00:00",
+  "last_checked": "2026-07-25T19:12:06+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:03:57 GMT",
   "sha256": "da6f987c7baa2087a53b207b0f36d91fec6f2aa64b09837a9d4f98be1037f206"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-26-padron-municipal-historico-csv/download/209163-26-padron-municipal-historico-csv.csv": {
   "bytes": 34005103,
   "etag": "\"1771196690.165253-34005103-4032829222\"",
-  "last_checked": "2026-07-25T19:17:35+00:00",
+  "last_checked": "2026-07-25T19:13:16+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:04:50 GMT",
   "sha256": "bc64b202c67b7490dafa69abeecffbaa4d106d5f4cc11a839f0b5b1386fabf69"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-27-padron-municipal-historico-csv/download/209163-27-padron-municipal-historico-csv.csv": {
   "bytes": 34281545,
   "etag": "\"1771196727.989749-34281545-4034926375\"",
-  "last_checked": "2026-07-25T19:16:19+00:00",
+  "last_checked": "2026-07-25T19:10:50+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:05:27 GMT",
   "sha256": "b7ef45363c8d93c1851f84f690107b57776a6a6bd1e8acd01706d67e5692acf3"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-281-padron-municipal-historico-csv/download/209163-281-padron-municipal-historico-csv.csv": {
   "bytes": 34036578,
   "etag": "\"1771196731.886464-34036578-31266649\"",
-  "last_checked": "2026-07-25T19:17:21+00:00",
+  "last_checked": "2026-07-25T19:12:45+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:05:31 GMT",
   "sha256": "3d487cbddb3dc267e746afbb47fc5959169eef7039d3b39b78f43b8c367e83f8"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-282-padron-municipal-historico-csv/download/209163-282-padron-municipal-historico-csv.csv": {
   "bytes": 34081073,
   "etag": "\"1771196734.106916-34081073-33363802\"",
-  "last_checked": "2026-07-25T19:17:10+00:00",
+  "last_checked": "2026-07-25T19:12:24+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:05:34 GMT",
   "sha256": "171423a9f736bdb01e260550e55b964bb447102f6fef9c152074cb23a860fd3e"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-283-padron-municipal-historico-csv/download/209163-283-padron-municipal-historico-csv.csv": {
   "bytes": 34281593,
   "etag": "\"1771196739.126194-34281593-35460955\"",
-  "last_checked": "2026-07-25T19:16:39+00:00",
+  "last_checked": "2026-07-25T19:11:28+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:05:39 GMT",
   "sha256": "3077e537d819649c4d22654d3608475b535b697a41743bd24395cff2cd5dae90"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-296-padron-municipal-historico-csv/download/209163-296-padron-municipal-historico-csv.csv": {
   "bytes": 34244556,
   "etag": "\"1771196793.63634-34244556-43915103\"",
-  "last_checked": "2026-07-25T19:16:55+00:00",
+  "last_checked": "2026-07-25T19:11:56+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:06:33 GMT",
   "sha256": "65cded5a78c87f63d32c6b8860f061f58a4453bea87e747e849e0883d74b569a"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-3-padron-municipal-historico-csv/download/209163-3-padron-municipal-historico-csv.csv": {
   "bytes": 34291530,
   "etag": "\"1771196940.988611-34291530-3739883249\"",
-  "last_checked": "2026-07-25T19:16:22+00:00",
+  "last_checked": "2026-07-25T19:10:55+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:09:00 GMT",
   "sha256": "292ea0a879f7e6fcf65179dd6063618bd358a7a7f63f0bd689243cb7a25fa7bc"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-301-padron-municipal-historico-csv/download/209163-301-padron-municipal-historico-csv.csv": {
   "bytes": 34003400,
   "etag": "\"1771196805.873623-34003400-16193362\"",
-  "last_checked": "2026-07-25T19:17:38+00:00",
+  "last_checked": "2026-07-25T19:13:21+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:06:45 GMT",
   "sha256": "5ef750fd05356acf9e14e68e3562c33dd2151fc7408e1653796cbc2fec56e161"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-317-padron-municipal-historico-csv/download/209163-317-padron-municipal-historico-csv.csv": {
   "bytes": 34057160,
   "etag": "\"1771196859.036472-34057160-30938969\"",
-  "last_checked": "2026-07-25T19:17:12+00:00",
+  "last_checked": "2026-07-25T19:12:29+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:07:39 GMT",
   "sha256": "32d968c3ccaee8dac90e2aba8f1afd6bb9aa8e0f06178cb6811fd25ad9a442a6"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-334-padron-municipal-historico/download/209163-334-padron-municipal-historico.csv": {
   "bytes": 35021135,
   "etag": "\"1773566560.994473-35021135-2801145311\"",
-  "last_checked": "2026-07-25T19:16:11+00:00",
+  "last_checked": "2026-07-25T19:10:37+00:00",
   "last_modified": "Sun, 15 Mar 2026 09:22:40 GMT",
   "sha256": "5dc14264de7685a2944acba5c7bd34a795b9753491d22caf89c706f572f1de80"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-336-padron-municipal-historico/download/209163-336-padron-municipal-historico.csv": {
   "bytes": 34790363,
   "etag": "\"1776674953.98401-34790363-2804815329\"",
-  "last_checked": "2026-07-25T19:16:09+00:00",
+  "last_checked": "2026-07-25T19:10:32+00:00",
   "last_modified": "Mon, 20 Apr 2026 08:49:13 GMT",
   "sha256": "61c40c8f5f3524dc79868593e648f51d8116bd64b04f7c7e2e54785ab3afc147"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-339-padron-municipal-historico/download/209163-339-padron-municipal-historico.csv": {
   "bytes": 34796283,
   "etag": "\"1778732238.22843-34796283-2810320356\"",
-  "last_checked": "2026-07-25T19:16:06+00:00",
+  "last_checked": "2026-07-25T19:10:27+00:00",
   "last_modified": "Thu, 14 May 2026 04:17:18 GMT",
   "sha256": "a6b033b59f64515d6e51df8aacfb5897a640130960acb3f6ef902b3413526967"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-342-padron-municipal-historico/download/209163-342-padron-municipal-historico.csv": {
   "bytes": 34792786,
   "etag": "\"1781613849.066857-34792786-2799375838\"",
-  "last_checked": "2026-07-25T19:16:00+00:00",
+  "last_checked": "2026-07-25T19:10:23+00:00",
   "last_modified": "Tue, 16 Jun 2026 12:44:09 GMT",
   "sha256": "8ae6314f26de1644afffb6745ac2c5173c2374b28a58deffe279a3e68d434a60"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-345-padron-municipal-historico/download/209163-345-padron-municipal-historico.csv": {
   "bytes": 34072100,
   "etag": "\"1784012064.1674862-34072100-2804880865\"",
-  "last_checked": "2026-07-25T19:15:57+00:00",
+  "last_checked": "2026-07-25T19:10:16+00:00",
   "last_modified": "Tue, 14 Jul 2026 06:54:24 GMT",
   "sha256": "869b4cdb7962dc957ebfde12b45efa71b3219ada28fe4c28666eb22f88d68221"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-48-padron-municipal-historico-csv/download/209163-48-padron-municipal-historico-csv.csv": {
   "bytes": 34277717,
   "etag": "\"1771196983.819616-34277717-4041348906\"",
-  "last_checked": "2026-07-25T19:16:28+00:00",
+  "last_checked": "2026-07-25T19:11:05+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:09:43 GMT",
   "sha256": "9bc6b0d8fddda7d0783ca8f5bb1ecedec3c4469c886b63d464e302266a11b3a4"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-64-padron-municipal-historico-csv/download/209163-64-padron-municipal-historico-csv.csv": {
   "bytes": 34278237,
   "etag": "\"1771197034.039337-34278237-4037285672\"",
-  "last_checked": "2026-07-25T19:16:31+00:00",
+  "last_checked": "2026-07-25T19:11:13+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:10:34 GMT",
   "sha256": "8c8dcfe0645b0759bcbb83e4d5b48835325a0ccc44eeaa39159eecef8fce3b60"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-65-padron-municipal-historico-csv/download/209163-65-padron-municipal-historico-csv.csv": {
   "bytes": 34075136,
   "etag": "\"1771197036.353594-34075136-4039382825\"",
-  "last_checked": "2026-07-25T19:17:06+00:00",
+  "last_checked": "2026-07-25T19:12:18+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:10:36 GMT",
   "sha256": "a477511d90d0009a4a5b1f0ff558a795a1cbe48c5fc6f5a0b75520957b03a6d5"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-66-padron-municipal-historico-csv/download/209163-66-padron-municipal-historico-csv.csv": {
   "bytes": 33034633,
   "etag": "\"1771197038.634701-33034633-4041479978\"",
-  "last_checked": "2026-07-25T19:17:41+00:00",
+  "last_checked": "2026-07-25T19:13:26+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:10:38 GMT",
   "sha256": "96a5f6d7216db43f27cd569cb7b1551981fd8e126f51e6baa2f142c5e7640aef"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-85-padron-municipal-historico-csv/download/209163-85-padron-municipal-historico-csv.csv": {
   "bytes": 34022107,
   "etag": "\"1771197113.794509-34022107-4043708203\"",
-  "last_checked": "2026-07-25T19:16:34+00:00",
+  "last_checked": "2026-07-25T19:11:17+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:11:53 GMT",
   "sha256": "a8663d0d370ccc417f521642f8e1d53374dd12aff1a6f859f548e694877e84e2"
  },
  "https://datos.madrid.es/dataset/209163-0-padron-municipal-historico/resource/209163-86-padron-municipal-historico-csv/download/209163-86-padron-municipal-historico-csv.csv": {
   "bytes": 33026729,
   "etag": "\"1771197115.907572-33026729-4045805356\"",
-  "last_checked": "2026-07-25T19:17:44+00:00",
+  "last_checked": "2026-07-25T19:13:31+00:00",
   "last_modified": "Sun, 15 Feb 2026 23:11:55 GMT",
   "sha256": "f194ae7410306c3a75de95edd5f847d5aefce52d561110f92339e53a7d03fc03"
  },
  "https://datos.madrid.es/dataset/300694-0-viviendas-turisticas-geoportal/resource/300694-0-viviendas-turisticas-geoportal/download/300694-0-viviendas-turisticas-geoportal.zip": {
   "bytes": 71214,
   "etag": "\"1162e-65589ba2ecf4e\"",
-  "last_checked": "2026-07-25T19:17:47+00:00",
+  "last_checked": "2026-07-25T19:09:53+00:00",
   "last_modified": "Wed, 01 Jul 2026 09:58:02 GMT",
   "sha256": "ff83f121ba2503e0aa5f4f1a98a953ff0849953b45903053fec27863db7e7202"
  },
@@ -1811,6 +1923,335 @@
   "last_checked": "2026-07-25T18:35:09+00:00",
   "last_modified": null,
   "sha256": "f67e846243aefd6cc80347c4dd59d23de0a08ab96ef72eeb1506804e370bd2b3"
+ },
+ "https://www.dgt.es/microdatos/salida/2022/10/vehiculos/matriculaciones/export_mensual_mat_202210.zip": {
+  "bytes": 11622977,
+  "etag": "\"b15a41-620bd7e43939d\"",
+  "last_checked": "2026-07-25T19:16:17+00:00",
+  "last_modified": "Wed, 28 Aug 2024 12:28:19 GMT",
+  "sha256": "fca233a173fbc44dfd1cdbf40fe60a6e608534dbac28afa1a8c9c93b14b3b643"
+ },
+ "https://www.dgt.es/microdatos/salida/2022/11/vehiculos/matriculaciones/export_mensual_mat_202211.zip": {
+  "bytes": 12320701,
+  "etag": "\"bbffbd-620bd7e6d1379\"",
+  "last_checked": "2026-07-25T19:16:17+00:00",
+  "last_modified": "Wed, 28 Aug 2024 12:28:22 GMT",
+  "sha256": "73cbf82eb47f1db41aa60a7dd8e95795dcb6132a9747f9bc463724342236f2f4"
+ },
+ "https://www.dgt.es/microdatos/salida/2022/12/vehiculos/matriculaciones/export_mensual_mat_202212.zip": {
+  "bytes": 11879733,
+  "etag": "\"b54535-6214a456619e0\"",
+  "last_checked": "2026-07-25T19:16:16+00:00",
+  "last_modified": "Wed, 04 Sep 2024 12:25:35 GMT",
+  "sha256": "e691f0c00631ba8a75318b6b1266baf2a8ca45d1b8ef0320ed2adb3c5d5221e1"
+ },
+ "https://www.dgt.es/microdatos/salida/2022/7/vehiculos/matriculaciones/export_mensual_mat_202207.zip": {
+  "bytes": 12183315,
+  "etag": "\"b9e713-620bd7ddad21f\"",
+  "last_checked": "2026-07-25T19:16:19+00:00",
+  "last_modified": "Wed, 28 Aug 2024 12:28:12 GMT",
+  "sha256": "85d068bdaa5ffb1dff2f33e0a27d21648c28b85f18f863e39db9b40d972c33b4"
+ },
+ "https://www.dgt.es/microdatos/salida/2022/8/vehiculos/matriculaciones/export_mensual_mat_202208.zip": {
+  "bytes": 9275232,
+  "etag": "\"8d8760-620bd7df8990b\"",
+  "last_checked": "2026-07-25T19:16:18+00:00",
+  "last_modified": "Wed, 28 Aug 2024 12:28:14 GMT",
+  "sha256": "9b5e2a61a1168c5ad31c42de0e37c7bf66d244984a32a85bdc623d6e3555c216"
+ },
+ "https://www.dgt.es/microdatos/salida/2022/9/vehiculos/matriculaciones/export_mensual_mat_202209.zip": {
+  "bytes": 11548836,
+  "etag": "\"b038a4-620bd7e1e327a\"",
+  "last_checked": "2026-07-25T19:16:18+00:00",
+  "last_modified": "Wed, 28 Aug 2024 12:28:17 GMT",
+  "sha256": "09a657d92fb1c30786b69e6259b5a280fcf773e85ad1be554616a361db0de7d6"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/1/vehiculos/matriculaciones/export_mensual_mat_202301.zip": {
+  "bytes": 10669157,
+  "etag": "\"a2cc65-5f4b8104724c4\"",
+  "last_checked": "2026-07-25T19:16:15+00:00",
+  "last_modified": "Wed, 15 Feb 2023 07:31:07 GMT",
+  "sha256": "ce6977f9bbf855d5620c2a21e6ffe548f4501727267e311a77c64bc778f2bc8a"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/10/vehiculos/matriculaciones/export_mensual_mat_202310.zip": {
+  "bytes": 13981813,
+  "etag": "\"d55875-60a2bb8e03f20\"",
+  "last_checked": "2026-07-25T19:16:10+00:00",
+  "last_modified": "Wed, 15 Nov 2023 07:19:21 GMT",
+  "sha256": "9b63812277037fb4b132e7169671316c4f569d3eebe341c88d135d1293ddd452"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/11/vehiculos/matriculaciones/export_mensual_mat_202311.zip": {
+  "bytes": 13450329,
+  "etag": "\"cd3c59-60c8761bb4e43\"",
+  "last_checked": "2026-07-25T19:16:10+00:00",
+  "last_modified": "Fri, 15 Dec 2023 07:31:00 GMT",
+  "sha256": "400589eab3acea1ac31964d5d24ee1e2d34f35d5ee5bd41ed6995ee7f9456179"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/12/vehiculos/matriculaciones/export_mensual_mat_202312.zip": {
+  "bytes": 12491425,
+  "etag": "\"be9aa1-60ef6ff355677\"",
+  "last_checked": "2026-07-25T19:16:09+00:00",
+  "last_modified": "Mon, 15 Jan 2024 07:31:06 GMT",
+  "sha256": "dd92c020ddf1ca03dcb5a4c46d28189329778ae98a535d8165ce3b8019a65235"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/2/vehiculos/matriculaciones/export_mensual_mat_202302.zip": {
+  "bytes": 11593485,
+  "etag": "\"b0e70d-5f6eb537a9817\"",
+  "last_checked": "2026-07-25T19:16:15+00:00",
+  "last_modified": "Wed, 15 Mar 2023 07:31:01 GMT",
+  "sha256": "439eb88686f77394dfbc4476e502eba3ad86c622f40bf3ae500c6d9f2ec94c7b"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/3/vehiculos/matriculaciones/export_mensual_mat_202303.zip": {
+  "bytes": 14897911,
+  "etag": "\"e352f7-5f95a18cc95f8\"",
+  "last_checked": "2026-07-25T19:16:14+00:00",
+  "last_modified": "Sat, 15 Apr 2023 06:30:41 GMT",
+  "sha256": "bd009cea76100943e7dbb4a2ff8090c56ac7ca84abc8ac2a7d99ccf10b9eea90"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/4/vehiculos/matriculaciones/export_mensual_mat_202304.zip": {
+  "bytes": 11578875,
+  "etag": "\"b0adfb-5fbb591ab1e0a\"",
+  "last_checked": "2026-07-25T19:16:14+00:00",
+  "last_modified": "Mon, 15 May 2023 06:28:55 GMT",
+  "sha256": "93379ca8bbf5030a5599e152b4fa87bc20891565186be2f579958c7b3f6a4c32"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/5/vehiculos/matriculaciones/export_mensual_mat_202305.zip": {
+  "bytes": 14486943,
+  "etag": "\"dd0d9f-5fe2528b46762\"",
+  "last_checked": "2026-07-25T19:16:13+00:00",
+  "last_modified": "Thu, 15 Jun 2023 06:27:13 GMT",
+  "sha256": "4015e7a632bb3058725c0f8fe233d4afdcc9734a8850ac958c69effa5916d8ba"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/6/vehiculos/matriculaciones/export_mensual_mat_202306.zip": {
+  "bytes": 15597016,
+  "etag": "\"edfdd8-60080a16e609f\"",
+  "last_checked": "2026-07-25T19:16:12+00:00",
+  "last_modified": "Sat, 15 Jul 2023 06:25:24 GMT",
+  "sha256": "1704d9e6039bb5a35526733bbfa5c8ec1ececcf98427ad462e31d1cb3f37ed68"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/7/vehiculos/matriculaciones/export_mensual_mat_202307.zip": {
+  "bytes": 13592421,
+  "etag": "\"cf6765-602f0385aacfb\"",
+  "last_checked": "2026-07-25T19:16:12+00:00",
+  "last_modified": "Tue, 15 Aug 2023 06:23:41 GMT",
+  "sha256": "ccb02fa644278324fbdb06580eb91e6737d8fbaf75885b1d5d21febd1afbb414"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/8/vehiculos/matriculaciones/export_mensual_mat_202308.zip": {
+  "bytes": 10036656,
+  "etag": "\"9925b0-6055fceeac848\"",
+  "last_checked": "2026-07-25T19:16:11+00:00",
+  "last_modified": "Fri, 15 Sep 2023 06:21:51 GMT",
+  "sha256": "676909f80aa1d808d9f514fa770714d659927b735d1caab65e678fce4008552b"
+ },
+ "https://www.dgt.es/microdatos/salida/2023/9/vehiculos/matriculaciones/export_mensual_mat_202309.zip": {
+  "bytes": 11207144,
+  "etag": "\"ab01e8-607bb477c2c3c\"",
+  "last_checked": "2026-07-25T19:16:11+00:00",
+  "last_modified": "Sun, 15 Oct 2023 06:19:59 GMT",
+  "sha256": "04a6b3f28c1a17604c29ed3de301110dca889e06af539dc09ecd3bc87e83af18"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/1/vehiculos/matriculaciones/export_mensual_mat_202401.zip": {
+  "bytes": 11526509,
+  "etag": "\"9ac0844a614938ec1492fb3797affc9f:1718590272.784986\"",
+  "last_checked": "2026-07-25T19:16:08+00:00",
+  "last_modified": "Thu, 15 Feb 2024 07:31:03 GMT",
+  "sha256": "657694077b17f6c9304d5cde41af313e18e0824789369c399765edb908e667eb"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/10/vehiculos/matriculaciones/export_mensual_mat_202410.zip": {
+  "bytes": 15359645,
+  "etag": "\"ea5e9d-626f0a4f04e73\"",
+  "last_checked": "2026-07-25T19:15:52+00:00",
+  "last_modified": "Fri, 15 Nov 2024 10:01:01 GMT",
+  "sha256": "e970153184b9da12c6ecec45bf1606fe8e6abf101cc4f53828ef72a55d730bdd"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/11/vehiculos/matriculaciones/export_mensual_mat_202411.zip": {
+  "bytes": 14045512,
+  "etag": "\"d65148-6294a0b621b2e\"",
+  "last_checked": "2026-07-25T19:15:51+00:00",
+  "last_modified": "Sun, 15 Dec 2024 07:30:55 GMT",
+  "sha256": "33913ee9abda080e7a421885b8c787d122352dc934d9e71025dd3edbb04a35b7"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/12/vehiculos/matriculaciones/export_mensual_mat_202412.zip": {
+  "bytes": 16083171,
+  "etag": "\"f568e3-62bb9a8ee036e\"",
+  "last_checked": "2026-07-25T19:15:50+00:00",
+  "last_modified": "Wed, 15 Jan 2025 07:31:03 GMT",
+  "sha256": "fb8c5d8d862fc0eac6ea242ee1ee3c9e622d8e4c3cf1355436350fa8b33d7f9f"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/2/vehiculos/matriculaciones/export_mensual_mat_202402.zip": {
+  "bytes": 12990032,
+  "etag": "\"c63650-613adfd9160ee\"",
+  "last_checked": "2026-07-25T19:15:57+00:00",
+  "last_modified": "Fri, 15 Mar 2024 07:31:04 GMT",
+  "sha256": "93c80c53efc555f14f056528385c781166306842fbb79ba17f97fd9091313f2b"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/3/vehiculos/matriculaciones/export_mensual_mat_202403.zip": {
+  "bytes": 13935951,
+  "etag": "\"d4a54f-6161cc3e52386\"",
+  "last_checked": "2026-07-25T19:15:57+00:00",
+  "last_modified": "Mon, 15 Apr 2024 06:31:01 GMT",
+  "sha256": "fe828becb93394b46227e58192700c446067ef7bc17bc98ef5f956ba0b5c0af8"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/4/vehiculos/matriculaciones/export_mensual_mat_202404.zip": {
+  "bytes": 14822688,
+  "etag": "\"e22d20-618784343ac03\"",
+  "last_checked": "2026-07-25T19:15:56+00:00",
+  "last_modified": "Wed, 15 May 2024 06:31:03 GMT",
+  "sha256": "d8380e6788d2034bb948b9d57348a4e02242ff22f113f14ffba5fa7becab946e"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/5/vehiculos/matriculaciones/export_mensual_mat_202405.zip": {
+  "bytes": 15307448,
+  "etag": "\"e992b8-61ae7e0107b1a\"",
+  "last_checked": "2026-07-25T19:15:55+00:00",
+  "last_modified": "Sat, 15 Jun 2024 06:30:59 GMT",
+  "sha256": "4804fe4ade0d3dd0c54b44f2583d4b0fa7f9ea5d1909875e822f4cc658ce803d"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/6/vehiculos/matriculaciones/export_mensual_mat_202406.zip": {
+  "bytes": 15996117,
+  "etag": "\"f414d5-61d435f26e97d\"",
+  "last_checked": "2026-07-25T19:15:54+00:00",
+  "last_modified": "Mon, 15 Jul 2024 06:30:56 GMT",
+  "sha256": "512b4de5022662a91ccc0d091973840afc5b35784e495b6cef5626107105e9c4"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/7/vehiculos/matriculaciones/export_mensual_mat_202407.zip": {
+  "bytes": 14962508,
+  "etag": "\"e44f4c-61fb2fcb34438\"",
+  "last_checked": "2026-07-25T19:15:54+00:00",
+  "last_modified": "Thu, 15 Aug 2024 06:31:04 GMT",
+  "sha256": "bcc19f567e96d6d3dc58bea973d6bf048b4edbdf9ed29e32ca0e8b7fd0c6bc6f"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/8/vehiculos/matriculaciones/export_mensual_mat_202408.zip": {
+  "bytes": 9947893,
+  "etag": "\"97caf5-62222999719be\"",
+  "last_checked": "2026-07-25T19:15:53+00:00",
+  "last_modified": "Sun, 15 Sep 2024 06:31:01 GMT",
+  "sha256": "b98dcfa4cd6cb7e1ee2a05c3c80809137ca4634cbd6864fec7dc4d1f0dca253c"
+ },
+ "https://www.dgt.es/microdatos/salida/2024/9/vehiculos/matriculaciones/export_mensual_mat_202409.zip": {
+  "bytes": 12988950,
+  "etag": "\"c63216-6247e191ca398\"",
+  "last_checked": "2026-07-25T19:15:52+00:00",
+  "last_modified": "Tue, 15 Oct 2024 06:31:06 GMT",
+  "sha256": "9ec0697b1c66da1fa395eb40fc85e37922052442c68adc83dc322863d2afc472"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/1/vehiculos/matriculaciones/export_mensual_mat_202501.zip": {
+  "bytes": 11944086,
+  "etag": "\"b64096-62e2945b82752\"",
+  "last_checked": "2026-07-25T19:15:49+00:00",
+  "last_modified": "Sat, 15 Feb 2025 07:30:58 GMT",
+  "sha256": "85617eef0757b4daf0a889e5bc7936c178aac25a6068d76cfa5590853afa21ca"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/10/vehiculos/matriculaciones/export_mensual_mat_202510.zip": {
+  "bytes": 16729524,
+  "etag": "\"ff45b4-6439d18d34c7b\"",
+  "last_checked": "2026-07-25T19:15:43+00:00",
+  "last_modified": "Sat, 15 Nov 2025 07:31:05 GMT",
+  "sha256": "5b9a377a8011f49da83ea20eaf3e584df980f69c686dfa52582e4ee010eaa39b"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/12/vehiculos/matriculaciones/export_mensual_mat_202512.zip": {
+  "bytes": 15210116,
+  "etag": "\"e81684-64868360b60a8\"",
+  "last_checked": "2026-07-25T19:15:32+00:00",
+  "last_modified": "Thu, 15 Jan 2026 07:31:20 GMT",
+  "sha256": "e4f5deddd88c820a2850c300d7bff6e4b2f086e6e5d39e73bb35e8892f441586"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/2/vehiculos/matriculaciones/export_mensual_mat_202502.zip": {
+  "bytes": 13476038,
+  "etag": "\"cda0c6-6305c899d1c8c\"",
+  "last_checked": "2026-07-25T19:15:49+00:00",
+  "last_modified": "Sat, 15 Mar 2025 07:31:04 GMT",
+  "sha256": "a9143598a58dcf7366c40c0573b592eb2ad921b3d72454045154044648ad84a0"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/3/vehiculos/matriculaciones/export_mensual_mat_202503.zip": {
+  "bytes": 15847400,
+  "etag": "\"f1cfe8-632cb50058aad\"",
+  "last_checked": "2026-07-25T19:15:48+00:00",
+  "last_modified": "Tue, 15 Apr 2025 06:31:02 GMT",
+  "sha256": "554ba736bc59dba4d119a7fa110b9cb766ae08e496c9e6549240616439563bc4"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/4/vehiculos/matriculaciones/export_mensual_mat_202504.zip": {
+  "bytes": 14451943,
+  "etag": "\"dc84e7-63526cf59c2f3\"",
+  "last_checked": "2026-07-25T19:15:47+00:00",
+  "last_modified": "Thu, 15 May 2025 06:31:04 GMT",
+  "sha256": "8902cebf703d2327ffd1e6fe0cf23fd7b1f9425a6e8eb8a46f78d325c1953b70"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/5/vehiculos/matriculaciones/export_mensual_mat_202505.zip": {
+  "bytes": 16501912,
+  "etag": "\"fbcc98-637966c43303e\"",
+  "last_checked": "2026-07-25T19:15:47+00:00",
+  "last_modified": "Sun, 15 Jun 2025 06:31:01 GMT",
+  "sha256": "fc9cba59cce5d2703a0f545d5522e84dc4f9c23799614b4f024de19a55ebafc9"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/6/vehiculos/matriculaciones/export_mensual_mat_202506.zip": {
+  "bytes": 17321954,
+  "etag": "\"1084fe2-639f1eb5018aa\"",
+  "last_checked": "2026-07-25T19:15:46+00:00",
+  "last_modified": "Tue, 15 Jul 2025 06:30:58 GMT",
+  "sha256": "46ef6cd8753ee2bb09de792bf4349b14bf2839f27a682e4586e99b3e3a7838de"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/7/vehiculos/matriculaciones/export_mensual_mat_202507.zip": {
+  "bytes": 16784935,
+  "etag": "\"1001e27-63c6188cd353a\"",
+  "last_checked": "2026-07-25T19:15:45+00:00",
+  "last_modified": "Fri, 15 Aug 2025 06:31:04 GMT",
+  "sha256": "02f4c98ff1f4e4f096492f6d75a183a456e83aeb190a821737e18699d9f2fc9f"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/8/vehiculos/matriculaciones/export_mensual_mat_202508.zip": {
+  "bytes": 10735469,
+  "etag": "\"a3cf6d-63ed12573a45e\"",
+  "last_checked": "2026-07-25T19:15:44+00:00",
+  "last_modified": "Mon, 15 Sep 2025 06:30:57 GMT",
+  "sha256": "9d25a194a058b50604109632dcdec9ff2c9e90054bf9a64c1edb50c1558e6c19"
+ },
+ "https://www.dgt.es/microdatos/salida/2025/9/vehiculos/matriculaciones/export_mensual_mat_202509.zip": {
+  "bytes": 14412414,
+  "etag": "\"dbea7e-6412ca4dc920a\"",
+  "last_checked": "2026-07-25T19:15:44+00:00",
+  "last_modified": "Wed, 15 Oct 2025 06:31:00 GMT",
+  "sha256": "0d220d15202d5d5fb0f71fe5bac5dbf2b9e6b7c187b3a58c972ca1a8cd0de8a7"
+ },
+ "https://www.dgt.es/microdatos/salida/2026/1/vehiculos/matriculaciones/export_mensual_mat_202601.zip": {
+  "bytes": 12218198,
+  "etag": "\"ba6f56-64ad7d224b398\"",
+  "last_checked": "2026-07-25T19:15:31+00:00",
+  "last_modified": "Sun, 15 Feb 2026 07:31:04 GMT",
+  "sha256": "a3204bedf03cda0008dee3bb5be2c3c589a7a24aec959b6e96fa07f0338ddec7"
+ },
+ "https://www.dgt.es/microdatos/salida/2026/2/vehiculos/matriculaciones/export_mensual_mat_202602.zip": {
+  "bytes": 14724174,
+  "etag": "\"e0ac4e-64d0b155acce0\"",
+  "last_checked": "2026-07-25T19:15:31+00:00",
+  "last_modified": "Sun, 15 Mar 2026 07:30:58 GMT",
+  "sha256": "dfa40d2d0014ea810830115293b1b9e339733799ae7a3bc212134abe338cfa03"
+ },
+ "https://www.dgt.es/microdatos/salida/2026/3/vehiculos/matriculaciones/export_mensual_mat_202603.zip": {
+  "bytes": 18782350,
+  "etag": "\"11e988e-64f79dc17c69f\"",
+  "last_checked": "2026-07-25T19:15:30+00:00",
+  "last_modified": "Wed, 15 Apr 2026 06:31:02 GMT",
+  "sha256": "70b01875b6beed7a50e827b9ebcc0d85d1f955773d2ba7fce9c9566f966a27d0"
+ },
+ "https://www.dgt.es/microdatos/salida/2026/4/vehiculos/matriculaciones/export_mensual_mat_202604.zip": {
+  "bytes": 16389678,
+  "etag": "\"fa162e-651d55bef543e\"",
+  "last_checked": "2026-07-25T19:15:29+00:00",
+  "last_modified": "Fri, 15 May 2026 06:31:12 GMT",
+  "sha256": "e5bef264616bc6be36c42ef61a51b635a566c8c3dc1082ec79bb1c7bbd1941a3"
+ },
+ "https://www.dgt.es/microdatos/salida/2026/5/vehiculos/matriculaciones/export_mensual_mat_202605.zip": {
+  "bytes": 17332519,
+  "etag": "\"1087927-65444f8fbf036\"",
+  "last_checked": "2026-07-25T19:15:28+00:00",
+  "last_modified": "Mon, 15 Jun 2026 06:31:12 GMT",
+  "sha256": "272b7576fbd4ebd0825dbc2632dda88ba590835f7f8bef7afe6650ce2bfe246f"
+ },
+ "https://www.dgt.es/microdatos/salida/2026/6/vehiculos/matriculaciones/export_mensual_mat_202606.zip": {
+  "bytes": 19658972,
+  "etag": "\"12bf8dc-656a0784881d6\"",
+  "last_checked": "2026-07-25T19:15:27+00:00",
+  "last_modified": "Wed, 15 Jul 2026 06:31:13 GMT",
+  "sha256": "3b54c225827ab3213b265fcb186778a641ae0098ad6ac9c81c74ea945d65a6cf"
  },
  "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2023.csv": {
   "bytes": 7225803,

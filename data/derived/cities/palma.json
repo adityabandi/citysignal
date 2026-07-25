@@ -7624,17 +7624,17 @@
     ],
     "source_id": "dgt",
     "source": {
-     "publisher": null,
-     "license": null,
-     "attribution": null,
+     "publisher": "Dirección General de Tráfico",
+     "license": "Reuse permitted (attribution)",
+     "attribution": "Source: DGT (dgt.es)",
      "kind": "official",
-     "docs_url": null
+     "docs_url": "https://www.dgt.es/menusecundario/dgt-en-cifras/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": null,
+    "last_checked": "2026-07-25T19:16:19+00:00",
     "staleness_days": 25,
-    "max_age_days": null,
-    "fresh": "unknown"
+    "max_age_days": 90,
+    "fresh": "fresh"
    },
    {
     "metric_id": "unemployment_registered",
@@ -11313,6 +11313,852 @@
     "fresh": "fresh"
    },
    {
+    "metric_id": "news_housing_volume",
+    "label": "Housing-themed coverage volume",
+    "plain": "How much of the city's coverage is about housing, rents and evictions.",
+    "label_es": null,
+    "unit": "percent",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": -1,
+    "note": null,
+    "geo_id": "mun-07040",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 0.0,
+     "yoy": null
+    },
+    "suspect": false,
+    "outlier_score": null,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2018-07",
+      "value": 0.0
+     },
+     {
+      "period": "2018-08",
+      "value": 0.0
+     },
+     {
+      "period": "2018-09",
+      "value": 0.0
+     },
+     {
+      "period": "2018-10",
+      "value": 0.0
+     },
+     {
+      "period": "2018-11",
+      "value": 0.0
+     },
+     {
+      "period": "2018-12",
+      "value": 0.0
+     },
+     {
+      "period": "2019-01",
+      "value": 0.0
+     },
+     {
+      "period": "2019-02",
+      "value": 0.0
+     },
+     {
+      "period": "2019-03",
+      "value": 0.0
+     },
+     {
+      "period": "2019-04",
+      "value": 0.0
+     },
+     {
+      "period": "2019-05",
+      "value": 0.0
+     },
+     {
+      "period": "2019-06",
+      "value": 0.0
+     },
+     {
+      "period": "2019-07",
+      "value": 0.0
+     },
+     {
+      "period": "2019-08",
+      "value": 0.0
+     },
+     {
+      "period": "2019-09",
+      "value": 0.0
+     },
+     {
+      "period": "2019-10",
+      "value": 0.0
+     },
+     {
+      "period": "2019-11",
+      "value": 0.0
+     },
+     {
+      "period": "2019-12",
+      "value": 0.0
+     },
+     {
+      "period": "2020-01",
+      "value": 0.0
+     },
+     {
+      "period": "2020-02",
+      "value": 0.0
+     },
+     {
+      "period": "2020-03",
+      "value": 0.0
+     },
+     {
+      "period": "2020-04",
+      "value": 0.0
+     },
+     {
+      "period": "2020-05",
+      "value": 0.0
+     },
+     {
+      "period": "2020-06",
+      "value": 0.0
+     },
+     {
+      "period": "2020-07",
+      "value": 0.0
+     },
+     {
+      "period": "2020-08",
+      "value": 0.0
+     },
+     {
+      "period": "2020-09",
+      "value": 0.0
+     },
+     {
+      "period": "2020-10",
+      "value": 0.0
+     },
+     {
+      "period": "2020-11",
+      "value": 0.0
+     },
+     {
+      "period": "2020-12",
+      "value": 0.0
+     },
+     {
+      "period": "2021-01",
+      "value": 0.0
+     },
+     {
+      "period": "2021-02",
+      "value": 0.0
+     },
+     {
+      "period": "2021-03",
+      "value": 0.0
+     },
+     {
+      "period": "2021-04",
+      "value": 0.0
+     },
+     {
+      "period": "2021-05",
+      "value": 0.0
+     },
+     {
+      "period": "2021-06",
+      "value": 0.0
+     },
+     {
+      "period": "2021-07",
+      "value": 0.0
+     },
+     {
+      "period": "2021-08",
+      "value": 0.0
+     },
+     {
+      "period": "2021-09",
+      "value": 0.0
+     },
+     {
+      "period": "2021-10",
+      "value": 0.0
+     },
+     {
+      "period": "2021-11",
+      "value": 0.0
+     },
+     {
+      "period": "2021-12",
+      "value": 0.0
+     },
+     {
+      "period": "2022-01",
+      "value": 0.0
+     },
+     {
+      "period": "2022-02",
+      "value": 0.0
+     },
+     {
+      "period": "2022-03",
+      "value": 0.0
+     },
+     {
+      "period": "2022-04",
+      "value": 0.0
+     },
+     {
+      "period": "2022-05",
+      "value": 0.0
+     },
+     {
+      "period": "2022-06",
+      "value": 0.0
+     },
+     {
+      "period": "2022-07",
+      "value": 0.0
+     },
+     {
+      "period": "2022-08",
+      "value": 0.0
+     },
+     {
+      "period": "2022-09",
+      "value": 0.0
+     },
+     {
+      "period": "2022-10",
+      "value": 0.0
+     },
+     {
+      "period": "2022-11",
+      "value": 0.0
+     },
+     {
+      "period": "2022-12",
+      "value": 0.0
+     },
+     {
+      "period": "2023-01",
+      "value": 0.0
+     },
+     {
+      "period": "2023-02",
+      "value": 0.0
+     },
+     {
+      "period": "2023-03",
+      "value": 0.0
+     },
+     {
+      "period": "2023-04",
+      "value": 0.0
+     },
+     {
+      "period": "2023-05",
+      "value": 0.0
+     },
+     {
+      "period": "2023-06",
+      "value": 0.0
+     },
+     {
+      "period": "2023-07",
+      "value": 0.0
+     },
+     {
+      "period": "2023-08",
+      "value": 0.0
+     },
+     {
+      "period": "2023-09",
+      "value": 0.0
+     },
+     {
+      "period": "2023-10",
+      "value": 0.0
+     },
+     {
+      "period": "2023-11",
+      "value": 0.0
+     },
+     {
+      "period": "2023-12",
+      "value": 0.0
+     },
+     {
+      "period": "2024-01",
+      "value": 0.0
+     },
+     {
+      "period": "2024-02",
+      "value": 0.0
+     },
+     {
+      "period": "2024-03",
+      "value": 0.0
+     },
+     {
+      "period": "2024-04",
+      "value": 0.0
+     },
+     {
+      "period": "2024-05",
+      "value": 0.0
+     },
+     {
+      "period": "2024-06",
+      "value": 0.0
+     },
+     {
+      "period": "2024-07",
+      "value": 0.0
+     },
+     {
+      "period": "2024-08",
+      "value": 0.0
+     },
+     {
+      "period": "2024-09",
+      "value": 0.0
+     },
+     {
+      "period": "2024-10",
+      "value": 0.0
+     },
+     {
+      "period": "2024-11",
+      "value": 0.0
+     },
+     {
+      "period": "2024-12",
+      "value": 0.0
+     },
+     {
+      "period": "2025-01",
+      "value": 0.0
+     },
+     {
+      "period": "2025-02",
+      "value": 0.0
+     },
+     {
+      "period": "2025-03",
+      "value": 0.0
+     },
+     {
+      "period": "2025-04",
+      "value": 0.0
+     },
+     {
+      "period": "2025-05",
+      "value": 0.0
+     },
+     {
+      "period": "2025-06",
+      "value": 0.0
+     },
+     {
+      "period": "2025-07",
+      "value": 0.0
+     },
+     {
+      "period": "2025-08",
+      "value": 0.0
+     },
+     {
+      "period": "2025-09",
+      "value": 0.0
+     },
+     {
+      "period": "2025-10",
+      "value": 0.0
+     },
+     {
+      "period": "2025-11",
+      "value": 0.0
+     },
+     {
+      "period": "2025-12",
+      "value": 0.0
+     },
+     {
+      "period": "2026-01",
+      "value": 0.0
+     },
+     {
+      "period": "2026-02",
+      "value": 0.0
+     },
+     {
+      "period": "2026-03",
+      "value": 0.0
+     },
+     {
+      "period": "2026-04",
+      "value": 0.0
+     },
+     {
+      "period": "2026-05",
+      "value": 0.0
+     },
+     {
+      "period": "2026-06",
+      "value": 0.0
+     }
+    ],
+    "source_id": "gdelt",
+    "source": {
+     "publisher": "The GDELT Project",
+     "license": "Open, attribution requested",
+     "attribution": "Source: The GDELT Project (gdeltproject.org)",
+     "kind": "research",
+     "docs_url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-25T19:26:54+00:00",
+    "staleness_days": 25,
+    "max_age_days": 45,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "news_volume",
+    "label": "News coverage volume",
+    "plain": "How much news coverage the city is getting.",
+    "label_es": null,
+    "unit": "percent",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-07040",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 0.0001,
+     "yoy": -66.66666666666666
+    },
+    "suspect": false,
+    "outlier_score": 0.67,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2018-07",
+      "value": 0.0005
+     },
+     {
+      "period": "2018-08",
+      "value": 0.0003
+     },
+     {
+      "period": "2018-09",
+      "value": 0.0004
+     },
+     {
+      "period": "2018-10",
+      "value": 0.0003
+     },
+     {
+      "period": "2018-11",
+      "value": 0.0003
+     },
+     {
+      "period": "2018-12",
+      "value": 0.0003
+     },
+     {
+      "period": "2019-01",
+      "value": 0.0003
+     },
+     {
+      "period": "2019-02",
+      "value": 0.0001
+     },
+     {
+      "period": "2019-03",
+      "value": 0.0002
+     },
+     {
+      "period": "2019-04",
+      "value": 0.0002
+     },
+     {
+      "period": "2019-05",
+      "value": 0.0002
+     },
+     {
+      "period": "2019-06",
+      "value": 0.0002
+     },
+     {
+      "period": "2019-07",
+      "value": 0.0002
+     },
+     {
+      "period": "2019-08",
+      "value": 0.0002
+     },
+     {
+      "period": "2019-09",
+      "value": 0.0002
+     },
+     {
+      "period": "2019-10",
+      "value": 0.0002
+     },
+     {
+      "period": "2019-11",
+      "value": 0.0001
+     },
+     {
+      "period": "2019-12",
+      "value": 0.0003
+     },
+     {
+      "period": "2020-01",
+      "value": 0.0003
+     },
+     {
+      "period": "2020-02",
+      "value": 0.0003
+     },
+     {
+      "period": "2020-03",
+      "value": 0.0002
+     },
+     {
+      "period": "2020-04",
+      "value": 0.0003
+     },
+     {
+      "period": "2020-05",
+      "value": 0.0003
+     },
+     {
+      "period": "2020-06",
+      "value": 0.0002
+     },
+     {
+      "period": "2020-07",
+      "value": 0.0003
+     },
+     {
+      "period": "2020-08",
+      "value": 0.0003
+     },
+     {
+      "period": "2020-09",
+      "value": 0.0002
+     },
+     {
+      "period": "2020-10",
+      "value": 0.0002
+     },
+     {
+      "period": "2020-11",
+      "value": 0.0003
+     },
+     {
+      "period": "2020-12",
+      "value": 0.0002
+     },
+     {
+      "period": "2021-01",
+      "value": 0.0004
+     },
+     {
+      "period": "2021-02",
+      "value": 0.0003
+     },
+     {
+      "period": "2021-03",
+      "value": 0.0003
+     },
+     {
+      "period": "2021-04",
+      "value": 0.0003
+     },
+     {
+      "period": "2021-05",
+      "value": 0.0004
+     },
+     {
+      "period": "2021-06",
+      "value": 0.0003
+     },
+     {
+      "period": "2021-07",
+      "value": 0.0001
+     },
+     {
+      "period": "2021-08",
+      "value": 0.0
+     },
+     {
+      "period": "2021-09",
+      "value": 0.0
+     },
+     {
+      "period": "2021-10",
+      "value": 0.0001
+     },
+     {
+      "period": "2021-11",
+      "value": 0.0001
+     },
+     {
+      "period": "2021-12",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-01",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-02",
+      "value": 0.0
+     },
+     {
+      "period": "2022-03",
+      "value": 0.0
+     },
+     {
+      "period": "2022-04",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-05",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-06",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-07",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-08",
+      "value": 0.0002
+     },
+     {
+      "period": "2022-09",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-10",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-11",
+      "value": 0.0001
+     },
+     {
+      "period": "2022-12",
+      "value": 0.0002
+     },
+     {
+      "period": "2023-01",
+      "value": 0.0001
+     },
+     {
+      "period": "2023-02",
+      "value": 0.0002
+     },
+     {
+      "period": "2023-03",
+      "value": 0.0001
+     },
+     {
+      "period": "2023-04",
+      "value": 0.0001
+     },
+     {
+      "period": "2023-05",
+      "value": 0.0002
+     },
+     {
+      "period": "2023-06",
+      "value": 0.0001
+     },
+     {
+      "period": "2023-07",
+      "value": 0.0001
+     },
+     {
+      "period": "2023-08",
+      "value": 0.0001
+     },
+     {
+      "period": "2023-09",
+      "value": 0.0002
+     },
+     {
+      "period": "2023-10",
+      "value": 0.0001
+     },
+     {
+      "period": "2023-11",
+      "value": 0.0002
+     },
+     {
+      "period": "2023-12",
+      "value": 0.0002
+     },
+     {
+      "period": "2024-01",
+      "value": 0.0002
+     },
+     {
+      "period": "2024-02",
+      "value": 0.0001
+     },
+     {
+      "period": "2024-03",
+      "value": 0.0002
+     },
+     {
+      "period": "2024-04",
+      "value": 0.0001
+     },
+     {
+      "period": "2024-05",
+      "value": 0.0003
+     },
+     {
+      "period": "2024-06",
+      "value": 0.0001
+     },
+     {
+      "period": "2024-07",
+      "value": 0.0001
+     },
+     {
+      "period": "2024-08",
+      "value": 0.0
+     },
+     {
+      "period": "2024-09",
+      "value": 0.0002
+     },
+     {
+      "period": "2024-10",
+      "value": 0.0001
+     },
+     {
+      "period": "2024-11",
+      "value": 0.0001
+     },
+     {
+      "period": "2024-12",
+      "value": 0.0001
+     },
+     {
+      "period": "2025-01",
+      "value": 0.0001
+     },
+     {
+      "period": "2025-02",
+      "value": 0.0001
+     },
+     {
+      "period": "2025-03",
+      "value": 0.0001
+     },
+     {
+      "period": "2025-04",
+      "value": 0.0001
+     },
+     {
+      "period": "2025-05",
+      "value": 0.0001
+     },
+     {
+      "period": "2025-06",
+      "value": 0.0003
+     },
+     {
+      "period": "2025-07",
+      "value": 0.0002
+     },
+     {
+      "period": "2025-08",
+      "value": 0.0002
+     },
+     {
+      "period": "2025-09",
+      "value": 0.0002
+     },
+     {
+      "period": "2025-10",
+      "value": 0.0001
+     },
+     {
+      "period": "2025-11",
+      "value": 0.0001
+     },
+     {
+      "period": "2025-12",
+      "value": 0.0
+     },
+     {
+      "period": "2026-01",
+      "value": 0.0001
+     },
+     {
+      "period": "2026-02",
+      "value": 0.0002
+     },
+     {
+      "period": "2026-03",
+      "value": 0.0002
+     },
+     {
+      "period": "2026-04",
+      "value": 0.0001
+     },
+     {
+      "period": "2026-05",
+      "value": 0.0001
+     },
+     {
+      "period": "2026-06",
+      "value": 0.0001
+     }
+    ],
+    "source_id": "gdelt",
+    "source": {
+     "publisher": "The GDELT Project",
+     "license": "Open, attribution requested",
+     "attribution": "Source: The GDELT Project (gdeltproject.org)",
+     "kind": "research",
+     "docs_url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-25T19:26:54+00:00",
+    "staleness_days": 25,
+    "max_age_days": 45,
+    "fresh": "fresh"
+   },
+   {
     "metric_id": "wiki_city_foreign_share",
     "label": "Non-Spanish share of city article views",
     "plain": "What share of the city's Wikipedia readers are reading in a language other than Spanish — a rough read on interest from abroad.",
@@ -12862,5 +13708,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T19:22:19+00:00"
+ "generated_at": "2026-07-25T19:28:36+00:00"
 }

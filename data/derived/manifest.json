@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:22:19+00:00",
+ "generated_at": "2026-07-25T19:28:36+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -36,6 +36,9 @@
   "locales_vacancy_rate",
   "mortgage_rate_new",
   "mortgages_count",
+  "news_housing_volume",
+  "news_tone",
+  "news_volume",
   "npl_ratio",
   "padron_district",
   "population_padron",
@@ -67,7 +70,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 402,
-  "observations": 15391
+  "series": 418,
+  "observations": 17023
  }
 }

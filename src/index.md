@@ -5,7 +5,7 @@ toc: false
 
 ```js
 import {ribbon, regimeLegend} from "./components/vitals.js";
-import {el, cityColor, formatPeriod, formatValue, formatDelta, deltaClass, regime} from "./components/theme.js";
+import {el, cityColor, formatPeriod, formatValue, formatDelta, deltaClass, deltaArrow, regime} from "./components/theme.js";
 
 const overview = await FileAttachment("data/overview.json").json();
 const manifest = await FileAttachment("data/manifest.json").json();
@@ -33,8 +33,9 @@ display(
     ? el("div", {class: "cs-headline"}, [
         el("div", {class: "cs-kicker", text: "Largest verified change this build"}),
         el("div", {class: "cs-headline-text"}, [
-          document.createTextNode(headline.sentence.replace(/(\d+)%/, "")),
-          el("span", {class: "cs-headline-figure cs-num", text: `${Math.abs(headline.yoy).toFixed(0)}%`})
+          document.createTextNode(headline.lead + " "),
+          el("span", {class: "cs-headline-figure cs-num", text: headline.figure}),
+          document.createTextNode(" " + headline.tail)
         ]),
         el("div", {class: "cs-meta"}, [
           el("span", {class: `cs-scope${headline.geo_level === "municipality" ? "" : " cs-scope-wider"}`, text: headline.scope_label}),
@@ -105,9 +106,10 @@ display(
 
 <div class="cs-note" style="margin-bottom:.6rem">
 
-Biggest year-over-year changes across every city and measure. A move is coloured
-by what it means, not by its arithmetic sign: rising unemployment reads as
-deterioration even though the number went up.
+Biggest year-over-year changes across every city and measure. Deliberately not
+coloured good-or-bad — whether a rise is welcome depends on whether you are the
+landlord or the tenant, and that is not this site's call to make. Releases that
+look provisional are excluded.
 
 </div>
 
@@ -138,7 +140,7 @@ display(
               ]),
               el("td", {text: m.label}),
               el("td", {class: "cs-num", text: formatValue(m.value, m.unit)}),
-              el("td", {class: `cs-num ${deltaClass(m.yoy, m.direction)}`, text: formatDelta(m.yoy)}),
+              el("td", {class: `cs-num ${deltaClass()}`, text: `${deltaArrow(m.yoy)} ${formatDelta(m.yoy)}`}),
               el("td", {class: "cs-num", text: formatPeriod(m.period)}),
               el("td", {}, [el("span", {class: `cs-scope${m.geo_level === "municipality" ? "" : " cs-scope-wider"}`, text: m.scope_label})])
             ])
