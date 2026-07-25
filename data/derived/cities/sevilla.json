@@ -3095,7 +3095,7 @@
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-25T17:55:12+00:00",
+    "last_checked": "2026-07-25T17:57:59+00:00",
     "staleness_days": 25,
     "max_age_days": 75,
     "fresh": "fresh"
@@ -3493,7 +3493,7 @@
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-25T17:55:12+00:00",
+    "last_checked": "2026-07-25T17:57:59+00:00",
     "staleness_days": 25,
     "max_age_days": 75,
     "fresh": "fresh"
@@ -4099,7 +4099,7 @@
      "docs_url": "https://www.aena.es/es/estadisticas/inicio.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-25T17:38:43+00:00",
+    "last_checked": "2026-07-25T17:58:00+00:00",
     "staleness_days": 25,
     "max_age_days": 75,
     "fresh": "fresh"
@@ -8024,5 +8024,5 @@
    }
   ]
  },
- "generated_at": "2026-07-25T17:56:19+00:00"
+ "generated_at": "2026-07-25T17:58:58+00:00"
 }

@@ -61,7 +61,9 @@ display(regimeLegend());
 ```
 
 ```js
-const width = Math.min(560, Math.max(280, (window.innerWidth ?? 900) - 380));
+// `width` is Observable's reactive measurement of the content column, so the
+// ribbons re-fit when the window changes instead of guessing once at load.
+const ribbonWidth = Math.max(240, width - 300);
 
 display(
   el("div", {class: "cs-panel"}, [
@@ -70,7 +72,7 @@ display(
         el("div", {class: "cs-vitals-city"}, [
           el("a", {href: `./cities/${city.slug}`, text: city.name})
         ]),
-        ribbon(city, {width}),
+        ribbon(city, {width: ribbonWidth, height: 56}),
         el("div", {}, [
           el("span", {class: `cs-regime regime-${city.regime.rule_id}`}, [
             el("span", {class: "cs-glyph", text: regime(city.regime.rule_id).glyph}),

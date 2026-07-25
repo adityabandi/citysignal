@@ -91,14 +91,14 @@ display(regimeLegend());
 
 ```js
 import {ribbon} from "./components/vitals.js";
-const width = Math.min(620, Math.max(280, (window.innerWidth ?? 900) - 340));
+const ribbonWidth = Math.max(240, width - 300);
 
 display(
   el("div", {class: "cs-panel"}, [
     el("div", {class: "cs-vitals"},
       overview.cities.flatMap((city) => [
         el("div", {class: "cs-vitals-city"}, [el("a", {href: `./cities/${city.slug}`, text: city.name})]),
-        ribbon(city, {width, index: chosen}),
+        ribbon(city, {width: ribbonWidth, height: 56, index: chosen}),
         el("div", {class: "cs-num", style: "font-size:.72rem;color:var(--cs-ink-3)", text:
           city.timeline?.length ? formatPeriod(city.timeline.at(-1).period) : "—"})
       ])

@@ -674,14 +674,14 @@
  "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874341349&ssbinary=true": {
   "bytes": 73668,
   "etag": "\"1781258056:dtagent10337260526121002qq2K\"",
-  "last_checked": "2026-07-25T17:38:43+00:00",
+  "last_checked": "2026-07-25T17:58:00+00:00",
   "last_modified": "Fri, 12 Jun 2026 09:54:15 GMT",
   "sha256": "c4cda3eb575c1ba3b04363ff757e068788325ce5aaca97f31dc6e32e3fafa926"
  },
  "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874587844&ssbinary=true": {
   "bytes": 64972,
   "etag": "\"1784030349:dtagent10339260603164134WBkZ\"",
-  "last_checked": "2026-07-25T17:38:43+00:00",
+  "last_checked": "2026-07-25T17:58:00+00:00",
   "last_modified": "Tue, 14 Jul 2026 11:59:08 GMT",
   "sha256": "2037ed430b1bcf0ba741b2667116dcce59dc97904cd950859e187fa1477107f9"
  },
@@ -1507,7 +1507,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:01f76dd1-c457-47ac-af43-f9da5dc3479c/MUNI_BALEARES_0526.xls": {
   "bytes": 35328,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:11+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Thu, 04 Jun 2026 11:09:52 GMT",
   "sha256": "cb885f0d76efb396556bbe8c4e9859ecf653222c80fcd44a901216bff62cb6ae"
  },
@@ -1941,7 +1941,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:1a5be33c-5c54-422c-8a99-d8bc190648af/MUNI_MALAGA_0526.xls": {
   "bytes": 46592,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:11+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Thu, 04 Jun 2026 11:10:10 GMT",
   "sha256": "42f70d45310cd86defa1af3766f8cf4e00f489ab20dfae0ac68f465b306de3b3"
  },
@@ -2109,7 +2109,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:208afd6c-e036-4c1b-83e8-22b99134b621/MUNI_MALAGA_0626.xls": {
   "bytes": 65536,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Tue, 07 Jul 2026 10:56:51 GMT",
   "sha256": "023fcd4e88f00daa9e245e14ca2395090d37bbd815b4b48775a2ef05e67817ae"
  },
@@ -2382,7 +2382,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:2f98e94a-581e-436f-9a78-46f2bb6a2cd6/MUNI_VALENCIA_0526.xls": {
   "bytes": 106496,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:11+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Thu, 04 Jun 2026 11:10:21 GMT",
   "sha256": "753f2e90ac0504e2e7a3d9dc1131e72e79afd31d3a3e0d4580fbe877c92c5bfe"
  },
@@ -3152,7 +3152,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:5fe15170-1eee-4bbe-b334-9998a787fed8/MUNI_ZARAGOZA_0626.xls": {
   "bytes": 151040,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Tue, 07 Jul 2026 10:57:01 GMT",
   "sha256": "558ed86934ce6dffb00ccd1181a81fb2a08155ec3f68dd0460a187d80bae026d"
  },
@@ -3425,7 +3425,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:6f31cac5-f216-4c6a-ac3e-e537c417e008/MUNI_MADRID_0526.xls": {
   "bytes": 74240,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:11+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Thu, 04 Jun 2026 11:10:09 GMT",
   "sha256": "a0d4cc045b8b018e287a2c937e51c115155159e020a0237585297dc05b0e6e5f"
  },
@@ -3502,14 +3502,14 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:7416632d-bf20-4a9c-8a68-981d42fb236f/MUNI_MADRID_0626.xls": {
   "bytes": 93184,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Tue, 07 Jul 2026 10:56:51 GMT",
   "sha256": "75d766696f7f6b7610ca59adc34717f68e99bcaf09a301d19ee46deab2f8d7c2"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:74209c89-7428-4b9d-bc6e-f2604b2ef25c/MUNI_BIZKAIA_0526.xls": {
   "bytes": 51712,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:11+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Thu, 04 Jun 2026 11:09:53 GMT",
   "sha256": "cc6c77ff14bc0860419e7511bfac8271f1384cfa063883cfbce02c8a65548916"
  },
@@ -3523,7 +3523,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:74795177-0a76-4702-b271-8cf605941c81/MUNI_SEVILLA_0526.xls": {
   "bytes": 44032,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:11+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Thu, 04 Jun 2026 11:10:16 GMT",
   "sha256": "daa7b985973c45d2ddce810828622770b2969af757ce278eda88e1ee9bb5dcf3"
  },
@@ -4293,7 +4293,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:9f6cdaca-b28c-4186-9516-72adb8cbe56b/MUNI_BIZKAIA_0626.xls": {
   "bytes": 70656,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Tue, 07 Jul 2026 10:56:40 GMT",
   "sha256": "2227898fba05b54c453833c1f27c9ff60dcd8e2a4f06c8f231281945019abb16"
  },
@@ -4657,7 +4657,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:ba7a50e6-aa81-425b-94c4-80047b9edb64/MUNI_VALENCIA_0626.xls": {
   "bytes": 125952,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Tue, 07 Jul 2026 10:56:59 GMT",
   "sha256": "c60991a711fc79dbf42e04812f3fac3d0e12fb68256db48eb8d334316bb7219e"
  },
@@ -5147,7 +5147,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:d392f835-1ae7-439d-8670-060d3d554414/MUNI_BARCELONA_0626.xls": {
   "bytes": 143872,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Tue, 07 Jul 2026 10:56:39 GMT",
   "sha256": "c2f77a2034a8ee3cd18ba557829e7fd7abc48e905f5c8f332b453e30e6e4c93c"
  },
@@ -5189,7 +5189,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:d45b30c5-912b-404c-9c84-5b788ff8fa0a/MUNI_SEVILLA_0626.xls": {
   "bytes": 62464,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Tue, 07 Jul 2026 10:56:56 GMT",
   "sha256": "174c9349436beee6abe3c788939db49cd7734fe50f14727a97d1a3988505bd46"
  },
@@ -5259,7 +5259,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:d840fd9f-a912-48e4-a304-3eb0014f56ae/MUNI_ZARAGOZA_0526.xls": {
   "bytes": 130560,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Thu, 04 Jun 2026 11:10:23 GMT",
   "sha256": "d10365d528d5637e6e08463d06b29858e12cb3246b9e6c40d825a06f0ab02fd4"
  },
@@ -5462,7 +5462,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:e20da055-2001-48c6-a05b-142a75e29bc1/MUNI_BALEARES_0626.xls": {
   "bytes": 52736,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:12+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Tue, 07 Jul 2026 10:56:38 GMT",
   "sha256": "6f442c4876d55527885b216a3a87588550cc013868cb7a8ecebf3bc918cf2a0c"
  },
@@ -5833,7 +5833,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:f8e5cbd2-060a-4c1e-b73d-fc637a99cbeb/MUNI_BARCELONA_0526.xls": {
   "bytes": 123904,
   "etag": null,
-  "last_checked": "2026-07-25T17:55:11+00:00",
+  "last_checked": "2026-07-25T17:57:59+00:00",
   "last_modified": "Thu, 04 Jun 2026 11:09:53 GMT",
   "sha256": "83f9e219458c8e81154894c3f87bc0ae8396d882338dfbf38b9a9ea5dc719350"
  },

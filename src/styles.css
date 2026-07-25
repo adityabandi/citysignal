@@ -355,6 +355,31 @@ table.cs-table td.cs-num { font-variant-numeric: tabular-nums; }
   max-width: 68ch;
 }
 
+/* Narrow viewports: the vitals grid stops being three columns and becomes a
+   stack, so a city's name, its trace and its regime stay legible instead of
+   being squeezed into 90px each. */
+@media (max-width: 640px) {
+  .cs-vitals {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+  .cs-vitals-city {
+    text-align: left;
+    padding-top: 0.8rem;
+  }
+  .cs-grid {
+    grid-template-columns: 1fr;
+  }
+  .cs-headline-text {
+    font-size: 1.35rem;
+  }
+  table.cs-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .cs-live {
     animation: cs-pulse 3.2s ease-in-out infinite;

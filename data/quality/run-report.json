@@ -1,31 +1,30 @@
 {
- "run_id": "8eef9569cc90",
- "finished_at": "2026-07-25T17:55:12+00:00",
+ "run_id": "e7e19fcebd30",
+ "finished_at": "2026-07-25T17:58:00+00:00",
  "ok": [
-  "sepe"
+  "aena"
  ],
  "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "sepe",
-   "status": "ok",
-   "records": 1424,
-   "added": 1424,
+   "source_id": "aena",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 720,
-   "skipped_unchanged": 8,
+   "plans": 2,
+   "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 69.42,
-   "latest_observation": "2026-05",
-   "metrics": [
-    "contracts_registered",
-    "unemployment_registered"
-   ],
-   "notes": []
+   "duration_s": 0.53,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   }
  ]
 }
