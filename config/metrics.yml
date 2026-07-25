@@ -55,22 +55,34 @@ metrics:
     label: Dwelling stock
     unit: dwellings
     cadence: annual
-    geo_level: municipality
+    geo_level: province
     source_id: mivau
     section: supply
     direction: 1
     lag: lagging
-    range: [500, 2000000]
+    range: [500, 4000000]
+    note: >
+      Published by province only — there is no municipal breakdown in the
+      ministry's estimate. Madrid province holds about 3.05 million dwellings
+      against roughly 1.5 million in the municipality, so this is provincial
+      context rather than a count of homes in the city. Per-dwelling ratios built
+      on it inherit that scope and are labelled accordingly.
   housing_transactions:
     label: Housing transactions
     unit: transactions
     cadence: quarterly
-    geo_level: municipality
+    geo_level: province
     source_id: mivau
     section: housing
     direction: 1
     lag: leading
     range: [0, 60000]
+    note: >
+      Not currently collected. The ministry's transactions file only carries
+      counts for one subsidised-housing category, which would misrepresent total
+      market volume if published as "housing transactions". INE's registered
+      property transfers cover the same ground honestly and are used instead.
+      The metric stays declared so the gap is visible rather than forgotten.
   appraised_value:
     label: Appraised housing value
     unit: eur_m2

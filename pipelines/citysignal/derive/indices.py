@@ -71,7 +71,7 @@ class IndexEngine:
     def __init__(self, config: Config, store: HistoryStore) -> None:
         self.config = config
         self.store = store
-        self.rules = config.rules["indices-v1"]
+        self.rules = config.ruleset("indices")
         self._z_cache: dict[tuple[str, str, str], dict[str, float]] = {}
         self._raw_cache: dict[tuple[str, str, str], dict[str, float]] = {}
 
@@ -213,7 +213,7 @@ class SignatureEngine:
     def __init__(self, config: Config, index_engine: IndexEngine) -> None:
         self.config = config
         self.engine = index_engine
-        self.rules = config.rules["signatures-v1"]
+        self.rules = config.ruleset("signatures")
 
     def match(self, city: City) -> list[dict[str, Any]]:
         threshold = float(self.rules.get("threshold", 0.5))

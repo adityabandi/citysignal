@@ -47,7 +47,7 @@ class DeriveEngine:
         self.indices = IndexEngine(config, self.store)
         self.signatures = SignatureEngine(config, self.indices)
         self.lab = LeadLagLab(config, self.store)
-        self.regime_rules = config.rules["regimes-v1"]
+        self.regime_rules = config.ruleset("regimes")
         self.health = self._load_health()
         self.provisional = self._provisional_releases()
 
@@ -325,7 +325,7 @@ class DeriveEngine:
                 "indices": self.indices.rules["version"],
                 "regimes": self.regime_rules["version"],
                 "signatures": self.signatures.rules["version"],
-                "leadlag": (self.config.rules.get("leadlag-v1") or {}).get("version"),
+                "leadlag": self.config.ruleset("leadlag").get("version"),
             },
             "counts": {
                 "series": sum(1 for _ in self.store),
@@ -480,7 +480,7 @@ class DeriveEngine:
 
         return {
             "generated_at": _now(),
-            "version": (self.config.rules.get("leadlag-v1") or {}).get("version"),
+            "version": self.config.ruleset("leadlag").get("version"),
             "method": (
                 "Signals and outcomes are compared as year-over-year change. The lag is "
                 "chosen on the earlier part of each series and scored on a held-out tail "

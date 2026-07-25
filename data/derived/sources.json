@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T17:58:58+00:00",
+ "generated_at": "2026-07-25T18:15:10+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -28,6 +28,40 @@
     "license": "Reuse permitted (attribution)",
     "attribution": "Source: Aena",
     "docs_url": "https://www.aena.es/es/estadisticas/inicio.html",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 75,
+    "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: Banco de España",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-07-25T18:05:57+00:00",
+   "last_error": null,
+   "last_success": "2026-07-25T18:05:57+00:00",
+   "latest_observation": "2026-06",
+   "license": "Reuse permitted (attribution)",
+   "max_age_days": 75,
+   "metrics": [
+    "euribor_12m",
+    "mortgage_rate_new",
+    "npl_ratio"
+   ],
+   "publisher": "Banco de España",
+   "source_id": "bde",
+   "staleness_days": 25,
+   "status": "ok",
+   "declared": {
+    "publisher": "Banco de España",
+    "license": "Reuse permitted (attribution)",
+    "attribution": "Source: Banco de España",
+    "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html",
     "kind": "official",
     "cadence": "monthly",
     "max_age_days": 75,
@@ -208,6 +242,43 @@
     "max_age_days": 210,
     "redistribute": false,
     "notes": "Scraped snapshots, not a register. Listings are not dwellings and not all listings are active. Always shown beside the official INE tourist-dwelling series rather than in place of it.\n"
+   }
+  },
+  {
+   "attribution": "Source: MIVAU / datos.gob.es",
+   "cadence": "quarterly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas",
+   "fresh": true,
+   "geo_level": "municipality",
+   "kind": "official",
+   "last_checked": "2026-07-25T18:05:45+00:00",
+   "last_error": null,
+   "last_success": "2026-07-25T18:05:45+00:00",
+   "latest_observation": "2026-Q1",
+   "license": "Reuse permitted (datos.gob.es, attribution)",
+   "max_age_days": 270,
+   "metrics": [
+    "appraised_value",
+    "dwelling_stock",
+    "housing_completions",
+    "housing_starts",
+    "land_price",
+    "rent_reference"
+   ],
+   "publisher": "Ministerio de Vivienda y Agenda Urbana",
+   "source_id": "mivau",
+   "staleness_days": 116,
+   "status": "ok",
+   "declared": {
+    "publisher": "Ministerio de Vivienda y Agenda Urbana",
+    "license": "Reuse permitted (datos.gob.es, attribution)",
+    "attribution": "Source: MIVAU / datos.gob.es",
+    "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas",
+    "kind": "official",
+    "cadence": "quarterly",
+    "max_age_days": 270,
+    "redistribute": true
    }
   },
   {

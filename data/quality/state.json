@@ -1,4 +1,39 @@
 {
+ "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP001_01.csv": {
+  "bytes": 37788115,
+  "etag": "0x8DEB7E15ED4225D",
+  "last_checked": "2026-07-25T18:05:44+00:00",
+  "last_modified": "Fri, 22 May 2026 09:06:11 GMT",
+  "sha256": "c53994b28ee3426c82c311b6f9ad599794981e6cf5f4356517ef00d2144caa61"
+ },
+ "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP002_01.csv": {
+  "bytes": 233382,
+  "etag": null,
+  "last_checked": "2026-07-25T18:05:44+00:00",
+  "last_modified": "Fri, 26 Jun 2026 09:29:21 GMT",
+  "sha256": "2eda9bafa3f56a5406da5032ab9a10d1de12df9105ff6845e5de9110ff92f7eb"
+ },
+ "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP004_01.csv": {
+  "bytes": 1775469,
+  "etag": null,
+  "last_checked": "2026-07-25T18:05:45+00:00",
+  "last_modified": "Mon, 29 Jun 2026 11:52:37 GMT",
+  "sha256": "685e1cef2876af253d8742d8475be3db324cd0c3158aeb1e885f57bc017aeced"
+ },
+ "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP005_01.csv": {
+  "bytes": 2693507,
+  "etag": null,
+  "last_checked": "2026-07-25T18:05:45+00:00",
+  "last_modified": "Thu, 14 May 2026 10:01:56 GMT",
+  "sha256": "755ad55f149a47b690e19134239f7aa6faa8c129a89dec572c6d31f561097568"
+ },
+ "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP006_01.csv": {
+  "bytes": 673098,
+  "etag": null,
+  "last_checked": "2026-07-25T18:05:45+00:00",
+  "last_modified": "Fri, 29 May 2026 12:35:00 GMT",
+  "sha256": "2a82713559310789d45dc1591a64eb7b02870a57f4e090b21b8e84392cd5eddd"
+ },
  "https://data.insideairbnb.com/spain/andaluc\u00eda/malaga/2026-06-30/data/listings.csv.gz": {
   "bytes": 5439939,
   "etag": "\"2c862748b702253ea09ff6cc82a0dfe2\"",
@@ -684,6 +719,27 @@
   "last_checked": "2026-07-25T17:58:00+00:00",
   "last_modified": "Tue, 14 Jul 2026 11:59:08 GMT",
   "sha256": "2037ed430b1bcf0ba741b2667116dcce59dc97904cd950859e187fa1477107f9"
+ },
+ "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be0413.csv": {
+  "bytes": 117278,
+  "etag": "\"6a3e3270-1ca1e\"",
+  "last_checked": "2026-07-25T18:05:57+00:00",
+  "last_modified": "Fri, 26 Jun 2026 08:04:00 GMT",
+  "sha256": "e50a82aa2adb97c5048b6c3a9c97a129f36391b371bda23edd6ad4e2ddf720a2"
+ },
+ "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be1901.csv": {
+  "bytes": 136150,
+  "etag": "\"6a5dd731-213d6\"",
+  "last_checked": "2026-07-25T18:05:57+00:00",
+  "last_modified": "Mon, 20 Jul 2026 08:07:13 GMT",
+  "sha256": "734e2b9ee942cf83e98103e3865b7615c5033228c51e764846f1d42438a51053"
+ },
+ "https://www.bde.es/webbe/es/estadisticas/compartido/datos/csv/be1904.csv": {
+  "bytes": 39269,
+  "etag": "\"6a476cad-9965\"",
+  "last_checked": "2026-07-25T18:05:57+00:00",
+  "last_modified": "Fri, 03 Jul 2026 08:02:53 GMT",
+  "sha256": "66e6d26bfec3c0f715eac55694c9f6ce7d876e3ad3f3f80da8f742f1e64617d8"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-124-07": {
   "bytes": 75662,

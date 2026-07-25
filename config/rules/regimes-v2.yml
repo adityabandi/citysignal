@@ -1,0 +1,80 @@
+# Regime classification, version 2.
+#
+# regimes-v1 is left untouched because data was published against it; this file
+# supersedes it and the change is auditable in git rather than hidden in an edit.
+#
+# What v1 got wrong: it could only recognise heat that was *already fading*
+# (`hot_decelerating` required two periods of decline) and expansion that was
+# driven by *demand*. Applied to the first full dataset it classified all eight
+# cities as "no clear regime" while every one of them showed housing pressure
+# around or above one standard deviation with supply response flat or negative.
+# That configuration — prices and rents running ahead while building does not
+# answer — is the single most characteristic state of Spanish urban housing in
+# this period, and a rule set that cannot name it is not describing the country.
+#
+# v2 adds two rules for it and leaves the rest of v1 intact.
+
+version: regimes-v2
+frozen_at: "2026-07-25"
+supersedes: regimes-v1
+
+hysteresis_periods: 2
+sticky_regimes: [stress, dislocation]
+
+rules:
+  - id: dislocation
+    label: Dislocation
+    when: "distress > 2.0 and demand_momentum < -1.0"
+    reading: >
+      Distress measures are far above this city's own history while demand is
+      contracting. Historically the configuration that precedes forced selling.
+
+  - id: stress
+    label: Stress
+    when: "distress > 1.0"
+    reading: >
+      Foreclosure, eviction, insolvency or unemployment measures are elevated
+      against this city's own record, whatever prices are doing.
+
+  - id: hot_decelerating
+    label: Hot but decelerating
+    when: "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0"
+    reading: >
+      Housing pressure is still high but has been easing for two periods. Levels
+      stay high long after momentum turns, and this is where that gap opens.
+
+  - id: supply_squeeze
+    label: Pressure without supply
+    when: "housing_pressure > 0.75 and supply_response < -0.25"
+    reading: >
+      Rents and prices are running above this city's own record while starts and
+      completions are not responding. Pressure here is a supply problem rather
+      than a demand surge, and it does not resolve on its own.
+
+  - id: hot
+    label: Hot
+    when: "housing_pressure > 0.75"
+    reading: >
+      Housing pressure is well above this city's own history and has not yet
+      turned. Supply is at least keeping pace, so this is heat rather than a
+      squeeze.
+
+  - id: orderly_cooling
+    label: Orderly cooling
+    when: "housing_pressure < 0 and distress <= 0.5 and demand_momentum > -0.5"
+    reading: >
+      Pressure has come out of the market without distress measures responding.
+      A slowdown, not a break.
+
+  - id: expansion
+    label: Expansion
+    when: "demand_momentum > 0.5 and distress < 0.5"
+    reading: >
+      Demand is strengthening and distress measures are quiet.
+
+  - id: neutral
+    label: No clear regime
+    when: "true"
+    reading: >
+      No rule fired. The city's measures are within their ordinary range, or too
+      few of them are currently available to classify.

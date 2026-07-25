@@ -90,12 +90,10 @@ class LeadLagLab:
     def __init__(self, config: Config, store: HistoryStore) -> None:
         self.config = config
         self.store = store
-        self.pairs = (config.rules.get("leadlag-v1") or {}).get("pairs", [])
-        self.max_lag = int((config.rules.get("leadlag-v1") or {}).get("max_lag", 12))
-        self.holdout = int((config.rules.get("leadlag-v1") or {}).get("holdout_periods", 12))
-        self.min_observations = int(
-            (config.rules.get("leadlag-v1") or {}).get("min_observations", 30)
-        )
+        self.pairs = config.ruleset("leadlag").get("pairs", [])
+        self.max_lag = int(config.ruleset("leadlag").get("max_lag", 12))
+        self.holdout = int(config.ruleset("leadlag").get("holdout_periods", 12))
+        self.min_observations = int(config.ruleset("leadlag").get("min_observations", 30))
 
     def evaluate_city(self, city: City) -> list[LeadLagResult]:
         results: list[LeadLagResult] = []

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T17:58:58+00:00",
+ "generated_at": "2026-07-25T18:15:10+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -13,9 +13,12 @@
  "metrics_available": [
   "airport_flights",
   "airport_passengers",
+  "appraised_value",
   "company_dissolutions",
   "company_incorporations",
   "contracts_registered",
+  "dwelling_stock",
+  "euribor_12m",
   "evictions",
   "foreclosures",
   "hotel_adr",
@@ -24,10 +27,16 @@
   "hotel_revpar",
   "hotel_travellers",
   "house_price_index",
+  "housing_completions",
+  "housing_starts",
   "insolvencies",
+  "land_price",
+  "mortgage_rate_new",
   "mortgages_count",
+  "npl_ratio",
   "population_padron",
   "property_transfers",
+  "rent_reference",
   "str_entire_home_share",
   "str_listings",
   "str_multi_host_share",
@@ -42,12 +51,12 @@
  ],
  "rules": {
   "indices": "indices-v1",
-  "regimes": "regimes-v1",
+  "regimes": "regimes-v2",
   "signatures": "signatures-v1",
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 206,
-  "observations": 8565
+  "series": 257,
+  "observations": 12393
  }
 }

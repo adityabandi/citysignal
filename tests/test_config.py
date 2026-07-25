@@ -71,7 +71,7 @@ def test_registered_adapters_match_sources(config):
 
 
 def test_index_components_reference_real_metrics(config):
-    rules = config.rules["indices-v1"]
+    rules = config.ruleset("indices")
     for index_id, spec in rules["indices"].items():
         assert spec["components"], index_id
         for component in spec["components"]:
@@ -81,8 +81,8 @@ def test_index_components_reference_real_metrics(config):
 
 
 def test_regime_rules_parse_and_have_a_fallback(config):
-    rules = config.rules["regimes-v1"]
-    signals = {index_id: 0.0 for index_id in config.rules["indices-v1"]["indices"]}
+    rules = config.ruleset("regimes")
+    signals = {index_id: 0.0 for index_id in config.ruleset("indices")["indices"]}
     deltas = {(index_id, n): 0.0 for index_id in signals for n in (1, 2, 3, 4, 12)}
     evaluator = RuleEvaluator(signals, deltas)
 
@@ -97,7 +97,7 @@ def test_regime_rules_parse_and_have_a_fallback(config):
 
 
 def test_signature_signals_reference_real_metrics(config):
-    for archetype_id, spec in config.rules["signatures-v1"]["archetypes"].items():
+    for archetype_id, spec in config.ruleset("signatures")["archetypes"].items():
         assert len(spec["signals"]) >= 5, f"{archetype_id} is too thin to be a signature"
         for signal in spec["signals"]:
             assert signal["metric"] in config.metrics, (
@@ -107,7 +107,7 @@ def test_signature_signals_reference_real_metrics(config):
 
 
 def test_leadlag_pairs_reference_real_metrics(config):
-    for pair in config.rules["leadlag-v1"]["pairs"]:
+    for pair in config.ruleset("leadlag")["pairs"]:
         assert pair["signal"] in config.metrics, pair
         assert pair["outcome"] in config.metrics, pair
         assert pair["signal"] != pair["outcome"]

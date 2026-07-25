@@ -55,6 +55,17 @@ def validate_records(
                 )
             validate_period(record.period, meta["cadence"])
             validate_geo(record.geo_id, record.geo_level or "")
+            # The registry states the level a metric is genuinely published at.
+            # An adapter emitting a different level means either the source
+            # changed or someone promoted a provincial figure to a city — the
+            # exact substitution this project exists to prevent. Fix the registry
+            # or fix the adapter; never let the two disagree silently.
+            if record.geo_level != meta["geo_level"]:
+                raise ValidationError(
+                    f"{record.metric_id}: registry declares {meta['geo_level']!r} but "
+                    f"{record.geo_id} is {record.geo_level!r}. If the publisher really "
+                    "reports at this level, update config/metrics.yml deliberately."
+                )
             if record.unit != meta["unit"]:
                 raise ValidationError(
                     f"{record.metric_id}: unit {record.unit!r} != registry unit {meta['unit']!r}"

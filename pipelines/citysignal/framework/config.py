@@ -90,6 +90,25 @@ class Config:
     def metrics_for(self, source_id: str) -> dict[str, dict]:
         return {k: v for k, v in self.metrics.items() if v.get("source_id") == source_id}
 
+    def ruleset(self, family: str) -> dict:
+        """The highest version of a rule family.
+
+        Rule files are frozen once data has been published against them, so a
+        change means adding `<family>-v2.yml` rather than editing v1. Selecting
+        the newest here means the supersession is a file addition visible in git,
+        and every earlier version stays readable beside it — which is what makes
+        a past classification reproducible.
+        """
+        versions = {
+            key: value
+            for key, value in self.rules.items()
+            if key.startswith(f"{family}-v")
+        }
+        if not versions:
+            raise KeyError(f"no ruleset found for {family!r}")
+        newest = max(versions, key=lambda key: int(key.rsplit("-v", 1)[1]))
+        return versions[newest]
+
 
 @functools.lru_cache(maxsize=4)
 def load_config(root: Path | None = None) -> Config:
