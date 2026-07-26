@@ -1,0 +1,80 @@
+{
+ "as_of": "2026-07-26",
+ "cadence": "quarterly",
+ "city": "madrid",
+ "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+ "direction_only": false,
+ "for_period": "2027-Q1",
+ "from_period": "2026-Q1",
+ "geo_id": "prov-28",
+ "geo_level": "province",
+ "horizon": 4,
+ "issued_at": "2026-07-26T14:30:17+00:00",
+ "last_observed": 4047.5,
+ "metric_id": "appraised_value",
+ "model": "drift",
+ "model_verdict": "baseline",
+ "p_direction_up": 0.29914529914529914,
+ "quantiles": {
+  "p10": 4365.493,
+  "p50": 4529.767,
+  "p90": 4713.82
+ },
+ "question": "And a year out?",
+ "skill": {
+  "analog": {
+   "brier": null,
+   "coverage_80": 0.526,
+   "folds": 97,
+   "mae": 197.402,
+   "mae_ratio": 1.4025,
+   "model": "analog",
+   "pinball": 72.5741,
+   "pinball_ratio": 1.4951,
+   "verdict": "no_better_than_baseline"
+  },
+  "drift": {
+   "brier": null,
+   "coverage_80": 0.619,
+   "folds": 97,
+   "mae": 140.746,
+   "mae_ratio": 1.0,
+   "model": "drift",
+   "pinball": 48.5427,
+   "pinball_ratio": 1.0,
+   "verdict": "baseline"
+  },
+  "random_walk": {
+   "brier": null,
+   "coverage_80": 0.557,
+   "folds": 97,
+   "mae": 216.579,
+   "mae_ratio": 1.5388,
+   "model": "random_walk",
+   "pinball": 74.7832,
+   "pinball_ratio": 1.5406,
+   "verdict": "baseline"
+  },
+  "seasonal_naive": {
+   "brier": null,
+   "coverage_80": 0.567,
+   "folds": 97,
+   "mae": 213.772,
+   "mae_ratio": 1.5188,
+   "model": "seasonal_naive",
+   "pinball": 74.042,
+   "pinball_ratio": 1.5253,
+   "verdict": "baseline"
+  }
+ },
+ "status": "issued",
+ "target_id": "appraised_4q",
+ "targets_version": "targets-v1",
+ "unit": "eur_m2",
+ "unit_of_horizon": "quarters",
+ "vintage_basis": {
+  "declared_lag": 16942,
+  "published_at": 1572
+ },
+ "why": "A year is the horizon buyers and sellers actually plan on. It is also long enough that the honest answer may be a wide interval."
+}

@@ -65,7 +65,7 @@ BASE_URL = "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA"
 # Table ids, each verified by hand with curl before being wired in here — see the
 # module docstring's companion research notes in the adapter's commit message.
 TBL_PADRON = "29005"  # DPOP: Cifras oficiales del padrón por municipio (annual)
-TBL_HOTEL_TRAVELLERS_NIGHTS = "75197"  # EOH: Viajeros y pernoctaciones por puntos turísticos (monthly)
+TBL_HOTEL_TRAVELLERS_NIGHTS = "2078"  # Viajeros y pernoctaciones por ciudad y residencia (monthly, 2005-06+)
 TBL_HOTEL_OCCUPANCY = "75198"  # EOH: Establecimientos... grados de ocupación por puntos turísticos (monthly)
 TBL_HOTEL_ADR = "46298"  # IRSH: Tarifa media diaria (ADR) por puntos turísticos (monthly)
 TBL_HOTEL_REVPAR = "46301"  # IRSH: Ingresos por habitación disponible (RevPAR) por puntos turísticos (monthly)
@@ -111,12 +111,12 @@ class IneAdapter(BaseAdapter):
 
         return [
             plan(TBL_PADRON, "padron", 6, "padron"),
-            plan(TBL_HOTEL_TRAVELLERS_NIGHTS, "hotel_travellers_nights", 48, "hotel_tn"),
-            plan(TBL_HOTEL_OCCUPANCY, "hotel_occupancy", 48, "hotel_occ"),
-            plan(TBL_HOTEL_ADR, "hotel_adr", 48, "hotel_adr"),
-            plan(TBL_HOTEL_REVPAR, "hotel_revpar", 48, "hotel_revpar"),
-            plan(TBL_MORTGAGES, "mortgages", 48, "mortgages"),
-            plan(TBL_PROPERTY_TRANSFERS, "property_transfers", 48, "transfers"),
+            plan(TBL_HOTEL_TRAVELLERS_NIGHTS, "hotel_travellers_nights", 250, "hotel_tn"),
+            plan(TBL_HOTEL_OCCUPANCY, "hotel_occupancy", 250, "hotel_occ"),
+            plan(TBL_HOTEL_ADR, "hotel_adr", 250, "hotel_adr"),
+            plan(TBL_HOTEL_REVPAR, "hotel_revpar", 250, "hotel_revpar"),
+            plan(TBL_MORTGAGES, "mortgages", 240, "mortgages"),
+            plan(TBL_PROPERTY_TRANSFERS, "property_transfers", 240, "transfers"),
             plan(TBL_HOUSE_PRICE_INDEX, "house_price_index", 20, "hpi"),
             plan(TBL_TOURIST_DWELLINGS, "tourist_dwellings", 8, "vte"),
         ]
@@ -217,45 +217,104 @@ class IneAdapter(BaseAdapter):
         return out
 
     def _normalize_hotel_tn(self, frame: pd.DataFrame, ctx: RunContext) -> Iterable[CanonicalRecord]:
-        city_by_name = {c.name: c for c in ctx.config.cities}
-        staged: list[tuple[str, str, str, float]] = []
+        # Table 2078: Viajeros y pernoctaciones por ciudad y residencia
+        # Metadata dimensions:
+        # - "Concepto turístico": "Viajero" or "Pernoctaciones"
+        # - "PUNTOS TURÍSTICOS": city name
+        # - "RESIDENCIA/ORIGEN": "Residentes en España" or "Residentes en el Extranjero"
+
+        # Build city name mappings including aliases
+        city_by_name = {}
+        for c in ctx.config.cities:
+            city_by_name[c.name] = c
+            for alias in c.aliases:
+                city_by_name[alias] = c
+
+        staged: list[tuple[str, str, str, str, float]] = []  # (city_name, concept, period, residency, valor)
+
         for row in frame.itertuples(index=False):
             meta = row.metadata
             if not row.periodo_nombre.startswith("M"):
                 continue
-            pt_name, _ = self._dim(meta, "PUNTOS TURISTÍCOS")
-            if pt_name not in city_by_name:
-                continue
+
+            # Extract dimensions from metadata
             concept, _ = self._dim(meta, "Concepto turístico")
+            city_name, _ = self._dim(meta, "PUNTOS TURÍSTICOS")
+            residency, _ = self._dim(meta, "RESIDENCIA/ORIGEN")
+
+            # Skip if we're missing any required dimension
+            if not concept or not city_name or not residency:
+                continue
+
+            # Check if this is one of our tracked cities
+            city = city_by_name.get(city_name)
+            if city is None:
+                continue
+
+            # Verify concept is one we expect
             if concept not in ("Viajero", "Pernoctaciones"):
                 continue
-            staged.append((pt_name, concept, self._monthly(row.anyo, row.periodo_nombre), row.valor))
+
+            # Determine residency type
+            if "España" in residency:
+                residency_type = "Spain"
+            elif "Extranjero" in residency:
+                residency_type = "Foreign"
+            else:
+                continue
+
+            staged.append((city.name, concept, self._monthly(row.anyo, row.periodo_nombre), residency_type, row.valor))
 
         if not staged:
             return []
 
-        # Sum the two residency splits (Spain / abroad) that make up each total —
-        # INE does not publish the combined figure as its own series.
-        totals = pd.DataFrame(staged, columns=["city", "concept", "period", "valor"])
-        grouped = totals.groupby(["city", "concept", "period"], as_index=False)["valor"].sum()
+        # Create a detailed dataframe with residency tracking
+        totals = pd.DataFrame(staged, columns=["city", "concept", "period", "residency", "valor"])
+
+        # Calculate totals and international share
+        # Group by (city, concept, period) keeping track of residency splits
+        by_city_concept_period = {}
+        for row in totals.itertuples(index=False):
+            key = (row.city, row.concept, row.period)
+            if key not in by_city_concept_period:
+                by_city_concept_period[key] = {"Spain": 0.0, "Foreign": 0.0}
+            by_city_concept_period[key][row.residency] += row.valor
 
         metric_by_concept = {
             "Viajero": ("hotel_travellers", "persons"),
             "Pernoctaciones": ("hotel_nights", "nights"),
         }
+
         out: list[CanonicalRecord] = []
-        for row in grouped.itertuples(index=False):
-            metric_id, unit = metric_by_concept[row.concept]
-            city = city_by_name[row.city]
+        for (city_name, concept, period), residencies in by_city_concept_period.items():
+            total_value = residencies["Spain"] + residencies["Foreign"]
+            metric_id, unit = metric_by_concept[concept]
+            city = city_by_name[city_name]
+
+            # Emit the total metric
             out.append(
                 self._record(
                     metric_id=metric_id,
                     geo_id=municipality(city.ine_mun),
-                    period=row.period,
-                    value=float(row.valor),
+                    period=period,
+                    value=total_value,
                     unit=unit,
                 )
             )
+
+            # Emit international share only for nights
+            if concept == "Pernoctaciones" and total_value > 0:
+                international_share = (residencies["Foreign"] / total_value) * 100
+                out.append(
+                    self._record(
+                        metric_id="hotel_international_share",
+                        geo_id=municipality(city.ine_mun),
+                        period=period,
+                        value=international_share,
+                        unit="percent",
+                    )
+                )
+
         return out
 
     def _normalize_hotel_occ(self, frame: pd.DataFrame, ctx: RunContext) -> Iterable[CanonicalRecord]:

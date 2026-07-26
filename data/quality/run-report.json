@@ -1,209 +1,16 @@
 {
- "run_id": "7697b83ef71d",
- "finished_at": "2026-07-25T19:41:49+00:00",
+ "run_id": "4db8a2cdb2a2",
+ "finished_at": "2026-07-26T14:32:28+00:00",
  "ok": [
-  "aena",
-  "bde",
-  "borme",
-  "cgpj",
-  "dgt",
-  "eurocontrol",
-  "gdelt",
-  "ine",
-  "insideairbnb",
-  "madrid_locales",
-  "madrid_padron",
-  "madrid_vut",
-  "mivau",
-  "sepe",
-  "trends_manual",
-  "wikipedia"
+  "serpavi",
+  "madrid_licencias",
+  "indeed"
  ],
  "failed": [],
- "partial": [
-  "puertos"
- ],
+ "partial": [],
  "results": [
   {
-   "source_id": "aena",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 2,
-   "skipped_unchanged": 2,
-   "error": null,
-   "error_type": null,
-   "duration_s": 9.37,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "bde",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 3,
-   "skipped_unchanged": 3,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.49,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "borme",
-   "status": "ok",
-   "records": 24,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 24,
-   "quarantined": 0,
-   "plans": 107,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 12.41,
-   "latest_observation": "2026-07",
-   "metrics": [
-    "company_dissolutions",
-    "company_incorporations",
-    "insolvencies"
-   ],
-   "notes": []
-  },
-  {
-   "source_id": "cgpj",
-   "status": "ok",
-   "records": 1040,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 1040,
-   "quarantined": 0,
-   "plans": 1,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 4.29,
-   "latest_observation": "2026-Q1",
-   "metrics": [
-    "evictions",
-    "foreclosures"
-   ],
-   "notes": []
-  },
-  {
-   "source_id": "dgt",
-   "status": "ok",
-   "records": 384,
-   "added": 8,
-   "revised": 0,
-   "unchanged": 376,
-   "quarantined": 0,
-   "plans": 48,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 108.71,
-   "latest_observation": "2026-06",
-   "metrics": [
-    "vehicle_registrations"
-   ],
-   "notes": []
-  },
-  {
-   "source_id": "eurocontrol",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 4,
-   "skipped_unchanged": 4,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.78,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "gdelt",
-   "status": "ok",
-   "records": 918,
-   "added": 918,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 24,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 623.64,
-   "latest_observation": "2026-06",
-   "metrics": [
-    "news_housing_volume",
-    "news_tone",
-    "news_volume"
-   ],
-   "notes": [
-    "15/24 optional fetches skipped: madrid:news_tone: FetchError; barcelona:news_tone: FetchError; barcelona:news_housing_volume: FetchError; valencia:news_volume: FetchError; valencia:news_tone: FetchError"
-   ]
-  },
-  {
-   "source_id": "ine",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 9,
-   "skipped_unchanged": 9,
-   "error": null,
-   "error_type": null,
-   "duration_s": 195.13,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "insideairbnb",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 7,
-   "skipped_unchanged": 7,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.63,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "madrid_locales",
+   "source_id": "serpavi",
    "status": "skipped",
    "records": 0,
    "added": 0,
@@ -214,7 +21,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 0.4,
+   "duration_s": 0.18,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -222,18 +29,18 @@
    ]
   },
   {
-   "source_id": "madrid_padron",
+   "source_id": "madrid_licencias",
    "status": "skipped",
    "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 36,
-   "skipped_unchanged": 36,
+   "plans": 1,
+   "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 118.26,
+   "duration_s": 1.06,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -241,128 +48,23 @@
    ]
   },
   {
-   "source_id": "madrid_vut",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 24,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.94,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "8/24 optional fetches skipped: barcelona:news_housing_volume: FetchError; valencia:news_volume: FetchError; valencia:news_housing_volume: FetchError; sevilla:news_tone: FetchError; palma:news_tone: FetchError"
-   ]
-  },
-  {
-   "source_id": "mivau",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 5,
-   "skipped_unchanged": 5,
-   "error": null,
-   "error_type": null,
-   "duration_s": 2.97,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "puertos",
-   "status": "partial",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 66,
-   "skipped_unchanged": 42,
-   "error": null,
-   "error_type": null,
-   "duration_s": 46.34,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "24/66 optional fetches skipped: resumen:3901: AdapterFailure; resumen:432: AdapterFailure; resumen:433: AdapterFailure; resumen:434: AdapterFailure; resumen:435: AdapterFailure",
-    "fetched successfully but produced no records"
-   ]
-  },
-  {
-   "source_id": "sepe",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 16,
-   "skipped_unchanged": 16,
-   "error": null,
-   "error_type": null,
-   "duration_s": 2.57,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "trends_manual",
+   "source_id": "indeed",
    "status": "ok",
-   "records": 1572,
+   "records": 155,
    "added": 0,
    "revised": 0,
-   "unchanged": 1572,
+   "unchanged": 78,
    "quarantined": 0,
-   "plans": 8,
+   "plans": 2,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.04,
-   "latest_observation": "2026-06",
+   "duration_s": 0.11,
+   "latest_observation": "2026-07",
    "metrics": [
-    "search_buy_momentum",
-    "search_rental_pressure",
-    "search_room_share",
-    "search_tenure_switch"
+    "job_postings_index"
    ],
    "notes": []
-  },
-  {
-   "source_id": "wikipedia",
-   "status": "ok",
-   "records": 2652,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 2652,
-   "quarantined": 0,
-   "plans": 77,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 11.38,
-   "latest_observation": "2026-06",
-   "metrics": [
-    "wiki_city_attention",
-    "wiki_city_foreign_share",
-    "wiki_city_views",
-    "wiki_hardship_index",
-    "wiki_relocation_index"
-   ],
-   "notes": [
-    "1/77 optional fetches skipped: hardship:Ley_de_la_segunda_oportunidad: NotFoundError"
-   ]
   }
  ]
 }

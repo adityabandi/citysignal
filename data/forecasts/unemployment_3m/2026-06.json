@@ -1,0 +1,80 @@
+{
+ "as_of": "2026-07-26",
+ "cadence": "monthly",
+ "city": "madrid",
+ "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+ "direction_only": false,
+ "for_period": "2026-09",
+ "from_period": "2026-06",
+ "geo_id": "mun-28079",
+ "geo_level": "municipality",
+ "horizon": 3,
+ "issued_at": "2026-07-26T14:30:17+00:00",
+ "last_observed": 129327.0,
+ "metric_id": "unemployment_registered",
+ "model": "random_walk",
+ "model_verdict": "baseline",
+ "p_direction_up": 0.4367816091954023,
+ "quantiles": {
+  "p10": 117270.2,
+  "p50": 128251.0,
+  "p90": 134769.6
+ },
+ "question": "How many people will be signed on as unemployed in Madrid city three months from now?",
+ "skill": {
+  "analog": {
+   "brier": null,
+   "coverage_80": 0.744,
+   "folds": 39,
+   "mae": 3886.274,
+   "mae_ratio": 1.2721,
+   "model": "analog",
+   "pinball": 1284.7468,
+   "pinball_ratio": 1.0403,
+   "verdict": "no_better_than_baseline"
+  },
+  "drift": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 39,
+   "mae": 3498.654,
+   "mae_ratio": 1.1452,
+   "model": "drift",
+   "pinball": 1328.076,
+   "pinball_ratio": 1.0753,
+   "verdict": "baseline"
+  },
+  "random_walk": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 39,
+   "mae": 3139.359,
+   "mae_ratio": 1.0276,
+   "model": "random_walk",
+   "pinball": 1235.0352,
+   "pinball_ratio": 1.0,
+   "verdict": "baseline"
+  },
+  "seasonal_naive": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 39,
+   "mae": 3054.962,
+   "mae_ratio": 1.0,
+   "model": "seasonal_naive",
+   "pinball": 3829.9001,
+   "pinball_ratio": 3.101,
+   "verdict": "baseline"
+  }
+ },
+ "status": "issued",
+ "target_id": "unemployment_3m",
+ "targets_version": "targets-v1",
+ "unit": "persons",
+ "unit_of_horizon": "months",
+ "vintage_basis": {
+  "declared_lag": 16942,
+  "published_at": 1572
+ },
+ "why": "Labour is the transmission channel from a slow market to a distressed one. People do not default because prices fell; they default because they lost work."
+}

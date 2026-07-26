@@ -1,0 +1,80 @@
+{
+ "as_of": "2026-07-26",
+ "cadence": "monthly",
+ "city": "madrid",
+ "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+ "direction_only": false,
+ "for_period": "2026-08",
+ "from_period": "2026-05",
+ "geo_id": "prov-28",
+ "geo_level": "province",
+ "horizon": 3,
+ "issued_at": "2026-07-26T14:30:17+00:00",
+ "last_observed": 10632.0,
+ "metric_id": "property_transfers",
+ "model": "random_walk",
+ "model_verdict": "baseline",
+ "p_direction_up": 0.4782608695652174,
+ "quantiles": {
+  "p10": 8649.1,
+  "p50": 10576.0,
+  "p90": 12903.3
+ },
+ "question": "How many homes will change hands in Madrid province three months from now?",
+ "skill": {
+  "analog": {
+   "brier": null,
+   "coverage_80": 0.687,
+   "folds": 182,
+   "mae": 1401.508,
+   "mae_ratio": 0.9983,
+   "model": "analog",
+   "pinball": 455.1815,
+   "pinball_ratio": 1.0374,
+   "verdict": "no_better_than_baseline"
+  },
+  "drift": {
+   "brier": null,
+   "coverage_80": 0.731,
+   "folds": 182,
+   "mae": 1613.465,
+   "mae_ratio": 1.1492,
+   "model": "drift",
+   "pinball": 504.4896,
+   "pinball_ratio": 1.1497,
+   "verdict": "baseline"
+  },
+  "random_walk": {
+   "brier": null,
+   "coverage_80": 0.78,
+   "folds": 182,
+   "mae": 1403.948,
+   "mae_ratio": 1.0,
+   "model": "random_walk",
+   "pinball": 438.7922,
+   "pinball_ratio": 1.0,
+   "verdict": "baseline"
+  },
+  "seasonal_naive": {
+   "brier": null,
+   "coverage_80": 0.67,
+   "folds": 182,
+   "mae": 1628.676,
+   "mae_ratio": 1.1601,
+   "model": "seasonal_naive",
+   "pinball": 548.3448,
+   "pinball_ratio": 1.2497,
+   "verdict": "baseline"
+  }
+ },
+ "status": "issued",
+ "target_id": "transfers_3m",
+ "targets_version": "targets-v1",
+ "unit": "transactions",
+ "unit_of_horizon": "months",
+ "vintage_basis": {
+  "declared_lag": 16942,
+  "published_at": 1572
+ },
+ "why": "Volume freezes before prices fall. Sellers hold their asking price and buyers simply stop, so the transaction count turns while every price series still looks calm."
+}

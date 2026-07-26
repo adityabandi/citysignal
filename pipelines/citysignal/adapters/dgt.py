@@ -42,6 +42,16 @@ named pandas columns would be wasteful. Only ``CLAVE_TRAMITE == "1"``
 temporary plates, de-registrations and plan-renove exits are excluded, so
 the metric is genuinely "new registrations", not "registry transactions".
 
+**This is not a cars-only count.** ``CLAVE_TRAMITE == "1"`` spans nearly
+every vehicle class, not just passenger cars — checked directly against a
+full month (June 2026) by also reading ``COD_TIPO`` (byte 91:93) and
+``COD_CLASE_MAT`` (byte 8:9) for every qualifying row: passenger cars
+(``COD_TIPO == "40"``) were about 69% of rows, motorcycles and mopeds about
+14%, vans about 9%, and the rest trucks, buses, trailers, agricultural
+machinery, historic and a few special vehicles. ``config/metrics.yml``
+carries this breakdown in the metric's ``note`` so a reader of the site
+doesn't assume "new cars sold" from the label alone.
+
 **Province codes are DGT's old plate-prefix letters, not INE numbers.** The
 interface spec's own ``COD_PROVINCIA_MAT`` code table uses the historic
 vehicle-plate letters (``M`` Madrid, ``B`` Barcelona, ``V`` Valencia, ``MA``
@@ -50,11 +60,22 @@ this adapter maps those eight directly to INE province codes rather than
 attempting a general DGT-to-INE table, since only our eight matter.
 
 **Madrid runs far above the other seven provinces** — roughly 3-4x
-Barcelona's count in every month checked — because Spain's national vehicle
-fleets, leasing companies and rental-car operators register administratively
-through Madrid regardless of where the vehicle is actually used. That is a
-real, well-documented feature of how Spanish registration statistics work,
-not a parsing bug; see the note on the metric in ``metrics.yml``.
+Barcelona's count in every month checked — because ``COD_PROVINCIA_MAT`` is
+the province where the registration paperwork was filed, not the vehicle
+owner's home province (a separate field, ``COD_PROVINCIA_VEH``, byte
+152:154, deliberately not used here). Spain's national vehicle fleets,
+leasing companies and rental-car operators file their registrations through
+Madrid's provincial traffic office regardless of where the vehicle is
+actually used, which is a real, widely-reported feature of Spanish
+registration statistics (and the reason "matriculaciones" league tables in
+the Spanish motor press always show Madrid disproportionately high), not a
+parsing bug. It is also the field DGT's own official province breakdown
+uses: this adapter's 2025 province totals were checked against the
+"Matriculación por provincias" table in DGT's own bulk "Matriculaciones
+Series históricas 2025" download (``Matr_provincias`` sheet) and matched to
+within the one month (November 2025) DGT itself never published a monthly
+file for. See the note on the metric in ``metrics.yml`` for the reader-facing
+version of this.
 """
 
 from __future__ import annotations

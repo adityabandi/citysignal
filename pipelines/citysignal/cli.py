@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import sys
 import uuid
@@ -141,6 +142,60 @@ def cmd_list(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_forecast(args: argparse.Namespace) -> int:
+    """Evaluate every target, freeze what can be forecast, score what has matured.
+
+    Freezing and scoring are separate passes on purpose: a forecast is written
+    once and never touched again, and scoring only ever appends. Running this
+    twice in the same period must change nothing.
+    """
+    from .forecast.engine import ForecastEngine
+
+    config = load_config(Path(args.root) if args.root else None)
+    engine = ForecastEngine(config)
+    payload = engine.run(city_slug=args.city)
+
+    issued = [f for f in payload["forecasts"] if f.get("status") == "issued"]
+    blocked = [f for f in payload["forecasts"] if f.get("status") != "issued"]
+
+    print(f"vintage {payload['data_vintage']}")
+    basis = payload["vintage_basis"]
+    print(
+        f"  {basis['published_at']} rows carry a real publication date, "
+        f"{basis['declared_lag']} rest on a declared lag"
+    )
+
+    for record in issued:
+        skill = record["skill"].get(record["model"], {})
+        print(
+            f"  {record['target_id']:<22} {record['for_period']:<8} "
+            f"{record['model']:<15} {record['model_verdict']:<24} "
+            f"ratio={skill.get('pinball_ratio', float('nan')):.3f}"
+        )
+    for record in blocked:
+        detail = (
+            f"{record.get('observations', '?')} obs, needs {record.get('needed', '?')}"
+            if record["status"] == "insufficient_data"
+            else record.get("kind", "")
+        )
+        print(f"  {record['target_id']:<22} {record['status']:<18} {detail}")
+
+    if not args.no_freeze:
+        written = engine.freeze(payload)
+        print(f"froze {len(written)} new forecast(s); existing files untouched")
+
+    scored = engine.score_matured()
+    print(f"scored {scored['scored']} matured, {scored['pending']} still pending")
+
+    out = config.data_dir / "derived" / "forecasts.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(
+        json.dumps(payload, indent=1, ensure_ascii=False, sort_keys=False) + "\n",
+        encoding="utf-8",
+    )
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="citysignal", description=__doc__)
     parser.add_argument("--root", help="repository root (defaults to the installed package's repo)")
@@ -163,6 +218,13 @@ def main(argv: list[str] | None = None) -> int:
 
     derive = sub.add_parser("derive", help="rebuild indices, regimes and site JSON")
     derive.set_defaults(func=cmd_derive)
+
+    forecast = sub.add_parser("forecast", help="evaluate targets, freeze forecasts, score matured")
+    forecast.add_argument("--city", default="madrid", help="city slug (default madrid)")
+    forecast.add_argument(
+        "--no-freeze", action="store_true", help="evaluate without writing new frozen forecasts"
+    )
+    forecast.set_defaults(func=cmd_forecast)
 
     health = sub.add_parser("health", help="print source health")
     health.set_defaults(func=cmd_health)

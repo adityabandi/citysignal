@@ -57,6 +57,7 @@ class Config:
     sources: dict[str, dict]
     baskets: dict[str, Any]
     rules: dict[str, Any]
+    forecast: dict[str, Any]
 
     @property
     def data_dir(self) -> Path:
@@ -106,6 +107,24 @@ class Config:
         }
         if not versions:
             raise KeyError(f"no ruleset found for {family!r}")
+        newest = max(versions, key=lambda key: int(key.rsplit("-v", 1)[1]))
+        return versions[newest]
+
+    def forecast_config(self, family: str) -> dict:
+        """A file from config/forecast/, newest version of the family.
+
+        Same freeze discipline as rulesets: `targets-v1.yml` stops being edited
+        the moment a forecast has been published against it, because a target
+        redefined after the fact would let a bad call be rewritten into a good
+        one. That is the exact thing a public track record exists to rule out.
+        """
+        versions = {
+            key: value for key, value in self.forecast.items() if key.startswith(f"{family}-v")
+        }
+        if not versions:
+            if family in self.forecast:
+                return self.forecast[family]
+            raise KeyError(f"no forecast config found for {family!r}")
         newest = max(versions, key=lambda key: int(key.rsplit("-v", 1)[1]))
         return versions[newest]
 
@@ -159,6 +178,12 @@ def load_config(root: Path | None = None) -> Config:
         for path in sorted(rules_dir.glob("*.yml")):
             rules[path.stem] = _load(path)
 
+    forecast: dict[str, Any] = {}
+    forecast_dir = config_dir / "forecast"
+    if forecast_dir.exists():
+        for path in sorted(forecast_dir.glob("*.yml")):
+            forecast[path.stem] = _load(path)
+
     return Config(
         root=root,
         cities=cities,
@@ -166,4 +191,5 @@ def load_config(root: Path | None = None) -> Config:
         sources=sources,
         baskets=baskets,
         rules=rules,
+        forecast=forecast,
     )

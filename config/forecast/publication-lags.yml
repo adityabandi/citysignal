@@ -1,0 +1,91 @@
+# How long after a period ends before its number is actually knowable.
+#
+# This file exists because of a gap in the history store: `published_at` is
+# recorded by exactly one source (the hand-exported Trends baskets) and is empty
+# for the other sixteen. Without it there is no way to ask the question a
+# backtest must ask — "what did we know on 15 March 2024?" — because every row
+# looks as though it were available the instant its period closed.
+#
+# It never was. INE publishes registered property transfers about six weeks after
+# the month ends. The judicial statistics take a quarter. SEPE's unemployment
+# count lands on the second working day of the following month. A model trained
+# as though all of that were instantaneous would look brilliant in backtest and
+# fail the moment it forecast something real, because it had been reading numbers
+# that did not exist yet.
+#
+# So these lags are DECLARED ASSUMPTIONS, not observations, and the forecast
+# record says so: every fold and every frozen forecast carries
+# `vintage_basis: "declared_lag"` when the lag came from this file and
+# `"published_at"` when a real publication date was available. A reader can see
+# which they are looking at.
+#
+# The values are deliberately conservative — erring long. Assuming data arrived
+# later than it did makes a model look worse than it is, which is the safe
+# direction for a product whose whole claim is a published track record.
+#
+# When a source starts recording real publication dates, that source's real
+# dates win and its entry here becomes dead weight to be removed.
+
+version: publication-lags-v1
+frozen_at: "2026-07-26"
+
+# Used when a source has no entry below. Long on purpose: an unknown source
+# should not be assumed fast.
+default_lag_days: 60
+
+lags:
+  # INE releases its monthly statistics roughly six to seven weeks out.
+  ine: 45
+
+  # SEPE publishes registered unemployment on the second working day of the
+  # following month — the fastest official labour number in Spain.
+  sepe: 3
+
+  # Social Security affiliations, published mid-following-month.
+  segsocial: 15
+
+  # The housing ministry's series are slow and heavily revised.
+  mivau: 90
+
+  # Banco de España's rate series are near-immediate; Euribor is knowable daily.
+  bde: 10
+
+  # Aena's monthly airport traffic note.
+  aena: 20
+
+  # EUROCONTROL publishes daily flight counts with a few days' delay — the
+  # earliest hard travel number we carry.
+  eurocontrol: 4
+
+  # Quarterly judicial statistics: foreclosures and evictions confirm distress
+  # long after it happens, which is exactly why they lag.
+  cgpj: 95
+
+  # Company incorporations from the official gazette, aggregated monthly.
+  borme: 30
+
+  # Vehicle registrations.
+  dgt: 20
+
+  # Port passenger statistics.
+  puertos: 45
+
+  # Wikipedia's pageview API serves yesterday.
+  wikipedia: 2
+
+  # Inside Airbnb publishes quarterly scrapes; the snapshot date is the
+  # observation, and it appears online some weeks later.
+  insideairbnb: 30
+
+  # Madrid's monthly padrón extract.
+  madrid_padron: 30
+
+  # The premises census is refreshed daily, so the state we diff is same-day.
+  madrid_locales: 1
+
+  # The tourist-let licence register.
+  madrid_vut: 30
+
+  # Hand-exported search baskets carry a real export date, so this is only a
+  # fallback for a file whose mtime is somehow unreadable.
+  trends_manual: 7

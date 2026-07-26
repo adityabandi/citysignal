@@ -1,0 +1,80 @@
+{
+ "as_of": "2026-07-26",
+ "cadence": "quarterly",
+ "city": "madrid",
+ "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+ "direction_only": false,
+ "for_period": "2026-Q3",
+ "from_period": "2026-Q1",
+ "geo_id": "prov-28",
+ "geo_level": "province",
+ "horizon": 2,
+ "issued_at": "2026-07-26T14:30:17+00:00",
+ "last_observed": 4047.5,
+ "metric_id": "appraised_value",
+ "model": "drift",
+ "model_verdict": "baseline",
+ "p_direction_up": 0.3445378151260504,
+ "quantiles": {
+  "p10": 4233.793,
+  "p50": 4307.0,
+  "p90": 4373.813
+ },
+ "question": "What will a square metre of Madrid-province housing be appraised at two quarters from now?",
+ "skill": {
+  "analog": {
+   "brier": null,
+   "coverage_80": 0.444,
+   "folds": 99,
+   "mae": 118.885,
+   "mae_ratio": 1.4199,
+   "model": "analog",
+   "pinball": 43.9167,
+   "pinball_ratio": 1.4327,
+   "verdict": "no_better_than_baseline"
+  },
+  "drift": {
+   "brier": null,
+   "coverage_80": 0.465,
+   "folds": 99,
+   "mae": 83.725,
+   "mae_ratio": 1.0,
+   "model": "drift",
+   "pinball": 30.653,
+   "pinball_ratio": 1.0,
+   "verdict": "baseline"
+  },
+  "random_walk": {
+   "brier": null,
+   "coverage_80": 0.505,
+   "folds": 99,
+   "mae": 131.881,
+   "mae_ratio": 1.5752,
+   "model": "random_walk",
+   "pinball": 46.8043,
+   "pinball_ratio": 1.5269,
+   "verdict": "baseline"
+  },
+  "seasonal_naive": {
+   "brier": null,
+   "coverage_80": 0.545,
+   "folds": 99,
+   "mae": 209.097,
+   "mae_ratio": 2.4974,
+   "model": "seasonal_naive",
+   "pinball": 70.7417,
+   "pinball_ratio": 2.3078,
+   "verdict": "baseline"
+  }
+ },
+ "status": "issued",
+ "target_id": "appraised_2q",
+ "targets_version": "targets-v1",
+ "unit": "eur_m2",
+ "unit_of_horizon": "quarters",
+ "vintage_basis": {
+  "declared_lag": 16942,
+  "published_at": 1572
+ },
+ "why": "This is the number banks lend against, so it constrains what buyers can actually pay. It has thirty years of history, which is why it can carry real intervals."
+}

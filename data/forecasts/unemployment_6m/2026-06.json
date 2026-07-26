@@ -1,0 +1,80 @@
+{
+ "as_of": "2026-07-26",
+ "cadence": "monthly",
+ "city": "madrid",
+ "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+ "direction_only": false,
+ "for_period": "2026-12",
+ "from_period": "2026-06",
+ "geo_id": "mun-28079",
+ "geo_level": "municipality",
+ "horizon": 6,
+ "issued_at": "2026-07-26T14:30:17+00:00",
+ "last_observed": 129327.0,
+ "metric_id": "unemployment_registered",
+ "model": "random_walk",
+ "model_verdict": "baseline",
+ "p_direction_up": 0.39285714285714285,
+ "quantiles": {
+  "p10": 107604.6,
+  "p50": 127022.0,
+  "p90": 137200.8
+ },
+ "question": "And six months out?",
+ "skill": {
+  "analog": {
+   "brier": null,
+   "coverage_80": 0.861,
+   "folds": 36,
+   "mae": 6232.364,
+   "mae_ratio": 2.2421,
+   "model": "analog",
+   "pinball": 2345.6689,
+   "pinball_ratio": 1.1444,
+   "verdict": "no_better_than_baseline"
+  },
+  "drift": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 36,
+   "mae": 4548.957,
+   "mae_ratio": 1.6365,
+   "model": "drift",
+   "pinball": 2319.3014,
+   "pinball_ratio": 1.1315,
+   "verdict": "baseline"
+  },
+  "random_walk": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 36,
+   "mae": 2779.667,
+   "mae_ratio": 1.0,
+   "model": "random_walk",
+   "pinball": 2049.6936,
+   "pinball_ratio": 1.0,
+   "verdict": "baseline"
+  },
+  "seasonal_naive": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 36,
+   "mae": 4148.417,
+   "mae_ratio": 1.4924,
+   "model": "seasonal_naive",
+   "pinball": 4048.6094,
+   "pinball_ratio": 1.9752,
+   "verdict": "baseline"
+  }
+ },
+ "status": "issued",
+ "target_id": "unemployment_6m",
+ "targets_version": "targets-v1",
+ "unit": "persons",
+ "unit_of_horizon": "months",
+ "vintage_basis": {
+  "declared_lag": 16942,
+  "published_at": 1572
+ },
+ "why": "Far enough ahead to be useful, close enough that the labour indicators we carry might plausibly contain the answer."
+}

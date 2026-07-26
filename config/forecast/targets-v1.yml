@@ -1,0 +1,181 @@
+# What CitySignal is willing to be judged on.
+#
+# Frozen. Once a forecast has been published against this file the file is never
+# edited — a v2 supersedes it, and old forecasts keep scoring against the rules
+# they were issued under. Otherwise a bad run could be made to look good by
+# quietly redefining the target afterwards, which is precisely the failure mode a
+# public track record exists to prevent.
+#
+# Every target names a metric that already exists in config/metrics.yml, at the
+# geography that metric is actually published at. There is no target for "Madrid
+# house prices" because no such municipal series exists; there is a target for
+# appraised value in Madrid province, labelled as the province.
+#
+# `direction_only: true` marks a target where we forecast which way it moves but
+# not how far — used where history is too short for calibrated intervals.
+
+version: targets-v1
+frozen_at: "2026-07-26"
+
+# A model must clear the best baseline by this margin on held-out folds before it
+# is allowed to publish. Ties go to the baseline: it is free, and it does not
+# pretend to know anything.
+skill_margin: 0.05
+
+# Minimum training observations before a fold is scored at all.
+min_train:
+  monthly: 48
+  quarterly: 24
+  annual: 10
+
+# Folds skip this many periods between train and test so a model cannot learn
+# from the period immediately adjoining its target.
+embargo:
+  monthly: 1
+  quarterly: 1
+  annual: 0
+
+targets:
+  # ---------------------------------------------------------------- liquidity
+  transfers_3m:
+    metric: property_transfers
+    geo: province
+    horizon: 3
+    unit_of_horizon: months
+    question: >
+      How many homes will change hands in Madrid province three months from now?
+    why: >
+      Volume freezes before prices fall. Sellers hold their asking price and
+      buyers simply stop, so the transaction count turns while every price series
+      still looks calm.
+    quantiles: [0.1, 0.5, 0.9]
+
+  transfers_6m:
+    metric: property_transfers
+    geo: province
+    horizon: 6
+    unit_of_horizon: months
+    question: >
+      How many homes will change hands in Madrid province six months from now?
+    why: >
+      The same question at the range where a turn is actionable rather than
+      merely observable.
+    quantiles: [0.1, 0.5, 0.9]
+
+  # ------------------------------------------------------------------- prices
+  appraised_2q:
+    metric: appraised_value
+    geo: province
+    horizon: 2
+    unit_of_horizon: quarters
+    question: >
+      What will a square metre of Madrid-province housing be appraised at two
+      quarters from now?
+    why: >
+      This is the number banks lend against, so it constrains what buyers can
+      actually pay. It has thirty years of history, which is why it can carry
+      real intervals.
+    quantiles: [0.1, 0.5, 0.9]
+
+  appraised_4q:
+    metric: appraised_value
+    geo: province
+    horizon: 4
+    unit_of_horizon: quarters
+    question: >
+      And a year out?
+    why: >
+      A year is the horizon buyers and sellers actually plan on. It is also long
+      enough that the honest answer may be a wide interval.
+    quantiles: [0.1, 0.5, 0.9]
+
+  # ------------------------------------------------------------------- labour
+  unemployment_3m:
+    metric: unemployment_registered
+    geo: municipality
+    horizon: 3
+    unit_of_horizon: months
+    question: >
+      How many people will be signed on as unemployed in Madrid city three
+      months from now?
+    why: >
+      Labour is the transmission channel from a slow market to a distressed one.
+      People do not default because prices fell; they default because they lost
+      work.
+    quantiles: [0.1, 0.5, 0.9]
+
+  unemployment_6m:
+    metric: unemployment_registered
+    geo: municipality
+    horizon: 6
+    unit_of_horizon: months
+    question: >
+      And six months out?
+    why: >
+      Far enough ahead to be useful, close enough that the labour indicators we
+      carry might plausibly contain the answer.
+    quantiles: [0.1, 0.5, 0.9]
+
+  # ------------------------------------------------------------------ tourism
+  hotel_nights_3m:
+    metric: hotel_nights
+    geo: municipality
+    horizon: 3
+    unit_of_horizon: months
+    question: >
+      How many hotel nights will Madrid sell three months from now?
+    why: >
+      Included partly as a discipline test. Hotel demand is so seasonal that a
+      seasonal-naive baseline is genuinely hard to beat, so this target keeps the
+      scoreboard honest: a model that cannot beat "same month last year" here has
+      learned nothing, and the track record should show that.
+    quantiles: [0.1, 0.5, 0.9]
+
+  # -------------------------------------------------------------------- rents
+  rent_next_release:
+    metric: rent_reference
+    geo: municipality
+    horizon: 1
+    unit_of_horizon: years
+    question: >
+      Will the official Madrid reference rent be higher or lower at its next
+      annual release?
+    why: >
+      The number tenants live with. Direction only — the series is annual, so
+      there are barely a dozen observations and any interval we published would
+      be decoration rather than a measurement.
+    direction_only: true
+
+  # ---------------------------------------------------------- the crash question
+  stress_12m:
+    kind: regime_transition
+    geo: municipality
+    horizon: 12
+    unit_of_horizon: months
+    into: [stress, dislocation]
+    question: >
+      What is the probability Madrid enters Stress or Dislocation at any point in
+      the next twelve months?
+    why: >
+      This is the closest an honest system gets to "is there going to be a
+      crash". Not a date, not a magnitude — a probability of entering a defined,
+      published state, scored with a Brier score against what actually happened.
+      The base rate is low, so a model must beat "it never happens" to be worth
+      anything, and that is a demanding bar.
+    baseline: base_rate
+
+  # ------------------------------------------------------------ district ranking
+  district_growth_rank:
+    kind: ranking
+    metric: padron_district
+    geo: district
+    horizon: 6
+    unit_of_horizon: months
+    question: >
+      Which of Madrid's 21 districts will grow fastest over the next six months?
+    why: >
+      Agents work districts, not provinces. Ranking sidesteps the hardest part of
+      the problem — nobody needs the exact population of Tetuán, they need to know
+      whether it is climbing the table. Scored by Spearman correlation against the
+      realised ranking.
+    scoring: spearman

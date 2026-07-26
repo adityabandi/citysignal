@@ -133,6 +133,39 @@ metrics:
     direction: 1
     lag: lagging
     range: [0, 60000]
+  rent_district_m2:
+    label: District rental price per square metre
+    plain: What a square metre of rented housing costs per month, by district.
+    unit: eur_m2_month
+    cadence: annual
+    geo_level: district
+    source_id: serpavi
+    section: housing
+    direction: 1
+    lag: coincident
+    range: [1, 60]
+  rent_district_total:
+    label: District total monthly rent
+    plain: The average total monthly rent for a full dwelling, by district.
+    unit: eur
+    cadence: annual
+    geo_level: district
+    source_id: serpavi
+    section: housing
+    direction: 1
+    lag: coincident
+    range: [100, 6000]
+  rent_district_dwellings:
+    label: Rented dwellings observed
+    plain: How many rented dwellings were surveyed to build the district average rent.
+    unit: dwellings
+    cadence: annual
+    geo_level: district
+    source_id: serpavi
+    section: housing
+    direction: 1
+    lag: coincident
+    range: [0, 200000]
   house_price_index:
     label: House price index
     plain: The official measure of how house prices are moving, set to 100 in a base year.
@@ -237,6 +270,17 @@ metrics:
     direction: 1
     lag: coincident
     range: [0, 6000000]
+  hotel_international_share:
+    label: International share of hotel nights
+    plain: What share of hotel nights are booked by visitors from outside Spain.
+    unit: percent
+    cadence: monthly
+    geo_level: municipality
+    source_id: ine
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [0, 100]
   hotel_occupancy_rate:
     label: Hotel occupancy rate
     plain: What share of hotel rooms were filled.
@@ -670,12 +714,36 @@ metrics:
     lag: leading
     range: [0, 200000]
     note: >
-      Counts DGT transaction code 1 ("Matriculación ordinaria y de
-      ciclomotores") only — new registrations, not transfers, temporary
-      plates or de-registrations. Madrid province runs an order of magnitude
-      above the others because national fleet, leasing and rental-car
-      registrations concentrate there administratively; that is a real
-      feature of how Spain registers vehicles, not a data error.
+      Not "new cars sold". Counts DGT transaction code 1 ("Matriculación
+      ordinaria y de ciclomotores") only — genuine new registrations, never
+      transfers of ownership, temporary plates, re-registrations or
+      de-registrations, which are separate transaction codes and excluded.
+      But that transaction code spans nearly every vehicle class, not cars
+      alone: in a sampled month, passenger cars were about 69% of qualifying
+      rows, motorcycles and mopeds about 14%, vans about 9%, and the
+      remainder trucks, buses, trailers, agricultural machinery and a
+      handful of historic and special vehicles. The province is where the
+      registration was filed (DGT's own COD_PROVINCIA_MAT), not the vehicle
+      owner's home province (COD_PROVINCIA_MAT and COD_PROVINCIA_VEH are
+      different fields in the source file) — Madrid runs 3-4x above
+      Barcelona because national fleet, leasing and rental-car operators
+      file their registrations there administratively regardless of where
+      the vehicle will actually operate. That is a real, widely-reported
+      feature of Spanish registration statistics, not a data error: this
+      adapter's province-level annual totals were cross-checked against
+      DGT's own published "Matriculación por provincias" table and matched
+      to within the one month DGT itself never published.
+  job_postings_index:
+    label: Job postings index
+    plain: The weekly change in job posting volume on Indeed, showing hiring intent.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: indeed
+    section: work
+    direction: 1
+    lag: leading
+    range: [-100, 500]
 
   # ------------------------------------------------------------ Madrid deep dive
   padron_district:
@@ -777,3 +845,14 @@ metrics:
     direction: 1
     lag: coincident
     range: [0, 20000]
+  licences_granted:
+    label: Urban planning licences granted
+    plain: How many urban planning licences the city granted for construction or renovation.
+    unit: licences
+    cadence: monthly
+    geo_level: district
+    source_id: madrid_licencias
+    section: supply
+    direction: 1
+    lag: leading
+    range: [0, 5000]

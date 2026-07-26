@@ -253,3 +253,33 @@ sources:
     cadence: monthly
     max_age_days: 120
     redistribute: true
+
+  serpavi:
+    publisher: Ministerio de Vivienda y Agenda Urbana
+    license: Reuse permitted (attribution)
+    attribution: "Source: MIVAU / SERPAVI"
+    docs_url: https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi
+    kind: official
+    cadence: annual
+    max_age_days: 400
+    redistribute: true
+
+  madrid_licencias:
+    publisher: Ayuntamiento de Madrid
+    license: Reuse permitted (attribution)
+    attribution: "Source: Ayuntamiento de Madrid, datos.madrid.es"
+    docs_url: https://datos.madrid.es/dataset/300193-0-licencias-urbanisticas
+    kind: official
+    cadence: monthly
+    max_age_days: 45
+    redistribute: true
+
+  indeed:
+    publisher: Indeed Hiring Lab
+    license: Free for public use with attribution
+    attribution: "Source: Indeed Hiring Lab"
+    docs_url: https://www.hiringlab.org/research/jobs-postings-tracker/
+    kind: research
+    cadence: monthly
+    max_age_days: 14
+    redistribute: true
