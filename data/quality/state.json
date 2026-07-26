@@ -90,6 +90,307 @@
   "last_modified": null,
   "sha256": "9547a7b0eada9ff72a80c2e4852b3605a673ab153ed90bd57342c0cc05ba6743"
  },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.628,40.447,-3.525,40.512&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:56+00:00",
+  "last_modified": null,
+  "sha256": "5d5b443ee52bdee1774eaf97ebf09db9b0a7ebfa23eb4b90a2704722dac031b8"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.628,40.447,-3.525,40.512&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6430,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:56+00:00",
+  "last_modified": null,
+  "sha256": "71ce8f33ba91ad7151d5286b132ec6285d4280547c909255f1b79b405c3cd746"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.630,40.360,-3.518,40.426&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:47+00:00",
+  "last_modified": null,
+  "sha256": "aae66f49ae2baf564017206285d004568579fdb5e234e0cc2bae555da9269e35"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.630,40.360,-3.518,40.426&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:48+00:00",
+  "last_modified": null,
+  "sha256": "2d272e65febc847c3039e57d0de7a81864af12d0e0c59a04253065637a7c0607"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.648,40.408,-3.531,40.450&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:52+00:00",
+  "last_modified": null,
+  "sha256": "8563d44e2a833dba59e96f812e2d0a2a2f80f35144f73e0b0df26c631261a415"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.648,40.408,-3.531,40.450&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:52+00:00",
+  "last_modified": null,
+  "sha256": "31c0c55a258c0997353359c30d861960740a6512fb48187c6b7683181c37464c"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.665,40.393,-3.620,40.419&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6350,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:27+00:00",
+  "last_modified": null,
+  "sha256": "c0ae0192453e134925955556791f12bc8e3877cb6dec710d0ca2d0a6e32487c5"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.665,40.393,-3.620,40.419&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6383,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:28+00:00",
+  "last_modified": null,
+  "sha256": "0db7860e1bb63f52d371dbcb21bf253ad21f739aa94297405ea006a3d635f650"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.673,40.449,-3.602,40.513&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:36+00:00",
+  "last_modified": null,
+  "sha256": "351a358d86913255e082544b2b4319bac3e3e8804d956cd2ae02fb3b05edf9c8"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.673,40.449,-3.602,40.513&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:37+00:00",
+  "last_modified": null,
+  "sha256": "55e700175598e8a33584c0af041e70593517672eb123f9ff673e0c17664527ba"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.674,40.413,-3.620,40.484&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:32+00:00",
+  "last_modified": null,
+  "sha256": "435ba4e9cf455907cdc7fa39cbc329859c577fd41fe2cbf2278078cefe1f11fa"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.674,40.413,-3.620,40.484&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:32+00:00",
+  "last_modified": null,
+  "sha256": "834bfe8b777b4ba0b9cb0a716661c87646c05c24ffc7a684e34bbd6a200f5fe0"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.682,40.312,-3.554,40.391&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6341,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:43+00:00",
+  "last_modified": null,
+  "sha256": "040d5c14d4b1cee0bdd7b16149cc6162a814ed7448c604c8479fe22a4ea9b799"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.682,40.312,-3.554,40.391&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6404,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:44+00:00",
+  "last_modified": null,
+  "sha256": "79060169098601de4a78b9e7dca424d88e5b2572730b56e03fa03910c8399a83"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.690,40.361,-3.622,40.406&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:23+00:00",
+  "last_modified": null,
+  "sha256": "06f2158a32b972a8c279b667a13ada0f5e8d991b4a577e19daa406a5b3192bdb"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.690,40.361,-3.622,40.406&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6451,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:24+00:00",
+  "last_modified": null,
+  "sha256": "ca9ead3863862c56d05f0bdac0487fd219a75c08996a4fb7b37fed30809c1469"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.692,40.437,-3.661,40.484&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:47+00:00",
+  "last_modified": null,
+  "sha256": "788f7cee51044a0090905c421e603152b8c13f0ae3e6b3c3cebd3a35c18abdd9"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.692,40.437,-3.661,40.484&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:48+00:00",
+  "last_modified": null,
+  "sha256": "fdb11f5dab070d7ae58a29605d3519bb407dae74c64a81e44e676ae0defd867f"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.693,40.419,-3.659,40.445&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:43+00:00",
+  "last_modified": null,
+  "sha256": "ae04144e2a0e57729237598cde9e1558d35c2106cdabd3b8d9ba284b582f00bc"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.693,40.419,-3.659,40.445&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:43+00:00",
+  "last_modified": null,
+  "sha256": "e47c9a11a31b99460b325430442cb8f431ada18983cb14d2b6e9d79cd0dfbc88"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.694,40.394,-3.659,40.422&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:39+00:00",
+  "last_modified": null,
+  "sha256": "c97c1b78808a10cdbbb1b9130f25b921047f721d6e0335b0052ba96f0ace2eed"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.694,40.394,-3.659,40.422&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:39+00:00",
+  "last_modified": null,
+  "sha256": "87fe429cb454d7f86bf3a05aa2ba0fb758e6e23b287c1f6f4b4cec30b4b04fcf"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.713,40.446,-3.687,40.475&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:52+00:00",
+  "last_modified": null,
+  "sha256": "bda74ceaeae0541d880b6857bda86dfecceb061c943e5bfcd7772c3a4cce1f51"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.713,40.446,-3.687,40.475&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:52+00:00",
+  "last_modified": null,
+  "sha256": "38657da53d296c05f643a3cea6320bca246b9a539553055fccfe0c88de9af79f"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.720,40.425,-3.688,40.447&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:56+00:00",
+  "last_modified": null,
+  "sha256": "94fa81cbac255a8857aafa2929262c884e5f6d8d1659b458d839c5e6edfaa849"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.720,40.425,-3.688,40.447&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:56+00:00",
+  "last_modified": null,
+  "sha256": "45deaf94dd302a896ad6bbd62f88699ad10d55e61f6c73493d46cb28c9cc2634"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.721,40.361,-3.682,40.395&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6356,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:19+00:00",
+  "last_modified": null,
+  "sha256": "9b33765c7a798dfb585a17018395575be8d0980b08f5a1c90649a7e40ecc26b9"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.721,40.361,-3.682,40.395&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6400,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:20+00:00",
+  "last_modified": null,
+  "sha256": "5a44b000a9b80e00016b91f9ef5965d0b6e3e02738848782306075bdb3e7c309"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.723,40.382,-3.674,40.414&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6421,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:34+00:00",
+  "last_modified": null,
+  "sha256": "24ba11a7944b6ab20a094a4f5376987d1c54ef0ba1fcebe29c0365d528ce9938"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.723,40.382,-3.674,40.414&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:35+00:00",
+  "last_modified": null,
+  "sha256": "1663c6d39fdab51a7559a0eb7ee7286895fe7e30bc38113bc5a4f551ec75c758"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.723,40.405,-3.690,40.431&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:30+00:00",
+  "last_modified": null,
+  "sha256": "dfdf706a12d95ca1ef005e78f98d289c0aa5e60ef594d2a0e60cafd372866d25"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.723,40.405,-3.690,40.431&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:06:30+00:00",
+  "last_modified": null,
+  "sha256": "7234b63e1eb75d22577bd42c3e611e5fc68df38e781857b4ced1354db3e97df6"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.725,40.320,-3.658,40.365&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6297,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:40+00:00",
+  "last_modified": null,
+  "sha256": "64a715408811b7aa77ea91d66badf87159b3a937e63d742610ecd7a42d3922b4"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.725,40.320,-3.658,40.365&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:40+00:00",
+  "last_modified": null,
+  "sha256": "881f7d40c469827841e25d561677d83a5c86707249d2e9c5dc745be98308b0bc"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.772,40.357,-3.705,40.406&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:15+00:00",
+  "last_modified": null,
+  "sha256": "a363b9b3112f3fce5a2f7f89bc5b0764ba4ffa53881b7fe05fa425ae97dcfb0b"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.772,40.357,-3.705,40.406&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:15+00:00",
+  "last_modified": null,
+  "sha256": "e8b3c287688c906f4db0fcf1970c6c26c41bf6d7907126c13652519aeb617c61"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.834,40.359,-3.722,40.417&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6371,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:10+00:00",
+  "last_modified": null,
+  "sha256": "2e695a5d1a3377b265e44f32359ec84973b8a1b85308b19b1a910a4492bcebd9"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.834,40.359,-3.722,40.417&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:10+00:00",
+  "last_modified": null,
+  "sha256": "22681e78e8ee3172a630ddb53ba9746ff53c8923ee623550dffc4125a7aa52a4"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.838,40.399,-3.708,40.480&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:05+00:00",
+  "last_modified": null,
+  "sha256": "6079f452f81f4fa0d74b86b916edfd50836ea7e5eafe5d7a8a7c0d0fe3d49754"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.838,40.399,-3.708,40.480&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:06+00:00",
+  "last_modified": null,
+  "sha256": "5073be3048ca33fb41f15939c601bf34c79062fb6ba88cca1e78acc931e648d5"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.889,40.469,-3.602,40.643&filter=amenity=restaurant or amenity=cafe or amenity=bar or amenity=fast_food&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6391,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:01+00:00",
+  "last_modified": null,
+  "sha256": "0de0772ea762dcdfcce4834c969c614d6921390bf1eefae3d366098bc6b12de2"
+ },
+ "https://api.ohsome.org/v1/elements/count?bboxes=-3.889,40.469,-3.602,40.643&filter=type:node and amenity=*&time=2019-01-01/2026-06-01/P1M": {
+  "bytes": 6461,
+  "etag": null,
+  "last_checked": "2026-07-26T16:07:01+00:00",
+  "last_modified": null,
+  "sha256": "6a94e16e41ffca7cb568a32a64653f6551b06091e5c3f7d2f51e614ed5738670"
+ },
+ "https://data-api.ecb.europa.eu/service/data/MIR/M.ES.B.A2C.A.R.A.2250.EUR.N?format=jsondata&startPeriod=2015-01": {
+  "bytes": 22994,
+  "etag": null,
+  "last_checked": "2026-07-26T16:08:06+00:00",
+  "last_modified": "Fri, 03 Jul 2026 08:00:00 GMT",
+  "sha256": "be969dcd478e2b06b3170f10adef927c8729feda3632efbc59a5e26d5c711f45"
+ },
  "https://datos.comunidad.madrid/dataset/6e5b1601-1af0-49bf-813b-227a093b7af1/resource/532735ad-4ce6-4a29-ad11-bb86916c0cf4/download/extraccionesvisados-de-direccion-de-obra-nueva-por-uso-de-la-edificacion.-comunidad-de-madrid-y-.csv": {
   "bytes": 5780689,
   "etag": "\"1777443046.97-5780689-530191682\"",
@@ -131,6 +432,20 @@
   "last_checked": "2026-07-26T14:55:09+00:00",
   "last_modified": "Mon, 06 Jul 2026 06:37:39 GMT",
   "sha256": "7c0f0ab6f71bdd6a2aab94da9c61ff79e9c741586138dc6646993c5bff1130e3"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx?format=JSON&lang=EN&geo=ES&coicop=CP041&unit=I15&sinceTimePeriod=2015-01": {
+  "bytes": 9816,
+  "etag": null,
+  "last_checked": "2026-07-26T16:03:46+00:00",
+  "last_modified": null,
+  "sha256": "b946c40b3e860ba9d62b13fb0c3a0483307424814c763792fc9acf6f4a68acaa"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx?format=JSON&lang=EN&geo=ES&coicop=CP043&unit=I15&sinceTimePeriod=2015-01": {
+  "bytes": 9902,
+  "etag": null,
+  "last_checked": "2026-07-26T16:03:47+00:00",
+  "last_modified": null,
+  "sha256": "d6cc82a6fd34874b8f901cf10feb93a29ca0a9de425d14f61808a48bb02a7038"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/ES/aggregate_job_postings_ES.csv": {
   "bytes": 194881,

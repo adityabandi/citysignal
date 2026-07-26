@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:38:33+00:00",
+ "generated_at": "2026-07-26T16:08:28+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -169,6 +169,68 @@
    }
   },
   {
+   "attribution": "Source: ECB Data Portal",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-07-26T16:08:06+00:00",
+   "last_error": null,
+   "last_error_type": "FetchError",
+   "last_success": "2026-07-26T16:08:06+00:00",
+   "latest_observation": "2026-05",
+   "license": "ECB copyright, data available under CC BY 4.0",
+   "max_age_days": 60,
+   "metrics": [
+    "ecb_mortgage_rate"
+   ],
+   "publisher": "European Central Bank",
+   "source_id": "ecb",
+   "staleness_days": 56,
+   "status": "ok",
+   "declared": {
+    "publisher": "European Central Bank",
+    "license": "ECB copyright, data available under CC BY 4.0",
+    "attribution": "Source: ECB Data Portal",
+    "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 60,
+    "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: European Environment Agency Air Quality Download Service",
+   "cadence": "monthly",
+   "consecutive_failures": 1,
+   "docs_url": "https://eeadmz1-downloads-webapp.azurewebsites.net/",
+   "fresh": false,
+   "geo_level": "municipality",
+   "kind": "official",
+   "last_checked": "2026-07-26T16:04:20+00:00",
+   "last_error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)",
+   "last_error_type": "PayloadError",
+   "license": "EEA Data and Maps Service Terms and Conditions",
+   "max_age_days": 60,
+   "metrics": [],
+   "publisher": "European Environment Agency",
+   "source_id": "eea_air",
+   "staleness_days": null,
+   "status": "failed",
+   "declared": {
+    "publisher": "European Environment Agency",
+    "license": "EEA Data and Maps Service Terms and Conditions",
+    "attribution": "Source: European Environment Agency Air Quality Download Service",
+    "docs_url": "https://eeadmz1-downloads-webapp.azurewebsites.net/",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 60,
+    "redistribute": true
+   }
+  },
+  {
    "attribution": "Source: EUROCONTROL Aviation Intelligence Portal",
    "cadence": "monthly",
    "consecutive_failures": 0,
@@ -198,6 +260,39 @@
     "cadence": "daily",
     "max_age_days": 30,
     "redistribute": false
+   }
+  },
+  {
+   "attribution": "Source: Eurostat",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request",
+   "fresh": false,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-07-26T16:03:47+00:00",
+   "last_error": null,
+   "last_success": "2026-07-26T16:03:47+00:00",
+   "latest_observation": "2025-12",
+   "license": "CC BY 4.0",
+   "max_age_days": 60,
+   "metrics": [
+    "hicp_maintenance",
+    "hicp_rents"
+   ],
+   "publisher": "Eurostat (European Commission)",
+   "source_id": "eurostat",
+   "staleness_days": 207,
+   "status": "ok",
+   "declared": {
+    "publisher": "Eurostat (European Commission)",
+    "license": "CC BY 4.0",
+    "attribution": "Source: Eurostat",
+    "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 60,
+    "redistribute": true
    }
   },
   {
@@ -601,6 +696,41 @@
     "max_age_days": 120,
     "redistribute": true,
     "notes": "Not collected. The Consejo General del Notariado's CIEN (Centro de Información Estadística del Notariado) statistics could not be located in machine-readable form. URLs attempted to fetch the data returned 404 even with a browser User-Agent. The source is withheld rather than guessed; metrics (notary_sales, notary_price_m2) stay declared so the gap is visible rather than forgotten.\n"
+   }
+  },
+  {
+   "attribution": "Source: ohsome API (openstreetmap.org), HeiGIT",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://ohsome.org/",
+   "fresh": true,
+   "geo_level": "district",
+   "kind": "research",
+   "last_checked": "2026-07-26T16:07:56+00:00",
+   "last_error": null,
+   "last_error_type": "NotFoundError",
+   "last_success": "2026-07-26T16:07:56+00:00",
+   "latest_observation": "2026-06",
+   "license": "ODbL 1.0 (OpenStreetMap data)",
+   "max_age_days": 45,
+   "metrics": [
+    "osm_food_count",
+    "osm_food_share"
+   ],
+   "publisher": "HeiGIT (Heidelberg Institute for Geoinformation Technology)",
+   "source_id": "ohsome",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "publisher": "HeiGIT (Heidelberg Institute for Geoinformation Technology)",
+    "license": "ODbL 1.0 (OpenStreetMap data)",
+    "attribution": "Source: ohsome API (openstreetmap.org), HeiGIT",
+    "docs_url": "https://ohsome.org/",
+    "kind": "research",
+    "cadence": "monthly",
+    "max_age_days": 45,
+    "redistribute": true,
+    "notes": "Commercial POI density via OpenStreetMap edit history. Raw counts are mapping-effort-contaminated before ~2019 (volunteer mapper pushes look like commercial growth); the ratio metric (osm_food_share) is the published signal. District-level, Madrid only. Monthly from 2019-01 onward.\n"
    }
   },
   {

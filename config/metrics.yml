@@ -483,6 +483,28 @@ metrics:
     range: [0, 100]
 
   # ------------------------------------------------------------------- credit
+  hicp_rents:
+    label: Harmonised Consumer Price Index - actual rents
+    plain: The harmonised index of consumer prices for actual rents on housing, set to 100 in a base year. Shows tenant-cost trend across the Eurozone.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: eurostat
+    section: housing
+    direction: 1
+    lag: coincident
+    range: [80, 130]
+  hicp_maintenance:
+    label: Harmonised Consumer Price Index - maintenance and repair
+    plain: The harmonised index of consumer prices for housing maintenance and repair costs, set to 100 in a base year. Renovation spending moves before property transactions do.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: eurostat
+    section: housing
+    direction: 1
+    lag: leading
+    range: [80, 130]
   euribor_12m:
     label: Euribor 12-month
     plain: The interest rate most Spanish variable-rate mortgages are priced off. When this rises, monthly repayments follow.
@@ -494,6 +516,17 @@ metrics:
     direction: -1
     lag: leading
     range: [-1.5, 20]
+  ecb_mortgage_rate:
+    label: ECB mortgage rate (Spain)
+    plain: The interest rate banks are charging on new mortgages to households, sourced from the ECB's Monetary Interest Rates dataset.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: ecb
+    section: credit
+    direction: -1
+    lag: leading
+    range: [0, 20]
   mortgage_rate_new:
     label: New mortgage rate
     plain: The interest rate banks are charging on new mortgages.
@@ -846,18 +879,20 @@ metrics:
   no2_level:
     label: Air quality NO2
     plain: Nitrogen dioxide concentration, an overwhelmingly traffic-generated pollution proxy and genuine liveability measure.
-    unit: index
+    unit: micrograms_m3
     cadence: monthly
     geo_level: municipality
-    source_id: madrid_aire
+    source_id: eea_air
     section: work
     direction: -1
     lag: coincident
     range: [0, 200]
     note: >
-      Monthly mean of hourly NO2 measurements from monitoring stations. NO2 is traffic-generated
-      and independent of other measures, making it a hard-to-game activity proxy. Shows clear
-      2020 COVID lockdown collapse and strong winter>summer seasonal pattern.
+      Monthly mean of NO2 measurements from European Environment Agency monitoring stations.
+      NO2 is traffic-generated and independent of other measures, making it a hard-to-game
+      activity proxy. Shows clear 2020 COVID lockdown collapse and strong winter>summer
+      seasonal pattern. Data sourced from EEA Air Quality Download Service (successor to
+      the disabled madrid_aire adapter which was rate-limited).
 
   vehicle_registrations:
     label: New vehicle registrations
@@ -1022,4 +1057,220 @@ metrics:
       Recent months are withheld until the council's registration catches up.
       Trailing months below ~40% of the preceding 12-month median are dropped
       to prevent false collapses from appearing in the data due to registration lag.
+
+  # --------------------------------- OpenStreetMap POI historical density
+  osm_food_count:
+    label: OpenStreetMap food POI count
+    plain: How many restaurants, cafés, bars and fast-food outlets are mapped in OpenStreetMap within this district's boundary.
+    unit: count
+    cadence: monthly
+    geo_level: district
+    source_id: ohsome
+    section: supply
+    direction: 1
+    lag: lagging
+    range: [0, 5000]
+    note: >
+      Raw OSM counts are mapping-effort-contaminated before ~2019 — the 2014–2018 rise
+      reflects volunteer mapper activity adding retroactive data, not commercial growth.
+      The ratio (osm_food_share) is the published metric; this raw count is available
+      for research and audit. Drawn from district bounding boxes; osm_food_share is
+      the normalized comparison metric.
+  osm_food_share:
+    label: OpenStreetMap food POI share
+    plain: What share of all mapped POI in this district are food-related amenities (restaurants, cafés, bars, fast food).
+    unit: percent
+    cadence: monthly
+    geo_level: district
+    source_id: ohsome
+    section: supply
+    direction: 1
+    lag: lagging
+    range: [0, 100]
+    note: >
+      Food POI count divided by total POI count (all nodes with any amenity tag).
+      Normalization by total POI absorbs mapping-effort variation: a mapper surge adds
+      to both numerator and denominator, leaving the ratio level. This exposes genuine
+      shifts in commercial mix (e.g. Centro has higher food share than Villaverde).
+      Monthly data from 2019-01 onward; earlier data is less trustworthy.
+
+  # ------ Wikipedia language demand matrix (origin-market attention proxy)
+  wiki_lang_views_en:
+    label: Madrid views on English Wikipedia
+    plain: How many people reading in English looked at this city's Wikipedia article, as a share of total English Wikipedia traffic.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_de:
+    label: Madrid views on German Wikipedia
+    plain: German-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_fr:
+    label: Madrid views on French Wikipedia
+    plain: French-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_it:
+    label: Madrid views on Italian Wikipedia
+    plain: Italian-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_pt:
+    label: Madrid views on Portuguese Wikipedia
+    plain: Portuguese-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_nl:
+    label: Madrid views on Dutch Wikipedia
+    plain: Dutch-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_pl:
+    label: Madrid views on Polish Wikipedia
+    plain: Polish-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_sv:
+    label: Madrid views on Swedish Wikipedia
+    plain: Swedish-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_da:
+    label: Madrid views on Danish Wikipedia
+    plain: Danish-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_ru:
+    label: Madrid views on Russian Wikipedia
+    plain: Russian-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_ja:
+    label: Madrid views on Japanese Wikipedia
+    plain: Japanese-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_zh:
+    label: Madrid views on Chinese Wikipedia
+    plain: Chinese-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_lang_views_ar:
+    label: Madrid views on Arabic Wikipedia
+    plain: Arabic-language demand for information about this city.
+    unit: per_million
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 50000]
+  wiki_foreign_interest:
+    label: Foreign interest ratio
+    plain: Non-Spanish-language Wikipedia views about this city, divided by Spanish-language views — a rising ratio means the world is paying more attention than Spain itself.
+    unit: percent
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_langs
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 1000]
+    note: >
+      Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia views) × 100.
+      A rising ratio signals rising foreign interest; the absolute value is harder to interpret
+      because it depends on platform-wide usage patterns. Used to track whether a city's interest
+      is shifting toward or away from foreign origin markets (relocation, tourism, investment).
+
+  # --------- Wikipedia article-to-article navigation (revealed intent)
+  wiki_intent_clicks:
+    label: Clicks to relocation and housing articles
+    plain: How many times readers clicked from this city's Wikipedia article to articles about cost of living, housing, visas, or relocation to Spain.
+    unit: clicks
+    cadence: monthly
+    geo_level: municipality
+    source_id: wiki_clickstream
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100000]
+    note: >
+      Extracted from Wikimedia's aggregated clickstream dumps (monthly, 12 months trailing).
+      Counts clicks FROM city articles TO housing/relocation intent articles (cost of living,
+      real estate, visas, immigration, etc.). Reveals intent more directly than pageviews alone.
+      Published only when dumps are available and parseable. Metric is optional; not all months
+      may have data if the source is disabled or dumps are unavailable.
 

@@ -4834,6 +4834,852 @@
     "fresh": "fresh"
    },
    {
+    "metric_id": "hicp_rents",
+    "label": "Harmonised Consumer Price Index - actual rents",
+    "plain": "The harmonised index of consumer prices for actual rents on housing, set to 100 in a base year. Shows tenant-cost trend across the Eurozone.",
+    "label_es": null,
+    "unit": "index",
+    "cadence": "monthly",
+    "section": "housing",
+    "lag": "coincident",
+    "direction": 1,
+    "note": null,
+    "geo_id": "es",
+    "geo_level": "nation",
+    "scope_label": "Spain",
+    "is_city_level": false,
+    "latest": {
+     "period": "2025-12",
+     "value": 114.78,
+     "yoy": 2.445555158871827
+    },
+    "suspect": false,
+    "outlier_score": 1.31,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2018-01",
+      "value": 100.92
+     },
+     {
+      "period": "2018-02",
+      "value": 101.01
+     },
+     {
+      "period": "2018-03",
+      "value": 101.15
+     },
+     {
+      "period": "2018-04",
+      "value": 101.27
+     },
+     {
+      "period": "2018-05",
+      "value": 101.41
+     },
+     {
+      "period": "2018-06",
+      "value": 101.51
+     },
+     {
+      "period": "2018-07",
+      "value": 101.63
+     },
+     {
+      "period": "2018-08",
+      "value": 101.74
+     },
+     {
+      "period": "2018-09",
+      "value": 101.87
+     },
+     {
+      "period": "2018-10",
+      "value": 102.04
+     },
+     {
+      "period": "2018-11",
+      "value": 102.21
+     },
+     {
+      "period": "2018-12",
+      "value": 102.32
+     },
+     {
+      "period": "2019-01",
+      "value": 102.48
+     },
+     {
+      "period": "2019-02",
+      "value": 102.63
+     },
+     {
+      "period": "2019-03",
+      "value": 102.75
+     },
+     {
+      "period": "2019-04",
+      "value": 102.87
+     },
+     {
+      "period": "2019-05",
+      "value": 102.98
+     },
+     {
+      "period": "2019-06",
+      "value": 103.11
+     },
+     {
+      "period": "2019-07",
+      "value": 103.25
+     },
+     {
+      "period": "2019-08",
+      "value": 103.34
+     },
+     {
+      "period": "2019-09",
+      "value": 103.44
+     },
+     {
+      "period": "2019-10",
+      "value": 103.55
+     },
+     {
+      "period": "2019-11",
+      "value": 103.66
+     },
+     {
+      "period": "2019-12",
+      "value": 103.79
+     },
+     {
+      "period": "2020-01",
+      "value": 103.91
+     },
+     {
+      "period": "2020-02",
+      "value": 104.04
+     },
+     {
+      "period": "2020-03",
+      "value": 104.12
+     },
+     {
+      "period": "2020-04",
+      "value": 104.14
+     },
+     {
+      "period": "2020-05",
+      "value": 104.18
+     },
+     {
+      "period": "2020-06",
+      "value": 104.28
+     },
+     {
+      "period": "2020-07",
+      "value": 104.42
+     },
+     {
+      "period": "2020-08",
+      "value": 104.48
+     },
+     {
+      "period": "2020-09",
+      "value": 104.55
+     },
+     {
+      "period": "2020-10",
+      "value": 104.57
+     },
+     {
+      "period": "2020-11",
+      "value": 104.63
+     },
+     {
+      "period": "2020-12",
+      "value": 104.66
+     },
+     {
+      "period": "2021-01",
+      "value": 104.73
+     },
+     {
+      "period": "2021-02",
+      "value": 104.78
+     },
+     {
+      "period": "2021-03",
+      "value": 104.82
+     },
+     {
+      "period": "2021-04",
+      "value": 104.84
+     },
+     {
+      "period": "2021-05",
+      "value": 104.86
+     },
+     {
+      "period": "2021-06",
+      "value": 104.92
+     },
+     {
+      "period": "2021-07",
+      "value": 104.97
+     },
+     {
+      "period": "2021-08",
+      "value": 105.0
+     },
+     {
+      "period": "2021-09",
+      "value": 105.05
+     },
+     {
+      "period": "2021-10",
+      "value": 105.09
+     },
+     {
+      "period": "2021-11",
+      "value": 105.16
+     },
+     {
+      "period": "2021-12",
+      "value": 105.23
+     },
+     {
+      "period": "2022-01",
+      "value": 105.39
+     },
+     {
+      "period": "2022-02",
+      "value": 105.58
+     },
+     {
+      "period": "2022-03",
+      "value": 105.81
+     },
+     {
+      "period": "2022-04",
+      "value": 106.01
+     },
+     {
+      "period": "2022-05",
+      "value": 106.18
+     },
+     {
+      "period": "2022-06",
+      "value": 106.34
+     },
+     {
+      "period": "2022-07",
+      "value": 106.5
+     },
+     {
+      "period": "2022-08",
+      "value": 106.61
+     },
+     {
+      "period": "2022-09",
+      "value": 106.73
+     },
+     {
+      "period": "2022-10",
+      "value": 106.91
+     },
+     {
+      "period": "2022-11",
+      "value": 107.06
+     },
+     {
+      "period": "2022-12",
+      "value": 107.26
+     },
+     {
+      "period": "2023-01",
+      "value": 107.51
+     },
+     {
+      "period": "2023-02",
+      "value": 107.71
+     },
+     {
+      "period": "2023-03",
+      "value": 107.98
+     },
+     {
+      "period": "2023-04",
+      "value": 108.18
+     },
+     {
+      "period": "2023-05",
+      "value": 108.39
+     },
+     {
+      "period": "2023-06",
+      "value": 108.55
+     },
+     {
+      "period": "2023-07",
+      "value": 108.73
+     },
+     {
+      "period": "2023-08",
+      "value": 108.79
+     },
+     {
+      "period": "2023-09",
+      "value": 108.93
+     },
+     {
+      "period": "2023-10",
+      "value": 109.1
+     },
+     {
+      "period": "2023-11",
+      "value": 109.29
+     },
+     {
+      "period": "2023-12",
+      "value": 109.43
+     },
+     {
+      "period": "2024-01",
+      "value": 109.64
+     },
+     {
+      "period": "2024-02",
+      "value": 109.9
+     },
+     {
+      "period": "2024-03",
+      "value": 110.18
+     },
+     {
+      "period": "2024-04",
+      "value": 110.48
+     },
+     {
+      "period": "2024-05",
+      "value": 110.75
+     },
+     {
+      "period": "2024-06",
+      "value": 110.92
+     },
+     {
+      "period": "2024-07",
+      "value": 111.07
+     },
+     {
+      "period": "2024-08",
+      "value": 111.23
+     },
+     {
+      "period": "2024-09",
+      "value": 111.41
+     },
+     {
+      "period": "2024-10",
+      "value": 111.65
+     },
+     {
+      "period": "2024-11",
+      "value": 111.89
+     },
+     {
+      "period": "2024-12",
+      "value": 112.04
+     },
+     {
+      "period": "2025-01",
+      "value": 112.25
+     },
+     {
+      "period": "2025-02",
+      "value": 112.53
+     },
+     {
+      "period": "2025-03",
+      "value": 112.82
+     },
+     {
+      "period": "2025-04",
+      "value": 113.14
+     },
+     {
+      "period": "2025-05",
+      "value": 113.36
+     },
+     {
+      "period": "2025-06",
+      "value": 113.62
+     },
+     {
+      "period": "2025-07",
+      "value": 113.77
+     },
+     {
+      "period": "2025-08",
+      "value": 113.92
+     },
+     {
+      "period": "2025-09",
+      "value": 114.15
+     },
+     {
+      "period": "2025-10",
+      "value": 114.37
+     },
+     {
+      "period": "2025-11",
+      "value": 114.58
+     },
+     {
+      "period": "2025-12",
+      "value": 114.78
+     }
+    ],
+    "source_id": "eurostat",
+    "source": {
+     "publisher": "Eurostat (European Commission)",
+     "license": "CC BY 4.0",
+     "attribution": "Source: Eurostat",
+     "kind": "official",
+     "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request"
+    },
+    "observation_end": "2025-12-31",
+    "last_checked": "2026-07-26T16:03:47+00:00",
+    "staleness_days": 207,
+    "max_age_days": 60,
+    "fresh": "failing"
+   },
+   {
+    "metric_id": "hicp_maintenance",
+    "label": "Harmonised Consumer Price Index - maintenance and repair",
+    "plain": "The harmonised index of consumer prices for housing maintenance and repair costs, set to 100 in a base year. Renovation spending moves before property transactions do.",
+    "label_es": null,
+    "unit": "index",
+    "cadence": "monthly",
+    "section": "housing",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "es",
+    "geo_level": "nation",
+    "scope_label": "Spain",
+    "is_city_level": false,
+    "latest": {
+     "period": "2025-12",
+     "value": 128.68,
+     "yoy": 3.018173084620935
+    },
+    "suspect": false,
+    "outlier_score": 1.22,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2018-01",
+      "value": 102.04
+     },
+     {
+      "period": "2018-02",
+      "value": 102.22
+     },
+     {
+      "period": "2018-03",
+      "value": 102.46
+     },
+     {
+      "period": "2018-04",
+      "value": 102.78
+     },
+     {
+      "period": "2018-05",
+      "value": 102.89
+     },
+     {
+      "period": "2018-06",
+      "value": 102.92
+     },
+     {
+      "period": "2018-07",
+      "value": 102.92
+     },
+     {
+      "period": "2018-08",
+      "value": 103.04
+     },
+     {
+      "period": "2018-09",
+      "value": 103.14
+     },
+     {
+      "period": "2018-10",
+      "value": 103.32
+     },
+     {
+      "period": "2018-11",
+      "value": 103.45
+     },
+     {
+      "period": "2018-12",
+      "value": 103.54
+     },
+     {
+      "period": "2019-01",
+      "value": 103.65
+     },
+     {
+      "period": "2019-02",
+      "value": 103.74
+     },
+     {
+      "period": "2019-03",
+      "value": 103.9
+     },
+     {
+      "period": "2019-04",
+      "value": 104.01
+     },
+     {
+      "period": "2019-05",
+      "value": 104.07
+     },
+     {
+      "period": "2019-06",
+      "value": 104.09
+     },
+     {
+      "period": "2019-07",
+      "value": 104.11
+     },
+     {
+      "period": "2019-08",
+      "value": 104.15
+     },
+     {
+      "period": "2019-09",
+      "value": 104.24
+     },
+     {
+      "period": "2019-10",
+      "value": 104.41
+     },
+     {
+      "period": "2019-11",
+      "value": 104.5
+     },
+     {
+      "period": "2019-12",
+      "value": 104.63
+     },
+     {
+      "period": "2020-01",
+      "value": 104.74
+     },
+     {
+      "period": "2020-02",
+      "value": 104.94
+     },
+     {
+      "period": "2020-03",
+      "value": 105.09
+     },
+     {
+      "period": "2020-04",
+      "value": 105.25
+     },
+     {
+      "period": "2020-05",
+      "value": 105.23
+     },
+     {
+      "period": "2020-06",
+      "value": 105.27
+     },
+     {
+      "period": "2020-07",
+      "value": 105.43
+     },
+     {
+      "period": "2020-08",
+      "value": 105.52
+     },
+     {
+      "period": "2020-09",
+      "value": 105.66
+     },
+     {
+      "period": "2020-10",
+      "value": 105.86
+     },
+     {
+      "period": "2020-11",
+      "value": 105.92
+     },
+     {
+      "period": "2020-12",
+      "value": 106.09
+     },
+     {
+      "period": "2021-01",
+      "value": 106.02
+     },
+     {
+      "period": "2021-02",
+      "value": 106.12
+     },
+     {
+      "period": "2021-03",
+      "value": 106.19
+     },
+     {
+      "period": "2021-04",
+      "value": 106.45
+     },
+     {
+      "period": "2021-05",
+      "value": 106.69
+     },
+     {
+      "period": "2021-06",
+      "value": 106.87
+     },
+     {
+      "period": "2021-07",
+      "value": 107.05
+     },
+     {
+      "period": "2021-08",
+      "value": 107.18
+     },
+     {
+      "period": "2021-09",
+      "value": 107.28
+     },
+     {
+      "period": "2021-10",
+      "value": 107.71
+     },
+     {
+      "period": "2021-11",
+      "value": 108.08
+     },
+     {
+      "period": "2021-12",
+      "value": 108.48
+     },
+     {
+      "period": "2022-01",
+      "value": 109.14
+     },
+     {
+      "period": "2022-02",
+      "value": 109.96
+     },
+     {
+      "period": "2022-03",
+      "value": 111.3
+     },
+     {
+      "period": "2022-04",
+      "value": 112.48
+     },
+     {
+      "period": "2022-05",
+      "value": 113.47
+     },
+     {
+      "period": "2022-06",
+      "value": 114.17
+     },
+     {
+      "period": "2022-07",
+      "value": 114.57
+     },
+     {
+      "period": "2022-08",
+      "value": 114.89
+     },
+     {
+      "period": "2022-09",
+      "value": 115.52
+     },
+     {
+      "period": "2022-10",
+      "value": 116.19
+     },
+     {
+      "period": "2022-11",
+      "value": 116.9
+     },
+     {
+      "period": "2022-12",
+      "value": 117.37
+     },
+     {
+      "period": "2023-01",
+      "value": 117.87
+     },
+     {
+      "period": "2023-02",
+      "value": 118.64
+     },
+     {
+      "period": "2023-03",
+      "value": 119.28
+     },
+     {
+      "period": "2023-04",
+      "value": 119.76
+     },
+     {
+      "period": "2023-05",
+      "value": 120.15
+     },
+     {
+      "period": "2023-06",
+      "value": 120.23
+     },
+     {
+      "period": "2023-07",
+      "value": 120.45
+     },
+     {
+      "period": "2023-08",
+      "value": 120.66
+     },
+     {
+      "period": "2023-09",
+      "value": 120.83
+     },
+     {
+      "period": "2023-10",
+      "value": 121.19
+     },
+     {
+      "period": "2023-11",
+      "value": 121.43
+     },
+     {
+      "period": "2023-12",
+      "value": 121.72
+     },
+     {
+      "period": "2024-01",
+      "value": 122.03
+     },
+     {
+      "period": "2024-02",
+      "value": 122.42
+     },
+     {
+      "period": "2024-03",
+      "value": 122.81
+     },
+     {
+      "period": "2024-04",
+      "value": 123.08
+     },
+     {
+      "period": "2024-05",
+      "value": 123.4
+     },
+     {
+      "period": "2024-06",
+      "value": 123.79
+     },
+     {
+      "period": "2024-07",
+      "value": 123.91
+     },
+     {
+      "period": "2024-08",
+      "value": 124.05
+     },
+     {
+      "period": "2024-09",
+      "value": 124.22
+     },
+     {
+      "period": "2024-10",
+      "value": 124.44
+     },
+     {
+      "period": "2024-11",
+      "value": 124.7
+     },
+     {
+      "period": "2024-12",
+      "value": 124.91
+     },
+     {
+      "period": "2025-01",
+      "value": 125.29
+     },
+     {
+      "period": "2025-02",
+      "value": 125.68
+     },
+     {
+      "period": "2025-03",
+      "value": 126.44
+     },
+     {
+      "period": "2025-04",
+      "value": 126.91
+     },
+     {
+      "period": "2025-05",
+      "value": 127.24
+     },
+     {
+      "period": "2025-06",
+      "value": 127.37
+     },
+     {
+      "period": "2025-07",
+      "value": 127.52
+     },
+     {
+      "period": "2025-08",
+      "value": 127.65
+     },
+     {
+      "period": "2025-09",
+      "value": 127.96
+     },
+     {
+      "period": "2025-10",
+      "value": 128.24
+     },
+     {
+      "period": "2025-11",
+      "value": 128.52
+     },
+     {
+      "period": "2025-12",
+      "value": 128.68
+     }
+    ],
+    "source_id": "eurostat",
+    "source": {
+     "publisher": "Eurostat (European Commission)",
+     "license": "CC BY 4.0",
+     "attribution": "Source: Eurostat",
+     "kind": "official",
+     "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request"
+    },
+    "observation_end": "2025-12-31",
+    "last_checked": "2026-07-26T16:03:47+00:00",
+    "staleness_days": 207,
+    "max_age_days": 60,
+    "fresh": "failing"
+   },
+   {
     "metric_id": "house_price_index",
     "label": "House price index",
     "plain": "The official measure of how house prices are moving, set to 100 in a base year.",
@@ -7084,6 +7930,429 @@
     "staleness_days": 117,
     "max_age_days": 75,
     "fresh": "stale"
+   },
+   {
+    "metric_id": "ecb_mortgage_rate",
+    "label": "ECB mortgage rate (Spain)",
+    "plain": "The interest rate banks are charging on new mortgages to households, sourced from the ECB's Monetary Interest Rates dataset.",
+    "label_es": null,
+    "unit": "percent",
+    "cadence": "monthly",
+    "section": "credit",
+    "lag": "leading",
+    "direction": -1,
+    "note": null,
+    "geo_id": "es",
+    "geo_level": "nation",
+    "scope_label": "Spain",
+    "is_city_level": false,
+    "latest": {
+     "period": "2026-05",
+     "value": 2.85,
+     "yoy": 5.16605166051661
+    },
+    "suspect": false,
+    "outlier_score": 2.87,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2018-06",
+      "value": 1.9
+     },
+     {
+      "period": "2018-07",
+      "value": 1.89
+     },
+     {
+      "period": "2018-08",
+      "value": 2.03
+     },
+     {
+      "period": "2018-09",
+      "value": 1.96
+     },
+     {
+      "period": "2018-10",
+      "value": 2.0
+     },
+     {
+      "period": "2018-11",
+      "value": 2.03
+     },
+     {
+      "period": "2018-12",
+      "value": 1.99
+     },
+     {
+      "period": "2019-01",
+      "value": 2.09
+     },
+     {
+      "period": "2019-02",
+      "value": 2.12
+     },
+     {
+      "period": "2019-03",
+      "value": 2.13
+     },
+     {
+      "period": "2019-04",
+      "value": 2.15
+     },
+     {
+      "period": "2019-05",
+      "value": 2.16
+     },
+     {
+      "period": "2019-06",
+      "value": 2.07
+     },
+     {
+      "period": "2019-07",
+      "value": 1.98
+     },
+     {
+      "period": "2019-08",
+      "value": 2.0
+     },
+     {
+      "period": "2019-09",
+      "value": 1.87
+     },
+     {
+      "period": "2019-10",
+      "value": 1.82
+     },
+     {
+      "period": "2019-11",
+      "value": 1.78
+     },
+     {
+      "period": "2019-12",
+      "value": 1.69
+     },
+     {
+      "period": "2020-01",
+      "value": 1.81
+     },
+     {
+      "period": "2020-02",
+      "value": 1.81
+     },
+     {
+      "period": "2020-03",
+      "value": 1.81
+     },
+     {
+      "period": "2020-04",
+      "value": 1.72
+     },
+     {
+      "period": "2020-05",
+      "value": 1.75
+     },
+     {
+      "period": "2020-06",
+      "value": 1.78
+     },
+     {
+      "period": "2020-07",
+      "value": 1.75
+     },
+     {
+      "period": "2020-08",
+      "value": 1.78
+     },
+     {
+      "period": "2020-09",
+      "value": 1.72
+     },
+     {
+      "period": "2020-10",
+      "value": 1.71
+     },
+     {
+      "period": "2020-11",
+      "value": 1.65
+     },
+     {
+      "period": "2020-12",
+      "value": 1.51
+     },
+     {
+      "period": "2021-01",
+      "value": 1.56
+     },
+     {
+      "period": "2021-02",
+      "value": 1.53
+     },
+     {
+      "period": "2021-03",
+      "value": 1.54
+     },
+     {
+      "period": "2021-04",
+      "value": 1.52
+     },
+     {
+      "period": "2021-05",
+      "value": 1.5
+     },
+     {
+      "period": "2021-06",
+      "value": 1.46
+     },
+     {
+      "period": "2021-07",
+      "value": 1.44
+     },
+     {
+      "period": "2021-08",
+      "value": 1.54
+     },
+     {
+      "period": "2021-09",
+      "value": 1.45
+     },
+     {
+      "period": "2021-10",
+      "value": 1.46
+     },
+     {
+      "period": "2021-11",
+      "value": 1.45
+     },
+     {
+      "period": "2021-12",
+      "value": 1.38
+     },
+     {
+      "period": "2022-01",
+      "value": 1.44
+     },
+     {
+      "period": "2022-02",
+      "value": 1.52
+     },
+     {
+      "period": "2022-03",
+      "value": 1.54
+     },
+     {
+      "period": "2022-04",
+      "value": 1.55
+     },
+     {
+      "period": "2022-05",
+      "value": 1.65
+     },
+     {
+      "period": "2022-06",
+      "value": 1.7
+     },
+     {
+      "period": "2022-07",
+      "value": 1.8
+     },
+     {
+      "period": "2022-08",
+      "value": 2.03
+     },
+     {
+      "period": "2022-09",
+      "value": 2.22
+     },
+     {
+      "period": "2022-10",
+      "value": 2.54
+     },
+     {
+      "period": "2022-11",
+      "value": 2.74
+     },
+     {
+      "period": "2022-12",
+      "value": 2.96
+     },
+     {
+      "period": "2023-01",
+      "value": 3.25
+     },
+     {
+      "period": "2023-02",
+      "value": 3.52
+     },
+     {
+      "period": "2023-03",
+      "value": 3.63
+     },
+     {
+      "period": "2023-04",
+      "value": 3.69
+     },
+     {
+      "period": "2023-05",
+      "value": 3.78
+     },
+     {
+      "period": "2023-06",
+      "value": 3.82
+     },
+     {
+      "period": "2023-07",
+      "value": 3.84
+     },
+     {
+      "period": "2023-08",
+      "value": 3.93
+     },
+     {
+      "period": "2023-09",
+      "value": 3.92
+     },
+     {
+      "period": "2023-10",
+      "value": 3.94
+     },
+     {
+      "period": "2023-11",
+      "value": 3.85
+     },
+     {
+      "period": "2023-12",
+      "value": 3.78
+     },
+     {
+      "period": "2024-01",
+      "value": 3.61
+     },
+     {
+      "period": "2024-02",
+      "value": 3.62
+     },
+     {
+      "period": "2024-03",
+      "value": 3.47
+     },
+     {
+      "period": "2024-04",
+      "value": 3.5
+     },
+     {
+      "period": "2024-05",
+      "value": 3.47
+     },
+     {
+      "period": "2024-06",
+      "value": 3.37
+     },
+     {
+      "period": "2024-07",
+      "value": 3.33
+     },
+     {
+      "period": "2024-08",
+      "value": 3.38
+     },
+     {
+      "period": "2024-09",
+      "value": 3.26
+     },
+     {
+      "period": "2024-10",
+      "value": 3.2
+     },
+     {
+      "period": "2024-11",
+      "value": 3.04
+     },
+     {
+      "period": "2024-12",
+      "value": 2.9
+     },
+     {
+      "period": "2025-01",
+      "value": 2.89
+     },
+     {
+      "period": "2025-02",
+      "value": 2.87
+     },
+     {
+      "period": "2025-03",
+      "value": 2.8
+     },
+     {
+      "period": "2025-04",
+      "value": 2.75
+     },
+     {
+      "period": "2025-05",
+      "value": 2.71
+     },
+     {
+      "period": "2025-06",
+      "value": 2.68
+     },
+     {
+      "period": "2025-07",
+      "value": 2.63
+     },
+     {
+      "period": "2025-08",
+      "value": 2.68
+     },
+     {
+      "period": "2025-09",
+      "value": 2.66
+     },
+     {
+      "period": "2025-10",
+      "value": 2.67
+     },
+     {
+      "period": "2025-11",
+      "value": 2.63
+     },
+     {
+      "period": "2025-12",
+      "value": 2.61
+     },
+     {
+      "period": "2026-01",
+      "value": 2.68
+     },
+     {
+      "period": "2026-02",
+      "value": 2.75
+     },
+     {
+      "period": "2026-03",
+      "value": 2.75
+     },
+     {
+      "period": "2026-04",
+      "value": 2.8
+     },
+     {
+      "period": "2026-05",
+      "value": 2.85
+     }
+    ],
+    "source_id": "ecb",
+    "source": {
+     "publisher": "European Central Bank",
+     "license": "ECB copyright, data available under CC BY 4.0",
+     "attribution": "Source: ECB Data Portal",
+     "kind": "official",
+     "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html"
+    },
+    "observation_end": "2026-05-31",
+    "last_checked": "2026-07-26T16:08:06+00:00",
+    "staleness_days": 56,
+    "max_age_days": 60,
+    "fresh": "fresh"
    },
    {
     "metric_id": "euribor_12m",
@@ -15966,5 +17235,5 @@
    }
   ]
  },
- "generated_at": "2026-07-26T15:38:29+00:00"
+ "generated_at": "2026-07-26T16:08:26+00:00"
 }

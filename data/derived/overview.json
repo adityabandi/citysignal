@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:38:33+00:00",
+ "generated_at": "2026-07-26T16:08:28+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4342,6 +4342,20 @@
   }
  ],
  "attention": [
+  {
+   "source_id": "eea_air",
+   "status": "failed",
+   "latest_observation": null,
+   "staleness_days": null,
+   "last_error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)"
+  },
+  {
+   "source_id": "eurostat",
+   "status": "ok",
+   "latest_observation": "2025-12",
+   "staleness_days": 207,
+   "last_error": null
+  },
   {
    "source_id": "indeed",
    "status": "ok",

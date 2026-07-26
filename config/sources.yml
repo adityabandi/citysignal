@@ -351,3 +351,81 @@ sources:
       source is withheld rather than guessed; metrics (notary_sales, notary_price_m2)
       stay declared so the gap is visible rather than forgotten.
 
+  ohsome:
+    publisher: HeiGIT (Heidelberg Institute for Geoinformation Technology)
+    license: ODbL 1.0 (OpenStreetMap data)
+    attribution: "Source: ohsome API (openstreetmap.org), HeiGIT"
+    docs_url: https://ohsome.org/
+    kind: research
+    cadence: monthly
+    max_age_days: 45
+    redistribute: true
+    notes: >
+      Commercial POI density via OpenStreetMap edit history. Raw counts are
+      mapping-effort-contaminated before ~2019 (volunteer mapper pushes look like
+      commercial growth); the ratio metric (osm_food_share) is the published signal.
+      District-level, Madrid only. Monthly from 2019-01 onward.
+
+  wiki_langs:
+    publisher: Wikimedia Foundation
+    license: CC0 (pageview data)
+    attribution: "Source: Wikimedia REST API pageviews"
+    docs_url: https://wikimedia.org/api/rest_v1/
+    kind: research
+    cadence: monthly
+    max_age_days: 45
+    redistribute: true
+    notes: >
+      Language-split Wikipedia pageviews as an origin-market attention proxy.
+      Published as per-million shares of total traffic per language edition, not raw
+      counts. Covers 13 language editions (en, de, fr, it, pt, nl, pl, sv, da, ru, ja, zh, ar).
+      Languages with < 500 views/month median are dropped. All articles verified to refer
+      to Spanish cities (not homonyms). Eight Spanish cities.
+
+  wiki_clickstream:
+    enabled: false
+    publisher: Wikimedia Foundation
+    license: CC0 (clickstream data)
+    attribution: "Source: Wikimedia Clickstream"
+    docs_url: https://dumps.wikimedia.org/other/clickstream/
+    kind: research
+    cadence: monthly
+    max_age_days: 60
+    redistribute: false
+    notes: >
+      DISABLED. Wikipedia article-to-article navigation (revealed intent). Adapter
+      streams and filters monthly dumps (~100–500 MB gzipped each) without materializing
+      raw files. Counts clicks FROM city articles TO housing/relocation intent articles.
+      Large file sizes may require memory; enable only if needed. Fetch may fail if
+      dump URLs change or storage is unavailable.
+
+  eurostat:
+    publisher: Eurostat (European Commission)
+    license: CC BY 4.0
+    attribution: "Source: Eurostat"
+    docs_url: https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request
+    kind: official
+    cadence: monthly
+    max_age_days: 60
+    redistribute: true
+
+  ecb:
+    publisher: European Central Bank
+    license: ECB copyright, data available under CC BY 4.0
+    attribution: "Source: ECB Data Portal"
+    docs_url: https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html
+    kind: official
+    cadence: monthly
+    max_age_days: 60
+    redistribute: true
+
+  eea_air:
+    publisher: European Environment Agency
+    license: EEA Data and Maps Service Terms and Conditions
+    attribution: "Source: European Environment Agency Air Quality Download Service"
+    docs_url: https://eeadmz1-downloads-webapp.azurewebsites.net/
+    kind: official
+    cadence: monthly
+    max_age_days: 60
+    redistribute: true
+

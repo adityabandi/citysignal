@@ -1,27 +1,29 @@
 {
- "run_id": "1530e131c8c6",
- "finished_at": "2026-07-26T15:35:29+00:00",
- "ok": [],
- "failed": [
-  "madrid_trafico"
+ "run_id": "36f85cf89763",
+ "finished_at": "2026-07-26T16:08:06+00:00",
+ "ok": [
+  "ecb"
  ],
+ "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "madrid_trafico",
-   "status": "failed",
-   "records": 0,
-   "added": 0,
+   "source_id": "ecb",
+   "status": "ok",
+   "records": 137,
+   "added": 137,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 0,
+   "plans": 1,
    "skipped_unchanged": 0,
-   "error": "Could not fetch traffic dataset metadata from CKAN: HTTP Error 403: Forbidden",
-   "error_type": "AdapterFailure",
-   "duration_s": 0.09,
-   "latest_observation": null,
-   "metrics": [],
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.17,
+   "latest_observation": "2026-05",
+   "metrics": [
+    "ecb_mortgage_rate"
+   ],
    "notes": []
   }
  ]
