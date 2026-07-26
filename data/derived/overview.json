@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:33:49+00:00",
+ "generated_at": "2026-07-26T15:38:33+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4361,7 +4361,7 @@
    "status": "failed",
    "latest_observation": "2002-12",
    "staleness_days": 8608,
-   "last_error": "all 5 optional fetches failed; first: aire-resource-14: NotFoundError"
+   "last_error": "Could not fetch air quality dataset metadata: HTTP Error 403: Forbidden"
   },
   {
    "source_id": "madrid_licencias",
@@ -4375,7 +4375,7 @@
    "status": "failed",
    "latest_observation": null,
    "staleness_days": null,
-   "last_error": "all 36 optional fetches failed; first: trafico-2026-07: NotFoundError"
+   "last_error": "Could not fetch traffic dataset metadata from CKAN: HTTP Error 403: Forbidden"
   },
   {
    "source_id": "notariado",

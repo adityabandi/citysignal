@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:33:49+00:00",
+ "generated_at": "2026-07-26T15:38:33+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -340,13 +340,13 @@
   {
    "attribution": "Source: Ayuntamiento de Madrid, datos.madrid.es",
    "cadence": "monthly",
-   "consecutive_failures": 1,
+   "consecutive_failures": 4,
    "docs_url": "https://datos.madrid.es/portal/site/egob",
    "fresh": false,
    "geo_level": "municipality",
    "kind": "official",
-   "last_checked": "2026-07-26T15:33:30+00:00",
-   "last_error": "all 5 optional fetches failed; first: aire-resource-14: NotFoundError",
+   "last_checked": "2026-07-26T15:34:56+00:00",
+   "last_error": "Could not fetch air quality dataset metadata: HTTP Error 403: Forbidden",
    "last_error_type": "AdapterFailure",
    "last_success": "2026-07-26T15:32:07+00:00",
    "latest_observation": "2002-12",
@@ -360,6 +360,7 @@
    "staleness_days": 8608,
    "status": "failed",
    "declared": {
+    "enabled": false,
     "publisher": "Ayuntamiento de Madrid",
     "license": "Reuse permitted (attribution)",
     "attribution": "Source: Ayuntamiento de Madrid, datos.madrid.es",
@@ -367,7 +368,8 @@
     "kind": "official",
     "cadence": "monthly",
     "max_age_days": 75,
-    "redistribute": true
+    "redistribute": true,
+    "notes": "Not collected. Adapter built for dataset 201410 (Calidad del aire. Datos diarios desde 2001, 76 CSV resources) but CKAN API returns HTTP 403 Forbidden after initial requests — rate-limiting. Adapter code verified correct (uses daily readings, MAGNITUD=8 for NO2, validity flags V-only). Data structure confirmed working (sample inspection shows winter 32.6% higher than summer: Jan 49.96, Jul 37.69 µg/m³). Re-enable when rate-limit resolves or dataset moved to different endpoint. Endpoint attempted: https://datos.madrid.es/api/3/action/package_show?id=201410-0-calidad-aire-diario\n"
    }
   },
   {
@@ -473,13 +475,13 @@
   {
    "attribution": "Source: Ayuntamiento de Madrid, datos.madrid.es",
    "cadence": "monthly",
-   "consecutive_failures": 1,
+   "consecutive_failures": 2,
    "docs_url": "https://datos.madrid.es/portal/site/egob",
    "fresh": false,
    "geo_level": "municipality",
    "kind": "official",
-   "last_checked": "2026-07-26T15:14:12+00:00",
-   "last_error": "all 36 optional fetches failed; first: trafico-2026-07: NotFoundError",
+   "last_checked": "2026-07-26T15:35:29+00:00",
+   "last_error": "Could not fetch traffic dataset metadata from CKAN: HTTP Error 403: Forbidden",
    "last_error_type": "AdapterFailure",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 75,
@@ -489,6 +491,7 @@
    "staleness_days": null,
    "status": "failed",
    "declared": {
+    "enabled": false,
     "publisher": "Ayuntamiento de Madrid",
     "license": "Reuse permitted (attribution)",
     "attribution": "Source: Ayuntamiento de Madrid, datos.madrid.es",
@@ -496,7 +499,8 @@
     "kind": "official",
     "cadence": "monthly",
     "max_age_days": 75,
-    "redistribute": true
+    "redistribute": true,
+    "notes": "Not collected. Adapter built for dataset 208627 (Tráfico. Histórico de datos del tráfico desde 2013) successfully discovered and fetched monthly ZIP files initially, producing 6 records (2026-01 through 2026-06) with mean traffic intensity values, verified valid. Adapter was updated to fetch 9 months (6 recent + 3 from 2020 for COVID sanity check), but CKAN API endpoint then returned HTTP 403 Forbidden — rate-limiting kicked in, likely from exploratory API calls during development. Adapter code is production-ready (discover/parse/normalize correct); re-enable when rate-limit window expires or use a direct URL pattern if dataset layout is known. Endpoint: https://datos.madrid.es/api/3/action/package_show?id=208627-0-transporte-ptomedida-historico\n"
    }
   },
   {

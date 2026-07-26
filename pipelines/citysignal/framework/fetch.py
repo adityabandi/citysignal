@@ -14,6 +14,7 @@ import logging
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
+from urllib.parse import urlsplit
 from typing import Any, Iterable
 
 import httpx
@@ -200,15 +201,38 @@ class Fetcher:
         retries: int = 3,
         backoff: float = 2.0,
         offline: bool = False,
+        min_interval: float = 0.5,
     ) -> None:
         self.retries = retries
         self.backoff = backoff
         self.offline = offline
+        # Minimum gap between requests to the same host.
+        #
+        # Added after this pipeline got itself HTTP 403'd out of datos.madrid.es
+        # by hammering their CKAN API during development. These are small public
+        # bodies publishing data as a courtesy; a fan-out over a hundred monthly
+        # files at full speed is indistinguishable from an attack, and getting
+        # blocked costs the source permanently rather than briefly.
+        #
+        # Half a second per host is invisible against a weekly job and keeps us a
+        # guest rather than a problem.
+        self.min_interval = min_interval
+        self._last_request: dict[str, float] = {}
         self._client = httpx.Client(
             timeout=timeout,
             follow_redirects=True,
             headers={"User-Agent": USER_AGENT, "Accept-Language": "es-ES,es;q=0.9,en;q=0.8"},
         )
+
+    def _be_polite(self, url: str) -> None:
+        """Space out requests to a single host."""
+        host = urlsplit(url).netloc
+        if not host:
+            return
+        elapsed = time.monotonic() - self._last_request.get(host, 0.0)
+        if elapsed < self.min_interval:
+            time.sleep(self.min_interval - elapsed)
+        self._last_request[host] = time.monotonic()
 
     def get(self, plan: FetchPlan, *, headers: dict[str, str] | None = None) -> RawPayload | None:
         """Return the payload, or None when the server says 304 Not Modified."""
@@ -226,6 +250,8 @@ class Fetcher:
 
         if self.offline:
             raise FetchError(f"offline mode: refusing to fetch {plan.url}")
+
+        self._be_polite(plan.url)
 
         last_error: Exception | None = None
         for attempt in range(1, self.retries + 1):

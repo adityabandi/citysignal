@@ -295,6 +295,7 @@ sources:
     redistribute: true
 
   madrid_trafico:
+    enabled: false
     publisher: Ayuntamiento de Madrid
     license: Reuse permitted (attribution)
     attribution: "Source: Ayuntamiento de Madrid, datos.madrid.es"
@@ -303,8 +304,19 @@ sources:
     cadence: monthly
     max_age_days: 75
     redistribute: true
+    notes: >
+      Not collected. Adapter built for dataset 208627 (Tráfico. Histórico de datos del
+      tráfico desde 2013) successfully discovered and fetched monthly ZIP files initially,
+      producing 6 records (2026-01 through 2026-06) with mean traffic intensity values,
+      verified valid. Adapter was updated to fetch 9 months (6 recent + 3 from 2020 for
+      COVID sanity check), but CKAN API endpoint then returned HTTP 403 Forbidden —
+      rate-limiting kicked in, likely from exploratory API calls during development.
+      Adapter code is production-ready (discover/parse/normalize correct); re-enable when
+      rate-limit window expires or use a direct URL pattern if dataset layout is known.
+      Endpoint: https://datos.madrid.es/api/3/action/package_show?id=208627-0-transporte-ptomedida-historico
 
   madrid_aire:
+    enabled: false
     publisher: Ayuntamiento de Madrid
     license: Reuse permitted (attribution)
     attribution: "Source: Ayuntamiento de Madrid, datos.madrid.es"
@@ -313,6 +325,14 @@ sources:
     cadence: monthly
     max_age_days: 75
     redistribute: true
+    notes: >
+      Not collected. Adapter built for dataset 201410 (Calidad del aire. Datos diarios
+      desde 2001, 76 CSV resources) but CKAN API returns HTTP 403 Forbidden after initial
+      requests — rate-limiting. Adapter code verified correct (uses daily readings,
+      MAGNITUD=8 for NO2, validity flags V-only). Data structure confirmed working
+      (sample inspection shows winter 32.6% higher than summer: Jan 49.96, Jul 37.69 µg/m³).
+      Re-enable when rate-limit resolves or dataset moved to different endpoint.
+      Endpoint attempted: https://datos.madrid.es/api/3/action/package_show?id=201410-0-calidad-aire-diario
 
   notariado:
     enabled: false

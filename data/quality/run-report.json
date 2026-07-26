@@ -1,14 +1,14 @@
 {
- "run_id": "da0238c2b21d",
- "finished_at": "2026-07-26T15:33:59+00:00",
+ "run_id": "1530e131c8c6",
+ "finished_at": "2026-07-26T15:35:29+00:00",
  "ok": [],
  "failed": [
-  "madrid_aire"
+  "madrid_trafico"
  ],
  "partial": [],
  "results": [
   {
-   "source_id": "madrid_aire",
+   "source_id": "madrid_trafico",
    "status": "failed",
    "records": 0,
    "added": 0,
@@ -17,9 +17,9 @@
    "quarantined": 0,
    "plans": 0,
    "skipped_unchanged": 0,
-   "error": "Could not fetch air quality dataset metadata: HTTP Error 403: Forbidden",
+   "error": "Could not fetch traffic dataset metadata from CKAN: HTTP Error 403: Forbidden",
    "error_type": "AdapterFailure",
-   "duration_s": 0.11,
+   "duration_s": 0.09,
    "latest_observation": null,
    "metrics": [],
    "notes": []

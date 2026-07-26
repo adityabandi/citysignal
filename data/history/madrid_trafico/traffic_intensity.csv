@@ -1,7 +1,0 @@
-metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
-traffic_intensity,mun-28079,municipality,2026-01,325.787002,index,madrid_trafico,2026-01-31,,2026-07-26,ok,0
-traffic_intensity,mun-28079,municipality,2026-02,344.193875,index,madrid_trafico,2026-02-28,,2026-07-26,ok,0
-traffic_intensity,mun-28079,municipality,2026-03,325.174548,index,madrid_trafico,2026-03-31,,2026-07-26,ok,0
-traffic_intensity,mun-28079,municipality,2026-04,330.536861,index,madrid_trafico,2026-04-30,,2026-07-26,ok,0
-traffic_intensity,mun-28079,municipality,2026-05,352.069484,index,madrid_trafico,2026-05-31,,2026-07-26,ok,0
-traffic_intensity,mun-28079,municipality,2026-06,356.94721,index,madrid_trafico,2026-06-30,,2026-07-26,ok,0

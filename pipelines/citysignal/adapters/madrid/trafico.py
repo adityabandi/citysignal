@@ -34,11 +34,10 @@ from ...framework.fetch import FetchPlan, RawPayload
 from ...framework.record import CanonicalRecord, municipality
 
 # Traffic historical dataset: https://datos.madrid.es/dataset/208627-0-transporte-ptomedida-historico
-# Large files (~90-100 MB each). Fetch 6 months only (~600 MB one-time bandwidth cost).
-# Framework skips unchanged months via content-hash, so later runs only pull new data.
-# WARNING: Download can take 10-20 minutes depending on network. A full 12-month backfill takes ~1 GB
-# and ~30-40 minutes; reduce HISTORY_MONTHS if you need faster iteration during development.
-HISTORY_MONTHS = 6
+# Large files (~90-100 MB each). Fetch 9 months total: 6 recent + 3 from 2020 for sanity checks.
+# One-time backfill cost: ~900 MB, ~30 minutes depending on network.
+# Framework skips unchanged months via content-hash; later runs only pull new data.
+HISTORY_MONTHS = 9
 
 
 class MadridTraficoAdapter(BaseAdapter):
@@ -103,10 +102,27 @@ class MadridTraficoAdapter(BaseAdapter):
         if not month_urls:
             raise AdapterFailure("No month/year patterns found in traffic dataset resources")
 
-        # Sort by period descending and take most recent HISTORY_MONTHS
-        sorted_months = sorted(month_urls.items(), reverse=True)[:HISTORY_MONTHS]
+        # Sort by period descending
+        sorted_months = sorted(month_urls.items(), reverse=True)
 
+        # Strategy: take N recent months + key months from 2020 for COVID sanity checks
+        selected_months = {}
+
+        # Take most recent months (for derive engine)
+        for period, url in sorted_months[:6]:
+            selected_months[period] = url
+
+        # Also grab April-May 2020 for COVID sanity check
         for period, url in sorted_months:
+            if period in ("2020-04", "2020-05", "2020-03"):
+                selected_months[period] = url
+
+        # Fill remaining slots with older data if we have room
+        for period, url in sorted_months[:HISTORY_MONTHS]:
+            selected_months[period] = url
+
+        for period in sorted(selected_months.keys(), reverse=True)[:HISTORY_MONTHS]:
+            url = selected_months[period]
             if url:
                 plans.append(
                     FetchPlan(
