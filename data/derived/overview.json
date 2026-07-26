@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T14:33:59+00:00",
+ "generated_at": "2026-07-26T15:00:45+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4343,11 +4343,25 @@
  ],
  "attention": [
   {
+   "source_id": "indeed",
+   "status": "ok",
+   "latest_observation": "2026-06",
+   "staleness_days": 26,
+   "last_error": null
+  },
+  {
+   "source_id": "madrid_licencias",
+   "status": "skipped",
+   "latest_observation": "2026-04",
+   "staleness_days": 87,
+   "last_error": null
+  },
+  {
    "source_id": "notariado",
    "status": "failed",
    "latest_observation": null,
    "staleness_days": null,
-   "last_error": "HTTP 404 from https://www.notariado.org/canal/estadisticas/cien"
+   "last_error": "could not locate CIEN (notary statistics) data. Tried multiple URLs on notariado.org; the data may be behind a login or the page layout may have changed."
   },
   {
    "source_id": "registradores",
@@ -4361,7 +4375,7 @@
    "status": "failed",
    "latest_observation": null,
    "staleness_days": null,
-   "last_error": "HTTP 403 from https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
+   "last_error": "no visados (building permits) Excel file link found on the ministry page and direct URL attempts failed"
   }
  ]
 }

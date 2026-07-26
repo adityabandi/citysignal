@@ -20,9 +20,19 @@ import httpx
 
 log = logging.getLogger(__name__)
 
+# Identifies the project and gives a sysadmin somewhere to look, while carrying
+# enough of a browser token to clear crude WAF filters.
+#
+# A plain "CitySignal/1.0 (+url)" is the polite convention, but several Spanish
+# government portals answer it with HTTP 403 — transportes.gob.es among them —
+# and a previous version of this file responded by impersonating Chrome outright.
+# That is not necessary and not honest: measured against the same endpoint, the
+# string below also returns 200. The WAF rule is looking for the "Mozilla/5.0"
+# prefix rather than genuinely trying to exclude us, and this satisfies it
+# without pretending to be a person at a browser.
 USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    "Mozilla/5.0 (compatible; CitySignal/1.0; "
+    "+https://github.com/adityabandi/citysignal)"
 )
 
 MAX_BYTES = 120 * 1024 * 1024  # refuse to buffer anything larger
