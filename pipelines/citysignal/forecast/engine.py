@@ -232,6 +232,78 @@ class ForecastEngine:
             written.append(path)
         return written
 
+    # ---- the public record -----------------------------------------------
+    def track_record(self) -> dict:
+        """Assemble the accuracy page from the frozen files themselves.
+
+        Built by walking `data/forecasts/` rather than from a running summary, so
+        the page cannot drift from what was committed. If a forecast file exists it
+        appears in the record, scored or still pending — there is deliberately no
+        code path that omits one.
+        """
+        base = self.config.data_dir / FORECAST_DIR
+        scores_by_key: dict[tuple[str, str], dict] = {}
+        scores_path = base / "scores.csv"
+        if scores_path.exists():
+            with scores_path.open(newline="", encoding="utf-8") as handle:
+                for row in csv.DictReader(handle):
+                    scores_by_key[(row["target_id"], row["from_period"])] = row
+
+        frozen: list[dict] = []
+        for path in sorted(base.glob("*/*.json")):
+            record = json.loads(path.read_text())
+            key = (record["target_id"], record["from_period"])
+            scored = scores_by_key.get(key)
+            quantiles = record.get("quantiles") or {}
+            entry = {
+                "target_id": record["target_id"],
+                "question": record.get("question"),
+                "issued_at": record.get("issued_at"),
+                "from_period": record["from_period"],
+                "for_period": record["for_period"],
+                "geo_level": record.get("geo_level"),
+                "unit": record.get("unit"),
+                "model": record.get("model"),
+                "model_verdict": record.get("model_verdict"),
+                "predicted_p50": quantiles.get("p50"),
+                "p_direction_up": record.get("p_direction_up"),
+                "data_vintage": record.get("data_vintage"),
+                "actual": float(scored["actual"]) if scored else None,
+                "pct_error": (
+                    float(scored["pct_error"]) if scored and scored.get("pct_error") else None
+                ),
+                "inside_80": (
+                    int(scored["inside_80"]) if scored and scored.get("inside_80") != "" else None
+                ),
+                "direction_correct": (
+                    int(scored["direction_correct"])
+                    if scored and scored.get("direction_correct") != ""
+                    else None
+                ),
+            }
+            frozen.append(entry)
+
+        settled = [f for f in frozen if f["actual"] is not None]
+        summary = {}
+        if settled:
+            covered = [f["inside_80"] for f in settled if f["inside_80"] is not None]
+            directions = [f["direction_correct"] for f in settled if f["direction_correct"] is not None]
+            errors = sorted(abs(f["pct_error"]) for f in settled if f["pct_error"] is not None)
+            summary = {
+                "coverage": sum(covered) / len(covered) if covered else None,
+                "direction_accuracy": sum(directions) / len(directions) if directions else None,
+                "median_abs_pct": errors[len(errors) // 2] if errors else None,
+            }
+
+        return {
+            "generated_at": _now(),
+            "targets_version": self.spec.get("version"),
+            "frozen": sorted(frozen, key=lambda f: (f["issued_at"] or "", f["target_id"])),
+            "scores": [f for f in frozen if f["actual"] is not None],
+            "pending": len(frozen) - len(settled),
+            "summary": summary,
+        }
+
     # ---- scoring matured forecasts ---------------------------------------
     def score_matured(self) -> dict:
         """Compare frozen forecasts against what actually happened.

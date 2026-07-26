@@ -5,17 +5,18 @@ refreshed weekly, covering multiple countries including Spain (ES).
 
 Data format:
 - Daily observations
-- % change vs 2020-02-01 baseline (7-day trailing average)
+- Index level (100 = 2020-02-01 baseline; 7-day trailing average, seasonally adjusted)
+- Two metrics per day: 'total postings' and 'new postings'; we use 'total postings'
 - Forward-looking: hiring intent leads actual employment by 6-12 weeks
 
-This adapter fetches the raw CSV from GitHub, filters to Spain, aggregates
-daily observations to monthly (taking the last day of each month), and drops
-the incomplete current month. The series should crater in spring 2020 (roughly
--40 to -60%) and recover to positive territory by 2022.
+This adapter fetches the raw CSV from GitHub, filters to Spain and to 'total postings'
+only, aggregates daily observations to monthly (taking the last day of each month),
+and drops the incomplete current month. The series should show ~60 in spring 2020
+(60% of baseline) and recover to 130+ by 2022.
 
 Reference:
 - GitHub: https://github.com/hiring-lab/job_postings_tracker
-- Series: Job Postings Index (% change from 2020-02-01)
+- Series: Job Postings Index (index level, 2020-02-01 = 100, seasonally adjusted)
 """
 
 from __future__ import annotations
@@ -102,15 +103,20 @@ class IndeedAdapter(BaseAdapter):
     def normalize(
         self, frame: pd.DataFrame, plan: FetchPlan, ctx: RunContext
     ) -> Iterable[CanonicalRecord]:
-        """Extract Spain job postings index from Indeed CSV."""
+        """Extract Spain job postings index from Indeed CSV.
+
+        The CSV contains two series per date: 'total postings' and 'new postings'.
+        We use only 'total postings' which represents the full job market.
+        """
         # Normalize column names
         frame.columns = [str(c).strip().lower() for c in frame.columns]
 
         # Identify key columns
-        # Expected: date, country/country_code, value/job_postings_index, etc.
+        # Expected: date, country/country_code, value/job_postings_index, variable, etc.
         date_col = None
         country_col = None
         value_col = None
+        variable_col = None
 
         for col in frame.columns:
             if not date_col and any(x in col for x in ["date", "fecha"]):
@@ -119,6 +125,8 @@ class IndeedAdapter(BaseAdapter):
                 country_col = col
             elif not value_col and any(x in col for x in ["value", "index", "job_postings"]):
                 value_col = col
+            elif not variable_col and "variable" in col:
+                variable_col = col
 
         if not (date_col and value_col):
             # Try to infer from first few rows
@@ -147,6 +155,12 @@ class IndeedAdapter(BaseAdapter):
                 if country_col:
                     country_str = str(getattr(row, country_col, "")).strip().upper()
                     if country_str not in ("ES", "ESP", "SPAIN", "ESPAÑA"):
+                        continue
+
+                # Filter to 'total postings' if variable column exists
+                if variable_col:
+                    variable_str = str(getattr(row, variable_col, "")).strip().lower()
+                    if variable_str != "total postings":
                         continue
 
                 # Parse value
@@ -194,7 +208,7 @@ class IndeedAdapter(BaseAdapter):
         if not records:
             return records
 
-        # Sort by period
+        # Sort by period to find the latest
         sorted_records = sorted(records, key=lambda r: r.period)
 
         # Remove the latest month if today is still in the first half of the month
@@ -207,12 +221,19 @@ class IndeedAdapter(BaseAdapter):
             latest_period = sorted_records[-1].period
             period_last_day = period_end(latest_period)
 
-            # If the period's last day is in the future (incomplete month), drop it
+            # If the period's last day is in the future (incomplete month), drop ALL
+            # occurrences of it (there may be duplicates from multiple fetch plans)
             if period_last_day >= today:
-                log.info("indeed: dropping incomplete month %s", latest_period)
-                return sorted_records[:-1]
+                filtered = [r for r in records if r.period != latest_period]
+                log.info(
+                    "indeed: dropping incomplete month %s (%d → %d records)",
+                    latest_period,
+                    len(records),
+                    len(filtered),
+                )
+                return filtered
 
-        return sorted_records
+        return records
 
     @staticmethod
     def _parse_date(value: str) -> str | None:

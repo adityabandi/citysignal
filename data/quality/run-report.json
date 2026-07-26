@@ -1,69 +1,27 @@
 {
- "run_id": "4db8a2cdb2a2",
- "finished_at": "2026-07-26T14:32:28+00:00",
- "ok": [
-  "serpavi",
-  "madrid_licencias",
-  "indeed"
+ "run_id": "b8662e3dd63b",
+ "finished_at": "2026-07-26T14:44:11+00:00",
+ "ok": [],
+ "failed": [
+  "serpavi"
  ],
- "failed": [],
  "partial": [],
  "results": [
   {
    "source_id": "serpavi",
-   "status": "skipped",
+   "status": "failed",
    "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 1,
-   "skipped_unchanged": 1,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.18,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "madrid_licencias",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 1,
-   "skipped_unchanged": 1,
-   "error": null,
-   "error_type": null,
-   "duration_s": 1.06,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "indeed",
-   "status": "ok",
-   "records": 155,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 78,
-   "quarantined": 0,
-   "plans": 2,
+   "plans": 21,
    "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 0.11,
-   "latest_observation": "2026-07",
-   "metrics": [
-    "job_postings_index"
-   ],
+   "error": "all 21 optional fetches failed; first: serpavi-madrid-2011: NotFoundError",
+   "error_type": "AdapterFailure",
+   "duration_s": 1.1,
+   "latest_observation": null,
+   "metrics": [],
    "notes": []
   }
  ]

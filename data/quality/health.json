@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T14:32:28+00:00",
+ "generated_at": "2026-07-26T14:44:11+00:00",
  "sources": {
   "aena": {
    "attribution": "Source: Aena",
@@ -168,14 +168,14 @@
    "cadence": "monthly",
    "consecutive_failures": 0,
    "docs_url": "https://www.hiringlab.org/research/jobs-postings-tracker/",
-   "fresh": true,
+   "fresh": false,
    "geo_level": "nation",
    "kind": "research",
-   "last_checked": "2026-07-26T14:32:28+00:00",
+   "last_checked": "2026-07-26T14:44:01+00:00",
    "last_error": null,
    "last_error_type": "NotFoundError",
-   "last_success": "2026-07-26T14:32:28+00:00",
-   "latest_observation": "2026-07",
+   "last_success": "2026-07-26T14:44:01+00:00",
+   "latest_observation": "2026-06",
    "license": "Free for public use with attribution",
    "max_age_days": 14,
    "metrics": [
@@ -183,7 +183,7 @@
    ],
    "publisher": "Indeed Hiring Lab",
    "source_id": "indeed",
-   "staleness_days": -5,
+   "staleness_days": 26,
    "status": "ok"
   },
   "ine": {
@@ -245,14 +245,14 @@
    "cadence": "monthly",
    "consecutive_failures": 0,
    "docs_url": "https://datos.madrid.es/dataset/300193-0-licencias-urbanisticas",
-   "fresh": true,
+   "fresh": false,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-26T14:32:28+00:00",
+   "last_checked": "2026-07-26T14:44:02+00:00",
    "last_error": null,
    "last_error_type": "AdapterFailure",
-   "last_success": "2026-07-26T14:32:28+00:00",
-   "latest_observation": "2026-06",
+   "last_success": "2026-07-26T14:44:02+00:00",
+   "latest_observation": "2026-04",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 45,
    "metrics": [
@@ -260,8 +260,8 @@
    ],
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_licencias",
-   "staleness_days": 26,
-   "status": "skipped"
+   "staleness_days": 87,
+   "status": "ok"
   },
   "madrid_locales": {
    "attribution": "Source: Ayuntamiento de Madrid, Censo de Locales y Actividades",
@@ -444,13 +444,13 @@
   "serpavi": {
    "attribution": "Source: MIVAU / SERPAVI",
    "cadence": "annual",
-   "consecutive_failures": 0,
+   "consecutive_failures": 2,
    "docs_url": "https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi",
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-26T14:32:27+00:00",
-   "last_error": null,
+   "last_checked": "2026-07-26T14:44:11+00:00",
+   "last_error": "all 21 optional fetches failed; first: serpavi-madrid-2011: NotFoundError",
    "last_error_type": "AdapterFailure",
    "last_success": "2026-07-26T14:32:27+00:00",
    "latest_observation": "2026",
@@ -464,7 +464,7 @@
    "publisher": "Ministerio de Vivienda y Agenda Urbana",
    "source_id": "serpavi",
    "staleness_days": -158,
-   "status": "skipped"
+   "status": "failed"
   },
   "trends_manual": {
    "attribution": "Source: Google Trends, exported manually",
@@ -493,20 +493,20 @@
    "status": "ok"
   },
   "visados": {
-   "attribution": "Source: Ministerio de Transportes, Visados de Dirección de Obra",
+   "attribution": "Source: Ministry of Transport, Building Permits Statistics",
    "cadence": "monthly",
-   "consecutive_failures": 1,
+   "consecutive_failures": 2,
    "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas",
    "fresh": false,
    "geo_level": "province",
    "kind": "official",
-   "last_checked": "2026-07-26T14:20:52+00:00",
-   "last_error": "HTTP 403 from https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas",
-   "last_error_type": "NotFoundError",
+   "last_checked": "2026-07-26T14:41:20+00:00",
+   "last_error": "could not fetch the ministry's housing statistics listing page: HTTP 403 from https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas",
+   "last_error_type": "AdapterFailure",
    "license": "Reuse permitted (attribution)",
-   "max_age_days": 75,
+   "max_age_days": 120,
    "metrics": [],
-   "publisher": "Ministerio de Transportes y Movilidad Sostenible / Colegios de Arquitectos",
+   "publisher": "Ministerio de Transportes y Movilidad Sostenible",
    "source_id": "visados",
    "staleness_days": null,
    "status": "failed"

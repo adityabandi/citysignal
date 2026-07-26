@@ -21,8 +21,8 @@ import httpx
 log = logging.getLogger(__name__)
 
 USER_AGENT = (
-    "CitySignal/0.1 (+https://github.com/adityabandi/citysignal) "
-    "public-interest urban statistics aggregator"
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 )
 
 MAX_BYTES = 120 * 1024 * 1024  # refuse to buffer anything larger

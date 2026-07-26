@@ -10,6 +10,8 @@ completions by ~2 years, so this is the supply pipeline's earliest signal.
 
 The adapter downloads the current CSV, parses district-level monthly aggregates,
 and emits two metrics: total licences granted and new-build subset only.
+Recent months with registration lag are automatically filtered: trailing months
+below ~40% of the median of the preceding 12 months are dropped.
 """
 
 from __future__ import annotations
@@ -227,6 +229,59 @@ class MadridLicenciasAdapter(BaseAdapter):
             raise AdapterFailure(f"{plan.label}: produced zero records")
 
         return out
+
+    def finalize(
+        self, records: list[CanonicalRecord], ctx: RunContext
+    ) -> Iterable[CanonicalRecord]:
+        """Filter incomplete trailing months with registration lag.
+
+        The Madrid council's licence registration has a lag: recent months are
+        still receiving updates. We drop trailing months that fall below 40% of
+        the median of the preceding 12 complete months. This prevents
+        accidentally publishing catastrophic collapses that are just registration
+        delays.
+        """
+        if not records:
+            return records
+
+        # Aggregate by month (sum across all districts)
+        by_month: dict[str, float] = {}
+        for record in records:
+            if record.period not in by_month:
+                by_month[record.period] = 0
+            by_month[record.period] += record.value
+
+        # Get sorted periods
+        sorted_periods = sorted(by_month.keys())
+        if len(sorted_periods) < 13:
+            # Not enough data to detect lag pattern
+            return records
+
+        # Find the threshold: median of the 12 months before the latest
+        recent_12_periods = sorted_periods[-13:-1]  # 12 months before the latest
+        recent_12_values = [by_month[p] for p in recent_12_periods]
+        median_value = sorted(recent_12_values)[len(recent_12_values) // 2]
+        threshold = median_value * 0.4
+
+        # Find how many trailing months fall below the threshold
+        trailing_incomplete = 0
+        for period in reversed(sorted_periods):
+            if by_month[period] < threshold:
+                trailing_incomplete += 1
+            else:
+                break
+
+        if trailing_incomplete > 0:
+            log.info(
+                "madrid_licencias: dropping %d incomplete trailing months "
+                "(below %.0f %% of median)",
+                trailing_incomplete,
+                40.0,
+            )
+            periods_to_drop = set(sorted_periods[-trailing_incomplete:])
+            return [r for r in records if r.period not in periods_to_drop]
+
+        return records
 
     @staticmethod
     def _parse_period(value: str) -> str | None:

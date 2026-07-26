@@ -187,10 +187,14 @@ def cmd_forecast(args: argparse.Namespace) -> int:
     scored = engine.score_matured()
     print(f"scored {scored['scored']} matured, {scored['pending']} still pending")
 
-    out = config.data_dir / "derived" / "forecasts.json"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(
+    derived = config.data_dir / "derived"
+    derived.mkdir(parents=True, exist_ok=True)
+    (derived / "forecasts.json").write_text(
         json.dumps(payload, indent=1, ensure_ascii=False, sort_keys=False) + "\n",
+        encoding="utf-8",
+    )
+    (derived / "track-record.json").write_text(
+        json.dumps(engine.track_record(), indent=1, ensure_ascii=False, sort_keys=False) + "\n",
         encoding="utf-8",
     )
     return 0

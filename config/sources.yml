@@ -283,3 +283,23 @@ sources:
     cadence: monthly
     max_age_days: 14
     redistribute: true
+
+  visados:
+    publisher: Ministerio de Transportes y Movilidad Sostenible
+    license: Reuse permitted (attribution)
+    attribution: "Source: Ministry of Transport, Building Permits Statistics"
+    docs_url: https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas
+    kind: official
+    cadence: monthly
+    max_age_days: 120
+    redistribute: true
+
+  notariado:
+    publisher: Consejo General del Notariado
+    license: Reuse permitted (attribution)
+    attribution: "Source: Consejo General del Notariado, CIEN"
+    docs_url: https://www.notariado.org
+    kind: official
+    cadence: monthly
+    max_age_days: 120
+    redistribute: true

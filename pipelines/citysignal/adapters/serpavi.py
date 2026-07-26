@@ -70,56 +70,39 @@ class SerpavIAdapter(BaseAdapter):
 
     def discover(self, ctx: RunContext) -> list[FetchPlan]:
         # SERPAVI district-level data is available from Madrid city council's
-        # statistics portal, updated annually. We try multiple URLs in order of
-        # preference, with optional fallbacks.
+        # statistics portal, updated annually from 2011 onward. The data is organized
+        # in grouped-year folders (e.g., "2022_2023_2024_2025" containing files for
+        # those years). We fetch known working folders with optional=True to build
+        # a historical series without failing if some years are missing.
 
         plans: list[FetchPlan] = []
+        base = "https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Edificaci%C3%B3n%20y%20Vivienda/Mercado%20de%20la%20Vivienda/Sistema%20Estatal%20de%20%C3%8Dndices%20de%20Referencia%20del%20Precio%20del%20Alquiler%20de%20Vivienda"
 
-        # Primary: Madrid city council current year (2026)
-        plans.append(
-            FetchPlan(
-                url=MADRID_SERPAVI_URL,
-                fmt="xlsx",
-                label="serpavi-madrid-2026",
-                optional=False,
-                meta={"source": "madrid", "year": "2026"},
-            )
-        )
+        # Known working folder structure (folders may contain multiple years)
+        # Each tuple is (folder_name, years_to_try_in_that_folder)
+        known_folders = [
+            ("2022_2023_2024_2025", list(range(2022, 2027))),  # 2022-2026
+            ("2020_2021", [2020, 2021]),
+            ("2017_2018_2019", [2017, 2018, 2019]),
+            ("2014_2015_2016", [2014, 2015, 2016]),
+            ("2011_2012_2013", [2011, 2012, 2013]),
+        ]
 
-        # Secondary: Try to discover other years from the Madrid portal
-        try:
-            page = ctx.fetcher.get(
-                FetchPlan(
-                    url="https://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Estadistica/Areas-de-informacion-estadistica/Edificacion-y-vivienda/Mercado-de-la-vivienda/Sistema-estatal-de-indices-de-referencia-del-precio-del-alquiler-de-viviendas/",
-                    fmt="html",
-                    label="serpavi-madrid-page",
-                )
-            )
-            if page:
-                # Extract all SERPAVI district files from the page
-                import re
-                for match in re.finditer(
-                    r'href="([^"]*INDICE%20ESTATAL%20ALQUILER%20_distritos[^"]*\.xlsx)"',
-                    page.text(),
-                    re.IGNORECASE,
-                ):
-                    url = match.group(1)
-                    if not url.startswith("http"):
-                        url = f"https://www.madrid.es{url}"
-                    plans.append(
-                        FetchPlan(
-                            url=url,
-                            fmt="xlsx",
-                            label="serpavi-madrid-discovered",
-                            optional=True,
-                            meta={"source": "madrid"},
-                        )
+        for folder, years in known_folders:
+            for year in years:
+                url = f"{base}/{folder}/INDICE%20ESTATAL%20ALQUILER%20_distritos{year}.xlsx"
+                plans.append(
+                    FetchPlan(
+                        url=url,
+                        fmt="xlsx",
+                        label=f"serpavi-madrid-{year}",
+                        optional=True,
+                        meta={"source": "madrid", "year": str(year)},
                     )
-        except Exception as exc:  # noqa: BLE001
-            log.debug("serpavi: could not discover additional years from Madrid portal: %s", exc)
+                )
 
         if not plans:
-            raise AdapterFailure("could not discover SERPAVI Excel download URL")
+            raise AdapterFailure("could not generate SERPAVI fetch plans")
         return plans
 
     def parse(self, payload: RawPayload, ctx: RunContext) -> pd.DataFrame:

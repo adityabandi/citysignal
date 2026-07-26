@@ -210,6 +210,39 @@ metrics:
     direction: 1
     lag: coincident
     range: [20000, 700000]
+  visados_new_build:
+    label: Building permit visas (new construction)
+    plain: How many building permits were filed for new construction — the earliest signal of supply arriving.
+    unit: dwellings
+    cadence: monthly
+    geo_level: province
+    source_id: visados
+    section: supply
+    direction: 1
+    lag: leading
+    range: [0, 20000]
+  notary_sales:
+    label: Housing sales (notary records)
+    plain: How many housing sales were signed before a notary — leading the land registry by about 2 months.
+    unit: transactions
+    cadence: monthly
+    geo_level: province
+    source_id: notariado
+    section: housing
+    direction: 1
+    lag: leading
+    range: [0, 40000]
+  notary_price_m2:
+    label: Housing price per square metre (notary records)
+    plain: The price per square metre of housing sold, from notary records.
+    unit: eur_m2
+    cadence: monthly
+    geo_level: province
+    source_id: notariado
+    section: housing
+    direction: 1
+    lag: leading
+    range: [200, 8000]
 
   # -------------------------------------------------------------------- labour
   unemployment_registered:
@@ -735,7 +768,7 @@ metrics:
       to within the one month DGT itself never published.
   job_postings_index:
     label: Job postings index
-    plain: The weekly change in job posting volume on Indeed, showing hiring intent.
+    plain: Index level of total job postings on Indeed for Spain (100 = February 2020), seasonally adjusted and 7-day lagged. A forward-looking indicator of hiring intent.
     unit: index
     cadence: monthly
     geo_level: nation
@@ -743,7 +776,11 @@ metrics:
     section: work
     direction: 1
     lag: leading
-    range: [-100, 500]
+    range: [0, 200]
+    note: >
+      Indeed publishes daily observations for both 'total postings' and 'new postings';
+      we use 'total postings'. The index is seasonally adjusted. February 2020 baseline = 100.
+      Recent months are withheld until Indeed's data is complete (before the month ends).
 
   # ------------------------------------------------------------ Madrid deep dive
   padron_district:
@@ -856,3 +893,7 @@ metrics:
     direction: 1
     lag: leading
     range: [0, 5000]
+    note: >
+      Recent months are withheld until the council's registration catches up.
+      Trailing months below ~40% of the preceding 12-month median are dropped
+      to prevent false collapses from appearing in the data due to registration lag.
