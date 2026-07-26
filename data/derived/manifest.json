@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-25T19:41:52+00:00",
+ "generated_at": "2026-07-26T14:33:59+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -31,19 +31,21 @@
   "housing_completions",
   "housing_starts",
   "insolvencies",
+  "job_postings_index",
   "land_price",
+  "licences_granted",
   "locales_stock",
   "locales_vacancy_rate",
   "mortgage_rate_new",
   "mortgages_count",
-  "news_housing_volume",
-  "news_tone",
-  "news_volume",
   "npl_ratio",
   "padron_district",
   "population_padron",
   "port_passengers",
   "property_transfers",
+  "rent_district_dwellings",
+  "rent_district_m2",
+  "rent_district_total",
   "rent_reference",
   "search_buy_momentum",
   "search_rental_pressure",
@@ -70,7 +72,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 411,
-  "observations": 16317
+  "series": 487,
+  "observations": 19589
  }
 }

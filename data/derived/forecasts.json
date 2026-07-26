@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-26T14:30:17+00:00",
+ "generated_at": "2026-07-26T14:33:59+00:00",
  "as_of": "2026-07-26",
  "city": "madrid",
- "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+ "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
  "vintage_basis": {
   "published_at": 1572,
-  "declared_lag": 16942
+  "declared_lag": 17683
  },
  "revisions_in_history": 0,
  "targets_version": "targets-v1",
@@ -22,7 +22,7 @@
    "horizon": 3,
    "unit_of_horizon": "months",
    "unit": "transactions",
-   "issued_at": "2026-07-26T14:30:17+00:00",
+   "issued_at": "2026-07-26T14:33:59+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-05",
    "for_period": "2026-08",
@@ -30,10 +30,10 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 16942
+    "declared_lag": 17683
    },
    "direction_only": false,
    "p_direction_up": 0.4782608695652174,
@@ -102,7 +102,7 @@
    "horizon": 6,
    "unit_of_horizon": "months",
    "unit": "transactions",
-   "issued_at": "2026-07-26T14:30:17+00:00",
+   "issued_at": "2026-07-26T14:33:59+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-05",
    "for_period": "2026-11",
@@ -110,10 +110,10 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 16942
+    "declared_lag": 17683
    },
    "direction_only": false,
    "p_direction_up": 0.4845814977973568,
@@ -182,7 +182,7 @@
    "horizon": 2,
    "unit_of_horizon": "quarters",
    "unit": "eur_m2",
-   "issued_at": "2026-07-26T14:30:17+00:00",
+   "issued_at": "2026-07-26T14:33:59+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-Q1",
    "for_period": "2026-Q3",
@@ -190,10 +190,10 @@
    "model": "drift",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 16942
+    "declared_lag": 17683
    },
    "direction_only": false,
    "p_direction_up": 0.3445378151260504,
@@ -262,7 +262,7 @@
    "horizon": 4,
    "unit_of_horizon": "quarters",
    "unit": "eur_m2",
-   "issued_at": "2026-07-26T14:30:17+00:00",
+   "issued_at": "2026-07-26T14:33:59+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-Q1",
    "for_period": "2027-Q1",
@@ -270,10 +270,10 @@
    "model": "drift",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 16942
+    "declared_lag": 17683
    },
    "direction_only": false,
    "p_direction_up": 0.29914529914529914,
@@ -342,7 +342,7 @@
    "horizon": 3,
    "unit_of_horizon": "months",
    "unit": "persons",
-   "issued_at": "2026-07-26T14:30:17+00:00",
+   "issued_at": "2026-07-26T14:33:59+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-06",
    "for_period": "2026-09",
@@ -350,10 +350,10 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 16942
+    "declared_lag": 17683
    },
    "direction_only": false,
    "p_direction_up": 0.4367816091954023,
@@ -422,7 +422,7 @@
    "horizon": 6,
    "unit_of_horizon": "months",
    "unit": "persons",
-   "issued_at": "2026-07-26T14:30:17+00:00",
+   "issued_at": "2026-07-26T14:33:59+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-06",
    "for_period": "2026-12",
@@ -430,10 +430,10 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:11bfaee4cb15d9cece037a01cabe356b",
+   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 16942
+    "declared_lag": 17683
    },
    "direction_only": false,
    "p_direction_up": 0.39285714285714285,
