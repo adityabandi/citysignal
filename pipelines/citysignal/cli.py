@@ -200,6 +200,19 @@ def cmd_forecast(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_report(args: argparse.Namespace) -> int:
+    """Generate investor briefs and district reports as JSON and PDF."""
+    from .reports.build import build_reports
+
+    return build_reports(
+        kind=args.kind,
+        district=args.district,
+        agent_path=args.agent,
+        out_dir=args.out,
+        root=Path(args.root) if args.root else None,
+    )
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="citysignal", description=__doc__)
     parser.add_argument("--root", help="repository root (defaults to the installed package's repo)")
@@ -235,6 +248,14 @@ def main(argv: list[str] | None = None) -> int:
 
     listing = sub.add_parser("list", help="list registered adapters")
     listing.set_defaults(func=cmd_list)
+
+    report = sub.add_parser("report", help="generate investor briefs and district reports")
+    report.add_argument("--kind", choices=["brief", "district", "all"], default="all",
+                        help="report type to generate (default all)")
+    report.add_argument("--district", help="specific district code (e.g., 01)")
+    report.add_argument("--agent", type=Path, help="path to agent.yml for branding")
+    report.add_argument("--out", type=Path, help="output directory (default reports/out)")
+    report.set_defaults(func=cmd_report)
 
     everything = sub.add_parser("all", help="fetch then derive")
     everything.add_argument("--source", action="append")

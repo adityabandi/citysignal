@@ -1,0 +1,55 @@
+name: Generate reports
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * 0"  # Weekly on Sunday 02:17 UTC
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  reports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Install typst
+        run: |
+          VERSION="0.12.0"
+          ARCH="x86_64-unknown-linux-musl"
+
+          mkdir -p /tmp/typst-install
+          cd /tmp/typst-install
+
+          curl -L "https://github.com/typst/typst/releases/download/v${VERSION}/typst-${ARCH}.tar.xz" \
+            --output typst.tar.xz
+          tar -xf typst.tar.xz
+
+          # Verify installation
+          ./typst/typst --version
+
+          # Add to PATH for this step and future steps
+          echo "/tmp/typst-install/typst" >> $GITHUB_PATH
+
+      - name: Generate reports
+        run: uv run citysignal report --kind all
+
+      - name: List generated files
+        run: ls -lh reports/out/
+
+      - name: Upload reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: citysignal-reports
+          path: reports/out/*.pdf
+          retention-days: 30
+          if-no-files-found: warn

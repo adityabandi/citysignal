@@ -688,6 +688,39 @@ metrics:
     direction: 1
     lag: leading
     range: [0, 400]
+  search_commercial_rent:
+    label: Commercial premises search
+    plain: How hard people are searching for a commercial unit to rent in Madrid — shops and bars looking for a home.
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: trends_manual
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100]
+  search_eviction:
+    label: Eviction search attention
+    plain: How often people across Spain look up evictions. Worry and legal research, not evictions themselves.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: trends_manual
+    section: attention
+    direction: -1
+    lag: leading
+    range: [0, 100]
+  search_barrio_attention:
+    label: Neighbourhood search attention
+    plain: How often people search for flats in this specific neighbourhood, rather than the city as a whole.
+    unit: index
+    cadence: monthly
+    geo_level: district
+    source_id: trends_manual
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 100]
   search_hardship:
     label: Household hardship search
     plain: How hard people are searching for help with money — benefits, debt, eviction.
@@ -755,6 +788,23 @@ metrics:
     direction: -1
     lag: leading
     range: [0, 100]
+
+  traffic_intensity:
+    label: Traffic intensity
+    plain: How many vehicles moved through the city, aggregated from thousands of sensors to a monthly mean.
+    unit: index
+    cadence: monthly
+    geo_level: municipality
+    source_id: madrid_trafico
+    section: work
+    direction: 1
+    lag: coincident
+    range: [0, 10000]
+    note: >
+      Monthly mean of hourly vehicle counts across all traffic sensors. This is a live
+      activity proxy: traffic volume tracks commuting and commercial movement in real time,
+      and cannot be gamed like survey data. The 2020 COVID lockdown produces a clear 60-80%
+      collapse in April-May.
 
   vehicle_registrations:
     label: New vehicle registrations
@@ -919,3 +969,92 @@ metrics:
       Recent months are withheld until the council's registration catches up.
       Trailing months below ~40% of the preceding 12-month median are dropped
       to prevent false collapses from appearing in the data due to registration lag.
+
+  # ---------------------------------------------------- leading indicators (new)
+  births:
+    label: Births registered
+    plain: How many babies were born in the province, from vital statistics.
+    unit: persons
+    cadence: annual
+    geo_level: province
+    source_id: ine
+    section: people
+    direction: 1
+    lag: leading
+    range: [0, 300000]
+    note: >
+      Annual births by province from INE vital statistics. Births lead household
+      formation and housing demand by several years as families establish.
+  marriages:
+    label: Marriages registered
+    plain: How many marriages were recorded in vital statistics.
+    unit: marriages
+    cadence: annual
+    geo_level: province
+    source_id: ine
+    section: people
+    direction: 1
+    lag: leading
+    range: [0, 200000]
+    note: >
+      Annual marriages by province from INE. Marriage is often a precursor to
+      household formation and residential decisions.
+  household_count:
+    label: Household count
+    plain: The number of households in the province.
+    unit: households
+    cadence: annual
+    geo_level: province
+    source_id: ine
+    section: people
+    direction: 1
+    lag: lagging
+    range: [100000, 2000000]
+    note: >
+      Annual household count from INE's Encuesta Continua de Hogares (ECH).
+      Shrinking household size (rising count for stable population) signals
+      increased demand for dwelling units.
+  epc_registrations:
+    label: Energy Performance Certificate registrations
+    plain: How many new buildings or renovations had energy certificates registered.
+    unit: certificates
+    cadence: monthly
+    geo_level: ccaa
+    source_id: certificados_energeticos
+    section: housing
+    direction: 1
+    lag: leading
+    range: [0, 100000]
+    note: >
+      Monthly registrations of energy performance certificates. Required before
+      property sale or rental, certificates appear weeks before listings, making
+      them a leading indicator of housing supply arriving to market.
+  consumer_confidence:
+    label: Consumer confidence index
+    plain: How optimistic Spanish consumers are about their financial situation and jobs.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: cis
+    section: work
+    direction: 1
+    lag: leading
+    range: [0, 200]
+    note: >
+      Monthly consumer confidence index from CIS, where 100 is neutral. Confidence
+      in employment and household finances leads discretionary spending and housing
+      demand.
+  bank_branches:
+    label: Bank branch count
+    plain: The number of bank branches (sucursales) operating in the province.
+    unit: branches
+    cadence: quarterly
+    geo_level: province
+    source_id: bde_sucursales
+    section: credit
+    direction: 1
+    lag: lagging
+    range: [0, 5000]
+    note: >
+      Branch counts from Banco de España. Branch closures are a hard measure of
+      banking sector retrenchment and may signal retreat from a market.

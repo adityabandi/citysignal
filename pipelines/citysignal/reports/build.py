@@ -350,14 +350,28 @@ def build_reports(
     if kind in ("district", "all"):
         target_districts = [district] if district else dist_codes
         for dist_code in target_districts:
-            _compile_pdf(f"district-{dist_code}", reports_dir, out_dir, typst_bin)
+            _compile_pdf(
+                f"district-{dist_code}", reports_dir, out_dir, typst_bin,
+                template_name="district-report",
+            )
 
     return 0
 
 
-def _compile_pdf(report_name: str, reports_dir: Path, out_dir: Path, typst_bin: str) -> None:
-    """Compile a single report with typst."""
-    template = reports_dir / f"{report_name}.typ"
+def _compile_pdf(
+    report_name: str,
+    reports_dir: Path,
+    out_dir: Path,
+    typst_bin: str,
+    template_name: str | None = None,
+) -> None:
+    """Compile one report.
+
+    `report_name` names the data file and the output PDF; `template_name` names
+    the typst source. They differ for districts, where a single template renders
+    all twenty-one from twenty-one different payloads.
+    """
+    template = reports_dir / f"{template_name or report_name}.typ"
     if not template.exists():
         logger.warning(f"Template not found: {template}")
         return
@@ -365,12 +379,19 @@ def _compile_pdf(report_name: str, reports_dir: Path, out_dir: Path, typst_bin: 
     json_file = out_dir / f"{report_name}.json"
     pdf_file = out_dir / f"{report_name}.pdf"
 
+    # Make json_file path relative to reports_dir for typst input resolution
+    try:
+        json_rel = json_file.relative_to(reports_dir)
+    except ValueError:
+        # If not relative, use absolute path
+        json_rel = json_file
+
     cmd = [
         typst_bin,
         "compile",
         str(template),
         str(pdf_file),
-        f"--input=data={json_file}",
+        f"--input=data={json_rel}",
     ]
 
     logger.info(f"  compiling {report_name}.typ -> {pdf_file.name}")

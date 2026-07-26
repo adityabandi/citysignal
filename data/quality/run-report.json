@@ -1,30 +1,37 @@
 {
- "run_id": "bdd64ff3aa7e",
- "finished_at": "2026-07-26T15:02:53+00:00",
+ "run_id": "750b956ae209",
+ "finished_at": "2026-07-26T15:19:13+00:00",
  "ok": [
-  "visados"
+  "trends_manual"
  ],
  "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "visados",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "source_id": "trends_manual",
+   "status": "ok",
+   "records": 1869,
+   "added": 297,
    "revised": 0,
-   "unchanged": 0,
+   "unchanged": 1572,
    "quarantined": 0,
-   "plans": 1,
-   "skipped_unchanged": 1,
+   "plans": 13,
+   "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.57,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "duration_s": 0.27,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "search_barrio_attention",
+    "search_buy_momentum",
+    "search_commercial_rent",
+    "search_eviction",
+    "search_relocation",
+    "search_rental_pressure",
+    "search_room_share",
+    "search_tenure_switch"
+   ],
+   "notes": []
   }
  ]
 }

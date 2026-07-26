@@ -1,0 +1,76 @@
+{
+  "city": "madrid",
+  "district_code": "19",
+  "month": "2026-07-26",
+  "generated_at": "2026-07-26T15:03:49+00:00",
+  "agent": {
+    "name": "Agente de Ejemplo",
+    "company": "Inmobiliaria Ejemplo S.L.",
+    "phone": "000-000-0000",
+    "email": "info@example.com",
+    "logo_path": ""
+  },
+  "district_metrics": {
+    "rent_m2": 11.007018,
+    "population": 99011.0,
+    "population_yoy": 1.9964356721230414,
+    "vacancy_rate": 29.395852,
+    "horeca_stock": 199.0,
+    "vut_licensed": 7.0,
+    "licences_granted": 1.0
+  },
+  "ranking": {
+    "rank": 20,
+    "total": 21
+  },
+  "forecasts": [
+    {
+      "target_id": "transfers_3m",
+      "question": "How many homes will change hands in Madrid province three months from now?",
+      "p10": 8649.1,
+      "p50": 10576.0,
+      "p90": 12903.3,
+      "unit": "transactions"
+    },
+    {
+      "target_id": "transfers_6m",
+      "question": "How many homes will change hands in Madrid province six months from now?",
+      "p10": 8152.4,
+      "p50": 10582.0,
+      "p90": 13104.2,
+      "unit": "transactions"
+    },
+    {
+      "target_id": "appraised_2q",
+      "question": "What will a square metre of Madrid-province housing be appraised at two quarters from now?",
+      "p10": 4233.793,
+      "p50": 4307.0,
+      "p90": 4373.813,
+      "unit": "eur_m2"
+    },
+    {
+      "target_id": "appraised_4q",
+      "question": "And a year out?",
+      "p10": 4365.493,
+      "p50": 4529.767,
+      "p90": 4713.82,
+      "unit": "eur_m2"
+    },
+    {
+      "target_id": "unemployment_3m",
+      "question": "How many people will be signed on as unemployed in Madrid city three months from now?",
+      "p10": 117270.2,
+      "p50": 128251.0,
+      "p90": 134769.6,
+      "unit": "persons"
+    },
+    {
+      "target_id": "unemployment_6m",
+      "question": "And six months out?",
+      "p10": 107604.6,
+      "p50": 127022.0,
+      "p90": 137200.8,
+      "unit": "persons"
+    }
+  ]
+}

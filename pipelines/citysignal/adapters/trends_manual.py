@@ -43,7 +43,8 @@ from ..framework.fetch import FetchPlan, RawPayload
 from ..framework.record import CanonicalRecord
 
 # data/manual/trends/<basket>__<geo_id>.csv
-FILENAME = re.compile(r"^(?P<basket>[a-z_]+)__(?P<geo>[a-z]+-?\d*|es)\.csv$")
+# <basket>__<geo_id>.csv — geo_id may be mun-28079, prov-28, dist-28079-07 or es.
+FILENAME = re.compile(r"^(?P<basket>[a-z_]+)__(?P<geo>es|[a-z]+-\d+(?:-\d+)?)\.csv$")
 
 
 class TrendsManualAdapter(BaseAdapter):

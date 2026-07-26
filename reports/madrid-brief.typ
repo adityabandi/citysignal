@@ -1,4 +1,3 @@
-#import "@preview/tablex:0.0.8": tablex, cellx
 #set page(paper: "a4", margin: (top: 20mm, bottom: 20mm, left: 20mm, right: 20mm))
 #set text(font: "Noto Serif", size: 11pt, hyphenate: false)
 #set par(spacing: 1.2em)
@@ -7,12 +6,66 @@
 #let accent = rgb(57, 135, 229)  // #3987e5
 
 #let format_num(val, decimals: 0) = {
-  if val == none or val == null {
+  if val == none {
     "—"
   } else if decimals == 0 {
     str(int(calc.round(val)))
   } else {
     str(calc.round(val, digits: decimals))
+  }
+}
+
+#let format_signed_num(val, decimals: 2) = {
+  if val == none {
+    "not enough inputs reporting"
+  } else if val >= 0 {
+    "+" + str(calc.round(val, digits: decimals))
+  } else {
+    str(calc.round(val, digits: decimals))
+  }
+}
+
+#let get_verdict(val) = {
+  if val == none {
+    ""
+  } else if val > 0.5 {
+    "above normal"
+  } else if val < -0.5 {
+    "below normal"
+  } else {
+    "about normal"
+  }
+}
+
+#let format_month(date_str) = {
+  let parts = date_str.split("-")
+  if parts.len() >= 2 {
+    let year = parts.at(0)
+    let month = parts.at(1)
+    let month_names = ("January", "February", "March", "April", "May", "June",
+                       "July", "August", "September", "October", "November", "December")
+    let month_num = int(month)
+    if month_num >= 1 and month_num <= 12 {
+      month_names.at(month_num - 1) + " " + year
+    } else {
+      date_str
+    }
+  } else {
+    date_str
+  }
+}
+
+#let model_name(m) = {
+  if m == "random_walk" {
+    "random walk"
+  } else if m == "seasonal_naive" {
+    "seasonal naive"
+  } else if m == "drift" {
+    "drift"
+  } else if m == "analog" {
+    "analog"
+  } else {
+    m
   }
 }
 
@@ -26,7 +79,7 @@
   #text(size: 36pt, weight: "bold", fill: black)[Madrid Market Brief]
   #v(0.5em)
   #text(size: 14pt, fill: rgb(100, 100, 100))[
-    #data.month
+    #format_month(data.month)
   ]
   #v(2em)
 
@@ -50,12 +103,18 @@
 
   // Index verdicts
   #text(size: 12pt, weight: "bold", fill: black)[Indices]
+  #v(0.3em)
+  #text(size: 8pt, fill: rgb(100, 100, 100))[in standard deviations from this city's normal]
   #v(0.5em)
   #for (idx_name, idx) in data.indices {
-    #box(width: 100%, inset: (left: 10pt, bottom: 5pt))[
-      #text(size: 11pt, weight: "bold", fill: black)[#idx.label]
+    box(width: 100%, inset: (left: 10pt, bottom: 8pt))[
+      #text(size: 10pt, weight: "bold", fill: black)[#idx.label]
       #h(1em)
-      #text(size: 10pt, fill: rgb(80, 80, 80))[#idx.question]
+      #text(size: 9pt, weight: "bold", fill: accent)[#format_signed_num(idx.value, decimals: 2)]
+      #h(0.5em)
+      #text(size: 9pt, fill: rgb(80, 80, 80))[#get_verdict(idx.value)]
+      #v(0.15em)
+      #text(size: 8pt, fill: rgb(100, 100, 100))[#idx.question]
     ]
   }
 
@@ -77,12 +136,10 @@
 
   #v(1em)
 
-  #let col_widths = (2fr, 3fr, 1fr, 1fr, 1fr, 1fr, 0.8fr)
-
-  #tablex(
-    columns: col_widths,
+  #table(
+    columns: (2fr, 3fr, 1fr, 1fr, 1fr, 1.5fr, 0.8fr),
     align: (left, left, right, right, right, left, left),
-    header-rows: 1,
+
     fill: (col, row) => {
       if row == 0 { accent } else { none }
     },
@@ -98,10 +155,10 @@
     ..data.forecasts.map(f => (
       text(size: 8pt, fill: black)[#f.target_id],
       text(size: 8pt, fill: rgb(60, 60, 60))[#f.question],
-      text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(f.p10, decimals: 0)],
-      text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(f.p50, decimals: 0)],
-      text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(f.p90, decimals: 0)],
-      text(size: 8pt, fill: black)[#f.model],
+      text(size: 8pt, fill: black)[#format_num(f.p10, decimals: 0)],
+      text(size: 8pt, fill: black)[#format_num(f.p50, decimals: 0)],
+      text(size: 8pt, fill: black)[#format_num(f.p90, decimals: 0)],
+      text(size: 8pt, fill: black)[#model_name(f.model)],
       if f.does_not_beat_baseline {
         text(size: 8pt, fill: rgb(200, 0, 0), weight: "bold")[Baseline]
       } else {
@@ -125,16 +182,16 @@
   #let track = data.track_record
 
   #if track.scored > 0 {
-    #text(size: 10pt, fill: black)[
+    text(size: 10pt, fill: black)[
       *#track.scored forecasts have matured and been scored.* #track.pending are still pending.
     ]
 
-    #v(1em)
+    v(1em)
 
-    #tablex(
+    table(
       columns: (2fr, 1.5fr, 1.5fr, 1.5fr, 1fr),
       align: (left, right, right, right, center),
-      header-rows: 1,
+
       fill: (col, row) => {
         if row == 0 { accent } else { none }
       },
@@ -147,16 +204,16 @@
 
       ..track.forecasts.map(f => (
         text(size: 8pt, fill: black)[#f.target_id],
-        text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(f.predicted_p50, decimals: 1)],
-        text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(f.actual, decimals: 1)],
-        text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(f.pct_error, decimals: 1)],
+        text(size: 8pt, fill: black)[#format_num(f.predicted_p50, decimals: 1)],
+        text(size: 8pt, fill: black)[#format_num(f.actual, decimals: 1)],
+        text(size: 8pt, fill: black)[#format_num(f.pct_error, decimals: 1)],
         text(size: 8pt, fill: if f.inside_80 == true { green } else if f.inside_80 == false { rgb(200, 0, 0) } else { black }, weight: if f.inside_80 != none { "bold" } else { "regular" })[
           #if f.inside_80 == true { "✓" } else if f.inside_80 == false { "✗" } else { "—" }
         ],
       )).flatten()
     )
   } else {
-    #text(size: 11pt, fill: rgb(80, 80, 80))[
+    text(size: 11pt, fill: rgb(80, 80, 80))[
       No forecasts have yet matured. #track.pending forecasts are pending scoring.
     ]
   }
@@ -174,10 +231,10 @@
 
   #v(1em)
 
-  #tablex(
+  #table(
     columns: (0.6fr, 2fr, 1fr, 1fr, 1fr, 1fr),
     align: (center, left, right, right, right, right),
-    header-rows: 1,
+
     fill: (col, row) => {
       if row == 0 { accent } else { none }
     },
@@ -192,10 +249,10 @@
     ..data.districts.enumerate().map(((i, d)) => (
       text(size: 8pt, fill: black)[#(i+1)],
       text(size: 8pt, fill: black)[District #d.code],
-      text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(d.rent_m2, decimals: 2)],
-      text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(d.population, decimals: 0)],
-      text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(d.vacancy_rate, decimals: 1)],
-      text(size: 8pt, fill: black, font: "IBM Plex Mono")[#format_num(d.vut_licensed, decimals: 0)],
+      text(size: 8pt, fill: black)[#format_num(d.rent_m2, decimals: 2)],
+      text(size: 8pt, fill: black)[#format_num(d.population, decimals: 0)],
+      text(size: 8pt, fill: black)[#format_num(d.vacancy_rate, decimals: 1)],
+      text(size: 8pt, fill: black)[#format_num(d.vut_licensed, decimals: 0)],
     )).flatten()
   )
 ]

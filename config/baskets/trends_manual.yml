@@ -32,3 +32,39 @@ baskets:
       - metric: search_tenure_switch
         ratio: [buy_flat, rent_flat]
         scale: 100
+
+  # Volume-matched baskets added 2026-07-26. The first attempt put `paro`
+  # alongside `desahucio` and `impago hipoteca`; Trends scales a request to its
+  # largest term, so the common word flattened the rare ones to literal zeros.
+  # Terms in one basket must share a volume band or the basket destroys itself.
+  commercial:
+    query: "alquiler local madrid"
+    geo: ES
+    columns: [local_rent]
+    metrics:
+      - metric: search_commercial_rent
+        column: local_rent
+
+  distress:
+    query: "desahucio (national — the city-qualified term has too little volume)"
+    geo: ES
+    columns: [eviction]
+    metrics:
+      - metric: search_eviction
+        column: eviction
+
+  relocation:
+    query: "empadronamiento madrid · nie madrid"
+    geo: ES
+    columns: [padron_paperwork, nie]
+    metrics:
+      - metric: search_relocation
+        column: padron_paperwork
+
+  barrio:
+    query: "pisos <barrio>"
+    geo: ES
+    columns: [attention]
+    metrics:
+      - metric: search_barrio_attention
+        column: attention

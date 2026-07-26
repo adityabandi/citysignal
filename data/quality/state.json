@@ -1,4 +1,95 @@
 {
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/barrio__dist-28079-07.csv": {
+  "bytes": 730,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "9294e9138992efb93e95918ecd86ea23ac71a0d6647d1d70600d77f91bccabed"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/barrio__dist-28079-13.csv": {
+  "bytes": 797,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "28c14d077e758613dd02d978ed635dee712c0d55cd879d082d83139efc753998"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/commercial__mun-28079.csv": {
+  "bytes": 798,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "2ad65d20b8cb4718505ed46586ca1d309b427baed4a430e69d949850b8506680"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/distress__es.csv": {
+  "bytes": 796,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "0bd0318cdd95fb4d6cd6b8cd55c0d7002898293d6d07e5b0e9714aefe39e6c83"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-07040.csv": {
+  "bytes": 1304,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "7a051e24b5289f10f5db7079775b50156ca9766e6b2ba20e364ad2ec3bef44c3"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-08019.csv": {
+  "bytes": 1581,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "a7fd808a6b197d808f1fede678b41b9134d39684aed64ab1674b487825366ab1"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-28079.csv": {
+  "bytes": 1589,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "733132a8e20b93daff190af7b1d9e2d73260e3d10536fe108112338de16c7381"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-29067.csv": {
+  "bytes": 1356,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "0f9871b726a4997ea639fd4e0bafe138b4f232240b3d5fdfcc2678fbeb964c57"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-41091.csv": {
+  "bytes": 1353,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "e752ec3e00df613953370f37cd2a37dbc7af3d6fa83c56aa4b26a802b4ab487f"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-46250.csv": {
+  "bytes": 1396,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "552d0d9a92605b925a63c2415f183e9540d592b81756484c6e96f6c62940d720"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-48020.csv": {
+  "bytes": 1332,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "fda4eb197bb6e852e3a7b7d7f9906e7fd4a037f14ef82b31740e89d13e6c9ebe"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/housing__mun-50297.csv": {
+  "bytes": 1357,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "92bf33918ddb428a2237d3ceea1cb9fa926dc77c471242ed55303e981cfefb5b"
+ },
+ "file:///Users/adi/Documents/GitHub/citysignal/data/manual/trends/relocation__mun-28079.csv": {
+  "bytes": 1108,
+  "etag": null,
+  "last_checked": "2026-07-26T15:19:13+00:00",
+  "last_modified": null,
+  "sha256": "9547a7b0eada9ff72a80c2e4852b3605a673ab153ed90bd57342c0cc05ba6743"
+ },
  "https://datos.comunidad.madrid/dataset/6e5b1601-1af0-49bf-813b-227a093b7af1/resource/532735ad-4ce6-4a29-ad11-bb86916c0cf4/download/extraccionesvisados-de-direccion-de-obra-nueva-por-uso-de-la-edificacion.-comunidad-de-madrid-y-.csv": {
   "bytes": 5780689,
   "etag": "\"1777443046.97-5780689-530191682\"",
@@ -19,6 +110,69 @@
   "last_checked": "2026-07-26T14:47:20+00:00",
   "last_modified": null,
   "sha256": "8426d7ffe3d409815774aebb3e7294c1b5e9339d586d3aa74838aba7dd6c1140"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/2078?det=2&nult=250&tip=AM": {
+  "bytes": 18194821,
+  "etag": "\"1785075665:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:15:50+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:21:04 GMT",
+  "sha256": "2153c1f4825e380ce68e11029d5c3470dda4737cb81b2b8dcd24381b6e7ec215"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/29005?det=2&nult=6&tip=AM": {
+  "bytes": 40802038,
+  "etag": "\"1785075389:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:15:46+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:16:28 GMT",
+  "sha256": "bb06d283a27f07411f3f9448ba23cbf2bf710804e7b0a67d805f8bfa7d276969"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/39363?det=2&nult=8&tip=AM": {
+  "bytes": 45564210,
+  "etag": "\"1785075411:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:16:12+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:16:50 GMT",
+  "sha256": "694424c8511e8a5dde8b90394e232122c497022ef3a30f57f518a455deb9896c"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/46298?det=2&nult=250&tip=AM": {
+  "bytes": 2523513,
+  "etag": "\"1785075400:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:15:52+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:16:39 GMT",
+  "sha256": "5e01e9c8b64fdaacf9ea3d3cb2b3b65654f2efe8227d00abaa78a5c5312e8a2b"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/46301?det=2&nult=250&tip=AM": {
+  "bytes": 2532771,
+  "etag": "\"1785075401:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:15:52+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:16:40 GMT",
+  "sha256": "cd79c577e45c68a7e9fbd224911c7ec8c28d351afaf0d4ae34261109821397f0"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6149?det=2&nult=240&tip=AM": {
+  "bytes": 16976147,
+  "etag": "\"1785075407:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:16:03+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:16:46 GMT",
+  "sha256": "8838110d7e3f6f884878042b68ee358917c73d843ae6a6a19d56a5d581507f42"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75198?det=2&nult=250&tip=AM": {
+  "bytes": 3607951,
+  "etag": "\"1785075399:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:15:51+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:16:38 GMT",
+  "sha256": "629d5e1d4e6091274fe77ed9544c76fc61415a944bca0b94d9fb8f30dd51d961"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/76317?det=2&nult=240&tip=AM": {
+  "bytes": 25914016,
+  "etag": "\"1785075402:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:15:58+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:16:41 GMT",
+  "sha256": "44c7dfeb38cbcbabfd51258a3fe3bea7a4635f73448e8f43fa2490fac8a060aa"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/80270?det=2&nult=20&tip=AM": {
+  "bytes": 885807,
+  "etag": "\"1785075411:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:16:03+00:00",
+  "last_modified": "Sun, 26 Jul 2026 14:16:50 GMT",
+  "sha256": "7b034e8a067c3513036b3b78ac01491d746bc17ebea18e9e997af3598eda0abb"
  },
  "https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Edificaci%C3%B3n%20y%20Vivienda/Mercado%20de%20la%20Vivienda/Sistema%20Estatal%20de%20%C3%8Dndices%20de%20Referencia%20del%20Precio%20del%20Alquiler%20de%20Vivienda/2022_2023_2024_2025/INDICE%20ESTATAL%20ALQUILER%20_distritos2026.xlsx": {
   "bytes": 19529,

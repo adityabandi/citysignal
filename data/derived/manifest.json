@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:02:56+00:00",
+ "generated_at": "2026-07-26T15:19:37+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -47,7 +47,11 @@
   "rent_district_m2",
   "rent_district_total",
   "rent_reference",
+  "search_barrio_attention",
   "search_buy_momentum",
+  "search_commercial_rent",
+  "search_eviction",
+  "search_relocation",
   "search_rental_pressure",
   "search_room_share",
   "search_tenure_switch",
@@ -75,7 +79,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 490,
-  "observations": 20806
+  "series": 495,
+  "observations": 21103
  }
 }

@@ -1,0 +1,298 @@
+{
+  "city": "madrid",
+  "month": "2026-07-26",
+  "generated_at": "2026-07-26T15:03:49+00:00",
+  "regime": {
+    "rule_id": "hot_decelerating",
+    "label": "Hot but decelerating",
+    "reading": "Housing costs and competition are well above this city's own record, but have been easing for two periods. Levels stay high long after momentum turns, and this is where that gap opens."
+  },
+  "indices": {
+    "demand_momentum": {
+      "label": "Demand momentum",
+      "question": "Is underlying demand strengthening?",
+      "value": 0.0359,
+      "period": "2026-06"
+    },
+    "housing_pressure": {
+      "label": "Housing pressure",
+      "question": "Is demand outrunning the housing available?",
+      "value": 1.1836,
+      "period": "2026-06"
+    },
+    "supply_response": {
+      "label": "Supply response",
+      "question": "Is supply catching up?",
+      "value": -0.9389,
+      "period": "2025-12"
+    },
+    "distress": {
+      "label": "Distress",
+      "question": "Is an orderly slowdown turning into financial stress?",
+      "value": 0.1344,
+      "period": "2026-06"
+    }
+  },
+  "forecasts": [
+    {
+      "target_id": "transfers_3m",
+      "question": "How many homes will change hands in Madrid province three months from now?",
+      "description": "How many properties were legally transferred, from the land registry. Faster than the price statistics.",
+      "p10": 8649.1,
+      "p50": 10576.0,
+      "p90": 12903.3,
+      "unit": "transactions",
+      "model": "random_walk",
+      "model_verdict": "baseline",
+      "skill_verdict": "baseline",
+      "skill_ratio": 1.0,
+      "does_not_beat_baseline": true
+    },
+    {
+      "target_id": "transfers_6m",
+      "question": "How many homes will change hands in Madrid province six months from now?",
+      "description": "How many properties were legally transferred, from the land registry. Faster than the price statistics.",
+      "p10": 8152.4,
+      "p50": 10582.0,
+      "p90": 13104.2,
+      "unit": "transactions",
+      "model": "random_walk",
+      "model_verdict": "baseline",
+      "skill_verdict": "baseline",
+      "skill_ratio": 1.0,
+      "does_not_beat_baseline": true
+    },
+    {
+      "target_id": "appraised_2q",
+      "question": "What will a square metre of Madrid-province housing be appraised at two quarters from now?",
+      "description": "What valuers say a square metre of housing is worth — the number banks lend against.",
+      "p10": 4233.793,
+      "p50": 4307.0,
+      "p90": 4373.813,
+      "unit": "eur_m2",
+      "model": "drift",
+      "model_verdict": "baseline",
+      "skill_verdict": "baseline",
+      "skill_ratio": 1.0,
+      "does_not_beat_baseline": true
+    },
+    {
+      "target_id": "appraised_4q",
+      "question": "And a year out?",
+      "description": "What valuers say a square metre of housing is worth — the number banks lend against.",
+      "p10": 4365.493,
+      "p50": 4529.767,
+      "p90": 4713.82,
+      "unit": "eur_m2",
+      "model": "drift",
+      "model_verdict": "baseline",
+      "skill_verdict": "baseline",
+      "skill_ratio": 1.0,
+      "does_not_beat_baseline": true
+    },
+    {
+      "target_id": "unemployment_3m",
+      "question": "How many people will be signed on as unemployed in Madrid city three months from now?",
+      "description": "How many people are signed on as unemployed at the job office.",
+      "p10": 117270.2,
+      "p50": 128251.0,
+      "p90": 134769.6,
+      "unit": "persons",
+      "model": "random_walk",
+      "model_verdict": "baseline",
+      "skill_verdict": "baseline",
+      "skill_ratio": 1.0,
+      "does_not_beat_baseline": true
+    },
+    {
+      "target_id": "unemployment_6m",
+      "question": "And six months out?",
+      "description": "How many people are signed on as unemployed at the job office.",
+      "p10": 107604.6,
+      "p50": 127022.0,
+      "p90": 137200.8,
+      "unit": "persons",
+      "model": "random_walk",
+      "model_verdict": "baseline",
+      "skill_verdict": "baseline",
+      "skill_ratio": 1.0,
+      "does_not_beat_baseline": true
+    }
+  ],
+  "track_record": {
+    "total_issued": 6,
+    "scored": 0,
+    "pending": 6,
+    "forecasts": []
+  },
+  "districts": [
+    {
+      "code": "07",
+      "rent_m2": 18.552912,
+      "population": 140971.0,
+      "vacancy_rate": 8.041076,
+      "horeca_stock": 1379.0,
+      "vut_licensed": 60.0
+    },
+    {
+      "code": "04",
+      "rent_m2": 18.309859,
+      "population": 146462.0,
+      "vacancy_rate": 8.309139,
+      "horeca_stock": 1292.0,
+      "vut_licensed": 79.0
+    },
+    {
+      "code": "01",
+      "rent_m2": 17.700893,
+      "population": 141202.0,
+      "vacancy_rate": 11.019875,
+      "horeca_stock": 2957.0,
+      "vut_licensed": 218.0
+    },
+    {
+      "code": "05",
+      "rent_m2": 17.065067,
+      "population": 148426.0,
+      "vacancy_rate": 10.666534,
+      "horeca_stock": 950.0,
+      "vut_licensed": 109.0
+    },
+    {
+      "code": "06",
+      "rent_m2": 16.07532,
+      "population": 168966.0,
+      "vacancy_rate": 23.689675,
+      "horeca_stock": 951.0,
+      "vut_licensed": 177.0
+    },
+    {
+      "code": "03",
+      "rent_m2": 16.042781,
+      "population": 118987.0,
+      "vacancy_rate": 10.36036,
+      "horeca_stock": 539.0,
+      "vut_licensed": 40.0
+    },
+    {
+      "code": "02",
+      "rent_m2": 15.972222,
+      "population": 159649.0,
+      "vacancy_rate": 15.689128,
+      "horeca_stock": 767.0,
+      "vut_licensed": 121.0
+    },
+    {
+      "code": "09",
+      "rent_m2": 15.503144,
+      "population": 126955.0,
+      "vacancy_rate": 13.649305,
+      "horeca_stock": 715.0,
+      "vut_licensed": 24.0
+    },
+    {
+      "code": "08",
+      "rent_m2": 13.768116,
+      "population": 257272.0,
+      "vacancy_rate": 25.301205,
+      "horeca_stock": 792.0,
+      "vut_licensed": 52.0
+    },
+    {
+      "code": "16",
+      "rent_m2": 13.661458,
+      "population": 210719.0,
+      "vacancy_rate": 27.670122,
+      "horeca_stock": 536.0,
+      "vut_licensed": 28.0
+    },
+    {
+      "code": "15",
+      "rent_m2": 13.28125,
+      "population": 230270.0,
+      "vacancy_rate": 30.725967,
+      "horeca_stock": 868.0,
+      "vut_licensed": 133.0
+    },
+    {
+      "code": "21",
+      "rent_m2": 13.101266,
+      "population": 51020.0,
+      "vacancy_rate": 21.070234,
+      "horeca_stock": 314.0,
+      "vut_licensed": 17.0
+    },
+    {
+      "code": "20",
+      "rent_m2": 12.69161,
+      "population": 169635.0,
+      "vacancy_rate": 23.256452,
+      "horeca_stock": 720.0,
+      "vut_licensed": 18.0
+    },
+    {
+      "code": "18",
+      "rent_m2": 11.867397,
+      "population": 128715.0,
+      "vacancy_rate": 28.185476,
+      "horeca_stock": 346.0,
+      "vut_licensed": 9.0
+    },
+    {
+      "code": "11",
+      "rent_m2": 11.764706,
+      "population": 279925.0,
+      "vacancy_rate": 32.654557,
+      "horeca_stock": 1021.0,
+      "vut_licensed": 85.0
+    },
+    {
+      "code": "14",
+      "rent_m2": 11.728982,
+      "population": 94620.0,
+      "vacancy_rate": 24.017467,
+      "horeca_stock": 227.0,
+      "vut_licensed": 16.0
+    },
+    {
+      "code": "10",
+      "rent_m2": 11.535993,
+      "population": 252646.0,
+      "vacancy_rate": 33.235361,
+      "horeca_stock": 788.0,
+      "vut_licensed": 68.0
+    },
+    {
+      "code": "13",
+      "rent_m2": 11.47541,
+      "population": 259136.0,
+      "vacancy_rate": 39.583955,
+      "horeca_stock": 737.0,
+      "vut_licensed": 79.0
+    },
+    {
+      "code": "12",
+      "rent_m2": 11.176471,
+      "population": 153887.0,
+      "vacancy_rate": 32.139075,
+      "horeca_stock": 623.0,
+      "vut_licensed": 48.0
+    },
+    {
+      "code": "19",
+      "rent_m2": 11.007018,
+      "population": 99011.0,
+      "vacancy_rate": 29.395852,
+      "horeca_stock": 199.0,
+      "vut_licensed": 7.0
+    },
+    {
+      "code": "17",
+      "rent_m2": 10.25641,
+      "population": 174376.0,
+      "vacancy_rate": 36.523465,
+      "horeca_stock": 439.0,
+      "vut_licensed": 17.0
+    }
+  ]
+}

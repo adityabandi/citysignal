@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:02:56+00:00",
+ "generated_at": "2026-07-26T15:19:37+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4159,6 +4159,20 @@
    "direction": 1
   },
   {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "search_eviction",
+   "geo_id": "es",
+   "label": "Eviction search attention",
+   "yoy": 35.88957055214723,
+   "value": 44.3,
+   "unit": "index",
+   "period": "2026-06",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
    "city": "sevilla",
    "city_name": "Sevilla",
    "metric_id": "search_room_share",
@@ -4325,20 +4339,6 @@
    "geo_level": "municipality",
    "scope_label": "municipality",
    "direction": 1
-  },
-  {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "housing_completions",
-   "geo_id": "prov-48",
-   "label": "Housing completions",
-   "yoy": -27.848101265822784,
-   "value": 741.0,
-   "unit": "dwellings",
-   "period": "2025-Q4",
-   "geo_level": "province",
-   "scope_label": "province",
-   "direction": 1
   }
  ],
  "attention": [
@@ -4355,6 +4355,13 @@
    "latest_observation": "2026-04",
    "staleness_days": 87,
    "last_error": null
+  },
+  {
+   "source_id": "madrid_trafico",
+   "status": "failed",
+   "latest_observation": null,
+   "staleness_days": null,
+   "last_error": "all 36 optional fetches failed; first: trafico-2026-07: NotFoundError"
   },
   {
    "source_id": "notariado",

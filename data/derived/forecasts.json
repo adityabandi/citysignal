@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-07-26T15:03:49+00:00",
+ "generated_at": "2026-07-26T15:19:38+00:00",
  "as_of": "2026-07-26",
  "city": "madrid",
- "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
+ "data_vintage": "sha256:55da7e411d0c5d5c6f7c4e5ad8d694ca",
  "vintage_basis": {
-  "published_at": 1572,
+  "published_at": 1869,
   "declared_lag": 18913
  },
  "revisions_in_history": 0,
@@ -22,7 +22,7 @@
    "horizon": 3,
    "unit_of_horizon": "months",
    "unit": "transactions",
-   "issued_at": "2026-07-26T15:03:49+00:00",
+   "issued_at": "2026-07-26T15:19:38+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-05",
    "for_period": "2026-08",
@@ -30,9 +30,9 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
+   "data_vintage": "sha256:55da7e411d0c5d5c6f7c4e5ad8d694ca",
    "vintage_basis": {
-    "published_at": 1572,
+    "published_at": 1869,
     "declared_lag": 18913
    },
    "direction_only": false,
@@ -102,7 +102,7 @@
    "horizon": 6,
    "unit_of_horizon": "months",
    "unit": "transactions",
-   "issued_at": "2026-07-26T15:03:49+00:00",
+   "issued_at": "2026-07-26T15:19:38+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-05",
    "for_period": "2026-11",
@@ -110,9 +110,9 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
+   "data_vintage": "sha256:55da7e411d0c5d5c6f7c4e5ad8d694ca",
    "vintage_basis": {
-    "published_at": 1572,
+    "published_at": 1869,
     "declared_lag": 18913
    },
    "direction_only": false,
@@ -182,7 +182,7 @@
    "horizon": 2,
    "unit_of_horizon": "quarters",
    "unit": "eur_m2",
-   "issued_at": "2026-07-26T15:03:49+00:00",
+   "issued_at": "2026-07-26T15:19:38+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-Q1",
    "for_period": "2026-Q3",
@@ -190,9 +190,9 @@
    "model": "drift",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
+   "data_vintage": "sha256:55da7e411d0c5d5c6f7c4e5ad8d694ca",
    "vintage_basis": {
-    "published_at": 1572,
+    "published_at": 1869,
     "declared_lag": 18913
    },
    "direction_only": false,
@@ -262,7 +262,7 @@
    "horizon": 4,
    "unit_of_horizon": "quarters",
    "unit": "eur_m2",
-   "issued_at": "2026-07-26T15:03:49+00:00",
+   "issued_at": "2026-07-26T15:19:38+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-Q1",
    "for_period": "2027-Q1",
@@ -270,9 +270,9 @@
    "model": "drift",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
+   "data_vintage": "sha256:55da7e411d0c5d5c6f7c4e5ad8d694ca",
    "vintage_basis": {
-    "published_at": 1572,
+    "published_at": 1869,
     "declared_lag": 18913
    },
    "direction_only": false,
@@ -342,7 +342,7 @@
    "horizon": 3,
    "unit_of_horizon": "months",
    "unit": "persons",
-   "issued_at": "2026-07-26T15:03:49+00:00",
+   "issued_at": "2026-07-26T15:19:38+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-06",
    "for_period": "2026-09",
@@ -350,9 +350,9 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
+   "data_vintage": "sha256:55da7e411d0c5d5c6f7c4e5ad8d694ca",
    "vintage_basis": {
-    "published_at": 1572,
+    "published_at": 1869,
     "declared_lag": 18913
    },
    "direction_only": false,
@@ -422,7 +422,7 @@
    "horizon": 6,
    "unit_of_horizon": "months",
    "unit": "persons",
-   "issued_at": "2026-07-26T15:03:49+00:00",
+   "issued_at": "2026-07-26T15:19:38+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-06",
    "for_period": "2026-12",
@@ -430,9 +430,9 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
+   "data_vintage": "sha256:55da7e411d0c5d5c6f7c4e5ad8d694ca",
    "vintage_basis": {
-    "published_at": 1572,
+    "published_at": 1869,
     "declared_lag": 18913
    },
    "direction_only": false,
@@ -526,7 +526,7 @@
    ],
    "horizon": 12,
    "unit_of_horizon": "months",
-   "issued_at": "2026-07-26T15:03:49+00:00",
+   "issued_at": "2026-07-26T15:19:38+00:00",
    "from_period": "2026-06",
    "for_period": "within 12 months",
    "probability": 0.045454545454545456,
