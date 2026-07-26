@@ -8348,7 +8348,7 @@
      "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html"
     },
     "observation_end": "2026-05-31",
-    "last_checked": "2026-07-26T16:08:06+00:00",
+    "last_checked": "2026-07-26T16:03:59+00:00",
     "staleness_days": 56,
     "max_age_days": 60,
     "fresh": "fresh"
@@ -15043,6 +15043,405 @@
     "fresh": "fresh"
    },
    {
+    "metric_id": "wiki_foreign_interest",
+    "label": "Foreign interest ratio",
+    "plain": "Non-Spanish-language Wikipedia views about this city, divided by Spanish-language views — a rising ratio means the world is paying more attention than Spain itself.",
+    "label_es": null,
+    "unit": "percent",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": "Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia views) × 100. A rising ratio signals rising foreign interest; the absolute value is harder to interpret because it depends on platform-wide usage patterns. Used to track whether a city's interest is shifting toward or away from foreign origin markets (relocation, tourism, investment).",
+    "geo_id": "mun-46250",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 399.48,
+     "yoy": 4.381907972093763
+    },
+    "suspect": false,
+    "outlier_score": 1.33,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2019-01",
+      "value": 207.84
+     },
+     {
+      "period": "2019-02",
+      "value": 198.48
+     },
+     {
+      "period": "2019-03",
+      "value": 189.37
+     },
+     {
+      "period": "2019-04",
+      "value": 212.5
+     },
+     {
+      "period": "2019-05",
+      "value": 216.53
+     },
+     {
+      "period": "2019-06",
+      "value": 196.74
+     },
+     {
+      "period": "2019-07",
+      "value": 231.7
+     },
+     {
+      "period": "2019-08",
+      "value": 220.88
+     },
+     {
+      "period": "2019-09",
+      "value": 225.88
+     },
+     {
+      "period": "2019-10",
+      "value": 199.88
+     },
+     {
+      "period": "2019-11",
+      "value": 193.38
+     },
+     {
+      "period": "2019-12",
+      "value": 192.54
+     },
+     {
+      "period": "2020-01",
+      "value": 222.26
+     },
+     {
+      "period": "2020-02",
+      "value": 211.68
+     },
+     {
+      "period": "2020-03",
+      "value": 185.17
+     },
+     {
+      "period": "2020-04",
+      "value": 146.76
+     },
+     {
+      "period": "2020-05",
+      "value": 120.78
+     },
+     {
+      "period": "2020-06",
+      "value": 164.26
+     },
+     {
+      "period": "2020-07",
+      "value": 199.1
+     },
+     {
+      "period": "2020-08",
+      "value": 171.37
+     },
+     {
+      "period": "2020-09",
+      "value": 141.52
+     },
+     {
+      "period": "2020-10",
+      "value": 130.78
+     },
+     {
+      "period": "2020-11",
+      "value": 163.92
+     },
+     {
+      "period": "2020-12",
+      "value": 185.61
+     },
+     {
+      "period": "2021-01",
+      "value": 165.97
+     },
+     {
+      "period": "2021-02",
+      "value": 161.42
+     },
+     {
+      "period": "2021-03",
+      "value": 174.69
+     },
+     {
+      "period": "2021-04",
+      "value": 192.35
+     },
+     {
+      "period": "2021-05",
+      "value": 213.56
+     },
+     {
+      "period": "2021-06",
+      "value": 222.91
+     },
+     {
+      "period": "2021-07",
+      "value": 240.97
+     },
+     {
+      "period": "2021-08",
+      "value": 226.48
+     },
+     {
+      "period": "2021-09",
+      "value": 249.33
+     },
+     {
+      "period": "2021-10",
+      "value": 240.65
+     },
+     {
+      "period": "2021-11",
+      "value": 271.15
+     },
+     {
+      "period": "2021-12",
+      "value": 252.6
+     },
+     {
+      "period": "2022-01",
+      "value": 253.48
+     },
+     {
+      "period": "2022-02",
+      "value": 268.28
+     },
+     {
+      "period": "2022-03",
+      "value": 248.89
+     },
+     {
+      "period": "2022-04",
+      "value": 291.78
+     },
+     {
+      "period": "2022-05",
+      "value": 297.74
+     },
+     {
+      "period": "2022-06",
+      "value": 281.33
+     },
+     {
+      "period": "2022-07",
+      "value": 256.48
+     },
+     {
+      "period": "2022-08",
+      "value": 245.15
+     },
+     {
+      "period": "2022-09",
+      "value": 221.21
+     },
+     {
+      "period": "2022-10",
+      "value": 199.92
+     },
+     {
+      "period": "2022-11",
+      "value": 209.64
+     },
+     {
+      "period": "2022-12",
+      "value": 231.95
+     },
+     {
+      "period": "2023-01",
+      "value": 227.78
+     },
+     {
+      "period": "2023-02",
+      "value": 213.74
+     },
+     {
+      "period": "2023-03",
+      "value": 223.35
+     },
+     {
+      "period": "2023-04",
+      "value": 252.83
+     },
+     {
+      "period": "2023-05",
+      "value": 217.46
+     },
+     {
+      "period": "2023-06",
+      "value": 207.76
+     },
+     {
+      "period": "2023-07",
+      "value": 224.22
+     },
+     {
+      "period": "2023-08",
+      "value": 216.77
+     },
+     {
+      "period": "2023-09",
+      "value": 224.01
+     },
+     {
+      "period": "2023-10",
+      "value": 218.56
+     },
+     {
+      "period": "2023-11",
+      "value": 238.66
+     },
+     {
+      "period": "2023-12",
+      "value": 235.24
+     },
+     {
+      "period": "2024-01",
+      "value": 260.62
+     },
+     {
+      "period": "2024-02",
+      "value": 205.94
+     },
+     {
+      "period": "2024-03",
+      "value": 256.35
+     },
+     {
+      "period": "2024-04",
+      "value": 295.93
+     },
+     {
+      "period": "2024-05",
+      "value": 311.85
+     },
+     {
+      "period": "2024-06",
+      "value": 312.16
+     },
+     {
+      "period": "2024-07",
+      "value": 355.22
+     },
+     {
+      "period": "2024-08",
+      "value": 336.95
+     },
+     {
+      "period": "2024-09",
+      "value": 310.77
+     },
+     {
+      "period": "2024-10",
+      "value": 412.06
+     },
+     {
+      "period": "2024-11",
+      "value": 277.11
+     },
+     {
+      "period": "2024-12",
+      "value": 274.27
+     },
+     {
+      "period": "2025-01",
+      "value": 317.61
+     },
+     {
+      "period": "2025-02",
+      "value": 317.03
+     },
+     {
+      "period": "2025-03",
+      "value": 300.23
+     },
+     {
+      "period": "2025-04",
+      "value": 368.4
+     },
+     {
+      "period": "2025-05",
+      "value": 381.23
+     },
+     {
+      "period": "2025-06",
+      "value": 382.71
+     },
+     {
+      "period": "2025-07",
+      "value": 338.84
+     },
+     {
+      "period": "2025-08",
+      "value": 363.58
+     },
+     {
+      "period": "2025-09",
+      "value": 360.04
+     },
+     {
+      "period": "2025-10",
+      "value": 349.41
+     },
+     {
+      "period": "2025-11",
+      "value": 333.65
+     },
+     {
+      "period": "2025-12",
+      "value": 330.3
+     },
+     {
+      "period": "2026-01",
+      "value": 362.6
+     },
+     {
+      "period": "2026-02",
+      "value": 343.91
+     },
+     {
+      "period": "2026-03",
+      "value": 372.3
+     },
+     {
+      "period": "2026-04",
+      "value": 387.68
+     },
+     {
+      "period": "2026-05",
+      "value": 391.49
+     },
+     {
+      "period": "2026-06",
+      "value": 399.48
+     }
+    ],
+    "source_id": "wiki_langs",
+    "source": {
+     "publisher": "Wikimedia Foundation",
+     "license": "CC0 (pageview data)",
+     "attribution": "Source: Wikimedia REST API pageviews",
+     "kind": "research",
+     "docs_url": "https://wikimedia.org/api/rest_v1/"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-26T16:17:24+00:00",
+    "staleness_days": 26,
+    "max_age_days": 45,
+    "fresh": "fresh"
+   },
+   {
     "metric_id": "wiki_hardship_index",
     "label": "Hardship attention (Euribor, eviction, benefits)",
     "plain": "How often people look up Euribor, evictions, mortgages and unemployment benefits. Worry, not hardship itself.",
@@ -15461,6 +15860,2001 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-07-26T15:29:30+00:00",
+    "staleness_days": 26,
+    "max_age_days": 45,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "wiki_lang_views_en",
+    "label": "Madrid views on English Wikipedia",
+    "plain": "How many people reading in English looked at this city's Wikipedia article, as a share of total English Wikipedia traffic.",
+    "label_es": null,
+    "unit": "per_million",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-46250",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 7.48,
+     "yoy": -14.709236031927015
+    },
+    "suspect": false,
+    "outlier_score": 0.04,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2019-01",
+      "value": 5.84
+     },
+     {
+      "period": "2019-02",
+      "value": 6.45
+     },
+     {
+      "period": "2019-03",
+      "value": 6.4
+     },
+     {
+      "period": "2019-04",
+      "value": 6.62
+     },
+     {
+      "period": "2019-05",
+      "value": 7.07
+     },
+     {
+      "period": "2019-06",
+      "value": 6.54
+     },
+     {
+      "period": "2019-07",
+      "value": 6.69
+     },
+     {
+      "period": "2019-08",
+      "value": 6.66
+     },
+     {
+      "period": "2019-09",
+      "value": 7.05
+     },
+     {
+      "period": "2019-10",
+      "value": 6.32
+     },
+     {
+      "period": "2019-11",
+      "value": 6.42
+     },
+     {
+      "period": "2019-12",
+      "value": 5.65
+     },
+     {
+      "period": "2020-01",
+      "value": 6.55
+     },
+     {
+      "period": "2020-02",
+      "value": 6.29
+     },
+     {
+      "period": "2020-03",
+      "value": 5.16
+     },
+     {
+      "period": "2020-04",
+      "value": 4.19
+     },
+     {
+      "period": "2020-05",
+      "value": 4.34
+     },
+     {
+      "period": "2020-06",
+      "value": 4.73
+     },
+     {
+      "period": "2020-07",
+      "value": 5.03
+     },
+     {
+      "period": "2020-08",
+      "value": 4.8
+     },
+     {
+      "period": "2020-09",
+      "value": 4.66
+     },
+     {
+      "period": "2020-10",
+      "value": 4.19
+     },
+     {
+      "period": "2020-11",
+      "value": 4.04
+     },
+     {
+      "period": "2020-12",
+      "value": 4.44
+     },
+     {
+      "period": "2021-01",
+      "value": 4.58
+     },
+     {
+      "period": "2021-02",
+      "value": 4.65
+     },
+     {
+      "period": "2021-03",
+      "value": 4.7
+     },
+     {
+      "period": "2021-04",
+      "value": 5.07
+     },
+     {
+      "period": "2021-05",
+      "value": 5.77
+     },
+     {
+      "period": "2021-06",
+      "value": 5.36
+     },
+     {
+      "period": "2021-07",
+      "value": 5.66
+     },
+     {
+      "period": "2021-08",
+      "value": 6.03
+     },
+     {
+      "period": "2021-09",
+      "value": 6.1
+     },
+     {
+      "period": "2021-10",
+      "value": 6.18
+     },
+     {
+      "period": "2021-11",
+      "value": 8.0
+     },
+     {
+      "period": "2021-12",
+      "value": 6.14
+     },
+     {
+      "period": "2022-01",
+      "value": 6.29
+     },
+     {
+      "period": "2022-02",
+      "value": 6.44
+     },
+     {
+      "period": "2022-03",
+      "value": 6.29
+     },
+     {
+      "period": "2022-04",
+      "value": 7.76
+     },
+     {
+      "period": "2022-05",
+      "value": 8.09
+     },
+     {
+      "period": "2022-06",
+      "value": 7.16
+     },
+     {
+      "period": "2022-07",
+      "value": 6.92
+     },
+     {
+      "period": "2022-08",
+      "value": 7.64
+     },
+     {
+      "period": "2022-09",
+      "value": 7.17
+     },
+     {
+      "period": "2022-10",
+      "value": 7.55
+     },
+     {
+      "period": "2022-11",
+      "value": 7.78
+     },
+     {
+      "period": "2022-12",
+      "value": 6.71
+     },
+     {
+      "period": "2023-01",
+      "value": 7.41
+     },
+     {
+      "period": "2023-02",
+      "value": 7.82
+     },
+     {
+      "period": "2023-03",
+      "value": 8.79
+     },
+     {
+      "period": "2023-04",
+      "value": 9.21
+     },
+     {
+      "period": "2023-05",
+      "value": 9.51
+     },
+     {
+      "period": "2023-06",
+      "value": 8.34
+     },
+     {
+      "period": "2023-07",
+      "value": 8.01
+     },
+     {
+      "period": "2023-08",
+      "value": 8.42
+     },
+     {
+      "period": "2023-09",
+      "value": 8.71
+     },
+     {
+      "period": "2023-10",
+      "value": 7.8
+     },
+     {
+      "period": "2023-11",
+      "value": 7.69
+     },
+     {
+      "period": "2023-12",
+      "value": 7.29
+     },
+     {
+      "period": "2024-01",
+      "value": 9.42
+     },
+     {
+      "period": "2024-02",
+      "value": 9.37
+     },
+     {
+      "period": "2024-03",
+      "value": 8.88
+     },
+     {
+      "period": "2024-04",
+      "value": 9.74
+     },
+     {
+      "period": "2024-05",
+      "value": 8.88
+     },
+     {
+      "period": "2024-06",
+      "value": 8.11
+     },
+     {
+      "period": "2024-07",
+      "value": 8.16
+     },
+     {
+      "period": "2024-08",
+      "value": 7.73
+     },
+     {
+      "period": "2024-09",
+      "value": 8.56
+     },
+     {
+      "period": "2024-10",
+      "value": 15.29
+     },
+     {
+      "period": "2024-11",
+      "value": 19.48
+     },
+     {
+      "period": "2024-12",
+      "value": 5.77
+     },
+     {
+      "period": "2025-01",
+      "value": 7.05
+     },
+     {
+      "period": "2025-02",
+      "value": 7.56
+     },
+     {
+      "period": "2025-03",
+      "value": 7.6
+     },
+     {
+      "period": "2025-04",
+      "value": 8.52
+     },
+     {
+      "period": "2025-05",
+      "value": 9.13
+     },
+     {
+      "period": "2025-06",
+      "value": 8.77
+     },
+     {
+      "period": "2025-07",
+      "value": 7.73
+     },
+     {
+      "period": "2025-08",
+      "value": 7.77
+     },
+     {
+      "period": "2025-09",
+      "value": 7.61
+     },
+     {
+      "period": "2025-10",
+      "value": 7.29
+     },
+     {
+      "period": "2025-11",
+      "value": 7.32
+     },
+     {
+      "period": "2025-12",
+      "value": 6.23
+     },
+     {
+      "period": "2026-01",
+      "value": 7.1
+     },
+     {
+      "period": "2026-02",
+      "value": 7.14
+     },
+     {
+      "period": "2026-03",
+      "value": 7.38
+     },
+     {
+      "period": "2026-04",
+      "value": 7.65
+     },
+     {
+      "period": "2026-05",
+      "value": 7.91
+     },
+     {
+      "period": "2026-06",
+      "value": 7.48
+     }
+    ],
+    "source_id": "wiki_langs",
+    "source": {
+     "publisher": "Wikimedia Foundation",
+     "license": "CC0 (pageview data)",
+     "attribution": "Source: Wikimedia REST API pageviews",
+     "kind": "research",
+     "docs_url": "https://wikimedia.org/api/rest_v1/"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-26T16:17:24+00:00",
+    "staleness_days": 26,
+    "max_age_days": 45,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "wiki_lang_views_fr",
+    "label": "Madrid views on French Wikipedia",
+    "plain": "French-language demand for information about this city.",
+    "label_es": null,
+    "unit": "per_million",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-46250",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 17.74,
+     "yoy": -5.235042735042738
+    },
+    "suspect": false,
+    "outlier_score": 0.89,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2019-01",
+      "value": 18.86
+     },
+     {
+      "period": "2019-02",
+      "value": 22.58
+     },
+     {
+      "period": "2019-03",
+      "value": 22.61
+     },
+     {
+      "period": "2019-04",
+      "value": 24.54
+     },
+     {
+      "period": "2019-05",
+      "value": 26.83
+     },
+     {
+      "period": "2019-06",
+      "value": 18.91
+     },
+     {
+      "period": "2019-07",
+      "value": 21.93
+     },
+     {
+      "period": "2019-08",
+      "value": 25.81
+     },
+     {
+      "period": "2019-09",
+      "value": 20.5
+     },
+     {
+      "period": "2019-10",
+      "value": 18.41
+     },
+     {
+      "period": "2019-11",
+      "value": 18.84
+     },
+     {
+      "period": "2019-12",
+      "value": 16.24
+     },
+     {
+      "period": "2020-01",
+      "value": 18.85
+     },
+     {
+      "period": "2020-02",
+      "value": 21.74
+     },
+     {
+      "period": "2020-03",
+      "value": 16.42
+     },
+     {
+      "period": "2020-04",
+      "value": 11.19
+     },
+     {
+      "period": "2020-05",
+      "value": 11.44
+     },
+     {
+      "period": "2020-06",
+      "value": 13.27
+     },
+     {
+      "period": "2020-07",
+      "value": 21.69
+     },
+     {
+      "period": "2020-08",
+      "value": 18.32
+     },
+     {
+      "period": "2020-09",
+      "value": 14.34
+     },
+     {
+      "period": "2020-10",
+      "value": 14.23
+     },
+     {
+      "period": "2020-11",
+      "value": 13.05
+     },
+     {
+      "period": "2020-12",
+      "value": 14.84
+     },
+     {
+      "period": "2021-01",
+      "value": 14.57
+     },
+     {
+      "period": "2021-02",
+      "value": 15.73
+     },
+     {
+      "period": "2021-03",
+      "value": 15.2
+     },
+     {
+      "period": "2021-04",
+      "value": 14.1
+     },
+     {
+      "period": "2021-05",
+      "value": 19.57
+     },
+     {
+      "period": "2021-06",
+      "value": 17.89
+     },
+     {
+      "period": "2021-07",
+      "value": 21.53
+     },
+     {
+      "period": "2021-08",
+      "value": 24.92
+     },
+     {
+      "period": "2021-09",
+      "value": 21.33
+     },
+     {
+      "period": "2021-10",
+      "value": 20.65
+     },
+     {
+      "period": "2021-11",
+      "value": 19.08
+     },
+     {
+      "period": "2021-12",
+      "value": 16.44
+     },
+     {
+      "period": "2022-01",
+      "value": 17.11
+     },
+     {
+      "period": "2022-02",
+      "value": 20.26
+     },
+     {
+      "period": "2022-03",
+      "value": 20.01
+     },
+     {
+      "period": "2022-04",
+      "value": 23.99
+     },
+     {
+      "period": "2022-05",
+      "value": 22.4
+     },
+     {
+      "period": "2022-06",
+      "value": 17.58
+     },
+     {
+      "period": "2022-07",
+      "value": 19.82
+     },
+     {
+      "period": "2022-08",
+      "value": 21.92
+     },
+     {
+      "period": "2022-09",
+      "value": 15.7
+     },
+     {
+      "period": "2022-10",
+      "value": 16.01
+     },
+     {
+      "period": "2022-11",
+      "value": 15.86
+     },
+     {
+      "period": "2022-12",
+      "value": 13.49
+     },
+     {
+      "period": "2023-01",
+      "value": 16.2
+     },
+     {
+      "period": "2023-02",
+      "value": 19.06
+     },
+     {
+      "period": "2023-03",
+      "value": 20.36
+     },
+     {
+      "period": "2023-04",
+      "value": 23.02
+     },
+     {
+      "period": "2023-05",
+      "value": 21.91
+     },
+     {
+      "period": "2023-06",
+      "value": 19.47
+     },
+     {
+      "period": "2023-07",
+      "value": 21.47
+     },
+     {
+      "period": "2023-08",
+      "value": 25.62
+     },
+     {
+      "period": "2023-09",
+      "value": 20.45
+     },
+     {
+      "period": "2023-10",
+      "value": 22.77
+     },
+     {
+      "period": "2023-11",
+      "value": 22.98
+     },
+     {
+      "period": "2023-12",
+      "value": 23.46
+     },
+     {
+      "period": "2024-01",
+      "value": 26.19
+     },
+     {
+      "period": "2024-02",
+      "value": 28.11
+     },
+     {
+      "period": "2024-03",
+      "value": 27.15
+     },
+     {
+      "period": "2024-04",
+      "value": 28.68
+     },
+     {
+      "period": "2024-05",
+      "value": 25.93
+     },
+     {
+      "period": "2024-06",
+      "value": 20.24
+     },
+     {
+      "period": "2024-07",
+      "value": 22.75
+     },
+     {
+      "period": "2024-08",
+      "value": 24.6
+     },
+     {
+      "period": "2024-09",
+      "value": 22.31
+     },
+     {
+      "period": "2024-10",
+      "value": 108.27
+     },
+     {
+      "period": "2024-11",
+      "value": 115.98
+     },
+     {
+      "period": "2024-12",
+      "value": 14.82
+     },
+     {
+      "period": "2025-01",
+      "value": 16.01
+     },
+     {
+      "period": "2025-02",
+      "value": 19.86
+     },
+     {
+      "period": "2025-03",
+      "value": 21.43
+     },
+     {
+      "period": "2025-04",
+      "value": 23.64
+     },
+     {
+      "period": "2025-05",
+      "value": 21.44
+     },
+     {
+      "period": "2025-06",
+      "value": 18.72
+     },
+     {
+      "period": "2025-07",
+      "value": 20.02
+     },
+     {
+      "period": "2025-08",
+      "value": 23.94
+     },
+     {
+      "period": "2025-09",
+      "value": 21.63
+     },
+     {
+      "period": "2025-10",
+      "value": 19.49
+     },
+     {
+      "period": "2025-11",
+      "value": 17.35
+     },
+     {
+      "period": "2025-12",
+      "value": 17.09
+     },
+     {
+      "period": "2026-01",
+      "value": 16.4
+     },
+     {
+      "period": "2026-02",
+      "value": 19.82
+     },
+     {
+      "period": "2026-03",
+      "value": 20.75
+     },
+     {
+      "period": "2026-04",
+      "value": 23.65
+     },
+     {
+      "period": "2026-05",
+      "value": 21.52
+     },
+     {
+      "period": "2026-06",
+      "value": 17.74
+     }
+    ],
+    "source_id": "wiki_langs",
+    "source": {
+     "publisher": "Wikimedia Foundation",
+     "license": "CC0 (pageview data)",
+     "attribution": "Source: Wikimedia REST API pageviews",
+     "kind": "research",
+     "docs_url": "https://wikimedia.org/api/rest_v1/"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-26T16:17:24+00:00",
+    "staleness_days": 26,
+    "max_age_days": 45,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "wiki_lang_views_de",
+    "label": "Madrid views on German Wikipedia",
+    "plain": "German-language demand for information about this city.",
+    "label_es": null,
+    "unit": "per_million",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-46250",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 25.42,
+     "yoy": -5.99112426035502
+    },
+    "suspect": false,
+    "outlier_score": 0.69,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2019-01",
+      "value": 19.4
+     },
+     {
+      "period": "2019-02",
+      "value": 19.25
+     },
+     {
+      "period": "2019-03",
+      "value": 21.59
+     },
+     {
+      "period": "2019-04",
+      "value": 22.06
+     },
+     {
+      "period": "2019-05",
+      "value": 23.09
+     },
+     {
+      "period": "2019-06",
+      "value": 20.03
+     },
+     {
+      "period": "2019-07",
+      "value": 18.91
+     },
+     {
+      "period": "2019-08",
+      "value": 19.39
+     },
+     {
+      "period": "2019-09",
+      "value": 23.48
+     },
+     {
+      "period": "2019-10",
+      "value": 21.63
+     },
+     {
+      "period": "2019-11",
+      "value": 19.79
+     },
+     {
+      "period": "2019-12",
+      "value": 16.61
+     },
+     {
+      "period": "2020-01",
+      "value": 18.38
+     },
+     {
+      "period": "2020-02",
+      "value": 18.59
+     },
+     {
+      "period": "2020-03",
+      "value": 14.66
+     },
+     {
+      "period": "2020-04",
+      "value": 8.5
+     },
+     {
+      "period": "2020-05",
+      "value": 8.5
+     },
+     {
+      "period": "2020-06",
+      "value": 9.57
+     },
+     {
+      "period": "2020-07",
+      "value": 15.57
+     },
+     {
+      "period": "2020-08",
+      "value": 12.88
+     },
+     {
+      "period": "2020-09",
+      "value": 8.29
+     },
+     {
+      "period": "2020-10",
+      "value": 7.51
+     },
+     {
+      "period": "2020-11",
+      "value": 7.79
+     },
+     {
+      "period": "2020-12",
+      "value": 8.52
+     },
+     {
+      "period": "2021-01",
+      "value": 9.35
+     },
+     {
+      "period": "2021-02",
+      "value": 10.43
+     },
+     {
+      "period": "2021-03",
+      "value": 10.98
+     },
+     {
+      "period": "2021-04",
+      "value": 10.23
+     },
+     {
+      "period": "2021-05",
+      "value": 14.62
+     },
+     {
+      "period": "2021-06",
+      "value": 16.98
+     },
+     {
+      "period": "2021-07",
+      "value": 18.75
+     },
+     {
+      "period": "2021-08",
+      "value": 16.15
+     },
+     {
+      "period": "2021-09",
+      "value": 18.57
+     },
+     {
+      "period": "2021-10",
+      "value": 19.96
+     },
+     {
+      "period": "2021-11",
+      "value": 16.25
+     },
+     {
+      "period": "2021-12",
+      "value": 14.48
+     },
+     {
+      "period": "2022-01",
+      "value": 15.11
+     },
+     {
+      "period": "2022-02",
+      "value": 17.8
+     },
+     {
+      "period": "2022-03",
+      "value": 19.08
+     },
+     {
+      "period": "2022-04",
+      "value": 25.73
+     },
+     {
+      "period": "2022-05",
+      "value": 23.58
+     },
+     {
+      "period": "2022-06",
+      "value": 20.52
+     },
+     {
+      "period": "2022-07",
+      "value": 18.58
+     },
+     {
+      "period": "2022-08",
+      "value": 21.11
+     },
+     {
+      "period": "2022-09",
+      "value": 22.03
+     },
+     {
+      "period": "2022-10",
+      "value": 21.89
+     },
+     {
+      "period": "2022-11",
+      "value": 19.35
+     },
+     {
+      "period": "2022-12",
+      "value": 16.01
+     },
+     {
+      "period": "2023-01",
+      "value": 19.79
+     },
+     {
+      "period": "2023-02",
+      "value": 20.8
+     },
+     {
+      "period": "2023-03",
+      "value": 24.64
+     },
+     {
+      "period": "2023-04",
+      "value": 27.08
+     },
+     {
+      "period": "2023-05",
+      "value": 28.01
+     },
+     {
+      "period": "2023-06",
+      "value": 23.61
+     },
+     {
+      "period": "2023-07",
+      "value": 22.42
+     },
+     {
+      "period": "2023-08",
+      "value": 26.75
+     },
+     {
+      "period": "2023-09",
+      "value": 35.2
+     },
+     {
+      "period": "2023-10",
+      "value": 32.33
+     },
+     {
+      "period": "2023-11",
+      "value": 27.48
+     },
+     {
+      "period": "2023-12",
+      "value": 23.29
+     },
+     {
+      "period": "2024-01",
+      "value": 34.95
+     },
+     {
+      "period": "2024-02",
+      "value": 35.03
+     },
+     {
+      "period": "2024-03",
+      "value": 33.29
+     },
+     {
+      "period": "2024-04",
+      "value": 34.16
+     },
+     {
+      "period": "2024-05",
+      "value": 29.95
+     },
+     {
+      "period": "2024-06",
+      "value": 25.11
+     },
+     {
+      "period": "2024-07",
+      "value": 25.17
+     },
+     {
+      "period": "2024-08",
+      "value": 25.33
+     },
+     {
+      "period": "2024-09",
+      "value": 32.84
+     },
+     {
+      "period": "2024-10",
+      "value": 62.22
+     },
+     {
+      "period": "2024-11",
+      "value": 62.77
+     },
+     {
+      "period": "2024-12",
+      "value": 16.93
+     },
+     {
+      "period": "2025-01",
+      "value": 21.69
+     },
+     {
+      "period": "2025-02",
+      "value": 22.99
+     },
+     {
+      "period": "2025-03",
+      "value": 29.18
+     },
+     {
+      "period": "2025-04",
+      "value": 32.16
+     },
+     {
+      "period": "2025-05",
+      "value": 29.66
+     },
+     {
+      "period": "2025-06",
+      "value": 27.04
+     },
+     {
+      "period": "2025-07",
+      "value": 24.7
+     },
+     {
+      "period": "2025-08",
+      "value": 30.08
+     },
+     {
+      "period": "2025-09",
+      "value": 33.61
+     },
+     {
+      "period": "2025-10",
+      "value": 33.06
+     },
+     {
+      "period": "2025-11",
+      "value": 27.6
+     },
+     {
+      "period": "2025-12",
+      "value": 22.15
+     },
+     {
+      "period": "2026-01",
+      "value": 25.23
+     },
+     {
+      "period": "2026-02",
+      "value": 27.26
+     },
+     {
+      "period": "2026-03",
+      "value": 35.14
+     },
+     {
+      "period": "2026-04",
+      "value": 31.79
+     },
+     {
+      "period": "2026-05",
+      "value": 29.94
+     },
+     {
+      "period": "2026-06",
+      "value": 25.42
+     }
+    ],
+    "source_id": "wiki_langs",
+    "source": {
+     "publisher": "Wikimedia Foundation",
+     "license": "CC0 (pageview data)",
+     "attribution": "Source: Wikimedia REST API pageviews",
+     "kind": "research",
+     "docs_url": "https://wikimedia.org/api/rest_v1/"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-26T16:17:24+00:00",
+    "staleness_days": 26,
+    "max_age_days": 45,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "wiki_lang_views_it",
+    "label": "Madrid views on Italian Wikipedia",
+    "plain": "Italian-language demand for information about this city.",
+    "label_es": null,
+    "unit": "per_million",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-46250",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 30.65,
+     "yoy": -5.372028403828348
+    },
+    "suspect": false,
+    "outlier_score": 3.07,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2019-01",
+      "value": 30.83
+     },
+     {
+      "period": "2019-02",
+      "value": 31.47
+     },
+     {
+      "period": "2019-03",
+      "value": 34.54
+     },
+     {
+      "period": "2019-04",
+      "value": 32.48
+     },
+     {
+      "period": "2019-05",
+      "value": 32.09
+     },
+     {
+      "period": "2019-06",
+      "value": 26.12
+     },
+     {
+      "period": "2019-07",
+      "value": 26.78
+     },
+     {
+      "period": "2019-08",
+      "value": 33.89
+     },
+     {
+      "period": "2019-09",
+      "value": 27.32
+     },
+     {
+      "period": "2019-10",
+      "value": 28.83
+     },
+     {
+      "period": "2019-11",
+      "value": 30.34
+     },
+     {
+      "period": "2019-12",
+      "value": 29.31
+     },
+     {
+      "period": "2020-01",
+      "value": 31.53
+     },
+     {
+      "period": "2020-02",
+      "value": 31.55
+     },
+     {
+      "period": "2020-03",
+      "value": 20.06
+     },
+     {
+      "period": "2020-04",
+      "value": 12.91
+     },
+     {
+      "period": "2020-05",
+      "value": 14.52
+     },
+     {
+      "period": "2020-06",
+      "value": 13.12
+     },
+     {
+      "period": "2020-07",
+      "value": 20.45
+     },
+     {
+      "period": "2020-08",
+      "value": 16.4
+     },
+     {
+      "period": "2020-09",
+      "value": 11.94
+     },
+     {
+      "period": "2020-10",
+      "value": 12.38
+     },
+     {
+      "period": "2020-11",
+      "value": 16.39
+     },
+     {
+      "period": "2020-12",
+      "value": 14.48
+     },
+     {
+      "period": "2021-01",
+      "value": 13.92
+     },
+     {
+      "period": "2021-02",
+      "value": 14.33
+     },
+     {
+      "period": "2021-03",
+      "value": 14.83
+     },
+     {
+      "period": "2021-04",
+      "value": 15.86
+     },
+     {
+      "period": "2021-05",
+      "value": 18.65
+     },
+     {
+      "period": "2021-06",
+      "value": 17.82
+     },
+     {
+      "period": "2021-07",
+      "value": 18.47
+     },
+     {
+      "period": "2021-08",
+      "value": 20.38
+     },
+     {
+      "period": "2021-09",
+      "value": 23.61
+     },
+     {
+      "period": "2021-10",
+      "value": 26.79
+     },
+     {
+      "period": "2021-11",
+      "value": 28.98
+     },
+     {
+      "period": "2021-12",
+      "value": 23.51
+     },
+     {
+      "period": "2022-01",
+      "value": 19.89
+     },
+     {
+      "period": "2022-02",
+      "value": 27.69
+     },
+     {
+      "period": "2022-03",
+      "value": 25.41
+     },
+     {
+      "period": "2022-04",
+      "value": 27.75
+     },
+     {
+      "period": "2022-05",
+      "value": 28.47
+     },
+     {
+      "period": "2022-06",
+      "value": 26.14
+     },
+     {
+      "period": "2022-07",
+      "value": 25.58
+     },
+     {
+      "period": "2022-08",
+      "value": 34.46
+     },
+     {
+      "period": "2022-09",
+      "value": 28.9
+     },
+     {
+      "period": "2022-10",
+      "value": 38.32
+     },
+     {
+      "period": "2022-11",
+      "value": 35.86
+     },
+     {
+      "period": "2022-12",
+      "value": 31.17
+     },
+     {
+      "period": "2023-01",
+      "value": 40.12
+     },
+     {
+      "period": "2023-02",
+      "value": 38.31
+     },
+     {
+      "period": "2023-03",
+      "value": 42.13
+     },
+     {
+      "period": "2023-04",
+      "value": 42.95
+     },
+     {
+      "period": "2023-05",
+      "value": 41.46
+     },
+     {
+      "period": "2023-06",
+      "value": 34.73
+     },
+     {
+      "period": "2023-07",
+      "value": 39.27
+     },
+     {
+      "period": "2023-08",
+      "value": 47.22
+     },
+     {
+      "period": "2023-09",
+      "value": 39.03
+     },
+     {
+      "period": "2023-10",
+      "value": 40.06
+     },
+     {
+      "period": "2023-11",
+      "value": 40.71
+     },
+     {
+      "period": "2023-12",
+      "value": 35.75
+     },
+     {
+      "period": "2024-01",
+      "value": 46.68
+     },
+     {
+      "period": "2024-02",
+      "value": 44.75
+     },
+     {
+      "period": "2024-03",
+      "value": 42.42
+     },
+     {
+      "period": "2024-04",
+      "value": 48.38
+     },
+     {
+      "period": "2024-05",
+      "value": 35.64
+     },
+     {
+      "period": "2024-06",
+      "value": 31.22
+     },
+     {
+      "period": "2024-07",
+      "value": 38.41
+     },
+     {
+      "period": "2024-08",
+      "value": 41.74
+     },
+     {
+      "period": "2024-09",
+      "value": 40.98
+     },
+     {
+      "period": "2024-10",
+      "value": 125.11
+     },
+     {
+      "period": "2024-11",
+      "value": 179.63
+     },
+     {
+      "period": "2024-12",
+      "value": 25.1
+     },
+     {
+      "period": "2025-01",
+      "value": 29.7
+     },
+     {
+      "period": "2025-02",
+      "value": 31.12
+     },
+     {
+      "period": "2025-03",
+      "value": 36.49
+     },
+     {
+      "period": "2025-04",
+      "value": 38.32
+     },
+     {
+      "period": "2025-05",
+      "value": 35.27
+     },
+     {
+      "period": "2025-06",
+      "value": 32.39
+     },
+     {
+      "period": "2025-07",
+      "value": 33.66
+     },
+     {
+      "period": "2025-08",
+      "value": 37.05
+     },
+     {
+      "period": "2025-09",
+      "value": 34.73
+     },
+     {
+      "period": "2025-10",
+      "value": 34.32
+     },
+     {
+      "period": "2025-11",
+      "value": 45.01
+     },
+     {
+      "period": "2025-12",
+      "value": 32.09
+     },
+     {
+      "period": "2026-01",
+      "value": 35.69
+     },
+     {
+      "period": "2026-02",
+      "value": 33.52
+     },
+     {
+      "period": "2026-03",
+      "value": 34.05
+     },
+     {
+      "period": "2026-04",
+      "value": 35.1
+     },
+     {
+      "period": "2026-05",
+      "value": 34.18
+     },
+     {
+      "period": "2026-06",
+      "value": 30.65
+     }
+    ],
+    "source_id": "wiki_langs",
+    "source": {
+     "publisher": "Wikimedia Foundation",
+     "license": "CC0 (pageview data)",
+     "attribution": "Source: Wikimedia REST API pageviews",
+     "kind": "research",
+     "docs_url": "https://wikimedia.org/api/rest_v1/"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-26T16:17:24+00:00",
+    "staleness_days": 26,
+    "max_age_days": 45,
+    "fresh": "fresh"
+   },
+   {
+    "metric_id": "wiki_lang_views_pt",
+    "label": "Madrid views on Portuguese Wikipedia",
+    "plain": "Portuguese-language demand for information about this city.",
+    "label_es": null,
+    "unit": "per_million",
+    "cadence": "monthly",
+    "section": "attention",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "mun-46250",
+    "geo_level": "municipality",
+    "scope_label": "municipality",
+    "is_city_level": true,
+    "latest": {
+     "period": "2026-06",
+     "value": 0.59,
+     "yoy": -13.235294117647069
+    },
+    "suspect": false,
+    "outlier_score": 1.24,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2019-01",
+      "value": 0.9
+     },
+     {
+      "period": "2019-02",
+      "value": 1.14
+     },
+     {
+      "period": "2019-03",
+      "value": 1.3
+     },
+     {
+      "period": "2019-04",
+      "value": 0.77
+     },
+     {
+      "period": "2019-05",
+      "value": 0.9
+     },
+     {
+      "period": "2019-06",
+      "value": 0.72
+     },
+     {
+      "period": "2019-07",
+      "value": 0.72
+     },
+     {
+      "period": "2019-08",
+      "value": 0.7
+     },
+     {
+      "period": "2019-09",
+      "value": 0.75
+     },
+     {
+      "period": "2019-10",
+      "value": 0.79
+     },
+     {
+      "period": "2019-11",
+      "value": 0.84
+     },
+     {
+      "period": "2019-12",
+      "value": 0.83
+     },
+     {
+      "period": "2020-01",
+      "value": 0.85
+     },
+     {
+      "period": "2020-02",
+      "value": 0.98
+     },
+     {
+      "period": "2020-03",
+      "value": 0.72
+     },
+     {
+      "period": "2020-04",
+      "value": 0.59
+     },
+     {
+      "period": "2020-05",
+      "value": 0.54
+     },
+     {
+      "period": "2020-06",
+      "value": 0.62
+     },
+     {
+      "period": "2020-07",
+      "value": 0.62
+     },
+     {
+      "period": "2020-08",
+      "value": 0.54
+     },
+     {
+      "period": "2020-09",
+      "value": 0.49
+     },
+     {
+      "period": "2020-10",
+      "value": 0.6
+     },
+     {
+      "period": "2020-11",
+      "value": 0.66
+     },
+     {
+      "period": "2020-12",
+      "value": 0.82
+     },
+     {
+      "period": "2021-01",
+      "value": 0.8
+     },
+     {
+      "period": "2021-02",
+      "value": 0.78
+     },
+     {
+      "period": "2021-03",
+      "value": 0.68
+     },
+     {
+      "period": "2021-04",
+      "value": 0.57
+     },
+     {
+      "period": "2021-05",
+      "value": 0.89
+     },
+     {
+      "period": "2021-06",
+      "value": 0.55
+     },
+     {
+      "period": "2021-07",
+      "value": 0.69
+     },
+     {
+      "period": "2021-08",
+      "value": 1.06
+     },
+     {
+      "period": "2021-09",
+      "value": 0.76
+     },
+     {
+      "period": "2021-10",
+      "value": 0.75
+     },
+     {
+      "period": "2021-11",
+      "value": 0.68
+     },
+     {
+      "period": "2021-12",
+      "value": 1.14
+     },
+     {
+      "period": "2022-01",
+      "value": 0.97
+     },
+     {
+      "period": "2022-02",
+      "value": 0.84
+     },
+     {
+      "period": "2022-03",
+      "value": 0.93
+     },
+     {
+      "period": "2022-04",
+      "value": 2.11
+     },
+     {
+      "period": "2022-05",
+      "value": 1.22
+     },
+     {
+      "period": "2022-06",
+      "value": 0.83
+     },
+     {
+      "period": "2022-07",
+      "value": 0.93
+     },
+     {
+      "period": "2022-08",
+      "value": 1.04
+     },
+     {
+      "period": "2022-09",
+      "value": 0.72
+     },
+     {
+      "period": "2022-10",
+      "value": 0.84
+     },
+     {
+      "period": "2022-11",
+      "value": 0.76
+     },
+     {
+      "period": "2022-12",
+      "value": 1.04
+     },
+     {
+      "period": "2023-01",
+      "value": 1.09
+     },
+     {
+      "period": "2023-02",
+      "value": 1.12
+     },
+     {
+      "period": "2023-03",
+      "value": 1.06
+     },
+     {
+      "period": "2023-04",
+      "value": 1.06
+     },
+     {
+      "period": "2023-05",
+      "value": 1.46
+     },
+     {
+      "period": "2023-06",
+      "value": 1.18
+     },
+     {
+      "period": "2023-07",
+      "value": 0.91
+     },
+     {
+      "period": "2023-08",
+      "value": 0.96
+     },
+     {
+      "period": "2023-09",
+      "value": 0.78
+     },
+     {
+      "period": "2023-10",
+      "value": 0.68
+     },
+     {
+      "period": "2023-11",
+      "value": 0.74
+     },
+     {
+      "period": "2023-12",
+      "value": 0.76
+     },
+     {
+      "period": "2024-01",
+      "value": 0.88
+     },
+     {
+      "period": "2024-02",
+      "value": 0.74
+     },
+     {
+      "period": "2024-03",
+      "value": 0.72
+     },
+     {
+      "period": "2024-04",
+      "value": 0.69
+     },
+     {
+      "period": "2024-05",
+      "value": 0.71
+     },
+     {
+      "period": "2024-06",
+      "value": 0.73
+     },
+     {
+      "period": "2024-07",
+      "value": 0.85
+     },
+     {
+      "period": "2024-08",
+      "value": 0.73
+     },
+     {
+      "period": "2024-09",
+      "value": 0.63
+     },
+     {
+      "period": "2024-10",
+      "value": 0.69
+     },
+     {
+      "period": "2024-11",
+      "value": 0.93
+     },
+     {
+      "period": "2024-12",
+      "value": 0.68
+     },
+     {
+      "period": "2025-01",
+      "value": 0.84
+     },
+     {
+      "period": "2025-02",
+      "value": 0.71
+     },
+     {
+      "period": "2025-03",
+      "value": 0.61
+     },
+     {
+      "period": "2025-04",
+      "value": 0.74
+     },
+     {
+      "period": "2025-05",
+      "value": 0.65
+     },
+     {
+      "period": "2025-06",
+      "value": 0.68
+     },
+     {
+      "period": "2025-07",
+      "value": 0.71
+     },
+     {
+      "period": "2025-08",
+      "value": 0.94
+     },
+     {
+      "period": "2025-09",
+      "value": 0.82
+     },
+     {
+      "period": "2025-10",
+      "value": 0.62
+     },
+     {
+      "period": "2025-11",
+      "value": 0.68
+     },
+     {
+      "period": "2025-12",
+      "value": 0.86
+     },
+     {
+      "period": "2026-01",
+      "value": 0.88
+     },
+     {
+      "period": "2026-02",
+      "value": 0.67
+     },
+     {
+      "period": "2026-03",
+      "value": 0.68
+     },
+     {
+      "period": "2026-04",
+      "value": 0.87
+     },
+     {
+      "period": "2026-05",
+      "value": 1.0
+     },
+     {
+      "period": "2026-06",
+      "value": 0.59
+     }
+    ],
+    "source_id": "wiki_langs",
+    "source": {
+     "publisher": "Wikimedia Foundation",
+     "license": "CC0 (pageview data)",
+     "attribution": "Source: Wikimedia REST API pageviews",
+     "kind": "research",
+     "docs_url": "https://wikimedia.org/api/rest_v1/"
+    },
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-07-26T16:17:24+00:00",
     "staleness_days": 26,
     "max_age_days": 45,
     "fresh": "fresh"
@@ -17290,5 +19684,5 @@
    }
   ]
  },
- "generated_at": "2026-07-26T16:08:26+00:00"
+ "generated_at": "2026-07-26T16:24:57+00:00"
 }

@@ -45,8 +45,9 @@ AGGREGATE_API = "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate"
 SUMMARY_API = "https://{lang}.wikipedia.org/api/rest_v1/page/summary/{title}"
 START = "2019010100"
 
-# Languages to collect (13 major Wikipedia editions); threshold is ~500 views/month
-LANGUAGES = ["en", "de", "fr", "it", "pt", "nl", "pl", "sv", "da", "ru", "ja", "zh", "ar"]
+# Languages to collect (13 major Wikipedia editions plus Spanish for denominator);
+# threshold is ~500 views/month for filtering
+LANGUAGES = ["en", "de", "fr", "it", "pt", "nl", "pl", "sv", "da", "ru", "ja", "zh", "ar", "es"]
 
 
 def _month_period(timestamp: str) -> str:
@@ -183,8 +184,11 @@ class WikiLangsAdapter(BaseAdapter):
                 log.info("dropping language %s: median %.0f views/month", lang, median)
 
         # Emit per-language views (as shares of total traffic on that edition)
+        # Skip Spanish: it's only used for the foreign_interest denominator
         for (geo, period), by_lang in sorted(self._city_views.items()):
             for lang, views in by_lang.items():
+                if lang == "es":
+                    continue  # Spanish is denominator only, not a published metric
                 if lang in dropped_langs:
                     continue
 
@@ -206,7 +210,8 @@ class WikiLangsAdapter(BaseAdapter):
                 )
 
             # Compute foreign_interest: (non-Spanish views) ÷ (Spanish views)
-            spanish_views = sum(v for l, v in by_lang.items() if l == "es" and l not in dropped_langs)
+            # Note: "es" is the Spanish Wikipedia language code; used as denominator only
+            spanish_views = sum(v for l, v in by_lang.items() if l == "es")
             foreign_views = sum(
                 v for l, v in by_lang.items() if l != "es" and l not in dropped_langs
             )

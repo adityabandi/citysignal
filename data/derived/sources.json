@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T16:08:28+00:00",
+ "generated_at": "2026-07-26T16:25:01+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -171,25 +171,21 @@
   {
    "attribution": "Source: ECB Data Portal",
    "cadence": "monthly",
-   "consecutive_failures": 0,
+   "consecutive_failures": 1,
    "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html",
-   "fresh": true,
+   "fresh": false,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-07-26T16:08:06+00:00",
-   "last_error": null,
+   "last_checked": "2026-07-26T16:03:59+00:00",
+   "last_error": "failed to fetch https://data-api.ecb.eu/service/data/MIR/M.ES.B.A2C.A.R.A.2250.EUR.N?format=jsondata&startPeriod=2015-01: [Errno 8] nodename nor servname provided, or not known",
    "last_error_type": "FetchError",
-   "last_success": "2026-07-26T16:08:06+00:00",
-   "latest_observation": "2026-05",
    "license": "ECB copyright, data available under CC BY 4.0",
    "max_age_days": 60,
-   "metrics": [
-    "ecb_mortgage_rate"
-   ],
+   "metrics": [],
    "publisher": "European Central Bank",
    "source_id": "ecb",
-   "staleness_days": 56,
-   "status": "ok",
+   "staleness_days": null,
+   "status": "failed",
    "declared": {
     "publisher": "European Central Bank",
     "license": "ECB copyright, data available under CC BY 4.0",
@@ -706,10 +702,10 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "research",
-   "last_checked": "2026-07-26T16:07:56+00:00",
+   "last_checked": "2026-07-26T16:23:05+00:00",
    "last_error": null,
    "last_error_type": "NotFoundError",
-   "last_success": "2026-07-26T16:07:56+00:00",
+   "last_success": "2026-07-26T16:23:05+00:00",
    "latest_observation": "2026-06",
    "license": "ODbL 1.0 (OpenStreetMap data)",
    "max_age_days": 45,
@@ -720,7 +716,7 @@
    "publisher": "HeiGIT (Heidelberg Institute for Geoinformation Technology)",
    "source_id": "ohsome",
    "staleness_days": 26,
-   "status": "ok",
+   "status": "skipped",
    "declared": {
     "publisher": "HeiGIT (Heidelberg Institute for Geoinformation Technology)",
     "license": "ODbL 1.0 (OpenStreetMap data)",
@@ -927,6 +923,45 @@
     "cadence": "monthly",
     "max_age_days": 120,
     "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: Wikimedia REST API pageviews",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://wikimedia.org/api/rest_v1/",
+   "fresh": true,
+   "geo_level": "municipality",
+   "kind": "research",
+   "last_checked": "2026-07-26T16:17:24+00:00",
+   "last_error": null,
+   "last_error_type": "ValidationError",
+   "last_success": "2026-07-26T16:17:24+00:00",
+   "latest_observation": "2026-06",
+   "license": "CC0 (pageview data)",
+   "max_age_days": 45,
+   "metrics": [
+    "wiki_foreign_interest",
+    "wiki_lang_views_de",
+    "wiki_lang_views_en",
+    "wiki_lang_views_fr",
+    "wiki_lang_views_it",
+    "wiki_lang_views_pt"
+   ],
+   "publisher": "Wikimedia Foundation",
+   "source_id": "wiki_langs",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "publisher": "Wikimedia Foundation",
+    "license": "CC0 (pageview data)",
+    "attribution": "Source: Wikimedia REST API pageviews",
+    "docs_url": "https://wikimedia.org/api/rest_v1/",
+    "kind": "research",
+    "cadence": "monthly",
+    "max_age_days": 45,
+    "redistribute": true,
+    "notes": "Language-split Wikipedia pageviews as an origin-market attention proxy. Published as per-million shares of total traffic per language edition, not raw counts. Covers 13 language editions (en, de, fr, it, pt, nl, pl, sv, da, ru, ja, zh, ar). Languages with < 500 views/month median are dropped. All articles verified to refer to Spanish cities (not homonyms). Eight Spanish cities.\n"
    }
   },
   {

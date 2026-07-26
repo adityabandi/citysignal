@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T16:08:28+00:00",
+ "generated_at": "2026-07-26T16:25:01+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4047,6 +4047,20 @@
    "direction": 1
   },
   {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "wiki_lang_views_it",
+   "geo_id": "mun-07040",
+   "label": "Madrid views on Italian Wikipedia",
+   "yoy": -57.24233983286908,
+   "value": 6.14,
+   "unit": "per_million",
+   "period": "2026-06",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
    "city": "malaga",
    "city_name": "Málaga",
    "metric_id": "search_tenure_switch",
@@ -4325,23 +4339,16 @@
    "geo_level": "municipality",
    "scope_label": "municipality",
    "direction": 1
-  },
-  {
-   "city": "sevilla",
-   "city_name": "Sevilla",
-   "metric_id": "search_tenure_switch",
-   "geo_id": "mun-41091",
-   "label": "Buy-vs-rent search spread",
-   "yoy": 27.992991096798644,
-   "value": 27.027,
-   "unit": "index",
-   "period": "2026-06",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
   }
  ],
  "attention": [
+  {
+   "source_id": "ecb",
+   "status": "failed",
+   "latest_observation": null,
+   "staleness_days": null,
+   "last_error": "failed to fetch https://data-api.ecb.eu/service/data/MIR/M.ES.B.A2C.A.R.A.2250.EUR.N?format=jsondata&startPeriod=2015-01: [Errno 8] nodename nor servname provided, or not known"
+  },
   {
    "source_id": "eea_air",
    "status": "failed",

@@ -1,30 +1,30 @@
 {
- "run_id": "36f85cf89763",
- "finished_at": "2026-07-26T16:08:06+00:00",
+ "run_id": "b91228168589",
+ "finished_at": "2026-07-26T16:23:05+00:00",
  "ok": [
-  "ecb"
+  "ohsome"
  ],
  "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "ecb",
-   "status": "ok",
-   "records": 137,
-   "added": 137,
+   "source_id": "ohsome",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 1,
-   "skipped_unchanged": 0,
+   "plans": 42,
+   "skipped_unchanged": 42,
    "error": null,
    "error_type": null,
-   "duration_s": 0.17,
-   "latest_observation": "2026-05",
-   "metrics": [
-    "ecb_mortgage_rate"
-   ],
-   "notes": []
+   "duration_s": 105.66,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   }
  ]
 }
