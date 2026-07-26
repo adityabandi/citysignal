@@ -73,6 +73,8 @@ TBL_MORTGAGES = "76317"  # HPT: Hipotecas constituidas, resultados por provincia
 TBL_PROPERTY_TRANSFERS = "6149"  # ETDP: Viviendas transmitidas según título de adquisición, por provincias (monthly)
 TBL_HOUSE_PRICE_INDEX = "80270"  # IPV: Índices por CCAA, trimestrales
 TBL_TOURIST_DWELLINGS = "39363"  # VTE: Viviendas turísticas, plazas y plazas/vivienda por municipios (biannual)
+TBL_BIRTHS = "6524"  # MNP: Nacimientos por lugar de residencia de la madre (monthly, from 1975)
+TBL_MARRIAGES = "6540"  # MNP: Matrimonios por lugar de residencia (monthly, from 1975)
 
 
 class IneAdapter(BaseAdapter):
@@ -89,10 +91,11 @@ class IneAdapter(BaseAdapter):
         kind="official",
         revisions_allowed=True,
         notes=(
-            "Nine Tempus3 tables spanning population, hotels, mortgages, property "
-            "transfers, house prices and tourist dwellings. Geography is matched on "
-            "INE's own classification codes wherever the table exposes them; hotel "
-            "tables key off the tourist-point display name instead (see module docstring)."
+            "Eleven Tempus3 tables spanning population, hotels, mortgages, property "
+            "transfers, house prices, tourist dwellings, births, and marriages. "
+            "Geography is matched on INE's own classification codes wherever the table "
+            "exposes them; hotel tables key off the tourist-point display name instead "
+            "(see module docstring)."
         ),
     )
 
@@ -119,6 +122,8 @@ class IneAdapter(BaseAdapter):
             plan(TBL_PROPERTY_TRANSFERS, "property_transfers", 240, "transfers"),
             plan(TBL_HOUSE_PRICE_INDEX, "house_price_index", 20, "hpi"),
             plan(TBL_TOURIST_DWELLINGS, "tourist_dwellings", 8, "vte"),
+            plan(TBL_BIRTHS, "births", 600, "births"),
+            plan(TBL_MARRIAGES, "marriages", 600, "marriages"),
         ]
 
     def parse(self, payload: RawPayload, ctx: RunContext) -> pd.DataFrame:
@@ -496,4 +501,86 @@ class IneAdapter(BaseAdapter):
                     unit=unit,
                 )
             )
+        return out
+
+    def _normalize_births(self, frame: pd.DataFrame, ctx: RunContext) -> Iterable[CanonicalRecord]:
+        city_by_prov = {c.ine_prov: c for c in ctx.config.cities}
+        out: list[CanonicalRecord] = []
+        unmatched_provinces: dict[str, str] = {}
+
+        for row in frame.itertuples(index=False):
+            meta = row.metadata
+            if not row.periodo_nombre.startswith("M"):
+                continue
+            # Get province code
+            _, prov_code = self._dim(meta, "Provincias")
+            if not prov_code or prov_code == "00":  # Skip Total Nacional
+                continue
+            city = city_by_prov.get(prov_code)
+            if city is None:
+                # Track unmatched provinces for reporting
+                prov_name, _ = self._dim(meta, "Provincias")
+                if prov_code not in unmatched_provinces:
+                    unmatched_provinces[prov_code] = prov_name
+                continue
+            out.append(
+                self._record(
+                    metric_id="births",
+                    geo_id=province(city.ine_prov),
+                    period=self._monthly(row.anyo, row.periodo_nombre),
+                    value=row.valor,
+                    unit="births",
+                )
+            )
+
+        # Log any unmatched provinces
+        if unmatched_provinces:
+            import warnings
+            for code in sorted(unmatched_provinces.keys()):
+                warnings.warn(
+                    f"births table: province code {code} ({unmatched_provinces[code]}) "
+                    "not in tracked cities"
+                )
+
+        return out
+
+    def _normalize_marriages(self, frame: pd.DataFrame, ctx: RunContext) -> Iterable[CanonicalRecord]:
+        city_by_prov = {c.ine_prov: c for c in ctx.config.cities}
+        out: list[CanonicalRecord] = []
+        unmatched_provinces: dict[str, str] = {}
+
+        for row in frame.itertuples(index=False):
+            meta = row.metadata
+            if not row.periodo_nombre.startswith("M"):
+                continue
+            # Get province code
+            _, prov_code = self._dim(meta, "Provincias")
+            if not prov_code or prov_code == "00":  # Skip Total Nacional
+                continue
+            city = city_by_prov.get(prov_code)
+            if city is None:
+                # Track unmatched provinces for reporting
+                prov_name, _ = self._dim(meta, "Provincias")
+                if prov_code not in unmatched_provinces:
+                    unmatched_provinces[prov_code] = prov_name
+                continue
+            out.append(
+                self._record(
+                    metric_id="marriages",
+                    geo_id=province(city.ine_prov),
+                    period=self._monthly(row.anyo, row.periodo_nombre),
+                    value=row.valor,
+                    unit="marriages",
+                )
+            )
+
+        # Log any unmatched provinces
+        if unmatched_provinces:
+            import warnings
+            for code in sorted(unmatched_provinces.keys()):
+                warnings.warn(
+                    f"marriages table: province code {code} ({unmatched_provinces[code]}) "
+                    "not in tracked cities"
+                )
+
         return out

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:19:37+00:00",
+ "generated_at": "2026-07-26T15:30:24+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -38,6 +38,7 @@
   "locales_vacancy_rate",
   "mortgage_rate_new",
   "mortgages_count",
+  "no2_level",
   "npl_ratio",
   "padron_district",
   "population_padron",
@@ -66,6 +67,7 @@
   "visados_budget",
   "visados_new_build",
   "vut_licensed",
+  "wiki_barrio_views",
   "wiki_city_attention",
   "wiki_city_foreign_share",
   "wiki_city_views",
@@ -79,7 +81,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 495,
-  "observations": 21103
+  "series": 502,
+  "observations": 21751
  }
 }

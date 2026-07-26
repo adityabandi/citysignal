@@ -32,11 +32,26 @@ import pandas as pd
 
 from ..framework.adapter import AdapterFailure, BaseAdapter, RunContext, SourceManifest
 from ..framework.fetch import FetchPlan, RawPayload
-from ..framework.record import CanonicalRecord, municipality
+from ..framework.record import CanonicalRecord, municipality, district
 
 API = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article"
 AGGREGATE_API = "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate"
 START = "2018010100"
+
+# Map Wikipedia article names to Madrid district codes (28079 is Madrid municipality)
+MADRID_ARTICLE_TO_DISTRICT = {
+    "Malasaña": "01",  # Centro
+    "Lavapiés": "01",  # Centro
+    "Chueca": "01",  # Centro
+    "Barrio_de_Salamanca": "04",  # Salamanca
+    "Chamberí": "07",  # Chamberí
+    "Carabanchel": "11",  # Carabanchel
+    "Usera": "12",  # Usera
+    # Disambiguated deliberately: the bare article "Tetuán" on Spanish
+    # Wikipedia is the Moroccan city of Tétouan, which was contributing some
+    # 6,000 views a month to what this published as a Madrid district signal.
+    "Tetuán_(Madrid)": "06",  # Tetuán
+}
 
 
 def _month_period(timestamp: str) -> str:
@@ -94,6 +109,7 @@ class WikipediaAdapter(BaseAdapter):
         for basket_name, metric_id in (
             ("hardship", "wiki_hardship_index"),
             ("relocation", "wiki_relocation_index"),
+            ("barrio_madrid", "wiki_barrio_views"),
         ):
             spec = basket.get(basket_name)
             if not spec:
@@ -105,7 +121,8 @@ class WikipediaAdapter(BaseAdapter):
                         fmt="json",
                         label=f"{basket_name}:{article}",
                         optional=True,
-                        meta={"kind": "basket", "metric_id": metric_id, "article": article},
+                        meta={"kind": "basket" if basket_name != "barrio_madrid" else "barrio",
+                              "metric_id": metric_id, "article": article},
                     )
                 )
 
@@ -153,7 +170,14 @@ class WikipediaAdapter(BaseAdapter):
         elif meta["kind"] == "total":
             for row in frame.itertuples():
                 self._totals[(meta["lang"], row.period)] = int(row.views)
-        else:
+        elif meta["kind"] == "barrio":
+            article = meta["article"]
+            district_code = MADRID_ARTICLE_TO_DISTRICT.get(article)
+            if district_code:
+                geo = district("28079", district_code)
+                for row in frame.itertuples():
+                    self._barrio_views[(geo, row.period)] = int(row.views)
+        else:  # "basket" (hardship, relocation, etc.)
             for row in frame.itertuples():
                 self._basket_views[(meta["metric_id"], row.period)] += int(row.views)
         return ()
@@ -222,14 +246,31 @@ class WikipediaAdapter(BaseAdapter):
                 )
             )
 
+        # Barrio views: district-level observations of neighbourhood attention
+        for (geo, period), views in sorted(self._barrio_views.items()):
+            if views <= 0:
+                continue
+            out.append(
+                CanonicalRecord(
+                    metric_id="wiki_barrio_views",
+                    geo_id=geo,
+                    period=period,
+                    value=float(views),
+                    unit="views",
+                    source_id=self.manifest.source_id,
+                )
+            )
+
         return out
 
     # Staging state, rebuilt per run.
     _city_views: defaultdict[tuple[str, str], dict[str, int]]
     _basket_views: defaultdict[tuple[str, str], int]
+    _barrio_views: dict[tuple[str, str], int]
     _totals: dict[tuple[str, str], int]
 
     def __init__(self) -> None:
         self._city_views = defaultdict(dict)
         self._basket_views = defaultdict(int)
+        self._barrio_views = {}
         self._totals = {}

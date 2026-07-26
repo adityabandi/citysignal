@@ -1,37 +1,37 @@
 {
- "run_id": "750b956ae209",
- "finished_at": "2026-07-26T15:19:13+00:00",
+ "run_id": "e88102f03931",
+ "finished_at": "2026-07-26T15:29:30+00:00",
  "ok": [
-  "trends_manual"
+  "wikipedia"
  ],
  "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "trends_manual",
+   "source_id": "wikipedia",
    "status": "ok",
-   "records": 1869,
-   "added": 297,
+   "records": 3264,
+   "added": 612,
    "revised": 0,
-   "unchanged": 1572,
+   "unchanged": 2652,
    "quarantined": 0,
-   "plans": 13,
+   "plans": 85,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.27,
+   "duration_s": 3.95,
    "latest_observation": "2026-06",
    "metrics": [
-    "search_barrio_attention",
-    "search_buy_momentum",
-    "search_commercial_rent",
-    "search_eviction",
-    "search_relocation",
-    "search_rental_pressure",
-    "search_room_share",
-    "search_tenure_switch"
+    "wiki_barrio_views",
+    "wiki_city_attention",
+    "wiki_city_foreign_share",
+    "wiki_city_views",
+    "wiki_hardship_index",
+    "wiki_relocation_index"
    ],
-   "notes": []
+   "notes": [
+    "1/85 optional fetches skipped: hardship:Ley_de_la_segunda_oportunidad: NotFoundError"
+   ]
   }
  ]
 }

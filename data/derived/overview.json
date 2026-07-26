@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:19:37+00:00",
+ "generated_at": "2026-07-26T15:30:24+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4347,6 +4347,13 @@
    "status": "ok",
    "latest_observation": "2026-06",
    "staleness_days": 26,
+   "last_error": null
+  },
+  {
+   "source_id": "madrid_aire",
+   "status": "ok",
+   "latest_observation": "2022-12",
+   "staleness_days": 1303,
    "last_error": null
   },
   {

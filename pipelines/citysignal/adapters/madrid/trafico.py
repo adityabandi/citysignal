@@ -9,10 +9,12 @@ mean. This is a direct, real-time activity proxy: traffic volume tracks commutin
 commercial movement almost instantaneously, and unlike survey data or jobs announcements,
 nobody can massage it after the fact.
 
-The dataset is large (90-100 MB per month), so only the monthly mean is committed, never
-the raw sensor dumps. The 2020 COVID lockdown (March-May) produces a ~60-80% collapse
-that is instantly visible: lockdown started March 16, and April-May traffic fell dramatically.
-If this collapse is not visible in the data, the wrong column or aggregation has been chosen.
+WARNING: The dataset is large (90-100 MB per month). One-time backfill of 12 months costs
+~1 GB of bandwidth. Only the monthly mean is committed, never raw sensor dumps. The framework
+skips unchanged months via content-hash, so subsequent weekly runs fetch only new data.
+The 2020 COVID lockdown (March-May) produces a ~60-80% collapse instantly visible: lockdown
+started March 16, and April-May traffic fell dramatically. If this collapse is not visible,
+the wrong column or aggregation has been chosen.
 """
 
 from __future__ import annotations
@@ -32,8 +34,9 @@ from ...framework.fetch import FetchPlan, RawPayload
 from ...framework.record import CanonicalRecord, municipality
 
 # Traffic historical dataset: https://datos.madrid.es/dataset/208627-0-transporte-ptomedida-historico
-# Fetch recent months only (large files, ~90-100 MB each)
-HISTORY_MONTHS = 2  # 2 years: sufficient for derive engine (needs 24) and includes 2020 COVID collapse
+# Large files (~90-100 MB each). Fetch 12 months only (~1 GB one-time bandwidth cost).
+# Framework skips unchanged months via content-hash, so later runs only pull new data.
+HISTORY_MONTHS = 12
 
 
 class MadridTraficoAdapter(BaseAdapter):

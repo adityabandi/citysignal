@@ -50,3 +50,23 @@ short_term_rental:
     - Airbnb
     - Vivienda_de_uso_turístico
     - Alquiler_vacacional
+
+# Madrid neighbourhoods: gentrification signals that lead rents. Attention to Malasaña,
+# Lavapiés, Chueca or Salamanca indicates shifting desirability. Article → district mapping:
+# Malasaña (Centro, 01), Lavapiés (Centro, 01), Chueca (Centro, 01), Barrio de Salamanca (04),
+# Chamberí (07), Carabanchel (11), Usera (12), Tetuán (06). Vallecas spans districts (13, 18)
+# and Barrio de las Letras (Centro, 01) — mapped only where unambiguous.
+barrio_madrid:
+  project: es.wikipedia
+  articles:
+    - Malasaña
+    - Lavapiés
+    - Chueca
+    - Barrio_de_Salamanca
+    - Chamberí
+    - Carabanchel
+    - Usera
+    # NOT bare "Tetuán" — on Spanish Wikipedia that is the Moroccan city of
+    # Tétouan, which was quietly contributing ~6,000 views a month to what was
+    # published as a Madrid district signal.
+    - Tetuán_(Madrid)

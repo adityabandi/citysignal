@@ -304,6 +304,16 @@ sources:
     max_age_days: 75
     redistribute: true
 
+  madrid_aire:
+    publisher: Ayuntamiento de Madrid
+    license: Reuse permitted (attribution)
+    attribution: "Source: Ayuntamiento de Madrid, datos.madrid.es"
+    docs_url: https://datos.madrid.es/portal/site/egob
+    kind: official
+    cadence: monthly
+    max_age_days: 75
+    redistribute: true
+
   notariado:
     enabled: false
     publisher: Consejo General del Notariado
@@ -321,41 +331,3 @@ sources:
       source is withheld rather than guessed; metrics (notary_sales, notary_price_m2)
       stay declared so the gap is visible rather than forgotten.
 
-  certificados_energeticos:
-    publisher: Comunidad de Madrid / Ministerio para la Transición Ecológica
-    license: Reuse permitted (attribution)
-    attribution: "Source: Energy Performance Certificate registries"
-    docs_url: https://datos.comunidad.madrid
-    kind: official
-    cadence: monthly
-    max_age_days: 120
-    redistribute: true
-    notes: >
-      Energy performance certificates required before property sale or rental.
-      Registrations are a leading indicator of housing supply moving to market.
-
-  cis:
-    publisher: Centro de Investigaciones Sociológicas
-    license: Reuse permitted (attribution)
-    attribution: "Source: CIS (Centro de Investigaciones Sociológicas)"
-    docs_url: https://www.cis.es
-    kind: official
-    cadence: monthly
-    max_age_days: 75
-    redistribute: true
-    notes: >
-      Monthly consumer confidence survey. Index 100 = neutral. Measures household
-      optimism about employment and finances.
-
-  bde_sucursales:
-    publisher: Banco de España
-    license: Reuse permitted (attribution)
-    attribution: "Source: Banco de España"
-    docs_url: https://www.bde.es/webbe/es/estadisticas/
-    kind: official
-    cadence: quarterly
-    max_age_days: 210
-    redistribute: true
-    notes: >
-      Bank branch (sucursales) counts by province. Reflects financial sector's
-      physical presence and confidence in local markets.
