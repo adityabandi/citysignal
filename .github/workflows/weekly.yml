@@ -54,6 +54,14 @@ jobs:
       - name: Derive
         run: uv run citysignal derive
 
+      # Issue forecasts against the frozen targets, then score whatever has
+      # matured. Both run before the test gate on purpose: a forecast that breaks
+      # the freeze-immutability test must stop the commit, not reach the site.
+      # Existing forecast files are never rewritten, so a second run in the same
+      # period writes nothing.
+      - name: Forecast
+        run: uv run citysignal forecast
+
       # The gate: nothing is committed and nothing is deployed unless the freshly
       # derived data passes its tests.
       - name: Test
