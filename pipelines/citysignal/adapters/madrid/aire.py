@@ -32,7 +32,7 @@ from ...framework.record import CanonicalRecord, municipality
 
 # Air quality daily dataset: https://datos.madrid.es/dataset/201410-0-calidad-aire-diario
 # Fetches recent CSV resources covering multiple years of daily data
-RECENT_RESOURCES = 3  # Grab 3 recent CSV files covering ~3 years
+RECENT_RESOURCES = 5  # Grab 5 recent CSV files covering ~5 years, ensuring 2020 COVID data
 
 
 class MadridAireAdapter(BaseAdapter):
@@ -98,9 +98,11 @@ class MadridAireAdapter(BaseAdapter):
         if not csv_resources:
             raise AdapterFailure("No CSV resources found in air quality dataset")
 
-        # Take the most recent RECENT_RESOURCES (highest indices)
+        # Simply take the N most recent resources (highest indices)
+        # Resources appear to be added in order, so higher indices are more recent
         csv_resources.sort(key=lambda x: x[0], reverse=True)
 
+        # Create fetch plans for the most recent resources
         for idx, name, url in csv_resources[:RECENT_RESOURCES]:
             plans.append(
                 FetchPlan(

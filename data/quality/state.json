@@ -97,24 +97,31 @@
   "last_modified": "Wed, 29 Apr 2026 06:10:46 GMT",
   "sha256": "cf35925f104f073b21b57a17e1c32fdea319755f1dc17bfd5f0d3e3a0c0f7dfa"
  },
+ "https://datos.madrid.es/dataset/201410-0-calidad-aire-diario/resource/201410-59-calidad-aire-diario-csv/download/201410-59-calidad-aire-diario-csv.csv": {
+  "bytes": 226007,
+  "etag": "\"1771193948.805753-226007-1328157664\"",
+  "last_checked": "2026-07-26T15:32:07+00:00",
+  "last_modified": "Sun, 15 Feb 2026 22:19:08 GMT",
+  "sha256": "dd37d0874380a0f3528f5da90ad258b918043b0d309d7c2630f665631a21d358"
+ },
  "https://datos.madrid.es/dataset/201410-0-calidad-aire-diario/resource/201410-62-calidad-aire-diario-csv/download/201410-62-calidad-aire-diario-csv.csv": {
   "bytes": 231065,
   "etag": "\"1771193950.607512-231065-1318392794\"",
-  "last_checked": "2026-07-26T15:28:13+00:00",
+  "last_checked": "2026-07-26T15:32:07+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:19:10 GMT",
   "sha256": "b682c619b494cf3c398f25cd290c35669b08e7a90d99acd87bee128c39ef64b6"
  },
  "https://datos.madrid.es/dataset/201410-0-calidad-aire-diario/resource/201410-72-calidad-aire-diario-csv/download/201410-72-calidad-aire-diario-csv.csv": {
   "bytes": 306160,
   "etag": "\"1771193959.616482-306160-1320096731\"",
-  "last_checked": "2026-07-26T15:28:12+00:00",
+  "last_checked": "2026-07-26T15:32:07+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:19:19 GMT",
   "sha256": "6ccea252b38c116be0808d05f6f6c8da3defd7e7b2204d00db6c5345c83207b4"
  },
  "https://datos.madrid.es/dataset/201410-0-calidad-aire-diario/resource/201410-75-calidad-aire-diario-csv/download/201410-75-calidad-aire-diario-csv.csv": {
   "bytes": 296250,
   "etag": "\"1771193962.890794-296250-1325011934\"",
-  "last_checked": "2026-07-26T15:28:12+00:00",
+  "last_checked": "2026-07-26T15:32:07+00:00",
   "last_modified": "Sun, 15 Feb 2026 22:19:22 GMT",
   "sha256": "175d6910b24ef4ecacb722be817994dafe742a04da6cc3659f78dc524e1bf19d"
  },
@@ -135,63 +142,77 @@
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/2078?det=2&nult=250&tip=AM": {
   "bytes": 18194821,
   "etag": "\"1785075665:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:53+00:00",
+  "last_checked": "2026-07-26T15:30:14+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:21:04 GMT",
   "sha256": "2153c1f4825e380ce68e11029d5c3470dda4737cb81b2b8dcd24381b6e7ec215"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/29005?det=2&nult=6&tip=AM": {
   "bytes": 40802038,
   "etag": "\"1785075389:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:53+00:00",
+  "last_checked": "2026-07-26T15:30:07+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:28 GMT",
   "sha256": "bb06d283a27f07411f3f9448ba23cbf2bf710804e7b0a67d805f8bfa7d276969"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/39363?det=2&nult=8&tip=AM": {
   "bytes": 45564210,
   "etag": "\"1785075411:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:54+00:00",
+  "last_checked": "2026-07-26T15:30:43+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:50 GMT",
   "sha256": "694424c8511e8a5dde8b90394e232122c497022ef3a30f57f518a455deb9896c"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/46298?det=2&nult=250&tip=AM": {
   "bytes": 2523513,
   "etag": "\"1785075400:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:53+00:00",
+  "last_checked": "2026-07-26T15:30:20+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:39 GMT",
   "sha256": "5e01e9c8b64fdaacf9ea3d3cb2b3b65654f2efe8227d00abaa78a5c5312e8a2b"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/46301?det=2&nult=250&tip=AM": {
   "bytes": 2532771,
   "etag": "\"1785075401:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:53+00:00",
+  "last_checked": "2026-07-26T15:30:21+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:40 GMT",
   "sha256": "cd79c577e45c68a7e9fbd224911c7ec8c28d351afaf0d4ae34261109821397f0"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6149?det=2&nult=240&tip=AM": {
   "bytes": 16976147,
   "etag": "\"1785075407:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:53+00:00",
+  "last_checked": "2026-07-26T15:30:36+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:46 GMT",
   "sha256": "8838110d7e3f6f884878042b68ee358917c73d843ae6a6a19d56a5d581507f42"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6524?det=2&nult=600&tip=AM": {
+  "bytes": 5419441,
+  "etag": "\"1785079847:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:30:49+00:00",
+  "last_modified": "Sun, 26 Jul 2026 15:30:46 GMT",
+  "sha256": "d9a5815e778f93f1e50234af94d350bc31767d43f9f9eda51901bb5534b752a3"
+ },
+ "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6540?det=2&nult=600&tip=AM": {
+  "bytes": 5406649,
+  "etag": "\"1785079852:dtagent10341260622154106wSIL\"",
+  "last_checked": "2026-07-26T15:30:54+00:00",
+  "last_modified": "Sun, 26 Jul 2026 15:30:51 GMT",
+  "sha256": "433eaa699fd1d359b9456345c6833d8570a6aa677e39f9a9211804fd36f471a9"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75198?det=2&nult=250&tip=AM": {
   "bytes": 3607951,
   "etag": "\"1785075399:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:53+00:00",
+  "last_checked": "2026-07-26T15:30:19+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:38 GMT",
   "sha256": "629d5e1d4e6091274fe77ed9544c76fc61415a944bca0b94d9fb8f30dd51d961"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/76317?det=2&nult=240&tip=AM": {
   "bytes": 25914016,
   "etag": "\"1785075402:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:53+00:00",
+  "last_checked": "2026-07-26T15:30:29+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:41 GMT",
   "sha256": "44c7dfeb38cbcbabfd51258a3fe3bea7a4635f73448e8f43fa2490fac8a060aa"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/80270?det=2&nult=20&tip=AM": {
   "bytes": 885807,
   "etag": "\"1785075411:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-07-26T15:24:53+00:00",
+  "last_checked": "2026-07-26T15:30:36+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:50 GMT",
   "sha256": "7b034e8a067c3513036b3b78ac01491d746bc17ebea18e9e997af3598eda0abb"
  },

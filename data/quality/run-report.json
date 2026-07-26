@@ -1,37 +1,28 @@
 {
- "run_id": "e88102f03931",
- "finished_at": "2026-07-26T15:29:30+00:00",
- "ok": [
-  "wikipedia"
+ "run_id": "da0238c2b21d",
+ "finished_at": "2026-07-26T15:33:59+00:00",
+ "ok": [],
+ "failed": [
+  "madrid_aire"
  ],
- "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "wikipedia",
-   "status": "ok",
-   "records": 3264,
-   "added": 612,
+   "source_id": "madrid_aire",
+   "status": "failed",
+   "records": 0,
+   "added": 0,
    "revised": 0,
-   "unchanged": 2652,
+   "unchanged": 0,
    "quarantined": 0,
-   "plans": 85,
+   "plans": 0,
    "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 3.95,
-   "latest_observation": "2026-06",
-   "metrics": [
-    "wiki_barrio_views",
-    "wiki_city_attention",
-    "wiki_city_foreign_share",
-    "wiki_city_views",
-    "wiki_hardship_index",
-    "wiki_relocation_index"
-   ],
-   "notes": [
-    "1/85 optional fetches skipped: hardship:Ley_de_la_segunda_oportunidad: NotFoundError"
-   ]
+   "error": "Could not fetch air quality dataset metadata: HTTP Error 403: Forbidden",
+   "error_type": "AdapterFailure",
+   "duration_s": 0.11,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": []
   }
  ]
 }

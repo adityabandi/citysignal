@@ -3198,6 +3198,852 @@
  "sections": {
   "people": [
    {
+    "metric_id": "births",
+    "label": "Births",
+    "plain": "How many babies were born to mothers living here. Housing demand two decades ahead, and household formation now.",
+    "label_es": null,
+    "unit": "births",
+    "cadence": "monthly",
+    "section": "people",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "prov-48",
+    "geo_level": "province",
+    "scope_label": "province",
+    "is_city_level": false,
+    "latest": {
+     "period": "2024-12",
+     "value": 490.0,
+     "yoy": -7.894736842105263
+    },
+    "suspect": false,
+    "outlier_score": 1.93,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2017-01",
+      "value": 682.0
+     },
+     {
+      "period": "2017-02",
+      "value": 623.0
+     },
+     {
+      "period": "2017-03",
+      "value": 673.0
+     },
+     {
+      "period": "2017-04",
+      "value": 714.0
+     },
+     {
+      "period": "2017-05",
+      "value": 784.0
+     },
+     {
+      "period": "2017-06",
+      "value": 710.0
+     },
+     {
+      "period": "2017-07",
+      "value": 707.0
+     },
+     {
+      "period": "2017-08",
+      "value": 760.0
+     },
+     {
+      "period": "2017-09",
+      "value": 740.0
+     },
+     {
+      "period": "2017-10",
+      "value": 784.0
+     },
+     {
+      "period": "2017-11",
+      "value": 700.0
+     },
+     {
+      "period": "2017-12",
+      "value": 645.0
+     },
+     {
+      "period": "2018-01",
+      "value": 678.0
+     },
+     {
+      "period": "2018-02",
+      "value": 585.0
+     },
+     {
+      "period": "2018-03",
+      "value": 637.0
+     },
+     {
+      "period": "2018-04",
+      "value": 600.0
+     },
+     {
+      "period": "2018-05",
+      "value": 729.0
+     },
+     {
+      "period": "2018-06",
+      "value": 644.0
+     },
+     {
+      "period": "2018-07",
+      "value": 698.0
+     },
+     {
+      "period": "2018-08",
+      "value": 706.0
+     },
+     {
+      "period": "2018-09",
+      "value": 711.0
+     },
+     {
+      "period": "2018-10",
+      "value": 677.0
+     },
+     {
+      "period": "2018-11",
+      "value": 642.0
+     },
+     {
+      "period": "2018-12",
+      "value": 638.0
+     },
+     {
+      "period": "2019-01",
+      "value": 636.0
+     },
+     {
+      "period": "2019-02",
+      "value": 571.0
+     },
+     {
+      "period": "2019-03",
+      "value": 619.0
+     },
+     {
+      "period": "2019-04",
+      "value": 629.0
+     },
+     {
+      "period": "2019-05",
+      "value": 658.0
+     },
+     {
+      "period": "2019-06",
+      "value": 594.0
+     },
+     {
+      "period": "2019-07",
+      "value": 733.0
+     },
+     {
+      "period": "2019-08",
+      "value": 672.0
+     },
+     {
+      "period": "2019-09",
+      "value": 617.0
+     },
+     {
+      "period": "2019-10",
+      "value": 699.0
+     },
+     {
+      "period": "2019-11",
+      "value": 698.0
+     },
+     {
+      "period": "2019-12",
+      "value": 615.0
+     },
+     {
+      "period": "2020-01",
+      "value": 640.0
+     },
+     {
+      "period": "2020-02",
+      "value": 617.0
+     },
+     {
+      "period": "2020-03",
+      "value": 632.0
+     },
+     {
+      "period": "2020-04",
+      "value": 574.0
+     },
+     {
+      "period": "2020-05",
+      "value": 620.0
+     },
+     {
+      "period": "2020-06",
+      "value": 579.0
+     },
+     {
+      "period": "2020-07",
+      "value": 629.0
+     },
+     {
+      "period": "2020-08",
+      "value": 643.0
+     },
+     {
+      "period": "2020-09",
+      "value": 638.0
+     },
+     {
+      "period": "2020-10",
+      "value": 657.0
+     },
+     {
+      "period": "2020-11",
+      "value": 587.0
+     },
+     {
+      "period": "2020-12",
+      "value": 503.0
+     },
+     {
+      "period": "2021-01",
+      "value": 493.0
+     },
+     {
+      "period": "2021-02",
+      "value": 503.0
+     },
+     {
+      "period": "2021-03",
+      "value": 621.0
+     },
+     {
+      "period": "2021-04",
+      "value": 578.0
+     },
+     {
+      "period": "2021-05",
+      "value": 585.0
+     },
+     {
+      "period": "2021-06",
+      "value": 582.0
+     },
+     {
+      "period": "2021-07",
+      "value": 592.0
+     },
+     {
+      "period": "2021-08",
+      "value": 661.0
+     },
+     {
+      "period": "2021-09",
+      "value": 617.0
+     },
+     {
+      "period": "2021-10",
+      "value": 591.0
+     },
+     {
+      "period": "2021-11",
+      "value": 576.0
+     },
+     {
+      "period": "2021-12",
+      "value": 573.0
+     },
+     {
+      "period": "2022-01",
+      "value": 575.0
+     },
+     {
+      "period": "2022-02",
+      "value": 547.0
+     },
+     {
+      "period": "2022-03",
+      "value": 580.0
+     },
+     {
+      "period": "2022-04",
+      "value": 512.0
+     },
+     {
+      "period": "2022-05",
+      "value": 547.0
+     },
+     {
+      "period": "2022-06",
+      "value": 582.0
+     },
+     {
+      "period": "2022-07",
+      "value": 647.0
+     },
+     {
+      "period": "2022-08",
+      "value": 616.0
+     },
+     {
+      "period": "2022-09",
+      "value": 525.0
+     },
+     {
+      "period": "2022-10",
+      "value": 595.0
+     },
+     {
+      "period": "2022-11",
+      "value": 582.0
+     },
+     {
+      "period": "2022-12",
+      "value": 570.0
+     },
+     {
+      "period": "2023-01",
+      "value": 539.0
+     },
+     {
+      "period": "2023-02",
+      "value": 496.0
+     },
+     {
+      "period": "2023-03",
+      "value": 567.0
+     },
+     {
+      "period": "2023-04",
+      "value": 528.0
+     },
+     {
+      "period": "2023-05",
+      "value": 544.0
+     },
+     {
+      "period": "2023-06",
+      "value": 532.0
+     },
+     {
+      "period": "2023-07",
+      "value": 604.0
+     },
+     {
+      "period": "2023-08",
+      "value": 587.0
+     },
+     {
+      "period": "2023-09",
+      "value": 613.0
+     },
+     {
+      "period": "2023-10",
+      "value": 603.0
+     },
+     {
+      "period": "2023-11",
+      "value": 532.0
+     },
+     {
+      "period": "2023-12",
+      "value": 532.0
+     },
+     {
+      "period": "2024-01",
+      "value": 559.0
+     },
+     {
+      "period": "2024-02",
+      "value": 486.0
+     },
+     {
+      "period": "2024-03",
+      "value": 512.0
+     },
+     {
+      "period": "2024-04",
+      "value": 485.0
+     },
+     {
+      "period": "2024-05",
+      "value": 539.0
+     },
+     {
+      "period": "2024-06",
+      "value": 521.0
+     },
+     {
+      "period": "2024-07",
+      "value": 551.0
+     },
+     {
+      "period": "2024-08",
+      "value": 587.0
+     },
+     {
+      "period": "2024-09",
+      "value": 556.0
+     },
+     {
+      "period": "2024-10",
+      "value": 590.0
+     },
+     {
+      "period": "2024-11",
+      "value": 550.0
+     },
+     {
+      "period": "2024-12",
+      "value": 490.0
+     }
+    ],
+    "source_id": "ine",
+    "source": {
+     "publisher": "Instituto Nacional de Estadística",
+     "license": "INE reuse conditions (attribution)",
+     "attribution": "Source: INE (ine.es)",
+     "kind": "official",
+     "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
+    },
+    "observation_end": "2024-12-31",
+    "last_checked": "2026-07-26T15:30:54+00:00",
+    "staleness_days": 572,
+    "max_age_days": 120,
+    "fresh": "failing"
+   },
+   {
+    "metric_id": "marriages",
+    "label": "Marriages",
+    "plain": "How many couples were married. Signals household formation and demand for homes together.",
+    "label_es": null,
+    "unit": "marriages",
+    "cadence": "monthly",
+    "section": "people",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "prov-48",
+    "geo_level": "province",
+    "scope_label": "province",
+    "is_city_level": false,
+    "latest": {
+     "period": "2024-12",
+     "value": 139.0,
+     "yoy": -21.910112359550563
+    },
+    "suspect": false,
+    "outlier_score": 0.68,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2017-01",
+      "value": 114.0
+     },
+     {
+      "period": "2017-02",
+      "value": 138.0
+     },
+     {
+      "period": "2017-03",
+      "value": 245.0
+     },
+     {
+      "period": "2017-04",
+      "value": 220.0
+     },
+     {
+      "period": "2017-05",
+      "value": 370.0
+     },
+     {
+      "period": "2017-06",
+      "value": 577.0
+     },
+     {
+      "period": "2017-07",
+      "value": 594.0
+     },
+     {
+      "period": "2017-08",
+      "value": 207.0
+     },
+     {
+      "period": "2017-09",
+      "value": 593.0
+     },
+     {
+      "period": "2017-10",
+      "value": 357.0
+     },
+     {
+      "period": "2017-11",
+      "value": 208.0
+     },
+     {
+      "period": "2017-12",
+      "value": 167.0
+     },
+     {
+      "period": "2018-01",
+      "value": 106.0
+     },
+     {
+      "period": "2018-02",
+      "value": 127.0
+     },
+     {
+      "period": "2018-03",
+      "value": 201.0
+     },
+     {
+      "period": "2018-04",
+      "value": 240.0
+     },
+     {
+      "period": "2018-05",
+      "value": 331.0
+     },
+     {
+      "period": "2018-06",
+      "value": 573.0
+     },
+     {
+      "period": "2018-07",
+      "value": 502.0
+     },
+     {
+      "period": "2018-08",
+      "value": 199.0
+     },
+     {
+      "period": "2018-09",
+      "value": 514.0
+     },
+     {
+      "period": "2018-10",
+      "value": 365.0
+     },
+     {
+      "period": "2018-11",
+      "value": 259.0
+     },
+     {
+      "period": "2018-12",
+      "value": 144.0
+     },
+     {
+      "period": "2019-01",
+      "value": 108.0
+     },
+     {
+      "period": "2019-02",
+      "value": 138.0
+     },
+     {
+      "period": "2019-03",
+      "value": 237.0
+     },
+     {
+      "period": "2019-04",
+      "value": 192.0
+     },
+     {
+      "period": "2019-05",
+      "value": 374.0
+     },
+     {
+      "period": "2019-06",
+      "value": 478.0
+     },
+     {
+      "period": "2019-07",
+      "value": 467.0
+     },
+     {
+      "period": "2019-08",
+      "value": 218.0
+     },
+     {
+      "period": "2019-09",
+      "value": 512.0
+     },
+     {
+      "period": "2019-10",
+      "value": 380.0
+     },
+     {
+      "period": "2019-11",
+      "value": 256.0
+     },
+     {
+      "period": "2019-12",
+      "value": 169.0
+     },
+     {
+      "period": "2020-01",
+      "value": 139.0
+     },
+     {
+      "period": "2020-02",
+      "value": 163.0
+     },
+     {
+      "period": "2020-03",
+      "value": 91.0
+     },
+     {
+      "period": "2020-04",
+      "value": 4.0
+     },
+     {
+      "period": "2020-05",
+      "value": 41.0
+     },
+     {
+      "period": "2020-06",
+      "value": 170.0
+     },
+     {
+      "period": "2020-07",
+      "value": 283.0
+     },
+     {
+      "period": "2020-08",
+      "value": 106.0
+     },
+     {
+      "period": "2020-09",
+      "value": 312.0
+     },
+     {
+      "period": "2020-10",
+      "value": 289.0
+     },
+     {
+      "period": "2020-11",
+      "value": 142.0
+     },
+     {
+      "period": "2020-12",
+      "value": 141.0
+     },
+     {
+      "period": "2021-01",
+      "value": 131.0
+     },
+     {
+      "period": "2021-02",
+      "value": 107.0
+     },
+     {
+      "period": "2021-03",
+      "value": 138.0
+     },
+     {
+      "period": "2021-04",
+      "value": 175.0
+     },
+     {
+      "period": "2021-05",
+      "value": 243.0
+     },
+     {
+      "period": "2021-06",
+      "value": 380.0
+     },
+     {
+      "period": "2021-07",
+      "value": 405.0
+     },
+     {
+      "period": "2021-08",
+      "value": 129.0
+     },
+     {
+      "period": "2021-09",
+      "value": 375.0
+     },
+     {
+      "period": "2021-10",
+      "value": 373.0
+     },
+     {
+      "period": "2021-11",
+      "value": 223.0
+     },
+     {
+      "period": "2021-12",
+      "value": 161.0
+     },
+     {
+      "period": "2022-01",
+      "value": 140.0
+     },
+     {
+      "period": "2022-02",
+      "value": 150.0
+     },
+     {
+      "period": "2022-03",
+      "value": 222.0
+     },
+     {
+      "period": "2022-04",
+      "value": 230.0
+     },
+     {
+      "period": "2022-05",
+      "value": 362.0
+     },
+     {
+      "period": "2022-06",
+      "value": 507.0
+     },
+     {
+      "period": "2022-07",
+      "value": 561.0
+     },
+     {
+      "period": "2022-08",
+      "value": 199.0
+     },
+     {
+      "period": "2022-09",
+      "value": 489.0
+     },
+     {
+      "period": "2022-10",
+      "value": 383.0
+     },
+     {
+      "period": "2022-11",
+      "value": 228.0
+     },
+     {
+      "period": "2022-12",
+      "value": 179.0
+     },
+     {
+      "period": "2023-01",
+      "value": 139.0
+     },
+     {
+      "period": "2023-02",
+      "value": 130.0
+     },
+     {
+      "period": "2023-03",
+      "value": 258.0
+     },
+     {
+      "period": "2023-04",
+      "value": 201.0
+     },
+     {
+      "period": "2023-05",
+      "value": 349.0
+     },
+     {
+      "period": "2023-06",
+      "value": 528.0
+     },
+     {
+      "period": "2023-07",
+      "value": 448.0
+     },
+     {
+      "period": "2023-08",
+      "value": 135.0
+     },
+     {
+      "period": "2023-09",
+      "value": 514.0
+     },
+     {
+      "period": "2023-10",
+      "value": 315.0
+     },
+     {
+      "period": "2023-11",
+      "value": 256.0
+     },
+     {
+      "period": "2023-12",
+      "value": 178.0
+     },
+     {
+      "period": "2024-01",
+      "value": 129.0
+     },
+     {
+      "period": "2024-02",
+      "value": 165.0
+     },
+     {
+      "period": "2024-03",
+      "value": 220.0
+     },
+     {
+      "period": "2024-04",
+      "value": 258.0
+     },
+     {
+      "period": "2024-05",
+      "value": 373.0
+     },
+     {
+      "period": "2024-06",
+      "value": 519.0
+     },
+     {
+      "period": "2024-07",
+      "value": 408.0
+     },
+     {
+      "period": "2024-08",
+      "value": 133.0
+     },
+     {
+      "period": "2024-09",
+      "value": 499.0
+     },
+     {
+      "period": "2024-10",
+      "value": 377.0
+     },
+     {
+      "period": "2024-11",
+      "value": 257.0
+     },
+     {
+      "period": "2024-12",
+      "value": 139.0
+     }
+    ],
+    "source_id": "ine",
+    "source": {
+     "publisher": "Instituto Nacional de Estadística",
+     "license": "INE reuse conditions (attribution)",
+     "attribution": "Source: INE (ine.es)",
+     "kind": "official",
+     "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
+    },
+    "observation_end": "2024-12-31",
+    "last_checked": "2026-07-26T15:30:54+00:00",
+    "staleness_days": 572,
+    "max_age_days": 120,
+    "fresh": "failing"
+   },
+   {
     "metric_id": "population_padron",
     "label": "Population (padrón)",
     "plain": "How many people are officially registered as living in the city.",
@@ -3255,7 +4101,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 207,
     "max_age_days": 120,
     "fresh": "stale"
@@ -3799,7 +4645,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 117,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -4222,7 +5068,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-05-31",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 56,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -6945,7 +7791,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-05-31",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 56,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -9234,7 +10080,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 26,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -9345,7 +10191,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 26,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -9456,7 +10302,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 26,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -9567,7 +10413,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 26,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -10077,7 +10923,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 26,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -10279,7 +11125,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 26,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -10350,7 +11196,7 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-07-26T15:24:54+00:00",
+    "last_checked": "2026-07-26T15:30:54+00:00",
     "staleness_days": 26,
     "max_age_days": 120,
     "fresh": "fresh"
@@ -14239,5 +15085,5 @@
    }
   ]
  },
- "generated_at": "2026-07-26T15:30:22+00:00"
+ "generated_at": "2026-07-26T15:33:49+00:00"
 }

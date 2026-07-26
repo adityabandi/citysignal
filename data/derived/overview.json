@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:30:24+00:00",
+ "generated_at": "2026-07-26T15:33:49+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4350,11 +4350,18 @@
    "last_error": null
   },
   {
-   "source_id": "madrid_aire",
+   "source_id": "ine",
    "status": "ok",
-   "latest_observation": "2022-12",
-   "staleness_days": 1303,
+   "latest_observation": "2024-12",
+   "staleness_days": 572,
    "last_error": null
+  },
+  {
+   "source_id": "madrid_aire",
+   "status": "failed",
+   "latest_observation": "2002-12",
+   "staleness_days": 8608,
+   "last_error": "all 5 optional fetches failed; first: aire-resource-14: NotFoundError"
   },
   {
    "source_id": "madrid_licencias",

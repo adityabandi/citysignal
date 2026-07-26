@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:30:24+00:00",
+ "generated_at": "2026-07-26T15:33:49+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -14,6 +14,7 @@
   "airport_flights",
   "airport_passengers",
   "appraised_value",
+  "births",
   "company_dissolutions",
   "company_incorporations",
   "contracts_registered",
@@ -36,9 +37,9 @@
   "licences_granted",
   "locales_stock",
   "locales_vacancy_rate",
+  "marriages",
   "mortgage_rate_new",
   "mortgages_count",
-  "no2_level",
   "npl_ratio",
   "padron_district",
   "population_padron",
@@ -81,7 +82,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 502,
-  "observations": 21751
+  "series": 517,
+  "observations": 31315
  }
 }

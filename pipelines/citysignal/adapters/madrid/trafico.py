@@ -34,9 +34,11 @@ from ...framework.fetch import FetchPlan, RawPayload
 from ...framework.record import CanonicalRecord, municipality
 
 # Traffic historical dataset: https://datos.madrid.es/dataset/208627-0-transporte-ptomedida-historico
-# Large files (~90-100 MB each). Fetch 12 months only (~1 GB one-time bandwidth cost).
+# Large files (~90-100 MB each). Fetch 6 months only (~600 MB one-time bandwidth cost).
 # Framework skips unchanged months via content-hash, so later runs only pull new data.
-HISTORY_MONTHS = 12
+# WARNING: Download can take 10-20 minutes depending on network. A full 12-month backfill takes ~1 GB
+# and ~30-40 minutes; reduce HISTORY_MONTHS if you need faster iteration during development.
+HISTORY_MONTHS = 6
 
 
 class MadridTraficoAdapter(BaseAdapter):
