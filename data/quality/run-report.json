@@ -1,28 +1,30 @@
 {
- "run_id": "b8662e3dd63b",
- "finished_at": "2026-07-26T14:44:11+00:00",
- "ok": [],
- "failed": [
-  "serpavi"
+ "run_id": "bdd64ff3aa7e",
+ "finished_at": "2026-07-26T15:02:53+00:00",
+ "ok": [
+  "visados"
  ],
+ "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "serpavi",
-   "status": "failed",
+   "source_id": "visados",
+   "status": "skipped",
    "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 21,
-   "skipped_unchanged": 0,
-   "error": "all 21 optional fetches failed; first: serpavi-madrid-2011: NotFoundError",
-   "error_type": "AdapterFailure",
-   "duration_s": 1.1,
+   "plans": 1,
+   "skipped_unchanged": 1,
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.57,
    "latest_observation": null,
    "metrics": [],
-   "notes": []
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   }
  ]
 }

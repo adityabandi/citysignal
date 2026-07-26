@@ -12955,6 +12955,1275 @@
   ],
   "supply": [
    {
+    "metric_id": "visados_new_build",
+    "label": "Building permit visas (new construction buildings)",
+    "plain": "How many buildings received construction permits for new housing — the earliest signal of supply arriving.",
+    "label_es": null,
+    "unit": "buildings",
+    "cadence": "monthly",
+    "section": "supply",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "ccaa-13",
+    "geo_level": "ccaa",
+    "scope_label": "autonomous community",
+    "is_city_level": false,
+    "latest": {
+     "period": "2026-02",
+     "value": 112.0,
+     "yoy": -25.333333333333332
+    },
+    "suspect": false,
+    "outlier_score": 0.49,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2018-03",
+      "value": 262.0
+     },
+     {
+      "period": "2018-04",
+      "value": 360.0
+     },
+     {
+      "period": "2018-05",
+      "value": 404.0
+     },
+     {
+      "period": "2018-06",
+      "value": 298.0
+     },
+     {
+      "period": "2018-07",
+      "value": 381.0
+     },
+     {
+      "period": "2018-08",
+      "value": 191.0
+     },
+     {
+      "period": "2018-09",
+      "value": 235.0
+     },
+     {
+      "period": "2018-10",
+      "value": 371.0
+     },
+     {
+      "period": "2018-11",
+      "value": 374.0
+     },
+     {
+      "period": "2018-12",
+      "value": 253.0
+     },
+     {
+      "period": "2019-01",
+      "value": 218.0
+     },
+     {
+      "period": "2019-02",
+      "value": 278.0
+     },
+     {
+      "period": "2019-03",
+      "value": 287.0
+     },
+     {
+      "period": "2019-04",
+      "value": 303.0
+     },
+     {
+      "period": "2019-05",
+      "value": 264.0
+     },
+     {
+      "period": "2019-06",
+      "value": 356.0
+     },
+     {
+      "period": "2019-07",
+      "value": 328.0
+     },
+     {
+      "period": "2019-08",
+      "value": 170.0
+     },
+     {
+      "period": "2019-09",
+      "value": 197.0
+     },
+     {
+      "period": "2019-10",
+      "value": 372.0
+     },
+     {
+      "period": "2019-11",
+      "value": 196.0
+     },
+     {
+      "period": "2019-12",
+      "value": 167.0
+     },
+     {
+      "period": "2020-01",
+      "value": 264.0
+     },
+     {
+      "period": "2020-02",
+      "value": 209.0
+     },
+     {
+      "period": "2020-03",
+      "value": 309.0
+     },
+     {
+      "period": "2020-04",
+      "value": 116.0
+     },
+     {
+      "period": "2020-05",
+      "value": 158.0
+     },
+     {
+      "period": "2020-06",
+      "value": 177.0
+     },
+     {
+      "period": "2020-07",
+      "value": 239.0
+     },
+     {
+      "period": "2020-08",
+      "value": 175.0
+     },
+     {
+      "period": "2020-09",
+      "value": 248.0
+     },
+     {
+      "period": "2020-10",
+      "value": 287.0
+     },
+     {
+      "period": "2020-11",
+      "value": 180.0
+     },
+     {
+      "period": "2020-12",
+      "value": 189.0
+     },
+     {
+      "period": "2021-01",
+      "value": 245.0
+     },
+     {
+      "period": "2021-02",
+      "value": 354.0
+     },
+     {
+      "period": "2021-03",
+      "value": 255.0
+     },
+     {
+      "period": "2021-04",
+      "value": 329.0
+     },
+     {
+      "period": "2021-05",
+      "value": 455.0
+     },
+     {
+      "period": "2021-06",
+      "value": 294.0
+     },
+     {
+      "period": "2021-07",
+      "value": 477.0
+     },
+     {
+      "period": "2021-08",
+      "value": 192.0
+     },
+     {
+      "period": "2021-09",
+      "value": 472.0
+     },
+     {
+      "period": "2021-10",
+      "value": 192.0
+     },
+     {
+      "period": "2021-11",
+      "value": 445.0
+     },
+     {
+      "period": "2021-12",
+      "value": 461.0
+     },
+     {
+      "period": "2022-01",
+      "value": 370.0
+     },
+     {
+      "period": "2022-02",
+      "value": 259.0
+     },
+     {
+      "period": "2022-03",
+      "value": 450.0
+     },
+     {
+      "period": "2022-04",
+      "value": 205.0
+     },
+     {
+      "period": "2022-05",
+      "value": 282.0
+     },
+     {
+      "period": "2022-06",
+      "value": 300.0
+     },
+     {
+      "period": "2022-07",
+      "value": 278.0
+     },
+     {
+      "period": "2022-08",
+      "value": 208.0
+     },
+     {
+      "period": "2022-09",
+      "value": 164.0
+     },
+     {
+      "period": "2022-10",
+      "value": 344.0
+     },
+     {
+      "period": "2022-11",
+      "value": 219.0
+     },
+     {
+      "period": "2022-12",
+      "value": 173.0
+     },
+     {
+      "period": "2023-01",
+      "value": 122.0
+     },
+     {
+      "period": "2023-02",
+      "value": 200.0
+     },
+     {
+      "period": "2023-03",
+      "value": 169.0
+     },
+     {
+      "period": "2023-04",
+      "value": 56.0
+     },
+     {
+      "period": "2023-05",
+      "value": 196.0
+     },
+     {
+      "period": "2023-06",
+      "value": 124.0
+     },
+     {
+      "period": "2023-07",
+      "value": 113.0
+     },
+     {
+      "period": "2023-08",
+      "value": 45.0
+     },
+     {
+      "period": "2023-09",
+      "value": 199.0
+     },
+     {
+      "period": "2023-10",
+      "value": 138.0
+     },
+     {
+      "period": "2023-11",
+      "value": 160.0
+     },
+     {
+      "period": "2023-12",
+      "value": 74.0
+     },
+     {
+      "period": "2024-01",
+      "value": 161.0
+     },
+     {
+      "period": "2024-02",
+      "value": 152.0
+     },
+     {
+      "period": "2024-03",
+      "value": 76.0
+     },
+     {
+      "period": "2024-04",
+      "value": 117.0
+     },
+     {
+      "period": "2024-05",
+      "value": 236.0
+     },
+     {
+      "period": "2024-06",
+      "value": 98.0
+     },
+     {
+      "period": "2024-07",
+      "value": 149.0
+     },
+     {
+      "period": "2024-08",
+      "value": 75.0
+     },
+     {
+      "period": "2024-09",
+      "value": 175.0
+     },
+     {
+      "period": "2024-10",
+      "value": 151.0
+     },
+     {
+      "period": "2024-11",
+      "value": 145.0
+     },
+     {
+      "period": "2024-12",
+      "value": 87.0
+     },
+     {
+      "period": "2025-01",
+      "value": 87.0
+     },
+     {
+      "period": "2025-02",
+      "value": 150.0
+     },
+     {
+      "period": "2025-03",
+      "value": 217.0
+     },
+     {
+      "period": "2025-04",
+      "value": 46.0
+     },
+     {
+      "period": "2025-05",
+      "value": 126.0
+     },
+     {
+      "period": "2025-06",
+      "value": 139.0
+     },
+     {
+      "period": "2025-07",
+      "value": 188.0
+     },
+     {
+      "period": "2025-08",
+      "value": 79.0
+     },
+     {
+      "period": "2025-09",
+      "value": 92.0
+     },
+     {
+      "period": "2025-10",
+      "value": 142.0
+     },
+     {
+      "period": "2025-11",
+      "value": 127.0
+     },
+     {
+      "period": "2025-12",
+      "value": 46.0
+     },
+     {
+      "period": "2026-01",
+      "value": 147.0
+     },
+     {
+      "period": "2026-02",
+      "value": 112.0
+     }
+    ],
+    "source_id": "visados",
+    "source": {
+     "publisher": "Ministerio de Transportes y Movilidad Sostenible",
+     "license": "Reuse permitted (attribution)",
+     "attribution": "Source: Ministry of Transport, Building Permits Statistics",
+     "kind": "official",
+     "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
+    },
+    "observation_end": "2026-02-28",
+    "last_checked": "2026-07-26T15:02:53+00:00",
+    "staleness_days": 148,
+    "max_age_days": 120,
+    "fresh": "stale"
+   },
+   {
+    "metric_id": "visados_area",
+    "label": "Building permits, construction area",
+    "plain": "The total area of new construction receiving permits, measured in square metres.",
+    "label_es": null,
+    "unit": "m2",
+    "cadence": "monthly",
+    "section": "supply",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "ccaa-13",
+    "geo_level": "ccaa",
+    "scope_label": "autonomous community",
+    "is_city_level": false,
+    "latest": {
+     "period": "2026-02",
+     "value": 238765.0,
+     "yoy": -15.010287113699302
+    },
+    "suspect": false,
+    "outlier_score": 0.09,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2018-03",
+      "value": 358261.0
+     },
+     {
+      "period": "2018-04",
+      "value": 340618.0
+     },
+     {
+      "period": "2018-05",
+      "value": 539200.0
+     },
+     {
+      "period": "2018-06",
+      "value": 402401.0
+     },
+     {
+      "period": "2018-07",
+      "value": 657681.0
+     },
+     {
+      "period": "2018-08",
+      "value": 340889.0
+     },
+     {
+      "period": "2018-09",
+      "value": 204036.0
+     },
+     {
+      "period": "2018-10",
+      "value": 276301.0
+     },
+     {
+      "period": "2018-11",
+      "value": 363749.0
+     },
+     {
+      "period": "2018-12",
+      "value": 296488.0
+     },
+     {
+      "period": "2019-01",
+      "value": 443487.0
+     },
+     {
+      "period": "2019-02",
+      "value": 283523.0
+     },
+     {
+      "period": "2019-03",
+      "value": 457461.0
+     },
+     {
+      "period": "2019-04",
+      "value": 387332.0
+     },
+     {
+      "period": "2019-05",
+      "value": 326918.0
+     },
+     {
+      "period": "2019-06",
+      "value": 532205.0
+     },
+     {
+      "period": "2019-07",
+      "value": 465372.0
+     },
+     {
+      "period": "2019-08",
+      "value": 223093.0
+     },
+     {
+      "period": "2019-09",
+      "value": 150728.0
+     },
+     {
+      "period": "2019-10",
+      "value": 298082.0
+     },
+     {
+      "period": "2019-11",
+      "value": 184116.0
+     },
+     {
+      "period": "2019-12",
+      "value": 412465.0
+     },
+     {
+      "period": "2020-01",
+      "value": 302657.0
+     },
+     {
+      "period": "2020-02",
+      "value": 400633.0
+     },
+     {
+      "period": "2020-03",
+      "value": 234340.0
+     },
+     {
+      "period": "2020-04",
+      "value": 105872.0
+     },
+     {
+      "period": "2020-05",
+      "value": 269899.0
+     },
+     {
+      "period": "2020-06",
+      "value": 224585.0
+     },
+     {
+      "period": "2020-07",
+      "value": 274723.0
+     },
+     {
+      "period": "2020-08",
+      "value": 173304.0
+     },
+     {
+      "period": "2020-09",
+      "value": 296396.0
+     },
+     {
+      "period": "2020-10",
+      "value": 192859.0
+     },
+     {
+      "period": "2020-11",
+      "value": 241246.0
+     },
+     {
+      "period": "2020-12",
+      "value": 309183.0
+     },
+     {
+      "period": "2021-01",
+      "value": 178954.0
+     },
+     {
+      "period": "2021-02",
+      "value": 219357.0
+     },
+     {
+      "period": "2021-03",
+      "value": 194272.0
+     },
+     {
+      "period": "2021-04",
+      "value": 291146.0
+     },
+     {
+      "period": "2021-05",
+      "value": 398203.0
+     },
+     {
+      "period": "2021-06",
+      "value": 254404.0
+     },
+     {
+      "period": "2021-07",
+      "value": 284698.0
+     },
+     {
+      "period": "2021-08",
+      "value": 220599.0
+     },
+     {
+      "period": "2021-09",
+      "value": 479189.0
+     },
+     {
+      "period": "2021-10",
+      "value": 203871.0
+     },
+     {
+      "period": "2021-11",
+      "value": 318857.0
+     },
+     {
+      "period": "2021-12",
+      "value": 392844.0
+     },
+     {
+      "period": "2022-01",
+      "value": 437659.0
+     },
+     {
+      "period": "2022-02",
+      "value": 227501.0
+     },
+     {
+      "period": "2022-03",
+      "value": 444255.0
+     },
+     {
+      "period": "2022-04",
+      "value": 162264.0
+     },
+     {
+      "period": "2022-05",
+      "value": 327390.0
+     },
+     {
+      "period": "2022-06",
+      "value": 331884.0
+     },
+     {
+      "period": "2022-07",
+      "value": 231786.0
+     },
+     {
+      "period": "2022-08",
+      "value": 222730.0
+     },
+     {
+      "period": "2022-09",
+      "value": 304110.0
+     },
+     {
+      "period": "2022-10",
+      "value": 386417.0
+     },
+     {
+      "period": "2022-11",
+      "value": 345901.0
+     },
+     {
+      "period": "2022-12",
+      "value": 252224.0
+     },
+     {
+      "period": "2023-01",
+      "value": 303957.0
+     },
+     {
+      "period": "2023-02",
+      "value": 249606.0
+     },
+     {
+      "period": "2023-03",
+      "value": 280777.0
+     },
+     {
+      "period": "2023-04",
+      "value": 195895.0
+     },
+     {
+      "period": "2023-05",
+      "value": 219753.0
+     },
+     {
+      "period": "2023-06",
+      "value": 204042.0
+     },
+     {
+      "period": "2023-07",
+      "value": 318052.0
+     },
+     {
+      "period": "2023-08",
+      "value": 88479.0
+     },
+     {
+      "period": "2023-09",
+      "value": 342261.0
+     },
+     {
+      "period": "2023-10",
+      "value": 345430.0
+     },
+     {
+      "period": "2023-11",
+      "value": 189848.0
+     },
+     {
+      "period": "2023-12",
+      "value": 147622.0
+     },
+     {
+      "period": "2024-01",
+      "value": 227462.0
+     },
+     {
+      "period": "2024-02",
+      "value": 357989.0
+     },
+     {
+      "period": "2024-03",
+      "value": 167101.0
+     },
+     {
+      "period": "2024-04",
+      "value": 357973.0
+     },
+     {
+      "period": "2024-05",
+      "value": 405812.0
+     },
+     {
+      "period": "2024-06",
+      "value": 199164.0
+     },
+     {
+      "period": "2024-07",
+      "value": 390613.0
+     },
+     {
+      "period": "2024-08",
+      "value": 230728.0
+     },
+     {
+      "period": "2024-09",
+      "value": 155759.0
+     },
+     {
+      "period": "2024-10",
+      "value": 169241.0
+     },
+     {
+      "period": "2024-11",
+      "value": 275349.0
+     },
+     {
+      "period": "2024-12",
+      "value": 158398.0
+     },
+     {
+      "period": "2025-01",
+      "value": 342636.0
+     },
+     {
+      "period": "2025-02",
+      "value": 280934.0
+     },
+     {
+      "period": "2025-03",
+      "value": 246104.0
+     },
+     {
+      "period": "2025-04",
+      "value": 142910.0
+     },
+     {
+      "period": "2025-05",
+      "value": 189811.0
+     },
+     {
+      "period": "2025-06",
+      "value": 389762.0
+     },
+     {
+      "period": "2025-07",
+      "value": 255161.0
+     },
+     {
+      "period": "2025-08",
+      "value": 117660.0
+     },
+     {
+      "period": "2025-09",
+      "value": 234396.0
+     },
+     {
+      "period": "2025-10",
+      "value": 369216.0
+     },
+     {
+      "period": "2025-11",
+      "value": 314948.0
+     },
+     {
+      "period": "2025-12",
+      "value": 50543.0
+     },
+     {
+      "period": "2026-01",
+      "value": 372533.0
+     },
+     {
+      "period": "2026-02",
+      "value": 238765.0
+     }
+    ],
+    "source_id": "visados",
+    "source": {
+     "publisher": "Ministerio de Transportes y Movilidad Sostenible",
+     "license": "Reuse permitted (attribution)",
+     "attribution": "Source: Ministry of Transport, Building Permits Statistics",
+     "kind": "official",
+     "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
+    },
+    "observation_end": "2026-02-28",
+    "last_checked": "2026-07-26T15:02:53+00:00",
+    "staleness_days": 148,
+    "max_age_days": 120,
+    "fresh": "stale"
+   },
+   {
+    "metric_id": "visados_budget",
+    "label": "Building permits, execution budget",
+    "plain": "The estimated total budget for execution of newly permitted construction projects.",
+    "label_es": null,
+    "unit": "eur",
+    "cadence": "monthly",
+    "section": "supply",
+    "lag": "leading",
+    "direction": 1,
+    "note": null,
+    "geo_id": "ccaa-13",
+    "geo_level": "ccaa",
+    "scope_label": "autonomous community",
+    "is_city_level": false,
+    "latest": {
+     "period": "2026-02",
+     "value": 153084000.0,
+     "yoy": -17.71004676665054
+    },
+    "suspect": false,
+    "outlier_score": 0.52,
+    "suspect_note": null,
+    "series": [
+     {
+      "period": "2018-03",
+      "value": 157077000.0
+     },
+     {
+      "period": "2018-04",
+      "value": 158017000.0
+     },
+     {
+      "period": "2018-05",
+      "value": 256284000.0
+     },
+     {
+      "period": "2018-06",
+      "value": 187136000.0
+     },
+     {
+      "period": "2018-07",
+      "value": 291537000.0
+     },
+     {
+      "period": "2018-08",
+      "value": 144053000.0
+     },
+     {
+      "period": "2018-09",
+      "value": 86632000.0
+     },
+     {
+      "period": "2018-10",
+      "value": 148797000.0
+     },
+     {
+      "period": "2018-11",
+      "value": 162721000.0
+     },
+     {
+      "period": "2018-12",
+      "value": 133083000.0
+     },
+     {
+      "period": "2019-01",
+      "value": 200401000.0
+     },
+     {
+      "period": "2019-02",
+      "value": 140115000.0
+     },
+     {
+      "period": "2019-03",
+      "value": 209407000.0
+     },
+     {
+      "period": "2019-04",
+      "value": 182643000.0
+     },
+     {
+      "period": "2019-05",
+      "value": 150573000.0
+     },
+     {
+      "period": "2019-06",
+      "value": 260822000.0
+     },
+     {
+      "period": "2019-07",
+      "value": 214019000.0
+     },
+     {
+      "period": "2019-08",
+      "value": 123820000.0
+     },
+     {
+      "period": "2019-09",
+      "value": 71148000.0
+     },
+     {
+      "period": "2019-10",
+      "value": 148440000.0
+     },
+     {
+      "period": "2019-11",
+      "value": 93516000.0
+     },
+     {
+      "period": "2019-12",
+      "value": 201913000.0
+     },
+     {
+      "period": "2020-01",
+      "value": 142810000.0
+     },
+     {
+      "period": "2020-02",
+      "value": 190183000.0
+     },
+     {
+      "period": "2020-03",
+      "value": 101752000.0
+     },
+     {
+      "period": "2020-04",
+      "value": 52778000.0
+     },
+     {
+      "period": "2020-05",
+      "value": 140458000.0
+     },
+     {
+      "period": "2020-06",
+      "value": 115320000.0
+     },
+     {
+      "period": "2020-07",
+      "value": 166728000.0
+     },
+     {
+      "period": "2020-08",
+      "value": 97076000.0
+     },
+     {
+      "period": "2020-09",
+      "value": 157442000.0
+     },
+     {
+      "period": "2020-10",
+      "value": 105056000.0
+     },
+     {
+      "period": "2020-11",
+      "value": 131056000.0
+     },
+     {
+      "period": "2020-12",
+      "value": 165822000.0
+     },
+     {
+      "period": "2021-01",
+      "value": 86771000.0
+     },
+     {
+      "period": "2021-02",
+      "value": 116777000.0
+     },
+     {
+      "period": "2021-03",
+      "value": 94046000.0
+     },
+     {
+      "period": "2021-04",
+      "value": 148816000.0
+     },
+     {
+      "period": "2021-05",
+      "value": 206401000.0
+     },
+     {
+      "period": "2021-06",
+      "value": 133903000.0
+     },
+     {
+      "period": "2021-07",
+      "value": 161108000.0
+     },
+     {
+      "period": "2021-08",
+      "value": 114880000.0
+     },
+     {
+      "period": "2021-09",
+      "value": 241203000.0
+     },
+     {
+      "period": "2021-10",
+      "value": 107274000.0
+     },
+     {
+      "period": "2021-11",
+      "value": 177602000.0
+     },
+     {
+      "period": "2021-12",
+      "value": 215189000.0
+     },
+     {
+      "period": "2022-01",
+      "value": 259310000.0
+     },
+     {
+      "period": "2022-02",
+      "value": 130512000.0
+     },
+     {
+      "period": "2022-03",
+      "value": 247851000.0
+     },
+     {
+      "period": "2022-04",
+      "value": 103017000.0
+     },
+     {
+      "period": "2022-05",
+      "value": 183063000.0
+     },
+     {
+      "period": "2022-06",
+      "value": 201295000.0
+     },
+     {
+      "period": "2022-07",
+      "value": 140331000.0
+     },
+     {
+      "period": "2022-08",
+      "value": 135439000.0
+     },
+     {
+      "period": "2022-09",
+      "value": 172331000.0
+     },
+     {
+      "period": "2022-10",
+      "value": 227014000.0
+     },
+     {
+      "period": "2022-11",
+      "value": 185295000.0
+     },
+     {
+      "period": "2022-12",
+      "value": 147923000.0
+     },
+     {
+      "period": "2023-01",
+      "value": 162286000.0
+     },
+     {
+      "period": "2023-02",
+      "value": 140973000.0
+     },
+     {
+      "period": "2023-03",
+      "value": 187390000.0
+     },
+     {
+      "period": "2023-04",
+      "value": 102698000.0
+     },
+     {
+      "period": "2023-05",
+      "value": 139313000.0
+     },
+     {
+      "period": "2023-06",
+      "value": 125993000.0
+     },
+     {
+      "period": "2023-07",
+      "value": 193702000.0
+     },
+     {
+      "period": "2023-08",
+      "value": 48560000.0
+     },
+     {
+      "period": "2023-09",
+      "value": 208356000.0
+     },
+     {
+      "period": "2023-10",
+      "value": 201634000.0
+     },
+     {
+      "period": "2023-11",
+      "value": 126056000.0
+     },
+     {
+      "period": "2023-12",
+      "value": 97800000.0
+     },
+     {
+      "period": "2024-01",
+      "value": 174974000.0
+     },
+     {
+      "period": "2024-02",
+      "value": 250690000.0
+     },
+     {
+      "period": "2024-03",
+      "value": 89139000.0
+     },
+     {
+      "period": "2024-04",
+      "value": 221453000.0
+     },
+     {
+      "period": "2024-05",
+      "value": 263391000.0
+     },
+     {
+      "period": "2024-06",
+      "value": 123583000.0
+     },
+     {
+      "period": "2024-07",
+      "value": 263764000.0
+     },
+     {
+      "period": "2024-08",
+      "value": 124568000.0
+     },
+     {
+      "period": "2024-09",
+      "value": 111598000.0
+     },
+     {
+      "period": "2024-10",
+      "value": 119683000.0
+     },
+     {
+      "period": "2024-11",
+      "value": 185654000.0
+     },
+     {
+      "period": "2024-12",
+      "value": 106269000.0
+     },
+     {
+      "period": "2025-01",
+      "value": 234361000.0
+     },
+     {
+      "period": "2025-02",
+      "value": 186030000.0
+     },
+     {
+      "period": "2025-03",
+      "value": 162478000.0
+     },
+     {
+      "period": "2025-04",
+      "value": 84223000.0
+     },
+     {
+      "period": "2025-05",
+      "value": 121188000.0
+     },
+     {
+      "period": "2025-06",
+      "value": 178920000.0
+     },
+     {
+      "period": "2025-07",
+      "value": 194811000.0
+     },
+     {
+      "period": "2025-08",
+      "value": 65609000.0
+     },
+     {
+      "period": "2025-09",
+      "value": 203654000.0
+     },
+     {
+      "period": "2025-10",
+      "value": 259306000.0
+     },
+     {
+      "period": "2025-11",
+      "value": 204070000.0
+     },
+     {
+      "period": "2025-12",
+      "value": 38836000.0
+     },
+     {
+      "period": "2026-01",
+      "value": 237782000.0
+     },
+     {
+      "period": "2026-02",
+      "value": 153084000.0
+     }
+    ],
+    "source_id": "visados",
+    "source": {
+     "publisher": "Ministerio de Transportes y Movilidad Sostenible",
+     "license": "Reuse permitted (attribution)",
+     "attribution": "Source: Ministry of Transport, Building Permits Statistics",
+     "kind": "official",
+     "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
+    },
+    "observation_end": "2026-02-28",
+    "last_checked": "2026-07-26T15:02:53+00:00",
+    "staleness_days": 148,
+    "max_age_days": 120,
+    "fresh": "stale"
+   },
+   {
     "metric_id": "dwelling_stock",
     "label": "Dwelling stock",
     "plain": "How many homes exist in total.",
@@ -23022,5 +24291,5 @@
    }
   ]
  },
- "generated_at": "2026-07-26T15:00:43+00:00"
+ "generated_at": "2026-07-26T15:02:54+00:00"
 }

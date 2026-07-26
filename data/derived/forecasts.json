@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-26T14:37:51+00:00",
+ "generated_at": "2026-07-26T15:03:49+00:00",
  "as_of": "2026-07-26",
  "city": "madrid",
- "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
+ "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
  "vintage_basis": {
   "published_at": 1572,
-  "declared_lag": 17683
+  "declared_lag": 18913
  },
  "revisions_in_history": 0,
  "targets_version": "targets-v1",
@@ -22,7 +22,7 @@
    "horizon": 3,
    "unit_of_horizon": "months",
    "unit": "transactions",
-   "issued_at": "2026-07-26T14:37:51+00:00",
+   "issued_at": "2026-07-26T15:03:49+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-05",
    "for_period": "2026-08",
@@ -30,10 +30,10 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
+   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 17683
+    "declared_lag": 18913
    },
    "direction_only": false,
    "p_direction_up": 0.4782608695652174,
@@ -102,7 +102,7 @@
    "horizon": 6,
    "unit_of_horizon": "months",
    "unit": "transactions",
-   "issued_at": "2026-07-26T14:37:51+00:00",
+   "issued_at": "2026-07-26T15:03:49+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-05",
    "for_period": "2026-11",
@@ -110,10 +110,10 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
+   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 17683
+    "declared_lag": 18913
    },
    "direction_only": false,
    "p_direction_up": 0.4845814977973568,
@@ -182,7 +182,7 @@
    "horizon": 2,
    "unit_of_horizon": "quarters",
    "unit": "eur_m2",
-   "issued_at": "2026-07-26T14:37:51+00:00",
+   "issued_at": "2026-07-26T15:03:49+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-Q1",
    "for_period": "2026-Q3",
@@ -190,10 +190,10 @@
    "model": "drift",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
+   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 17683
+    "declared_lag": 18913
    },
    "direction_only": false,
    "p_direction_up": 0.3445378151260504,
@@ -262,7 +262,7 @@
    "horizon": 4,
    "unit_of_horizon": "quarters",
    "unit": "eur_m2",
-   "issued_at": "2026-07-26T14:37:51+00:00",
+   "issued_at": "2026-07-26T15:03:49+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-Q1",
    "for_period": "2027-Q1",
@@ -270,10 +270,10 @@
    "model": "drift",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
+   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 17683
+    "declared_lag": 18913
    },
    "direction_only": false,
    "p_direction_up": 0.29914529914529914,
@@ -342,7 +342,7 @@
    "horizon": 3,
    "unit_of_horizon": "months",
    "unit": "persons",
-   "issued_at": "2026-07-26T14:37:51+00:00",
+   "issued_at": "2026-07-26T15:03:49+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-06",
    "for_period": "2026-09",
@@ -350,10 +350,10 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
+   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 17683
+    "declared_lag": 18913
    },
    "direction_only": false,
    "p_direction_up": 0.4367816091954023,
@@ -422,7 +422,7 @@
    "horizon": 6,
    "unit_of_horizon": "months",
    "unit": "persons",
-   "issued_at": "2026-07-26T14:37:51+00:00",
+   "issued_at": "2026-07-26T15:03:49+00:00",
    "as_of": "2026-07-26",
    "from_period": "2026-06",
    "for_period": "2026-12",
@@ -430,10 +430,10 @@
    "model": "random_walk",
    "model_verdict": "baseline",
    "targets_version": "targets-v1",
-   "data_vintage": "sha256:2739ddb0c5ad912b2fdc37150b740136",
+   "data_vintage": "sha256:25b4ceb88fc1ff6ef6a3882686b45119",
    "vintage_basis": {
     "published_at": 1572,
-    "declared_lag": 17683
+    "declared_lag": 18913
    },
    "direction_only": false,
    "p_direction_up": 0.39285714285714285,
@@ -514,10 +514,38 @@
   },
   {
    "target_id": "stress_12m",
-   "status": "not_implemented",
    "question": "What is the probability Madrid enters Stress or Dislocation at any point in the next twelve months?",
    "why": "This is the closest an honest system gets to \"is there going to be a crash\". Not a date, not a magnitude — a probability of entering a defined, published state, scored with a Brier score against what actually happened. The base rate is low, so a model must beat \"it never happens\" to be worth anything, and that is a demanding bar.",
-   "kind": "regime_transition"
+   "kind": "regime_transition",
+   "geo_id": "mun-28079",
+   "geo_level": "municipality",
+   "city": "madrid",
+   "into": [
+    "stress",
+    "dislocation"
+   ],
+   "horizon": 12,
+   "unit_of_horizon": "months",
+   "issued_at": "2026-07-26T15:03:49+00:00",
+   "from_period": "2026-06",
+   "for_period": "within 12 months",
+   "probability": 0.045454545454545456,
+   "base_rate": 0.19196428571428573,
+   "beats_base_rate": true,
+   "episodes_in_history": 9,
+   "confidence": "moderate",
+   "model": "analog_frequency",
+   "targets_version": "targets-v1",
+   "status": "issued_probability",
+   "estimate": {
+    "probability": 0.0455,
+    "model": "analog_frequency",
+    "episodes_in_history": 9,
+    "neighbours_used": 20,
+    "base_rate": 0.192,
+    "confidence": "moderate",
+    "nearest_distance": 0.454
+   }
   },
   {
    "target_id": "district_growth_rank",

@@ -1,0 +1,9 @@
+# Sample agent branding for district reports.
+# This is obviously fake and is used only for testing the template.
+# Replace with your own agent details.
+
+name: Agente de Ejemplo
+company: Inmobiliaria Ejemplo S.L.
+phone: 000-000-0000
+email: info@example.com
+logo_path: ""

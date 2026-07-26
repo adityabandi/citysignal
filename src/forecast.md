@@ -63,6 +63,48 @@ display(
 );
 ```
 
+## Is there going to be a crash?
+
+```js
+const transition = fc.forecasts.find((f) => f.kind === "regime_transition");
+
+display(
+  transition && transition.probability != null
+    ? el("div", {class: "cs-panel"}, [
+        el("div", {class: "cs-kicker", text: "Probability of entering Stress or Dislocation within 12 months"}),
+        el("div", {class: "cs-headline-text", style: "margin:.5rem 0 .2rem"}, [
+          el("span", {class: "cs-headline-figure cs-num", text: `${(transition.probability * 100).toFixed(1)}%`}),
+          document.createTextNode(
+            transition.base_rate == null
+              ? ""
+              : ` against a historical base rate of ${(transition.base_rate * 100).toFixed(1)}%.`
+          )
+        ]),
+        el("div", {class: "cs-plain", style: "max-width:62ch"},
+          `That is the closest an honest system gets to the question everyone actually asks. ` +
+          `It is not a date and not a magnitude — it is the chance of entering a regime that is ` +
+          `defined by published rules, so the answer can be checked when the window closes. ` +
+          `The estimate comes from the ${transition.estimate?.neighbours_used ?? 0} moments in the ` +
+          `eight-city record whose four indices most resembled Madrid's now.`),
+        el("div", {class: "cs-meta"}, [
+          el("span", {
+            class: `cs-freshness ${transition.confidence === "moderate" ? "cs-stale" : "cs-failing"}`,
+            text: `${transition.confidence} confidence`
+          }),
+          el("span", {text: `${transition.episodes_in_history} distress episodes in the whole record`}),
+          el("span", {class: "cs-kind", text: transition.model.replace(/_/g, " ")}),
+          el("span", {text: transition.beats_base_rate ? "differs from the base rate" : "no different from the base rate"})
+        ]),
+        el("div", {class: "cs-note", style: "margin-top:.7rem;max-width:62ch", text:
+          "Two caveats that matter more than the number. The record contains one severe cycle, " +
+          "so any probability here rests on very few episodes — which is why it is smoothed and " +
+          "can never read 0% or 100%. And a low probability is not a forecast of calm: it says " +
+          "this configuration has not usually been followed by distress, not that it cannot be."})
+      ])
+    : el("div", {class: "cs-empty", text: "Not enough regime history to estimate a transition probability yet."})
+);
+```
+
 ## The forecasts
 
 ```js

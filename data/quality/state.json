@@ -1,0 +1,30 @@
+{
+ "https://datos.comunidad.madrid/dataset/6e5b1601-1af0-49bf-813b-227a093b7af1/resource/532735ad-4ce6-4a29-ad11-bb86916c0cf4/download/extraccionesvisados-de-direccion-de-obra-nueva-por-uso-de-la-edificacion.-comunidad-de-madrid-y-.csv": {
+  "bytes": 5780689,
+  "etag": "\"1777443046.97-5780689-530191682\"",
+  "last_checked": "2026-07-26T15:02:53+00:00",
+  "last_modified": "Wed, 29 Apr 2026 06:10:46 GMT",
+  "sha256": "cf35925f104f073b21b57a17e1c32fdea319755f1dc17bfd5f0d3e3a0c0f7dfa"
+ },
+ "https://datos.madrid.es/dataset/640505-0-licencias-urbanisticas-otorgadas/resource/640505-1-licencias-urbanisticas-otorgadas/download/640505-1-licencias-urbanisticas-otorgadas.csv": {
+  "bytes": 2723357,
+  "etag": "\"1783319859.7503555-2723357-240064466\"",
+  "last_checked": "2026-07-26T14:55:09+00:00",
+  "last_modified": "Mon, 06 Jul 2026 06:37:39 GMT",
+  "sha256": "7c0f0ab6f71bdd6a2aab94da9c61ff79e9c741586138dc6646993c5bff1130e3"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/ES/aggregate_job_postings_ES.csv": {
+  "bytes": 194881,
+  "etag": "W/\"bce5efd5ae0e83a0e564e07a6a74ac270c8543dfb6e102a76ea3fa0cfed53360\"",
+  "last_checked": "2026-07-26T14:47:20+00:00",
+  "last_modified": null,
+  "sha256": "8426d7ffe3d409815774aebb3e7294c1b5e9339d586d3aa74838aba7dd6c1140"
+ },
+ "https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Edificaci%C3%B3n%20y%20Vivienda/Mercado%20de%20la%20Vivienda/Sistema%20Estatal%20de%20%C3%8Dndices%20de%20Referencia%20del%20Precio%20del%20Alquiler%20de%20Vivienda/2022_2023_2024_2025/INDICE%20ESTATAL%20ALQUILER%20_distritos2026.xlsx": {
+  "bytes": 19529,
+  "etag": "\"4c49-64f1bc3dbcd9c-gzip\"",
+  "last_checked": "2026-07-26T14:57:44+00:00",
+  "last_modified": "Fri, 10 Apr 2026 14:15:28 GMT",
+  "sha256": "3a5ef84ec377d3bccfb469b1f818901490734d7c5b143e0512d7b975cc8ab833"
+ }
+}

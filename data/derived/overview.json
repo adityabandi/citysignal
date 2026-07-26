@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:00:45+00:00",
+ "generated_at": "2026-07-26T15:02:56+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4372,10 +4372,10 @@
   },
   {
    "source_id": "visados",
-   "status": "failed",
-   "latest_observation": null,
-   "staleness_days": null,
-   "last_error": "no visados (building permits) Excel file link found on the ministry page and direct URL attempts failed"
+   "status": "skipped",
+   "latest_observation": "2026-02",
+   "staleness_days": 148,
+   "last_error": null
   }
  ]
 }

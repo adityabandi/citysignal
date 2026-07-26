@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:00:45+00:00",
+ "generated_at": "2026-07-26T15:02:56+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -532,6 +532,7 @@
    "staleness_days": null,
    "status": "failed",
    "declared": {
+    "enabled": false,
     "publisher": "Consejo General del Notariado",
     "license": "Reuse permitted (attribution)",
     "attribution": "Source: Consejo General del Notariado, CIEN",
@@ -539,7 +540,8 @@
     "kind": "official",
     "cadence": "monthly",
     "max_age_days": 120,
-    "redistribute": true
+    "redistribute": true,
+    "notes": "Not collected. The Consejo General del Notariado's CIEN (Centro de Información Estadística del Notariado) statistics could not be located in machine-readable form. URLs attempted to fetch the data returned 404 even with a browser User-Agent. The source is withheld rather than guessed; metrics (notary_sales, notary_price_m2) stay declared so the gap is visible rather than forgotten.\n"
    }
   },
   {
@@ -702,21 +704,27 @@
   {
    "attribution": "Source: Ministry of Transport, Building Permits Statistics",
    "cadence": "monthly",
-   "consecutive_failures": 3,
+   "consecutive_failures": 0,
    "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas",
    "fresh": false,
-   "geo_level": "province",
+   "geo_level": "ccaa",
    "kind": "official",
-   "last_checked": "2026-07-26T14:57:42+00:00",
-   "last_error": "no visados (building permits) Excel file link found on the ministry page and direct URL attempts failed",
+   "last_checked": "2026-07-26T15:02:53+00:00",
+   "last_error": null,
    "last_error_type": "AdapterFailure",
+   "last_success": "2026-07-26T15:02:53+00:00",
+   "latest_observation": "2026-02",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 120,
-   "metrics": [],
+   "metrics": [
+    "visados_area",
+    "visados_budget",
+    "visados_new_build"
+   ],
    "publisher": "Ministerio de Transportes y Movilidad Sostenible",
    "source_id": "visados",
-   "staleness_days": null,
-   "status": "failed",
+   "staleness_days": 148,
+   "status": "skipped",
    "declared": {
     "publisher": "Ministerio de Transportes y Movilidad Sostenible",
     "license": "Reuse permitted (attribution)",

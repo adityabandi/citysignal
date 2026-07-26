@@ -9,11 +9,19 @@ The full 2011–2024 Excel database lists district average rent (€/m²/month),
 total monthly rent, and dwelling count observed. This is the primary source
 for understanding rental pressure by neighbourhood.
 
-The adapter downloads the Excel file, extracts the Madrid municipal sheet,
-filters to the 21 districts, and emits three metrics per district per year.
+The adapter attempts to download Excel files for all years 2011–2026 from the
+Madrid city council portal. Each year is fetched with optional=True so that
+missing years don't block the entire source. The adapter extracts the Madrid
+municipal sheet, filters to the 21 districts, and emits three metrics per
+district per year.
+
 SANITY CHECK: Salamanca (04) / Chamberí (07) / Centro (01) must show higher
 €/m² than Villaverde (17) / Usera (12) / Puente de Vallecas (13). If the
 ordering inverts, the column selection is wrong — fix it.
+
+NOTE: The Madrid portal and MIVAU repository may require User-Agent headers
+and have rate limiting. Historical years (2011-2021) may not be publicly
+accessible through the web interface.
 """
 
 from __future__ import annotations
@@ -69,18 +77,18 @@ class SerpavIAdapter(BaseAdapter):
     )
 
     def discover(self, ctx: RunContext) -> list[FetchPlan]:
-        # SERPAVI district-level data is available from Madrid city council's
-        # statistics portal, updated annually from 2011 onward. The data is organized
-        # in grouped-year folders (e.g., "2022_2023_2024_2025" containing files for
-        # those years). We fetch known working folders with optional=True to build
-        # a historical series without failing if some years are missing.
+        # SERPAVI district-level data is published annually (2011 onward) from MIVAU.
+        # The data is hosted on the Madrid city council portal, organized in
+        # grouped-year folders like "2022_2023_2024_2025". We create fetch plans
+        # for all known years (2011-2026+) as optional, so that we build the most
+        # complete time series available without failing if some years are missing.
 
         plans: list[FetchPlan] = []
         base = "https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Edificaci%C3%B3n%20y%20Vivienda/Mercado%20de%20la%20Vivienda/Sistema%20Estatal%20de%20%C3%8Dndices%20de%20Referencia%20del%20Precio%20del%20Alquiler%20de%20Vivienda"
 
-        # Known working folder structure (folders may contain multiple years)
-        # Each tuple is (folder_name, years_to_try_in_that_folder)
-        known_folders = [
+        # Folder organization on Madrid portal (grouped by time periods)
+        # Each folder contains annual files for the years in its name
+        year_groups = [
             ("2022_2023_2024_2025", list(range(2022, 2027))),  # 2022-2026
             ("2020_2021", [2020, 2021]),
             ("2017_2018_2019", [2017, 2018, 2019]),
@@ -88,15 +96,17 @@ class SerpavIAdapter(BaseAdapter):
             ("2011_2012_2013", [2011, 2012, 2013]),
         ]
 
-        for folder, years in known_folders:
+        for folder, years in year_groups:
             for year in years:
                 url = f"{base}/{folder}/INDICE%20ESTATAL%20ALQUILER%20_distritos{year}.xlsx"
+                # Mark 2026 as required, all others as optional
+                is_required = year == 2026
                 plans.append(
                     FetchPlan(
                         url=url,
                         fmt="xlsx",
                         label=f"serpavi-madrid-{year}",
-                        optional=True,
+                        optional=not is_required,
                         meta={"source": "madrid", "year": str(year)},
                     )
                 )

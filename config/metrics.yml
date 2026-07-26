@@ -211,16 +211,38 @@ metrics:
     lag: coincident
     range: [20000, 700000]
   visados_new_build:
-    label: Building permit visas (new construction)
-    plain: How many building permits were filed for new construction — the earliest signal of supply arriving.
-    unit: dwellings
+    label: Building permit visas (new construction buildings)
+    plain: How many buildings received construction permits for new housing — the earliest signal of supply arriving.
+    unit: buildings
     cadence: monthly
-    geo_level: province
+    geo_level: ccaa
     source_id: visados
     section: supply
     direction: 1
     lag: leading
-    range: [0, 20000]
+    range: [0, 2000]
+  visados_area:
+    label: Building permits, construction area
+    plain: The total area of new construction receiving permits, measured in square metres.
+    unit: m2
+    cadence: monthly
+    geo_level: ccaa
+    source_id: visados
+    section: supply
+    direction: 1
+    lag: leading
+    range: [0, 5000000]
+  visados_budget:
+    label: Building permits, execution budget
+    plain: The estimated total budget for execution of newly permitted construction projects.
+    unit: eur
+    cadence: monthly
+    geo_level: ccaa
+    source_id: visados
+    section: supply
+    direction: 1
+    lag: leading
+    range: [0, 3000000000]
   notary_sales:
     label: Housing sales (notary records)
     plain: How many housing sales were signed before a notary — leading the land registry by about 2 months.

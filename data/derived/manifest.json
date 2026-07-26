@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T15:00:45+00:00",
+ "generated_at": "2026-07-26T15:02:56+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -58,6 +58,9 @@
   "tourist_dwellings",
   "unemployment_registered",
   "vehicle_registrations",
+  "visados_area",
+  "visados_budget",
+  "visados_new_build",
   "vut_licensed",
   "wiki_city_attention",
   "wiki_city_foreign_share",
@@ -72,7 +75,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 487,
-  "observations": 19576
+  "series": 490,
+  "observations": 20806
  }
 }

@@ -295,6 +295,7 @@ sources:
     redistribute: true
 
   notariado:
+    enabled: false
     publisher: Consejo General del Notariado
     license: Reuse permitted (attribution)
     attribution: "Source: Consejo General del Notariado, CIEN"
@@ -303,3 +304,9 @@ sources:
     cadence: monthly
     max_age_days: 120
     redistribute: true
+    notes: >
+      Not collected. The Consejo General del Notariado's CIEN (Centro de Información
+      Estadística del Notariado) statistics could not be located in machine-readable form.
+      URLs attempted to fetch the data returned 404 even with a browser User-Agent. The
+      source is withheld rather than guessed; metrics (notary_sales, notary_price_m2)
+      stay declared so the gap is visible rather than forgotten.

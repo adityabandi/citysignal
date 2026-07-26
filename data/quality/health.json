@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T14:44:11+00:00",
+ "generated_at": "2026-07-26T15:02:53+00:00",
  "sources": {
   "aena": {
    "attribution": "Source: Aena",
@@ -171,10 +171,10 @@
    "fresh": false,
    "geo_level": "nation",
    "kind": "research",
-   "last_checked": "2026-07-26T14:44:01+00:00",
+   "last_checked": "2026-07-26T14:47:20+00:00",
    "last_error": null,
    "last_error_type": "NotFoundError",
-   "last_success": "2026-07-26T14:44:01+00:00",
+   "last_success": "2026-07-26T14:47:20+00:00",
    "latest_observation": "2026-06",
    "license": "Free for public use with attribution",
    "max_age_days": 14,
@@ -248,10 +248,10 @@
    "fresh": false,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-26T14:44:02+00:00",
+   "last_checked": "2026-07-26T14:55:09+00:00",
    "last_error": null,
    "last_error_type": "AdapterFailure",
-   "last_success": "2026-07-26T14:44:02+00:00",
+   "last_success": "2026-07-26T14:55:09+00:00",
    "latest_observation": "2026-04",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 45,
@@ -261,7 +261,7 @@
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_licencias",
    "staleness_days": 87,
-   "status": "ok"
+   "status": "skipped"
   },
   "madrid_locales": {
    "attribution": "Source: Ayuntamiento de Madrid, Censo de Locales y Actividades",
@@ -359,18 +359,18 @@
    "status": "skipped"
   },
   "notariado": {
-   "attribution": "Source: CIEN, Consejo General del Notariado",
+   "attribution": "Source: Consejo General del Notariado, CIEN",
    "cadence": "monthly",
-   "consecutive_failures": 1,
-   "docs_url": "https://www.notariado.org/canal/estadisticas",
+   "consecutive_failures": 2,
+   "docs_url": "https://www.notariado.org",
    "fresh": false,
    "geo_level": "province",
    "kind": "official",
-   "last_checked": "2026-07-26T14:20:41+00:00",
-   "last_error": "HTTP 404 from https://www.notariado.org/canal/estadisticas/cien",
-   "last_error_type": "NotFoundError",
+   "last_checked": "2026-07-26T14:57:43+00:00",
+   "last_error": "could not locate CIEN (notary statistics) data. Tried multiple URLs on notariado.org; the data may be behind a login or the page layout may have changed.",
+   "last_error_type": "AdapterFailure",
    "license": "Reuse permitted (attribution)",
-   "max_age_days": 90,
+   "max_age_days": 120,
    "metrics": [],
    "publisher": "Consejo General del Notariado",
    "source_id": "notariado",
@@ -444,15 +444,15 @@
   "serpavi": {
    "attribution": "Source: MIVAU / SERPAVI",
    "cadence": "annual",
-   "consecutive_failures": 2,
+   "consecutive_failures": 0,
    "docs_url": "https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi",
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-26T14:44:11+00:00",
-   "last_error": "all 21 optional fetches failed; first: serpavi-madrid-2011: NotFoundError",
-   "last_error_type": "AdapterFailure",
-   "last_success": "2026-07-26T14:32:27+00:00",
+   "last_checked": "2026-07-26T14:57:45+00:00",
+   "last_error": null,
+   "last_error_type": "NotFoundError",
+   "last_success": "2026-07-26T14:57:45+00:00",
    "latest_observation": "2026",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 400,
@@ -464,7 +464,7 @@
    "publisher": "Ministerio de Vivienda y Agenda Urbana",
    "source_id": "serpavi",
    "staleness_days": -158,
-   "status": "failed"
+   "status": "ok"
   },
   "trends_manual": {
    "attribution": "Source: Google Trends, exported manually",
@@ -495,21 +495,27 @@
   "visados": {
    "attribution": "Source: Ministry of Transport, Building Permits Statistics",
    "cadence": "monthly",
-   "consecutive_failures": 2,
+   "consecutive_failures": 0,
    "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas",
    "fresh": false,
-   "geo_level": "province",
+   "geo_level": "ccaa",
    "kind": "official",
-   "last_checked": "2026-07-26T14:41:20+00:00",
-   "last_error": "could not fetch the ministry's housing statistics listing page: HTTP 403 from https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas",
+   "last_checked": "2026-07-26T15:02:53+00:00",
+   "last_error": null,
    "last_error_type": "AdapterFailure",
+   "last_success": "2026-07-26T15:02:53+00:00",
+   "latest_observation": "2026-02",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 120,
-   "metrics": [],
+   "metrics": [
+    "visados_area",
+    "visados_budget",
+    "visados_new_build"
+   ],
    "publisher": "Ministerio de Transportes y Movilidad Sostenible",
    "source_id": "visados",
-   "staleness_days": null,
-   "status": "failed"
+   "staleness_days": 148,
+   "status": "skipped"
   },
   "wikipedia": {
    "attribution": "Source: Wikimedia REST API pageviews",

@@ -30,6 +30,7 @@ from ..framework.config import Config
 from ..framework.record import period_shift
 from .evaluate import choose_model, score, walk_forward
 from .models import BASELINES, analog
+from .transition import analog_transition, base_rate
 from .vintage import VintageStore
 
 FORECAST_DIR = "forecasts"
@@ -100,9 +101,13 @@ class ForecastEngine:
 
         results = []
         for target in self.targets:
+            if target.kind == "regime_transition":
+                results.append(self._regime_transition(target, city))
+                continue
+
             if target.kind != "level" or not target.metric_id:
-                # Regime-transition and ranking targets need their own machinery;
-                # declared now, scored once the level targets have a record.
+                # The district-ranking target needs its own scoring (Spearman
+                # against a realised ranking); declared now, built next.
                 results.append({
                     "target_id": target.target_id,
                     "status": "not_implemented",
@@ -231,6 +236,78 @@ class ForecastEngine:
             )
             written.append(path)
         return written
+
+    # ---- the crash question ----------------------------------------------
+    def _regime_transition(self, target: Target, city) -> dict:
+        """P(entering a distressed regime within the window).
+
+        Reads the regime timelines and index histories the derive step already
+        wrote, so the estimate rests on exactly the classifications published on
+        the site rather than on a private recomputation.
+        """
+        cities_dir = self.config.data_dir / "derived" / "cities"
+        if not cities_dir.exists():
+            return {
+                "target_id": target.target_id,
+                "status": "insufficient_data",
+                "question": target.question,
+                "why": target.why,
+                "detail": "derive has not run, so there are no regime timelines to read",
+            }
+
+        timelines: dict[str, list[dict]] = {}
+        index_histories: dict[str, dict[str, dict[str, float]]] = {}
+        for path in sorted(cities_dir.glob("*.json")):
+            payload = json.loads(path.read_text())
+            slug = payload["slug"]
+            timelines[slug] = payload.get("regime_timeline") or []
+            index_histories[slug] = {
+                index_id: {
+                    point["period"]: point["value"]
+                    for point in points
+                    if point.get("value") is not None
+                }
+                for index_id, points in (payload.get("index_history") or {}).items()
+            }
+
+        into = target.into or ("stress", "dislocation")
+        rate, episodes = base_rate(timelines, window=target.horizon, into=into)
+        estimate = analog_transition(
+            timelines,
+            index_histories,
+            city_slug=city.slug,
+            window=target.horizon,
+            into=into,
+        )
+
+        return {
+            "target_id": target.target_id,
+            "question": target.question,
+            "why": target.why,
+            "kind": "regime_transition",
+            "geo_id": city.geo_id,
+            "geo_level": "municipality",
+            "city": city.slug,
+            "into": list(into),
+            "horizon": target.horizon,
+            "unit_of_horizon": target.unit_of_horizon,
+            "issued_at": _now(),
+            "from_period": (timelines.get(city.slug) or [{}])[-1].get("period"),
+            "for_period": f"within {target.horizon} months",
+            "probability": estimate.probability,
+            "base_rate": rate,
+            "beats_base_rate": (
+                None
+                if estimate.probability is None or rate is None
+                else abs(estimate.probability - rate) > 0.02
+            ),
+            "episodes_in_history": episodes,
+            "confidence": estimate.confidence,
+            "model": estimate.model,
+            "targets_version": self.spec.get("version", "targets-v1"),
+            "status": "issued_probability",
+            "estimate": estimate.to_dict(),
+        }
 
     # ---- the public record -----------------------------------------------
     def track_record(self) -> dict:
