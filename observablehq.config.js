@@ -20,6 +20,7 @@ export default {
   pages: [
     {name: "Today", path: "/"},
     {name: "Compare", path: "/compare"},
+    {name: "Desk", path: "/desk"},
     {
       name: "Cities",
       pages: cities.map((slug) => ({

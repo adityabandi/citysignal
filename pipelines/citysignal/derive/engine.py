@@ -18,6 +18,7 @@ from ..framework.record import period_shift, utc_today, period_end
 from .indices import IndexEngine, SignatureEngine
 from .leadlag import LeadLagLab
 from .rules import classify
+from .desk import DeskBuilder
 from .store import SCOPE_LABELS, HistoryStore
 from .transforms import robust_outlier_score, yoy
 
@@ -63,6 +64,7 @@ class DeriveEngine:
         self.signatures = SignatureEngine(config, self.indices)
         self.lab = LeadLagLab(config, self.store)
         self.regime_rules = config.ruleset("regimes")
+        self.desk = DeskBuilder(config, self.store)
         self.health = self._load_health()
         self.provisional = self._provisional_releases()
 
@@ -151,6 +153,7 @@ class DeriveEngine:
                 for k, hist in histories.items()
             },
             "districts": self._districts(city),
+            "desk": self.desk.build(city),
             "signatures": self.signatures.match(city),
             "leadlag": [r.to_dict() for r in self.lab.evaluate_city(city)],
             "sections": sections,

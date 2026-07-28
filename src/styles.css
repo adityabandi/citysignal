@@ -505,3 +505,157 @@ table.cs-table td.cs-num { font-variant-numeric: tabular-nums; }
   z-index: 5;
 }
 .cs-map-tip strong { color: var(--cs-ink); }
+
+/* ------------------------------------------------------------------- the desk
+
+   A trading-desk register: ticker codes, a running tape, and signal cards that
+   read at a glance. The green is used only here and only for state, on the same
+   dark surface as the rest of the site — the desk should read as a room in the
+   same building, not a different product. */
+
+.cs-tape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  background: var(--cs-rule);
+  border: 1px solid var(--cs-rule);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.cs-tape-item {
+  flex: 1 1 150px;
+  background: var(--cs-surface);
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+.cs-tape-ticker {
+  font-family: var(--cs-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  color: var(--cs-ink-4);
+}
+.cs-tape-value {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--cs-ink);
+}
+.cs-tape-delta { font-size: 0.68rem; color: var(--cs-ink-2); }
+.cs-tape-period { font-size: 0.6rem; color: var(--cs-ink-4); font-family: var(--cs-mono); }
+
+/* The hero states the composite in words first. The figure is large but second,
+   because the sentence is what a reader can actually use. */
+.cs-desk-hero {
+  border: 1px solid var(--cs-rule);
+  border-left: 3px solid var(--signal, var(--cs-ink-3));
+  border-radius: 3px;
+  padding: 1.4rem 1.5rem;
+  margin: 1rem 0 1.6rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0) 55%),
+    var(--cs-surface);
+}
+.cs-desk-hero-text {
+  font-size: clamp(1.05rem, 2.1vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.42;
+  letter-spacing: -0.015em;
+  max-width: 62ch;
+  text-wrap: pretty;
+  color: var(--cs-ink);
+}
+.cs-desk-hero-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--cs-grid);
+  font-size: 0.7rem;
+  color: var(--cs-ink-3);
+}
+.cs-desk-hero-figure {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--signal, var(--cs-ink));
+}
+
+.cs-signal-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+}
+
+.cs-signal {
+  background: var(--cs-surface);
+  border: 1px solid var(--cs-rule);
+  border-radius: 3px;
+  padding: 0.85rem 0.9rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: border-color 0.16s ease;
+}
+.cs-signal:hover { border-color: var(--signal, #333844); }
+
+.cs-signal-head { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
+.cs-signal-ticker {
+  font-family: var(--cs-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  color: var(--signal, var(--cs-ink-3));
+}
+.cs-signal-scope {
+  font-family: var(--cs-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--cs-ink-4);
+}
+.cs-signal-name {
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--cs-ink);
+}
+.cs-signal-figure { display: flex; align-items: baseline; gap: 0.3rem; }
+.cs-signal-index {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--signal, var(--cs-ink));
+  line-height: 1;
+}
+.cs-signal-outof { font-size: 0.7rem; color: var(--cs-ink-4); }
+.cs-signal-delta { font-size: 0.66rem; color: var(--cs-ink-3); margin-left: auto; }
+
+/* A bar with the neutral mark at 50, so "unusual" reads as distance from the
+   middle rather than as a number needing interpretation. */
+.cs-gauge {
+  position: relative;
+  height: 4px;
+  background: var(--cs-grid);
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0.15rem 0 0.1rem;
+}
+.cs-gauge-fill { position: absolute; inset: 0 auto 0 0; border-radius: 2px; opacity: 0.85; }
+.cs-gauge-mid { position: absolute; left: 50%; top: -1px; bottom: -1px; width: 1px; background: var(--cs-ink-4); }
+
+.cs-signal-read {
+  font-family: var(--cs-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--signal, var(--cs-ink-3));
+}
+.cs-signal-why {
+  font-size: 0.7rem;
+  line-height: 1.48;
+  color: var(--cs-ink-3);
+  text-wrap: pretty;
+}
+.cs-signal-inv { color: var(--cs-ink-4); letter-spacing: 0.09em; }
