@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-28T06:53:05+00:00",
+ "generated_at": "2026-07-28T16:45:26+00:00",
  "version": "leadlag-v1",
  "method": "Signals and outcomes are compared as year-over-year change. The lag is chosen on the earlier part of each series and scored on a held-out tail the search never saw, then required to beat a seasonal-naive baseline.",
  "pairs": [

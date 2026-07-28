@@ -2658,6 +2658,2058 @@
   "metrics": {},
   "codes": []
  },
+ "desk": {
+  "city": "sevilla",
+  "name": "Sevilla",
+  "composite": 72,
+  "composite_n": 6,
+  "tape": [
+   {
+    "metric_id": "euribor_12m",
+    "ticker": "EURIBOR",
+    "label": "Euribor 12-month",
+    "plain": "The interest rate most Spanish variable-rate mortgages are priced off. When this rises, monthly repayments follow.",
+    "note": null,
+    "unit": "percent",
+    "section": "credit",
+    "geo_level": "nation",
+    "source_id": "bde",
+    "period": "2026-06",
+    "value": 2.798,
+    "yoy": 34.45458913983662,
+    "observations": 330,
+    "series": [
+     {
+      "period": "2023-07",
+      "value": 4.149
+     },
+     {
+      "period": "2023-08",
+      "value": 4.073
+     },
+     {
+      "period": "2023-09",
+      "value": 4.149
+     },
+     {
+      "period": "2023-10",
+      "value": 4.16
+     },
+     {
+      "period": "2023-11",
+      "value": 4.022
+     },
+     {
+      "period": "2023-12",
+      "value": 3.679
+     },
+     {
+      "period": "2024-01",
+      "value": 3.609
+     },
+     {
+      "period": "2024-02",
+      "value": 3.671
+     },
+     {
+      "period": "2024-03",
+      "value": 3.718
+     },
+     {
+      "period": "2024-04",
+      "value": 3.703
+     },
+     {
+      "period": "2024-05",
+      "value": 3.68
+     },
+     {
+      "period": "2024-06",
+      "value": 3.65
+     },
+     {
+      "period": "2024-07",
+      "value": 3.526
+     },
+     {
+      "period": "2024-08",
+      "value": 3.166
+     },
+     {
+      "period": "2024-09",
+      "value": 2.936
+     },
+     {
+      "period": "2024-10",
+      "value": 2.691
+     },
+     {
+      "period": "2024-11",
+      "value": 2.506
+     },
+     {
+      "period": "2024-12",
+      "value": 2.436
+     },
+     {
+      "period": "2025-01",
+      "value": 2.525
+     },
+     {
+      "period": "2025-02",
+      "value": 2.407
+     },
+     {
+      "period": "2025-03",
+      "value": 2.398
+     },
+     {
+      "period": "2025-04",
+      "value": 2.143
+     },
+     {
+      "period": "2025-05",
+      "value": 2.081
+     },
+     {
+      "period": "2025-06",
+      "value": 2.081
+     },
+     {
+      "period": "2025-07",
+      "value": 2.079
+     },
+     {
+      "period": "2025-08",
+      "value": 2.114
+     },
+     {
+      "period": "2025-09",
+      "value": 2.172
+     },
+     {
+      "period": "2025-10",
+      "value": 2.187
+     },
+     {
+      "period": "2025-11",
+      "value": 2.217
+     },
+     {
+      "period": "2025-12",
+      "value": 2.267
+     },
+     {
+      "period": "2026-01",
+      "value": 2.245
+     },
+     {
+      "period": "2026-02",
+      "value": 2.221
+     },
+     {
+      "period": "2026-03",
+      "value": 2.565
+     },
+     {
+      "period": "2026-04",
+      "value": 2.747
+     },
+     {
+      "period": "2026-05",
+      "value": 2.804
+     },
+     {
+      "period": "2026-06",
+      "value": 2.798
+     }
+    ],
+    "z": 0.51
+   },
+   {
+    "metric_id": "ecb_mortgage_rate",
+    "ticker": "ECB-MTG",
+    "label": "ECB mortgage rate (Spain)",
+    "plain": "The interest rate banks are charging on new mortgages to households, sourced from the ECB's Monetary Interest Rates dataset.",
+    "note": null,
+    "unit": "percent",
+    "section": "credit",
+    "geo_level": "nation",
+    "source_id": "ecb",
+    "period": "2026-05",
+    "value": 2.85,
+    "yoy": 5.16605166051661,
+    "observations": 137,
+    "series": [
+     {
+      "period": "2023-06",
+      "value": 3.82
+     },
+     {
+      "period": "2023-07",
+      "value": 3.84
+     },
+     {
+      "period": "2023-08",
+      "value": 3.93
+     },
+     {
+      "period": "2023-09",
+      "value": 3.92
+     },
+     {
+      "period": "2023-10",
+      "value": 3.94
+     },
+     {
+      "period": "2023-11",
+      "value": 3.85
+     },
+     {
+      "period": "2023-12",
+      "value": 3.78
+     },
+     {
+      "period": "2024-01",
+      "value": 3.61
+     },
+     {
+      "period": "2024-02",
+      "value": 3.62
+     },
+     {
+      "period": "2024-03",
+      "value": 3.47
+     },
+     {
+      "period": "2024-04",
+      "value": 3.5
+     },
+     {
+      "period": "2024-05",
+      "value": 3.47
+     },
+     {
+      "period": "2024-06",
+      "value": 3.37
+     },
+     {
+      "period": "2024-07",
+      "value": 3.33
+     },
+     {
+      "period": "2024-08",
+      "value": 3.38
+     },
+     {
+      "period": "2024-09",
+      "value": 3.26
+     },
+     {
+      "period": "2024-10",
+      "value": 3.2
+     },
+     {
+      "period": "2024-11",
+      "value": 3.04
+     },
+     {
+      "period": "2024-12",
+      "value": 2.9
+     },
+     {
+      "period": "2025-01",
+      "value": 2.89
+     },
+     {
+      "period": "2025-02",
+      "value": 2.87
+     },
+     {
+      "period": "2025-03",
+      "value": 2.8
+     },
+     {
+      "period": "2025-04",
+      "value": 2.75
+     },
+     {
+      "period": "2025-05",
+      "value": 2.71
+     },
+     {
+      "period": "2025-06",
+      "value": 2.68
+     },
+     {
+      "period": "2025-07",
+      "value": 2.63
+     },
+     {
+      "period": "2025-08",
+      "value": 2.68
+     },
+     {
+      "period": "2025-09",
+      "value": 2.66
+     },
+     {
+      "period": "2025-10",
+      "value": 2.67
+     },
+     {
+      "period": "2025-11",
+      "value": 2.63
+     },
+     {
+      "period": "2025-12",
+      "value": 2.61
+     },
+     {
+      "period": "2026-01",
+      "value": 2.68
+     },
+     {
+      "period": "2026-02",
+      "value": 2.75
+     },
+     {
+      "period": "2026-03",
+      "value": 2.75
+     },
+     {
+      "period": "2026-04",
+      "value": 2.8
+     },
+     {
+      "period": "2026-05",
+      "value": 2.85
+     }
+    ],
+    "z": 0.8
+   },
+   {
+    "metric_id": "hicp_rents",
+    "ticker": "HICP-RENT",
+    "label": "Harmonised Consumer Price Index - actual rents",
+    "plain": "The harmonised index of consumer prices for actual rents on housing, set to 100 in a base year. Shows tenant-cost trend across the Eurozone.",
+    "note": null,
+    "unit": "index",
+    "section": "housing",
+    "geo_level": "nation",
+    "source_id": "eurostat",
+    "period": "2025-12",
+    "value": 114.78,
+    "yoy": 2.445555158871827,
+    "observations": 132,
+    "series": [
+     {
+      "period": "2023-01",
+      "value": 107.51
+     },
+     {
+      "period": "2023-02",
+      "value": 107.71
+     },
+     {
+      "period": "2023-03",
+      "value": 107.98
+     },
+     {
+      "period": "2023-04",
+      "value": 108.18
+     },
+     {
+      "period": "2023-05",
+      "value": 108.39
+     },
+     {
+      "period": "2023-06",
+      "value": 108.55
+     },
+     {
+      "period": "2023-07",
+      "value": 108.73
+     },
+     {
+      "period": "2023-08",
+      "value": 108.79
+     },
+     {
+      "period": "2023-09",
+      "value": 108.93
+     },
+     {
+      "period": "2023-10",
+      "value": 109.1
+     },
+     {
+      "period": "2023-11",
+      "value": 109.29
+     },
+     {
+      "period": "2023-12",
+      "value": 109.43
+     },
+     {
+      "period": "2024-01",
+      "value": 109.64
+     },
+     {
+      "period": "2024-02",
+      "value": 109.9
+     },
+     {
+      "period": "2024-03",
+      "value": 110.18
+     },
+     {
+      "period": "2024-04",
+      "value": 110.48
+     },
+     {
+      "period": "2024-05",
+      "value": 110.75
+     },
+     {
+      "period": "2024-06",
+      "value": 110.92
+     },
+     {
+      "period": "2024-07",
+      "value": 111.07
+     },
+     {
+      "period": "2024-08",
+      "value": 111.23
+     },
+     {
+      "period": "2024-09",
+      "value": 111.41
+     },
+     {
+      "period": "2024-10",
+      "value": 111.65
+     },
+     {
+      "period": "2024-11",
+      "value": 111.89
+     },
+     {
+      "period": "2024-12",
+      "value": 112.04
+     },
+     {
+      "period": "2025-01",
+      "value": 112.25
+     },
+     {
+      "period": "2025-02",
+      "value": 112.53
+     },
+     {
+      "period": "2025-03",
+      "value": 112.82
+     },
+     {
+      "period": "2025-04",
+      "value": 113.14
+     },
+     {
+      "period": "2025-05",
+      "value": 113.36
+     },
+     {
+      "period": "2025-06",
+      "value": 113.62
+     },
+     {
+      "period": "2025-07",
+      "value": 113.77
+     },
+     {
+      "period": "2025-08",
+      "value": 113.92
+     },
+     {
+      "period": "2025-09",
+      "value": 114.15
+     },
+     {
+      "period": "2025-10",
+      "value": 114.37
+     },
+     {
+      "period": "2025-11",
+      "value": 114.58
+     },
+     {
+      "period": "2025-12",
+      "value": 114.78
+     }
+    ],
+    "z": 2.3
+   },
+   {
+    "metric_id": "rent_reference",
+    "ticker": "RENT-REF",
+    "label": "Reference rent",
+    "plain": "What a square metre of rented housing costs per month, from the government's rent index.",
+    "note": null,
+    "unit": "eur_m2_month",
+    "section": "housing",
+    "geo_level": "municipality",
+    "source_id": "mivau",
+    "period": "2024",
+    "value": 8.910667,
+    "yoy": 4.210197871113439,
+    "observations": 14,
+    "series": [
+     {
+      "period": "2011",
+      "value": 6.853947
+     },
+     {
+      "period": "2012",
+      "value": 6.634211
+     },
+     {
+      "period": "2013",
+      "value": 6.546053
+     },
+     {
+      "period": "2014",
+      "value": 6.315789
+     },
+     {
+      "period": "2015",
+      "value": 6.205195
+     },
+     {
+      "period": "2016",
+      "value": 6.481818
+     },
+     {
+      "period": "2017",
+      "value": 6.578947
+     },
+     {
+      "period": "2018",
+      "value": 6.684211
+     },
+     {
+      "period": "2019",
+      "value": 7.368421
+     },
+     {
+      "period": "2020",
+      "value": 7.565789
+     },
+     {
+      "period": "2021",
+      "value": 7.944
+     },
+     {
+      "period": "2022",
+      "value": 8.0
+     },
+     {
+      "period": "2023",
+      "value": 8.550667
+     },
+     {
+      "period": "2024",
+      "value": 8.910667
+     }
+    ],
+    "z": null
+   },
+   {
+    "metric_id": "appraised_value",
+    "ticker": "APPRAISE",
+    "label": "Appraised housing value",
+    "plain": "What valuers say a square metre of housing is worth — the number banks lend against.",
+    "note": null,
+    "unit": "eur_m2",
+    "section": "housing",
+    "geo_level": "province",
+    "source_id": "mivau",
+    "period": "2026-Q1",
+    "value": 1839.8,
+    "yoy": 12.822714171828045,
+    "observations": 125,
+    "series": [
+     {
+      "period": "2017-Q2",
+      "value": 1256.0
+     },
+     {
+      "period": "2017-Q3",
+      "value": 1246.4
+     },
+     {
+      "period": "2017-Q4",
+      "value": 1261.6
+     },
+     {
+      "period": "2018-Q1",
+      "value": 1232.5
+     },
+     {
+      "period": "2018-Q2",
+      "value": 1257.0
+     },
+     {
+      "period": "2018-Q3",
+      "value": 1274.4
+     },
+     {
+      "period": "2018-Q4",
+      "value": 1302.6
+     },
+     {
+      "period": "2019-Q1",
+      "value": 1332.6
+     },
+     {
+      "period": "2019-Q2",
+      "value": 1290.1
+     },
+     {
+      "period": "2019-Q3",
+      "value": 1305.3
+     },
+     {
+      "period": "2019-Q4",
+      "value": 1321.6
+     },
+     {
+      "period": "2020-Q1",
+      "value": 1348.7
+     },
+     {
+      "period": "2020-Q2",
+      "value": 1300.6
+     },
+     {
+      "period": "2020-Q3",
+      "value": 1290.0
+     },
+     {
+      "period": "2020-Q4",
+      "value": 1324.9
+     },
+     {
+      "period": "2021-Q1",
+      "value": 1308.5
+     },
+     {
+      "period": "2021-Q2",
+      "value": 1333.9
+     },
+     {
+      "period": "2021-Q3",
+      "value": 1340.9
+     },
+     {
+      "period": "2021-Q4",
+      "value": 1376.8
+     },
+     {
+      "period": "2022-Q1",
+      "value": 1412.2
+     },
+     {
+      "period": "2022-Q2",
+      "value": 1374.3
+     },
+     {
+      "period": "2022-Q3",
+      "value": 1379.9
+     },
+     {
+      "period": "2022-Q4",
+      "value": 1427.8
+     },
+     {
+      "period": "2023-Q1",
+      "value": 1474.7
+     },
+     {
+      "period": "2023-Q2",
+      "value": 1469.7
+     },
+     {
+      "period": "2023-Q3",
+      "value": 1494.4
+     },
+     {
+      "period": "2023-Q4",
+      "value": 1534.2
+     },
+     {
+      "period": "2024-Q1",
+      "value": 1549.7
+     },
+     {
+      "period": "2024-Q2",
+      "value": 1567.1
+     },
+     {
+      "period": "2024-Q3",
+      "value": 1539.1
+     },
+     {
+      "period": "2024-Q4",
+      "value": 1592.2
+     },
+     {
+      "period": "2025-Q1",
+      "value": 1630.7
+     },
+     {
+      "period": "2025-Q2",
+      "value": 1673.6
+     },
+     {
+      "period": "2025-Q3",
+      "value": 1708.1
+     },
+     {
+      "period": "2025-Q4",
+      "value": 1780.2
+     },
+     {
+      "period": "2026-Q1",
+      "value": 1839.8
+     }
+    ],
+    "z": 1.55
+   },
+   {
+    "metric_id": "property_transfers",
+    "ticker": "TRANSFER",
+    "label": "Property transfers (registered)",
+    "plain": "How many properties were legally transferred, from the land registry. Faster than the price statistics.",
+    "note": null,
+    "unit": "transactions",
+    "section": "housing",
+    "geo_level": "province",
+    "source_id": "ine",
+    "period": "2026-05",
+    "value": 3530.0,
+    "yoy": 11.4971572962729,
+    "observations": 233,
+    "series": [
+     {
+      "period": "2023-06",
+      "value": 3085.0
+     },
+     {
+      "period": "2023-07",
+      "value": 2764.0
+     },
+     {
+      "period": "2023-08",
+      "value": 2672.0
+     },
+     {
+      "period": "2023-09",
+      "value": 2405.0
+     },
+     {
+      "period": "2023-10",
+      "value": 2460.0
+     },
+     {
+      "period": "2023-11",
+      "value": 2752.0
+     },
+     {
+      "period": "2023-12",
+      "value": 2359.0
+     },
+     {
+      "period": "2024-01",
+      "value": 2819.0
+     },
+     {
+      "period": "2024-02",
+      "value": 2793.0
+     },
+     {
+      "period": "2024-03",
+      "value": 2537.0
+     },
+     {
+      "period": "2024-04",
+      "value": 3320.0
+     },
+     {
+      "period": "2024-05",
+      "value": 2566.0
+     },
+     {
+      "period": "2024-06",
+      "value": 2995.0
+     },
+     {
+      "period": "2024-07",
+      "value": 3159.0
+     },
+     {
+      "period": "2024-08",
+      "value": 2579.0
+     },
+     {
+      "period": "2024-09",
+      "value": 3297.0
+     },
+     {
+      "period": "2024-10",
+      "value": 3802.0
+     },
+     {
+      "period": "2024-11",
+      "value": 3064.0
+     },
+     {
+      "period": "2024-12",
+      "value": 2804.0
+     },
+     {
+      "period": "2025-01",
+      "value": 3493.0
+     },
+     {
+      "period": "2025-02",
+      "value": 3469.0
+     },
+     {
+      "period": "2025-03",
+      "value": 3657.0
+     },
+     {
+      "period": "2025-04",
+      "value": 3214.0
+     },
+     {
+      "period": "2025-05",
+      "value": 3166.0
+     },
+     {
+      "period": "2025-06",
+      "value": 3243.0
+     },
+     {
+      "period": "2025-07",
+      "value": 3523.0
+     },
+     {
+      "period": "2025-08",
+      "value": 2531.0
+     },
+     {
+      "period": "2025-09",
+      "value": 3749.0
+     },
+     {
+      "period": "2025-10",
+      "value": 3935.0
+     },
+     {
+      "period": "2025-11",
+      "value": 3368.0
+     },
+     {
+      "period": "2025-12",
+      "value": 3423.0
+     },
+     {
+      "period": "2026-01",
+      "value": 3362.0
+     },
+     {
+      "period": "2026-02",
+      "value": 3698.0
+     },
+     {
+      "period": "2026-03",
+      "value": 3824.0
+     },
+     {
+      "period": "2026-04",
+      "value": 2923.0
+     },
+     {
+      "period": "2026-05",
+      "value": 3530.0
+     }
+    ],
+    "z": 1.33
+   },
+   {
+    "metric_id": "unemployment_registered",
+    "ticker": "UNEMP",
+    "label": "Registered unemployment",
+    "plain": "How many people are signed on as unemployed at the job office.",
+    "note": null,
+    "unit": "persons",
+    "section": "work",
+    "geo_level": "municipality",
+    "source_id": "sepe",
+    "period": "2026-06",
+    "value": 49130.0,
+    "yoy": -8.394242243436754,
+    "observations": 90,
+    "series": [
+     {
+      "period": "2023-07",
+      "value": 61337.0
+     },
+     {
+      "period": "2023-08",
+      "value": 61587.0
+     },
+     {
+      "period": "2023-09",
+      "value": 62306.0
+     },
+     {
+      "period": "2023-10",
+      "value": 62251.0
+     },
+     {
+      "period": "2023-11",
+      "value": 61330.0
+     },
+     {
+      "period": "2023-12",
+      "value": 60422.0
+     },
+     {
+      "period": "2024-01",
+      "value": 62279.0
+     },
+     {
+      "period": "2024-02",
+      "value": 61842.0
+     },
+     {
+      "period": "2024-03",
+      "value": 61149.0
+     },
+     {
+      "period": "2024-04",
+      "value": 59222.0
+     },
+     {
+      "period": "2024-05",
+      "value": 58040.0
+     },
+     {
+      "period": "2024-06",
+      "value": 57787.0
+     },
+     {
+      "period": "2024-07",
+      "value": 57108.0
+     },
+     {
+      "period": "2024-08",
+      "value": 57076.0
+     },
+     {
+      "period": "2024-09",
+      "value": 57101.0
+     },
+     {
+      "period": "2024-10",
+      "value": 57488.0
+     },
+     {
+      "period": "2024-11",
+      "value": 56907.0
+     },
+     {
+      "period": "2024-12",
+      "value": 56103.0
+     },
+     {
+      "period": "2025-01",
+      "value": 57122.0
+     },
+     {
+      "period": "2025-02",
+      "value": 57037.0
+     },
+     {
+      "period": "2025-03",
+      "value": 56810.0
+     },
+     {
+      "period": "2025-04",
+      "value": 54889.0
+     },
+     {
+      "period": "2025-05",
+      "value": 54077.0
+     },
+     {
+      "period": "2025-06",
+      "value": 53632.0
+     },
+     {
+      "period": "2025-07",
+      "value": 53474.0
+     },
+     {
+      "period": "2025-08",
+      "value": 53734.0
+     },
+     {
+      "period": "2025-09",
+      "value": 53723.0
+     },
+     {
+      "period": "2025-10",
+      "value": 53779.0
+     },
+     {
+      "period": "2025-11",
+      "value": 52866.0
+     },
+     {
+      "period": "2025-12",
+      "value": 51598.0
+     },
+     {
+      "period": "2026-01",
+      "value": 52392.0
+     },
+     {
+      "period": "2026-02",
+      "value": 52491.0
+     },
+     {
+      "period": "2026-03",
+      "value": 51988.0
+     },
+     {
+      "period": "2026-04",
+      "value": 50075.0
+     },
+     {
+      "period": "2026-05",
+      "value": 49763.0
+     },
+     {
+      "period": "2026-06",
+      "value": 49130.0
+     }
+    ],
+    "z": -1.74
+   }
+  ],
+  "signals": [
+   {
+    "metric_id": "search_eviction",
+    "ticker": "EVICT-SRCH",
+    "label": "Eviction search attention",
+    "plain": "How often people across Spain look up evictions. Worry and legal research, not evictions themselves.",
+    "note": null,
+    "unit": "index",
+    "section": "attention",
+    "geo_level": "nation",
+    "source_id": "trends_manual",
+    "period": "2026-06",
+    "value": 44.3,
+    "yoy": 35.88957055214723,
+    "observations": 60,
+    "series": [
+     {
+      "period": "2023-07",
+      "value": 26.4
+     },
+     {
+      "period": "2023-08",
+      "value": 14.3
+     },
+     {
+      "period": "2023-09",
+      "value": 30.0
+     },
+     {
+      "period": "2023-10",
+      "value": 30.0
+     },
+     {
+      "period": "2023-11",
+      "value": 35.5
+     },
+     {
+      "period": "2023-12",
+      "value": 25.0
+     },
+     {
+      "period": "2024-01",
+      "value": 41.5
+     },
+     {
+      "period": "2024-02",
+      "value": 42.3
+     },
+     {
+      "period": "2024-03",
+      "value": 36.2
+     },
+     {
+      "period": "2024-04",
+      "value": 33.3
+     },
+     {
+      "period": "2024-05",
+      "value": 38.8
+     },
+     {
+      "period": "2024-06",
+      "value": 35.2
+     },
+     {
+      "period": "2024-07",
+      "value": 31.0
+     },
+     {
+      "period": "2024-08",
+      "value": 15.3
+     },
+     {
+      "period": "2024-09",
+      "value": 34.4
+     },
+     {
+      "period": "2024-10",
+      "value": 33.0
+     },
+     {
+      "period": "2024-11",
+      "value": 39.5
+     },
+     {
+      "period": "2024-12",
+      "value": 31.0
+     },
+     {
+      "period": "2025-01",
+      "value": 45.3
+     },
+     {
+      "period": "2025-02",
+      "value": 42.8
+     },
+     {
+      "period": "2025-03",
+      "value": 40.2
+     },
+     {
+      "period": "2025-04",
+      "value": 32.3
+     },
+     {
+      "period": "2025-05",
+      "value": 36.3
+     },
+     {
+      "period": "2025-06",
+      "value": 32.6
+     },
+     {
+      "period": "2025-07",
+      "value": 34.5
+     },
+     {
+      "period": "2025-08",
+      "value": 20.8
+     },
+     {
+      "period": "2025-09",
+      "value": 35.8
+     },
+     {
+      "period": "2025-10",
+      "value": 39.5
+     },
+     {
+      "period": "2025-11",
+      "value": 39.4
+     },
+     {
+      "period": "2025-12",
+      "value": 36.3
+     },
+     {
+      "period": "2026-01",
+      "value": 40.5
+     },
+     {
+      "period": "2026-02",
+      "value": 51.3
+     },
+     {
+      "period": "2026-03",
+      "value": 43.6
+     },
+     {
+      "period": "2026-04",
+      "value": 62.5
+     },
+     {
+      "period": "2026-05",
+      "value": 60.2
+     },
+     {
+      "period": "2026-06",
+      "value": 44.3
+     }
+    ],
+    "percentile_raw": 87,
+    "inverted": true,
+    "index": 13,
+    "read": "contractionary",
+    "index_prev": 0
+   },
+   {
+    "metric_id": "search_tenure_switch",
+    "ticker": "BUY-RENT",
+    "label": "Buy-vs-rent search spread",
+    "plain": "How often people search to buy compared with to rent. Rising means attention is shifting from renting toward buying.",
+    "note": null,
+    "unit": "index",
+    "section": "attention",
+    "geo_level": "municipality",
+    "source_id": "trends_manual",
+    "period": "2026-06",
+    "value": 27.027,
+    "yoy": 27.992991096798644,
+    "observations": 60,
+    "series": [
+     {
+      "period": "2023-07",
+      "value": 19.822
+     },
+     {
+      "period": "2023-08",
+      "value": 24.882
+     },
+     {
+      "period": "2023-09",
+      "value": 19.907
+     },
+     {
+      "period": "2023-10",
+      "value": 26.531
+     },
+     {
+      "period": "2023-11",
+      "value": 19.868
+     },
+     {
+      "period": "2023-12",
+      "value": 30.159
+     },
+     {
+      "period": "2024-01",
+      "value": 30.019
+     },
+     {
+      "period": "2024-02",
+      "value": 26.282
+     },
+     {
+      "period": "2024-03",
+      "value": 27.966
+     },
+     {
+      "period": "2024-04",
+      "value": 25.926
+     },
+     {
+      "period": "2024-05",
+      "value": 25.0
+     },
+     {
+      "period": "2024-06",
+      "value": 18.797
+     },
+     {
+      "period": "2024-07",
+      "value": 22.991
+     },
+     {
+      "period": "2024-08",
+      "value": 31.646
+     },
+     {
+      "period": "2024-09",
+      "value": 24.286
+     },
+     {
+      "period": "2024-10",
+      "value": 29.254
+     },
+     {
+      "period": "2024-11",
+      "value": 34.091
+     },
+     {
+      "period": "2024-12",
+      "value": 30.612
+     },
+     {
+      "period": "2025-01",
+      "value": 30.172
+     },
+     {
+      "period": "2025-02",
+      "value": 23.81
+     },
+     {
+      "period": "2025-03",
+      "value": 21.905
+     },
+     {
+      "period": "2025-04",
+      "value": 34.535
+     },
+     {
+      "period": "2025-05",
+      "value": 20.619
+     },
+     {
+      "period": "2025-06",
+      "value": 21.116
+     },
+     {
+      "period": "2025-07",
+      "value": 23.077
+     },
+     {
+      "period": "2025-08",
+      "value": 29.327
+     },
+     {
+      "period": "2025-09",
+      "value": 28.392
+     },
+     {
+      "period": "2025-10",
+      "value": 34.916
+     },
+     {
+      "period": "2025-11",
+      "value": 29.323
+     },
+     {
+      "period": "2025-12",
+      "value": 34.109
+     },
+     {
+      "period": "2026-01",
+      "value": 35.211
+     },
+     {
+      "period": "2026-02",
+      "value": 34.286
+     },
+     {
+      "period": "2026-03",
+      "value": 44.444
+     },
+     {
+      "period": "2026-04",
+      "value": 27.515
+     },
+     {
+      "period": "2026-05",
+      "value": 33.862
+     },
+     {
+      "period": "2026-06",
+      "value": 27.027
+     }
+    ],
+    "percentile_raw": 60,
+    "inverted": false,
+    "index": 60,
+    "read": "expansionary",
+    "index_prev": 93
+   },
+   {
+    "metric_id": "search_room_share",
+    "ticker": "ROOM-SHARE",
+    "label": "Room-vs-flat search spread",
+    "plain": "How often people search for a room compared with a whole flat. Rising means households are compressing — taking a room because a flat is out of reach.",
+    "note": null,
+    "unit": "index",
+    "section": "attention",
+    "geo_level": "municipality",
+    "source_id": "trends_manual",
+    "period": "2026-06",
+    "value": 5.405,
+    "yoy": -35.40098004063583,
+    "observations": 54,
+    "series": [
+     {
+      "period": "2023-02",
+      "value": 5.819
+     },
+     {
+      "period": "2023-03",
+      "value": 11.475
+     },
+     {
+      "period": "2023-04",
+      "value": 11.824
+     },
+     {
+      "period": "2023-05",
+      "value": 6.977
+     },
+     {
+      "period": "2023-06",
+      "value": 11.064
+     },
+     {
+      "period": "2023-07",
+      "value": 13.609
+     },
+     {
+      "period": "2023-08",
+      "value": 5.197
+     },
+     {
+      "period": "2023-09",
+      "value": 12.442
+     },
+     {
+      "period": "2023-10",
+      "value": 14.286
+     },
+     {
+      "period": "2023-11",
+      "value": 9.492
+     },
+     {
+      "period": "2023-12",
+      "value": 3.704
+     },
+     {
+      "period": "2024-01",
+      "value": 14.071
+     },
+     {
+      "period": "2024-02",
+      "value": 9.188
+     },
+     {
+      "period": "2024-03",
+      "value": 11.864
+     },
+     {
+      "period": "2024-04",
+      "value": 5.679
+     },
+     {
+      "period": "2024-05",
+      "value": 4.167
+     },
+     {
+      "period": "2024-06",
+      "value": 13.534
+     },
+     {
+      "period": "2024-07",
+      "value": 5.134
+     },
+     {
+      "period": "2024-08",
+      "value": 4.557
+     },
+     {
+      "period": "2024-09",
+      "value": 20.0
+     },
+     {
+      "period": "2024-10",
+      "value": 11.343
+     },
+     {
+      "period": "2024-11",
+      "value": 7.468
+     },
+     {
+      "period": "2024-12",
+      "value": 7.483
+     },
+     {
+      "period": "2025-01",
+      "value": 10.92
+     },
+     {
+      "period": "2025-03",
+      "value": 7.619
+     },
+     {
+      "period": "2025-04",
+      "value": 6.907
+     },
+     {
+      "period": "2025-06",
+      "value": 8.367
+     },
+     {
+      "period": "2025-07",
+      "value": 8.791
+     },
+     {
+      "period": "2025-08",
+      "value": 8.173
+     },
+     {
+      "period": "2025-09",
+      "value": 5.025
+     },
+     {
+      "period": "2025-10",
+      "value": 5.587
+     },
+     {
+      "period": "2025-11",
+      "value": 6.015
+     },
+     {
+      "period": "2026-02",
+      "value": 6.571
+     },
+     {
+      "period": "2026-03",
+      "value": 14.379
+     },
+     {
+      "period": "2026-05",
+      "value": 4.233
+     },
+     {
+      "period": "2026-06",
+      "value": 5.405
+     }
+    ],
+    "percentile_raw": 10,
+    "inverted": true,
+    "index": 90,
+    "read": "expansionary",
+    "index_prev": 95
+   },
+   {
+    "metric_id": "wiki_foreign_interest",
+    "ticker": "FOREIGN-EYE",
+    "label": "Foreign interest ratio",
+    "plain": "Non-Spanish-language Wikipedia views about this city, divided by Spanish-language views — a rising ratio means the world is paying more attention than Spain itself.",
+    "note": "Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia views) × 100. A rising ratio signals rising foreign interest; the absolute value is harder to interpret because it depends on platform-wide usage patterns. Used to track whether a city's interest is shifting toward or away from foreign origin markets (relocation, tourism, investment).",
+    "unit": "percent",
+    "section": "attention",
+    "geo_level": "municipality",
+    "source_id": "wiki_langs",
+    "period": "2026-06",
+    "value": 391.74,
+    "yoy": 0.32781847052195606,
+    "observations": 90,
+    "series": [
+     {
+      "period": "2023-07",
+      "value": 308.54
+     },
+     {
+      "period": "2023-08",
+      "value": 243.74
+     },
+     {
+      "period": "2023-09",
+      "value": 256.9
+     },
+     {
+      "period": "2023-10",
+      "value": 239.48
+     },
+     {
+      "period": "2023-11",
+      "value": 235.04
+     },
+     {
+      "period": "2023-12",
+      "value": 241.77
+     },
+     {
+      "period": "2024-01",
+      "value": 248.57
+     },
+     {
+      "period": "2024-02",
+      "value": 245.32
+     },
+     {
+      "period": "2024-03",
+      "value": 264.37
+     },
+     {
+      "period": "2024-04",
+      "value": 298.12
+     },
+     {
+      "period": "2024-05",
+      "value": 338.05
+     },
+     {
+      "period": "2024-06",
+      "value": 362.81
+     },
+     {
+      "period": "2024-07",
+      "value": 379.28
+     },
+     {
+      "period": "2024-08",
+      "value": 319.8
+     },
+     {
+      "period": "2024-09",
+      "value": 332.05
+     },
+     {
+      "period": "2024-10",
+      "value": 320.65
+     },
+     {
+      "period": "2024-11",
+      "value": 295.18
+     },
+     {
+      "period": "2024-12",
+      "value": 287.66
+     },
+     {
+      "period": "2025-01",
+      "value": 290.27
+     },
+     {
+      "period": "2025-02",
+      "value": 284.02
+     },
+     {
+      "period": "2025-03",
+      "value": 318.23
+     },
+     {
+      "period": "2025-04",
+      "value": 317.02
+     },
+     {
+      "period": "2025-05",
+      "value": 432.62
+     },
+     {
+      "period": "2025-06",
+      "value": 390.46
+     },
+     {
+      "period": "2025-07",
+      "value": 320.46
+     },
+     {
+      "period": "2025-08",
+      "value": 304.77
+     },
+     {
+      "period": "2025-09",
+      "value": 349.96
+     },
+     {
+      "period": "2025-10",
+      "value": 337.46
+     },
+     {
+      "period": "2025-11",
+      "value": 290.29
+     },
+     {
+      "period": "2025-12",
+      "value": 304.3
+     },
+     {
+      "period": "2026-01",
+      "value": 337.5
+     },
+     {
+      "period": "2026-02",
+      "value": 329.05
+     },
+     {
+      "period": "2026-03",
+      "value": 355.04
+     },
+     {
+      "period": "2026-04",
+      "value": 328.1
+     },
+     {
+      "period": "2026-05",
+      "value": 356.27
+     },
+     {
+      "period": "2026-06",
+      "value": 391.74
+     }
+    ],
+    "percentile_raw": 98,
+    "inverted": false,
+    "index": 98,
+    "read": "expansionary",
+    "index_prev": 92
+   },
+   {
+    "metric_id": "vehicle_registrations",
+    "ticker": "VEHICLE",
+    "label": "New vehicle registrations",
+    "plain": "How many vehicles were newly registered — a fast, keyless read on household and business confidence.",
+    "note": "Not \"new cars sold\". Counts DGT transaction code 1 (\"Matriculación ordinaria y de ciclomotores\") only — genuine new registrations, never transfers of ownership, temporary plates, re-registrations or de-registrations, which are separate transaction codes and excluded. But that transaction code spans nearly every vehicle class, not cars alone: in a sampled month, passenger cars were about 69% of qualifying rows, motorcycles and mopeds about 14%, vans about 9%, and the remainder trucks, buses, trailers, agricultural machinery and a handful of historic and special vehicles. The province is where the registration was filed (DGT's own COD_PROVINCIA_MAT), not the vehicle owner's home province (COD_PROVINCIA_MAT and COD_PROVINCIA_VEH are different fields in the source file) — Madrid runs 3-4x above Barcelona because national fleet, leasing and rental-car operators file their registrations there administratively regardless of where the vehicle will actually operate. That is a real, widely-reported feature of Spanish registration statistics, not a data error: this adapter's province-level annual totals were cross-checked against DGT's own published \"Matriculación por provincias\" table and matched to within the one month DGT itself never published.",
+    "unit": "vehicles",
+    "section": "work",
+    "geo_level": "province",
+    "source_id": "dgt",
+    "period": "2026-06",
+    "value": 5239.0,
+    "yoy": 14.238988225032708,
+    "observations": 48,
+    "series": [
+     {
+      "period": "2023-07",
+      "value": 3410.0
+     },
+     {
+      "period": "2023-08",
+      "value": 2381.0
+     },
+     {
+      "period": "2023-09",
+      "value": 2518.0
+     },
+     {
+      "period": "2023-10",
+      "value": 3647.0
+     },
+     {
+      "period": "2023-11",
+      "value": 3490.0
+     },
+     {
+      "period": "2023-12",
+      "value": 2973.0
+     },
+     {
+      "period": "2024-01",
+      "value": 2923.0
+     },
+     {
+      "period": "2024-02",
+      "value": 2881.0
+     },
+     {
+      "period": "2024-03",
+      "value": 3189.0
+     },
+     {
+      "period": "2024-04",
+      "value": 3533.0
+     },
+     {
+      "period": "2024-05",
+      "value": 3510.0
+     },
+     {
+      "period": "2024-06",
+      "value": 3671.0
+     },
+     {
+      "period": "2024-07",
+      "value": 3746.0
+     },
+     {
+      "period": "2024-08",
+      "value": 2619.0
+     },
+     {
+      "period": "2024-09",
+      "value": 3224.0
+     },
+     {
+      "period": "2024-10",
+      "value": 4303.0
+     },
+     {
+      "period": "2024-11",
+      "value": 3665.0
+     },
+     {
+      "period": "2024-12",
+      "value": 3695.0
+     },
+     {
+      "period": "2025-01",
+      "value": 3232.0
+     },
+     {
+      "period": "2025-02",
+      "value": 3445.0
+     },
+     {
+      "period": "2025-03",
+      "value": 4441.0
+     },
+     {
+      "period": "2025-04",
+      "value": 3965.0
+     },
+     {
+      "period": "2025-05",
+      "value": 4310.0
+     },
+     {
+      "period": "2025-06",
+      "value": 4586.0
+     },
+     {
+      "period": "2025-07",
+      "value": 4863.0
+     },
+     {
+      "period": "2025-08",
+      "value": 3210.0
+     },
+     {
+      "period": "2025-09",
+      "value": 4572.0
+     },
+     {
+      "period": "2025-10",
+      "value": 5174.0
+     },
+     {
+      "period": "2025-11",
+      "value": 4539.0
+     },
+     {
+      "period": "2025-12",
+      "value": 4216.0
+     },
+     {
+      "period": "2026-01",
+      "value": 3483.0
+     },
+     {
+      "period": "2026-02",
+      "value": 4259.0
+     },
+     {
+      "period": "2026-03",
+      "value": 5032.0
+     },
+     {
+      "period": "2026-04",
+      "value": 4397.0
+     },
+     {
+      "period": "2026-05",
+      "value": 4564.0
+     },
+     {
+      "period": "2026-06",
+      "value": 5239.0
+     }
+    ],
+    "percentile_raw": 99,
+    "inverted": false,
+    "index": 99,
+    "read": "expansionary",
+    "index_prev": 92
+   },
+   {
+    "metric_id": "job_postings_index",
+    "ticker": "POSTINGS",
+    "label": "Job postings index",
+    "plain": "Index level of total job postings on Indeed for Spain (100 = February 2020), seasonally adjusted and 7-day lagged. A forward-looking indicator of hiring intent.",
+    "note": "Indeed publishes daily observations for both 'total postings' and 'new postings'; we use 'total postings'. The index is seasonally adjusted. February 2020 baseline = 100. Recent months are withheld until Indeed's data is complete (before the month ends).",
+    "unit": "index",
+    "section": "work",
+    "geo_level": "nation",
+    "source_id": "indeed",
+    "period": "2026-06",
+    "value": 147.61,
+    "yoy": -3.453463274249443,
+    "observations": 77,
+    "series": [
+     {
+      "period": "2023-07",
+      "value": 154.66
+     },
+     {
+      "period": "2023-08",
+      "value": 155.29
+     },
+     {
+      "period": "2023-09",
+      "value": 152.2
+     },
+     {
+      "period": "2023-10",
+      "value": 151.15
+     },
+     {
+      "period": "2023-11",
+      "value": 147.28
+     },
+     {
+      "period": "2023-12",
+      "value": 145.36
+     },
+     {
+      "period": "2024-01",
+      "value": 145.25
+     },
+     {
+      "period": "2024-02",
+      "value": 145.03
+     },
+     {
+      "period": "2024-03",
+      "value": 147.02
+     },
+     {
+      "period": "2024-04",
+      "value": 147.69
+     },
+     {
+      "period": "2024-05",
+      "value": 141.42
+     },
+     {
+      "period": "2024-06",
+      "value": 140.34
+     },
+     {
+      "period": "2024-07",
+      "value": 139.25
+     },
+     {
+      "period": "2024-08",
+      "value": 138.32
+     },
+     {
+      "period": "2024-09",
+      "value": 136.7
+     },
+     {
+      "period": "2024-10",
+      "value": 140.54
+     },
+     {
+      "period": "2024-11",
+      "value": 141.37
+     },
+     {
+      "period": "2024-12",
+      "value": 143.43
+     },
+     {
+      "period": "2025-01",
+      "value": 145.57
+     },
+     {
+      "period": "2025-02",
+      "value": 144.4
+     },
+     {
+      "period": "2025-03",
+      "value": 146.27
+     },
+     {
+      "period": "2025-04",
+      "value": 145.34
+     },
+     {
+      "period": "2025-05",
+      "value": 150.38
+     },
+     {
+      "period": "2025-06",
+      "value": 152.89
+     },
+     {
+      "period": "2025-07",
+      "value": 150.41
+     },
+     {
+      "period": "2025-08",
+      "value": 147.33
+     },
+     {
+      "period": "2025-09",
+      "value": 151.75
+     },
+     {
+      "period": "2025-10",
+      "value": 148.89
+     },
+     {
+      "period": "2025-11",
+      "value": 151.49
+     },
+     {
+      "period": "2025-12",
+      "value": 148.19
+     },
+     {
+      "period": "2026-01",
+      "value": 159.22
+     },
+     {
+      "period": "2026-02",
+      "value": 164.68
+     },
+     {
+      "period": "2026-03",
+      "value": 159.2
+     },
+     {
+      "period": "2026-04",
+      "value": 152.22
+     },
+     {
+      "period": "2026-05",
+      "value": 149.98
+     },
+     {
+      "period": "2026-06",
+      "value": 147.61
+     }
+    ],
+    "percentile_raw": 71,
+    "inverted": false,
+    "index": 71,
+    "read": "expansionary",
+    "index_prev": 73
+   }
+  ]
+ },
  "signatures": [
   {
    "archetype_id": "overheating",
@@ -19666,5 +21718,5 @@
    }
   ]
  },
- "generated_at": "2026-07-28T06:53:04+00:00"
+ "generated_at": "2026-07-28T16:45:25+00:00"
 }
