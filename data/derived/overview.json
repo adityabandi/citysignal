@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-28T16:45:26+00:00",
+ "generated_at": "2026-07-28T17:17:25+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4361,13 +4361,6 @@
    "status": "ok",
    "latest_observation": "2026-06",
    "staleness_days": 28,
-   "last_error": null
-  },
-  {
-   "source_id": "ine",
-   "status": "skipped",
-   "latest_observation": "2024-12",
-   "staleness_days": 574,
    "last_error": null
   },
   {
