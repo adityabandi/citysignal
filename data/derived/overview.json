@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T16:25:01+00:00",
+ "generated_at": "2026-07-28T06:53:05+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4343,13 +4343,6 @@
  ],
  "attention": [
   {
-   "source_id": "ecb",
-   "status": "failed",
-   "latest_observation": null,
-   "staleness_days": null,
-   "last_error": "failed to fetch https://data-api.ecb.eu/service/data/MIR/M.ES.B.A2C.A.R.A.2250.EUR.N?format=jsondata&startPeriod=2015-01: [Errno 8] nodename nor servname provided, or not known"
-  },
-  {
    "source_id": "eea_air",
    "status": "failed",
    "latest_observation": null,
@@ -4358,23 +4351,23 @@
   },
   {
    "source_id": "eurostat",
-   "status": "ok",
+   "status": "skipped",
    "latest_observation": "2025-12",
-   "staleness_days": 207,
+   "staleness_days": 209,
    "last_error": null
   },
   {
    "source_id": "indeed",
    "status": "ok",
    "latest_observation": "2026-06",
-   "staleness_days": 26,
+   "staleness_days": 28,
    "last_error": null
   },
   {
    "source_id": "ine",
-   "status": "ok",
+   "status": "skipped",
    "latest_observation": "2024-12",
-   "staleness_days": 572,
+   "staleness_days": 574,
    "last_error": null
   },
   {
@@ -4388,7 +4381,7 @@
    "source_id": "madrid_licencias",
    "status": "skipped",
    "latest_observation": "2026-04",
-   "staleness_days": 87,
+   "staleness_days": 89,
    "last_error": null
   },
   {
@@ -4416,7 +4409,7 @@
    "source_id": "visados",
    "status": "skipped",
    "latest_observation": "2026-02",
-   "staleness_days": 148,
+   "staleness_days": 150,
    "last_error": null
   }
  ]

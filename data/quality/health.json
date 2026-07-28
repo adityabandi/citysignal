@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-26T16:23:05+00:00",
+ "generated_at": "2026-07-28T06:53:01+00:00",
  "sources": {
   "aena": {
    "attribution": "Source: Aena",
@@ -9,10 +9,10 @@
    "fresh": true,
    "geo_level": "airport",
    "kind": "official",
-   "last_checked": "2026-07-25T18:34:55+00:00",
+   "last_checked": "2026-07-28T06:35:26+00:00",
    "last_error": null,
    "last_error_type": "AdapterFailure",
-   "last_success": "2026-07-25T18:34:55+00:00",
+   "last_success": "2026-07-28T06:35:26+00:00",
    "latest_observation": "2026-06",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 75,
@@ -21,8 +21,8 @@
    ],
    "publisher": "Aena",
    "source_id": "aena",
-   "staleness_days": 25,
-   "status": "skipped"
+   "staleness_days": 28,
+   "status": "ok"
   },
   "bde": {
    "attribution": "Source: Banco de España",
@@ -32,9 +32,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-07-25T18:34:56+00:00",
+   "last_checked": "2026-07-28T06:35:27+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T18:34:56+00:00",
+   "last_success": "2026-07-28T06:35:27+00:00",
    "latest_observation": "2026-06",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 75,
@@ -45,8 +45,8 @@
    ],
    "publisher": "Banco de España",
    "source_id": "bde",
-   "staleness_days": 25,
-   "status": "skipped"
+   "staleness_days": 28,
+   "status": "ok"
   },
   "borme": {
    "attribution": "Source: BORME (boe.es)",
@@ -56,9 +56,9 @@
    "fresh": true,
    "geo_level": "province",
    "kind": "official",
-   "last_checked": "2026-07-25T18:35:09+00:00",
+   "last_checked": "2026-07-28T06:36:36+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T18:35:09+00:00",
+   "last_success": "2026-07-28T06:36:36+00:00",
    "latest_observation": "2026-07",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 45,
@@ -69,7 +69,7 @@
    ],
    "publisher": "Registro Mercantil / BOE",
    "source_id": "borme",
-   "staleness_days": -6,
+   "staleness_days": -3,
    "status": "ok"
   },
   "cgpj": {
@@ -80,9 +80,9 @@
    "fresh": true,
    "geo_level": "province",
    "kind": "official",
-   "last_checked": "2026-07-25T18:35:15+00:00",
+   "last_checked": "2026-07-28T06:36:40+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T18:35:15+00:00",
+   "last_success": "2026-07-28T06:36:40+00:00",
    "latest_observation": "2026-Q1",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 210,
@@ -92,7 +92,7 @@
    ],
    "publisher": "Consejo General del Poder Judicial",
    "source_id": "cgpj",
-   "staleness_days": 116,
+   "staleness_days": 119,
    "status": "ok"
   },
   "dgt": {
@@ -103,9 +103,9 @@
    "fresh": true,
    "geo_level": "province",
    "kind": "official",
-   "last_checked": "2026-07-25T19:16:19+00:00",
+   "last_checked": "2026-07-28T06:37:58+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:16:19+00:00",
+   "last_success": "2026-07-28T06:37:58+00:00",
    "latest_observation": "2026-06",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 90,
@@ -114,37 +114,41 @@
    ],
    "publisher": "Dirección General de Tráfico",
    "source_id": "dgt",
-   "staleness_days": 25,
+   "staleness_days": 28,
    "status": "ok"
   },
   "ecb": {
    "attribution": "Source: ECB Data Portal",
    "cadence": "monthly",
-   "consecutive_failures": 1,
+   "consecutive_failures": 0,
    "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html",
-   "fresh": false,
+   "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-07-26T16:03:59+00:00",
-   "last_error": "failed to fetch https://data-api.ecb.eu/service/data/MIR/M.ES.B.A2C.A.R.A.2250.EUR.N?format=jsondata&startPeriod=2015-01: [Errno 8] nodename nor servname provided, or not known",
+   "last_checked": "2026-07-28T06:37:59+00:00",
+   "last_error": null,
    "last_error_type": "FetchError",
+   "last_success": "2026-07-28T06:37:59+00:00",
+   "latest_observation": "2026-05",
    "license": "ECB copyright, data available under CC BY 4.0",
    "max_age_days": 60,
-   "metrics": [],
+   "metrics": [
+    "ecb_mortgage_rate"
+   ],
    "publisher": "European Central Bank",
    "source_id": "ecb",
-   "staleness_days": null,
-   "status": "failed"
+   "staleness_days": 58,
+   "status": "ok"
   },
   "eea_air": {
    "attribution": "Source: European Environment Agency Air Quality Download Service",
    "cadence": "monthly",
-   "consecutive_failures": 1,
+   "consecutive_failures": 2,
    "docs_url": "https://eeadmz1-downloads-webapp.azurewebsites.net/",
    "fresh": false,
    "geo_level": "municipality",
    "kind": "official",
-   "last_checked": "2026-07-26T16:04:20+00:00",
+   "last_checked": "2026-07-28T06:37:59+00:00",
    "last_error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)",
    "last_error_type": "PayloadError",
    "license": "EEA Data and Maps Service Terms and Conditions",
@@ -163,9 +167,9 @@
    "fresh": true,
    "geo_level": "airport",
    "kind": "official",
-   "last_checked": "2026-07-25T18:35:16+00:00",
+   "last_checked": "2026-07-28T06:38:01+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T18:35:16+00:00",
+   "last_success": "2026-07-28T06:38:01+00:00",
    "latest_observation": "2026-06",
    "license": "EUROCONTROL open data terms (attribution, non-commercial research)",
    "max_age_days": 45,
@@ -174,8 +178,8 @@
    ],
    "publisher": "EUROCONTROL",
    "source_id": "eurocontrol",
-   "staleness_days": 25,
-   "status": "skipped"
+   "staleness_days": 28,
+   "status": "ok"
   },
   "eurostat": {
    "attribution": "Source: Eurostat",
@@ -185,9 +189,9 @@
    "fresh": false,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-07-26T16:03:47+00:00",
+   "last_checked": "2026-07-28T06:38:01+00:00",
    "last_error": null,
-   "last_success": "2026-07-26T16:03:47+00:00",
+   "last_success": "2026-07-28T06:38:01+00:00",
    "latest_observation": "2025-12",
    "license": "CC BY 4.0",
    "max_age_days": 60,
@@ -197,8 +201,8 @@
    ],
    "publisher": "Eurostat (European Commission)",
    "source_id": "eurostat",
-   "staleness_days": 207,
-   "status": "ok"
+   "staleness_days": 209,
+   "status": "skipped"
   },
   "gdelt": {
    "attribution": "Source: The GDELT Project (gdeltproject.org)",
@@ -232,10 +236,10 @@
    "fresh": false,
    "geo_level": "nation",
    "kind": "research",
-   "last_checked": "2026-07-26T14:47:20+00:00",
+   "last_checked": "2026-07-28T06:38:02+00:00",
    "last_error": null,
    "last_error_type": "NotFoundError",
-   "last_success": "2026-07-26T14:47:20+00:00",
+   "last_success": "2026-07-28T06:38:02+00:00",
    "latest_observation": "2026-06",
    "license": "Free for public use with attribution",
    "max_age_days": 14,
@@ -244,7 +248,7 @@
    ],
    "publisher": "Indeed Hiring Lab",
    "source_id": "indeed",
-   "staleness_days": 26,
+   "staleness_days": 28,
    "status": "ok"
   },
   "ine": {
@@ -255,9 +259,9 @@
    "fresh": false,
    "geo_level": "municipality",
    "kind": "official",
-   "last_checked": "2026-07-26T15:30:54+00:00",
+   "last_checked": "2026-07-28T06:43:54+00:00",
    "last_error": null,
-   "last_success": "2026-07-26T15:30:54+00:00",
+   "last_success": "2026-07-28T06:43:54+00:00",
    "latest_observation": "2024-12",
    "license": "INE reuse conditions (attribution)",
    "max_age_days": 120,
@@ -267,8 +271,8 @@
    ],
    "publisher": "Instituto Nacional de Estadística",
    "source_id": "ine",
-   "staleness_days": 572,
-   "status": "ok"
+   "staleness_days": 574,
+   "status": "skipped"
   },
   "insideairbnb": {
    "attribution": "Source: Inside Airbnb (insideairbnb.com), a non-official research dataset",
@@ -278,9 +282,9 @@
    "fresh": true,
    "geo_level": "municipality",
    "kind": "research",
-   "last_checked": "2026-07-25T18:35:18+00:00",
+   "last_checked": "2026-07-28T06:43:58+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T18:35:18+00:00",
+   "last_success": "2026-07-28T06:43:58+00:00",
    "latest_observation": "2026-06",
    "license": "CC BY 4.0 (independent research project)",
    "max_age_days": 210,
@@ -291,8 +295,8 @@
    ],
    "publisher": "Inside Airbnb",
    "source_id": "insideairbnb",
-   "staleness_days": 25,
-   "status": "skipped"
+   "staleness_days": 28,
+   "status": "ok"
   },
   "madrid_aire": {
    "attribution": "Source: Ayuntamiento de Madrid, datos.madrid.es",
@@ -325,10 +329,10 @@
    "fresh": false,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-26T14:55:09+00:00",
+   "last_checked": "2026-07-28T06:44:00+00:00",
    "last_error": null,
    "last_error_type": "AdapterFailure",
-   "last_success": "2026-07-26T14:55:09+00:00",
+   "last_success": "2026-07-28T06:44:00+00:00",
    "latest_observation": "2026-04",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 45,
@@ -337,7 +341,7 @@
    ],
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_licencias",
-   "staleness_days": 87,
+   "staleness_days": 89,
    "status": "skipped"
   },
   "madrid_locales": {
@@ -348,9 +352,9 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-25T19:14:34+00:00",
+   "last_checked": "2026-07-28T06:44:08+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:14:34+00:00",
+   "last_success": "2026-07-28T06:44:08+00:00",
    "latest_observation": "2026-07",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 45,
@@ -361,7 +365,7 @@
    ],
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_locales",
-   "staleness_days": -6,
+   "staleness_days": -3,
    "status": "ok"
   },
   "madrid_padron": {
@@ -372,9 +376,9 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-25T19:13:31+00:00",
+   "last_checked": "2026-07-28T06:47:42+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:13:31+00:00",
+   "last_success": "2026-07-28T06:47:42+00:00",
    "latest_observation": "2026-07",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 75,
@@ -383,7 +387,7 @@
    ],
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_padron",
-   "staleness_days": -6,
+   "staleness_days": -3,
    "status": "ok"
   },
   "madrid_trafico": {
@@ -413,9 +417,9 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-25T19:09:53+00:00",
+   "last_checked": "2026-07-28T06:47:43+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:09:53+00:00",
+   "last_success": "2026-07-28T06:47:43+00:00",
    "latest_observation": "2026-07",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 120,
@@ -424,7 +428,7 @@
    ],
    "publisher": "Ayuntamiento de Madrid",
    "source_id": "madrid_vut",
-   "staleness_days": -6,
+   "staleness_days": -3,
    "status": "ok"
   },
   "mivau": {
@@ -435,9 +439,9 @@
    "fresh": true,
    "geo_level": "municipality",
    "kind": "official",
-   "last_checked": "2026-07-25T18:35:26+00:00",
+   "last_checked": "2026-07-28T06:48:00+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T18:35:26+00:00",
+   "last_success": "2026-07-28T06:48:00+00:00",
    "latest_observation": "2026-Q1",
    "license": "Reuse permitted (datos.gob.es, attribution)",
    "max_age_days": 270,
@@ -451,8 +455,8 @@
    ],
    "publisher": "Ministerio de Vivienda y Agenda Urbana",
    "source_id": "mivau",
-   "staleness_days": 116,
-   "status": "skipped"
+   "staleness_days": 119,
+   "status": "ok"
   },
   "notariado": {
    "attribution": "Source: Consejo General del Notariado, CIEN",
@@ -481,10 +485,10 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "research",
-   "last_checked": "2026-07-26T16:23:05+00:00",
+   "last_checked": "2026-07-28T06:50:21+00:00",
    "last_error": null,
    "last_error_type": "NotFoundError",
-   "last_success": "2026-07-26T16:23:05+00:00",
+   "last_success": "2026-07-28T06:50:21+00:00",
    "latest_observation": "2026-06",
    "license": "ODbL 1.0 (OpenStreetMap data)",
    "max_age_days": 45,
@@ -494,7 +498,7 @@
    ],
    "publisher": "HeiGIT (Heidelberg Institute for Geoinformation Technology)",
    "source_id": "ohsome",
-   "staleness_days": 26,
+   "staleness_days": 28,
    "status": "skipped"
   },
   "puertos": {
@@ -505,9 +509,9 @@
    "fresh": true,
    "geo_level": "port",
    "kind": "official",
-   "last_checked": "2026-07-25T19:15:15+00:00",
+   "last_checked": "2026-07-28T06:51:20+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T19:15:15+00:00",
+   "last_success": "2026-07-28T06:51:20+00:00",
    "latest_observation": "2026-06",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 120,
@@ -516,7 +520,7 @@
    ],
    "publisher": "Puertos del Estado",
    "source_id": "puertos",
-   "staleness_days": 25,
+   "staleness_days": 28,
    "status": "ok"
   },
   "registradores": {
@@ -546,10 +550,10 @@
    "fresh": true,
    "geo_level": "municipality",
    "kind": "official",
-   "last_checked": "2026-07-25T18:35:32+00:00",
+   "last_checked": "2026-07-28T06:51:31+00:00",
    "last_error": null,
-   "last_success": "2026-07-25T18:35:32+00:00",
-   "latest_observation": "2026-05",
+   "last_success": "2026-07-28T06:51:31+00:00",
+   "latest_observation": "2026-06",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 75,
    "metrics": [
@@ -558,8 +562,8 @@
    ],
    "publisher": "Servicio Público de Empleo Estatal",
    "source_id": "sepe",
-   "staleness_days": 55,
-   "status": "skipped"
+   "staleness_days": 28,
+   "status": "ok"
   },
   "serpavi": {
    "attribution": "Source: MIVAU / SERPAVI",
@@ -569,10 +573,10 @@
    "fresh": true,
    "geo_level": "district",
    "kind": "official",
-   "last_checked": "2026-07-26T14:57:45+00:00",
+   "last_checked": "2026-07-28T06:51:39+00:00",
    "last_error": null,
    "last_error_type": "NotFoundError",
-   "last_success": "2026-07-26T14:57:45+00:00",
+   "last_success": "2026-07-28T06:51:39+00:00",
    "latest_observation": "2026",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 400,
@@ -583,8 +587,8 @@
    ],
    "publisher": "Ministerio de Vivienda y Agenda Urbana",
    "source_id": "serpavi",
-   "staleness_days": -158,
-   "status": "ok"
+   "staleness_days": -156,
+   "status": "partial"
   },
   "trends_manual": {
    "attribution": "Source: Google Trends, exported manually",
@@ -594,10 +598,10 @@
    "fresh": true,
    "geo_level": "municipality",
    "kind": "commercial",
-   "last_checked": "2026-07-26T15:19:13+00:00",
+   "last_checked": "2026-07-28T06:51:39+00:00",
    "last_error": null,
    "last_error_type": "ValueError",
-   "last_success": "2026-07-26T15:19:13+00:00",
+   "last_success": "2026-07-28T06:51:39+00:00",
    "latest_observation": "2026-06",
    "license": "Google Trends terms — exported by hand, not scraped",
    "max_age_days": 120,
@@ -613,7 +617,7 @@
    ],
    "publisher": "Google Trends (manual export)",
    "source_id": "trends_manual",
-   "staleness_days": 26,
+   "staleness_days": 28,
    "status": "ok"
   },
   "visados": {
@@ -624,10 +628,10 @@
    "fresh": false,
    "geo_level": "ccaa",
    "kind": "official",
-   "last_checked": "2026-07-26T15:02:53+00:00",
+   "last_checked": "2026-07-28T06:51:44+00:00",
    "last_error": null,
    "last_error_type": "AdapterFailure",
-   "last_success": "2026-07-26T15:02:53+00:00",
+   "last_success": "2026-07-28T06:51:44+00:00",
    "latest_observation": "2026-02",
    "license": "Reuse permitted (attribution)",
    "max_age_days": 120,
@@ -638,7 +642,7 @@
    ],
    "publisher": "Ministerio de Transportes y Movilidad Sostenible",
    "source_id": "visados",
-   "staleness_days": 148,
+   "staleness_days": 150,
    "status": "skipped"
   },
   "wiki_langs": {
@@ -649,10 +653,10 @@
    "fresh": true,
    "geo_level": "municipality",
    "kind": "research",
-   "last_checked": "2026-07-26T16:17:24+00:00",
+   "last_checked": "2026-07-28T06:52:19+00:00",
    "last_error": null,
    "last_error_type": "ValidationError",
-   "last_success": "2026-07-26T16:17:24+00:00",
+   "last_success": "2026-07-28T06:52:19+00:00",
    "latest_observation": "2026-06",
    "license": "CC0 (pageview data)",
    "max_age_days": 45,
@@ -666,7 +670,7 @@
    ],
    "publisher": "Wikimedia Foundation",
    "source_id": "wiki_langs",
-   "staleness_days": 26,
+   "staleness_days": 28,
    "status": "ok"
   },
   "wikipedia": {
@@ -677,9 +681,9 @@
    "fresh": true,
    "geo_level": "municipality",
    "kind": "research",
-   "last_checked": "2026-07-26T15:29:30+00:00",
+   "last_checked": "2026-07-28T06:53:01+00:00",
    "last_error": null,
-   "last_success": "2026-07-26T15:29:30+00:00",
+   "last_success": "2026-07-28T06:53:01+00:00",
    "latest_observation": "2026-06",
    "license": "CC0 (pageview data)",
    "max_age_days": 45,
@@ -693,7 +697,7 @@
    ],
    "publisher": "Wikimedia Foundation",
    "source_id": "wikipedia",
-   "staleness_days": 26,
+   "staleness_days": 28,
    "status": "ok"
   }
  }

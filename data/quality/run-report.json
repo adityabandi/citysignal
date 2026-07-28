@@ -1,12 +1,373 @@
 {
- "run_id": "b91228168589",
- "finished_at": "2026-07-26T16:23:05+00:00",
+ "run_id": "4358c0eb5814",
+ "finished_at": "2026-07-28T06:53:01+00:00",
  "ok": [
-  "ohsome"
+  "aena",
+  "bde",
+  "borme",
+  "cgpj",
+  "dgt",
+  "ecb",
+  "eurocontrol",
+  "eurostat",
+  "indeed",
+  "ine",
+  "insideairbnb",
+  "madrid_licencias",
+  "madrid_locales",
+  "madrid_padron",
+  "madrid_vut",
+  "mivau",
+  "ohsome",
+  "puertos",
+  "sepe",
+  "trends_manual",
+  "visados",
+  "wiki_langs",
+  "wikipedia"
  ],
- "failed": [],
- "partial": [],
+ "failed": [
+  "eea_air"
+ ],
+ "partial": [
+  "serpavi"
+ ],
  "results": [
+  {
+   "source_id": "aena",
+   "status": "ok",
+   "records": 16,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 16,
+   "quarantined": 0,
+   "plans": 2,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 8.63,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "airport_passengers"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "bde",
+   "status": "ok",
+   "records": 721,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 721,
+   "quarantined": 0,
+   "plans": 3,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 1.59,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "euribor_12m",
+    "mortgage_rate_new",
+    "npl_ratio"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "borme",
+   "status": "ok",
+   "records": 24,
+   "added": 0,
+   "revised": 22,
+   "unchanged": 2,
+   "quarantined": 0,
+   "plans": 119,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 69.1,
+   "latest_observation": "2026-07",
+   "metrics": [
+    "company_dissolutions",
+    "company_incorporations",
+    "insolvencies"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "cgpj",
+   "status": "ok",
+   "records": 1040,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 1040,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 4.11,
+   "latest_observation": "2026-Q1",
+   "metrics": [
+    "evictions",
+    "foreclosures"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "dgt",
+   "status": "ok",
+   "records": 384,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 384,
+   "quarantined": 0,
+   "plans": 48,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 77.37,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "vehicle_registrations"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "ecb",
+   "status": "ok",
+   "records": 137,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 137,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.91,
+   "latest_observation": "2026-05",
+   "metrics": [
+    "ecb_mortgage_rate"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "eea_air",
+   "status": "failed",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 0,
+   "error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)",
+   "error_type": "PayloadError",
+   "duration_s": 0.36,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": []
+  },
+  {
+   "source_id": "eurocontrol",
+   "status": "ok",
+   "records": 336,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 336,
+   "quarantined": 0,
+   "plans": 4,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 1.75,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "airport_flights"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "eurostat",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 2,
+   "skipped_unchanged": 2,
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.64,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "indeed",
+   "status": "ok",
+   "records": 154,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 77,
+   "quarantined": 0,
+   "plans": 2,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.53,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "job_postings_index"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "ine",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 11,
+   "skipped_unchanged": 11,
+   "error": null,
+   "error_type": null,
+   "duration_s": 352.06,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "insideairbnb",
+   "status": "ok",
+   "records": 21,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 21,
+   "quarantined": 0,
+   "plans": 7,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 4.32,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "str_entire_home_share",
+    "str_listings",
+    "str_multi_host_share"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "madrid_licencias",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 1,
+   "error": null,
+   "error_type": null,
+   "duration_s": 1.31,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "madrid_locales",
+   "status": "ok",
+   "records": 63,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 63,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 8.44,
+   "latest_observation": "2026-07",
+   "metrics": [
+    "horeca_stock",
+    "locales_stock",
+    "locales_vacancy_rate"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "madrid_padron",
+   "status": "ok",
+   "records": 756,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 756,
+   "quarantined": 0,
+   "plans": 36,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 213.52,
+   "latest_observation": "2026-07",
+   "metrics": [
+    "padron_district"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "madrid_vut",
+   "status": "ok",
+   "records": 21,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 21,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.93,
+   "latest_observation": "2026-07",
+   "metrics": [
+    "vut_licensed"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "mivau",
+   "status": "ok",
+   "records": 3107,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 3107,
+   "quarantined": 0,
+   "plans": 5,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 17.82,
+   "latest_observation": "2026-Q1",
+   "metrics": [
+    "appraised_value",
+    "dwelling_stock",
+    "housing_completions",
+    "housing_starts",
+    "land_price",
+    "rent_reference"
+   ],
+   "notes": []
+  },
   {
    "source_id": "ohsome",
    "status": "skipped",
@@ -19,11 +380,167 @@
    "skipped_unchanged": 42,
    "error": null,
    "error_type": null,
-   "duration_s": 105.66,
+   "duration_s": 140.76,
    "latest_observation": null,
    "metrics": [],
    "notes": [
     "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "puertos",
+   "status": "ok",
+   "records": 210,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 210,
+   "quarantined": 0,
+   "plans": 66,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 59.3,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "port_passengers"
+   ],
+   "notes": [
+    "24/66 optional fetches skipped: resumen:3901: AdapterFailure; resumen:432: AdapterFailure; resumen:433: AdapterFailure; resumen:434: AdapterFailure; resumen:435: AdapterFailure"
+   ]
+  },
+  {
+   "source_id": "sepe",
+   "status": "ok",
+   "records": 32,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 32,
+   "quarantined": 0,
+   "plans": 16,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 10.8,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "contracts_registered",
+    "unemployment_registered"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "serpavi",
+   "status": "partial",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 16,
+   "skipped_unchanged": 1,
+   "error": null,
+   "error_type": null,
+   "duration_s": 7.63,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "15/16 optional fetches skipped: serpavi-madrid-2022: NotFoundError; serpavi-madrid-2023: NotFoundError; serpavi-madrid-2024: NotFoundError; serpavi-madrid-2025: NotFoundError; serpavi-madrid-2020: NotFoundError",
+    "fetched successfully but produced no records"
+   ]
+  },
+  {
+   "source_id": "trends_manual",
+   "status": "ok",
+   "records": 1869,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 1869,
+   "quarantined": 0,
+   "plans": 13,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.05,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "search_barrio_attention",
+    "search_buy_momentum",
+    "search_commercial_rent",
+    "search_eviction",
+    "search_relocation",
+    "search_rental_pressure",
+    "search_room_share",
+    "search_tenure_switch"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "visados",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 1,
+   "error": null,
+   "error_type": null,
+   "duration_s": 5.29,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
+  },
+  {
+   "source_id": "wiki_langs",
+   "status": "ok",
+   "records": 4320,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 4320,
+   "quarantined": 0,
+   "plans": 70,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 34.59,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "wiki_foreign_interest",
+    "wiki_lang_views_de",
+    "wiki_lang_views_en",
+    "wiki_lang_views_fr",
+    "wiki_lang_views_it",
+    "wiki_lang_views_pt"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "wikipedia",
+   "status": "ok",
+   "records": 3264,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 3264,
+   "quarantined": 0,
+   "plans": 85,
+   "skipped_unchanged": 0,
+   "error": null,
+   "error_type": null,
+   "duration_s": 42.52,
+   "latest_observation": "2026-06",
+   "metrics": [
+    "wiki_barrio_views",
+    "wiki_city_attention",
+    "wiki_city_foreign_share",
+    "wiki_city_views",
+    "wiki_hardship_index",
+    "wiki_relocation_index"
+   ],
+   "notes": [
+    "1/85 optional fetches skipped: hardship:Ley_de_la_segunda_oportunidad: NotFoundError"
    ]
   }
  ]
