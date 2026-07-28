@@ -1,186 +1,116 @@
 ---
-title: Today
+title: CitySignal
 toc: false
 ---
 
 ```js
-import {ribbon, regimeLegend} from "./components/vitals.js";
-import {el, cityColor, formatPeriod, formatValue, formatDelta, deltaClass, deltaArrow, regime} from "./components/theme.js";
+import {tapeStrip, signalCard, compositeHeadline, describeComposite} from "./components/desk.js";
+import {el, formatPeriod, formatValue, cityColor} from "./components/theme.js";
 
-const overview = await FileAttachment("data/overview.json").json();
-const manifest = await FileAttachment("data/manifest.json").json();
+const cities = await FileAttachment("data/cities.json").json();
 ```
 
-<span class="cs-kicker">Eight Spanish cities · rebuilt weekly from official statistics</span>
+```js
+const citySlug = view(Inputs.select(Object.keys(cities), {
+  label: "City",
+  value: "madrid",
+  format: (slug) => cities[slug].name
+}));
+```
 
-# What is changing
+```js
+const city = cities[citySlug];
+const desk = city.desk;
+```
+
+<span class="cs-kicker">The desk · official tape and side-door signals</span>
+
+# What the city is doing when nobody is measuring it
 
 <div class="cs-lede">
 
-Housing demand, economic stress, tourism and supply across Madrid, Barcelona,
-València, Málaga, Sevilla, Palma, Bilbao and Zaragoza. Every figure carries the
-geography it was actually published at, the period it describes, and the date we
-last asked its publisher for it. Nothing here forecasts a crash — it shows what
-the evidence currently says, including where the evidence disagrees with itself.
+Everyone watches rents, transactions and unemployment. They arrive late, revised,
+and after the fact. This page keeps those on the tape in their real units, and
+puts beside them the measures that were never built for property analysis —
+restaurant density reconstructed from OpenStreetMap's edit history, attention by
+Wikipedia language edition, what people search when they are about to move or
+about to lose a home.
+
+</div>
+
+## The official tape
+
+<div class="cs-note" style="margin-bottom:.7rem">
+
+Real units, because a mortgage rate means something as 2.85% and nothing as a
+score. Each carries the geography it was actually published at.
 
 </div>
 
 ```js
-const headline = overview.headline;
+display(desk.tape.length ? tapeStrip(desk.tape) : el("div", {class: "cs-empty", text: "No tape series reporting for this city yet."}));
+```
 
+## The composite
+
+```js
+display(compositeHeadline(desk, describeComposite(desk)));
+```
+
+## Unconventional signals
+
+<div class="cs-note" style="margin-bottom:.9rem">
+
+Each is a <strong>percentile against this city's own history</strong>: 63 means
+higher than 63% of everything this city has ever recorded for that measure, and
+50 is exactly typical. That is the same underlying number as the sigma values
+elsewhere on the site, in a form you can act on. The colour reads the signal in
+the direction it actually means — a rising vacancy rate is contractionary even
+though the number went up.
+
+</div>
+
+```js
 display(
-  headline
-    ? el("div", {class: "cs-headline"}, [
-        el("div", {class: "cs-kicker", text: "Largest verified change this build"}),
-        el("div", {class: "cs-headline-text"}, [
-          document.createTextNode(headline.lead + " "),
-          el("span", {class: "cs-headline-figure cs-num", text: headline.figure}),
-          document.createTextNode(" " + headline.tail)
-        ]),
-        el("div", {class: "cs-meta"}, [
-          el("span", {class: `cs-scope${headline.geo_level === "municipality" ? "" : " cs-scope-wider"}`, text: headline.scope_label}),
-          el("span", {text: `${formatPeriod(headline.period)} · ${headline.label} · ${formatValue(headline.value, headline.unit)}`}),
-          el("a", {href: `./cities/${headline.city}`, text: `${headline.city_name} →`})
-        ])
-      ])
-    : null
+  desk.signals.length
+    ? el("div", {class: "cs-signal-grid"}, desk.signals.map((s) => signalCard(s)))
+    : el("div", {class: "cs-empty", text:
+        "No unconventional signals have enough history for this city yet. They need at least two years before a percentile means anything."})
 );
 ```
 
-## Vital signs
+## Where these come from, and what they cannot tell you
 
-<div class="cs-note" style="margin-bottom:.4rem">
+<div class="cs-note">
 
-One row per city. The band is the regime the published rules assigned at that
-moment; the line is demand momentum measured against that city's own history.
-Hover any row for the value at a point in time.
+**OpenStreetMap food density** counts restaurants, cafés and bars inside each
+district boundary from OSM's full edit history. It is published as a *share* of
+all mapped points, because the raw count also measures how busy volunteer mappers
+were — Madrid Centro's restaurant count nearly quadrupled between 2014 and 2018
+without 800 restaurants opening.
+
+**Attention by language edition** reads the same city article across German,
+French, Italian, Portuguese and English Wikipedia, normalised against each
+edition's own total traffic. Without that normalisation the numbers mostly track
+Wikipedia shrinking rather than interest moving.
+
+**Search spreads** are ratios between terms queried together, never raw levels.
+Google rescales every request, so a level can fall because Spain searched less
+overall; a ratio between two terms on one scale cannot.
+
+None of these are demand. They are attention, physical presence, and paperwork —
+things that correlate with demand and sometimes lead it. Whether any of them
+actually leads anything is tested on the <a href="./signals">Signals</a> page and
+reported either way, including when the answer is no.
 
 </div>
 
 ```js
-display(regimeLegend());
-```
-
-```js
-// `width` is Observable's reactive measurement of the content column, so the
-// ribbons re-fit when the window changes instead of guessing once at load.
-const ribbonWidth = Math.max(240, width - 300);
-
 display(
-  el("div", {class: "cs-panel"}, [
-    el("div", {class: "cs-vitals"},
-      overview.cities.flatMap((city) => [
-        el("div", {class: "cs-vitals-city"}, [
-          el("a", {href: `./cities/${city.slug}`, text: city.name})
-        ]),
-        ribbon(city, {width: ribbonWidth, height: 56}),
-        el("div", {}, [
-          el("span", {class: `cs-regime regime-${city.regime.rule_id}`}, [
-            el("span", {class: "cs-glyph", text: regime(city.regime.rule_id).glyph}),
-            document.createTextNode(city.regime.label)
-          ])
-        ])
-      ])
-    )
+  el("div", {class: "cs-meta", style: "border-top:none;margin-top:1.4rem"}, [
+    el("span", {class: "cs-kind", text: `${desk.signals.length} signals · ${desk.tape.length} tape series`}),
+    el("a", {href: `./cities/${citySlug}`, text: `${desk.name} in full →`}),
+    el("a", {href: "./methodology", text: "how the scoring works →"})
   ])
 );
 ```
-
-```js
-const unclassified = overview.cities.filter((c) => c.regime.rule_id === "neutral" || !c.regime.confident);
-display(
-  unclassified.length
-    ? el("div", {
-        class: "cs-note",
-        style: "margin-top:.8rem",
-        text:
-          unclassified.length === overview.cities.length
-            ? "No city is classified yet: the regime rules need at least three of the four sub-indices, and not enough sources are reporting. This is the honest state of the data, not a rendering failure — the Sources page shows which adapters are still to land."
-            : `${unclassified.map((c) => c.name).join(", ")} ${unclassified.length === 1 ? "is" : "are"} shown without a confident regime because fewer than three sub-indices currently have data.`
-      })
-    : null
-);
-```
-
-## Largest moves
-
-<div class="cs-note" style="margin-bottom:.6rem">
-
-Biggest year-over-year changes across every city and measure. Deliberately not
-coloured good-or-bad — whether a rise is welcome depends on whether you are the
-landlord or the tenant, and that is not this site's call to make. Releases that
-look provisional are excluded.
-
-</div>
-
-```js
-const movers = overview.movers ?? [];
-
-display(
-  movers.length
-    ? el("table", {class: "cs-table"}, [
-        el("thead", {}, [
-          el("tr", {}, [
-            el("th", {text: "City"}),
-            el("th", {text: "Measure"}),
-            el("th", {text: "Latest"}),
-            el("th", {text: "Year on year"}),
-            el("th", {text: "Period"}),
-            el("th", {text: "Scope"})
-          ])
-        ]),
-        el("tbody", {},
-          movers.map((m) =>
-            el("tr", {}, [
-              el("td", {}, [
-                el("span", {
-                  style: `display:inline-block;width:8px;height:8px;border-radius:1px;background:${cityColor(m.city)};margin-right:.45rem`
-                }),
-                el("a", {href: `./cities/${m.city}`, text: m.city_name})
-              ]),
-              el("td", {text: m.label}),
-              el("td", {class: "cs-num", text: formatValue(m.value, m.unit)}),
-              el("td", {class: `cs-num ${deltaClass()}`, text: `${deltaArrow(m.yoy)} ${formatDelta(m.yoy)}`}),
-              el("td", {class: "cs-num", text: formatPeriod(m.period)}),
-              el("td", {}, [el("span", {class: `cs-scope${m.geo_level === "municipality" ? "" : " cs-scope-wider"}`, text: m.scope_label})])
-            ])
-          )
-        )
-      ])
-    : el("div", {class: "cs-empty", text: "No year-over-year comparisons available yet — a measure needs at least two years of history before it can move."})
-);
-```
-
-## Needs attention
-
-```js
-const attention = overview.attention ?? [];
-
-display(
-  attention.length
-    ? el("div", {class: "cs-grid"},
-        attention.map((source) =>
-          el("div", {class: "cs-panel"}, [
-            el("div", {class: "cs-card-head"}, [
-              el("span", {class: "cs-card-label", text: source.source_id}),
-              el("span", {class: `cs-freshness ${source.status === "failed" ? "cs-failing" : "cs-stale"}`, text: source.status === "failed" ? "failing" : "stale"})
-            ]),
-            el("div", {class: "cs-note", style: "margin-top:.5rem", text:
-              source.last_error
-                ? source.last_error
-                : `Latest observation ${formatPeriod(source.latest_observation) ?? "unknown"}, ${source.staleness_days ?? "?"} days old.`})
-          ])
-        )
-      )
-    : el("div", {class: "cs-empty", text: "Every source reported on schedule at the last run."})
-);
-```
-
-<div class="cs-note" style="margin-top:2.5rem">
-
-Built <span class="cs-num">${manifest.generated_at?.slice(0, 10)}</span> from
-<span class="cs-num">${manifest.counts?.observations?.toLocaleString("en-GB")}</span> observations
-across <span class="cs-num">${manifest.counts?.series}</span> series.
-Rules in force: ${Object.values(manifest.rules ?? {}).filter(Boolean).join(" · ")}.
-
-</div>

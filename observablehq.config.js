@@ -18,9 +18,9 @@ export default {
 <meta name="color-scheme" content="dark light">`,
   style: "styles.css",
   pages: [
-    {name: "Today", path: "/"},
+    {name: "The desk", path: "/"},
+    {name: "Today", path: "/today"},
     {name: "Compare", path: "/compare"},
-    {name: "Desk", path: "/desk"},
     {
       name: "Cities",
       pages: cities.map((slug) => ({
