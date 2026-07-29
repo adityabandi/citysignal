@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-28T17:17:25+00:00",
+ "generated_at": "2026-07-29T09:08:48+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -44,8 +44,10 @@
   "mortgage_rate_new",
   "mortgages_count",
   "npl_ratio",
+  "osm_cafe_bar_ratio",
   "osm_food_count",
   "osm_food_share",
+  "osm_tourist_retail",
   "padron_district",
   "population_padron",
   "port_passengers",
@@ -93,7 +95,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 610,
-  "observations": 39816
+  "series": 652,
+  "observations": 43596
  }
 }
