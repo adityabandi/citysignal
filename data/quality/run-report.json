@@ -1,6 +1,6 @@
 {
- "run_id": "1e8d1dede054",
- "finished_at": "2026-07-29T15:59:14+00:00",
+ "run_id": "157782c191f7",
+ "finished_at": "2026-07-29T16:26:15+00:00",
  "ok": [
   "aena",
   "bde",
@@ -45,7 +45,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 10.95,
+   "duration_s": 9.91,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -64,7 +64,7 @@
    "skipped_unchanged": 3,
    "error": null,
    "error_type": null,
-   "duration_s": 1.09,
+   "duration_s": 1.14,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -83,7 +83,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 83.05,
+   "duration_s": 88.77,
    "latest_observation": "2026-07",
    "metrics": [
     "company_dissolutions",
@@ -102,11 +102,14 @@
    "quarantined": 0,
    "plans": 0,
    "skipped_unchanged": 0,
-   "error": "could not fetch the CGPJ crisis-statistics listing page: failed to fetch https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Estadistica-por-temas/Datos-penales--civiles-y-laborales/Civil-y-laboral/Efecto-de-la-Crisis-en-los-organos-judiciales/: timed out",
-   "error_type": "AdapterFailure",
-   "duration_s": 186.44,
-   "latest_observation": null,
-   "metrics": [],
+   "error": null,
+   "error_type": null,
+   "duration_s": 8.87,
+   "latest_observation": "2026-Q1",
+   "metrics": [
+    "evictions",
+    "foreclosures"
+   ],
    "notes": []
   },
   {
@@ -121,7 +124,7 @@
    "skipped_unchanged": 48,
    "error": null,
    "error_type": null,
-   "duration_s": 26.6,
+   "duration_s": 28.34,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -140,7 +143,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 0.8,
+   "duration_s": 1.17,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -159,7 +162,7 @@
    "skipped_unchanged": 0,
    "error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)",
    "error_type": "PayloadError",
-   "duration_s": 0.32,
+   "duration_s": 0.49,
    "latest_observation": null,
    "metrics": [],
    "notes": []
@@ -176,7 +179,7 @@
    "skipped_unchanged": 4,
    "error": null,
    "error_type": null,
-   "duration_s": 1.68,
+   "duration_s": 2.89,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -214,7 +217,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.53,
+   "duration_s": 0.54,
    "latest_observation": "2026-06",
    "metrics": [
     "job_postings_index"
@@ -225,23 +228,22 @@
   },
   {
    "source_id": "ine",
-   "status": "ok",
-   "records": 1056,
+   "status": "skipped",
+   "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 1056,
    "quarantined": 0,
    "plans": 11,
-   "skipped_unchanged": 8,
+   "skipped_unchanged": 11,
    "error": null,
    "error_type": null,
-   "duration_s": 331.52,
-   "latest_observation": "2026-06",
-   "metrics": [
-    "hotel_adr",
-    "hotel_revpar"
-   ],
-   "notes": []
+   "duration_s": 368.56,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   },
   {
    "source_id": "insideairbnb",
@@ -255,7 +257,7 @@
    "skipped_unchanged": 7,
    "error": null,
    "error_type": null,
-   "duration_s": 3.22,
+   "duration_s": 3.27,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -274,7 +276,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.09,
+   "duration_s": 2.13,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -293,7 +295,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 0.46,
+   "duration_s": 0.6,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -312,7 +314,7 @@
    "skipped_unchanged": 36,
    "error": null,
    "error_type": null,
-   "duration_s": 114.62,
+   "duration_s": 113.79,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -331,7 +333,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 0.86,
+   "duration_s": 2.61,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -350,7 +352,7 @@
    "skipped_unchanged": 5,
    "error": null,
    "error_type": null,
-   "duration_s": 8.48,
+   "duration_s": 9.98,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -369,7 +371,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 784.77,
+   "duration_s": 768.9,
    "latest_observation": "2026-06",
    "metrics": [
     "osm_cafe_bar_ratio",
@@ -391,7 +393,7 @@
    "skipped_unchanged": 42,
    "error": null,
    "error_type": null,
-   "duration_s": 43.04,
+   "duration_s": 40.59,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -411,7 +413,7 @@
    "skipped_unchanged": 16,
    "error": null,
    "error_type": null,
-   "duration_s": 10.35,
+   "duration_s": 10.02,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -430,7 +432,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 7.82,
+   "duration_s": 7.71,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -469,7 +471,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.41,
+   "duration_s": 3.09,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -479,16 +481,16 @@
   {
    "source_id": "wiki_langs",
    "status": "ok",
-   "records": 4320,
+   "records": 3870,
    "added": 0,
    "revised": 0,
-   "unchanged": 4320,
-   "quarantined": 0,
+   "unchanged": 3690,
+   "quarantined": 180,
    "plans": 70,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 34.59,
+   "duration_s": 34.66,
    "latest_observation": "2026-06",
    "metrics": [
     "wiki_foreign_interest",
@@ -498,7 +500,10 @@
     "wiki_lang_views_it",
     "wiki_lang_views_pt"
    ],
-   "notes": []
+   "notes": [
+    "9/70 optional fetches skipped: madrid:de: NotFoundError; barcelona:en: NotFoundError; barcelona:fr: NotFoundError; barcelona:nl: NotFoundError; barcelona:es: NotFoundError",
+    "180 unexpected revisions quarantined — re-run with --accept-revision wiki_langs if the restatement is genuine"
+   ]
   },
   {
    "source_id": "wikipedia",
@@ -506,13 +511,13 @@
    "records": 3264,
    "added": 0,
    "revised": 0,
-   "unchanged": 3264,
-   "quarantined": 0,
+   "unchanged": 1938,
+   "quarantined": 1326,
    "plans": 85,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 42.5,
+   "duration_s": 42.54,
    "latest_observation": "2026-06",
    "metrics": [
     "wiki_barrio_views",
@@ -523,7 +528,8 @@
     "wiki_relocation_index"
    ],
    "notes": [
-    "1/85 optional fetches skipped: hardship:Ley_de_la_segunda_oportunidad: NotFoundError"
+    "7/85 optional fetches skipped: barcelona:es: NotFoundError; valencia:pt: NotFoundError; palma:pt: NotFoundError; bilbao:es: NotFoundError; hardship:Ley_de_la_segunda_oportunidad: NotFoundError",
+    "1326 unexpected revisions quarantined — re-run with --accept-revision wikipedia if the restatement is genuine"
    ]
   }
  ]
