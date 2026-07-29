@@ -45,6 +45,12 @@ class SourceManifest:
     formats: tuple[str, ...] = ("csv",)
     redistribute: bool = True
     revisions_allowed: bool = False
+    read_timeout: float | None = None
+    """Seconds to wait on one response, when the default is too short.
+
+    Set only where a service does real computation per request rather than
+    serving a file. ohsome replays OSM's edit history for the bounding box
+    and takes tens of seconds on a large district."""
     kind: Literal["official", "research", "commercial"] = "official"
     expected_columns: tuple[str, ...] = ()
     value_ranges: dict[str, tuple[float, float]] = field(default_factory=dict)
@@ -199,7 +205,9 @@ class BaseAdapter(ABC):
         key = plan.cache_key
         may_skip = not ctx.force and not self.manifest.aggregates_across_plans
         headers = ctx.state.validators(key) if may_skip else {}
-        payload = ctx.fetcher.get(plan, headers=headers)
+        payload = ctx.fetcher.get(
+            plan, headers=headers, timeout=self.manifest.read_timeout
+        )
 
         if payload is None:  # 304 Not Modified
             ctx.state.touch(key, checked=now_iso())

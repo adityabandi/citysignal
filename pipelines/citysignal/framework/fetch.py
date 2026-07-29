@@ -234,7 +234,13 @@ class Fetcher:
             time.sleep(self.min_interval - elapsed)
         self._last_request[host] = time.monotonic()
 
-    def get(self, plan: FetchPlan, *, headers: dict[str, str] | None = None) -> RawPayload | None:
+    def get(
+        self,
+        plan: FetchPlan,
+        *,
+        headers: dict[str, str] | None = None,
+        timeout: float | None = None,
+    ) -> RawPayload | None:
         """Return the payload, or None when the server says 304 Not Modified."""
         # Some sources are files a person committed rather than a URL to fetch —
         # hand-exported search baskets, for instance. They go through the same
@@ -256,7 +262,12 @@ class Fetcher:
         last_error: Exception | None = None
         for attempt in range(1, self.retries + 1):
             try:
-                response = self._client.get(plan.url, params=plan.params, headers=headers or {})
+                response = self._client.get(
+                    plan.url,
+                    params=plan.params,
+                    headers=headers or {},
+                    timeout=timeout or self._client.timeout,
+                )
                 if response.status_code == 304:
                     return None
                 if response.status_code >= 500 or response.status_code in (408, 429):

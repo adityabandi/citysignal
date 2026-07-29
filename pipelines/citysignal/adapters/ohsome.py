@@ -18,6 +18,23 @@ Raw counts remain available for research; the ratio is the published metric.
 Data before 2019 is less trustworthy (mapping pushes, less complete coverage),
 so monthly data runs from 2019-01 onward.
 
+Two new ratio metrics measure neighbourhood change rather than size:
+- osm_tourist_retail: souvenir shops (shop=gift) ÷ pharmacies (amenity=pharmacy) × 100.
+  Spanish pharmacies are licence-capped by law; their count is pinned to population and
+  controlled by the same mapper pool, making them an unusually stable denominator.
+  Rising ratio indicates touristification of residential cores (e.g. Centro vs Salamanca).
+- osm_cafe_bar_ratio: specialty cafés (amenity=cafe) ÷ traditional bars (amenity=bar or pub) × 100.
+  Specialty cafés replacing bars is a visible edge of gentrification; the gradient tracks
+  affluence gradients in Madrid (Salamanca > Centro > Vallecas).
+
+**Worked example: why betting shops fail as a metric.** shop=bookmaker (casas de apuestas)
+per pharmacy should identify gambling concentration, but it fails: Centro 0.08, Salamanca
+0.01, Vallecas 0.00 — exactly backwards. Puente de Vallecas is Madrid's best-documented
+gambling-problem neighbourhood, subject to street protests and municipal regulation. OSM
+has simply not mapped betting shops there. Publishing this metric would assert "no gambling
+in Vallecas" — false and opposite reality. An OSM count needs discrimination testing before
+publication: a category volunteers do not map looks identical to a category that does not exist.
+
 Geography: district-level observations computed from district bounding boxes
 derived from madrid-districts.geojson. A bbox is coarser than the true
 polygon boundary (ohsome accepts bpolys GeoJSON if geometry streaming can be
@@ -74,14 +91,16 @@ class OhsomeAdapter(BaseAdapter):
         geo_level="district",
         max_age_days=45,
         formats=("json",),
+        read_timeout=180.0,
         kind="research",
         redistribute=True,
         revisions_allowed=False,
-        aggregates_across_plans=False,
+        aggregates_across_plans=True,
         notes=(
             "Commercial POI density via OSM history. Raw counts are mapping-effort-contaminated "
             "(2014–2018 reflect mapper activity, not commercial growth); ratio to total POI "
-            "absorbs this. Monthly data from 2019-01 onward, district-level for Madrid only. "
+            "absorbs this. Ratio metrics (tourist retail, cafe-bar) reveal neighbourhood change "
+            "rather than size. Monthly data from 2019-01 onward, district-level for Madrid only. "
             "Bbox is coarser than true boundary; bpolys GeoJSON future enhancement."
         ),
     )
@@ -162,6 +181,82 @@ class OhsomeAdapter(BaseAdapter):
                 )
             )
 
+            # Plan 3: Gift/souvenir shops (numerator for osm_tourist_retail)
+            plans.append(
+                FetchPlan(
+                    url=API,
+                    fmt="json",
+                    label=f"gift:{district_code}",
+                    params={
+                        "bboxes": bbox_str,
+                        "filter": "shop=gift",
+                        "time": f"{START}/{end_date}/P1M",
+                    },
+                    meta={
+                        "district_code": district_code,
+                        "district_name": district_name,
+                        "kind": "gift",
+                    },
+                )
+            )
+
+            # Plan 4: Pharmacies (denominator for osm_tourist_retail, stable due to legal caps)
+            plans.append(
+                FetchPlan(
+                    url=API,
+                    fmt="json",
+                    label=f"pharmacy:{district_code}",
+                    params={
+                        "bboxes": bbox_str,
+                        "filter": "amenity=pharmacy",
+                        "time": f"{START}/{end_date}/P1M",
+                    },
+                    meta={
+                        "district_code": district_code,
+                        "district_name": district_name,
+                        "kind": "pharmacy",
+                    },
+                )
+            )
+
+            # Plan 5: Cafés (numerator for osm_cafe_bar_ratio)
+            plans.append(
+                FetchPlan(
+                    url=API,
+                    fmt="json",
+                    label=f"cafe:{district_code}",
+                    params={
+                        "bboxes": bbox_str,
+                        "filter": "amenity=cafe",
+                        "time": f"{START}/{end_date}/P1M",
+                    },
+                    meta={
+                        "district_code": district_code,
+                        "district_name": district_name,
+                        "kind": "cafe",
+                    },
+                )
+            )
+
+            # Plan 6: Bars and pubs (denominator for osm_cafe_bar_ratio)
+            plans.append(
+                FetchPlan(
+                    url=API,
+                    fmt="json",
+                    label=f"bar_pub:{district_code}",
+                    params={
+                        "bboxes": bbox_str,
+                        "filter": "amenity=bar or amenity=pub",
+                        "time": f"{START}/{end_date}/P1M",
+                    },
+                    meta={
+                        "district_code": district_code,
+                        "district_name": district_name,
+                        "kind": "bar_pub",
+                    },
+                )
+            )
+
         return plans
 
     def parse(self, payload: RawPayload, ctx: RunContext) -> pd.DataFrame:
@@ -192,15 +287,23 @@ class OhsomeAdapter(BaseAdapter):
             key = (district_code, row.period)
             if kind == "food":
                 self._food_counts[key] = int(row.value)
-            else:  # total_poi
+            elif kind == "total_poi":
                 self._total_poi[key] = int(row.value)
+            elif kind == "gift":
+                self._gift_counts[key] = int(row.value)
+            elif kind == "pharmacy":
+                self._pharmacy_counts[key] = int(row.value)
+            elif kind == "cafe":
+                self._cafe_counts[key] = int(row.value)
+            elif kind == "bar_pub":
+                self._bar_pub_counts[key] = int(row.value)
 
         return ()
 
     def finalize(
         self, records: list[CanonicalRecord], ctx: RunContext
     ) -> Iterable[CanonicalRecord]:
-        """Compute normalized ratio and emit records."""
+        """Compute normalized ratios and emit records."""
         out: list[CanonicalRecord] = list(records)
 
         for (district_code, period), food_count in sorted(self._food_counts.items()):
@@ -232,12 +335,52 @@ class OhsomeAdapter(BaseAdapter):
                     )
                 )
 
+        # Emit tourist_retail ratio: gift shops / pharmacies * 100
+        for (district_code, period), gift_count in sorted(self._gift_counts.items()):
+            pharmacy_count = self._pharmacy_counts.get((district_code, period), 0)
+            if pharmacy_count > 0:
+                ratio = 100.0 * gift_count / pharmacy_count
+                out.append(
+                    CanonicalRecord(
+                        metric_id="osm_tourist_retail",
+                        geo_id=district("28079", district_code),
+                        period=period,
+                        value=round(ratio, 3),
+                        unit="index",
+                        source_id=self.manifest.source_id,
+                    )
+                )
+
+        # Emit cafe_bar_ratio: cafés / (bars + pubs) * 100
+        for (district_code, period), cafe_count in sorted(self._cafe_counts.items()):
+            bar_pub_count = self._bar_pub_counts.get((district_code, period), 0)
+            if bar_pub_count > 0:
+                ratio = 100.0 * cafe_count / bar_pub_count
+                out.append(
+                    CanonicalRecord(
+                        metric_id="osm_cafe_bar_ratio",
+                        geo_id=district("28079", district_code),
+                        period=period,
+                        value=round(ratio, 3),
+                        unit="index",
+                        source_id=self.manifest.source_id,
+                    )
+                )
+
         return out
 
     # Staging state, rebuilt per run
     _food_counts: dict[tuple[str, str], int]
     _total_poi: dict[tuple[str, str], int]
+    _gift_counts: dict[tuple[str, str], int]
+    _pharmacy_counts: dict[tuple[str, str], int]
+    _cafe_counts: dict[tuple[str, str], int]
+    _bar_pub_counts: dict[tuple[str, str], int]
 
     def __init__(self) -> None:
         self._food_counts = {}
         self._total_poi = {}
+        self._gift_counts = {}
+        self._pharmacy_counts = {}
+        self._cafe_counts = {}
+        self._bar_pub_counts = {}

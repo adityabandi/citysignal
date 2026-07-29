@@ -1093,6 +1093,45 @@ metrics:
       to both numerator and denominator, leaving the ratio level. This exposes genuine
       shifts in commercial mix (e.g. Centro has higher food share than Villaverde).
       Monthly data from 2019-01 onward; earlier data is less trustworthy.
+  osm_tourist_retail:
+    label: Souvenir retail concentration
+    plain: Souvenir shops per 100 pharmacies — a ratio that reveals touristification rather than size.
+    unit: index
+    cadence: monthly
+    geo_level: district
+    source_id: ohsome
+    section: tourism
+    direction: 1
+    lag: coincident
+    range: [0, 500]
+    note: >
+      Numerator: shop=gift (souvenir and gift shops). Denominator: amenity=pharmacy.
+      Spanish pharmacies are licence-capped by law (minimum distance rules, population-based
+      allocation), so their count is pinned to legally-recognised residential population and
+      controlled by the same volunteer mapper pool. This makes pharmacy count an unusually
+      stable denominator that absorbs mapping-effort variation. Rising ratio indicates a
+      neighbourhood is shifting from residential to tourist-serving retail. Discriminates
+      between Central Madrid (high touristification) and outer residential districts.
+  osm_cafe_bar_ratio:
+    label: Café-to-bar mix
+    plain: How many cafés there are for every hundred bars and pubs — the balance between daytime and evening hospitality.
+    unit: index
+    cadence: monthly
+    geo_level: district
+    source_id: ohsome
+    section: attention
+    direction: 1
+    lag: leading
+    range: [0, 400]
+    note: >
+      Published as a description of hospitality mix, NOT as a gentrification or
+      affluence measure. An early bounding-box test suggested it tracked
+      affluence (Salamanca high, Vallecas low), but measured on real district
+      polygons that ordering does not hold: Salamanca does lead at 84 per 100,
+      yet Villaverde reaches 60 and Puente de Vallecas 54, both above Centro at
+      49 and Chamberí at 49. The bounding boxes had bled across district edges.
+      What the series honestly measures is the café-versus-bar balance; what it
+      does not measure is wealth.
 
   # ------ Wikipedia language demand matrix (origin-market attention proxy)
   wiki_lang_views_en:

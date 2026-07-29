@@ -37,6 +37,8 @@ from .transforms import yoy, zscore
 TICKERS = {
     "osm_food_share": "OSM-FOOD",
     "osm_food_count": "OSM-CNT",
+    "osm_tourist_retail": "TOURIST-RTL",
+    "osm_cafe_bar_ratio": "CAFE-BAR",
     "horeca_openings": "HORECA-OPN",
     "horeca_closures": "HORECA-CLS",
     "locales_vacancy_rate": "SHUTTER",
@@ -91,6 +93,8 @@ OFFICIAL_TAPE = [
 # Signals that earn their place by being unusual, not by being official.
 DESK_SIGNALS = [
     "osm_food_share",
+    "osm_tourist_retail",
+    "osm_cafe_bar_ratio",
     "locales_vacancy_rate",
     "horeca_openings",
     "search_eviction",
@@ -149,6 +153,8 @@ class DeskBuilder:
     # Madrid's permits by 21 or multiply its vacancy rate by it.
     DISTRICT_AGGREGATION = {
         "osm_food_share": "mean",
+        "osm_tourist_retail": "mean",
+        "osm_cafe_bar_ratio": "mean",
         "locales_vacancy_rate": "mean",
         "rent_district_m2": "mean",
         "horeca_openings": "sum",
