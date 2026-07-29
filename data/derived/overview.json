@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-29T09:08:48+00:00",
+ "generated_at": "2026-07-29T09:30:42+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4353,14 +4353,14 @@
    "source_id": "eurostat",
    "status": "skipped",
    "latest_observation": "2025-12",
-   "staleness_days": 209,
+   "staleness_days": 210,
    "last_error": null
   },
   {
    "source_id": "indeed",
    "status": "ok",
    "latest_observation": "2026-06",
-   "staleness_days": 28,
+   "staleness_days": 29,
    "last_error": null
   },
   {
@@ -4374,7 +4374,7 @@
    "source_id": "madrid_licencias",
    "status": "skipped",
    "latest_observation": "2026-04",
-   "staleness_days": 89,
+   "staleness_days": 90,
    "last_error": null
   },
   {
@@ -4402,7 +4402,7 @@
    "source_id": "visados",
    "status": "skipped",
    "latest_observation": "2026-02",
-   "staleness_days": 150,
+   "staleness_days": 151,
    "last_error": null
   }
  ]
