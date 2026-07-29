@@ -16,10 +16,10 @@ import {el, formatPeriod, formatValue, formatDelta, deltaArrow, periodToDate} fr
 // dark surface as the rest of the site so the desk reads as a room in the same
 // building rather than a different product.
 export const DESK = {
-  up: "#3ddc84",
-  down: "#e8674f",
-  flat: "#8b8f96",
-  glow: "rgba(61, 220, 132, 0.10)"
+  up: "oklch(0.85 0.23 148)",
+  down: "oklch(0.68 0.2 25)",
+  flat: "oklch(0.6 0.01 135)",
+  glow: "oklch(0.85 0.23 148 / 12%)"
 };
 
 const READ_COLOR = {

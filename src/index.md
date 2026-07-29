@@ -4,113 +4,126 @@ toc: false
 ---
 
 ```js
-import {tapeStrip, signalCard, compositeHeadline, describeComposite} from "./components/desk.js";
+import {tapeStrip, signalCard, compositeHeadline, describeComposite, DESK} from "./components/desk.js";
 import {el, formatPeriod, formatValue, cityColor} from "./components/theme.js";
 
-const cities = await FileAttachment("data/cities.json").json();
+const national = await FileAttachment("data/national.json").json();
 ```
 
-```js
-const citySlug = view(Inputs.select(Object.keys(cities), {
-  label: "City",
-  value: "madrid",
-  format: (slug) => cities[slug].name
-}));
-```
+<span class="cs-kicker">Spain · the market, and the eight cities inside it</span>
 
-```js
-const city = cities[citySlug];
-const desk = city.desk;
-```
-
-<span class="cs-kicker">The desk · official tape and side-door signals</span>
-
-# What the city is doing when nobody is measuring it
+# The market, and then the street
 
 <div class="cs-lede">
 
-Everyone watches rents, transactions and unemployment. They arrive late, revised,
-and after the fact. This page keeps those on the tape in their real units, and
-puts beside them the measures that were never built for property analysis —
-restaurant density reconstructed from OpenStreetMap's edit history, attention by
-Wikipedia language edition, what people search when they are about to move or
-about to lose a home.
+Rates, credit and national hiring set the weather for every Spanish city at once,
+so they come first. Underneath, eight cities scored against their own histories —
+and the side-door measures that were never built for property analysis: shop mix
+reconstructed from OpenStreetMap's edit history, attention by Wikipedia language
+edition, what people search before they move or before they lose a home.
 
 </div>
 
-## The official tape
+## The national tape
 
 <div class="cs-note" style="margin-bottom:.7rem">
 
-Real units, because a mortgage rate means something as 2.85% and nothing as a
-score. Each carries the geography it was actually published at.
+Real units. These are euro-area and Spain-wide — nobody's local market escapes them.
 
 </div>
 
 ```js
-display(desk.tape.length ? tapeStrip(desk.tape) : el("div", {class: "cs-empty", text: "No tape series reporting for this city yet."}));
+display(national.tape.length
+  ? tapeStrip(national.tape)
+  : el("div", {class: "cs-empty", text: "No national tape series reporting."}));
 ```
-
-## The composite
 
 ```js
-display(compositeHeadline(desk, describeComposite(desk)));
+display(compositeHeadline(
+  {...national, name: "Spain"},
+  describeComposite({...national, name: "Spain"})
+));
 ```
 
-## Unconventional signals
+## National signals
+
+```js
+display(national.signals.length
+  ? el("div", {class: "cs-signal-grid"}, national.signals.map((s) => signalCard(s)))
+  : el("div", {class: "cs-empty", text: "No national signals with enough history yet."}));
+```
+
+## The eight cities
 
 <div class="cs-note" style="margin-bottom:.9rem">
 
-Each is a <strong>percentile against this city's own history</strong>: 63 means
-higher than 63% of everything this city has ever recorded for that measure, and
-50 is exactly typical. That is the same underlying number as the sigma values
-elsewhere on the site, in a form you can act on. The colour reads the signal in
-the direction it actually means — a rising vacancy rate is contractionary even
-though the number went up.
+Each city's composite is scored against <em>its own</em> history, never against
+the others — Palma and Madrid share no scale, but each can be unusual for itself.
+A higher number here does not mean a hotter city than its neighbour; it means a
+city further from its own normal. Click through for the full desk.
 
 </div>
 
 ```js
-display(
-  desk.signals.length
-    ? el("div", {class: "cs-signal-grid"}, desk.signals.map((s) => signalCard(s)))
-    : el("div", {class: "cs-empty", text:
-        "No unconventional signals have enough history for this city yet. They need at least two years before a percentile means anything."})
-);
+function cityTile(c) {
+  const value = c.composite;
+  const hue = cityColor(c.slug);
+  const tone = value == null ? DESK.flat : value >= 60 ? DESK.up : value <= 40 ? DESK.down : DESK.flat;
+  return el("a", {
+    class: "cs-city-tile",
+    href: `./cities/${c.slug}`,
+    style: `--signal:${tone};--city:${hue}`
+  }, [
+    el("div", {class: "cs-city-tile-head"}, [
+      el("span", {class: "cs-city-dot"}),
+      el("span", {class: "cs-city-tile-name", text: c.name})
+    ]),
+    el("div", {class: "cs-city-tile-figure"}, [
+      el("span", {class: "cs-num cs-city-tile-index", text: String(value ?? "—")}),
+      el("span", {class: "cs-signal-outof", text: "/100"})
+    ]),
+    el("div", {class: "cs-gauge"}, [
+      el("div", {class: "cs-gauge-fill", style: `width:${Math.max(1, value ?? 0)}%;background:${tone}`}),
+      el("div", {class: "cs-gauge-mid"})
+    ]),
+    el("div", {class: "cs-city-tile-top"},
+      (c.top ?? []).map((s) =>
+        el("span", {
+          class: "cs-city-tile-sig",
+          title: s.plain ?? "",
+          text: `${s.ticker} ${s.index}`
+        })
+      )
+    ),
+    el("div", {class: "cs-city-tile-n", text: `${c.signals} signals`})
+  ]);
+}
+
+display(el("div", {class: "cs-city-grid"}, national.cities.map(cityTile)));
 ```
 
-## Where these come from, and what they cannot tell you
+<div class="cs-note" style="margin-top:1.6rem">
 
-<div class="cs-note">
+**What the scores mean.** Each signal is a percentile against that city's own
+record: 63 means higher than 63% of everything it has ever posted for that
+measure, and 50 is exactly typical. Scores are oriented so higher always reads as
+more expansionary — a rising eviction-search count pushes a city *down*, not up.
+Higher means busier, not better; whether that is welcome depends on whether you
+are buying or selling.
 
-**OpenStreetMap food density** counts restaurants, cafés and bars inside each
-district boundary from OSM's full edit history. It is published as a *share* of
-all mapped points, because the raw count also measures how busy volunteer mappers
-were — Madrid Centro's restaurant count nearly quadrupled between 2014 and 2018
-without 800 restaurants opening.
-
-**Attention by language edition** reads the same city article across German,
-French, Italian, Portuguese and English Wikipedia, normalised against each
-edition's own total traffic. Without that normalisation the numbers mostly track
-Wikipedia shrinking rather than interest moving.
-
-**Search spreads** are ratios between terms queried together, never raw levels.
-Google rescales every request, so a level can fall because Spain searched less
-overall; a ratio between two terms on one scale cannot.
-
-None of these are demand. They are attention, physical presence, and paperwork —
-things that correlate with demand and sometimes lead it. Whether any of them
-actually leads anything is tested on the <a href="./signals">Signals</a> page and
-reported either way, including when the answer is no.
+Madrid carries far more signals than the others because it is the only one of the
+eight publishing enough at district level to support them. That is a fact about
+Spanish municipal open data, not about Madrid.
 
 </div>
 
 ```js
 display(
-  el("div", {class: "cs-meta", style: "border-top:none;margin-top:1.4rem"}, [
-    el("span", {class: "cs-kind", text: `${desk.signals.length} signals · ${desk.tape.length} tape series`}),
-    el("a", {href: `./cities/${citySlug}`, text: `${desk.name} in full →`}),
-    el("a", {href: "./methodology", text: "how the scoring works →"})
+  el("div", {class: "cs-meta", style: "border-top:none;margin-top:1.2rem"}, [
+    el("a", {href: "./today", text: "what changed this week →"}),
+    el("a", {href: "./forecast", text: "what we think happens next →"}),
+    el("a", {href: "./track-record", text: "how those calls scored →"}),
+    el("a", {href: "./methodology", text: "method →"})
   ])
 );
 ```

@@ -203,6 +203,9 @@ class DeskBuilder:
         series = self._series_for(city, metric_id)
         if series is None:
             return None
+        return self._entry_from(series, metric_id, as_index=as_index)
+
+    def _entry_from(self, series, metric_id: str, *, as_index: bool) -> dict[str, Any] | None:
         meta = self.config.metrics.get(metric_id, {})
         periods = sorted(series.values)
         latest = periods[-1]
@@ -252,6 +255,79 @@ class DeskBuilder:
         else:
             entry["z"] = None if z is None else round(z, 2)
         return entry
+
+    # ---- the national view ------------------------------------------------
+    # Spain first, cities second. A reader arriving cold wants to know what the
+    # market is doing before they want to know what Málaga is doing, and half of
+    # what drives a Spanish city — rates, credit, national hiring — is not
+    # city-level data at all.
+    NATIONAL_TAPE = [
+        "euribor_12m",
+        "ecb_mortgage_rate",
+        "hicp_rents",
+        "hicp_maintenance",
+        "house_price_index",
+        "mortgage_rate_new",
+    ]
+    NATIONAL_SIGNALS = [
+        "search_eviction",
+        "job_postings_index",
+        "visados_new_build",
+        "wiki_hardship_index",
+        "wiki_relocation_index",
+    ]
+
+    def _national_series(self, metric_id: str):
+        """A nation- or region-level series, independent of any city."""
+        meta = self.config.metrics.get(metric_id, {})
+        level = meta.get("geo_level")
+        wanted = {"nation": "es", "ccaa": "ccaa-13"}.get(level)
+        for series in self.store:
+            if series.key.metric_id != metric_id:
+                continue
+            if wanted is None or series.key.geo_id == wanted:
+                return series if len(series.values) >= 8 else None
+        return None
+
+    def _national_entry(self, metric_id: str, *, as_index: bool) -> dict[str, Any] | None:
+        series = self._national_series(metric_id)
+        if series is None:
+            return None
+        return self._entry_from(series, metric_id, as_index=as_index)
+
+    def build_national(self, cities: list[City]) -> dict[str, Any]:
+        tape = [e for m in self.NATIONAL_TAPE if (e := self._national_entry(m, as_index=False))]
+        signals = [e for m in self.NATIONAL_SIGNALS if (e := self._national_entry(m, as_index=True))]
+
+        oriented = [s["index"] for s in signals if s.get("index") is not None]
+        composite = round(sum(oriented) / len(oriented)) if oriented else None
+
+        # Every city's own composite, so the national page is a way in rather
+        # than a dead end.
+        by_city = []
+        for city in cities:
+            desk = self.build(city)
+            by_city.append({
+                "slug": city.slug,
+                "name": city.name,
+                "composite": desk["composite"],
+                "signals": desk["composite_n"],
+                "top": sorted(
+                    (s for s in desk["signals"] if s.get("index") is not None),
+                    key=lambda s: abs(s["index"] - 50),
+                    reverse=True,
+                )[:2],
+            })
+        by_city.sort(key=lambda c: (c["composite"] is None, -(c["composite"] or 0)))
+
+        return {
+            "scope": "Spain",
+            "composite": composite,
+            "composite_n": len(oriented),
+            "tape": tape,
+            "signals": signals,
+            "cities": by_city,
+        }
 
     def build(self, city: City) -> dict[str, Any]:
         tape = [e for m in OFFICIAL_TAPE if (e := self._entry(city, m, as_index=False))]

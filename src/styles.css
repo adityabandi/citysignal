@@ -8,23 +8,28 @@
    a word, never left to carry meaning alone. */
 
 :root {
-  --cs-plane: #08090b;
-  --cs-surface: #0c0d10;
-  --cs-surface-raised: #121419;
-  --cs-grid: #1c1e24;
-  --cs-rule: #24272e;
-  --cs-ink: #ffffff;
-  --cs-ink-2: #c3c2b7;
-  --cs-ink-3: #898781;
-  --cs-ink-4: #5f5e59;
+  --cs-plane: oklch(0.13 0.005 140);
+  --cs-surface: oklch(0.16 0.005 140);
+  --cs-surface-raised: oklch(0.2 0.006 140);
+  --cs-grid: oklch(0.24 0.006 140);
+  --cs-rule: oklch(0.28 0.006 140);
+  --cs-ink: oklch(0.94 0.01 130);
+  --cs-ink-2: oklch(0.8 0.01 133);
+  --cs-ink-3: oklch(0.66 0.01 135);
+  --cs-ink-4: oklch(0.5 0.008 138);
+
+  /* The terminal green. One accent, used for state and for the live edge. */
+  --cs-signal: oklch(0.85 0.23 148);
+  --cs-signal-dim: oklch(0.85 0.23 148 / 14%);
+  --cs-signal-ink: oklch(0.17 0.02 148);
 
   /* Regime status — ordinal severity, never used for a data series. */
-  --cs-expansion: #0ca30c;
-  --cs-orderly: #898781;
+  --cs-expansion: oklch(0.85 0.23 148);
+  --cs-orderly: oklch(0.66 0.01 135);
   --cs-hot: #fab219;
-  --cs-stress: #ec835a;
-  --cs-dislocation: #d03b3b;
-  --cs-none: #6e6e6b;
+  --cs-stress: oklch(0.72 0.16 45);
+  --cs-dislocation: oklch(0.68 0.2 25);
+  --cs-none: oklch(0.55 0.008 138);
 
   /* City identity — validated categorical order, fixed per city for the whole
      site so a reader who learns "Barcelona is orange" is never re-taught. */
@@ -50,7 +55,7 @@ html {
 body {
   font-family: var(--cs-sans);
   background:
-    radial-gradient(120% 80% at 50% -10%, #14161d 0%, var(--cs-plane) 62%);
+    radial-gradient(120% 80% at 50% -10%, oklch(0.19 0.012 145) 0%, var(--cs-plane) 62%);
   background-attachment: fixed;
 }
 
@@ -115,7 +120,7 @@ h2 {
 }
 
 .cs-panel:hover {
-  border-color: #333844;
+  border-color: oklch(0.36 0.02 145);
 }
 
 /* Corner ticks — the console conceit, purely decorative and never on a data mark. */
@@ -599,7 +604,7 @@ table.cs-table td.cs-num { font-variant-numeric: tabular-nums; }
   gap: 0.35rem;
   transition: border-color 0.16s ease;
 }
-.cs-signal:hover { border-color: var(--signal, #333844); }
+.cs-signal:hover { border-color: var(--signal, oklch(0.36 0.02 145)); }
 
 .cs-signal-head { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; }
 .cs-signal-ticker {
@@ -659,3 +664,46 @@ table.cs-table td.cs-num { font-variant-numeric: tabular-nums; }
   text-wrap: pretty;
 }
 .cs-signal-inv { color: var(--cs-ink-4); letter-spacing: 0.09em; }
+
+/* City tiles: the way from the national view into a single city. */
+.cs-city-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+}
+.cs-city-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.8rem 0.85rem 0.85rem;
+  background: var(--cs-surface);
+  border: 1px solid var(--cs-rule);
+  border-radius: 3px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-color 0.16s ease;
+}
+.cs-city-tile:hover { border-color: var(--signal); }
+.cs-city-tile-head { display: flex; align-items: center; gap: 0.4rem; }
+.cs-city-dot { width: 8px; height: 8px; border-radius: 1px; background: var(--city); flex: none; }
+.cs-city-tile-name { font-size: 0.85rem; font-weight: 600; color: var(--cs-ink); }
+.cs-city-tile-figure { display: flex; align-items: baseline; gap: 0.25rem; }
+.cs-city-tile-index {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--signal);
+}
+.cs-city-tile-top { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.15rem; }
+.cs-city-tile-sig {
+  font-family: var(--cs-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.06em;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid var(--cs-grid);
+  border-radius: 2px;
+  color: var(--cs-ink-3);
+  white-space: nowrap;
+}
+.cs-city-tile-n { font-family: var(--cs-mono); font-size: 0.55rem; color: var(--cs-ink-4); }

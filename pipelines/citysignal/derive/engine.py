@@ -377,6 +377,7 @@ class DeriveEngine:
 
         overview = self._overview(cities_payloads)
         _write(out_dir / "overview.json", overview)
+        _write(out_dir / "national.json", self.desk.build_national(list(self.config.cities)))
         _write(out_dir / "sources.json", self._sources())
         _write(out_dir / "signals.json", self._signals(cities_payloads))
 
