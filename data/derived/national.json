@@ -1,2115 +1,6 @@
 {
  "scope": "Spain",
- "world": {
-  "scope": "World",
-  "tape": [
-   {
-    "metric_id": "ecb_policy_rate",
-    "ticker": "ECB-RATE",
-    "label": "ECB policy rate",
-    "plain": "The rate the European Central Bank charges banks. Everything Spanish borrowers pay is built on top of it.",
-    "note": "Published by the ECB only when the rate actually changes, dated to the day. Forward-filled here to the rate in force in each month, which is the true statement and the only form that fits a monthly series.",
-    "unit": "percent",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-06",
-    "value": 2.4,
-    "yoy": 11.627906976744187,
-    "observations": 330,
-    "series": [
-     {
-      "period": "2023-07",
-      "value": 4.0
-     },
-     {
-      "period": "2023-08",
-      "value": 4.25
-     },
-     {
-      "period": "2023-09",
-      "value": 4.5
-     },
-     {
-      "period": "2023-10",
-      "value": 4.5
-     },
-     {
-      "period": "2023-11",
-      "value": 4.5
-     },
-     {
-      "period": "2023-12",
-      "value": 4.5
-     },
-     {
-      "period": "2024-01",
-      "value": 4.5
-     },
-     {
-      "period": "2024-02",
-      "value": 4.5
-     },
-     {
-      "period": "2024-03",
-      "value": 4.5
-     },
-     {
-      "period": "2024-04",
-      "value": 4.5
-     },
-     {
-      "period": "2024-05",
-      "value": 4.5
-     },
-     {
-      "period": "2024-06",
-      "value": 4.25
-     },
-     {
-      "period": "2024-07",
-      "value": 4.25
-     },
-     {
-      "period": "2024-08",
-      "value": 4.25
-     },
-     {
-      "period": "2024-09",
-      "value": 3.65
-     },
-     {
-      "period": "2024-10",
-      "value": 3.4
-     },
-     {
-      "period": "2024-11",
-      "value": 3.4
-     },
-     {
-      "period": "2024-12",
-      "value": 3.15
-     },
-     {
-      "period": "2025-01",
-      "value": 3.15
-     },
-     {
-      "period": "2025-02",
-      "value": 2.9
-     },
-     {
-      "period": "2025-03",
-      "value": 2.65
-     },
-     {
-      "period": "2025-04",
-      "value": 2.4
-     },
-     {
-      "period": "2025-05",
-      "value": 2.4
-     },
-     {
-      "period": "2025-06",
-      "value": 2.15
-     },
-     {
-      "period": "2025-07",
-      "value": 2.15
-     },
-     {
-      "period": "2025-08",
-      "value": 2.15
-     },
-     {
-      "period": "2025-09",
-      "value": 2.15
-     },
-     {
-      "period": "2025-10",
-      "value": 2.15
-     },
-     {
-      "period": "2025-11",
-      "value": 2.15
-     },
-     {
-      "period": "2025-12",
-      "value": 2.15
-     },
-     {
-      "period": "2026-01",
-      "value": 2.15
-     },
-     {
-      "period": "2026-02",
-      "value": 2.15
-     },
-     {
-      "period": "2026-03",
-      "value": 2.15
-     },
-     {
-      "period": "2026-04",
-      "value": 2.15
-     },
-     {
-      "period": "2026-05",
-      "value": 2.15
-     },
-     {
-      "period": "2026-06",
-      "value": 2.4
-     }
-    ],
-    "z": 0.17
-   },
-   {
-    "metric_id": "euro_inflation",
-    "ticker": "EA-CPI",
-    "label": "Euro-area inflation",
-    "plain": "How fast prices are rising across the euro area, which is what the central bank is actually reacting to.",
-    "note": null,
-    "unit": "percent",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2025-12",
-    "value": 1.9,
-    "yoy": -20.833333333333336,
-    "observations": 324,
-    "series": [
-     {
-      "period": "2023-01",
-      "value": 8.6
-     },
-     {
-      "period": "2023-02",
-      "value": 8.5
-     },
-     {
-      "period": "2023-03",
-      "value": 6.9
-     },
-     {
-      "period": "2023-04",
-      "value": 7.0
-     },
-     {
-      "period": "2023-05",
-      "value": 6.1
-     },
-     {
-      "period": "2023-06",
-      "value": 5.5
-     },
-     {
-      "period": "2023-07",
-      "value": 5.3
-     },
-     {
-      "period": "2023-08",
-      "value": 5.2
-     },
-     {
-      "period": "2023-09",
-      "value": 4.3
-     },
-     {
-      "period": "2023-10",
-      "value": 2.9
-     },
-     {
-      "period": "2023-11",
-      "value": 2.4
-     },
-     {
-      "period": "2023-12",
-      "value": 2.9
-     },
-     {
-      "period": "2024-01",
-      "value": 2.8
-     },
-     {
-      "period": "2024-02",
-      "value": 2.6
-     },
-     {
-      "period": "2024-03",
-      "value": 2.4
-     },
-     {
-      "period": "2024-04",
-      "value": 2.4
-     },
-     {
-      "period": "2024-05",
-      "value": 2.6
-     },
-     {
-      "period": "2024-06",
-      "value": 2.5
-     },
-     {
-      "period": "2024-07",
-      "value": 2.6
-     },
-     {
-      "period": "2024-08",
-      "value": 2.2
-     },
-     {
-      "period": "2024-09",
-      "value": 1.7
-     },
-     {
-      "period": "2024-10",
-      "value": 2.0
-     },
-     {
-      "period": "2024-11",
-      "value": 2.2
-     },
-     {
-      "period": "2024-12",
-      "value": 2.4
-     },
-     {
-      "period": "2025-01",
-      "value": 2.5
-     },
-     {
-      "period": "2025-02",
-      "value": 2.3
-     },
-     {
-      "period": "2025-03",
-      "value": 2.2
-     },
-     {
-      "period": "2025-04",
-      "value": 2.2
-     },
-     {
-      "period": "2025-05",
-      "value": 1.9
-     },
-     {
-      "period": "2025-06",
-      "value": 2.0
-     },
-     {
-      "period": "2025-07",
-      "value": 2.0
-     },
-     {
-      "period": "2025-08",
-      "value": 2.0
-     },
-     {
-      "period": "2025-09",
-      "value": 2.2
-     },
-     {
-      "period": "2025-10",
-      "value": 2.1
-     },
-     {
-      "period": "2025-11",
-      "value": 2.1
-     },
-     {
-      "period": "2025-12",
-      "value": 1.9
-     }
-    ],
-    "z": -0.12
-   },
-   {
-    "metric_id": "euro_unemployment",
-    "ticker": "EA-UNEMP",
-    "label": "Euro-area unemployment",
-    "plain": "The share of euro-area workers without a job — the backdrop Spain's own labour market sits against.",
-    "note": null,
-    "unit": "percent",
-    "section": "work",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-06",
-    "value": 6.3,
-    "yoy": 0.0,
-    "observations": 318,
-    "series": [
-     {
-      "period": "2023-07",
-      "value": 6.6
-     },
-     {
-      "period": "2023-08",
-      "value": 6.6
-     },
-     {
-      "period": "2023-09",
-      "value": 6.6
-     },
-     {
-      "period": "2023-10",
-      "value": 6.6
-     },
-     {
-      "period": "2023-11",
-      "value": 6.6
-     },
-     {
-      "period": "2023-12",
-      "value": 6.5
-     },
-     {
-      "period": "2024-01",
-      "value": 6.6
-     },
-     {
-      "period": "2024-02",
-      "value": 6.5
-     },
-     {
-      "period": "2024-03",
-      "value": 6.5
-     },
-     {
-      "period": "2024-04",
-      "value": 6.5
-     },
-     {
-      "period": "2024-05",
-      "value": 6.4
-     },
-     {
-      "period": "2024-06",
-      "value": 6.4
-     },
-     {
-      "period": "2024-07",
-      "value": 6.4
-     },
-     {
-      "period": "2024-08",
-      "value": 6.3
-     },
-     {
-      "period": "2024-09",
-      "value": 6.3
-     },
-     {
-      "period": "2024-10",
-      "value": 6.3
-     },
-     {
-      "period": "2024-11",
-      "value": 6.2
-     },
-     {
-      "period": "2024-12",
-      "value": 6.3
-     },
-     {
-      "period": "2025-01",
-      "value": 6.3
-     },
-     {
-      "period": "2025-02",
-      "value": 6.3
-     },
-     {
-      "period": "2025-03",
-      "value": 6.4
-     },
-     {
-      "period": "2025-04",
-      "value": 6.3
-     },
-     {
-      "period": "2025-05",
-      "value": 6.4
-     },
-     {
-      "period": "2025-06",
-      "value": 6.3
-     },
-     {
-      "period": "2025-07",
-      "value": 6.4
-     },
-     {
-      "period": "2025-08",
-      "value": 6.4
-     },
-     {
-      "period": "2025-09",
-      "value": 6.4
-     },
-     {
-      "period": "2025-10",
-      "value": 6.4
-     },
-     {
-      "period": "2025-11",
-      "value": 6.3
-     },
-     {
-      "period": "2025-12",
-      "value": 6.3
-     },
-     {
-      "period": "2026-01",
-      "value": 6.3
-     },
-     {
-      "period": "2026-02",
-      "value": 6.4
-     },
-     {
-      "period": "2026-03",
-      "value": 6.4
-     },
-     {
-      "period": "2026-04",
-      "value": 6.4
-     },
-     {
-      "period": "2026-05",
-      "value": 6.3
-     },
-     {
-      "period": "2026-06",
-      "value": 6.3
-     }
-    ],
-    "z": -1.57
-   },
-   {
-    "metric_id": "eur_usd",
-    "ticker": "EURUSD",
-    "label": "EUR/USD",
-    "plain": "How many dollars a euro buys. Sets what American and dollar-pegged buyers can afford here.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 1.141748,
-    "yoy": -2.2214000840978736,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 1.090887
-     },
-     {
-      "period": "2023-09",
-      "value": 1.068381
-     },
-     {
-      "period": "2023-10",
-      "value": 1.056255
-     },
-     {
-      "period": "2023-11",
-      "value": 1.080823
-     },
-     {
-      "period": "2023-12",
-      "value": 1.090305
-     },
-     {
-      "period": "2024-01",
-      "value": 1.090514
-     },
-     {
-      "period": "2024-02",
-      "value": 1.079471
-     },
-     {
-      "period": "2024-03",
-      "value": 1.08722
-     },
-     {
-      "period": "2024-04",
-      "value": 1.072776
-     },
-     {
-      "period": "2024-05",
-      "value": 1.081223
-     },
-     {
-      "period": "2024-06",
-      "value": 1.0759
-     },
-     {
-      "period": "2024-07",
-      "value": 1.084409
-     },
-     {
-      "period": "2024-08",
-      "value": 1.101218
-     },
-     {
-      "period": "2024-09",
-      "value": 1.1106
-     },
-     {
-      "period": "2024-10",
-      "value": 1.090435
-     },
-     {
-      "period": "2024-11",
-      "value": 1.063014
-     },
-     {
-      "period": "2024-12",
-      "value": 1.047875
-     },
-     {
-      "period": "2025-01",
-      "value": 1.035373
-     },
-     {
-      "period": "2025-02",
-      "value": 1.04125
-     },
-     {
-      "period": "2025-03",
-      "value": 1.080681
-     },
-     {
-      "period": "2025-04",
-      "value": 1.121395
-     },
-     {
-      "period": "2025-05",
-      "value": 1.127805
-     },
-     {
-      "period": "2025-06",
-      "value": 1.151619
-     },
-     {
-      "period": "2025-07",
-      "value": 1.167687
-     },
-     {
-      "period": "2025-08",
-      "value": 1.163143
-     },
-     {
-      "period": "2025-09",
-      "value": 1.173223
-     },
-     {
-      "period": "2025-10",
-      "value": 1.163043
-     },
-     {
-      "period": "2025-11",
-      "value": 1.15602
-     },
-     {
-      "period": "2025-12",
-      "value": 1.170871
-     },
-     {
-      "period": "2026-01",
-      "value": 1.173824
-     },
-     {
-      "period": "2026-02",
-      "value": 1.182395
-     },
-     {
-      "period": "2026-03",
-      "value": 1.155832
-     },
-     {
-      "period": "2026-04",
-      "value": 1.17064
-     },
-     {
-      "period": "2026-05",
-      "value": 1.16732
-     },
-     {
-      "period": "2026-06",
-      "value": 1.1518
-     },
-     {
-      "period": "2026-07",
-      "value": 1.141748
-     }
-    ],
-    "z": -0.27
-   },
-   {
-    "metric_id": "eur_gbp",
-    "ticker": "EURGBP",
-    "label": "EUR/GBP",
-    "plain": "How many pounds a euro buys. When this rises a British buyer's budget on the Costa del Sol shrinks, before any housing statistic notices.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 0.853915,
-    "yoy": -1.2457687001192344,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 0.858921
-     },
-     {
-      "period": "2023-09",
-      "value": 0.861584
-     },
-     {
-      "period": "2023-10",
-      "value": 0.867984
-     },
-     {
-      "period": "2023-11",
-      "value": 0.870454
-     },
-     {
-      "period": "2023-12",
-      "value": 0.861683
-     },
-     {
-      "period": "2024-01",
-      "value": 0.858731
-     },
-     {
-      "period": "2024-02",
-      "value": 0.854662
-     },
-     {
-      "period": "2024-03",
-      "value": 0.855237
-     },
-     {
-      "period": "2024-04",
-      "value": 0.856577
-     },
-     {
-      "period": "2024-05",
-      "value": 0.85564
-     },
-     {
-      "period": "2024-06",
-      "value": 0.846432
-     },
-     {
-      "period": "2024-07",
-      "value": 0.843318
-     },
-     {
-      "period": "2024-08",
-      "value": 0.851504
-     },
-     {
-      "period": "2024-09",
-      "value": 0.840212
-     },
-     {
-      "period": "2024-10",
-      "value": 0.834959
-     },
-     {
-      "period": "2024-11",
-      "value": 0.833788
-     },
-     {
-      "period": "2024-12",
-      "value": 0.828042
-     },
-     {
-      "period": "2025-01",
-      "value": 0.839081
-     },
-     {
-      "period": "2025-02",
-      "value": 0.83071
-     },
-     {
-      "period": "2025-03",
-      "value": 0.837025
-     },
-     {
-      "period": "2025-04",
-      "value": 0.853787
-     },
-     {
-      "period": "2025-05",
-      "value": 0.843495
-     },
-     {
-      "period": "2025-06",
-      "value": 0.84981
-     },
-     {
-      "period": "2025-07",
-      "value": 0.864687
-     },
-     {
-      "period": "2025-08",
-      "value": 0.865276
-     },
-     {
-      "period": "2025-09",
-      "value": 0.868945
-     },
-     {
-      "period": "2025-10",
-      "value": 0.871552
-     },
-     {
-      "period": "2025-11",
-      "value": 0.879965
-     },
-     {
-      "period": "2025-12",
-      "value": 0.875
-     },
-     {
-      "period": "2026-01",
-      "value": 0.868281
-     },
-     {
-      "period": "2026-02",
-      "value": 0.870315
-     },
-     {
-      "period": "2026-03",
-      "value": 0.866311
-     },
-     {
-      "period": "2026-04",
-      "value": 0.869333
-     },
-     {
-      "period": "2026-05",
-      "value": 0.865648
-     },
-     {
-      "period": "2026-06",
-      "value": 0.86372
-     },
-     {
-      "period": "2026-07",
-      "value": 0.853915
-     }
-    ],
-    "z": 0.7
-   },
-   {
-    "metric_id": "eur_jpy",
-    "ticker": "EURJPY",
-    "label": "EUR/JPY",
-    "plain": "How many yen a euro buys. The yen funds the world's carry trades, so a sharp fall here means those trades are unwinding and capital is leaving risky assets.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 185.53913,
-    "yoy": 8.166337964760062,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 157.962174
-     },
-     {
-      "period": "2023-09",
-      "value": 157.795238
-     },
-     {
-      "period": "2023-10",
-      "value": 158.037727
-     },
-     {
-      "period": "2023-11",
-      "value": 161.844091
-     },
-     {
-      "period": "2023-12",
-      "value": 157.212632
-     },
-     {
-      "period": "2024-01",
-      "value": 159.458182
-     },
-     {
-      "period": "2024-02",
-      "value": 161.377143
-     },
-     {
-      "period": "2024-03",
-      "value": 162.7725
-     },
-     {
-      "period": "2024-04",
-      "value": 165.029524
-     },
-     {
-      "period": "2024-05",
-      "value": 168.536364
-     },
-     {
-      "period": "2024-06",
-      "value": 169.813
-     },
-     {
-      "period": "2024-07",
-      "value": 171.17087
-     },
-     {
-      "period": "2024-08",
-      "value": 161.055455
-     },
-     {
-      "period": "2024-09",
-      "value": 159.080952
-     },
-     {
-      "period": "2024-10",
-      "value": 163.196957
-     },
-     {
-      "period": "2024-11",
-      "value": 163.23381
-     },
-     {
-      "period": "2024-12",
-      "value": 161.0835
-     },
-     {
-      "period": "2025-01",
-      "value": 161.921364
-     },
-     {
-      "period": "2025-02",
-      "value": 158.087
-     },
-     {
-      "period": "2025-03",
-      "value": 161.166667
-     },
-     {
-      "period": "2025-04",
-      "value": 161.6705
-     },
-     {
-      "period": "2025-05",
-      "value": 163.144286
-     },
-     {
-      "period": "2025-06",
-      "value": 166.523333
-     },
-     {
-      "period": "2025-07",
-      "value": 171.531304
-     },
-     {
-      "period": "2025-08",
-      "value": 171.789524
-     },
-     {
-      "period": "2025-09",
-      "value": 173.548636
-     },
-     {
-      "period": "2025-10",
-      "value": 176.152609
-     },
-     {
-      "period": "2025-11",
-      "value": 179.316
-     },
-     {
-      "period": "2025-12",
-      "value": 182.497143
-     },
-     {
-      "period": "2026-01",
-      "value": 183.938571
-     },
-     {
-      "period": "2026-02",
-      "value": 183.4515
-     },
-     {
-      "period": "2026-03",
-      "value": 183.399091
-     },
-     {
-      "period": "2026-04",
-      "value": 186.206
-     },
-     {
-      "period": "2026-05",
-      "value": 184.7095
-     },
-     {
-      "period": "2026-06",
-      "value": 185.114091
-     },
-     {
-      "period": "2026-07",
-      "value": 185.53913
-     }
-    ],
-    "z": 2.73
-   }
-  ],
-  "fx": [
-   {
-    "metric_id": "eur_gbp",
-    "ticker": "EURGBP",
-    "label": "EUR/GBP",
-    "plain": "How many pounds a euro buys. When this rises a British buyer's budget on the Costa del Sol shrinks, before any housing statistic notices.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 0.853915,
-    "yoy": -1.2457687001192344,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 0.858921
-     },
-     {
-      "period": "2023-09",
-      "value": 0.861584
-     },
-     {
-      "period": "2023-10",
-      "value": 0.867984
-     },
-     {
-      "period": "2023-11",
-      "value": 0.870454
-     },
-     {
-      "period": "2023-12",
-      "value": 0.861683
-     },
-     {
-      "period": "2024-01",
-      "value": 0.858731
-     },
-     {
-      "period": "2024-02",
-      "value": 0.854662
-     },
-     {
-      "period": "2024-03",
-      "value": 0.855237
-     },
-     {
-      "period": "2024-04",
-      "value": 0.856577
-     },
-     {
-      "period": "2024-05",
-      "value": 0.85564
-     },
-     {
-      "period": "2024-06",
-      "value": 0.846432
-     },
-     {
-      "period": "2024-07",
-      "value": 0.843318
-     },
-     {
-      "period": "2024-08",
-      "value": 0.851504
-     },
-     {
-      "period": "2024-09",
-      "value": 0.840212
-     },
-     {
-      "period": "2024-10",
-      "value": 0.834959
-     },
-     {
-      "period": "2024-11",
-      "value": 0.833788
-     },
-     {
-      "period": "2024-12",
-      "value": 0.828042
-     },
-     {
-      "period": "2025-01",
-      "value": 0.839081
-     },
-     {
-      "period": "2025-02",
-      "value": 0.83071
-     },
-     {
-      "period": "2025-03",
-      "value": 0.837025
-     },
-     {
-      "period": "2025-04",
-      "value": 0.853787
-     },
-     {
-      "period": "2025-05",
-      "value": 0.843495
-     },
-     {
-      "period": "2025-06",
-      "value": 0.84981
-     },
-     {
-      "period": "2025-07",
-      "value": 0.864687
-     },
-     {
-      "period": "2025-08",
-      "value": 0.865276
-     },
-     {
-      "period": "2025-09",
-      "value": 0.868945
-     },
-     {
-      "period": "2025-10",
-      "value": 0.871552
-     },
-     {
-      "period": "2025-11",
-      "value": 0.879965
-     },
-     {
-      "period": "2025-12",
-      "value": 0.875
-     },
-     {
-      "period": "2026-01",
-      "value": 0.868281
-     },
-     {
-      "period": "2026-02",
-      "value": 0.870315
-     },
-     {
-      "period": "2026-03",
-      "value": 0.866311
-     },
-     {
-      "period": "2026-04",
-      "value": 0.869333
-     },
-     {
-      "period": "2026-05",
-      "value": 0.865648
-     },
-     {
-      "period": "2026-06",
-      "value": 0.86372
-     },
-     {
-      "period": "2026-07",
-      "value": 0.853915
-     }
-    ],
-    "z": 0.7
-   },
-   {
-    "metric_id": "eur_usd",
-    "ticker": "EURUSD",
-    "label": "EUR/USD",
-    "plain": "How many dollars a euro buys. Sets what American and dollar-pegged buyers can afford here.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 1.141748,
-    "yoy": -2.2214000840978736,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 1.090887
-     },
-     {
-      "period": "2023-09",
-      "value": 1.068381
-     },
-     {
-      "period": "2023-10",
-      "value": 1.056255
-     },
-     {
-      "period": "2023-11",
-      "value": 1.080823
-     },
-     {
-      "period": "2023-12",
-      "value": 1.090305
-     },
-     {
-      "period": "2024-01",
-      "value": 1.090514
-     },
-     {
-      "period": "2024-02",
-      "value": 1.079471
-     },
-     {
-      "period": "2024-03",
-      "value": 1.08722
-     },
-     {
-      "period": "2024-04",
-      "value": 1.072776
-     },
-     {
-      "period": "2024-05",
-      "value": 1.081223
-     },
-     {
-      "period": "2024-06",
-      "value": 1.0759
-     },
-     {
-      "period": "2024-07",
-      "value": 1.084409
-     },
-     {
-      "period": "2024-08",
-      "value": 1.101218
-     },
-     {
-      "period": "2024-09",
-      "value": 1.1106
-     },
-     {
-      "period": "2024-10",
-      "value": 1.090435
-     },
-     {
-      "period": "2024-11",
-      "value": 1.063014
-     },
-     {
-      "period": "2024-12",
-      "value": 1.047875
-     },
-     {
-      "period": "2025-01",
-      "value": 1.035373
-     },
-     {
-      "period": "2025-02",
-      "value": 1.04125
-     },
-     {
-      "period": "2025-03",
-      "value": 1.080681
-     },
-     {
-      "period": "2025-04",
-      "value": 1.121395
-     },
-     {
-      "period": "2025-05",
-      "value": 1.127805
-     },
-     {
-      "period": "2025-06",
-      "value": 1.151619
-     },
-     {
-      "period": "2025-07",
-      "value": 1.167687
-     },
-     {
-      "period": "2025-08",
-      "value": 1.163143
-     },
-     {
-      "period": "2025-09",
-      "value": 1.173223
-     },
-     {
-      "period": "2025-10",
-      "value": 1.163043
-     },
-     {
-      "period": "2025-11",
-      "value": 1.15602
-     },
-     {
-      "period": "2025-12",
-      "value": 1.170871
-     },
-     {
-      "period": "2026-01",
-      "value": 1.173824
-     },
-     {
-      "period": "2026-02",
-      "value": 1.182395
-     },
-     {
-      "period": "2026-03",
-      "value": 1.155832
-     },
-     {
-      "period": "2026-04",
-      "value": 1.17064
-     },
-     {
-      "period": "2026-05",
-      "value": 1.16732
-     },
-     {
-      "period": "2026-06",
-      "value": 1.1518
-     },
-     {
-      "period": "2026-07",
-      "value": 1.141748
-     }
-    ],
-    "z": -0.27
-   },
-   {
-    "metric_id": "eur_sek",
-    "ticker": "EURSEK",
-    "label": "EUR/SEK",
-    "plain": "How many Swedish krona a euro buys. Swedish buyers concentrate on the Mediterranean coast.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 11.045778,
-    "yoy": -1.3639657090462491,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 11.8117
-     },
-     {
-      "period": "2023-09",
-      "value": 11.841738
-     },
-     {
-      "period": "2023-10",
-      "value": 11.647241
-     },
-     {
-      "period": "2023-11",
-      "value": 11.547491
-     },
-     {
-      "period": "2023-12",
-      "value": 11.202842
-     },
-     {
-      "period": "2024-01",
-      "value": 11.283377
-     },
-     {
-      "period": "2024-02",
-      "value": 11.249981
-     },
-     {
-      "period": "2024-03",
-      "value": 11.30538
-     },
-     {
-      "period": "2024-04",
-      "value": 11.590962
-     },
-     {
-      "period": "2024-05",
-      "value": 11.618605
-     },
-     {
-      "period": "2024-06",
-      "value": 11.28512
-     },
-     {
-      "period": "2024-07",
-      "value": 11.532404
-     },
-     {
-      "period": "2024-08",
-      "value": 11.455659
-     },
-     {
-      "period": "2024-09",
-      "value": 11.357729
-     },
-     {
-      "period": "2024-10",
-      "value": 11.404752
-     },
-     {
-      "period": "2024-11",
-      "value": 11.582833
-     },
-     {
-      "period": "2024-12",
-      "value": 11.50403
-     },
-     {
-      "period": "2025-01",
-      "value": 11.479673
-     },
-     {
-      "period": "2025-02",
-      "value": 11.24739
-     },
-     {
-      "period": "2025-03",
-      "value": 10.967514
-     },
-     {
-      "period": "2025-04",
-      "value": 10.974425
-     },
-     {
-      "period": "2025-05",
-      "value": 10.881167
-     },
-     {
-      "period": "2025-06",
-      "value": 11.009419
-     },
-     {
-      "period": "2025-07",
-      "value": 11.198522
-     },
-     {
-      "period": "2025-08",
-      "value": 11.160952
-     },
-     {
-      "period": "2025-09",
-      "value": 11.000386
-     },
-     {
-      "period": "2025-10",
-      "value": 10.969926
-     },
-     {
-      "period": "2025-11",
-      "value": 10.99145
-     },
-     {
-      "period": "2025-12",
-      "value": 10.895571
-     },
-     {
-      "period": "2026-01",
-      "value": 10.68149
-     },
-     {
-      "period": "2026-02",
-      "value": 10.635085
-     },
-     {
-      "period": "2026-03",
-      "value": 10.761432
-     },
-     {
-      "period": "2026-04",
-      "value": 10.8348
-     },
-     {
-      "period": "2026-05",
-      "value": 10.86125
-     },
-     {
-      "period": "2026-06",
-      "value": 10.954809
-     },
-     {
-      "period": "2026-07",
-      "value": 11.045778
-     }
-    ],
-    "z": 1.56
-   },
-   {
-    "metric_id": "eur_nok",
-    "ticker": "EURNOK",
-    "label": "EUR/NOK",
-    "plain": "How many Norwegian krone a euro buys. Norwegian buyers, same coast.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 11.082209,
-    "yoy": -6.508408854082295,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 11.412657
-     },
-     {
-      "period": "2023-09",
-      "value": 11.452495
-     },
-     {
-      "period": "2023-10",
-      "value": 11.628355
-     },
-     {
-      "period": "2023-11",
-      "value": 11.795764
-     },
-     {
-      "period": "2023-12",
-      "value": 11.533263
-     },
-     {
-      "period": "2024-01",
-      "value": 11.350086
-     },
-     {
-      "period": "2024-02",
-      "value": 11.384286
-     },
-     {
-      "period": "2024-03",
-      "value": 11.52139
-     },
-     {
-      "period": "2024-04",
-      "value": 11.6828
-     },
-     {
-      "period": "2024-05",
-      "value": 11.598755
-     },
-     {
-      "period": "2024-06",
-      "value": 11.4178
-     },
-     {
-      "period": "2024-07",
-      "value": 11.716035
-     },
-     {
-      "period": "2024-08",
-      "value": 11.789491
-     },
-     {
-      "period": "2024-09",
-      "value": 11.785243
-     },
-     {
-      "period": "2024-10",
-      "value": 11.790709
-     },
-     {
-      "period": "2024-11",
-      "value": 11.740762
-     },
-     {
-      "period": "2024-12",
-      "value": 11.744705
-     },
-     {
-      "period": "2025-01",
-      "value": 11.745573
-     },
-     {
-      "period": "2025-02",
-      "value": 11.657395
-     },
-     {
-      "period": "2025-03",
-      "value": 11.547181
-     },
-     {
-      "period": "2025-04",
-      "value": 11.83798
-     },
-     {
-      "period": "2025-05",
-      "value": 11.596767
-     },
-     {
-      "period": "2025-06",
-      "value": 11.584133
-     },
-     {
-      "period": "2025-07",
-      "value": 11.853696
-     },
-     {
-      "period": "2025-08",
-      "value": 11.865281
-     },
-     {
-      "period": "2025-09",
-      "value": 11.670182
-     },
-     {
-      "period": "2025-10",
-      "value": 11.663252
-     },
-     {
-      "period": "2025-11",
-      "value": 11.740205
-     },
-     {
-      "period": "2025-12",
-      "value": 11.842848
-     },
-     {
-      "period": "2026-01",
-      "value": 11.666967
-     },
-     {
-      "period": "2026-02",
-      "value": 11.3206
-     },
-     {
-      "period": "2026-03",
-      "value": 11.16575
-     },
-     {
-      "period": "2026-04",
-      "value": 11.03319
-     },
-     {
-      "period": "2026-05",
-      "value": 10.79355
-     },
-     {
-      "period": "2026-06",
-      "value": 11.033795
-     },
-     {
-      "period": "2026-07",
-      "value": 11.082209
-     }
-    ],
-    "z": 1.61
-   },
-   {
-    "metric_id": "eur_chf",
-    "ticker": "EURCHF",
-    "label": "EUR/CHF",
-    "plain": "How many Swiss francs a euro buys.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 0.925574,
-    "yoy": -0.7395412184842421,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 0.958752
-     },
-     {
-      "period": "2023-09",
-      "value": 0.959995
-     },
-     {
-      "period": "2023-10",
-      "value": 0.954732
-     },
-     {
-      "period": "2023-11",
-      "value": 0.963445
-     },
-     {
-      "period": "2023-12",
-      "value": 0.944132
-     },
-     {
-      "period": "2024-01",
-      "value": 0.936823
-     },
-     {
-      "period": "2024-02",
-      "value": 0.946219
-     },
-     {
-      "period": "2024-03",
-      "value": 0.965565
-     },
-     {
-      "period": "2024-04",
-      "value": 0.976067
-     },
-     {
-      "period": "2024-05",
-      "value": 0.983005
-     },
-     {
-      "period": "2024-06",
-      "value": 0.96155
-     },
-     {
-      "period": "2024-07",
-      "value": 0.9676
-     },
-     {
-      "period": "2024-08",
-      "value": 0.945009
-     },
-     {
-      "period": "2024-09",
-      "value": 0.941357
-     },
-     {
-      "period": "2024-10",
-      "value": 0.938583
-     },
-     {
-      "period": "2024-11",
-      "value": 0.935538
-     },
-     {
-      "period": "2024-12",
-      "value": 0.933925
-     },
-     {
-      "period": "2025-01",
-      "value": 0.941395
-     },
-     {
-      "period": "2025-02",
-      "value": 0.941345
-     },
-     {
-      "period": "2025-03",
-      "value": 0.954762
-     },
-     {
-      "period": "2025-04",
-      "value": 0.936995
-     },
-     {
-      "period": "2025-05",
-      "value": 0.935605
-     },
-     {
-      "period": "2025-06",
-      "value": 0.938033
-     },
-     {
-      "period": "2025-07",
-      "value": 0.93247
-     },
-     {
-      "period": "2025-08",
-      "value": 0.938667
-     },
-     {
-      "period": "2025-09",
-      "value": 0.934959
-     },
-     {
-      "period": "2025-10",
-      "value": 0.92893
-     },
-     {
-      "period": "2025-11",
-      "value": 0.928965
-     },
-     {
-      "period": "2025-12",
-      "value": 0.933162
-     },
-     {
-      "period": "2026-01",
-      "value": 0.927195
-     },
-     {
-      "period": "2026-02",
-      "value": 0.914035
-     },
-     {
-      "period": "2026-03",
-      "value": 0.909427
-     },
-     {
-      "period": "2026-04",
-      "value": 0.921345
-     },
-     {
-      "period": "2026-05",
-      "value": 0.914945
-     },
-     {
-      "period": "2026-06",
-      "value": 0.920545
-     },
-     {
-      "period": "2026-07",
-      "value": 0.925574
-     }
-    ],
-    "z": -1.5
-   },
-   {
-    "metric_id": "eur_jpy",
-    "ticker": "EURJPY",
-    "label": "EUR/JPY",
-    "plain": "How many yen a euro buys. The yen funds the world's carry trades, so a sharp fall here means those trades are unwinding and capital is leaving risky assets.",
-    "note": null,
-    "unit": "rate",
-    "section": "credit",
-    "geo_level": "euro_area",
-    "source_id": "ecb",
-    "period": "2026-07",
-    "value": 185.53913,
-    "yoy": 8.166337964760062,
-    "observations": 331,
-    "series": [
-     {
-      "period": "2023-08",
-      "value": 157.962174
-     },
-     {
-      "period": "2023-09",
-      "value": 157.795238
-     },
-     {
-      "period": "2023-10",
-      "value": 158.037727
-     },
-     {
-      "period": "2023-11",
-      "value": 161.844091
-     },
-     {
-      "period": "2023-12",
-      "value": 157.212632
-     },
-     {
-      "period": "2024-01",
-      "value": 159.458182
-     },
-     {
-      "period": "2024-02",
-      "value": 161.377143
-     },
-     {
-      "period": "2024-03",
-      "value": 162.7725
-     },
-     {
-      "period": "2024-04",
-      "value": 165.029524
-     },
-     {
-      "period": "2024-05",
-      "value": 168.536364
-     },
-     {
-      "period": "2024-06",
-      "value": 169.813
-     },
-     {
-      "period": "2024-07",
-      "value": 171.17087
-     },
-     {
-      "period": "2024-08",
-      "value": 161.055455
-     },
-     {
-      "period": "2024-09",
-      "value": 159.080952
-     },
-     {
-      "period": "2024-10",
-      "value": 163.196957
-     },
-     {
-      "period": "2024-11",
-      "value": 163.23381
-     },
-     {
-      "period": "2024-12",
-      "value": 161.0835
-     },
-     {
-      "period": "2025-01",
-      "value": 161.921364
-     },
-     {
-      "period": "2025-02",
-      "value": 158.087
-     },
-     {
-      "period": "2025-03",
-      "value": 161.166667
-     },
-     {
-      "period": "2025-04",
-      "value": 161.6705
-     },
-     {
-      "period": "2025-05",
-      "value": 163.144286
-     },
-     {
-      "period": "2025-06",
-      "value": 166.523333
-     },
-     {
-      "period": "2025-07",
-      "value": 171.531304
-     },
-     {
-      "period": "2025-08",
-      "value": 171.789524
-     },
-     {
-      "period": "2025-09",
-      "value": 173.548636
-     },
-     {
-      "period": "2025-10",
-      "value": 176.152609
-     },
-     {
-      "period": "2025-11",
-      "value": 179.316
-     },
-     {
-      "period": "2025-12",
-      "value": 182.497143
-     },
-     {
-      "period": "2026-01",
-      "value": 183.938571
-     },
-     {
-      "period": "2026-02",
-      "value": 183.4515
-     },
-     {
-      "period": "2026-03",
-      "value": 183.399091
-     },
-     {
-      "period": "2026-04",
-      "value": 186.206
-     },
-     {
-      "period": "2026-05",
-      "value": 184.7095
-     },
-     {
-      "period": "2026-06",
-      "value": 185.114091
-     },
-     {
-      "period": "2026-07",
-      "value": 185.53913
-     }
-    ],
-    "z": 2.73
-   }
-  ],
-  "carry": {
-   "metric_id": "carry_stress",
-   "ticker": "CARRY",
-   "label": "Yen carry stress",
-   "plain": "How sharply the yen is strengthening. The yen funds much of the world's borrowed money, so a fast rise forces those trades to close and pulls capital out of riskier markets.",
-   "unit": "percent",
-   "geo_level": "world",
-   "period": "2026-07",
-   "value": 0.36,
-   "read": "neutral",
-   "series": [
-    {
-     "period": "2023-08",
-     "value": -6.067947887082168
-    },
-    {
-     "period": "2023-09",
-     "value": -3.0340472637314257
-    },
-    {
-     "period": "2023-10",
-     "value": -1.3470709797472677
-    },
-    {
-     "period": "2023-11",
-     "value": -2.457497831094669
-    },
-    {
-     "period": "2023-12",
-     "value": 0.36921646520156604
-    },
-    {
-     "period": "2024-01",
-     "value": -0.8988075360005678
-    },
-    {
-     "period": "2024-02",
-     "value": 0.2885171754586963
-    },
-    {
-     "period": "2024-03",
-     "value": -3.5365275228010904
-    },
-    {
-     "period": "2024-04",
-     "value": -3.493920431125959
-    },
-    {
-     "period": "2024-05",
-     "value": -4.436329003544202
-    },
-    {
-     "period": "2024-06",
-     "value": -4.325362085118789
-    },
-    {
-     "period": "2024-07",
-     "value": -3.721362003080127
-    },
-    {
-     "period": "2024-08",
-     "value": 4.43875067816225
-    },
-    {
-     "period": "2024-09",
-     "value": 6.319921325222447
-    },
-    {
-     "period": "2024-10",
-     "value": 4.658452106950213
-    },
-    {
-     "period": "2024-11",
-     "value": -1.3525496544032056
-    },
-    {
-     "period": "2024-12",
-     "value": -1.2588232436526972
-    },
-    {
-     "period": "2025-01",
-     "value": 0.7816279319472766
-    },
-    {
-     "period": "2025-02",
-     "value": 3.153029387723056
-    },
-    {
-     "period": "2025-03",
-     "value": -0.05162974482178691
-    },
-    {
-     "period": "2025-04",
-     "value": 0.1549295249266842
-    },
-    {
-     "period": "2025-05",
-     "value": -3.1990524205026376
-    },
-    {
-     "period": "2025-06",
-     "value": -3.3236810686170104
-    },
-    {
-     "period": "2025-07",
-     "value": -6.099321768659094
-    },
-    {
-     "period": "2025-08",
-     "value": -5.299136250472178
-    },
-    {
-     "period": "2025-09",
-     "value": -4.218809985024729
-    },
-    {
-     "period": "2025-10",
-     "value": -2.6941467197147912
-    },
-    {
-     "period": "2025-11",
-     "value": -4.3812194275595076
-    },
-    {
-     "period": "2025-12",
-     "value": -5.156195523196164
-    },
-    {
-     "period": "2026-01",
-     "value": -4.420009470311044
-    },
-    {
-     "period": "2026-02",
-     "value": -2.3062638024493114
-    },
-    {
-     "period": "2026-03",
-     "value": -0.4942258191954295
-    },
-    {
-     "period": "2026-04",
-     "value": -1.2327099137896385
-    },
-    {
-     "period": "2026-05",
-     "value": -0.6857398276928678
-    },
-    {
-     "period": "2026-06",
-     "value": -0.935119138622123
-    },
-    {
-     "period": "2026-07",
-     "value": 0.3581356132455393
-    }
-   ],
-   "reference": "August 2024: a 6.3% three-month move unwound carry trades worldwide."
-  }
- },
- "composite": 51,
+ "composite": 50,
  "composite_n": 5,
  "tape": [
   {
@@ -3198,15 +1089,11 @@
    "section": "work",
    "geo_level": "nation",
    "source_id": "indeed",
-   "period": "2026-06",
-   "value": 147.61,
-   "yoy": -3.453463274249443,
-   "observations": 77,
+   "period": "2026-07",
+   "value": 143.63,
+   "yoy": -4.507679010704076,
+   "observations": 78,
    "series": [
-    {
-     "period": "2023-07",
-     "value": 154.66
-    },
     {
      "period": "2023-08",
      "value": 155.29
@@ -3346,13 +1233,17 @@
     {
      "period": "2026-06",
      "value": 147.61
+    },
+    {
+     "period": "2026-07",
+     "value": 143.63
     }
    ],
-   "percentile_raw": 71,
+   "percentile_raw": 66,
    "inverted": false,
-   "index": 71,
+   "index": 66,
    "read": "expansionary",
-   "index_prev": 73
+   "index_prev": 71
   },
   {
    "metric_id": "visados_new_build",
@@ -3530,15 +1421,11 @@
    "section": "attention",
    "geo_level": "nation",
    "source_id": "wikipedia",
-   "period": "2026-06",
-   "value": 4.875,
-   "yoy": -35.04590089669967,
-   "observations": 102,
+   "period": "2026-07",
+   "value": 4.3677,
+   "yoy": -44.07840827614462,
+   "observations": 103,
    "series": [
-    {
-     "period": "2023-07",
-     "value": 12.9489
-    },
     {
      "period": "2023-08",
      "value": 12.7363
@@ -3678,6 +1565,10 @@
     {
      "period": "2026-06",
      "value": 4.875
+    },
+    {
+     "period": "2026-07",
+     "value": 4.3677
     }
    ],
    "percentile_raw": 2,
@@ -3696,15 +1587,11 @@
    "section": "attention",
    "geo_level": "nation",
    "source_id": "wikipedia",
-   "period": "2026-06",
-   "value": 15.5877,
-   "yoy": 1.0567466466122535,
-   "observations": 102,
+   "period": "2026-07",
+   "value": 16.172,
+   "yoy": 28.049408131755023,
+   "observations": 103,
    "series": [
-    {
-     "period": "2023-07",
-     "value": 16.3724
-    },
     {
      "period": "2023-08",
      "value": 15.7759
@@ -3844,20 +1731,24 @@
     {
      "period": "2026-06",
      "value": 15.5877
+    },
+    {
+     "period": "2026-07",
+     "value": 16.172
     }
    ],
-   "percentile_raw": 55,
+   "percentile_raw": 57,
    "inverted": false,
-   "index": 55,
+   "index": 57,
    "read": "neutral",
-   "index_prev": 34
+   "index_prev": 55
   }
  ],
  "cities": [
   {
    "slug": "barcelona",
    "name": "Barcelona",
-   "composite": 74,
+   "composite": 76,
    "signals": 6,
    "top": [
     {
@@ -4210,15 +2101,11 @@
      "section": "attention",
      "geo_level": "municipality",
      "source_id": "wiki_langs",
-     "period": "2026-06",
-     "value": 399.48,
-     "yoy": 4.381907972093763,
-     "observations": 90,
+     "period": "2026-07",
+     "value": 473.55,
+     "yoy": 39.756227127847964,
+     "observations": 91,
      "series": [
-      {
-       "period": "2023-07",
-       "value": 224.22
-      },
       {
        "period": "2023-08",
        "value": 216.77
@@ -4358,11 +2245,15 @@
       {
        "period": "2026-06",
        "value": 399.48
+      },
+      {
+       "period": "2026-07",
+       "value": 473.55
       }
      ],
-     "percentile_raw": 98,
+     "percentile_raw": 100,
      "inverted": false,
-     "index": 98,
+     "index": 100,
      "read": "expansionary",
      "index_prev": 98
     },
@@ -4537,7 +2428,7 @@
   {
    "slug": "sevilla",
    "name": "Sevilla",
-   "composite": 72,
+   "composite": 71,
    "signals": 6,
    "top": [
     {
@@ -5056,15 +2947,11 @@
      "section": "attention",
      "geo_level": "municipality",
      "source_id": "wiki_langs",
-     "period": "2026-06",
-     "value": 305.16,
-     "yoy": 18.845659539665867,
-     "observations": 90,
+     "period": "2026-07",
+     "value": 334.97,
+     "yoy": 50.71766029246346,
+     "observations": 91,
      "series": [
-      {
-       "period": "2023-07",
-       "value": 273.43
-      },
       {
        "period": "2023-08",
        "value": 196.36
@@ -5204,20 +3091,24 @@
       {
        "period": "2026-06",
        "value": 305.16
+      },
+      {
+       "period": "2026-07",
+       "value": 334.97
       }
      ],
-     "percentile_raw": 96,
+     "percentile_raw": 99,
      "inverted": false,
-     "index": 96,
+     "index": 99,
      "read": "expansionary",
-     "index_prev": 99
+     "index_prev": 96
     }
    ]
   },
   {
    "slug": "palma",
    "name": "Palma",
-   "composite": 70,
+   "composite": 69,
    "signals": 4,
    "top": [
     {
@@ -5230,15 +3121,11 @@
      "section": "attention",
      "geo_level": "municipality",
      "source_id": "wiki_langs",
-     "period": "2026-06",
-     "value": 441.2,
-     "yoy": 5.8439689089338875,
-     "observations": 90,
+     "period": "2026-07",
+     "value": 469.09,
+     "yoy": 10.36113398423714,
+     "observations": 91,
      "series": [
-      {
-       "period": "2023-07",
-       "value": 277.82
-      },
       {
        "period": "2023-08",
        "value": 292.2
@@ -5378,13 +3265,17 @@
       {
        "period": "2026-06",
        "value": 441.2
+      },
+      {
+       "period": "2026-07",
+       "value": 469.09
       }
      ],
-     "percentile_raw": 98,
+     "percentile_raw": 99,
      "inverted": false,
-     "index": 98,
+     "index": 99,
      "read": "expansionary",
-     "index_prev": 96
+     "index_prev": 98
     },
     {
      "metric_id": "vehicle_registrations",
@@ -5561,6 +3452,172 @@
    "signals": 11,
    "top": [
     {
+     "metric_id": "wiki_foreign_interest",
+     "ticker": "FOREIGN-EYE",
+     "label": "Foreign interest ratio",
+     "plain": "Non-Spanish-language Wikipedia views about this city, divided by Spanish-language views — a rising ratio means the world is paying more attention than Spain itself.",
+     "note": "Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia views) × 100. A rising ratio signals rising foreign interest; the absolute value is harder to interpret because it depends on platform-wide usage patterns. Used to track whether a city's interest is shifting toward or away from foreign origin markets (relocation, tourism, investment).",
+     "unit": "percent",
+     "section": "attention",
+     "geo_level": "municipality",
+     "source_id": "wiki_langs",
+     "period": "2026-07",
+     "value": 326.03,
+     "yoy": 68.96247927031507,
+     "observations": 91,
+     "series": [
+      {
+       "period": "2023-08",
+       "value": 153.89
+      },
+      {
+       "period": "2023-09",
+       "value": 166.63
+      },
+      {
+       "period": "2023-10",
+       "value": 166.56
+      },
+      {
+       "period": "2023-11",
+       "value": 163.84
+      },
+      {
+       "period": "2023-12",
+       "value": 155.55
+      },
+      {
+       "period": "2024-01",
+       "value": 163.62
+      },
+      {
+       "period": "2024-02",
+       "value": 173.58
+      },
+      {
+       "period": "2024-03",
+       "value": 175.86
+      },
+      {
+       "period": "2024-04",
+       "value": 199.63
+      },
+      {
+       "period": "2024-05",
+       "value": 215.13
+      },
+      {
+       "period": "2024-06",
+       "value": 222.96
+      },
+      {
+       "period": "2024-07",
+       "value": 217.24
+      },
+      {
+       "period": "2024-08",
+       "value": 185.86
+      },
+      {
+       "period": "2024-09",
+       "value": 197.86
+      },
+      {
+       "period": "2024-10",
+       "value": 191.43
+      },
+      {
+       "period": "2024-11",
+       "value": 191.48
+      },
+      {
+       "period": "2024-12",
+       "value": 180.49
+      },
+      {
+       "period": "2025-01",
+       "value": 187.47
+      },
+      {
+       "period": "2025-02",
+       "value": 190.13
+      },
+      {
+       "period": "2025-03",
+       "value": 199.37
+      },
+      {
+       "period": "2025-04",
+       "value": 216.73
+      },
+      {
+       "period": "2025-05",
+       "value": 211.74
+      },
+      {
+       "period": "2025-06",
+       "value": 205.35
+      },
+      {
+       "period": "2025-07",
+       "value": 192.96
+      },
+      {
+       "period": "2025-08",
+       "value": 183.32
+      },
+      {
+       "period": "2025-09",
+       "value": 209.49
+      },
+      {
+       "period": "2025-10",
+       "value": 200.28
+      },
+      {
+       "period": "2025-11",
+       "value": 193.97
+      },
+      {
+       "period": "2025-12",
+       "value": 202.2
+      },
+      {
+       "period": "2026-01",
+       "value": 204.63
+      },
+      {
+       "period": "2026-02",
+       "value": 208.02
+      },
+      {
+       "period": "2026-03",
+       "value": 225.32
+      },
+      {
+       "period": "2026-04",
+       "value": 231.72
+      },
+      {
+       "period": "2026-05",
+       "value": 223.37
+      },
+      {
+       "period": "2026-06",
+       "value": 237.16
+      },
+      {
+       "period": "2026-07",
+       "value": 326.03
+      }
+     ],
+     "percentile_raw": 100,
+     "inverted": false,
+     "index": 100,
+     "read": "expansionary",
+     "index_prev": 99
+    },
+    {
      "metric_id": "osm_tourist_retail",
      "ticker": "TOURIST-RTL",
      "label": "Souvenir retail concentration",
@@ -5725,179 +3782,13 @@
      "index": 99,
      "read": "expansionary",
      "index_prev": 99
-    },
-    {
-     "metric_id": "wiki_foreign_interest",
-     "ticker": "FOREIGN-EYE",
-     "label": "Foreign interest ratio",
-     "plain": "Non-Spanish-language Wikipedia views about this city, divided by Spanish-language views — a rising ratio means the world is paying more attention than Spain itself.",
-     "note": "Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia views) × 100. A rising ratio signals rising foreign interest; the absolute value is harder to interpret because it depends on platform-wide usage patterns. Used to track whether a city's interest is shifting toward or away from foreign origin markets (relocation, tourism, investment).",
-     "unit": "percent",
-     "section": "attention",
-     "geo_level": "municipality",
-     "source_id": "wiki_langs",
-     "period": "2026-06",
-     "value": 237.16,
-     "yoy": 15.490625760896032,
-     "observations": 90,
-     "series": [
-      {
-       "period": "2023-07",
-       "value": 172.92
-      },
-      {
-       "period": "2023-08",
-       "value": 153.89
-      },
-      {
-       "period": "2023-09",
-       "value": 166.63
-      },
-      {
-       "period": "2023-10",
-       "value": 166.56
-      },
-      {
-       "period": "2023-11",
-       "value": 163.84
-      },
-      {
-       "period": "2023-12",
-       "value": 155.55
-      },
-      {
-       "period": "2024-01",
-       "value": 163.62
-      },
-      {
-       "period": "2024-02",
-       "value": 173.58
-      },
-      {
-       "period": "2024-03",
-       "value": 175.86
-      },
-      {
-       "period": "2024-04",
-       "value": 199.63
-      },
-      {
-       "period": "2024-05",
-       "value": 215.13
-      },
-      {
-       "period": "2024-06",
-       "value": 222.96
-      },
-      {
-       "period": "2024-07",
-       "value": 217.24
-      },
-      {
-       "period": "2024-08",
-       "value": 185.86
-      },
-      {
-       "period": "2024-09",
-       "value": 197.86
-      },
-      {
-       "period": "2024-10",
-       "value": 191.43
-      },
-      {
-       "period": "2024-11",
-       "value": 191.48
-      },
-      {
-       "period": "2024-12",
-       "value": 180.49
-      },
-      {
-       "period": "2025-01",
-       "value": 187.47
-      },
-      {
-       "period": "2025-02",
-       "value": 190.13
-      },
-      {
-       "period": "2025-03",
-       "value": 199.37
-      },
-      {
-       "period": "2025-04",
-       "value": 216.73
-      },
-      {
-       "period": "2025-05",
-       "value": 211.74
-      },
-      {
-       "period": "2025-06",
-       "value": 205.35
-      },
-      {
-       "period": "2025-07",
-       "value": 192.96
-      },
-      {
-       "period": "2025-08",
-       "value": 183.32
-      },
-      {
-       "period": "2025-09",
-       "value": 209.49
-      },
-      {
-       "period": "2025-10",
-       "value": 200.28
-      },
-      {
-       "period": "2025-11",
-       "value": 193.97
-      },
-      {
-       "period": "2025-12",
-       "value": 202.2
-      },
-      {
-       "period": "2026-01",
-       "value": 204.63
-      },
-      {
-       "period": "2026-02",
-       "value": 208.02
-      },
-      {
-       "period": "2026-03",
-       "value": 225.32
-      },
-      {
-       "period": "2026-04",
-       "value": 231.72
-      },
-      {
-       "period": "2026-05",
-       "value": 223.37
-      },
-      {
-       "period": "2026-06",
-       "value": 237.16
-      }
-     ],
-     "percentile_raw": 99,
-     "inverted": false,
-     "index": 99,
-     "read": "expansionary",
-     "index_prev": 97
     }
    ]
   },
   {
    "slug": "malaga",
    "name": "Málaga",
-   "composite": 62,
+   "composite": 61,
    "signals": 6,
    "top": [
     {
@@ -6241,6 +4132,172 @@
    "signals": 5,
    "top": [
     {
+     "metric_id": "wiki_foreign_interest",
+     "ticker": "FOREIGN-EYE",
+     "label": "Foreign interest ratio",
+     "plain": "Non-Spanish-language Wikipedia views about this city, divided by Spanish-language views — a rising ratio means the world is paying more attention than Spain itself.",
+     "note": "Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia views) × 100. A rising ratio signals rising foreign interest; the absolute value is harder to interpret because it depends on platform-wide usage patterns. Used to track whether a city's interest is shifting toward or away from foreign origin markets (relocation, tourism, investment).",
+     "unit": "percent",
+     "section": "attention",
+     "geo_level": "municipality",
+     "source_id": "wiki_langs",
+     "period": "2026-07",
+     "value": 326.04,
+     "yoy": 46.416382252559735,
+     "observations": 91,
+     "series": [
+      {
+       "period": "2023-08",
+       "value": 228.97
+      },
+      {
+       "period": "2023-09",
+       "value": 186.93
+      },
+      {
+       "period": "2023-10",
+       "value": 156.04
+      },
+      {
+       "period": "2023-11",
+       "value": 161.43
+      },
+      {
+       "period": "2023-12",
+       "value": 162.47
+      },
+      {
+       "period": "2024-01",
+       "value": 138.3
+      },
+      {
+       "period": "2024-02",
+       "value": 163.49
+      },
+      {
+       "period": "2024-03",
+       "value": 168.33
+      },
+      {
+       "period": "2024-04",
+       "value": 187.59
+      },
+      {
+       "period": "2024-05",
+       "value": 196.89
+      },
+      {
+       "period": "2024-06",
+       "value": 218.17
+      },
+      {
+       "period": "2024-07",
+       "value": 232.37
+      },
+      {
+       "period": "2024-08",
+       "value": 218.35
+      },
+      {
+       "period": "2024-09",
+       "value": 188.32
+      },
+      {
+       "period": "2024-10",
+       "value": 165.02
+      },
+      {
+       "period": "2024-11",
+       "value": 183.91
+      },
+      {
+       "period": "2024-12",
+       "value": 178.03
+      },
+      {
+       "period": "2025-01",
+       "value": 188.36
+      },
+      {
+       "period": "2025-02",
+       "value": 187.71
+      },
+      {
+       "period": "2025-03",
+       "value": 203.22
+      },
+      {
+       "period": "2025-04",
+       "value": 208.29
+      },
+      {
+       "period": "2025-05",
+       "value": 216.47
+      },
+      {
+       "period": "2025-06",
+       "value": 225.15
+      },
+      {
+       "period": "2025-07",
+       "value": 222.68
+      },
+      {
+       "period": "2025-08",
+       "value": 232.14
+      },
+      {
+       "period": "2025-09",
+       "value": 224.16
+      },
+      {
+       "period": "2025-10",
+       "value": 206.13
+      },
+      {
+       "period": "2025-11",
+       "value": 233.59
+      },
+      {
+       "period": "2025-12",
+       "value": 212.28
+      },
+      {
+       "period": "2026-01",
+       "value": 246.65
+      },
+      {
+       "period": "2026-02",
+       "value": 203.32
+      },
+      {
+       "period": "2026-03",
+       "value": 215.74
+      },
+      {
+       "period": "2026-04",
+       "value": 246.15
+      },
+      {
+       "period": "2026-05",
+       "value": 220.13
+      },
+      {
+       "period": "2026-06",
+       "value": 248.5
+      },
+      {
+       "period": "2026-07",
+       "value": 326.04
+      }
+     ],
+     "percentile_raw": 100,
+     "inverted": false,
+     "index": 100,
+     "read": "expansionary",
+     "index_prev": 96
+    },
+    {
      "metric_id": "vehicle_registrations",
      "ticker": "VEHICLE",
      "label": "New vehicle registrations",
@@ -6405,172 +4462,6 @@
      "index": 100,
      "read": "expansionary",
      "index_prev": 90
-    },
-    {
-     "metric_id": "wiki_foreign_interest",
-     "ticker": "FOREIGN-EYE",
-     "label": "Foreign interest ratio",
-     "plain": "Non-Spanish-language Wikipedia views about this city, divided by Spanish-language views — a rising ratio means the world is paying more attention than Spain itself.",
-     "note": "Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia views) × 100. A rising ratio signals rising foreign interest; the absolute value is harder to interpret because it depends on platform-wide usage patterns. Used to track whether a city's interest is shifting toward or away from foreign origin markets (relocation, tourism, investment).",
-     "unit": "percent",
-     "section": "attention",
-     "geo_level": "municipality",
-     "source_id": "wiki_langs",
-     "period": "2026-06",
-     "value": 248.5,
-     "yoy": 10.370863868532087,
-     "observations": 90,
-     "series": [
-      {
-       "period": "2023-07",
-       "value": 300.31
-      },
-      {
-       "period": "2023-08",
-       "value": 228.97
-      },
-      {
-       "period": "2023-09",
-       "value": 186.93
-      },
-      {
-       "period": "2023-10",
-       "value": 156.04
-      },
-      {
-       "period": "2023-11",
-       "value": 161.43
-      },
-      {
-       "period": "2023-12",
-       "value": 162.47
-      },
-      {
-       "period": "2024-01",
-       "value": 138.3
-      },
-      {
-       "period": "2024-02",
-       "value": 163.49
-      },
-      {
-       "period": "2024-03",
-       "value": 168.33
-      },
-      {
-       "period": "2024-04",
-       "value": 187.59
-      },
-      {
-       "period": "2024-05",
-       "value": 196.89
-      },
-      {
-       "period": "2024-06",
-       "value": 218.17
-      },
-      {
-       "period": "2024-07",
-       "value": 232.37
-      },
-      {
-       "period": "2024-08",
-       "value": 218.35
-      },
-      {
-       "period": "2024-09",
-       "value": 188.32
-      },
-      {
-       "period": "2024-10",
-       "value": 165.02
-      },
-      {
-       "period": "2024-11",
-       "value": 183.91
-      },
-      {
-       "period": "2024-12",
-       "value": 178.03
-      },
-      {
-       "period": "2025-01",
-       "value": 188.36
-      },
-      {
-       "period": "2025-02",
-       "value": 187.71
-      },
-      {
-       "period": "2025-03",
-       "value": 203.22
-      },
-      {
-       "period": "2025-04",
-       "value": 208.29
-      },
-      {
-       "period": "2025-05",
-       "value": 216.47
-      },
-      {
-       "period": "2025-06",
-       "value": 225.15
-      },
-      {
-       "period": "2025-07",
-       "value": 222.68
-      },
-      {
-       "period": "2025-08",
-       "value": 232.14
-      },
-      {
-       "period": "2025-09",
-       "value": 224.16
-      },
-      {
-       "period": "2025-10",
-       "value": 206.13
-      },
-      {
-       "period": "2025-11",
-       "value": 233.59
-      },
-      {
-       "period": "2025-12",
-       "value": 212.28
-      },
-      {
-       "period": "2026-01",
-       "value": 246.65
-      },
-      {
-       "period": "2026-02",
-       "value": 203.32
-      },
-      {
-       "period": "2026-03",
-       "value": 215.74
-      },
-      {
-       "period": "2026-04",
-       "value": 246.15
-      },
-      {
-       "period": "2026-05",
-       "value": 220.13
-      },
-      {
-       "period": "2026-06",
-       "value": 248.5
-      }
-     ],
-     "percentile_raw": 96,
-     "inverted": false,
-     "index": 96,
-     "read": "expansionary",
-     "index_prev": 85
     }
    ]
   }

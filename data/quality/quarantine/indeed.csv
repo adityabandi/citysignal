@@ -9,3 +9,8 @@ job_postings_index,es,nation,2022-12,154.39,index,indeed,2022-12-31,,2026-07-29,
 job_postings_index,es,nation,2023-01,150.27,index,indeed,2023-01-31,,2026-07-29,ok,0,150.33,unexpected_revision
 job_postings_index,es,nation,2023-02,150.39,index,indeed,2023-02-28,,2026-07-29,ok,0,150.43,unexpected_revision
 job_postings_index,es,nation,2023-03,157.79,index,indeed,2023-03-31,,2026-07-29,ok,0,157.8,unexpected_revision
+job_postings_index,es,nation,2022-11,155.79,index,indeed,2022-11-30,,2026-08-01,ok,0,155.83,unexpected_revision
+job_postings_index,es,nation,2022-12,154.39,index,indeed,2022-12-31,,2026-08-01,ok,0,154.51,unexpected_revision
+job_postings_index,es,nation,2023-01,150.27,index,indeed,2023-01-31,,2026-08-01,ok,0,150.33,unexpected_revision
+job_postings_index,es,nation,2023-02,150.39,index,indeed,2023-02-28,,2026-08-01,ok,0,150.43,unexpected_revision
+job_postings_index,es,nation,2023-03,157.79,index,indeed,2023-03-31,,2026-08-01,ok,0,157.8,unexpected_revision

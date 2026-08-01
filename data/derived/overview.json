@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T23:15:10+00:00",
+ "generated_at": "2026-08-01T23:29:33+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -30,10 +30,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0359,
+     "demand_momentum": 0.3887,
      "housing_pressure": 1.1836,
      "supply_response": -0.9389,
-     "distress": 0.1344
+     "distress": 0.1832
     },
     "available_indices": [
      "demand_momentum",
@@ -42,13 +42,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-06"
+    "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.0359,
+    "demand_momentum": 0.3887,
     "housing_pressure": 1.1836,
     "supply_response": -0.9389,
-    "distress": 0.1344
+    "distress": 0.1832
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -534,10 +534,10 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0064,
+     "demand_momentum": 0.1362,
      "housing_pressure": 0.7674,
      "supply_response": 0.5433,
-     "distress": -0.0035
+     "distress": 0.0453
     },
     "available_indices": [
      "demand_momentum",
@@ -546,13 +546,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-06"
+    "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.0064,
+    "demand_momentum": 0.1362,
     "housing_pressure": 0.7674,
     "supply_response": 0.5433,
-    "distress": -0.0035
+    "distress": 0.0453
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -1038,10 +1038,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0594,
+     "demand_momentum": -0.0128,
      "housing_pressure": 1.2761,
      "supply_response": -0.6999,
-     "distress": 0.0811
+     "distress": 0.1299
     },
     "available_indices": [
      "demand_momentum",
@@ -1050,13 +1050,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-06"
+    "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.0594,
+    "demand_momentum": -0.0128,
     "housing_pressure": 1.2761,
     "supply_response": -0.6999,
-    "distress": 0.0811
+    "distress": 0.1299
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -1542,10 +1542,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.1243,
+     "demand_momentum": 0.0876,
      "housing_pressure": 0.9062,
      "supply_response": -0.3526,
-     "distress": 0.4291
+     "distress": 0.478
     },
     "available_indices": [
      "demand_momentum",
@@ -1554,13 +1554,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-06"
+    "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.1243,
+    "demand_momentum": 0.0876,
     "housing_pressure": 0.9062,
     "supply_response": -0.3526,
-    "distress": 0.4291
+    "distress": 0.478
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -2046,10 +2046,10 @@
     "expression": "true",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.3676,
+     "demand_momentum": 0.444,
      "housing_pressure": 0.7148,
      "supply_response": -0.0804,
-     "distress": 0.5622
+     "distress": 0.611
     },
     "available_indices": [
      "demand_momentum",
@@ -2058,13 +2058,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-06"
+    "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.3676,
+    "demand_momentum": 0.444,
     "housing_pressure": 0.7148,
     "supply_response": -0.0804,
-    "distress": 0.5622
+    "distress": 0.611
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -2550,10 +2550,10 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.1013,
+     "demand_momentum": -0.0858,
      "housing_pressure": 0.9907,
      "supply_response": -0.0774,
-     "distress": 0.3053
+     "distress": 0.3582
     },
     "available_indices": [
      "demand_momentum",
@@ -2562,13 +2562,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-06"
+    "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.1013,
+    "demand_momentum": -0.0858,
     "housing_pressure": 0.9907,
     "supply_response": -0.0774,
-    "distress": 0.3053
+    "distress": 0.3582
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -3034,10 +3034,10 @@
     "expression": "housing_pressure > 0.75 and supply_response < -0.25",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.2251,
+     "demand_momentum": -0.0503,
      "housing_pressure": 1.2658,
      "supply_response": -0.3312,
-     "distress": 0.2655
+     "distress": 0.3184
     },
     "available_indices": [
      "demand_momentum",
@@ -3046,13 +3046,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-06"
+    "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.2251,
+    "demand_momentum": -0.0503,
     "housing_pressure": 1.2658,
     "supply_response": -0.3312,
-    "distress": 0.2655
+    "distress": 0.3184
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -3518,10 +3518,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.1469,
+     "demand_momentum": -0.0678,
      "housing_pressure": 1.4954,
      "supply_response": 0.9588,
-     "distress": 0.4931
+     "distress": 0.546
     },
     "available_indices": [
      "demand_momentum",
@@ -3530,13 +3530,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-06"
+    "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.1469,
+    "demand_momentum": -0.0678,
     "housing_pressure": 1.4954,
     "supply_response": 0.9588,
-    "distress": 0.4931
+    "distress": 0.546
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -4047,15 +4047,15 @@
    "direction": 1
   },
   {
-   "city": "palma",
-   "city_name": "Palma",
-   "metric_id": "wiki_lang_views_it",
-   "geo_id": "mun-07040",
-   "label": "Madrid views on Italian Wikipedia",
-   "yoy": -57.24233983286908,
-   "value": 6.14,
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "wiki_lang_views_de",
+   "geo_id": "mun-28079",
+   "label": "Madrid views on German Wikipedia",
+   "yoy": 54.696789536266344,
+   "value": 26.02,
    "unit": "per_million",
-   "period": "2026-06",
+   "period": "2026-07",
    "geo_level": "municipality",
    "scope_label": "municipality",
    "direction": 1
@@ -4089,6 +4089,20 @@
    "direction": 1
   },
   {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "wiki_hardship_index",
+   "geo_id": "es",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": -44.07840827614462,
+   "value": 4.3677,
+   "unit": "per_million",
+   "period": "2026-07",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
+  },
+  {
    "city": "valencia",
    "city_name": "València",
    "metric_id": "search_room_share",
@@ -4101,6 +4115,34 @@
    "geo_level": "municipality",
    "scope_label": "municipality",
    "direction": -1
+  },
+  {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "wiki_lang_views_it",
+   "geo_id": "mun-28079",
+   "label": "Madrid views on Italian Wikipedia",
+   "yoy": 42.149104539775095,
+   "value": 34.13,
+   "unit": "per_million",
+   "period": "2026-07",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
+   "city": "zaragoza",
+   "city_name": "Zaragoza",
+   "metric_id": "wiki_lang_views_it",
+   "geo_id": "mun-50297",
+   "label": "Madrid views on Italian Wikipedia",
+   "yoy": 40.71661237785016,
+   "value": 12.96,
+   "unit": "per_million",
+   "period": "2026-07",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
   },
   {
    "city": "bilbao",
@@ -4159,6 +4201,34 @@
    "direction": 1
   },
   {
+   "city": "palma",
+   "city_name": "Palma",
+   "metric_id": "wiki_lang_views_it",
+   "geo_id": "mun-07040",
+   "label": "Madrid views on Italian Wikipedia",
+   "yoy": -38.11764705882353,
+   "value": 10.52,
+   "unit": "per_million",
+   "period": "2026-07",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "wiki_lang_views_de",
+   "geo_id": "mun-48020",
+   "label": "Madrid views on German Wikipedia",
+   "yoy": 36.56330749354005,
+   "value": 21.14,
+   "unit": "per_million",
+   "period": "2026-07",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
    "city": "valencia",
    "city_name": "València",
    "metric_id": "land_price",
@@ -4170,6 +4240,20 @@
    "period": "2026-Q1",
    "geo_level": "province",
    "scope_label": "province",
+   "direction": 1
+  },
+  {
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "wiki_city_attention",
+   "geo_id": "mun-48020",
+   "label": "City attention share",
+   "yoy": 35.988392751391665,
+   "value": 13.7778,
+   "unit": "per_million",
+   "period": "2026-07",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
    "direction": 1
   },
   {
@@ -4229,20 +4313,6 @@
    "direction": 1
   },
   {
-   "city": "madrid",
-   "city_name": "Madrid",
-   "metric_id": "wiki_hardship_index",
-   "geo_id": "es",
-   "label": "Hardship attention (Euribor, eviction, benefits)",
-   "yoy": -35.04590089669967,
-   "value": 4.875,
-   "unit": "per_million",
-   "period": "2026-06",
-   "geo_level": "nation",
-   "scope_label": "Spain",
-   "direction": -1
-  },
-  {
    "city": "bilbao",
    "city_name": "Bilbao",
    "metric_id": "foreclosures",
@@ -4257,85 +4327,15 @@
    "direction": -1
   },
   {
-   "city": "madrid",
-   "city_name": "Madrid",
-   "metric_id": "tourist_dwelling_places",
-   "geo_id": "mun-28079",
-   "label": "Tourist dwelling bed places",
-   "yoy": -31.207130608745356,
-   "value": 38513.0,
-   "unit": "places",
-   "period": "2026-Q2",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "madrid",
-   "city_name": "Madrid",
-   "metric_id": "land_price",
-   "geo_id": "prov-28",
-   "label": "Urban land price",
-   "yoy": 30.087764955040655,
-   "value": 724.81,
-   "unit": "eur_m2",
-   "period": "2026-Q1",
-   "geo_level": "province",
-   "scope_label": "province",
-   "direction": 1
-  },
-  {
-   "city": "palma",
-   "city_name": "Palma",
-   "metric_id": "tourist_dwelling_places",
-   "geo_id": "mun-07040",
-   "label": "Tourist dwelling bed places",
-   "yoy": -29.9379627776666,
-   "value": 3501.0,
-   "unit": "places",
-   "period": "2026-Q2",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "madrid",
-   "city_name": "Madrid",
-   "metric_id": "housing_completions",
-   "geo_id": "prov-28",
-   "label": "Housing completions",
-   "yoy": -29.250797024442083,
-   "value": 5326.0,
-   "unit": "dwellings",
-   "period": "2025-Q4",
-   "geo_level": "province",
-   "scope_label": "province",
-   "direction": 1
-  },
-  {
-   "city": "madrid",
-   "city_name": "Madrid",
-   "metric_id": "tourist_dwellings",
-   "geo_id": "mun-28079",
-   "label": "Tourist dwellings (official)",
-   "yoy": -28.906967589555176,
-   "value": 10836.0,
-   "unit": "dwellings",
-   "period": "2026-Q2",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "malaga",
-   "city_name": "Málaga",
-   "metric_id": "contracts_registered",
-   "geo_id": "mun-29067",
-   "label": "New contracts registered",
-   "yoy": 28.507619548081976,
-   "value": 29346.0,
-   "unit": "contracts",
-   "period": "2026-06",
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "wiki_lang_views_pt",
+   "geo_id": "mun-48020",
+   "label": "Madrid views on Portuguese Wikipedia",
+   "yoy": 32.23350253807107,
+   "value": 15.63,
+   "unit": "per_million",
+   "period": "2026-07",
    "geo_level": "municipality",
    "scope_label": "municipality",
    "direction": 1
@@ -4343,11 +4343,11 @@
  ],
  "attention": [
   {
-   "source_id": "cgpj",
+   "source_id": "borme",
    "status": "failed",
-   "latest_observation": "2026-Q1",
-   "staleness_days": 120,
-   "last_error": null
+   "latest_observation": "2026-07",
+   "staleness_days": 1,
+   "last_error": "discover() returned no fetch plans"
   },
   {
    "source_id": "eea_air",
@@ -4360,14 +4360,7 @@
    "source_id": "eurostat",
    "status": "skipped",
    "latest_observation": "2025-12",
-   "staleness_days": 210,
-   "last_error": null
-  },
-  {
-   "source_id": "indeed",
-   "status": "ok",
-   "latest_observation": "2026-06",
-   "staleness_days": 29,
+   "staleness_days": 213,
    "last_error": null
   },
   {
@@ -4381,7 +4374,7 @@
    "source_id": "madrid_licencias",
    "status": "skipped",
    "latest_observation": "2026-04",
-   "staleness_days": 90,
+   "staleness_days": 93,
    "last_error": null
   },
   {
@@ -4399,6 +4392,13 @@
    "last_error": "could not locate CIEN (notary statistics) data. Tried multiple URLs on notariado.org; the data may be behind a login or the page layout may have changed."
   },
   {
+   "source_id": "ohsome",
+   "status": "failed",
+   "latest_observation": "2026-06",
+   "staleness_days": 32,
+   "last_error": "HTTP 404 from https://api.ohsome.org/v1/elements/count"
+  },
+  {
    "source_id": "registradores",
    "status": "failed",
    "latest_observation": null,
@@ -4409,7 +4409,7 @@
    "source_id": "visados",
    "status": "skipped",
    "latest_observation": "2026-02",
-   "staleness_days": 151,
+   "staleness_days": 154,
    "last_error": null
   }
  ]
