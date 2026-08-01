@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T23:29:33+00:00",
+ "generated_at": "2026-08-01T23:44:54+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -30,10 +30,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.3887,
+     "demand_momentum": 0.2474,
      "housing_pressure": 1.1836,
      "supply_response": -0.9389,
-     "distress": 0.1832
+     "distress": 0.1818
     },
     "available_indices": [
      "demand_momentum",
@@ -45,10 +45,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.3887,
+    "demand_momentum": 0.2474,
     "housing_pressure": 1.1836,
     "supply_response": -0.9389,
-    "distress": 0.1832
+    "distress": 0.1818
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -537,7 +537,7 @@
      "demand_momentum": 0.1362,
      "housing_pressure": 0.7674,
      "supply_response": 0.5433,
-     "distress": 0.0453
+     "distress": 0.044
     },
     "available_indices": [
      "demand_momentum",
@@ -552,7 +552,7 @@
     "demand_momentum": 0.1362,
     "housing_pressure": 0.7674,
     "supply_response": 0.5433,
-    "distress": 0.0453
+    "distress": 0.044
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -1038,10 +1038,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0128,
+     "demand_momentum": -0.0015,
      "housing_pressure": 1.2761,
      "supply_response": -0.6999,
-     "distress": 0.1299
+     "distress": 0.1286
     },
     "available_indices": [
      "demand_momentum",
@@ -1053,10 +1053,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.0128,
+    "demand_momentum": -0.0015,
     "housing_pressure": 1.2761,
     "supply_response": -0.6999,
-    "distress": 0.1299
+    "distress": 0.1286
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -1542,10 +1542,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0876,
+     "demand_momentum": 0.15,
      "housing_pressure": 0.9062,
      "supply_response": -0.3526,
-     "distress": 0.478
+     "distress": 0.4766
     },
     "available_indices": [
      "demand_momentum",
@@ -1557,10 +1557,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.0876,
+    "demand_momentum": 0.15,
     "housing_pressure": 0.9062,
     "supply_response": -0.3526,
-    "distress": 0.478
+    "distress": 0.4766
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -2049,7 +2049,7 @@
      "demand_momentum": 0.444,
      "housing_pressure": 0.7148,
      "supply_response": -0.0804,
-     "distress": 0.611
+     "distress": 0.6097
     },
     "available_indices": [
      "demand_momentum",
@@ -2064,7 +2064,7 @@
     "demand_momentum": 0.444,
     "housing_pressure": 0.7148,
     "supply_response": -0.0804,
-    "distress": 0.611
+    "distress": 0.6097
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -2550,10 +2550,10 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0858,
+     "demand_momentum": -0.0817,
      "housing_pressure": 0.9907,
      "supply_response": -0.0774,
-     "distress": 0.3582
+     "distress": 0.3568
     },
     "available_indices": [
      "demand_momentum",
@@ -2565,10 +2565,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.0858,
+    "demand_momentum": -0.0817,
     "housing_pressure": 0.9907,
     "supply_response": -0.0774,
-    "distress": 0.3582
+    "distress": 0.3568
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -3037,7 +3037,7 @@
      "demand_momentum": -0.0503,
      "housing_pressure": 1.2658,
      "supply_response": -0.3312,
-     "distress": 0.3184
+     "distress": 0.317
     },
     "available_indices": [
      "demand_momentum",
@@ -3052,7 +3052,7 @@
     "demand_momentum": -0.0503,
     "housing_pressure": 1.2658,
     "supply_response": -0.3312,
-    "distress": 0.3184
+    "distress": 0.317
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -3521,7 +3521,7 @@
      "demand_momentum": -0.0678,
      "housing_pressure": 1.4954,
      "supply_response": 0.9588,
-     "distress": 0.546
+     "distress": 0.5445
     },
     "available_indices": [
      "demand_momentum",
@@ -3536,7 +3536,7 @@
     "demand_momentum": -0.0678,
     "housing_pressure": 1.4954,
     "supply_response": 0.9588,
-    "distress": 0.546
+    "distress": 0.5445
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -4094,8 +4094,8 @@
    "metric_id": "wiki_hardship_index",
    "geo_id": "es",
    "label": "Hardship attention (Euribor, eviction, benefits)",
-   "yoy": -44.07840827614462,
-   "value": 4.3677,
+   "yoy": -43.83642323056438,
+   "value": 4.3866,
    "unit": "per_million",
    "period": "2026-07",
    "geo_level": "nation",
@@ -4215,6 +4215,20 @@
    "direction": 1
   },
   {
+   "city": "valencia",
+   "city_name": "València",
+   "metric_id": "wiki_lang_views_pt",
+   "geo_id": "mun-46250",
+   "label": "Madrid views on Portuguese Wikipedia",
+   "yoy": 36.61971830985916,
+   "value": 0.97,
+   "unit": "per_million",
+   "period": "2026-07",
+   "geo_level": "municipality",
+   "scope_label": "municipality",
+   "direction": 1
+  },
+  {
    "city": "bilbao",
    "city_name": "Bilbao",
    "metric_id": "wiki_lang_views_de",
@@ -4325,20 +4339,6 @@
    "geo_level": "province",
    "scope_label": "province",
    "direction": -1
-  },
-  {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "wiki_lang_views_pt",
-   "geo_id": "mun-48020",
-   "label": "Madrid views on Portuguese Wikipedia",
-   "yoy": 32.23350253807107,
-   "value": 15.63,
-   "unit": "per_million",
-   "period": "2026-07",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
   }
  ],
  "attention": [
@@ -4348,6 +4348,13 @@
    "latest_observation": "2026-07",
    "staleness_days": 1,
    "last_error": "discover() returned no fetch plans"
+  },
+  {
+   "source_id": "cgpj",
+   "status": "failed",
+   "latest_observation": "2026-Q1",
+   "staleness_days": 123,
+   "last_error": "could not fetch the CGPJ crisis-statistics listing page: failed to fetch https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Estadistica-por-temas/Datos-penales--civiles-y-laborales/Civil-y-laboral/Efecto-de-la-Crisis-en-los-organos-judiciales/: timed out"
   },
   {
    "source_id": "eea_air",

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T23:29:35+00:00",
+ "generated_at": "2026-08-01T23:44:57+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -104,7 +104,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 652,
-  "observations": 43665
+  "series": 661,
+  "observations": 46636
  }
 }
