@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-29T16:26:20+00:00",
+ "generated_at": "2026-08-01T23:15:12+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -20,7 +20,16 @@
   "contracts_registered",
   "dwelling_stock",
   "ecb_mortgage_rate",
+  "ecb_policy_rate",
+  "eur_chf",
+  "eur_gbp",
+  "eur_jpy",
+  "eur_nok",
+  "eur_sek",
+  "eur_usd",
   "euribor_12m",
+  "euro_inflation",
+  "euro_unemployment",
   "evictions",
   "foreclosures",
   "hicp_maintenance",
@@ -95,7 +104,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 652,
-  "observations": 43596
+  "series": 661,
+  "observations": 46555
  }
 }
