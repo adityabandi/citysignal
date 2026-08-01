@@ -53,6 +53,8 @@ SCOPE_LABELS = {
     "province": "province",
     "ccaa": "autonomous community",
     "nation": "Spain",
+    "euro_area": "euro area",
+    "world": "world",
     "airport": "airport",
     "port": "port",
     "fua": "functional urban area",

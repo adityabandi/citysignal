@@ -22,6 +22,8 @@ VALID_LEVELS = {
     "airport",
     "port",
     "fua",
+    "euro_area",
+    "world",
 }
 VALID_CADENCES = {"daily", "weekly", "monthly", "quarterly", "annual"}
 

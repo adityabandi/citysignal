@@ -24,7 +24,66 @@ edition, what people search before they move or before they lose a home.
 
 </div>
 
-## The national tape
+## The world sets the terms
+
+<div class="cs-note" style="margin-bottom:.7rem">
+
+Rates and exchange rates are conditions Spain receives rather than sets. For the
+coastal markets the currency line is not background: foreign buyers are over a
+third of purchases in Málaga and the Balearics, and their budget is a pure
+function of it.
+
+</div>
+
+```js
+display(national.world.tape.length
+  ? tapeStrip(national.world.tape)
+  : el("div", {class: "cs-empty", text: "No world tape reporting."}));
+```
+
+### What a euro buys
+
+<div class="cs-note" style="margin-bottom:.6rem">
+
+The currencies that actually buy Spanish property. When sterling weakens against
+the euro, a British buyer's budget on the Costa del Sol shrinks that day — before
+any housing statistic has noticed.
+
+</div>
+
+```js
+display(el("div", {class: "cs-tape"}, national.world.fx.map((f) =>
+  el("div", {class: "cs-tape-item", title: f.plain ?? ""}, [
+    el("span", {class: "cs-tape-ticker", text: f.ticker}),
+    el("span", {class: "cs-tape-value cs-num", text: f.value.toPrecision(4)}),
+    f.yoy == null ? null : el("span", {class: "cs-tape-delta cs-num", text: `${f.yoy > 0 ? "+" : ""}${f.yoy.toFixed(1)}% y/y`}),
+    el("span", {class: "cs-tape-period", text: formatPeriod(f.period)})
+  ])
+)));
+```
+
+### The carry trade
+
+```js
+const carry = national.world.carry;
+display(carry
+  ? el("div", {class: "cs-desk-hero", style: `--signal:${carry.read === "contractionary" ? DESK.down : carry.read === "expansionary" ? DESK.up : DESK.flat}`}, [
+      el("div", {class: "cs-kicker", text: "Yen carry stress · three-month move"}),
+      el("div", {class: "cs-desk-hero-text", text:
+        carry.value > 4
+          ? "The yen is strengthening fast. Carry trades are being closed, and that pulls capital out of peripheral markets first."
+          : carry.value < -4
+            ? "The yen is weakening. Carry trades are cheap to hold, which keeps risk capital in circulation."
+            : "The yen is not moving sharply. No carry-trade stress showing."}),
+      el("div", {class: "cs-desk-hero-meta"}, [
+        el("span", {class: "cs-num cs-desk-hero-figure", text: `${carry.value > 0 ? "+" : ""}${carry.value.toFixed(1)}%`}),
+        el("span", {text: `· ${carry.reference}`})
+      ])
+    ])
+  : null);
+```
+
+## Spain
 
 <div class="cs-note" style="margin-bottom:.7rem">
 

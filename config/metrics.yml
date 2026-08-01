@@ -516,6 +516,109 @@ metrics:
     direction: -1
     lag: leading
     range: [-1.5, 20]
+  eur_gbp:
+    label: EUR/GBP
+    plain: How many pounds a euro buys. When this rises a British buyer's budget on the Costa del Sol shrinks, before any housing statistic notices.
+    unit: rate
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: credit
+    direction: 1
+    lag: leading
+    range: [0.5, 1.2]
+  eur_usd:
+    label: EUR/USD
+    plain: How many dollars a euro buys. Sets what American and dollar-pegged buyers can afford here.
+    unit: rate
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: credit
+    direction: 1
+    lag: leading
+    range: [0.7, 1.8]
+  eur_jpy:
+    label: EUR/JPY
+    plain: How many yen a euro buys. The yen funds the world's carry trades, so a sharp fall here means those trades are unwinding and capital is leaving risky assets.
+    unit: rate
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: credit
+    direction: 1
+    lag: leading
+    range: [80, 220]
+  eur_sek:
+    label: EUR/SEK
+    plain: How many Swedish krona a euro buys. Swedish buyers concentrate on the Mediterranean coast.
+    unit: rate
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: credit
+    direction: 1
+    lag: leading
+    range: [7, 15]
+  eur_nok:
+    label: EUR/NOK
+    plain: How many Norwegian krone a euro buys. Norwegian buyers, same coast.
+    unit: rate
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: credit
+    direction: 1
+    lag: leading
+    range: [7, 15]
+  eur_chf:
+    label: EUR/CHF
+    plain: How many Swiss francs a euro buys.
+    unit: rate
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: credit
+    direction: 1
+    lag: leading
+    range: [0.7, 1.8]
+  ecb_policy_rate:
+    label: ECB policy rate
+    plain: The rate the European Central Bank charges banks. Everything Spanish borrowers pay is built on top of it.
+    unit: percent
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: credit
+    direction: -1
+    lag: leading
+    range: [-1, 10]
+    note: >
+      Published by the ECB only when the rate actually changes, dated to the day.
+      Forward-filled here to the rate in force in each month, which is the true
+      statement and the only form that fits a monthly series.
+  euro_inflation:
+    label: Euro-area inflation
+    plain: How fast prices are rising across the euro area, which is what the central bank is actually reacting to.
+    unit: percent
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: credit
+    direction: -1
+    lag: leading
+    range: [-2, 15]
+  euro_unemployment:
+    label: Euro-area unemployment
+    plain: The share of euro-area workers without a job — the backdrop Spain's own labour market sits against.
+    unit: percent
+    cadence: monthly
+    geo_level: euro_area
+    source_id: ecb
+    section: work
+    direction: -1
+    lag: coincident
+    range: [0, 30]
   ecb_mortgage_rate:
     label: ECB mortgage rate (Spain)
     plain: The interest rate banks are charging on new mortgages to households, sourced from the ECB's Monetary Interest Rates dataset.

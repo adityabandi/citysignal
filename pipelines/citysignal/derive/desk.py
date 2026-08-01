@@ -75,6 +75,16 @@ TICKERS = {
     "affiliations": "AFFIL",
     "house_price_index": "HPI",
     "hotel_nights": "HOTEL-NT",
+    # World and euro area.
+    "ecb_policy_rate": "ECB-RATE",
+    "euro_inflation": "EA-CPI",
+    "euro_unemployment": "EA-UNEMP",
+    "eur_usd": "EURUSD",
+    "eur_gbp": "EURGBP",
+    "eur_jpy": "EURJPY",
+    "eur_sek": "EURSEK",
+    "eur_nok": "EURNOK",
+    "eur_chf": "EURCHF",
 }
 
 # The official tape, in the order a reader wants it: money, then prices, then
@@ -261,6 +271,71 @@ class DeskBuilder:
     # market is doing before they want to know what Málaga is doing, and half of
     # what drives a Spanish city — rates, credit, national hiring — is not
     # city-level data at all.
+    # Conditions Spain receives rather than sets. Rates and the euro's exchange
+    # rate move every Spanish city at once, and for the coastal markets the FX
+    # line is not background — foreign buyers are over a third of purchases in
+    # Málaga and the Balearics, and their budget is a pure function of it.
+    WORLD_TAPE = [
+        "ecb_policy_rate",
+        "euro_inflation",
+        "euro_unemployment",
+        "eur_usd",
+        "eur_gbp",
+        "eur_jpy",
+    ]
+    WORLD_FX = ["eur_gbp", "eur_usd", "eur_sek", "eur_nok", "eur_chf", "eur_jpy"]
+
+    def build_world(self) -> dict[str, Any]:
+        tape = [e for m in self.WORLD_TAPE if (e := self._national_entry(m, as_index=False))]
+        fx = [e for m in self.WORLD_FX if (e := self._national_entry(m, as_index=False))]
+        return {"scope": "World", "tape": tape, "fx": fx, "carry": self._carry_stress()}
+
+    def _carry_stress(self) -> dict[str, Any] | None:
+        """How hard the yen is moving, as a read on carry-trade unwinding.
+
+        The yen funds a large share of the world's leveraged positions, so when it
+        appreciates sharply those positions are closed and capital retreats from
+        peripheral risk assets — southern European property among them. A falling
+        EUR/JPY means a strengthening yen, so the three-month change is negated to
+        make rising mean rising stress.
+
+        The reference event is August 2024: EUR/JPY ran 171.17 in July, 161.06 in
+        August and 159.08 in September, a 6.3% three-month move, and global
+        equities went with it. That episode is what this measure is calibrated to
+        recognise, and it is visible in the committed series.
+        """
+        series = self._national_series("eur_jpy")
+        if series is None or len(series.values) < 6:
+            return None
+        periods = sorted(series.values)
+        latest = periods[-1]
+        back = periods[-4]
+        change = (series.values[latest] - series.values[back]) / series.values[back] * 100
+        stress = -change
+
+        history = []
+        for index in range(3, len(periods)):
+            a, b = series.values[periods[index]], series.values[periods[index - 3]]
+            history.append({"period": periods[index], "value": -(a - b) / b * 100})
+
+        return {
+            "metric_id": "carry_stress",
+            "ticker": "CARRY",
+            "label": "Yen carry stress",
+            "plain": (
+                "How sharply the yen is strengthening. The yen funds much of the world's "
+                "borrowed money, so a fast rise forces those trades to close and pulls "
+                "capital out of riskier markets."
+            ),
+            "unit": "percent",
+            "geo_level": "world",
+            "period": latest,
+            "value": round(stress, 2),
+            "read": "contractionary" if stress > 4 else "neutral" if stress > -4 else "expansionary",
+            "series": history[-36:],
+            "reference": "August 2024: a 6.3% three-month move unwound carry trades worldwide.",
+        }
+
     NATIONAL_TAPE = [
         "euribor_12m",
         "ecb_mortgage_rate",
@@ -278,10 +353,15 @@ class DeskBuilder:
     ]
 
     def _national_series(self, metric_id: str):
-        """A nation- or region-level series, independent of any city."""
+        """A nation-, region- or world-level series, independent of any city."""
         meta = self.config.metrics.get(metric_id, {})
         level = meta.get("geo_level")
-        wanted = {"nation": "es", "ccaa": "ccaa-13"}.get(level)
+        wanted = {
+            "nation": "es",
+            "ccaa": "ccaa-13",
+            "euro_area": "euro-area",
+            "world": "world",
+        }.get(level)
         for series in self.store:
             if series.key.metric_id != metric_id:
                 continue
@@ -322,6 +402,7 @@ class DeskBuilder:
 
         return {
             "scope": "Spain",
+            "world": self.build_world(),
             "composite": composite,
             "composite_n": len(oriented),
             "tape": tape,

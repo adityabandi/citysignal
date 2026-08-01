@@ -57,16 +57,78 @@ class EcbAdapter(BaseAdapter):
         ),
     )
 
+    # Exchange rates are not decoration on a property site. Foreign buyers are
+    # roughly 15% of Spanish purchases nationally and well over 30% in Málaga and
+    # the Balearics, and their purchasing power is a pure function of FX. When
+    # sterling weakens against the euro, a British buyer's budget in Málaga falls
+    # that day, before any housing statistic has been collected.
+    #
+    # The yen is here for a different reason. It is the world's funding currency,
+    # so a sharp yen appreciation forces carry trades to unwind and drains capital
+    # out of peripheral risk assets — including southern European property. That
+    # is visible in this series: EUR/JPY ran 171.17 in July 2024, then 161.06 in
+    # August and 159.08 in September, a 6.3% three-month move, which is the
+    # unwind that took global equities with it.
+    FX = {
+        "GBP": "British buyers — the largest foreign group on the Costa del Sol",
+        "USD": "American and dollar-pegged buyers",
+        "JPY": "the world's funding currency, so the carry-trade tell",
+        "SEK": "Swedish buyers, concentrated on the Mediterranean coast",
+        "NOK": "Norwegian buyers, same coast",
+        "CHF": "Swiss buyers",
+    }
+
+    # Euro-area conditions. Spain does not set these; it receives them.
+    EURO_SERIES = {
+        "ecb_policy_rate": ("FM/B.U2.EUR.4F.KR.MRR_FR.LEV", "euro_area", "event"),
+        "euro_inflation": ("ICP/M.U2.N.000000.4.ANR", "euro_area", "monthly"),
+        "euro_unemployment": ("LFSI/M.I9.S.UNEHRT.TOTAL0.15_74.T", "euro_area", "monthly"),
+    }
+
     def discover(self, ctx: RunContext) -> list[FetchPlan]:
-        return [
+        plans = [
             FetchPlan(
                 url=f"{BASE_API}/MIR/M.ES.B.A2C.A.R.A.2250.EUR.N?format=jsondata&startPeriod=2015-01",
                 fmt="json",
                 label="mortgage-rate-spain",
                 optional=False,
-                meta={"metric_id": "ecb_mortgage_rate", "cadence": "monthly"},
-            ),
+                meta={"metric_id": "ecb_mortgage_rate", "cadence": "monthly", "geo": NATION},
+            )
         ]
+
+        for ccy in self.FX:
+            plans.append(
+                FetchPlan(
+                    url=(
+                        f"{BASE_API}/EXR/M.{ccy}.EUR.SP00.A"
+                        "?format=jsondata&startPeriod=1999-01"
+                    ),
+                    fmt="json",
+                    label=f"eur-{ccy.lower()}",
+                    optional=True,
+                    meta={
+                        "metric_id": f"eur_{ccy.lower()}",
+                        "cadence": "monthly",
+                        "geo": "euro-area",
+                    },
+                )
+            )
+
+        for metric_id, (key, _, cadence) in self.EURO_SERIES.items():
+            plans.append(
+                FetchPlan(
+                    url=f"{BASE_API}/{key}?format=jsondata&startPeriod=1999-01",
+                    fmt="json",
+                    label=metric_id.replace("_", "-"),
+                    optional=True,
+                    meta={
+                        "metric_id": metric_id,
+                        "cadence": cadence,
+                        "geo": "euro-area",
+                    },
+                )
+            )
+        return plans
 
     def parse(self, payload: RawPayload, ctx: RunContext) -> pd.DataFrame:
         try:
@@ -153,23 +215,58 @@ class EcbAdapter(BaseAdapter):
     ) -> Iterable[CanonicalRecord]:
         metric_id = plan.meta["metric_id"]
         cadence = plan.meta["cadence"]
+        geo_id = plan.meta.get("geo", NATION)
+        unit = (ctx.config.metrics.get(metric_id) or {}).get("unit", "percent")
 
-        for row in frame.itertuples():
-            period = str(row.period).strip()
-            value = row.value
+        rows = [
+            (str(r.period).strip(), r.value)
+            for r in frame.itertuples()
+            if str(r.period).strip()
+        ]
 
-            # Validate period format (YYYY-MM for monthly)
-            if not self._is_valid_period(period, cadence):
+        if cadence == "event":
+            # The policy rate is published only when the ECB actually moves it,
+            # dated to the day. Left alone it would fail monthly cadence
+            # validation and leave gaps wherever the Bank sat still — which is
+            # most months. Forward-filling states the true fact: the rate that
+            # was in force during that month.
+            rows = self._forward_fill_monthly(rows)
+
+        for period, value in rows:
+            if not self._is_valid_period(period, "monthly"):
                 continue
-
             yield CanonicalRecord(
                 metric_id=metric_id,
-                geo_id=NATION,
+                geo_id=geo_id,
                 period=period,
                 value=value,
-                unit="percent",
+                unit=unit,
                 source_id=self.manifest.source_id,
             )
+
+    @staticmethod
+    def _forward_fill_monthly(rows: list[tuple[str, float]]) -> list[tuple[str, float]]:
+        """Daily rate-change events → the rate in force in each month."""
+        events = sorted((p, v) for p, v in rows if len(p) >= 7)
+        if not events:
+            return []
+
+        out: list[tuple[str, float]] = []
+        current = events[0][1]
+        index = 0
+        year, month = int(events[0][0][:4]), int(events[0][0][5:7])
+        last_year, last_month = int(events[-1][0][:4]), int(events[-1][0][5:7])
+
+        while (year, month) <= (last_year, last_month):
+            stamp = f"{year:04d}-{month:02d}"
+            while index < len(events) and events[index][0][:7] <= stamp:
+                current = events[index][1]
+                index += 1
+            out.append((stamp, current))
+            month += 1
+            if month > 12:
+                year, month = year + 1, 1
+        return out
 
     @staticmethod
     def _is_valid_period(period: str, cadence: str) -> bool:

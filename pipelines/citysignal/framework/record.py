@@ -20,6 +20,8 @@ GeoLevel = Literal[
     "province",
     "ccaa",
     "nation",
+    "euro_area",
+    "world",
     "airport",
     "port",
     "fua",
@@ -59,6 +61,9 @@ _GEO_PATTERNS: dict[str, re.Pattern[str]] = {
     "province": re.compile(r"^prov-\d{2}$"),
     "ccaa": re.compile(r"^ccaa-\d{2}$"),
     "nation": re.compile(r"^(es|eu)$"),
+    # Conditions Spain receives rather than sets.
+    "euro_area": re.compile(r"^euro-area$"),
+    "world": re.compile(r"^world$"),
     "airport": re.compile(r"^apt-[A-Z]{3}$"),
     "port": re.compile(r"^port-[A-Z]{3}$"),
     "fua": re.compile(r"^fua-[A-Z]{2}\d{3}[A-Z]\d$"),
