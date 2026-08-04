@@ -6,5 +6,17 @@
     "sha256": "dbafbf5b173e639c1c6e1c7c1595707ed41694502286e0e28fc942ba9eec0c99",
     "state_sha256": "a894137dc88ebf48619a1c90d7cdc06fa84bea4424ecd8a29a9da7b459214115"
   },
-  "diffs": []
+  "diffs": [
+    {
+      "added": 34,
+      "diff_sha256": "5efb1b2511e2d6c2471fa95457dbbc451fe14fd8272ac48f7a6e9028b9fb6ee4",
+      "epigraph_changed": 4212,
+      "file": "diffs/2026-08.csv",
+      "period": "2026-08",
+      "prev_state_sha256": "a894137dc88ebf48619a1c90d7cdc06fa84bea4424ecd8a29a9da7b459214115",
+      "removed": 0,
+      "state_changed": 20,
+      "state_sha256": "df7859e9dcb28c16b2ed207a03742d8b09337840b4ab971ec024572cb4ac0b62"
+    }
+  ]
 }

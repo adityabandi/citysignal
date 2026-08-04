@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T23:44:54+00:00",
+ "generated_at": "2026-08-04T06:48:21+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4343,20 +4343,6 @@
  ],
  "attention": [
   {
-   "source_id": "borme",
-   "status": "failed",
-   "latest_observation": "2026-07",
-   "staleness_days": 1,
-   "last_error": "discover() returned no fetch plans"
-  },
-  {
-   "source_id": "cgpj",
-   "status": "failed",
-   "latest_observation": "2026-Q1",
-   "staleness_days": 123,
-   "last_error": "could not fetch the CGPJ crisis-statistics listing page: failed to fetch https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Estadistica-por-temas/Datos-penales--civiles-y-laborales/Civil-y-laboral/Efecto-de-la-Crisis-en-los-organos-judiciales/: timed out"
-  },
-  {
    "source_id": "eea_air",
    "status": "failed",
    "latest_observation": null,
@@ -4367,7 +4353,7 @@
    "source_id": "eurostat",
    "status": "skipped",
    "latest_observation": "2025-12",
-   "staleness_days": 213,
+   "staleness_days": 216,
    "last_error": null
   },
   {
@@ -4379,9 +4365,9 @@
   },
   {
    "source_id": "madrid_licencias",
-   "status": "skipped",
+   "status": "ok",
    "latest_observation": "2026-04",
-   "staleness_days": 93,
+   "staleness_days": 96,
    "last_error": null
   },
   {
@@ -4402,7 +4388,7 @@
    "source_id": "ohsome",
    "status": "failed",
    "latest_observation": "2026-06",
-   "staleness_days": 32,
+   "staleness_days": 35,
    "last_error": "HTTP 404 from https://api.ohsome.org/v1/elements/count"
   },
   {
@@ -4416,7 +4402,7 @@
    "source_id": "visados",
    "status": "skipped",
    "latest_observation": "2026-02",
-   "staleness_days": 154,
+   "staleness_days": 157,
    "last_error": null
   }
  ]

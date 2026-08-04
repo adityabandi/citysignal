@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T23:44:57+00:00",
+ "generated_at": "2026-08-04T06:48:23+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -34,6 +34,8 @@
   "foreclosures",
   "hicp_maintenance",
   "hicp_rents",
+  "horeca_closures",
+  "horeca_openings",
   "horeca_stock",
   "hotel_adr",
   "hotel_nights",
@@ -47,6 +49,8 @@
   "job_postings_index",
   "land_price",
   "licences_granted",
+  "locales_closures",
+  "locales_openings",
   "locales_stock",
   "locales_vacancy_rate",
   "marriages",
@@ -104,7 +108,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 661,
-  "observations": 46636
+  "series": 745,
+  "observations": 46808
  }
 }
