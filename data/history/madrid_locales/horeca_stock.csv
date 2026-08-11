@@ -2,6 +2,7 @@ metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published
 horeca_stock,dist-28079-01,district,2026-07,2957,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-01,district,2026-07,2958,premises,madrid_locales,2026-07-31,,2026-07-29,revised,1
 horeca_stock,dist-28079-01,district,2026-08,2958,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
+horeca_stock,dist-28079-01,district,2026-08,2959,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-02,district,2026-07,767,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-02,district,2026-07,766,premises,madrid_locales,2026-07-31,,2026-07-29,revised,1
 horeca_stock,dist-28079-02,district,2026-08,766,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -10,15 +11,19 @@ horeca_stock,dist-28079-03,district,2026-08,540,premises,madrid_locales,2026-08-
 horeca_stock,dist-28079-04,district,2026-07,1292,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-04,district,2026-07,1293,premises,madrid_locales,2026-07-31,,2026-08-01,revised,1
 horeca_stock,dist-28079-04,district,2026-08,1292,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
+horeca_stock,dist-28079-04,district,2026-08,1293,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-05,district,2026-07,950,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-05,district,2026-08,950,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
 horeca_stock,dist-28079-06,district,2026-07,951,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-06,district,2026-08,951,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
+horeca_stock,dist-28079-06,district,2026-08,950,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-07,district,2026-07,1379,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-07,district,2026-07,1378,premises,madrid_locales,2026-07-31,,2026-07-29,revised,1
 horeca_stock,dist-28079-07,district,2026-08,1378,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
+horeca_stock,dist-28079-07,district,2026-08,1380,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-08,district,2026-07,792,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-08,district,2026-08,792,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
+horeca_stock,dist-28079-08,district,2026-08,793,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-09,district,2026-07,715,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-09,district,2026-07,714,premises,madrid_locales,2026-07-31,,2026-08-01,revised,1
 horeca_stock,dist-28079-09,district,2026-08,714,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -28,8 +33,10 @@ horeca_stock,dist-28079-10,district,2026-08,786,premises,madrid_locales,2026-08-
 horeca_stock,dist-28079-11,district,2026-07,1021,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-11,district,2026-07,1022,premises,madrid_locales,2026-07-31,,2026-08-01,revised,1
 horeca_stock,dist-28079-11,district,2026-08,1022,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
+horeca_stock,dist-28079-11,district,2026-08,1023,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-12,district,2026-07,623,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-12,district,2026-08,623,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
+horeca_stock,dist-28079-12,district,2026-08,624,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-13,district,2026-07,737,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-13,district,2026-07,736,premises,madrid_locales,2026-07-31,,2026-07-29,revised,1
 horeca_stock,dist-28079-13,district,2026-08,736,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -49,5 +56,6 @@ horeca_stock,dist-28079-19,district,2026-08,199,premises,madrid_locales,2026-08-
 horeca_stock,dist-28079-20,district,2026-07,720,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-20,district,2026-07,719,premises,madrid_locales,2026-07-31,,2026-08-01,revised,1
 horeca_stock,dist-28079-20,district,2026-08,719,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
+horeca_stock,dist-28079-20,district,2026-08,718,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-21,district,2026-07,314,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-21,district,2026-08,314,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0

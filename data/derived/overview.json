@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-04T06:48:21+00:00",
+ "generated_at": "2026-08-11T06:53:20+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -30,10 +30,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.2474,
+     "demand_momentum": 0.1362,
      "housing_pressure": 1.1836,
      "supply_response": -0.9389,
-     "distress": 0.1818
+     "distress": 0.165
     },
     "available_indices": [
      "demand_momentum",
@@ -45,10 +45,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.2474,
+    "demand_momentum": 0.1362,
     "housing_pressure": 1.1836,
     "supply_response": -0.9389,
-    "distress": 0.1818
+    "distress": 0.165
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -162,16 +162,6 @@
     "signatures_version": "signatures-v2"
    },
    "timeline": [
-    {
-     "period": "2023-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0883,
-     "index_housing_pressure": 0.2737,
-     "index_supply_response": -0.1271,
-     "index_distress": 0.1138
-    },
     {
      "period": "2023-08",
      "rule_id": "neutral",
@@ -521,6 +511,16 @@
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.009
+    },
+    {
+     "period": "2026-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.2415,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5122
     }
    ]
   },
@@ -534,10 +534,10 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.1362,
+     "demand_momentum": 0.0404,
      "housing_pressure": 0.7674,
      "supply_response": 0.5433,
-     "distress": 0.044
+     "distress": 0.025
     },
     "available_indices": [
      "demand_momentum",
@@ -549,10 +549,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.1362,
+    "demand_momentum": 0.0404,
     "housing_pressure": 0.7674,
     "supply_response": 0.5433,
-    "distress": 0.044
+    "distress": 0.025
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -666,16 +666,6 @@
     "signatures_version": "signatures-v2"
    },
    "timeline": [
-    {
-     "period": "2023-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.371,
-     "index_housing_pressure": 0.2592,
-     "index_supply_response": -0.0464,
-     "index_distress": 0.1291
-    },
     {
      "period": "2023-08",
      "rule_id": "neutral",
@@ -1025,6 +1015,16 @@
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.3343
+    },
+    {
+     "period": "2026-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.2204,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5502
     }
    ]
   },
@@ -1038,10 +1038,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0015,
+     "demand_momentum": -0.076,
      "housing_pressure": 1.2761,
      "supply_response": -0.6999,
-     "distress": 0.1286
+     "distress": 0.0969
     },
     "available_indices": [
      "demand_momentum",
@@ -1053,10 +1053,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.0015,
+    "demand_momentum": -0.076,
     "housing_pressure": 1.2761,
     "supply_response": -0.6999,
-    "distress": 0.1286
+    "distress": 0.0969
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -1170,16 +1170,6 @@
     "signatures_version": "signatures-v2"
    },
    "timeline": [
-    {
-     "period": "2023-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0528,
-     "index_housing_pressure": 0.4652,
-     "index_supply_response": -0.3009,
-     "index_distress": 0.306
-    },
     {
      "period": "2023-08",
      "rule_id": "neutral",
@@ -1529,6 +1519,16 @@
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.2333
+    },
+    {
+     "period": "2026-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0503,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4869
     }
    ]
   },
@@ -1542,10 +1542,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.15,
+     "demand_momentum": 0.0844,
      "housing_pressure": 0.9062,
      "supply_response": -0.3526,
-     "distress": 0.4766
+     "distress": 0.479
     },
     "available_indices": [
      "demand_momentum",
@@ -1557,10 +1557,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.15,
+    "demand_momentum": 0.0844,
     "housing_pressure": 0.9062,
     "supply_response": -0.3526,
-    "distress": 0.4766
+    "distress": 0.479
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -1674,16 +1674,6 @@
     "signatures_version": "signatures-v2"
    },
    "timeline": [
-    {
-     "period": "2023-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0961,
-     "index_housing_pressure": 0.598,
-     "index_supply_response": -0.1911,
-     "index_distress": 0.2452
-    },
     {
      "period": "2023-08",
      "rule_id": "neutral",
@@ -2033,6 +2023,16 @@
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.2815
+    },
+    {
+     "period": "2026-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.3368,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.8794
     }
    ]
   },
@@ -2046,10 +2046,10 @@
     "expression": "true",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.444,
+     "demand_momentum": 0.364,
      "housing_pressure": 0.7148,
      "supply_response": -0.0804,
-     "distress": 0.6097
+     "distress": 0.6165
     },
     "available_indices": [
      "demand_momentum",
@@ -2061,10 +2061,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.444,
+    "demand_momentum": 0.364,
     "housing_pressure": 0.7148,
     "supply_response": -0.0804,
-    "distress": 0.6097
+    "distress": 0.6165
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -2178,16 +2178,6 @@
     "signatures_version": "signatures-v2"
    },
    "timeline": [
-    {
-     "period": "2023-07",
-     "rule_id": "hot",
-     "label": "Hot",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0294,
-     "index_housing_pressure": 0.9953,
-     "index_supply_response": 0.3433,
-     "index_distress": 0.1577
-    },
     {
      "period": "2023-08",
      "rule_id": "hot",
@@ -2537,6 +2527,16 @@
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.3563
+    },
+    {
+     "period": "2026-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.1761,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.8989
     }
    ]
   },
@@ -2550,10 +2550,10 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0817,
+     "demand_momentum": -0.1449,
      "housing_pressure": 0.9907,
      "supply_response": -0.0774,
-     "distress": 0.3568
+     "distress": 0.3349
     },
     "available_indices": [
      "demand_momentum",
@@ -2565,10 +2565,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.0817,
+    "demand_momentum": -0.1449,
     "housing_pressure": 0.9907,
     "supply_response": -0.0774,
-    "distress": 0.3568
+    "distress": 0.3349
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -2662,16 +2662,6 @@
     "signatures_version": "signatures-v2"
    },
    "timeline": [
-    {
-     "period": "2023-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1301,
-     "index_housing_pressure": 0.7337,
-     "index_supply_response": -0.8132,
-     "index_distress": 0.0802
-    },
     {
      "period": "2023-08",
      "rule_id": "neutral",
@@ -3021,6 +3011,16 @@
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.1002
+    },
+    {
+     "period": "2026-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": -0.0102,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.5355
     }
    ]
   },
@@ -3034,10 +3034,10 @@
     "expression": "housing_pressure > 0.75 and supply_response < -0.25",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0503,
+     "demand_momentum": -0.204,
      "housing_pressure": 1.2658,
      "supply_response": -0.3312,
-     "distress": 0.317
+     "distress": 0.2899
     },
     "available_indices": [
      "demand_momentum",
@@ -3049,10 +3049,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.0503,
+    "demand_momentum": -0.204,
     "housing_pressure": 1.2658,
     "supply_response": -0.3312,
-    "distress": 0.317
+    "distress": 0.2899
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -3146,16 +3146,6 @@
     "signatures_version": "signatures-v2"
    },
    "timeline": [
-    {
-     "period": "2023-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1394,
-     "index_housing_pressure": null,
-     "index_supply_response": -0.8379,
-     "index_distress": 0.0889
-    },
     {
      "period": "2023-08",
      "rule_id": "neutral",
@@ -3505,6 +3495,16 @@
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.0303
+    },
+    {
+     "period": "2026-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.0875,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.4162
     }
    ]
   },
@@ -3518,10 +3518,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0678,
+     "demand_momentum": -0.0452,
      "housing_pressure": 1.4954,
      "supply_response": 0.9588,
-     "distress": 0.5445
+     "distress": 0.542
     },
     "available_indices": [
      "demand_momentum",
@@ -3533,10 +3533,10 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.0678,
+    "demand_momentum": -0.0452,
     "housing_pressure": 1.4954,
     "supply_response": 0.9588,
-    "distress": 0.5445
+    "distress": 0.542
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -3640,16 +3640,6 @@
     "signatures_version": "signatures-v2"
    },
    "timeline": [
-    {
-     "period": "2023-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
-     "held_by_hysteresis": false,
-     "index_demand_momentum": 0.4127,
-     "index_housing_pressure": 0.2245,
-     "index_supply_response": -0.8667,
-     "index_distress": 0.3004
-    },
     {
      "period": "2023-08",
      "rule_id": "neutral",
@@ -3999,6 +3989,16 @@
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": -0.0376
+    },
+    {
+     "period": "2026-07",
+     "rule_id": "neutral",
+     "label": "No clear regime",
+     "held_by_hysteresis": false,
+     "index_demand_momentum": 0.1735,
+     "index_housing_pressure": null,
+     "index_supply_response": null,
+     "index_distress": 0.3952
     }
    ]
   }
@@ -4353,8 +4353,15 @@
    "source_id": "eurostat",
    "status": "skipped",
    "latest_observation": "2025-12",
-   "staleness_days": 216,
+   "staleness_days": 223,
    "last_error": null
+  },
+  {
+   "source_id": "ine",
+   "status": "failed",
+   "latest_observation": "2026-06",
+   "staleness_days": 42,
+   "last_error": "all 11 optional fetches failed; first: padron: FetchError"
   },
   {
    "source_id": "madrid_aire",
@@ -4365,9 +4372,9 @@
   },
   {
    "source_id": "madrid_licencias",
-   "status": "ok",
+   "status": "skipped",
    "latest_observation": "2026-04",
-   "staleness_days": 96,
+   "staleness_days": 103,
    "last_error": null
   },
   {
@@ -4378,18 +4385,18 @@
    "last_error": "Could not fetch traffic dataset metadata from CKAN: HTTP Error 403: Forbidden"
   },
   {
+   "source_id": "madrid_vut",
+   "status": "failed",
+   "latest_observation": "2026-07",
+   "staleness_days": 11,
+   "last_error": "failed to fetch https://datos.madrid.es/dataset/300694-0-viviendas-turisticas-geoportal/resource/300694-0-viviendas-turisticas-geoportal/download/300694-0-viviendas-turisticas-geoportal.zip: timed out"
+  },
+  {
    "source_id": "notariado",
    "status": "failed",
    "latest_observation": null,
    "staleness_days": null,
    "last_error": "could not locate CIEN (notary statistics) data. Tried multiple URLs on notariado.org; the data may be behind a login or the page layout may have changed."
-  },
-  {
-   "source_id": "ohsome",
-   "status": "failed",
-   "latest_observation": "2026-06",
-   "staleness_days": 35,
-   "last_error": "HTTP 404 from https://api.ohsome.org/v1/elements/count"
   },
   {
    "source_id": "registradores",
@@ -4402,7 +4409,7 @@
    "source_id": "visados",
    "status": "skipped",
    "latest_observation": "2026-02",
-   "staleness_days": 157,
+   "staleness_days": 164,
    "last_error": null
   }
  ]

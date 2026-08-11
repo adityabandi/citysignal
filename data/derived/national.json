@@ -5736,15 +5736,11 @@
      "section": "tourism",
      "geo_level": "district",
      "source_id": "ohsome",
-     "period": "2026-06",
-     "value": 7.181952380952381,
-     "yoy": 7.089806583543972,
-     "observations": 90,
+     "period": "2026-07",
+     "value": 7.339571428571428,
+     "yoy": 8.964234964758115,
+     "observations": 91,
      "series": [
-      {
-       "period": "2023-07",
-       "value": 5.406333333333333
-      },
       {
        "period": "2023-08",
        "value": 5.565476190476191
@@ -5884,6 +5880,10 @@
       {
        "period": "2026-06",
        "value": 7.181952380952381
+      },
+      {
+       "period": "2026-07",
+       "value": 7.339571428571428
       }
      ],
      "percentile_raw": 99,

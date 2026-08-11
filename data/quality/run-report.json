@@ -1,6 +1,6 @@
 {
- "run_id": "8dea1f6baac6",
- "finished_at": "2026-08-04T06:48:17+00:00",
+ "run_id": "28b9990e4061",
+ "finished_at": "2026-08-11T06:53:14+00:00",
  "ok": [
   "aena",
   "borme",
@@ -10,13 +10,12 @@
   "eurocontrol",
   "eurostat",
   "indeed",
-  "ine",
   "insideairbnb",
   "madrid_licencias",
   "madrid_locales",
   "madrid_padron",
-  "madrid_vut",
   "mivau",
+  "ohsome",
   "sepe",
   "trends_manual",
   "visados",
@@ -25,7 +24,8 @@
  ],
  "failed": [
   "eea_air",
-  "ohsome"
+  "ine",
+  "madrid_vut"
  ],
  "partial": [
   "bde",
@@ -45,7 +45,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 9.37,
+   "duration_s": 8.65,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -64,7 +64,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.72,
+   "duration_s": 1.42,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -75,16 +75,16 @@
   {
    "source_id": "borme",
    "status": "ok",
-   "records": 22,
-   "added": 22,
-   "revised": 0,
-   "unchanged": 0,
+   "records": 24,
+   "added": 2,
+   "revised": 21,
+   "unchanged": 1,
    "quarantined": 0,
-   "plans": 11,
+   "plans": 41,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 6.38,
+   "duration_s": 25.37,
    "latest_observation": "2026-08",
    "metrics": [
     "company_dissolutions",
@@ -105,7 +105,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 5.45,
+   "duration_s": 4.71,
    "latest_observation": "2026-Q1",
    "metrics": [
     "evictions",
@@ -125,7 +125,7 @@
    "skipped_unchanged": 48,
    "error": null,
    "error_type": null,
-   "duration_s": 33.26,
+   "duration_s": 33.49,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -144,7 +144,7 @@
    "skipped_unchanged": 10,
    "error": null,
    "error_type": null,
-   "duration_s": 6.64,
+   "duration_s": 6.09,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -163,7 +163,7 @@
    "skipped_unchanged": 0,
    "error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)",
    "error_type": "PayloadError",
-   "duration_s": 0.53,
+   "duration_s": 0.37,
    "latest_observation": null,
    "metrics": [],
    "notes": []
@@ -199,7 +199,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 0.7,
+   "duration_s": 0.67,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -212,8 +212,8 @@
    "records": 156,
    "added": 0,
    "revised": 0,
-   "unchanged": 73,
-   "quarantined": 5,
+   "unchanged": 71,
+   "quarantined": 7,
    "plans": 2,
    "skipped_unchanged": 0,
    "error": null,
@@ -224,27 +224,25 @@
     "job_postings_index"
    ],
    "notes": [
-    "5 unexpected revisions quarantined — re-run with --accept-revision indeed if the restatement is genuine"
+    "7 unexpected revisions quarantined — re-run with --accept-revision indeed if the restatement is genuine"
    ]
   },
   {
    "source_id": "ine",
-   "status": "skipped",
+   "status": "failed",
    "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 11,
-   "skipped_unchanged": 11,
-   "error": null,
-   "error_type": null,
-   "duration_s": 407.13,
+   "skipped_unchanged": 0,
+   "error": "all 11 optional fetches failed; first: padron: FetchError",
+   "error_type": "AdapterFailure",
+   "duration_s": 2048.03,
    "latest_observation": null,
    "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "notes": []
   },
   {
    "source_id": "insideairbnb",
@@ -258,7 +256,7 @@
    "skipped_unchanged": 7,
    "error": null,
    "error_type": null,
-   "duration_s": 3.27,
+   "duration_s": 3.2,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -267,38 +265,36 @@
   },
   {
    "source_id": "madrid_licencias",
-   "status": "ok",
-   "records": 736,
-   "added": 3,
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
    "revised": 0,
-   "unchanged": 672,
-   "quarantined": 61,
+   "unchanged": 0,
+   "quarantined": 0,
    "plans": 1,
-   "skipped_unchanged": 0,
+   "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 2.01,
-   "latest_observation": "2026-04",
-   "metrics": [
-    "licences_granted"
-   ],
+   "duration_s": 1.12,
+   "latest_observation": null,
+   "metrics": [],
    "notes": [
-    "61 unexpected revisions quarantined — re-run with --accept-revision madrid_licencias if the restatement is genuine"
+    "all sources unchanged since last run"
    ]
   },
   {
    "source_id": "madrid_locales",
    "status": "ok",
    "records": 147,
-   "added": 147,
-   "revised": 0,
-   "unchanged": 0,
+   "added": 0,
+   "revised": 35,
+   "unchanged": 112,
    "quarantined": 0,
    "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 8.27,
+   "duration_s": 7.23,
    "latest_observation": "2026-08",
    "metrics": [
     "horeca_closures",
@@ -323,7 +319,7 @@
    "skipped_unchanged": 36,
    "error": null,
    "error_type": null,
-   "duration_s": 123.48,
+   "duration_s": 132.07,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -332,22 +328,20 @@
   },
   {
    "source_id": "madrid_vut",
-   "status": "skipped",
+   "status": "failed",
    "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 1,
-   "skipped_unchanged": 1,
-   "error": null,
-   "error_type": null,
-   "duration_s": 1.28,
+   "skipped_unchanged": 0,
+   "error": "failed to fetch https://datos.madrid.es/dataset/300694-0-viviendas-turisticas-geoportal/resource/300694-0-viviendas-turisticas-geoportal/download/300694-0-viviendas-turisticas-geoportal.zip: timed out",
+   "error_type": "FetchError",
+   "duration_s": 187.25,
    "latest_observation": null,
    "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "notes": []
   },
   {
    "source_id": "mivau",
@@ -361,7 +355,7 @@
    "skipped_unchanged": 5,
    "error": null,
    "error_type": null,
-   "duration_s": 9.39,
+   "duration_s": 9.67,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -370,19 +364,24 @@
   },
   {
    "source_id": "ohsome",
-   "status": "failed",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 7644,
+   "added": 84,
    "revised": 0,
-   "unchanged": 0,
+   "unchanged": 7560,
    "quarantined": 0,
    "plans": 126,
    "skipped_unchanged": 0,
-   "error": "HTTP 404 from https://api.ohsome.org/v1/elements/count",
-   "error_type": "NotFoundError",
-   "duration_s": 0.61,
-   "latest_observation": null,
-   "metrics": [],
+   "error": null,
+   "error_type": null,
+   "duration_s": 468.99,
+   "latest_observation": "2026-07",
+   "metrics": [
+    "osm_cafe_bar_ratio",
+    "osm_food_count",
+    "osm_food_share",
+    "osm_tourist_retail"
+   ],
    "notes": []
   },
   {
@@ -397,7 +396,7 @@
    "skipped_unchanged": 42,
    "error": null,
    "error_type": null,
-   "duration_s": 44.27,
+   "duration_s": 48.75,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -407,22 +406,23 @@
   },
   {
    "source_id": "sepe",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 16,
+   "added": 16,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 16,
-   "skipped_unchanged": 16,
+   "skipped_unchanged": 8,
    "error": null,
    "error_type": null,
-   "duration_s": 9.42,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "duration_s": 11.33,
+   "latest_observation": "2026-07",
+   "metrics": [
+    "contracts_registered",
+    "unemployment_registered"
+   ],
+   "notes": []
   },
   {
    "source_id": "serpavi",
@@ -436,7 +436,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 7.93,
+   "duration_s": 7.64,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -475,7 +475,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 4.88,
+   "duration_s": 6.41,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -485,16 +485,16 @@
   {
    "source_id": "wiki_langs",
    "status": "ok",
-   "records": 4095,
+   "records": 4368,
    "added": 0,
    "revised": 0,
-   "unchanged": 3913,
-   "quarantined": 182,
+   "unchanged": 4368,
+   "quarantined": 0,
    "plans": 70,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 34.58,
+   "duration_s": 34.61,
    "latest_observation": "2026-07",
    "metrics": [
     "wiki_foreign_interest",
@@ -504,10 +504,7 @@
     "wiki_lang_views_it",
     "wiki_lang_views_pt"
    ],
-   "notes": [
-    "5/70 optional fetches skipped: barcelona:en: NotFoundError; valencia:fr: NotFoundError; valencia:pt: NotFoundError; palma:nl: NotFoundError; total:zh: NotFoundError",
-    "182 unexpected revisions quarantined — re-run with --accept-revision wiki_langs if the restatement is genuine"
-   ]
+   "notes": []
   },
   {
    "source_id": "wikipedia",
@@ -515,13 +512,13 @@
    "records": 3296,
    "added": 0,
    "revised": 0,
-   "unchanged": 2059,
-   "quarantined": 1237,
+   "unchanged": 3296,
+   "quarantined": 0,
    "plans": 85,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 42.52,
+   "duration_s": 42.49,
    "latest_observation": "2026-07",
    "metrics": [
     "wiki_barrio_views",
@@ -531,10 +528,7 @@
     "wiki_hardship_index",
     "wiki_relocation_index"
    ],
-   "notes": [
-    "8/85 optional fetches skipped: valencia:de: NotFoundError; valencia:it: NotFoundError; valencia:pt: NotFoundError; sevilla:es: NotFoundError; palma:nl: NotFoundError",
-    "1237 unexpected revisions quarantined — re-run with --accept-revision wikipedia if the restatement is genuine"
-   ]
+   "notes": []
   }
  ]
 }
