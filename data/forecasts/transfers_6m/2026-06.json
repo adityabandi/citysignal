@@ -1,0 +1,80 @@
+{
+ "as_of": "2026-08-18",
+ "cadence": "monthly",
+ "city": "madrid",
+ "data_vintage": "sha256:8bd3f2307d86f9de7e3c18f4306ed962",
+ "direction_only": false,
+ "for_period": "2026-12",
+ "from_period": "2026-06",
+ "geo_id": "prov-28",
+ "geo_level": "province",
+ "horizon": 6,
+ "issued_at": "2026-08-18T06:21:33+00:00",
+ "last_observed": 11988.0,
+ "metric_id": "property_transfers",
+ "model": "random_walk",
+ "model_verdict": "baseline",
+ "p_direction_up": 0.4868421052631579,
+ "quantiles": {
+  "p10": 9514.8,
+  "p50": 11948.0,
+  "p90": 14459.9
+ },
+ "question": "How many homes will change hands in Madrid province six months from now?",
+ "skill": {
+  "analog": {
+   "brier": null,
+   "coverage_80": 0.639,
+   "folds": 180,
+   "mae": 1562.965,
+   "mae_ratio": 0.9823,
+   "model": "analog",
+   "pinball": 510.0275,
+   "pinball_ratio": 1.0055,
+   "verdict": "no_better_than_baseline"
+  },
+  "drift": {
+   "brier": null,
+   "coverage_80": 0.728,
+   "folds": 180,
+   "mae": 2004.125,
+   "mae_ratio": 1.2596,
+   "model": "drift",
+   "pinball": 645.1276,
+   "pinball_ratio": 1.2719,
+   "verdict": "baseline"
+  },
+  "random_walk": {
+   "brier": null,
+   "coverage_80": 0.711,
+   "folds": 180,
+   "mae": 1591.05,
+   "mae_ratio": 1.0,
+   "model": "random_walk",
+   "pinball": 507.2184,
+   "pinball_ratio": 1.0,
+   "verdict": "baseline"
+  },
+  "seasonal_naive": {
+   "brier": null,
+   "coverage_80": 0.644,
+   "folds": 180,
+   "mae": 1623.611,
+   "mae_ratio": 1.0205,
+   "model": "seasonal_naive",
+   "pinball": 551.1739,
+   "pinball_ratio": 1.0867,
+   "verdict": "baseline"
+  }
+ },
+ "status": "issued",
+ "target_id": "transfers_6m",
+ "targets_version": "targets-v1",
+ "unit": "transactions",
+ "unit_of_horizon": "months",
+ "vintage_basis": {
+  "declared_lag": 44529,
+  "published_at": 1869
+ },
+ "why": "The same question at the range where a turn is actionable rather than merely observable."
+}

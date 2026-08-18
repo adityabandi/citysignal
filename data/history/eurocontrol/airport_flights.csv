@@ -41,6 +41,7 @@ airport_flights,apt-AGP,airport,2026-03,13796,flights,eurocontrol,2026-03-31,,20
 airport_flights,apt-AGP,airport,2026-04,17303,flights,eurocontrol,2026-04-30,,2026-07-25,ok,0
 airport_flights,apt-AGP,airport,2026-05,18069,flights,eurocontrol,2026-05-31,,2026-07-25,ok,0
 airport_flights,apt-AGP,airport,2026-06,18531,flights,eurocontrol,2026-06-30,,2026-07-25,ok,0
+airport_flights,apt-AGP,airport,2026-07,20316,flights,eurocontrol,2026-07-31,,2026-08-18,ok,0
 airport_flights,apt-BCN,airport,2023-01,20930,flights,eurocontrol,2023-01-31,,2026-07-25,ok,0
 airport_flights,apt-BCN,airport,2023-02,20769,flights,eurocontrol,2023-02-28,,2026-07-25,ok,0
 airport_flights,apt-BCN,airport,2023-03,24179,flights,eurocontrol,2023-03-31,,2026-07-25,ok,0
@@ -83,6 +84,7 @@ airport_flights,apt-BCN,airport,2026-03,29255,flights,eurocontrol,2026-03-31,,20
 airport_flights,apt-BCN,airport,2026-04,32064,flights,eurocontrol,2026-04-30,,2026-07-25,ok,0
 airport_flights,apt-BCN,airport,2026-05,34740,flights,eurocontrol,2026-05-31,,2026-07-25,ok,0
 airport_flights,apt-BCN,airport,2026-06,34290,flights,eurocontrol,2026-06-30,,2026-07-25,ok,0
+airport_flights,apt-BCN,airport,2026-07,35893,flights,eurocontrol,2026-07-31,,2026-08-18,ok,0
 airport_flights,apt-BIO,airport,2023-01,2975,flights,eurocontrol,2023-01-31,,2026-07-25,ok,0
 airport_flights,apt-BIO,airport,2023-02,2838,flights,eurocontrol,2023-02-28,,2026-07-25,ok,0
 airport_flights,apt-BIO,airport,2023-03,3437,flights,eurocontrol,2023-03-31,,2026-07-25,ok,0
@@ -125,6 +127,7 @@ airport_flights,apt-BIO,airport,2026-03,3993,flights,eurocontrol,2026-03-31,,202
 airport_flights,apt-BIO,airport,2026-04,4733,flights,eurocontrol,2026-04-30,,2026-07-25,ok,0
 airport_flights,apt-BIO,airport,2026-05,5245,flights,eurocontrol,2026-05-31,,2026-07-25,ok,0
 airport_flights,apt-BIO,airport,2026-06,4984,flights,eurocontrol,2026-06-30,,2026-07-25,ok,0
+airport_flights,apt-BIO,airport,2026-07,5321,flights,eurocontrol,2026-07-31,,2026-08-18,ok,0
 airport_flights,apt-MAD,airport,2023-01,30341,flights,eurocontrol,2023-01-31,,2026-07-25,ok,0
 airport_flights,apt-MAD,airport,2023-02,27886,flights,eurocontrol,2023-02-28,,2026-07-25,ok,0
 airport_flights,apt-MAD,airport,2023-03,31325,flights,eurocontrol,2023-03-31,,2026-07-25,ok,0
@@ -167,6 +170,7 @@ airport_flights,apt-MAD,airport,2026-03,37232,flights,eurocontrol,2026-03-31,,20
 airport_flights,apt-MAD,airport,2026-04,37592,flights,eurocontrol,2026-04-30,,2026-07-25,ok,0
 airport_flights,apt-MAD,airport,2026-05,39144,flights,eurocontrol,2026-05-31,,2026-07-25,ok,0
 airport_flights,apt-MAD,airport,2026-06,38912,flights,eurocontrol,2026-06-30,,2026-07-25,ok,0
+airport_flights,apt-MAD,airport,2026-07,40591,flights,eurocontrol,2026-07-31,,2026-08-18,ok,0
 airport_flights,apt-PMI,airport,2023-01,8298,flights,eurocontrol,2023-01-31,,2026-07-25,ok,0
 airport_flights,apt-PMI,airport,2023-02,8283,flights,eurocontrol,2023-02-28,,2026-07-25,ok,0
 airport_flights,apt-PMI,airport,2023-03,11672,flights,eurocontrol,2023-03-31,,2026-07-25,ok,0
@@ -209,6 +213,7 @@ airport_flights,apt-PMI,airport,2026-03,12917,flights,eurocontrol,2026-03-31,,20
 airport_flights,apt-PMI,airport,2026-04,22584,flights,eurocontrol,2026-04-30,,2026-07-25,ok,0
 airport_flights,apt-PMI,airport,2026-05,27947,flights,eurocontrol,2026-05-31,,2026-07-25,ok,0
 airport_flights,apt-PMI,airport,2026-06,29585,flights,eurocontrol,2026-06-30,,2026-07-25,ok,0
+airport_flights,apt-PMI,airport,2026-07,32053,flights,eurocontrol,2026-07-31,,2026-08-18,ok,0
 airport_flights,apt-SVQ,airport,2023-01,4255,flights,eurocontrol,2023-01-31,,2026-07-25,ok,0
 airport_flights,apt-SVQ,airport,2023-02,3983,flights,eurocontrol,2023-02-28,,2026-07-25,ok,0
 airport_flights,apt-SVQ,airport,2023-03,4746,flights,eurocontrol,2023-03-31,,2026-07-25,ok,0
@@ -251,6 +256,7 @@ airport_flights,apt-SVQ,airport,2026-03,6502,flights,eurocontrol,2026-03-31,,202
 airport_flights,apt-SVQ,airport,2026-04,6719,flights,eurocontrol,2026-04-30,,2026-07-25,ok,0
 airport_flights,apt-SVQ,airport,2026-05,6619,flights,eurocontrol,2026-05-31,,2026-07-25,ok,0
 airport_flights,apt-SVQ,airport,2026-06,6275,flights,eurocontrol,2026-06-30,,2026-07-25,ok,0
+airport_flights,apt-SVQ,airport,2026-07,5758,flights,eurocontrol,2026-07-31,,2026-08-18,ok,0
 airport_flights,apt-VLC,airport,2023-01,4971,flights,eurocontrol,2023-01-31,,2026-07-25,ok,0
 airport_flights,apt-VLC,airport,2023-02,4691,flights,eurocontrol,2023-02-28,,2026-07-25,ok,0
 airport_flights,apt-VLC,airport,2023-03,5631,flights,eurocontrol,2023-03-31,,2026-07-25,ok,0
@@ -293,6 +299,7 @@ airport_flights,apt-VLC,airport,2026-03,7258,flights,eurocontrol,2026-03-31,,202
 airport_flights,apt-VLC,airport,2026-04,8197,flights,eurocontrol,2026-04-30,,2026-07-25,ok,0
 airport_flights,apt-VLC,airport,2026-05,8385,flights,eurocontrol,2026-05-31,,2026-07-25,ok,0
 airport_flights,apt-VLC,airport,2026-06,8297,flights,eurocontrol,2026-06-30,,2026-07-25,ok,0
+airport_flights,apt-VLC,airport,2026-07,8877,flights,eurocontrol,2026-07-31,,2026-08-18,ok,0
 airport_flights,apt-ZAZ,airport,2023-01,639,flights,eurocontrol,2023-01-31,,2026-07-25,ok,0
 airport_flights,apt-ZAZ,airport,2023-02,646,flights,eurocontrol,2023-02-28,,2026-07-25,ok,0
 airport_flights,apt-ZAZ,airport,2023-03,755,flights,eurocontrol,2023-03-31,,2026-07-25,ok,0
@@ -335,3 +342,4 @@ airport_flights,apt-ZAZ,airport,2026-03,905,flights,eurocontrol,2026-03-31,,2026
 airport_flights,apt-ZAZ,airport,2026-04,929,flights,eurocontrol,2026-04-30,,2026-07-25,ok,0
 airport_flights,apt-ZAZ,airport,2026-05,926,flights,eurocontrol,2026-05-31,,2026-07-25,ok,0
 airport_flights,apt-ZAZ,airport,2026-06,854,flights,eurocontrol,2026-06-30,,2026-07-25,ok,0
+airport_flights,apt-ZAZ,airport,2026-07,984,flights,eurocontrol,2026-07-31,,2026-08-18,ok,0

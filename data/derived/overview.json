@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-11T06:53:20+00:00",
+ "generated_at": "2026-08-18T06:21:29+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -30,7 +30,7 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.1362,
+     "demand_momentum": 0.2401,
      "housing_pressure": 1.1836,
      "supply_response": -0.9389,
      "distress": 0.165
@@ -45,7 +45,7 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.1362,
+    "demand_momentum": 0.2401,
     "housing_pressure": 1.1836,
     "supply_response": -0.9389,
     "distress": 0.165
@@ -387,7 +387,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0428,
+     "index_demand_momentum": 0.0519,
      "index_housing_pressure": 1.6038,
      "index_supply_response": -0.2173,
      "index_distress": 0.3233
@@ -407,7 +407,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0087,
+     "index_demand_momentum": -0.0088,
      "index_housing_pressure": 1.6906,
      "index_supply_response": -0.6925,
      "index_distress": 0.3339
@@ -427,7 +427,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.2093,
+     "index_demand_momentum": -0.2094,
      "index_housing_pressure": 1.6177,
      "index_supply_response": -0.9389,
      "index_distress": 0.435
@@ -437,7 +437,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1209,
+     "index_demand_momentum": -0.121,
      "index_housing_pressure": 1.6855,
      "index_supply_response": -0.9389,
      "index_distress": 0.5189
@@ -447,7 +447,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0014,
+     "index_demand_momentum": 0.0013,
      "index_housing_pressure": 1.4268,
      "index_supply_response": -0.9389,
      "index_distress": 0.3111
@@ -467,7 +467,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1065,
+     "index_demand_momentum": -0.1066,
      "index_housing_pressure": 1.4368,
      "index_supply_response": null,
      "index_distress": 0.3281
@@ -507,7 +507,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1764,
+     "index_demand_momentum": 0.1464,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.009
@@ -517,7 +517,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2415,
+     "index_demand_momentum": 0.295,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.5122
@@ -534,7 +534,7 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0404,
+     "demand_momentum": 0.1904,
      "housing_pressure": 0.7674,
      "supply_response": 0.5433,
      "distress": 0.025
@@ -549,7 +549,7 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.0404,
+    "demand_momentum": 0.1904,
     "housing_pressure": 0.7674,
     "supply_response": 0.5433,
     "distress": 0.025
@@ -891,7 +891,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1077,
+     "index_demand_momentum": 0.1528,
      "index_housing_pressure": 1.1757,
      "index_supply_response": -0.5915,
      "index_distress": -0.1176
@@ -901,7 +901,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0769,
+     "index_demand_momentum": 0.0767,
      "index_housing_pressure": 1.1334,
      "index_supply_response": -0.4052,
      "index_distress": 0.0893
@@ -911,7 +911,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0904,
+     "index_demand_momentum": -0.0906,
      "index_housing_pressure": 0.9972,
      "index_supply_response": -0.4052,
      "index_distress": -0.0875
@@ -921,7 +921,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0505,
+     "index_demand_momentum": -0.0507,
      "index_housing_pressure": 1.1262,
      "index_supply_response": -0.4052,
      "index_distress": -0.0325
@@ -931,7 +931,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1728,
+     "index_demand_momentum": -0.173,
      "index_housing_pressure": 1.0097,
      "index_supply_response": 0.5433,
      "index_distress": -0.0861
@@ -941,7 +941,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1326,
+     "index_demand_momentum": -0.1328,
      "index_housing_pressure": 1.0164,
      "index_supply_response": 0.5433,
      "index_distress": -0.1202
@@ -951,7 +951,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.087,
+     "index_demand_momentum": 0.0868,
      "index_housing_pressure": 0.7299,
      "index_supply_response": 0.5433,
      "index_distress": -0.2936
@@ -961,7 +961,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.4302,
+     "index_demand_momentum": -0.4303,
      "index_housing_pressure": 0.9629,
      "index_supply_response": null,
      "index_distress": 0.1057
@@ -971,7 +971,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.2616,
+     "index_demand_momentum": -0.2618,
      "index_housing_pressure": 0.9681,
      "index_supply_response": null,
      "index_distress": 0.0476
@@ -981,7 +981,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.2322,
+     "index_demand_momentum": -0.2323,
      "index_housing_pressure": 1.4632,
      "index_supply_response": null,
      "index_distress": -0.0031
@@ -991,7 +991,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0228,
+     "index_demand_momentum": -0.023,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.4041
@@ -1001,7 +1001,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0985,
+     "index_demand_momentum": -0.0987,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.0757
@@ -1011,7 +1011,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0844,
+     "index_demand_momentum": 0.0797,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.3343
@@ -1021,7 +1021,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2204,
+     "index_demand_momentum": 0.2247,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.5502
@@ -1038,7 +1038,7 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.076,
+     "demand_momentum": 0.0984,
      "housing_pressure": 1.2761,
      "supply_response": -0.6999,
      "distress": 0.0969
@@ -1053,7 +1053,7 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.076,
+    "demand_momentum": 0.0984,
     "housing_pressure": 1.2761,
     "supply_response": -0.6999,
     "distress": 0.0969
@@ -1395,7 +1395,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3527,
+     "index_demand_momentum": 0.3164,
      "index_housing_pressure": 1.6098,
      "index_supply_response": -0.4377,
      "index_distress": 0.5453
@@ -1405,7 +1405,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2121,
+     "index_demand_momentum": 0.2123,
      "index_housing_pressure": 1.6705,
      "index_supply_response": -0.1331,
      "index_distress": 0.7347
@@ -1415,7 +1415,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0828,
+     "index_demand_momentum": 0.0829,
      "index_housing_pressure": 1.4554,
      "index_supply_response": -0.1331,
      "index_distress": 0.6248
@@ -1425,7 +1425,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2541,
+     "index_demand_momentum": 0.2543,
      "index_housing_pressure": 1.4263,
      "index_supply_response": -0.1331,
      "index_distress": 0.8466
@@ -1435,7 +1435,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1642,
+     "index_demand_momentum": -0.1641,
      "index_housing_pressure": 1.4578,
      "index_supply_response": -0.6999,
      "index_distress": 0.2267
@@ -1445,7 +1445,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2043,
+     "index_demand_momentum": 0.2046,
      "index_housing_pressure": 1.4713,
      "index_supply_response": -0.6999,
      "index_distress": 0.3948
@@ -1455,7 +1455,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.322,
+     "index_demand_momentum": 0.3221,
      "index_housing_pressure": 1.6239,
      "index_supply_response": -0.6999,
      "index_distress": 0.2783
@@ -1465,7 +1465,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1008,
+     "index_demand_momentum": -0.1007,
      "index_housing_pressure": 1.6553,
      "index_supply_response": null,
      "index_distress": 0.0577
@@ -1475,7 +1475,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.259,
+     "index_demand_momentum": -0.2589,
      "index_housing_pressure": 1.508,
      "index_supply_response": null,
      "index_distress": 0.3319
@@ -1485,7 +1485,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0072,
+     "index_demand_momentum": -0.007,
      "index_housing_pressure": 1.6385,
      "index_supply_response": null,
      "index_distress": 0.0331
@@ -1495,7 +1495,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0943,
+     "index_demand_momentum": 0.0945,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": -0.3895
@@ -1505,7 +1505,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0032,
+     "index_demand_momentum": -0.0031,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.066
@@ -1515,7 +1515,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0268,
+     "index_demand_momentum": 0.0656,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.2333
@@ -1525,7 +1525,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0503,
+     "index_demand_momentum": 0.0147,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.4869
@@ -1542,7 +1542,7 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0844,
+     "demand_momentum": 0.1941,
      "housing_pressure": 0.9062,
      "supply_response": -0.3526,
      "distress": 0.479
@@ -1557,7 +1557,7 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.0844,
+    "demand_momentum": 0.1941,
     "housing_pressure": 0.9062,
     "supply_response": -0.3526,
     "distress": 0.479
@@ -1899,7 +1899,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1299,
+     "index_demand_momentum": 0.0994,
      "index_housing_pressure": 1.1134,
      "index_supply_response": -0.1218,
      "index_distress": 0.465
@@ -1909,7 +1909,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1059,
+     "index_demand_momentum": 0.1061,
      "index_housing_pressure": 0.9216,
      "index_supply_response": -0.25,
      "index_distress": 0.5183
@@ -1919,7 +1919,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0659,
+     "index_demand_momentum": -0.0658,
      "index_housing_pressure": 0.8665,
      "index_supply_response": -0.25,
      "index_distress": 0.4389
@@ -1929,7 +1929,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1598,
+     "index_demand_momentum": 0.1599,
      "index_housing_pressure": 0.8774,
      "index_supply_response": -0.25,
      "index_distress": 0.4313
@@ -1939,7 +1939,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1599,
+     "index_demand_momentum": -0.1598,
      "index_housing_pressure": 0.9344,
      "index_supply_response": -0.3526,
      "index_distress": 0.5254
@@ -1949,7 +1949,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0659,
+     "index_demand_momentum": 0.066,
      "index_housing_pressure": 0.8909,
      "index_supply_response": -0.3526,
      "index_distress": 0.4899
@@ -1959,7 +1959,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0864,
+     "index_demand_momentum": 0.0865,
      "index_housing_pressure": 0.9424,
      "index_supply_response": -0.3526,
      "index_distress": 0.4038
@@ -1969,7 +1969,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1484,
+     "index_demand_momentum": -0.1483,
      "index_housing_pressure": 0.8802,
      "index_supply_response": null,
      "index_distress": 0.5366
@@ -1979,7 +1979,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.3286,
+     "index_demand_momentum": -0.3285,
      "index_housing_pressure": 0.8906,
      "index_supply_response": null,
      "index_distress": 0.5653
@@ -1989,7 +1989,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0655,
+     "index_demand_momentum": 0.0656,
      "index_housing_pressure": 0.7349,
      "index_supply_response": null,
      "index_distress": 0.3532
@@ -1999,7 +1999,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2372,
+     "index_demand_momentum": 0.2374,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.366
@@ -2009,7 +2009,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0483,
+     "index_demand_momentum": -0.0482,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.2039
@@ -2019,7 +2019,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1911,
+     "index_demand_momentum": 0.2333,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.2815
@@ -2029,7 +2029,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3368,
+     "index_demand_momentum": 0.1415,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.8794
@@ -2046,7 +2046,7 @@
     "expression": "true",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.364,
+     "demand_momentum": 0.1711,
      "housing_pressure": 0.7148,
      "supply_response": -0.0804,
      "distress": 0.6165
@@ -2061,7 +2061,7 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": 0.364,
+    "demand_momentum": 0.1711,
     "housing_pressure": 0.7148,
     "supply_response": -0.0804,
     "distress": 0.6165
@@ -2403,7 +2403,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3779,
+     "index_demand_momentum": 0.3825,
      "index_housing_pressure": 0.9818,
      "index_supply_response": 0.0349,
      "index_distress": 0.3484
@@ -2443,7 +2443,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1525,
+     "index_demand_momentum": 0.1524,
      "index_housing_pressure": 1.0847,
      "index_supply_response": -0.0804,
      "index_distress": 0.4932
@@ -2483,7 +2483,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1496,
+     "index_demand_momentum": 0.1495,
      "index_housing_pressure": 1.0333,
      "index_supply_response": null,
      "index_distress": 0.736
@@ -2493,7 +2493,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3227,
+     "index_demand_momentum": 0.3226,
      "index_housing_pressure": 0.788,
      "index_supply_response": null,
      "index_distress": 0.3174
@@ -2503,7 +2503,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2608,
+     "index_demand_momentum": 0.2607,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.3611
@@ -2523,7 +2523,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3614,
+     "index_demand_momentum": 0.3154,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.3563
@@ -2533,7 +2533,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1761,
+     "index_demand_momentum": 0.1787,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.8989
@@ -2550,7 +2550,7 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.1449,
+     "demand_momentum": -0.095,
      "housing_pressure": 0.9907,
      "supply_response": -0.0774,
      "distress": 0.3349
@@ -2565,7 +2565,7 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.1449,
+    "demand_momentum": -0.095,
     "housing_pressure": 0.9907,
     "supply_response": -0.0774,
     "distress": 0.3349
@@ -2887,7 +2887,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.021,
+     "index_demand_momentum": 0.0418,
      "index_housing_pressure": 1.2976,
      "index_supply_response": -0.1948,
      "index_distress": 0.5873
@@ -2897,7 +2897,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0208,
+     "index_demand_momentum": 0.0205,
      "index_housing_pressure": 1.4948,
      "index_supply_response": 0.0289,
      "index_distress": 0.4845
@@ -2907,7 +2907,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1231,
+     "index_demand_momentum": -0.1234,
      "index_housing_pressure": 1.8383,
      "index_supply_response": 0.0289,
      "index_distress": 0.4375
@@ -2917,7 +2917,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0638,
+     "index_demand_momentum": -0.0641,
      "index_housing_pressure": 1.5382,
      "index_supply_response": 0.0289,
      "index_distress": 0.4197
@@ -2927,7 +2927,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1806,
+     "index_demand_momentum": -0.1808,
      "index_housing_pressure": 1.2745,
      "index_supply_response": -0.0774,
      "index_distress": 0.2698
@@ -2937,7 +2937,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0989,
+     "index_demand_momentum": -0.0992,
      "index_housing_pressure": 1.2204,
      "index_supply_response": -0.0774,
      "index_distress": 0.2133
@@ -2947,7 +2947,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0161,
+     "index_demand_momentum": -0.0164,
      "index_housing_pressure": 1.335,
      "index_supply_response": -0.0774,
      "index_distress": 0.1378
@@ -2957,7 +2957,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.3765,
+     "index_demand_momentum": -0.3768,
      "index_housing_pressure": 1.1306,
      "index_supply_response": null,
      "index_distress": 0.4486
@@ -2967,7 +2967,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.4542,
+     "index_demand_momentum": -0.4544,
      "index_housing_pressure": 0.9653,
      "index_supply_response": null,
      "index_distress": 0.5196
@@ -2977,7 +2977,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0138,
+     "index_demand_momentum": 0.0135,
      "index_housing_pressure": 1.235,
      "index_supply_response": null,
      "index_distress": 0.2979
@@ -2987,7 +2987,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1522,
+     "index_demand_momentum": -0.1524,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.1956
@@ -2997,7 +2997,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1353,
+     "index_demand_momentum": -0.1355,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.0564
@@ -3007,7 +3007,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0075,
+     "index_demand_momentum": -0.0447,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.1002
@@ -3017,7 +3017,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0102,
+     "index_demand_momentum": -0.0562,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.5355
@@ -3034,7 +3034,7 @@
     "expression": "housing_pressure > 0.75 and supply_response < -0.25",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.204,
+     "demand_momentum": 0.4164,
      "housing_pressure": 1.2658,
      "supply_response": -0.3312,
      "distress": 0.2899
@@ -3049,7 +3049,7 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.204,
+    "demand_momentum": 0.4164,
     "housing_pressure": 1.2658,
     "supply_response": -0.3312,
     "distress": 0.2899
@@ -3371,7 +3371,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1841,
+     "index_demand_momentum": 0.2004,
      "index_housing_pressure": 0.6604,
      "index_supply_response": -0.7572,
      "index_distress": 0.2601
@@ -3381,7 +3381,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1063,
+     "index_demand_momentum": -0.1064,
      "index_housing_pressure": 0.9157,
      "index_supply_response": -0.5227,
      "index_distress": 0.3439
@@ -3391,7 +3391,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.126,
+     "index_demand_momentum": 0.1259,
      "index_housing_pressure": 0.9652,
      "index_supply_response": -0.5227,
      "index_distress": 0.2835
@@ -3401,7 +3401,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2278,
+     "index_demand_momentum": 0.2277,
      "index_housing_pressure": 1.108,
      "index_supply_response": -0.5227,
      "index_distress": 0.2556
@@ -3411,7 +3411,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1722,
+     "index_demand_momentum": -0.1723,
      "index_housing_pressure": 1.1832,
      "index_supply_response": -0.3312,
      "index_distress": 0.4978
@@ -3421,7 +3421,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.4078,
+     "index_demand_momentum": 0.4077,
      "index_housing_pressure": 1.1224,
      "index_supply_response": -0.3312,
      "index_distress": 0.4688
@@ -3431,7 +3431,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3602,
+     "index_demand_momentum": 0.3601,
      "index_housing_pressure": 1.1696,
      "index_supply_response": -0.3312,
      "index_distress": 0.3745
@@ -3481,7 +3481,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.3845,
+     "index_demand_momentum": -0.3846,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": -0.0014
@@ -3491,17 +3491,17 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0002,
+     "index_demand_momentum": 0.0154,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.0303
     },
     {
      "period": "2026-07",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "expansion",
+     "label": "Expansion",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0875,
+     "index_demand_momentum": 0.5081,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.4162
@@ -3518,7 +3518,7 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0452,
+     "demand_momentum": 0.3594,
      "housing_pressure": 1.4954,
      "supply_response": 0.9588,
      "distress": 0.542
@@ -3533,20 +3533,20 @@
     "period": "2026-07"
    },
    "indices": {
-    "demand_momentum": -0.0452,
+    "demand_momentum": 0.3594,
     "housing_pressure": 1.4954,
     "supply_response": 0.9588,
     "distress": 0.542
    },
    "top_signature": {
-    "archetype_id": "overheating",
-    "label": "Overheating",
-    "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
-    "firing": 3,
-    "available": 7,
-    "total": 13,
-    "coverage": 0.538,
-    "score": 0.429,
+    "archetype_id": "boom",
+    "label": "Boom",
+    "summary": "People and money arriving faster than the city can house them. Rents and transactions rise together, business formation accelerates, and attention from outside the country runs ahead of the official population count.",
+    "firing": 6,
+    "available": 13,
+    "total": 20,
+    "coverage": 0.65,
+    "score": 0.462,
     "insufficient_coverage": false,
     "signals_firing": [
      {
@@ -3572,33 +3572,88 @@
       "source_id": "mivau"
      },
      {
-      "metric_id": "euribor_12m",
-      "label": "Euribor 12-month",
+      "metric_id": "airport_flights",
+      "label": "Airport flights (daily traffic)",
       "expect": "up",
-      "z": 0.6298,
-      "raw": 0.717,
+      "z": 1.3038,
+      "raw": 19.708,
+      "unit": "flights",
+      "period": "2026-07",
+      "geo_level": "airport",
+      "source_id": "eurocontrol"
+     },
+     {
+      "metric_id": "wiki_city_attention",
+      "label": "City attention share",
+      "expect": "up",
+      "z": 1.4022,
+      "raw": 24.4671,
+      "unit": "per_million",
+      "period": "2026-07",
+      "geo_level": "municipality",
+      "source_id": "wikipedia"
+     },
+     {
+      "metric_id": "wiki_city_foreign_share",
+      "label": "Non-Spanish share of city article views",
+      "expect": "up",
+      "z": 1.0547,
+      "raw": 10.8899,
       "unit": "percent",
-      "period": "2026-06",
-      "geo_level": "nation",
-      "source_id": "bde"
+      "period": "2026-07",
+      "geo_level": "municipality",
+      "source_id": "wikipedia"
+     },
+     {
+      "metric_id": "housing_starts",
+      "label": "Housing starts",
+      "expect": "up",
+      "z": 4.0,
+      "raw": 462.0419,
+      "unit": "dwellings",
+      "period": "2025-12",
+      "geo_level": "province",
+      "source_id": "mivau"
      }
     ],
     "signals_against": [
      {
-      "metric_id": "hotel_adr",
-      "label": "Average daily rate",
+      "metric_id": "contracts_registered",
+      "label": "New contracts registered",
       "expect": "up",
-      "z": -0.9139,
-      "raw": 0.9302,
-      "unit": "eur",
-      "period": "2026-06",
+      "z": 0.2443,
+      "raw": 8.5762,
+      "unit": "contracts",
+      "period": "2026-07",
       "geo_level": "municipality",
+      "source_id": "sepe"
+     },
+     {
+      "metric_id": "unemployment_registered",
+      "label": "Registered unemployment",
+      "expect": "down",
+      "z": 0.2833,
+      "raw": 0.5486,
+      "unit": "persons",
+      "period": "2026-07",
+      "geo_level": "municipality",
+      "source_id": "sepe"
+     },
+     {
+      "metric_id": "property_transfers",
+      "label": "Property transfers (registered)",
+      "expect": "up",
+      "z": 0.209,
+      "raw": 7.7882,
+      "unit": "transactions",
+      "period": "2026-06",
+      "geo_level": "province",
       "source_id": "ine"
      },
      {
       "metric_id": "mortgages_count",
       "label": "New mortgages on dwellings",
-      "expect": "down",
+      "expect": "up",
       "z": -0.3531,
       "raw": -11.0559,
       "unit": "mortgages",
@@ -3607,15 +3662,26 @@
       "source_id": "ine"
      },
      {
-      "metric_id": "housing_starts",
-      "label": "Housing starts",
-      "expect": "down",
-      "z": 4.0,
-      "raw": 462.0419,
-      "unit": "dwellings",
-      "period": "2025-12",
-      "geo_level": "province",
-      "source_id": "mivau"
+      "metric_id": "hotel_revpar",
+      "label": "Revenue per available room",
+      "expect": "up",
+      "z": -0.5642,
+      "raw": 4.9643,
+      "unit": "eur",
+      "period": "2026-06",
+      "geo_level": "municipality",
+      "source_id": "ine"
+     },
+     {
+      "metric_id": "wiki_relocation_index",
+      "label": "Relocation attention (padrón, NIE, visas)",
+      "expect": "up",
+      "z": 0.3266,
+      "raw": 40.715,
+      "unit": "per_million",
+      "period": "2026-07",
+      "geo_level": "nation",
+      "source_id": "wikipedia"
      },
      {
       "metric_id": "search_tenure_switch",
@@ -3631,11 +3697,12 @@
     ],
     "signals_unavailable": [
      "affiliations",
+     "horeca_openings",
      "housing_transactions",
+     "locales_openings",
+     "locales_vacancy_rate",
      "population_padron",
-     "search_room_share",
-     "str_listings",
-     "tourist_dwellings"
+     "str_listings"
     ],
     "signatures_version": "signatures-v2"
    },
@@ -3865,7 +3932,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1185,
+     "index_demand_momentum": 0.1816,
      "index_housing_pressure": 1.0005,
      "index_supply_response": -0.0442,
      "index_distress": 0.0908
@@ -3875,7 +3942,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1983,
+     "index_demand_momentum": 0.198,
      "index_housing_pressure": 1.3766,
      "index_supply_response": -0.4978,
      "index_distress": 0.5214
@@ -3885,7 +3952,7 @@
      "rule_id": "supply_squeeze",
      "label": "Pressure without supply",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.029,
+     "index_demand_momentum": 0.0286,
      "index_housing_pressure": 1.1995,
      "index_supply_response": -0.4978,
      "index_distress": 0.4803
@@ -3895,7 +3962,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0846,
+     "index_demand_momentum": -0.085,
      "index_housing_pressure": 1.2951,
      "index_supply_response": -0.4978,
      "index_distress": 0.4721
@@ -3905,7 +3972,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.1503,
+     "index_demand_momentum": -0.1506,
      "index_housing_pressure": 1.3439,
      "index_supply_response": 0.9588,
      "index_distress": 0.4452
@@ -3915,7 +3982,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3073,
+     "index_demand_momentum": 0.307,
      "index_housing_pressure": 0.9635,
      "index_supply_response": 0.9588,
      "index_distress": 0.3776
@@ -3925,7 +3992,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2287,
+     "index_demand_momentum": 0.2284,
      "index_housing_pressure": 1.2405,
      "index_supply_response": 0.9588,
      "index_distress": 0.2978
@@ -3935,7 +4002,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2296,
+     "index_demand_momentum": 0.2294,
      "index_housing_pressure": 1.6108,
      "index_supply_response": null,
      "index_distress": 0.6994
@@ -3945,7 +4012,7 @@
      "rule_id": "hot",
      "label": "Hot",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2623,
+     "index_demand_momentum": 0.262,
      "index_housing_pressure": 1.5027,
      "index_supply_response": null,
      "index_distress": 0.7478
@@ -3955,7 +4022,7 @@
      "rule_id": "hot_decelerating",
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3776,
+     "index_demand_momentum": 0.3774,
      "index_housing_pressure": 1.2231,
      "index_supply_response": null,
      "index_distress": 0.5194
@@ -3965,7 +4032,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.2755,
+     "index_demand_momentum": 0.2753,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.169
@@ -3975,7 +4042,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0024,
+     "index_demand_momentum": -0.0026,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.0215
@@ -3985,7 +4052,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0639,
+     "index_demand_momentum": -0.0064,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": -0.0376
@@ -3995,7 +4062,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1735,
+     "index_demand_momentum": 0.3995,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.3952
@@ -4343,6 +4410,13 @@
  ],
  "attention": [
   {
+   "source_id": "cgpj",
+   "status": "failed",
+   "latest_observation": "2026-Q1",
+   "staleness_days": 140,
+   "last_error": "could not fetch the CGPJ crisis-statistics listing page: failed to fetch https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/Estadistica-por-temas/Datos-penales--civiles-y-laborales/Civil-y-laboral/Efecto-de-la-Crisis-en-los-organos-judiciales/: timed out"
+  },
+  {
    "source_id": "eea_air",
    "status": "failed",
    "latest_observation": null,
@@ -4353,15 +4427,15 @@
    "source_id": "eurostat",
    "status": "skipped",
    "latest_observation": "2025-12",
-   "staleness_days": 223,
+   "staleness_days": 230,
    "last_error": null
   },
   {
-   "source_id": "ine",
-   "status": "failed",
-   "latest_observation": "2026-06",
-   "staleness_days": 42,
-   "last_error": "all 11 optional fetches failed; first: padron: FetchError"
+   "source_id": "indeed",
+   "status": "ok",
+   "latest_observation": "2026-07",
+   "staleness_days": 18,
+   "last_error": null
   },
   {
    "source_id": "madrid_aire",
@@ -4374,7 +4448,7 @@
    "source_id": "madrid_licencias",
    "status": "skipped",
    "latest_observation": "2026-04",
-   "staleness_days": 103,
+   "staleness_days": 110,
    "last_error": null
   },
   {
@@ -4383,13 +4457,6 @@
    "latest_observation": null,
    "staleness_days": null,
    "last_error": "Could not fetch traffic dataset metadata from CKAN: HTTP Error 403: Forbidden"
-  },
-  {
-   "source_id": "madrid_vut",
-   "status": "failed",
-   "latest_observation": "2026-07",
-   "staleness_days": 11,
-   "last_error": "failed to fetch https://datos.madrid.es/dataset/300694-0-viviendas-turisticas-geoportal/resource/300694-0-viviendas-turisticas-geoportal/download/300694-0-viviendas-turisticas-geoportal.zip: timed out"
   },
   {
    "source_id": "notariado",
@@ -4406,10 +4473,17 @@
    "last_error": "Registradores statistics portal page loaded but no data files found. The quarterly data may not be published in machine-readable format yet."
   },
   {
+   "source_id": "sepe",
+   "status": "failed",
+   "latest_observation": "2026-07",
+   "staleness_days": 18,
+   "last_error": "failed to fetch https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html: timed out"
+  },
+  {
    "source_id": "visados",
    "status": "skipped",
    "latest_observation": "2026-02",
-   "staleness_days": 164,
+   "staleness_days": 171,
    "last_error": null
   }
  ]

@@ -221,6 +221,7 @@ property_transfers,prov-07,province,2025-03,2084,transactions,ine,2025-03-31,,20
 property_transfers,prov-07,province,2025-04,1853,transactions,ine,2025-04-30,,2026-07-25,ok,0
 property_transfers,prov-07,province,2025-05,2090,transactions,ine,2025-05-31,,2026-07-25,ok,0
 property_transfers,prov-07,province,2025-06,1737,transactions,ine,2025-06-30,,2026-07-25,ok,0
+property_transfers,prov-07,province,2025-06,1833,transactions,ine,2025-06-30,,2026-08-18,revised,1
 property_transfers,prov-07,province,2025-07,2259,transactions,ine,2025-07-31,,2026-07-25,ok,0
 property_transfers,prov-07,province,2025-08,1499,transactions,ine,2025-08-31,,2026-07-25,ok,0
 property_transfers,prov-07,province,2025-09,1842,transactions,ine,2025-09-30,,2026-07-25,ok,0
@@ -232,6 +233,7 @@ property_transfers,prov-07,province,2026-02,1937,transactions,ine,2026-02-28,,20
 property_transfers,prov-07,province,2026-03,2147,transactions,ine,2026-03-31,,2026-07-25,ok,0
 property_transfers,prov-07,province,2026-04,1762,transactions,ine,2026-04-30,,2026-07-25,ok,0
 property_transfers,prov-07,province,2026-05,1878,transactions,ine,2026-05-31,,2026-07-25,ok,0
+property_transfers,prov-07,province,2026-06,1756,transactions,ine,2026-06-30,,2026-08-18,ok,0
 property_transfers,prov-08,province,2007-01,11926,transactions,ine,2007-01-31,,2026-07-26,ok,0
 property_transfers,prov-08,province,2007-02,10100,transactions,ine,2007-02-28,,2026-07-26,ok,0
 property_transfers,prov-08,province,2007-03,9695,transactions,ine,2007-03-31,,2026-07-26,ok,0
@@ -454,6 +456,7 @@ property_transfers,prov-08,province,2025-03,10472,transactions,ine,2025-03-31,,2
 property_transfers,prov-08,province,2025-04,8578,transactions,ine,2025-04-30,,2026-07-25,ok,0
 property_transfers,prov-08,province,2025-05,9569,transactions,ine,2025-05-31,,2026-07-25,ok,0
 property_transfers,prov-08,province,2025-06,8992,transactions,ine,2025-06-30,,2026-07-25,ok,0
+property_transfers,prov-08,province,2025-06,9280,transactions,ine,2025-06-30,,2026-08-18,revised,1
 property_transfers,prov-08,province,2025-07,10790,transactions,ine,2025-07-31,,2026-07-25,ok,0
 property_transfers,prov-08,province,2025-08,7360,transactions,ine,2025-08-31,,2026-07-25,ok,0
 property_transfers,prov-08,province,2025-09,9088,transactions,ine,2025-09-30,,2026-07-25,ok,0
@@ -465,6 +468,7 @@ property_transfers,prov-08,province,2026-02,10275,transactions,ine,2026-02-28,,2
 property_transfers,prov-08,province,2026-03,10145,transactions,ine,2026-03-31,,2026-07-25,ok,0
 property_transfers,prov-08,province,2026-04,9072,transactions,ine,2026-04-30,,2026-07-25,ok,0
 property_transfers,prov-08,province,2026-05,9288,transactions,ine,2026-05-31,,2026-07-25,ok,0
+property_transfers,prov-08,province,2026-06,9629,transactions,ine,2026-06-30,,2026-08-18,ok,0
 property_transfers,prov-28,province,2007-01,13534,transactions,ine,2007-01-31,,2026-07-26,ok,0
 property_transfers,prov-28,province,2007-02,12645,transactions,ine,2007-02-28,,2026-07-26,ok,0
 property_transfers,prov-28,province,2007-03,14118,transactions,ine,2007-03-31,,2026-07-26,ok,0
@@ -687,6 +691,7 @@ property_transfers,prov-28,province,2025-03,12808,transactions,ine,2025-03-31,,2
 property_transfers,prov-28,province,2025-04,11191,transactions,ine,2025-04-30,,2026-07-25,ok,0
 property_transfers,prov-28,province,2025-05,11704,transactions,ine,2025-05-31,,2026-07-25,ok,0
 property_transfers,prov-28,province,2025-06,11589,transactions,ine,2025-06-30,,2026-07-25,ok,0
+property_transfers,prov-28,province,2025-06,11685,transactions,ine,2025-06-30,,2026-08-18,revised,1
 property_transfers,prov-28,province,2025-07,11690,transactions,ine,2025-07-31,,2026-07-25,ok,0
 property_transfers,prov-28,province,2025-08,8717,transactions,ine,2025-08-31,,2026-07-25,ok,0
 property_transfers,prov-28,province,2025-09,12212,transactions,ine,2025-09-30,,2026-07-25,ok,0
@@ -698,6 +703,7 @@ property_transfers,prov-28,province,2026-02,11191,transactions,ine,2026-02-28,,2
 property_transfers,prov-28,province,2026-03,12673,transactions,ine,2026-03-31,,2026-07-25,ok,0
 property_transfers,prov-28,province,2026-04,10061,transactions,ine,2026-04-30,,2026-07-25,ok,0
 property_transfers,prov-28,province,2026-05,10632,transactions,ine,2026-05-31,,2026-07-25,ok,0
+property_transfers,prov-28,province,2026-06,11988,transactions,ine,2026-06-30,,2026-08-18,ok,0
 property_transfers,prov-29,province,2007-01,5365,transactions,ine,2007-01-31,,2026-07-26,ok,0
 property_transfers,prov-29,province,2007-02,4404,transactions,ine,2007-02-28,,2026-07-26,ok,0
 property_transfers,prov-29,province,2007-03,5459,transactions,ine,2007-03-31,,2026-07-26,ok,0
@@ -920,6 +926,7 @@ property_transfers,prov-29,province,2025-03,4827,transactions,ine,2025-03-31,,20
 property_transfers,prov-29,province,2025-04,4004,transactions,ine,2025-04-30,,2026-07-25,ok,0
 property_transfers,prov-29,province,2025-05,4523,transactions,ine,2025-05-31,,2026-07-25,ok,0
 property_transfers,prov-29,province,2025-06,4619,transactions,ine,2025-06-30,,2026-07-25,ok,0
+property_transfers,prov-29,province,2025-06,4496,transactions,ine,2025-06-30,,2026-08-18,revised,1
 property_transfers,prov-29,province,2025-07,5107,transactions,ine,2025-07-31,,2026-07-25,ok,0
 property_transfers,prov-29,province,2025-08,3760,transactions,ine,2025-08-31,,2026-07-25,ok,0
 property_transfers,prov-29,province,2025-09,4878,transactions,ine,2025-09-30,,2026-07-25,ok,0
@@ -931,6 +938,7 @@ property_transfers,prov-29,province,2026-02,3980,transactions,ine,2026-02-28,,20
 property_transfers,prov-29,province,2026-03,4526,transactions,ine,2026-03-31,,2026-07-25,ok,0
 property_transfers,prov-29,province,2026-04,4443,transactions,ine,2026-04-30,,2026-07-25,ok,0
 property_transfers,prov-29,province,2026-05,4489,transactions,ine,2026-05-31,,2026-07-25,ok,0
+property_transfers,prov-29,province,2026-06,4989,transactions,ine,2026-06-30,,2026-08-18,ok,0
 property_transfers,prov-41,province,2007-01,4707,transactions,ine,2007-01-31,,2026-07-26,ok,0
 property_transfers,prov-41,province,2007-02,3914,transactions,ine,2007-02-28,,2026-07-26,ok,0
 property_transfers,prov-41,province,2007-03,4842,transactions,ine,2007-03-31,,2026-07-26,ok,0
@@ -1153,6 +1161,7 @@ property_transfers,prov-41,province,2025-03,3657,transactions,ine,2025-03-31,,20
 property_transfers,prov-41,province,2025-04,3214,transactions,ine,2025-04-30,,2026-07-25,ok,0
 property_transfers,prov-41,province,2025-05,3166,transactions,ine,2025-05-31,,2026-07-25,ok,0
 property_transfers,prov-41,province,2025-06,3243,transactions,ine,2025-06-30,,2026-07-25,ok,0
+property_transfers,prov-41,province,2025-06,3257,transactions,ine,2025-06-30,,2026-08-18,revised,1
 property_transfers,prov-41,province,2025-07,3523,transactions,ine,2025-07-31,,2026-07-25,ok,0
 property_transfers,prov-41,province,2025-08,2531,transactions,ine,2025-08-31,,2026-07-25,ok,0
 property_transfers,prov-41,province,2025-09,3749,transactions,ine,2025-09-30,,2026-07-25,ok,0
@@ -1164,6 +1173,7 @@ property_transfers,prov-41,province,2026-02,3698,transactions,ine,2026-02-28,,20
 property_transfers,prov-41,province,2026-03,3824,transactions,ine,2026-03-31,,2026-07-25,ok,0
 property_transfers,prov-41,province,2026-04,2923,transactions,ine,2026-04-30,,2026-07-25,ok,0
 property_transfers,prov-41,province,2026-05,3530,transactions,ine,2026-05-31,,2026-07-25,ok,0
+property_transfers,prov-41,province,2026-06,3434,transactions,ine,2026-06-30,,2026-08-18,ok,0
 property_transfers,prov-46,province,2007-01,6384,transactions,ine,2007-01-31,,2026-07-26,ok,0
 property_transfers,prov-46,province,2007-02,6528,transactions,ine,2007-02-28,,2026-07-26,ok,0
 property_transfers,prov-46,province,2007-03,6663,transactions,ine,2007-03-31,,2026-07-26,ok,0
@@ -1386,6 +1396,7 @@ property_transfers,prov-46,province,2025-03,5703,transactions,ine,2025-03-31,,20
 property_transfers,prov-46,province,2025-04,5368,transactions,ine,2025-04-30,,2026-07-25,ok,0
 property_transfers,prov-46,province,2025-05,6157,transactions,ine,2025-05-31,,2026-07-25,ok,0
 property_transfers,prov-46,province,2025-06,5842,transactions,ine,2025-06-30,,2026-07-25,ok,0
+property_transfers,prov-46,province,2025-06,5683,transactions,ine,2025-06-30,,2026-08-18,revised,1
 property_transfers,prov-46,province,2025-07,6580,transactions,ine,2025-07-31,,2026-07-25,ok,0
 property_transfers,prov-46,province,2025-08,4272,transactions,ine,2025-08-31,,2026-07-25,ok,0
 property_transfers,prov-46,province,2025-09,6720,transactions,ine,2025-09-30,,2026-07-25,ok,0
@@ -1397,6 +1408,7 @@ property_transfers,prov-46,province,2026-02,5708,transactions,ine,2026-02-28,,20
 property_transfers,prov-46,province,2026-03,6502,transactions,ine,2026-03-31,,2026-07-25,ok,0
 property_transfers,prov-46,province,2026-04,5217,transactions,ine,2026-04-30,,2026-07-25,ok,0
 property_transfers,prov-46,province,2026-05,6037,transactions,ine,2026-05-31,,2026-07-25,ok,0
+property_transfers,prov-46,province,2026-06,6276,transactions,ine,2026-06-30,,2026-08-18,ok,0
 property_transfers,prov-48,province,2007-01,2241,transactions,ine,2007-01-31,,2026-07-26,ok,0
 property_transfers,prov-48,province,2007-02,2126,transactions,ine,2007-02-28,,2026-07-26,ok,0
 property_transfers,prov-48,province,2007-03,2107,transactions,ine,2007-03-31,,2026-07-26,ok,0
@@ -1619,6 +1631,7 @@ property_transfers,prov-48,province,2025-03,2155,transactions,ine,2025-03-31,,20
 property_transfers,prov-48,province,2025-04,1681,transactions,ine,2025-04-30,,2026-07-25,ok,0
 property_transfers,prov-48,province,2025-05,2043,transactions,ine,2025-05-31,,2026-07-25,ok,0
 property_transfers,prov-48,province,2025-06,1903,transactions,ine,2025-06-30,,2026-07-25,ok,0
+property_transfers,prov-48,province,2025-06,1931,transactions,ine,2025-06-30,,2026-08-18,revised,1
 property_transfers,prov-48,province,2025-07,1802,transactions,ine,2025-07-31,,2026-07-25,ok,0
 property_transfers,prov-48,province,2025-08,1818,transactions,ine,2025-08-31,,2026-07-25,ok,0
 property_transfers,prov-48,province,2025-09,2264,transactions,ine,2025-09-30,,2026-07-25,ok,0
@@ -1630,6 +1643,7 @@ property_transfers,prov-48,province,2026-02,1928,transactions,ine,2026-02-28,,20
 property_transfers,prov-48,province,2026-03,1925,transactions,ine,2026-03-31,,2026-07-25,ok,0
 property_transfers,prov-48,province,2026-04,1744,transactions,ine,2026-04-30,,2026-07-25,ok,0
 property_transfers,prov-48,province,2026-05,1588,transactions,ine,2026-05-31,,2026-07-25,ok,0
+property_transfers,prov-48,province,2026-06,2017,transactions,ine,2026-06-30,,2026-08-18,ok,0
 property_transfers,prov-50,province,2007-01,2463,transactions,ine,2007-01-31,,2026-07-26,ok,0
 property_transfers,prov-50,province,2007-02,1905,transactions,ine,2007-02-28,,2026-07-26,ok,0
 property_transfers,prov-50,province,2007-03,2536,transactions,ine,2007-03-31,,2026-07-26,ok,0
@@ -1852,6 +1866,7 @@ property_transfers,prov-50,province,2025-03,1906,transactions,ine,2025-03-31,,20
 property_transfers,prov-50,province,2025-04,1722,transactions,ine,2025-04-30,,2026-07-25,ok,0
 property_transfers,prov-50,province,2025-05,2002,transactions,ine,2025-05-31,,2026-07-25,ok,0
 property_transfers,prov-50,province,2025-06,1802,transactions,ine,2025-06-30,,2026-07-25,ok,0
+property_transfers,prov-50,province,2025-06,1926,transactions,ine,2025-06-30,,2026-08-18,revised,1
 property_transfers,prov-50,province,2025-07,2016,transactions,ine,2025-07-31,,2026-07-25,ok,0
 property_transfers,prov-50,province,2025-08,1460,transactions,ine,2025-08-31,,2026-07-25,ok,0
 property_transfers,prov-50,province,2025-09,1909,transactions,ine,2025-09-30,,2026-07-25,ok,0
@@ -1863,3 +1878,4 @@ property_transfers,prov-50,province,2026-02,2003,transactions,ine,2026-02-28,,20
 property_transfers,prov-50,province,2026-03,2019,transactions,ine,2026-03-31,,2026-07-25,ok,0
 property_transfers,prov-50,province,2026-04,1812,transactions,ine,2026-04-30,,2026-07-25,ok,0
 property_transfers,prov-50,province,2026-05,1818,transactions,ine,2026-05-31,,2026-07-25,ok,0
+property_transfers,prov-50,province,2026-06,2076,transactions,ine,2026-06-30,,2026-08-18,ok,0

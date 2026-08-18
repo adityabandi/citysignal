@@ -23,7 +23,7 @@
   "expression": "housing_pressure > 0.75",
   "rules_version": "regimes-v3",
   "inputs": {
-   "demand_momentum": 0.0404,
+   "demand_momentum": 0.1904,
    "housing_pressure": 0.7674,
    "supply_response": 0.5433,
    "distress": 0.025
@@ -863,7 +863,7 @@
    "rule_id": "supply_squeeze",
    "label": "Pressure without supply",
    "held_by_hysteresis": false,
-   "index_demand_momentum": 0.1077,
+   "index_demand_momentum": 0.1528,
    "index_housing_pressure": 1.1757,
    "index_supply_response": -0.5915,
    "index_distress": -0.1176
@@ -873,7 +873,7 @@
    "rule_id": "supply_squeeze",
    "label": "Pressure without supply",
    "held_by_hysteresis": false,
-   "index_demand_momentum": 0.0769,
+   "index_demand_momentum": 0.0767,
    "index_housing_pressure": 1.1334,
    "index_supply_response": -0.4052,
    "index_distress": 0.0893
@@ -883,7 +883,7 @@
    "rule_id": "hot_decelerating",
    "label": "Hot but decelerating",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.0904,
+   "index_demand_momentum": -0.0906,
    "index_housing_pressure": 0.9972,
    "index_supply_response": -0.4052,
    "index_distress": -0.0875
@@ -893,7 +893,7 @@
    "rule_id": "hot_decelerating",
    "label": "Hot but decelerating",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.0505,
+   "index_demand_momentum": -0.0507,
    "index_housing_pressure": 1.1262,
    "index_supply_response": -0.4052,
    "index_distress": -0.0325
@@ -903,7 +903,7 @@
    "rule_id": "hot",
    "label": "Hot",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.1728,
+   "index_demand_momentum": -0.173,
    "index_housing_pressure": 1.0097,
    "index_supply_response": 0.5433,
    "index_distress": -0.0861
@@ -913,7 +913,7 @@
    "rule_id": "hot_decelerating",
    "label": "Hot but decelerating",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.1326,
+   "index_demand_momentum": -0.1328,
    "index_housing_pressure": 1.0164,
    "index_supply_response": 0.5433,
    "index_distress": -0.1202
@@ -923,7 +923,7 @@
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": 0.087,
+   "index_demand_momentum": 0.0868,
    "index_housing_pressure": 0.7299,
    "index_supply_response": 0.5433,
    "index_distress": -0.2936
@@ -933,7 +933,7 @@
    "rule_id": "hot_decelerating",
    "label": "Hot but decelerating",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.4302,
+   "index_demand_momentum": -0.4303,
    "index_housing_pressure": 0.9629,
    "index_supply_response": null,
    "index_distress": 0.1057
@@ -943,7 +943,7 @@
    "rule_id": "hot",
    "label": "Hot",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.2616,
+   "index_demand_momentum": -0.2618,
    "index_housing_pressure": 0.9681,
    "index_supply_response": null,
    "index_distress": 0.0476
@@ -953,7 +953,7 @@
    "rule_id": "hot",
    "label": "Hot",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.2322,
+   "index_demand_momentum": -0.2323,
    "index_housing_pressure": 1.4632,
    "index_supply_response": null,
    "index_distress": -0.0031
@@ -963,7 +963,7 @@
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.0228,
+   "index_demand_momentum": -0.023,
    "index_housing_pressure": null,
    "index_supply_response": null,
    "index_distress": 0.4041
@@ -973,7 +973,7 @@
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": -0.0985,
+   "index_demand_momentum": -0.0987,
    "index_housing_pressure": null,
    "index_supply_response": null,
    "index_distress": 0.0757
@@ -983,7 +983,7 @@
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": 0.0844,
+   "index_demand_momentum": 0.0797,
    "index_housing_pressure": null,
    "index_supply_response": null,
    "index_distress": 0.3343
@@ -993,7 +993,7 @@
    "rule_id": "neutral",
    "label": "No clear regime",
    "held_by_hysteresis": false,
-   "index_demand_momentum": 0.2204,
+   "index_demand_momentum": 0.2247,
    "index_housing_pressure": null,
    "index_supply_response": null,
    "index_distress": 0.5502
@@ -1004,7 +1004,7 @@
    "index_id": "demand_momentum",
    "label": "Demand momentum",
    "question": "Is underlying demand strengthening?",
-   "value": 0.0404,
+   "value": 0.1904,
    "period": "2026-07",
    "insufficient": false,
    "components": [
@@ -1043,10 +1043,10 @@
      "geo_id": "prov-08",
      "geo_level": "province",
      "weight": 0.8,
-     "period": "2026-05",
-     "raw": -2.9366,
-     "z": -0.2862,
-     "oriented": -0.2862,
+     "period": "2026-06",
+     "raw": 3.7608,
+     "z": 0.0618,
+     "oriented": 0.0618,
      "source_id": "ine",
      "unit": "transactions"
     },
@@ -1057,10 +1057,10 @@
      "geo_id": "apt-BCN",
      "geo_level": "airport",
      "weight": 0.6,
-     "period": "2026-06",
-     "raw": 4.8464,
-     "z": -0.244,
-     "oriented": -0.244,
+     "period": "2026-07",
+     "raw": 6.6277,
+     "z": 0.242,
+     "oriented": 0.242,
      "source_id": "eurocontrol",
      "unit": "flights"
     },
@@ -1528,59 +1528,59 @@
    },
    {
     "period": "2025-06",
-    "value": 0.1077
+    "value": 0.1528
    },
    {
     "period": "2025-07",
-    "value": 0.0769
+    "value": 0.0767
    },
    {
     "period": "2025-08",
-    "value": -0.0904
+    "value": -0.0906
    },
    {
     "period": "2025-09",
-    "value": -0.0505
+    "value": -0.0507
    },
    {
     "period": "2025-10",
-    "value": -0.1728
+    "value": -0.173
    },
    {
     "period": "2025-11",
-    "value": -0.1326
+    "value": -0.1328
    },
    {
     "period": "2025-12",
-    "value": 0.087
+    "value": 0.0868
    },
    {
     "period": "2026-01",
-    "value": -0.4302
+    "value": -0.4303
    },
    {
     "period": "2026-02",
-    "value": -0.2616
+    "value": -0.2618
    },
    {
     "period": "2026-03",
-    "value": -0.2322
+    "value": -0.2323
    },
    {
     "period": "2026-04",
-    "value": -0.0228
+    "value": -0.023
    },
    {
     "period": "2026-05",
-    "value": -0.0985
+    "value": -0.0987
    },
    {
     "period": "2026-06",
-    "value": 0.0844
+    "value": 0.0797
    },
    {
     "period": "2026-07",
-    "value": 0.2204
+    "value": 0.2247
    }
   ],
   "housing_pressure": [
@@ -2665,7 +2665,7 @@
  "desk": {
   "city": "barcelona",
   "name": "Barcelona",
-  "composite": 76,
+  "composite": 75,
   "composite_n": 6,
   "tape": [
    {
@@ -3400,15 +3400,11 @@
     "section": "housing",
     "geo_level": "province",
     "source_id": "ine",
-    "period": "2026-05",
-    "value": 9288.0,
-    "yoy": -2.9365659943567772,
-    "observations": 233,
+    "period": "2026-06",
+    "value": 9629.0,
+    "yoy": 3.7607758620689653,
+    "observations": 234,
     "series": [
-     {
-      "period": "2023-06",
-      "value": 8767.0
-     },
      {
       "period": "2023-07",
       "value": 8166.0
@@ -3503,7 +3499,7 @@
      },
      {
       "period": "2025-06",
-      "value": 8992.0
+      "value": 9280.0
      },
      {
       "period": "2025-07",
@@ -3548,9 +3544,13 @@
      {
       "period": "2026-05",
       "value": 9288.0
+     },
+     {
+      "period": "2026-06",
+      "value": 9629.0
      }
     ],
-    "z": 1.16
+    "z": 1.36
    },
    {
     "metric_id": "unemployment_registered",
@@ -4390,15 +4390,11 @@
     "section": "work",
     "geo_level": "province",
     "source_id": "dgt",
-    "period": "2026-06",
-    "value": 24622.0,
-    "yoy": 21.75246007021708,
-    "observations": 48,
+    "period": "2026-07",
+    "value": 22679.0,
+    "yoy": 2.8386160613068516,
+    "observations": 49,
     "series": [
-     {
-      "period": "2023-07",
-      "value": 15927.0
-     },
      {
       "period": "2023-08",
       "value": 10049.0
@@ -4538,13 +4534,17 @@
      {
       "period": "2026-06",
       "value": 24622.0
+     },
+     {
+      "period": "2026-07",
+      "value": 22679.0
      }
     ],
-    "percentile_raw": 100,
+    "percentile_raw": 97,
     "inverted": false,
-    "index": 100,
+    "index": 97,
     "read": "expansionary",
-    "index_prev": 94
+    "index_prev": 100
    },
    {
     "metric_id": "job_postings_index",
@@ -4909,10 +4909,10 @@
      "metric_id": "property_transfers",
      "label": "Property transfers (registered)",
      "expect": "up",
-     "z": -0.2862,
-     "raw": -2.9366,
+     "z": 0.0618,
+     "raw": 3.7608,
      "unit": "transactions",
-     "period": "2026-05",
+     "period": "2026-06",
      "geo_level": "province",
      "source_id": "ine"
     },
@@ -4931,10 +4931,10 @@
      "metric_id": "airport_flights",
      "label": "Airport flights (daily traffic)",
      "expect": "up",
-     "z": -0.244,
-     "raw": 4.8464,
+     "z": 0.242,
+     "raw": 6.6277,
      "unit": "flights",
-     "period": "2026-06",
+     "period": "2026-07",
      "geo_level": "airport",
      "source_id": "eurocontrol"
     },
@@ -5149,10 +5149,10 @@
      "metric_id": "airport_flights",
      "label": "Airport flights (daily traffic)",
      "expect": "down",
-     "z": -0.244,
-     "raw": 4.8464,
+     "z": 0.242,
+     "raw": 6.6277,
      "unit": "flights",
-     "period": "2026-06",
+     "period": "2026-07",
      "geo_level": "airport",
      "source_id": "eurocontrol"
     },
@@ -5160,10 +5160,10 @@
      "metric_id": "airport_passengers",
      "label": "Airport passengers",
      "expect": "down",
-     "z": -0.3292,
-     "raw": 3.166,
+     "z": -0.318,
+     "raw": 5.977,
      "unit": "passengers",
-     "period": "2026-06",
+     "period": "2026-07",
      "geo_level": "airport",
      "source_id": "aena"
     },
@@ -5301,10 +5301,10 @@
      "metric_id": "airport_flights",
      "label": "Airport flights (daily traffic)",
      "expect": "up",
-     "z": -0.244,
-     "raw": 4.8464,
+     "z": 0.242,
+     "raw": 6.6277,
      "unit": "flights",
-     "period": "2026-06",
+     "period": "2026-07",
      "geo_level": "airport",
      "source_id": "eurocontrol"
     },
@@ -5347,9 +5347,9 @@
    "outcome_metric": "airport_flights",
    "city": "barcelona",
    "best_lag": 10,
-   "in_sample_r": 0.7665,
-   "holdout_r": 0.5357,
-   "baseline_r": 0.0886,
+   "in_sample_r": 0.7785,
+   "holdout_r": 0.483,
+   "baseline_r": -0.0851,
    "observations": 12,
    "verdict": "leading"
   },
@@ -5446,9 +5446,9 @@
    "outcome_metric": "airport_passengers",
    "city": "barcelona",
    "best_lag": 0,
-   "in_sample_r": 0.9093,
-   "holdout_r": 0.4787,
-   "baseline_r": -0.2137,
+   "in_sample_r": 0.917,
+   "holdout_r": 0.583,
+   "baseline_r": -0.1682,
    "observations": 12,
    "verdict": "coincident"
   },
@@ -5972,8 +5972,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 588,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 595,
     "max_age_days": 120,
     "fresh": "failing"
    },
@@ -6395,8 +6395,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 588,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 595,
     "max_age_days": 120,
     "fresh": "failing"
    },
@@ -6458,8 +6458,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 223,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 230,
     "max_age_days": 120,
     "fresh": "stale"
    }
@@ -6883,8 +6883,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-08-11T06:42:54+00:00",
-    "staleness_days": 133,
+    "last_checked": "2026-08-18T06:08:46+00:00",
+    "staleness_days": 140,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -7306,8 +7306,8 @@
      "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-08-11T06:03:05+00:00",
-    "staleness_days": 223,
+    "last_checked": "2026-08-18T05:57:51+00:00",
+    "staleness_days": 230,
     "max_age_days": 60,
     "fresh": "failing"
    },
@@ -7729,8 +7729,8 @@
      "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-08-11T06:03:05+00:00",
-    "staleness_days": 223,
+    "last_checked": "2026-08-18T05:57:51+00:00",
+    "staleness_days": 230,
     "max_age_days": 60,
     "fresh": "failing"
    },
@@ -7848,8 +7848,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 133,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 140,
     "max_age_days": 120,
     "fresh": "stale"
    },
@@ -7869,18 +7869,14 @@
     "scope_label": "province",
     "is_city_level": false,
     "latest": {
-     "period": "2026-05",
-     "value": 9288.0,
-     "yoy": -2.9365659943567772
+     "period": "2026-06",
+     "value": 9629.0,
+     "yoy": 3.7607758620689653
     },
     "suspect": false,
-    "outlier_score": 0.02,
+    "outlier_score": 0.38,
     "suspect_note": null,
     "series": [
-     {
-      "period": "2018-06",
-      "value": 8632.0
-     },
      {
       "period": "2018-07",
       "value": 9403.0
@@ -8215,7 +8211,7 @@
      },
      {
       "period": "2025-06",
-      "value": 8992.0
+      "value": 9280.0
      },
      {
       "period": "2025-07",
@@ -8260,6 +8256,10 @@
      {
       "period": "2026-05",
       "value": 9288.0
+     },
+     {
+      "period": "2026-06",
+      "value": 9629.0
      }
     ],
     "source_id": "ine",
@@ -8270,9 +8270,9 @@
      "kind": "official",
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
-    "observation_end": "2026-05-31",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 72,
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -8366,8 +8366,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-08-11T06:42:54+00:00",
-    "staleness_days": 588,
+    "last_checked": "2026-08-18T06:08:46+00:00",
+    "staleness_days": 595,
     "max_age_days": 270,
     "fresh": "failing"
    }
@@ -8507,8 +8507,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-08-11T06:42:54+00:00",
-    "staleness_days": 223,
+    "last_checked": "2026-08-18T06:08:46+00:00",
+    "staleness_days": 230,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -8834,8 +8834,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-08-11T06:42:54+00:00",
-    "staleness_days": 223,
+    "last_checked": "2026-08-18T06:08:46+00:00",
+    "staleness_days": 230,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -9161,8 +9161,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-08-11T06:42:54+00:00",
-    "staleness_days": 223,
+    "last_checked": "2026-08-18T06:08:46+00:00",
+    "staleness_days": 230,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -9556,8 +9556,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-08-11T06:42:54+00:00",
-    "staleness_days": 133,
+    "last_checked": "2026-08-18T06:08:46+00:00",
+    "staleness_days": 140,
     "max_age_days": 270,
     "fresh": "fresh"
    }
@@ -9981,8 +9981,8 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-08-11T06:01:53+00:00",
-    "staleness_days": 133,
+    "last_checked": "2026-08-18T05:53:13+00:00",
+    "staleness_days": 140,
     "max_age_days": 75,
     "fresh": "stale"
    },
@@ -10404,8 +10404,8 @@
      "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:03:02+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T05:57:47+00:00",
+    "staleness_days": 49,
     "max_age_days": 60,
     "fresh": "fresh"
    },
@@ -10827,8 +10827,8 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:01:53+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T05:53:13+00:00",
+    "staleness_days": 49,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -11250,10 +11250,10 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-05-31",
-    "last_checked": "2026-08-11T06:01:53+00:00",
-    "staleness_days": 72,
+    "last_checked": "2026-08-18T05:53:13+00:00",
+    "staleness_days": 79,
     "max_age_days": 75,
-    "fresh": "fresh"
+    "fresh": "stale"
    },
    {
     "metric_id": "mortgages_count",
@@ -11673,8 +11673,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-05-31",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 72,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 79,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -12026,10 +12026,10 @@
      "docs_url": "https://www.hiringlab.org/research/jobs-postings-tracker/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:03:06+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T05:57:51+00:00",
+    "staleness_days": 18,
     "max_age_days": 14,
-    "fresh": "fresh"
+    "fresh": "stale"
    },
    {
     "metric_id": "contracts_registered",
@@ -12429,8 +12429,8 @@
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:51:43+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:19:53+00:00",
+    "staleness_days": 18,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -12450,12 +12450,12 @@
     "scope_label": "province",
     "is_city_level": false,
     "latest": {
-     "period": "2026-06",
-     "value": 24622.0,
-     "yoy": 21.75246007021708
+     "period": "2026-07",
+     "value": 22679.0,
+     "yoy": 2.8386160613068516
     },
     "suspect": false,
-    "outlier_score": 1.91,
+    "outlier_score": 0.92,
     "suspect_note": null,
     "series": [
      {
@@ -12649,6 +12649,10 @@
      {
       "period": "2026-06",
       "value": 24622.0
+     },
+     {
+      "period": "2026-07",
+      "value": 22679.0
      }
     ],
     "source_id": "dgt",
@@ -12659,9 +12663,9 @@
      "kind": "official",
      "docs_url": "https://www.dgt.es/menusecundario/dgt-en-cifras/"
     },
-    "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:02:56+00:00",
-    "staleness_days": 42,
+    "observation_end": "2026-07-31",
+    "last_checked": "2026-08-18T05:57:41+00:00",
+    "staleness_days": 18,
     "max_age_days": 90,
     "fresh": "fresh"
    },
@@ -13063,8 +13067,8 @@
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:51:43+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:19:53+00:00",
+    "staleness_days": 18,
     "max_age_days": 75,
     "fresh": "fresh"
    }
@@ -13086,12 +13090,12 @@
     "scope_label": "airport",
     "is_city_level": false,
     "latest": {
-     "period": "2026-06",
-     "value": 34290.0,
-     "yoy": 4.846353768536921
+     "period": "2026-07",
+     "value": 35893.0,
+     "yoy": 6.627651357613927
     },
     "suspect": false,
-    "outlier_score": 0.71,
+    "outlier_score": 1.08,
     "suspect_note": null,
     "series": [
      {
@@ -13261,6 +13265,10 @@
      {
       "period": "2026-06",
       "value": 34290.0
+     },
+     {
+      "period": "2026-07",
+      "value": 35893.0
      }
     ],
     "source_id": "eurocontrol",
@@ -13271,9 +13279,9 @@
      "kind": "official",
      "docs_url": "https://ansperformance.eu/data/"
     },
-    "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:03:04+00:00",
-    "staleness_days": 42,
+    "observation_end": "2026-07-31",
+    "last_checked": "2026-08-18T05:57:50+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -13293,12 +13301,12 @@
     "scope_label": "airport",
     "is_city_level": false,
     "latest": {
-     "period": "2026-06",
-     "value": 5464087.0,
-     "yoy": 3.1659587965799445
+     "period": "2026-07",
+     "value": 5871137.0,
+     "yoy": 5.977010871821531
     },
     "suspect": false,
-    "outlier_score": 0.45,
+    "outlier_score": 1.09,
     "suspect_note": null,
     "series": [
      {
@@ -13660,6 +13668,10 @@
      {
       "period": "2026-06",
       "value": 5464087.0
+     },
+     {
+      "period": "2026-07",
+      "value": 5871137.0
      }
     ],
     "source_id": "aena",
@@ -13670,9 +13682,9 @@
      "kind": "official",
      "docs_url": "https://www.aena.es/es/estadisticas/inicio.html"
     },
-    "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:01:51+00:00",
-    "staleness_days": 42,
+    "observation_end": "2026-07-31",
+    "last_checked": "2026-08-18T05:53:11+00:00",
+    "staleness_days": 18,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -13974,8 +13986,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -14085,8 +14097,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -14196,8 +14208,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -14307,8 +14319,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -14514,8 +14526,8 @@
      "docs_url": "https://www.puertos.es/es-es/estadisticas"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:51:32+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:16:47+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -14817,8 +14829,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -14862,8 +14874,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:17+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:18+00:00",
+    "staleness_days": 49,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -14905,8 +14917,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:17+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:18+00:00",
+    "staleness_days": 49,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -14948,8 +14960,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:17+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:18+00:00",
+    "staleness_days": 49,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -15019,8 +15031,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -15090,8 +15102,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:37:14+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:06:14+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -15114,7 +15126,7 @@
     "is_city_level": false,
     "latest": {
      "period": "2026-08",
-     "value": 141.0,
+     "value": 251.0,
      "yoy": null
     },
     "suspect": false,
@@ -15135,7 +15147,7 @@
      },
      {
       "period": "2026-08",
-      "value": 141.0
+      "value": 251.0
      }
     ],
     "source_id": "borme",
@@ -15147,8 +15159,8 @@
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-08-11T06:02:18+00:00",
-    "staleness_days": -20,
+    "last_checked": "2026-08-18T05:53:55+00:00",
+    "staleness_days": -13,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -15169,7 +15181,7 @@
     "is_city_level": false,
     "latest": {
      "period": "2026-08",
-     "value": 498.0,
+     "value": 801.0,
      "yoy": null
     },
     "suspect": false,
@@ -15190,7 +15202,7 @@
      },
      {
       "period": "2026-08",
-      "value": 498.0
+      "value": 801.0
      }
     ],
     "source_id": "borme",
@@ -15202,8 +15214,8 @@
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-08-11T06:02:18+00:00",
-    "staleness_days": -20,
+    "last_checked": "2026-08-18T05:53:55+00:00",
+    "staleness_days": -13,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -15453,8 +15465,8 @@
      "docs_url": "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-08-11T06:02:23+00:00",
-    "staleness_days": 133,
+    "last_checked": "2026-08-18T05:57:02+00:00",
+    "staleness_days": 140,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -15475,7 +15487,7 @@
     "is_city_level": false,
     "latest": {
      "period": "2026-08",
-     "value": 9.0,
+     "value": 16.0,
      "yoy": null
     },
     "suspect": false,
@@ -15496,7 +15508,7 @@
      },
      {
       "period": "2026-08",
-      "value": 9.0
+      "value": 16.0
      }
     ],
     "source_id": "borme",
@@ -15508,8 +15520,8 @@
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-08-11T06:02:18+00:00",
-    "staleness_days": -20,
+    "last_checked": "2026-08-18T05:53:55+00:00",
+    "staleness_days": -13,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -15855,8 +15867,8 @@
      "docs_url": "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-08-11T06:02:23+00:00",
-    "staleness_days": 133,
+    "last_checked": "2026-08-18T05:57:02+00:00",
+    "staleness_days": 140,
     "max_age_days": 210,
     "fresh": "fresh"
    }
@@ -16136,8 +16148,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:51:51+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:20:01+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -16415,8 +16427,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:51:51+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:20:01+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -16838,8 +16850,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:53:14+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:21:23+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -17117,8 +17129,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:51:51+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:20:01+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -17520,8 +17532,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:52:32+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:20:40+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -17943,8 +17955,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:53:14+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:21:23+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -18346,8 +18358,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:52:32+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:20:40+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -18749,8 +18761,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:52:32+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:20:40+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -19152,8 +19164,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:52:32+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:20:40+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -19555,8 +19567,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:52:32+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:20:40+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -19958,8 +19970,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:52:32+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:20:40+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -20381,8 +20393,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:53:14+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:21:23+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -20804,8 +20816,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:53:14+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:21:23+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -21083,8 +21095,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:51:51+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:20:01+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -21362,8 +21374,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-08-11T06:51:51+00:00",
-    "staleness_days": 42,
+    "last_checked": "2026-08-18T06:20:01+00:00",
+    "staleness_days": 49,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -21785,12 +21797,12 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-08-11T06:53:14+00:00",
-    "staleness_days": 11,
+    "last_checked": "2026-08-18T06:21:23+00:00",
+    "staleness_days": 18,
     "max_age_days": 45,
     "fresh": "fresh"
    }
   ]
  },
- "generated_at": "2026-08-11T06:53:17+00:00"
+ "generated_at": "2026-08-18T06:21:26+00:00"
 }

@@ -89,6 +89,7 @@ airport_passengers,apt-AGP,airport,2026-03,2076522,passengers,aena,2026-03-31,,2
 airport_passengers,apt-AGP,airport,2026-04,2613939,passengers,aena,2026-04-30,,2026-07-25,ok,0
 airport_passengers,apt-AGP,airport,2026-05,2748494,passengers,aena,2026-05-31,,2026-07-25,ok,0
 airport_passengers,apt-AGP,airport,2026-06,2771417,passengers,aena,2026-06-30,,2026-07-25,ok,0
+airport_passengers,apt-AGP,airport,2026-07,3046818,passengers,aena,2026-07-31,,2026-08-18,ok,0
 airport_passengers,apt-BCN,airport,2019-01,3274938,passengers,aena,2019-01-31,,2026-07-25,ok,0
 airport_passengers,apt-BCN,airport,2019-02,3267695,passengers,aena,2019-02-28,,2026-07-25,ok,0
 airport_passengers,apt-BCN,airport,2019-03,3967540,passengers,aena,2019-03-31,,2026-07-25,ok,0
@@ -179,6 +180,7 @@ airport_passengers,apt-BCN,airport,2026-03,4591353,passengers,aena,2026-03-31,,2
 airport_passengers,apt-BCN,airport,2026-04,5103478,passengers,aena,2026-04-30,,2026-07-25,ok,0
 airport_passengers,apt-BCN,airport,2026-05,5509868,passengers,aena,2026-05-31,,2026-07-25,ok,0
 airport_passengers,apt-BCN,airport,2026-06,5464087,passengers,aena,2026-06-30,,2026-07-25,ok,0
+airport_passengers,apt-BCN,airport,2026-07,5871137,passengers,aena,2026-07-31,,2026-08-18,ok,0
 airport_passengers,apt-BIO,airport,2019-01,334070,passengers,aena,2019-01-31,,2026-07-25,ok,0
 airport_passengers,apt-BIO,airport,2019-02,345890,passengers,aena,2019-02-28,,2026-07-25,ok,0
 airport_passengers,apt-BIO,airport,2019-03,441745,passengers,aena,2019-03-31,,2026-07-25,ok,0
@@ -269,6 +271,7 @@ airport_passengers,apt-BIO,airport,2026-03,561161,passengers,aena,2026-03-31,,20
 airport_passengers,apt-BIO,airport,2026-04,689514,passengers,aena,2026-04-30,,2026-07-25,ok,0
 airport_passengers,apt-BIO,airport,2026-05,741855,passengers,aena,2026-05-31,,2026-07-25,ok,0
 airport_passengers,apt-BIO,airport,2026-06,735286,passengers,aena,2026-06-30,,2026-07-25,ok,0
+airport_passengers,apt-BIO,airport,2026-07,806402,passengers,aena,2026-07-31,,2026-08-18,ok,0
 airport_passengers,apt-MAD,airport,2019-01,4386862,passengers,aena,2019-01-31,,2026-07-25,ok,0
 airport_passengers,apt-MAD,airport,2019-02,4149603,passengers,aena,2019-02-28,,2026-07-25,ok,0
 airport_passengers,apt-MAD,airport,2019-03,4907489,passengers,aena,2019-03-31,,2026-07-25,ok,0
@@ -359,6 +362,7 @@ airport_passengers,apt-MAD,airport,2026-03,5732793,passengers,aena,2026-03-31,,2
 airport_passengers,apt-MAD,airport,2026-04,5776833,passengers,aena,2026-04-30,,2026-07-25,ok,0
 airport_passengers,apt-MAD,airport,2026-05,6007105,passengers,aena,2026-05-31,,2026-07-25,ok,0
 airport_passengers,apt-MAD,airport,2026-06,6087384,passengers,aena,2026-06-30,,2026-07-25,ok,0
+airport_passengers,apt-MAD,airport,2026-07,6466823,passengers,aena,2026-07-31,,2026-08-18,ok,0
 airport_passengers,apt-PMI,airport,2019-01,839130,passengers,aena,2019-01-31,,2026-07-25,ok,0
 airport_passengers,apt-PMI,airport,2019-02,896042,passengers,aena,2019-02-28,,2026-07-25,ok,0
 airport_passengers,apt-PMI,airport,2019-03,1301515,passengers,aena,2019-03-31,,2026-07-25,ok,0
@@ -449,6 +453,7 @@ airport_passengers,apt-PMI,airport,2026-03,1594849,passengers,aena,2026-03-31,,2
 airport_passengers,apt-PMI,airport,2026-04,3089279,passengers,aena,2026-04-30,,2026-07-25,ok,0
 airport_passengers,apt-PMI,airport,2026-05,4009687,passengers,aena,2026-05-31,,2026-07-25,ok,0
 airport_passengers,apt-PMI,airport,2026-06,4297092,passengers,aena,2026-06-30,,2026-07-25,ok,0
+airport_passengers,apt-PMI,airport,2026-07,4696690,passengers,aena,2026-07-31,,2026-08-18,ok,0
 airport_passengers,apt-SVQ,airport,2019-01,522375,passengers,aena,2019-01-31,,2026-07-25,ok,0
 airport_passengers,apt-SVQ,airport,2019-02,521770,passengers,aena,2019-02-28,,2026-07-25,ok,0
 airport_passengers,apt-SVQ,airport,2019-03,641110,passengers,aena,2019-03-31,,2026-07-25,ok,0
@@ -539,6 +544,7 @@ airport_passengers,apt-SVQ,airport,2026-03,952998,passengers,aena,2026-03-31,,20
 airport_passengers,apt-SVQ,airport,2026-04,961311,passengers,aena,2026-04-30,,2026-07-25,ok,0
 airport_passengers,apt-SVQ,airport,2026-05,967621,passengers,aena,2026-05-31,,2026-07-25,ok,0
 airport_passengers,apt-SVQ,airport,2026-06,886407,passengers,aena,2026-06-30,,2026-07-25,ok,0
+airport_passengers,apt-SVQ,airport,2026-07,828735,passengers,aena,2026-07-31,,2026-08-18,ok,0
 airport_passengers,apt-VLC,airport,2019-01,543595,passengers,aena,2019-01-31,,2026-07-25,ok,0
 airport_passengers,apt-VLC,airport,2019-02,524073,passengers,aena,2019-02-28,,2026-07-25,ok,0
 airport_passengers,apt-VLC,airport,2019-03,668421,passengers,aena,2019-03-31,,2026-07-25,ok,0
@@ -629,6 +635,7 @@ airport_passengers,apt-VLC,airport,2026-03,1007297,passengers,aena,2026-03-31,,2
 airport_passengers,apt-VLC,airport,2026-04,1150985,passengers,aena,2026-04-30,,2026-07-25,ok,0
 airport_passengers,apt-VLC,airport,2026-05,1178277,passengers,aena,2026-05-31,,2026-07-25,ok,0
 airport_passengers,apt-VLC,airport,2026-06,1174452,passengers,aena,2026-06-30,,2026-07-25,ok,0
+airport_passengers,apt-VLC,airport,2026-07,1258225,passengers,aena,2026-07-31,,2026-08-18,ok,0
 airport_passengers,apt-ZAZ,airport,2019-01,29253,passengers,aena,2019-01-31,,2026-07-25,ok,0
 airport_passengers,apt-ZAZ,airport,2019-02,26871,passengers,aena,2019-02-28,,2026-07-25,ok,0
 airport_passengers,apt-ZAZ,airport,2019-03,35007,passengers,aena,2019-03-31,,2026-07-25,ok,0
@@ -719,3 +726,4 @@ airport_passengers,apt-ZAZ,airport,2026-03,53833,passengers,aena,2026-03-31,,202
 airport_passengers,apt-ZAZ,airport,2026-04,63063,passengers,aena,2026-04-30,,2026-07-25,ok,0
 airport_passengers,apt-ZAZ,airport,2026-05,61338,passengers,aena,2026-05-31,,2026-07-25,ok,0
 airport_passengers,apt-ZAZ,airport,2026-06,59336,passengers,aena,2026-06-30,,2026-07-25,ok,0
+airport_passengers,apt-ZAZ,airport,2026-07,62823,passengers,aena,2026-07-31,,2026-08-18,ok,0
