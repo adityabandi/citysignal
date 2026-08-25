@@ -54,6 +54,7 @@ hotel_adr,mun-07040,municipality,2025-04,128.06,eur,ine,2025-04-30,,2026-07-25,o
 hotel_adr,mun-07040,municipality,2025-05,135.86,eur,ine,2025-05-31,,2026-07-25,ok,0
 hotel_adr,mun-07040,municipality,2025-06,160.75,eur,ine,2025-06-30,,2026-07-25,ok,0
 hotel_adr,mun-07040,municipality,2025-07,169.14,eur,ine,2025-07-31,,2026-07-25,ok,0
+hotel_adr,mun-07040,municipality,2025-07,174.7,eur,ine,2025-07-31,,2026-08-25,revised,1
 hotel_adr,mun-07040,municipality,2025-08,181.16,eur,ine,2025-08-31,,2026-07-25,ok,0
 hotel_adr,mun-07040,municipality,2025-09,172.07,eur,ine,2025-09-30,,2026-07-25,ok,0
 hotel_adr,mun-07040,municipality,2025-10,136.05,eur,ine,2025-10-31,,2026-07-25,ok,0
@@ -65,6 +66,7 @@ hotel_adr,mun-07040,municipality,2026-03,106.42,eur,ine,2026-03-31,,2026-07-25,o
 hotel_adr,mun-07040,municipality,2026-04,131.69,eur,ine,2026-04-30,,2026-07-25,ok,0
 hotel_adr,mun-07040,municipality,2026-05,152.92,eur,ine,2026-05-31,,2026-07-25,ok,0
 hotel_adr,mun-07040,municipality,2026-06,173.8,eur,ine,2026-06-30,,2026-07-25,ok,0
+hotel_adr,mun-07040,municipality,2026-07,193.99,eur,ine,2026-07-31,,2026-08-25,ok,0
 hotel_adr,mun-08019,municipality,2021-01,73.76,eur,ine,2021-01-31,,2026-07-26,ok,0
 hotel_adr,mun-08019,municipality,2021-02,82.16,eur,ine,2021-02-28,,2026-07-26,ok,0
 hotel_adr,mun-08019,municipality,2021-03,92.1,eur,ine,2021-03-31,,2026-07-26,ok,0
@@ -120,6 +122,7 @@ hotel_adr,mun-08019,municipality,2025-04,177.87,eur,ine,2025-04-30,,2026-07-25,o
 hotel_adr,mun-08019,municipality,2025-05,231.81,eur,ine,2025-05-31,,2026-07-25,ok,0
 hotel_adr,mun-08019,municipality,2025-06,211.95,eur,ine,2025-06-30,,2026-07-25,ok,0
 hotel_adr,mun-08019,municipality,2025-07,182.08,eur,ine,2025-07-31,,2026-07-25,ok,0
+hotel_adr,mun-08019,municipality,2025-07,183.33,eur,ine,2025-07-31,,2026-08-25,revised,1
 hotel_adr,mun-08019,municipality,2025-08,167.38,eur,ine,2025-08-31,,2026-07-25,ok,0
 hotel_adr,mun-08019,municipality,2025-09,198.64,eur,ine,2025-09-30,,2026-07-25,ok,0
 hotel_adr,mun-08019,municipality,2025-10,190.29,eur,ine,2025-10-31,,2026-07-25,ok,0
@@ -131,6 +134,7 @@ hotel_adr,mun-08019,municipality,2026-03,188.47,eur,ine,2026-03-31,,2026-07-25,o
 hotel_adr,mun-08019,municipality,2026-04,193.14,eur,ine,2026-04-30,,2026-07-25,ok,0
 hotel_adr,mun-08019,municipality,2026-05,223.37,eur,ine,2026-05-31,,2026-07-25,ok,0
 hotel_adr,mun-08019,municipality,2026-06,214.34,eur,ine,2026-06-30,,2026-07-25,ok,0
+hotel_adr,mun-08019,municipality,2026-07,186.09,eur,ine,2026-07-31,,2026-08-25,ok,0
 hotel_adr,mun-28079,municipality,2021-01,59.31,eur,ine,2021-01-31,,2026-07-26,ok,0
 hotel_adr,mun-28079,municipality,2021-02,62.95,eur,ine,2021-02-28,,2026-07-26,ok,0
 hotel_adr,mun-28079,municipality,2021-03,66.07,eur,ine,2021-03-31,,2026-07-26,ok,0
@@ -186,6 +190,7 @@ hotel_adr,mun-28079,municipality,2025-04,181.58,eur,ine,2025-04-30,,2026-07-25,o
 hotel_adr,mun-28079,municipality,2025-05,189.57,eur,ine,2025-05-31,,2026-07-25,ok,0
 hotel_adr,mun-28079,municipality,2025-06,176.99,eur,ine,2025-06-30,,2026-07-25,ok,0
 hotel_adr,mun-28079,municipality,2025-07,149.99,eur,ine,2025-07-31,,2026-07-25,ok,0
+hotel_adr,mun-28079,municipality,2025-07,152.59,eur,ine,2025-07-31,,2026-08-25,revised,1
 hotel_adr,mun-28079,municipality,2025-08,137.83,eur,ine,2025-08-31,,2026-07-25,ok,0
 hotel_adr,mun-28079,municipality,2025-09,187.35,eur,ine,2025-09-30,,2026-07-25,ok,0
 hotel_adr,mun-28079,municipality,2025-10,202.87,eur,ine,2025-10-31,,2026-07-25,ok,0
@@ -197,6 +202,7 @@ hotel_adr,mun-28079,municipality,2026-03,164.38,eur,ine,2026-03-31,,2026-07-25,o
 hotel_adr,mun-28079,municipality,2026-04,185.8,eur,ine,2026-04-30,,2026-07-25,ok,0
 hotel_adr,mun-28079,municipality,2026-05,192.68,eur,ine,2026-05-31,,2026-07-25,ok,0
 hotel_adr,mun-28079,municipality,2026-06,186.17,eur,ine,2026-06-30,,2026-07-25,ok,0
+hotel_adr,mun-28079,municipality,2026-07,151.93,eur,ine,2026-07-31,,2026-08-25,ok,0
 hotel_adr,mun-29067,municipality,2021-01,67.83,eur,ine,2021-01-31,,2026-07-26,ok,0
 hotel_adr,mun-29067,municipality,2021-02,64.18,eur,ine,2021-02-28,,2026-07-26,ok,0
 hotel_adr,mun-29067,municipality,2021-03,69.19,eur,ine,2021-03-31,,2026-07-26,ok,0
@@ -252,6 +258,7 @@ hotel_adr,mun-29067,municipality,2025-04,147.71,eur,ine,2025-04-30,,2026-07-25,o
 hotel_adr,mun-29067,municipality,2025-05,152.39,eur,ine,2025-05-31,,2026-07-25,ok,0
 hotel_adr,mun-29067,municipality,2025-06,144.36,eur,ine,2025-06-30,,2026-07-25,ok,0
 hotel_adr,mun-29067,municipality,2025-07,135.34,eur,ine,2025-07-31,,2026-07-25,ok,0
+hotel_adr,mun-29067,municipality,2025-07,133.91,eur,ine,2025-07-31,,2026-08-25,revised,1
 hotel_adr,mun-29067,municipality,2025-08,150.46,eur,ine,2025-08-31,,2026-07-25,ok,0
 hotel_adr,mun-29067,municipality,2025-09,150.26,eur,ine,2025-09-30,,2026-07-25,ok,0
 hotel_adr,mun-29067,municipality,2025-10,146.05,eur,ine,2025-10-31,,2026-07-25,ok,0
@@ -263,6 +270,7 @@ hotel_adr,mun-29067,municipality,2026-03,133.02,eur,ine,2026-03-31,,2026-07-25,o
 hotel_adr,mun-29067,municipality,2026-04,153.55,eur,ine,2026-04-30,,2026-07-25,ok,0
 hotel_adr,mun-29067,municipality,2026-05,159.59,eur,ine,2026-05-31,,2026-07-25,ok,0
 hotel_adr,mun-29067,municipality,2026-06,154.96,eur,ine,2026-06-30,,2026-07-25,ok,0
+hotel_adr,mun-29067,municipality,2026-07,162.26,eur,ine,2026-07-31,,2026-08-25,ok,0
 hotel_adr,mun-41091,municipality,2021-01,51.81,eur,ine,2021-01-31,,2026-07-26,ok,0
 hotel_adr,mun-41091,municipality,2021-02,56.01,eur,ine,2021-02-28,,2026-07-26,ok,0
 hotel_adr,mun-41091,municipality,2021-03,57.66,eur,ine,2021-03-31,,2026-07-26,ok,0
@@ -318,6 +326,7 @@ hotel_adr,mun-41091,municipality,2025-04,181.36,eur,ine,2025-04-30,,2026-07-25,o
 hotel_adr,mun-41091,municipality,2025-05,183.43,eur,ine,2025-05-31,,2026-07-25,ok,0
 hotel_adr,mun-41091,municipality,2025-06,142.6,eur,ine,2025-06-30,,2026-07-25,ok,0
 hotel_adr,mun-41091,municipality,2025-07,98.93,eur,ine,2025-07-31,,2026-07-25,ok,0
+hotel_adr,mun-41091,municipality,2025-07,103.13,eur,ine,2025-07-31,,2026-08-25,revised,1
 hotel_adr,mun-41091,municipality,2025-08,88.69,eur,ine,2025-08-31,,2026-07-25,ok,0
 hotel_adr,mun-41091,municipality,2025-09,141.6,eur,ine,2025-09-30,,2026-07-25,ok,0
 hotel_adr,mun-41091,municipality,2025-10,161,eur,ine,2025-10-31,,2026-07-25,ok,0
@@ -329,6 +338,7 @@ hotel_adr,mun-41091,municipality,2026-03,143.7,eur,ine,2026-03-31,,2026-07-25,ok
 hotel_adr,mun-41091,municipality,2026-04,204.57,eur,ine,2026-04-30,,2026-07-25,ok,0
 hotel_adr,mun-41091,municipality,2026-05,177.19,eur,ine,2026-05-31,,2026-07-25,ok,0
 hotel_adr,mun-41091,municipality,2026-06,140.05,eur,ine,2026-06-30,,2026-07-25,ok,0
+hotel_adr,mun-41091,municipality,2026-07,101.71,eur,ine,2026-07-31,,2026-08-25,ok,0
 hotel_adr,mun-46250,municipality,2021-01,56.21,eur,ine,2021-01-31,,2026-07-26,ok,0
 hotel_adr,mun-46250,municipality,2021-02,54.35,eur,ine,2021-02-28,,2026-07-26,ok,0
 hotel_adr,mun-46250,municipality,2021-03,59.45,eur,ine,2021-03-31,,2026-07-26,ok,0
@@ -384,6 +394,7 @@ hotel_adr,mun-46250,municipality,2025-04,123.6,eur,ine,2025-04-30,,2026-07-25,ok
 hotel_adr,mun-46250,municipality,2025-05,134.22,eur,ine,2025-05-31,,2026-07-25,ok,0
 hotel_adr,mun-46250,municipality,2025-06,131.04,eur,ine,2025-06-30,,2026-07-25,ok,0
 hotel_adr,mun-46250,municipality,2025-07,120.96,eur,ine,2025-07-31,,2026-07-25,ok,0
+hotel_adr,mun-46250,municipality,2025-07,119.78,eur,ine,2025-07-31,,2026-08-25,revised,1
 hotel_adr,mun-46250,municipality,2025-08,120.69,eur,ine,2025-08-31,,2026-07-25,ok,0
 hotel_adr,mun-46250,municipality,2025-09,127.23,eur,ine,2025-09-30,,2026-07-25,ok,0
 hotel_adr,mun-46250,municipality,2025-10,131.26,eur,ine,2025-10-31,,2026-07-25,ok,0
@@ -395,6 +406,7 @@ hotel_adr,mun-46250,municipality,2026-03,120.13,eur,ine,2026-03-31,,2026-07-25,o
 hotel_adr,mun-46250,municipality,2026-04,129.51,eur,ine,2026-04-30,,2026-07-25,ok,0
 hotel_adr,mun-46250,municipality,2026-05,137.31,eur,ine,2026-05-31,,2026-07-25,ok,0
 hotel_adr,mun-46250,municipality,2026-06,135.45,eur,ine,2026-06-30,,2026-07-25,ok,0
+hotel_adr,mun-46250,municipality,2026-07,135.57,eur,ine,2026-07-31,,2026-08-25,ok,0
 hotel_adr,mun-48020,municipality,2021-01,57.06,eur,ine,2021-01-31,,2026-07-26,ok,0
 hotel_adr,mun-48020,municipality,2021-02,56.11,eur,ine,2021-02-28,,2026-07-26,ok,0
 hotel_adr,mun-48020,municipality,2021-03,57.28,eur,ine,2021-03-31,,2026-07-26,ok,0
@@ -450,6 +462,7 @@ hotel_adr,mun-48020,municipality,2025-04,110.35,eur,ine,2025-04-30,,2026-07-25,o
 hotel_adr,mun-48020,municipality,2025-05,157.3,eur,ine,2025-05-31,,2026-07-25,ok,0
 hotel_adr,mun-48020,municipality,2025-06,137.32,eur,ine,2025-06-30,,2026-07-25,ok,0
 hotel_adr,mun-48020,municipality,2025-07,127.04,eur,ine,2025-07-31,,2026-07-25,ok,0
+hotel_adr,mun-48020,municipality,2025-07,126.56,eur,ine,2025-07-31,,2026-08-25,revised,1
 hotel_adr,mun-48020,municipality,2025-08,139.88,eur,ine,2025-08-31,,2026-07-25,ok,0
 hotel_adr,mun-48020,municipality,2025-09,139.66,eur,ine,2025-09-30,,2026-07-25,ok,0
 hotel_adr,mun-48020,municipality,2025-10,129.3,eur,ine,2025-10-31,,2026-07-25,ok,0
@@ -461,6 +474,7 @@ hotel_adr,mun-48020,municipality,2026-03,100.33,eur,ine,2026-03-31,,2026-07-25,o
 hotel_adr,mun-48020,municipality,2026-04,113.2,eur,ine,2026-04-30,,2026-07-25,ok,0
 hotel_adr,mun-48020,municipality,2026-05,165.57,eur,ine,2026-05-31,,2026-07-25,ok,0
 hotel_adr,mun-48020,municipality,2026-06,139.21,eur,ine,2026-06-30,,2026-07-25,ok,0
+hotel_adr,mun-48020,municipality,2026-07,131.2,eur,ine,2026-07-31,,2026-08-25,ok,0
 hotel_adr,mun-50297,municipality,2021-01,44.68,eur,ine,2021-01-31,,2026-07-26,ok,0
 hotel_adr,mun-50297,municipality,2021-02,47.73,eur,ine,2021-02-28,,2026-07-26,ok,0
 hotel_adr,mun-50297,municipality,2021-03,48.01,eur,ine,2021-03-31,,2026-07-26,ok,0
@@ -516,6 +530,7 @@ hotel_adr,mun-50297,municipality,2025-04,79,eur,ine,2025-04-30,,2026-07-25,ok,0
 hotel_adr,mun-50297,municipality,2025-05,85.5,eur,ine,2025-05-31,,2026-07-25,ok,0
 hotel_adr,mun-50297,municipality,2025-06,77.4,eur,ine,2025-06-30,,2026-07-25,ok,0
 hotel_adr,mun-50297,municipality,2025-07,67.31,eur,ine,2025-07-31,,2026-07-25,ok,0
+hotel_adr,mun-50297,municipality,2025-07,66.73,eur,ine,2025-07-31,,2026-08-25,revised,1
 hotel_adr,mun-50297,municipality,2025-08,66.53,eur,ine,2025-08-31,,2026-07-25,ok,0
 hotel_adr,mun-50297,municipality,2025-09,81.38,eur,ine,2025-09-30,,2026-07-25,ok,0
 hotel_adr,mun-50297,municipality,2025-10,89.61,eur,ine,2025-10-31,,2026-07-25,ok,0
@@ -527,3 +542,4 @@ hotel_adr,mun-50297,municipality,2026-03,80.52,eur,ine,2026-03-31,,2026-07-25,ok
 hotel_adr,mun-50297,municipality,2026-04,91.45,eur,ine,2026-04-30,,2026-07-25,ok,0
 hotel_adr,mun-50297,municipality,2026-05,84.24,eur,ine,2026-05-31,,2026-07-25,ok,0
 hotel_adr,mun-50297,municipality,2026-06,78.12,eur,ine,2026-06-30,,2026-07-25,ok,0
+hotel_adr,mun-50297,municipality,2026-07,71.46,eur,ine,2026-07-31,,2026-08-25,ok,0

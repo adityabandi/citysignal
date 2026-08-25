@@ -41,6 +41,7 @@ port_passengers,port-AGP,port,2026-03,64413,passengers,puertos,2026-03-31,,2026-
 port_passengers,port-AGP,port,2026-04,69527,passengers,puertos,2026-04-30,,2026-07-25,ok,0
 port_passengers,port-AGP,port,2026-05,77111,passengers,puertos,2026-05-31,,2026-07-25,ok,0
 port_passengers,port-AGP,port,2026-06,60827,passengers,puertos,2026-06-30,,2026-07-25,ok,0
+port_passengers,port-AGP,port,2026-07,110461,passengers,puertos,2026-07-31,,2026-08-25,ok,0
 port_passengers,port-BCN,port,2023-01,163275,passengers,puertos,2023-01-31,,2026-07-25,ok,0
 port_passengers,port-BCN,port,2023-02,136253,passengers,puertos,2023-02-28,,2026-07-25,ok,0
 port_passengers,port-BCN,port,2023-03,217051,passengers,puertos,2023-03-31,,2026-07-25,ok,0
@@ -83,6 +84,7 @@ port_passengers,port-BCN,port,2026-03,318321,passengers,puertos,2026-03-31,,2026
 port_passengers,port-BCN,port,2026-04,469626,passengers,puertos,2026-04-30,,2026-07-25,ok,0
 port_passengers,port-BCN,port,2026-05,625711,passengers,puertos,2026-05-31,,2026-07-25,ok,0
 port_passengers,port-BCN,port,2026-06,648842,passengers,puertos,2026-06-30,,2026-07-25,ok,0
+port_passengers,port-BCN,port,2026-07,788449,passengers,puertos,2026-07-31,,2026-08-25,ok,0
 port_passengers,port-BIO,port,2023-01,2776,passengers,puertos,2023-01-31,,2026-07-25,ok,0
 port_passengers,port-BIO,port,2023-02,2208,passengers,puertos,2023-02-28,,2026-07-25,ok,0
 port_passengers,port-BIO,port,2023-03,3883,passengers,puertos,2023-03-31,,2026-07-25,ok,0
@@ -125,6 +127,7 @@ port_passengers,port-BIO,port,2026-03,11130,passengers,puertos,2026-03-31,,2026-
 port_passengers,port-BIO,port,2026-04,26190,passengers,puertos,2026-04-30,,2026-07-25,ok,0
 port_passengers,port-BIO,port,2026-05,33582,passengers,puertos,2026-05-31,,2026-07-25,ok,0
 port_passengers,port-BIO,port,2026-06,50394,passengers,puertos,2026-06-30,,2026-07-25,ok,0
+port_passengers,port-BIO,port,2026-07,58537,passengers,puertos,2026-07-31,,2026-08-25,ok,0
 port_passengers,port-SVQ,port,2023-01,0,passengers,puertos,2023-01-31,,2026-07-25,ok,0
 port_passengers,port-SVQ,port,2023-02,860,passengers,puertos,2023-02-28,,2026-07-25,ok,0
 port_passengers,port-SVQ,port,2023-03,2447,passengers,puertos,2023-03-31,,2026-07-25,ok,0
@@ -167,6 +170,7 @@ port_passengers,port-SVQ,port,2026-03,3103,passengers,puertos,2026-03-31,,2026-0
 port_passengers,port-SVQ,port,2026-04,2848,passengers,puertos,2026-04-30,,2026-07-25,ok,0
 port_passengers,port-SVQ,port,2026-05,2278,passengers,puertos,2026-05-31,,2026-07-25,ok,0
 port_passengers,port-SVQ,port,2026-06,2294,passengers,puertos,2026-06-30,,2026-07-25,ok,0
+port_passengers,port-SVQ,port,2026-07,677,passengers,puertos,2026-07-31,,2026-08-25,ok,0
 port_passengers,port-VLC,port,2023-01,51663,passengers,puertos,2023-01-31,,2026-07-25,ok,0
 port_passengers,port-VLC,port,2023-02,45080,passengers,puertos,2023-02-28,,2026-07-25,ok,0
 port_passengers,port-VLC,port,2023-03,58374,passengers,puertos,2023-03-31,,2026-07-25,ok,0
@@ -209,3 +213,4 @@ port_passengers,port-VLC,port,2026-03,76474,passengers,puertos,2026-03-31,,2026-
 port_passengers,port-VLC,port,2026-04,122360,passengers,puertos,2026-04-30,,2026-07-25,ok,0
 port_passengers,port-VLC,port,2026-05,125935,passengers,puertos,2026-05-31,,2026-07-25,ok,0
 port_passengers,port-VLC,port,2026-06,156116,passengers,puertos,2026-06-30,,2026-07-25,ok,0
+port_passengers,port-VLC,port,2026-07,133299,passengers,puertos,2026-07-31,,2026-08-25,ok,0

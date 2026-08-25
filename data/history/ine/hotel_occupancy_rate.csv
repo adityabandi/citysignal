@@ -6,6 +6,7 @@ hotel_occupancy_rate,mun-07040,municipality,2025-04,73.9,percent,ine,2025-04-30,
 hotel_occupancy_rate,mun-07040,municipality,2025-05,75.83,percent,ine,2025-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-07040,municipality,2025-06,85.43,percent,ine,2025-06-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-07040,municipality,2025-07,89.05,percent,ine,2025-07-31,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-07040,municipality,2025-07,89.36,percent,ine,2025-07-31,,2026-08-25,revised,1
 hotel_occupancy_rate,mun-07040,municipality,2025-08,91.7,percent,ine,2025-08-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-07040,municipality,2025-09,82.54,percent,ine,2025-09-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-07040,municipality,2025-10,70.65,percent,ine,2025-10-31,,2026-07-25,ok,0
@@ -17,6 +18,7 @@ hotel_occupancy_rate,mun-07040,municipality,2026-03,59.58,percent,ine,2026-03-31
 hotel_occupancy_rate,mun-07040,municipality,2026-04,74.42,percent,ine,2026-04-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-07040,municipality,2026-05,77.41,percent,ine,2026-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-07040,municipality,2026-06,84.88,percent,ine,2026-06-30,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-07040,municipality,2026-07,89.43,percent,ine,2026-07-31,,2026-08-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2025-01,51.63,percent,ine,2025-01-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2025-02,60.31,percent,ine,2025-02-28,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2025-03,62.99,percent,ine,2025-03-31,,2026-07-25,ok,0
@@ -24,6 +26,7 @@ hotel_occupancy_rate,mun-08019,municipality,2025-04,72.42,percent,ine,2025-04-30
 hotel_occupancy_rate,mun-08019,municipality,2025-05,71.48,percent,ine,2025-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2025-06,72.81,percent,ine,2025-06-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2025-07,75.51,percent,ine,2025-07-31,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-08019,municipality,2025-07,75.8,percent,ine,2025-07-31,,2026-08-25,revised,1
 hotel_occupancy_rate,mun-08019,municipality,2025-08,79.09,percent,ine,2025-08-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2025-09,70.11,percent,ine,2025-09-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2025-10,70.92,percent,ine,2025-10-31,,2026-07-25,ok,0
@@ -35,6 +38,7 @@ hotel_occupancy_rate,mun-08019,municipality,2026-03,64.39,percent,ine,2026-03-31
 hotel_occupancy_rate,mun-08019,municipality,2026-04,72.08,percent,ine,2026-04-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2026-05,72.38,percent,ine,2026-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-08019,municipality,2026-06,71.11,percent,ine,2026-06-30,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-08019,municipality,2026-07,76.97,percent,ine,2026-07-31,,2026-08-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2025-01,53.03,percent,ine,2025-01-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2025-02,57.39,percent,ine,2025-02-28,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2025-03,60.26,percent,ine,2025-03-31,,2026-07-25,ok,0
@@ -42,6 +46,7 @@ hotel_occupancy_rate,mun-28079,municipality,2025-04,66.68,percent,ine,2025-04-30
 hotel_occupancy_rate,mun-28079,municipality,2025-05,66.5,percent,ine,2025-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2025-06,64.53,percent,ine,2025-06-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2025-07,61.92,percent,ine,2025-07-31,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-28079,municipality,2025-07,61.68,percent,ine,2025-07-31,,2026-08-25,revised,1
 hotel_occupancy_rate,mun-28079,municipality,2025-08,57.23,percent,ine,2025-08-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2025-09,64.8,percent,ine,2025-09-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2025-10,68.69,percent,ine,2025-10-31,,2026-07-25,ok,0
@@ -53,6 +58,7 @@ hotel_occupancy_rate,mun-28079,municipality,2026-03,59.48,percent,ine,2026-03-31
 hotel_occupancy_rate,mun-28079,municipality,2026-04,65.94,percent,ine,2026-04-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2026-05,65.05,percent,ine,2026-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-28079,municipality,2026-06,64.24,percent,ine,2026-06-30,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-28079,municipality,2026-07,59.95,percent,ine,2026-07-31,,2026-08-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2025-01,51.45,percent,ine,2025-01-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2025-02,61.15,percent,ine,2025-02-28,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2025-03,64.14,percent,ine,2025-03-31,,2026-07-25,ok,0
@@ -60,6 +66,7 @@ hotel_occupancy_rate,mun-29067,municipality,2025-04,70.36,percent,ine,2025-04-30
 hotel_occupancy_rate,mun-29067,municipality,2025-05,69.17,percent,ine,2025-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2025-06,69.37,percent,ine,2025-06-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2025-07,75.23,percent,ine,2025-07-31,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-29067,municipality,2025-07,73.88,percent,ine,2025-07-31,,2026-08-25,revised,1
 hotel_occupancy_rate,mun-29067,municipality,2025-08,83.29,percent,ine,2025-08-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2025-09,75.94,percent,ine,2025-09-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2025-10,71.39,percent,ine,2025-10-31,,2026-07-25,ok,0
@@ -71,6 +78,7 @@ hotel_occupancy_rate,mun-29067,municipality,2026-03,67.17,percent,ine,2026-03-31
 hotel_occupancy_rate,mun-29067,municipality,2026-04,74.04,percent,ine,2026-04-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2026-05,68.48,percent,ine,2026-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-29067,municipality,2026-06,71.54,percent,ine,2026-06-30,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-29067,municipality,2026-07,80.99,percent,ine,2026-07-31,,2026-08-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2025-01,55.07,percent,ine,2025-01-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2025-02,65.72,percent,ine,2025-02-28,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2025-03,70.65,percent,ine,2025-03-31,,2026-07-25,ok,0
@@ -78,6 +86,7 @@ hotel_occupancy_rate,mun-41091,municipality,2025-04,74.68,percent,ine,2025-04-30
 hotel_occupancy_rate,mun-41091,municipality,2025-05,74.2,percent,ine,2025-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2025-06,65.9,percent,ine,2025-06-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2025-07,57.93,percent,ine,2025-07-31,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-41091,municipality,2025-07,57.42,percent,ine,2025-07-31,,2026-08-25,revised,1
 hotel_occupancy_rate,mun-41091,municipality,2025-08,62.09,percent,ine,2025-08-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2025-09,70.57,percent,ine,2025-09-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2025-10,75.44,percent,ine,2025-10-31,,2026-07-25,ok,0
@@ -89,6 +98,7 @@ hotel_occupancy_rate,mun-41091,municipality,2026-03,72.99,percent,ine,2026-03-31
 hotel_occupancy_rate,mun-41091,municipality,2026-04,76.91,percent,ine,2026-04-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2026-05,74.55,percent,ine,2026-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-41091,municipality,2026-06,64.6,percent,ine,2026-06-30,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-41091,municipality,2026-07,60.17,percent,ine,2026-07-31,,2026-08-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2025-01,48.16,percent,ine,2025-01-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2025-02,57.5,percent,ine,2025-02-28,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2025-03,59.8,percent,ine,2025-03-31,,2026-07-25,ok,0
@@ -96,6 +106,7 @@ hotel_occupancy_rate,mun-46250,municipality,2025-04,68.34,percent,ine,2025-04-30
 hotel_occupancy_rate,mun-46250,municipality,2025-05,66.71,percent,ine,2025-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2025-06,67.99,percent,ine,2025-06-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2025-07,73.49,percent,ine,2025-07-31,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-46250,municipality,2025-07,73.18,percent,ine,2025-07-31,,2026-08-25,revised,1
 hotel_occupancy_rate,mun-46250,municipality,2025-08,80.02,percent,ine,2025-08-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2025-09,70.93,percent,ine,2025-09-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2025-10,68.9,percent,ine,2025-10-31,,2026-07-25,ok,0
@@ -107,6 +118,7 @@ hotel_occupancy_rate,mun-46250,municipality,2026-03,68.11,percent,ine,2026-03-31
 hotel_occupancy_rate,mun-46250,municipality,2026-04,75.33,percent,ine,2026-04-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2026-05,75.28,percent,ine,2026-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-46250,municipality,2026-06,73.6,percent,ine,2026-06-30,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-46250,municipality,2026-07,79.08,percent,ine,2026-07-31,,2026-08-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2025-01,39.12,percent,ine,2025-01-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2025-02,48.51,percent,ine,2025-02-28,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2025-03,54.04,percent,ine,2025-03-31,,2026-07-25,ok,0
@@ -114,6 +126,7 @@ hotel_occupancy_rate,mun-48020,municipality,2025-04,65.01,percent,ine,2025-04-30
 hotel_occupancy_rate,mun-48020,municipality,2025-05,68.22,percent,ine,2025-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2025-06,68.61,percent,ine,2025-06-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2025-07,74.32,percent,ine,2025-07-31,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-48020,municipality,2025-07,74.13,percent,ine,2025-07-31,,2026-08-25,revised,1
 hotel_occupancy_rate,mun-48020,municipality,2025-08,83.04,percent,ine,2025-08-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2025-09,74.47,percent,ine,2025-09-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2025-10,68.65,percent,ine,2025-10-31,,2026-07-25,ok,0
@@ -125,6 +138,7 @@ hotel_occupancy_rate,mun-48020,municipality,2026-03,56.26,percent,ine,2026-03-31
 hotel_occupancy_rate,mun-48020,municipality,2026-04,71.17,percent,ine,2026-04-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2026-05,70.44,percent,ine,2026-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-48020,municipality,2026-06,69.14,percent,ine,2026-06-30,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-48020,municipality,2026-07,80.41,percent,ine,2026-07-31,,2026-08-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2025-01,40.13,percent,ine,2025-01-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2025-02,48.51,percent,ine,2025-02-28,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2025-03,52.93,percent,ine,2025-03-31,,2026-07-25,ok,0
@@ -132,6 +146,7 @@ hotel_occupancy_rate,mun-50297,municipality,2025-04,60.38,percent,ine,2025-04-30
 hotel_occupancy_rate,mun-50297,municipality,2025-05,61.87,percent,ine,2025-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2025-06,54.05,percent,ine,2025-06-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2025-07,52.72,percent,ine,2025-07-31,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-50297,municipality,2025-07,53.44,percent,ine,2025-07-31,,2026-08-25,revised,1
 hotel_occupancy_rate,mun-50297,municipality,2025-08,61.58,percent,ine,2025-08-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2025-09,60.61,percent,ine,2025-09-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2025-10,61.03,percent,ine,2025-10-31,,2026-07-25,ok,0
@@ -143,3 +158,4 @@ hotel_occupancy_rate,mun-50297,municipality,2026-03,53.13,percent,ine,2026-03-31
 hotel_occupancy_rate,mun-50297,municipality,2026-04,61.23,percent,ine,2026-04-30,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2026-05,60.97,percent,ine,2026-05-31,,2026-07-25,ok,0
 hotel_occupancy_rate,mun-50297,municipality,2026-06,57.27,percent,ine,2026-06-30,,2026-07-25,ok,0
+hotel_occupancy_rate,mun-50297,municipality,2026-07,56.54,percent,ine,2026-07-31,,2026-08-25,ok,0
