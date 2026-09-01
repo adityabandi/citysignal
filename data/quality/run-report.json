@@ -1,6 +1,6 @@
 {
- "run_id": "465929b50cfa",
- "finished_at": "2026-08-25T06:18:28+00:00",
+ "run_id": "b2c37dd0e72c",
+ "finished_at": "2026-09-01T05:57:18+00:00",
  "ok": [
   "aena",
   "borme",
@@ -17,8 +17,7 @@
   "madrid_padron",
   "madrid_vut",
   "mivau",
-  "ohsome",
-  "puertos",
+  "sepe",
   "trends_manual",
   "visados",
   "wiki_langs",
@@ -26,10 +25,11 @@
  ],
  "failed": [
   "eea_air",
-  "sepe"
+  "ohsome"
  ],
  "partial": [
   "bde",
+  "puertos",
   "serpavi"
  ],
  "results": [
@@ -45,7 +45,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 9.15,
+   "duration_s": 10.37,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -64,7 +64,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.69,
+   "duration_s": 1.76,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -75,21 +75,20 @@
   {
    "source_id": "borme",
    "status": "ok",
-   "records": 24,
-   "added": 0,
-   "revised": 22,
-   "unchanged": 2,
+   "records": 10,
+   "added": 10,
+   "revised": 0,
+   "unchanged": 0,
    "quarantined": 0,
-   "plans": 106,
+   "plans": 5,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 61.61,
-   "latest_observation": "2026-08",
+   "duration_s": 3.89,
+   "latest_observation": "2026-09",
    "metrics": [
     "company_dissolutions",
-    "company_incorporations",
-    "insolvencies"
+    "company_incorporations"
    ],
    "notes": []
   },
@@ -105,7 +104,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 5.79,
+   "duration_s": 7.28,
    "latest_observation": "2026-Q1",
    "metrics": [
     "evictions",
@@ -125,7 +124,7 @@
    "skipped_unchanged": 48,
    "error": null,
    "error_type": null,
-   "duration_s": 34.39,
+   "duration_s": 41.02,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -134,22 +133,27 @@
   },
   {
    "source_id": "ecb",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 1992,
+   "added": 6,
    "revised": 0,
-   "unchanged": 0,
+   "unchanged": 1986,
    "quarantined": 0,
    "plans": 10,
-   "skipped_unchanged": 10,
+   "skipped_unchanged": 4,
    "error": null,
    "error_type": null,
-   "duration_s": 6.04,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "duration_s": 7.36,
+   "latest_observation": "2026-08",
+   "metrics": [
+    "eur_chf",
+    "eur_gbp",
+    "eur_jpy",
+    "eur_nok",
+    "eur_sek",
+    "eur_usd"
+   ],
+   "notes": []
   },
   {
    "source_id": "eea_air",
@@ -163,7 +167,7 @@
    "skipped_unchanged": 0,
    "error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)",
    "error_type": "PayloadError",
-   "duration_s": 0.46,
+   "duration_s": 0.73,
    "latest_observation": null,
    "metrics": [],
    "notes": []
@@ -180,7 +184,7 @@
    "skipped_unchanged": 4,
    "error": null,
    "error_type": null,
-   "duration_s": 1.77,
+   "duration_s": 1.72,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -199,7 +203,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 0.77,
+   "duration_s": 0.64,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -209,8 +213,8 @@
   {
    "source_id": "indeed",
    "status": "ok",
-   "records": 156,
-   "added": 0,
+   "records": 158,
+   "added": 1,
    "revised": 0,
    "unchanged": 72,
    "quarantined": 6,
@@ -218,8 +222,8 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.6,
-   "latest_observation": "2026-07",
+   "duration_s": 0.53,
+   "latest_observation": "2026-08",
    "metrics": [
     "job_postings_index"
    ],
@@ -230,21 +234,19 @@
   {
    "source_id": "ine",
    "status": "ok",
-   "records": 1224,
-   "added": 24,
-   "revised": 24,
-   "unchanged": 1176,
+   "records": 1920,
+   "added": 8,
+   "revised": 8,
+   "unchanged": 1904,
    "quarantined": 0,
    "plans": 11,
-   "skipped_unchanged": 7,
+   "skipped_unchanged": 10,
    "error": null,
    "error_type": null,
-   "duration_s": 447.91,
-   "latest_observation": "2026-07",
+   "duration_s": 406.82,
+   "latest_observation": "2026-06",
    "metrics": [
-    "hotel_adr",
-    "hotel_occupancy_rate",
-    "hotel_revpar"
+    "mortgages_count"
    ],
    "notes": []
   },
@@ -260,7 +262,7 @@
    "skipped_unchanged": 7,
    "error": null,
    "error_type": null,
-   "duration_s": 3.31,
+   "duration_s": 3.35,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -279,7 +281,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.45,
+   "duration_s": 1.28,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -291,14 +293,14 @@
    "status": "ok",
    "records": 147,
    "added": 0,
-   "revised": 35,
-   "unchanged": 112,
+   "revised": 23,
+   "unchanged": 124,
    "quarantined": 0,
    "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 9.17,
+   "duration_s": 10.55,
    "latest_observation": "2026-08",
    "metrics": [
     "horeca_closures",
@@ -313,23 +315,21 @@
   },
   {
    "source_id": "madrid_padron",
-   "status": "ok",
-   "records": 21,
-   "added": 21,
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 36,
-   "skipped_unchanged": 34,
+   "skipped_unchanged": 36,
    "error": null,
    "error_type": null,
-   "duration_s": 25.18,
-   "latest_observation": "2026-08",
-   "metrics": [
-    "padron_district"
-   ],
+   "duration_s": 23.38,
+   "latest_observation": null,
+   "metrics": [],
    "notes": [
-    "1/36 optional fetches skipped: padron-2024-09: NotFoundError"
+    "all sources unchanged since last run"
    ]
   },
   {
@@ -344,7 +344,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.26,
+   "duration_s": 1.31,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -363,7 +363,7 @@
    "skipped_unchanged": 5,
    "error": null,
    "error_type": null,
-   "duration_s": 9.71,
+   "duration_s": 8.47,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -372,63 +372,59 @@
   },
   {
    "source_id": "ohsome",
-   "status": "ok",
-   "records": 7644,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 7644,
-   "quarantined": 0,
-   "plans": 126,
-   "skipped_unchanged": 0,
-   "error": null,
-   "error_type": null,
-   "duration_s": 505.94,
-   "latest_observation": "2026-07",
-   "metrics": [
-    "osm_cafe_bar_ratio",
-    "osm_food_count",
-    "osm_food_share",
-    "osm_tourist_retail"
-   ],
-   "notes": []
-  },
-  {
-   "source_id": "puertos",
-   "status": "ok",
-   "records": 35,
-   "added": 5,
-   "revised": 0,
-   "unchanged": 30,
-   "quarantined": 0,
-   "plans": 67,
-   "skipped_unchanged": 36,
-   "error": null,
-   "error_type": null,
-   "duration_s": 53.3,
-   "latest_observation": "2026-07",
-   "metrics": [
-    "port_passengers"
-   ],
-   "notes": [
-    "24/67 optional fetches skipped: resumen:3901: AdapterFailure; resumen:432: AdapterFailure; resumen:433: AdapterFailure; resumen:434: AdapterFailure; resumen:435: AdapterFailure"
-   ]
-  },
-  {
-   "source_id": "sepe",
    "status": "failed",
    "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 0,
+   "plans": 126,
    "skipped_unchanged": 0,
-   "error": "failed to fetch https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html: timed out",
-   "error_type": "FetchError",
-   "duration_s": 186.44,
+   "error": "HTTP 404 from https://api.ohsome.org/v1/elements/count",
+   "error_type": "NotFoundError",
+   "duration_s": 2.5,
    "latest_observation": null,
    "metrics": [],
    "notes": []
+  },
+  {
+   "source_id": "puertos",
+   "status": "partial",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 67,
+   "skipped_unchanged": 43,
+   "error": null,
+   "error_type": null,
+   "duration_s": 41.79,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "24/67 optional fetches skipped: resumen:3901: AdapterFailure; resumen:432: AdapterFailure; resumen:433: AdapterFailure; resumen:434: AdapterFailure; resumen:435: AdapterFailure",
+    "fetched successfully but produced no records"
+   ]
+  },
+  {
+   "source_id": "sepe",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 16,
+   "skipped_unchanged": 16,
+   "error": null,
+   "error_type": null,
+   "duration_s": 11.08,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   },
   {
    "source_id": "serpavi",
@@ -442,7 +438,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 7.75,
+   "duration_s": 7.65,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -481,7 +477,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 11.5,
+   "duration_s": 1.77,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -491,8 +487,8 @@
   {
    "source_id": "wiki_langs",
    "status": "ok",
-   "records": 4368,
-   "added": 0,
+   "records": 4416,
+   "added": 48,
    "revised": 0,
    "unchanged": 4368,
    "quarantined": 0,
@@ -500,8 +496,8 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 34.65,
-   "latest_observation": "2026-07",
+   "duration_s": 34.61,
+   "latest_observation": "2026-08",
    "metrics": [
     "wiki_foreign_interest",
     "wiki_lang_views_de",
@@ -515,8 +511,8 @@
   {
    "source_id": "wikipedia",
    "status": "ok",
-   "records": 3296,
-   "added": 0,
+   "records": 3328,
+   "added": 32,
    "revised": 0,
    "unchanged": 3295,
    "quarantined": 1,
@@ -524,8 +520,8 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 44.17,
-   "latest_observation": "2026-07",
+   "duration_s": 42.49,
+   "latest_observation": "2026-08",
    "metrics": [
     "wiki_barrio_views",
     "wiki_city_attention",

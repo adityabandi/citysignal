@@ -228,6 +228,7 @@ mortgages_count,prov-07,province,2025-03,891,mortgages,ine,2025-03-31,,2026-07-2
 mortgages_count,prov-07,province,2025-04,1012,mortgages,ine,2025-04-30,,2026-07-25,ok,0
 mortgages_count,prov-07,province,2025-05,1028,mortgages,ine,2025-05-31,,2026-07-25,ok,0
 mortgages_count,prov-07,province,2025-06,817,mortgages,ine,2025-06-30,,2026-07-25,ok,0
+mortgages_count,prov-07,province,2025-06,874,mortgages,ine,2025-06-30,,2026-09-01,revised,1
 mortgages_count,prov-07,province,2025-07,943,mortgages,ine,2025-07-31,,2026-07-25,ok,0
 mortgages_count,prov-07,province,2025-08,971,mortgages,ine,2025-08-31,,2026-07-25,ok,0
 mortgages_count,prov-07,province,2025-09,1149,mortgages,ine,2025-09-30,,2026-07-25,ok,0
@@ -239,6 +240,7 @@ mortgages_count,prov-07,province,2026-02,953,mortgages,ine,2026-02-28,,2026-07-2
 mortgages_count,prov-07,province,2026-03,845,mortgages,ine,2026-03-31,,2026-07-25,ok,0
 mortgages_count,prov-07,province,2026-04,770,mortgages,ine,2026-04-30,,2026-07-25,ok,0
 mortgages_count,prov-07,province,2026-05,827,mortgages,ine,2026-05-31,,2026-07-25,ok,0
+mortgages_count,prov-07,province,2026-06,783,mortgages,ine,2026-06-30,,2026-09-01,ok,0
 mortgages_count,prov-08,province,2006-06,15018,mortgages,ine,2006-06-30,,2026-07-26,ok,0
 mortgages_count,prov-08,province,2006-07,13947,mortgages,ine,2006-07-31,,2026-07-26,ok,0
 mortgages_count,prov-08,province,2006-08,12241,mortgages,ine,2006-08-31,,2026-07-26,ok,0
@@ -468,6 +470,7 @@ mortgages_count,prov-08,province,2025-03,5580,mortgages,ine,2025-03-31,,2026-07-
 mortgages_count,prov-08,province,2025-04,4746,mortgages,ine,2025-04-30,,2026-07-25,ok,0
 mortgages_count,prov-08,province,2025-05,5050,mortgages,ine,2025-05-31,,2026-07-25,ok,0
 mortgages_count,prov-08,province,2025-06,5144,mortgages,ine,2025-06-30,,2026-07-25,ok,0
+mortgages_count,prov-08,province,2025-06,5145,mortgages,ine,2025-06-30,,2026-09-01,revised,1
 mortgages_count,prov-08,province,2025-07,6178,mortgages,ine,2025-07-31,,2026-07-25,ok,0
 mortgages_count,prov-08,province,2025-08,4105,mortgages,ine,2025-08-31,,2026-07-25,ok,0
 mortgages_count,prov-08,province,2025-09,5856,mortgages,ine,2025-09-30,,2026-07-25,ok,0
@@ -479,6 +482,7 @@ mortgages_count,prov-08,province,2026-02,6140,mortgages,ine,2026-02-28,,2026-07-
 mortgages_count,prov-08,province,2026-03,6128,mortgages,ine,2026-03-31,,2026-07-25,ok,0
 mortgages_count,prov-08,province,2026-04,5562,mortgages,ine,2026-04-30,,2026-07-25,ok,0
 mortgages_count,prov-08,province,2026-05,5521,mortgages,ine,2026-05-31,,2026-07-25,ok,0
+mortgages_count,prov-08,province,2026-06,5969,mortgages,ine,2026-06-30,,2026-09-01,ok,0
 mortgages_count,prov-28,province,2006-06,15422,mortgages,ine,2006-06-30,,2026-07-26,ok,0
 mortgages_count,prov-28,province,2006-07,12297,mortgages,ine,2006-07-31,,2026-07-26,ok,0
 mortgages_count,prov-28,province,2006-08,11018,mortgages,ine,2006-08-31,,2026-07-26,ok,0
@@ -708,6 +712,7 @@ mortgages_count,prov-28,province,2025-03,6486,mortgages,ine,2025-03-31,,2026-07-
 mortgages_count,prov-28,province,2025-04,6351,mortgages,ine,2025-04-30,,2026-07-25,ok,0
 mortgages_count,prov-28,province,2025-05,6213,mortgages,ine,2025-05-31,,2026-07-25,ok,0
 mortgages_count,prov-28,province,2025-06,6632,mortgages,ine,2025-06-30,,2026-07-25,ok,0
+mortgages_count,prov-28,province,2025-06,6575,mortgages,ine,2025-06-30,,2026-09-01,revised,1
 mortgages_count,prov-28,province,2025-07,5867,mortgages,ine,2025-07-31,,2026-07-25,ok,0
 mortgages_count,prov-28,province,2025-08,4482,mortgages,ine,2025-08-31,,2026-07-25,ok,0
 mortgages_count,prov-28,province,2025-09,7527,mortgages,ine,2025-09-30,,2026-07-25,ok,0
@@ -719,6 +724,7 @@ mortgages_count,prov-28,province,2026-02,7310,mortgages,ine,2026-02-28,,2026-07-
 mortgages_count,prov-28,province,2026-03,7727,mortgages,ine,2026-03-31,,2026-07-25,ok,0
 mortgages_count,prov-28,province,2026-04,6305,mortgages,ine,2026-04-30,,2026-07-25,ok,0
 mortgages_count,prov-28,province,2026-05,6497,mortgages,ine,2026-05-31,,2026-07-25,ok,0
+mortgages_count,prov-28,province,2026-06,6976,mortgages,ine,2026-06-30,,2026-09-01,ok,0
 mortgages_count,prov-29,province,2006-06,6589,mortgages,ine,2006-06-30,,2026-07-26,ok,0
 mortgages_count,prov-29,province,2006-07,4696,mortgages,ine,2006-07-31,,2026-07-26,ok,0
 mortgages_count,prov-29,province,2006-08,4838,mortgages,ine,2006-08-31,,2026-07-26,ok,0
@@ -948,6 +954,7 @@ mortgages_count,prov-29,province,2025-03,2022,mortgages,ine,2025-03-31,,2026-07-
 mortgages_count,prov-29,province,2025-04,1723,mortgages,ine,2025-04-30,,2026-07-25,ok,0
 mortgages_count,prov-29,province,2025-05,1931,mortgages,ine,2025-05-31,,2026-07-25,ok,0
 mortgages_count,prov-29,province,2025-06,1879,mortgages,ine,2025-06-30,,2026-07-25,ok,0
+mortgages_count,prov-29,province,2025-06,1909,mortgages,ine,2025-06-30,,2026-09-01,revised,1
 mortgages_count,prov-29,province,2025-07,2014,mortgages,ine,2025-07-31,,2026-07-25,ok,0
 mortgages_count,prov-29,province,2025-08,1560,mortgages,ine,2025-08-31,,2026-07-25,ok,0
 mortgages_count,prov-29,province,2025-09,2083,mortgages,ine,2025-09-30,,2026-07-25,ok,0
@@ -959,6 +966,7 @@ mortgages_count,prov-29,province,2026-02,2197,mortgages,ine,2026-02-28,,2026-07-
 mortgages_count,prov-29,province,2026-03,1903,mortgages,ine,2026-03-31,,2026-07-25,ok,0
 mortgages_count,prov-29,province,2026-04,1995,mortgages,ine,2026-04-30,,2026-07-25,ok,0
 mortgages_count,prov-29,province,2026-05,2035,mortgages,ine,2026-05-31,,2026-07-25,ok,0
+mortgages_count,prov-29,province,2026-06,2646,mortgages,ine,2026-06-30,,2026-09-01,ok,0
 mortgages_count,prov-41,province,2006-06,5086,mortgages,ine,2006-06-30,,2026-07-26,ok,0
 mortgages_count,prov-41,province,2006-07,4061,mortgages,ine,2006-07-31,,2026-07-26,ok,0
 mortgages_count,prov-41,province,2006-08,4640,mortgages,ine,2006-08-31,,2026-07-26,ok,0
@@ -1188,6 +1196,7 @@ mortgages_count,prov-41,province,2025-03,1881,mortgages,ine,2025-03-31,,2026-07-
 mortgages_count,prov-41,province,2025-04,1946,mortgages,ine,2025-04-30,,2026-07-25,ok,0
 mortgages_count,prov-41,province,2025-05,1663,mortgages,ine,2025-05-31,,2026-07-25,ok,0
 mortgages_count,prov-41,province,2025-06,2046,mortgages,ine,2025-06-30,,2026-07-25,ok,0
+mortgages_count,prov-41,province,2025-06,1936,mortgages,ine,2025-06-30,,2026-09-01,revised,1
 mortgages_count,prov-41,province,2025-07,2337,mortgages,ine,2025-07-31,,2026-07-25,ok,0
 mortgages_count,prov-41,province,2025-08,1883,mortgages,ine,2025-08-31,,2026-07-25,ok,0
 mortgages_count,prov-41,province,2025-09,2080,mortgages,ine,2025-09-30,,2026-07-25,ok,0
@@ -1199,6 +1208,7 @@ mortgages_count,prov-41,province,2026-02,1876,mortgages,ine,2026-02-28,,2026-07-
 mortgages_count,prov-41,province,2026-03,1832,mortgages,ine,2026-03-31,,2026-07-25,ok,0
 mortgages_count,prov-41,province,2026-04,1759,mortgages,ine,2026-04-30,,2026-07-25,ok,0
 mortgages_count,prov-41,province,2026-05,2104,mortgages,ine,2026-05-31,,2026-07-25,ok,0
+mortgages_count,prov-41,province,2026-06,1916,mortgages,ine,2026-06-30,,2026-09-01,ok,0
 mortgages_count,prov-46,province,2006-06,8924,mortgages,ine,2006-06-30,,2026-07-26,ok,0
 mortgages_count,prov-46,province,2006-07,7207,mortgages,ine,2006-07-31,,2026-07-26,ok,0
 mortgages_count,prov-46,province,2006-08,5391,mortgages,ine,2006-08-31,,2026-07-26,ok,0
@@ -1428,6 +1438,7 @@ mortgages_count,prov-46,province,2025-03,2115,mortgages,ine,2025-03-31,,2026-07-
 mortgages_count,prov-46,province,2025-04,2143,mortgages,ine,2025-04-30,,2026-07-25,ok,0
 mortgages_count,prov-46,province,2025-05,2748,mortgages,ine,2025-05-31,,2026-07-25,ok,0
 mortgages_count,prov-46,province,2025-06,2454,mortgages,ine,2025-06-30,,2026-07-25,ok,0
+mortgages_count,prov-46,province,2025-06,2423,mortgages,ine,2025-06-30,,2026-09-01,revised,1
 mortgages_count,prov-46,province,2025-07,2595,mortgages,ine,2025-07-31,,2026-07-25,ok,0
 mortgages_count,prov-46,province,2025-08,1811,mortgages,ine,2025-08-31,,2026-07-25,ok,0
 mortgages_count,prov-46,province,2025-09,2675,mortgages,ine,2025-09-30,,2026-07-25,ok,0
@@ -1439,6 +1450,7 @@ mortgages_count,prov-46,province,2026-02,2523,mortgages,ine,2026-02-28,,2026-07-
 mortgages_count,prov-46,province,2026-03,2875,mortgages,ine,2026-03-31,,2026-07-25,ok,0
 mortgages_count,prov-46,province,2026-04,2249,mortgages,ine,2026-04-30,,2026-07-25,ok,0
 mortgages_count,prov-46,province,2026-05,2304,mortgages,ine,2026-05-31,,2026-07-25,ok,0
+mortgages_count,prov-46,province,2026-06,2810,mortgages,ine,2026-06-30,,2026-09-01,ok,0
 mortgages_count,prov-48,province,2006-06,1986,mortgages,ine,2006-06-30,,2026-07-26,ok,0
 mortgages_count,prov-48,province,2006-07,1703,mortgages,ine,2006-07-31,,2026-07-26,ok,0
 mortgages_count,prov-48,province,2006-08,2045,mortgages,ine,2006-08-31,,2026-07-26,ok,0
@@ -1668,6 +1680,7 @@ mortgages_count,prov-48,province,2025-03,1174,mortgages,ine,2025-03-31,,2026-07-
 mortgages_count,prov-48,province,2025-04,980,mortgages,ine,2025-04-30,,2026-07-25,ok,0
 mortgages_count,prov-48,province,2025-05,1175,mortgages,ine,2025-05-31,,2026-07-25,ok,0
 mortgages_count,prov-48,province,2025-06,985,mortgages,ine,2025-06-30,,2026-07-25,ok,0
+mortgages_count,prov-48,province,2025-06,1101,mortgages,ine,2025-06-30,,2026-09-01,revised,1
 mortgages_count,prov-48,province,2025-07,1202,mortgages,ine,2025-07-31,,2026-07-25,ok,0
 mortgages_count,prov-48,province,2025-08,1088,mortgages,ine,2025-08-31,,2026-07-25,ok,0
 mortgages_count,prov-48,province,2025-09,1380,mortgages,ine,2025-09-30,,2026-07-25,ok,0
@@ -1679,6 +1692,7 @@ mortgages_count,prov-48,province,2026-02,1014,mortgages,ine,2026-02-28,,2026-07-
 mortgages_count,prov-48,province,2026-03,908,mortgages,ine,2026-03-31,,2026-07-25,ok,0
 mortgages_count,prov-48,province,2026-04,892,mortgages,ine,2026-04-30,,2026-07-25,ok,0
 mortgages_count,prov-48,province,2026-05,927,mortgages,ine,2026-05-31,,2026-07-25,ok,0
+mortgages_count,prov-48,province,2026-06,1154,mortgages,ine,2026-06-30,,2026-09-01,ok,0
 mortgages_count,prov-50,province,2006-06,2427,mortgages,ine,2006-06-30,,2026-07-26,ok,0
 mortgages_count,prov-50,province,2006-07,2382,mortgages,ine,2006-07-31,,2026-07-26,ok,0
 mortgages_count,prov-50,province,2006-08,2422,mortgages,ine,2006-08-31,,2026-07-26,ok,0
@@ -1908,6 +1922,7 @@ mortgages_count,prov-50,province,2025-03,821,mortgages,ine,2025-03-31,,2026-07-2
 mortgages_count,prov-50,province,2025-04,686,mortgages,ine,2025-04-30,,2026-07-25,ok,0
 mortgages_count,prov-50,province,2025-05,805,mortgages,ine,2025-05-31,,2026-07-25,ok,0
 mortgages_count,prov-50,province,2025-06,1019,mortgages,ine,2025-06-30,,2026-07-25,ok,0
+mortgages_count,prov-50,province,2025-06,1014,mortgages,ine,2025-06-30,,2026-09-01,revised,1
 mortgages_count,prov-50,province,2025-07,1102,mortgages,ine,2025-07-31,,2026-07-25,ok,0
 mortgages_count,prov-50,province,2025-08,781,mortgages,ine,2025-08-31,,2026-07-25,ok,0
 mortgages_count,prov-50,province,2025-09,999,mortgages,ine,2025-09-30,,2026-07-25,ok,0
@@ -1919,3 +1934,4 @@ mortgages_count,prov-50,province,2026-02,875,mortgages,ine,2026-02-28,,2026-07-2
 mortgages_count,prov-50,province,2026-03,1256,mortgages,ine,2026-03-31,,2026-07-25,ok,0
 mortgages_count,prov-50,province,2026-04,735,mortgages,ine,2026-04-30,,2026-07-25,ok,0
 mortgages_count,prov-50,province,2026-05,716,mortgages,ine,2026-05-31,,2026-07-25,ok,0
+mortgages_count,prov-50,province,2026-06,1034,mortgages,ine,2026-06-30,,2026-09-01,ok,0
