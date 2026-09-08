@@ -21,10 +21,10 @@
   "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
   "rules_version": "regimes-v3",
   "inputs": {
-   "demand_momentum": 0.016,
-   "housing_pressure": 1.1836,
+   "demand_momentum": 0.0546,
+   "housing_pressure": 1.094,
    "supply_response": -0.9389,
-   "distress": 0.0814
+   "distress": 0.0647
   },
   "available_indices": [
    "demand_momentum",
@@ -36,16 +36,6 @@
   "period": "2026-08"
  },
  "regime_timeline": [
-  {
-   "period": "2018-08",
-   "rule_id": "neutral",
-   "label": "No clear regime",
-   "held_by_hysteresis": false,
-   "index_demand_momentum": null,
-   "index_housing_pressure": null,
-   "index_supply_response": -0.0743,
-   "index_distress": -0.0211
-  },
   {
    "period": "2018-09",
    "rule_id": "neutral",
@@ -958,31 +948,31 @@
   },
   {
    "period": "2026-04",
-   "rule_id": "neutral",
-   "label": "No clear regime",
+   "rule_id": "hot_decelerating",
+   "label": "Hot but decelerating",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.1085,
-   "index_housing_pressure": null,
+   "index_housing_pressure": 1.0934,
    "index_supply_response": null,
    "index_distress": 0.2855
   },
   {
    "period": "2026-05",
-   "rule_id": "neutral",
-   "label": "No clear regime",
+   "rule_id": "hot_decelerating",
+   "label": "Hot but decelerating",
    "held_by_hysteresis": false,
    "index_demand_momentum": -0.0027,
-   "index_housing_pressure": null,
+   "index_housing_pressure": 1.151,
    "index_supply_response": null,
    "index_distress": -0.0443
   },
   {
    "period": "2026-06",
-   "rule_id": "neutral",
-   "label": "No clear regime",
+   "rule_id": "hot_decelerating",
+   "label": "Hot but decelerating",
    "held_by_hysteresis": false,
    "index_demand_momentum": 0.1464,
-   "index_housing_pressure": null,
+   "index_housing_pressure": 1.0188,
    "index_supply_response": null,
    "index_distress": 0.009
   },
@@ -995,6 +985,16 @@
    "index_housing_pressure": null,
    "index_supply_response": null,
    "index_distress": 0.5122
+  },
+  {
+   "period": "2026-08",
+   "rule_id": "neutral",
+   "label": "No clear regime",
+   "held_by_hysteresis": false,
+   "index_demand_momentum": -0.0523,
+   "index_housing_pressure": null,
+   "index_supply_response": null,
+   "index_distress": 0.1645
   }
  ],
  "indices": {
@@ -1002,7 +1002,7 @@
    "index_id": "demand_momentum",
    "label": "Demand momentum",
    "question": "Is underlying demand strengthening?",
-   "value": 0.016,
+   "value": 0.0546,
    "period": "2026-08",
    "insufficient": false,
    "components": [
@@ -1013,10 +1013,10 @@
      "geo_id": "mun-28079",
      "geo_level": "municipality",
      "weight": 1.2,
-     "period": "2026-07",
-     "raw": -0.3825,
-     "z": 0.1079,
-     "oriented": -0.1079,
+     "period": "2026-08",
+     "raw": 0.9206,
+     "z": 0.1944,
+     "oriented": -0.1944,
      "source_id": "sepe",
      "unit": "persons"
     },
@@ -1027,10 +1027,10 @@
      "geo_id": "mun-28079",
      "geo_level": "municipality",
      "weight": 0.8,
-     "period": "2026-07",
-     "raw": -4.8328,
-     "z": -0.2142,
-     "oriented": -0.2142,
+     "period": "2026-08",
+     "raw": 7.4374,
+     "z": 0.0987,
+     "oriented": 0.0987,
      "source_id": "sepe",
      "unit": "contracts"
     },
@@ -1086,7 +1086,7 @@
    "index_id": "housing_pressure",
    "label": "Housing pressure",
    "question": "Is demand outrunning the housing available?",
-   "value": 1.1836,
+   "value": 1.094,
    "period": "2026-06",
    "insufficient": false,
    "components": [
@@ -1125,10 +1125,10 @@
      "geo_id": "ccaa-13",
      "geo_level": "ccaa",
      "weight": 1.0,
-     "period": "2026-03",
-     "raw": 13.5792,
-     "z": 1.5118,
-     "oriented": 1.5118,
+     "period": "2026-06",
+     "raw": 12.8533,
+     "z": 1.1804,
+     "oriented": 1.1804,
      "source_id": "ine",
      "unit": "index"
     },
@@ -1213,7 +1213,7 @@
    "index_id": "distress",
    "label": "Distress",
    "question": "Is an orderly slowdown turning into financial stress?",
-   "value": 0.0814,
+   "value": 0.0647,
    "period": "2026-08",
    "insufficient": false,
    "components": [
@@ -1252,10 +1252,10 @@
      "geo_id": "mun-28079",
      "geo_level": "municipality",
      "weight": 1.0,
-     "period": "2026-07",
-     "raw": -0.3825,
-     "z": 0.1079,
-     "oriented": -0.1079,
+     "period": "2026-08",
+     "raw": 0.9206,
+     "z": 0.1944,
+     "oriented": -0.1944,
      "source_id": "sepe",
      "unit": "persons"
     },
@@ -1579,6 +1579,10 @@
    {
     "period": "2026-07",
     "value": 0.295
+   },
+   {
+    "period": "2026-08",
+    "value": -0.0523
    }
   ],
   "housing_pressure": [
@@ -1881,6 +1885,18 @@
    {
     "period": "2026-03",
     "value": 1.2277
+   },
+   {
+    "period": "2026-04",
+    "value": 1.0934
+   },
+   {
+    "period": "2026-05",
+    "value": 1.151
+   },
+   {
+    "period": "2026-06",
+    "value": 1.0188
    }
   ],
   "supply_response": [
@@ -2271,10 +2287,6 @@
   ],
   "distress": [
    {
-    "period": "2018-08",
-    "value": -0.0211
-   },
-   {
     "period": "2018-09",
     "value": -0.024
    },
@@ -2653,6 +2665,10 @@
    {
     "period": "2026-07",
     "value": 0.5122
+   },
+   {
+    "period": "2026-08",
+    "value": 0.1645
    }
   ]
  },
@@ -9674,8 +9690,8 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-08",
-       "value": 19097.0
+       "period": "2026-09",
+       "value": 19099.0
       },
       "yoy": null,
       "series": [
@@ -9686,12 +9702,16 @@
        {
         "period": "2026-08",
         "value": 19097.0
+       },
+       {
+        "period": "2026-09",
+        "value": 19099.0
        }
       ]
      },
      "02": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 5794.0
       },
       "yoy": null,
@@ -9703,12 +9723,16 @@
        {
         "period": "2026-08",
         "value": 5794.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5794.0
        }
       ]
      },
      "03": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 5179.0
       },
       "yoy": null,
@@ -9720,12 +9744,16 @@
        {
         "period": "2026-08",
         "value": 5179.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5179.0
        }
       ]
      },
      "04": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 13275.0
       },
       "yoy": null,
@@ -9737,12 +9765,16 @@
        {
         "period": "2026-08",
         "value": 13275.0
+       },
+       {
+        "period": "2026-09",
+        "value": 13275.0
        }
       ]
      },
      "05": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 8956.0
       },
       "yoy": null,
@@ -9754,13 +9786,17 @@
        {
         "period": "2026-08",
         "value": 8956.0
+       },
+       {
+        "period": "2026-09",
+        "value": 8956.0
        }
       ]
      },
      "06": {
       "latest": {
-       "period": "2026-08",
-       "value": 9191.0
+       "period": "2026-09",
+       "value": 9194.0
       },
       "yoy": null,
       "series": [
@@ -9771,13 +9807,17 @@
        {
         "period": "2026-08",
         "value": 9191.0
+       },
+       {
+        "period": "2026-09",
+        "value": 9194.0
        }
       ]
      },
      "07": {
       "latest": {
-       "period": "2026-08",
-       "value": 10575.0
+       "period": "2026-09",
+       "value": 10576.0
       },
       "yoy": null,
       "series": [
@@ -9788,13 +9828,17 @@
        {
         "period": "2026-08",
         "value": 10575.0
+       },
+       {
+        "period": "2026-09",
+        "value": 10576.0
        }
       ]
      },
      "08": {
       "latest": {
-       "period": "2026-08",
-       "value": 6264.0
+       "period": "2026-09",
+       "value": 6263.0
       },
       "yoy": null,
       "series": [
@@ -9805,13 +9849,17 @@
        {
         "period": "2026-08",
         "value": 6264.0
+       },
+       {
+        "period": "2026-09",
+        "value": 6263.0
        }
       ]
      },
      "09": {
       "latest": {
-       "period": "2026-08",
-       "value": 5158.0
+       "period": "2026-09",
+       "value": 5160.0
       },
       "yoy": null,
       "series": [
@@ -9822,13 +9870,17 @@
        {
         "period": "2026-08",
         "value": 5158.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5160.0
        }
       ]
      },
      "10": {
       "latest": {
-       "period": "2026-08",
-       "value": 5906.0
+       "period": "2026-09",
+       "value": 5904.0
       },
       "yoy": null,
       "series": [
@@ -9839,12 +9891,16 @@
        {
         "period": "2026-08",
         "value": 5906.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5904.0
        }
       ]
      },
      "11": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 8270.0
       },
       "yoy": null,
@@ -9856,13 +9912,17 @@
        {
         "period": "2026-08",
         "value": 8270.0
+       },
+       {
+        "period": "2026-09",
+        "value": 8270.0
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-08",
-       "value": 3844.0
+       "period": "2026-09",
+       "value": 3845.0
       },
       "yoy": null,
       "series": [
@@ -9873,13 +9933,17 @@
        {
         "period": "2026-08",
         "value": 3844.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3845.0
        }
       ]
      },
      "13": {
       "latest": {
-       "period": "2026-08",
-       "value": 6062.0
+       "period": "2026-09",
+       "value": 6065.0
       },
       "yoy": null,
       "series": [
@@ -9890,12 +9954,16 @@
        {
         "period": "2026-08",
         "value": 6062.0
+       },
+       {
+        "period": "2026-09",
+        "value": 6065.0
        }
       ]
      },
      "14": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 1914.0
       },
       "yoy": null,
@@ -9907,13 +9975,17 @@
        {
         "period": "2026-08",
         "value": 1914.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1914.0
        }
       ]
      },
      "15": {
       "latest": {
-       "period": "2026-08",
-       "value": 8007.0
+       "period": "2026-09",
+       "value": 8008.0
       },
       "yoy": null,
       "series": [
@@ -9924,13 +9996,17 @@
        {
         "period": "2026-08",
         "value": 8007.0
+       },
+       {
+        "period": "2026-09",
+        "value": 8008.0
        }
       ]
      },
      "16": {
       "latest": {
-       "period": "2026-08",
-       "value": 4812.0
+       "period": "2026-09",
+       "value": 4810.0
       },
       "yoy": null,
       "series": [
@@ -9941,12 +10017,16 @@
        {
         "period": "2026-08",
         "value": 4812.0
+       },
+       {
+        "period": "2026-09",
+        "value": 4810.0
        }
       ]
      },
      "17": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 4474.0
       },
       "yoy": null,
@@ -9958,12 +10038,16 @@
        {
         "period": "2026-08",
         "value": 4474.0
+       },
+       {
+        "period": "2026-09",
+        "value": 4474.0
        }
       ]
      },
      "18": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 3754.0
       },
       "yoy": null,
@@ -9975,13 +10059,17 @@
        {
         "period": "2026-08",
         "value": 3754.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3754.0
        }
       ]
      },
      "19": {
       "latest": {
-       "period": "2026-08",
-       "value": 1574.0
+       "period": "2026-09",
+       "value": 1575.0
       },
       "yoy": null,
       "series": [
@@ -9992,13 +10080,17 @@
        {
         "period": "2026-08",
         "value": 1574.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1575.0
        }
       ]
      },
      "20": {
       "latest": {
-       "period": "2026-08",
-       "value": 5588.0
+       "period": "2026-09",
+       "value": 5587.0
       },
       "yoy": null,
       "series": [
@@ -10009,12 +10101,16 @@
        {
         "period": "2026-08",
         "value": 5588.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5587.0
        }
       ]
      },
      "21": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 2124.0
       },
       "yoy": null,
@@ -10025,6 +10121,10 @@
        },
        {
         "period": "2026-08",
+        "value": 2124.0
+       },
+       {
+        "period": "2026-09",
         "value": 2124.0
        }
       ]
@@ -10039,176 +10139,330 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-08",
-       "value": 9.0
+       "period": "2026-09",
+       "value": 19.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 9.0
+       },
+       {
+        "period": "2026-09",
+        "value": 19.0
        }
       ]
      },
      "02": {
       "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "03": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "04": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "05": {
-      "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 2.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
         "value": 2.0
        }
       ]
      },
-     "06": {
+     "03": {
       "latest": {
-       "period": "2026-08",
-       "value": 1.0
+       "period": "2026-09",
+       "value": 5.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
-        "value": 1.0
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5.0
        }
       ]
      },
-     "07": {
+     "04": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 11.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 11.0
+       }
+      ]
+     },
+     "05": {
+      "latest": {
+       "period": "2026-09",
        "value": 3.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 2.0
+       },
+       {
+        "period": "2026-09",
         "value": 3.0
+       }
+      ]
+     },
+     "06": {
+      "latest": {
+       "period": "2026-09",
+       "value": 8.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 8.0
+       }
+      ]
+     },
+     "07": {
+      "latest": {
+       "period": "2026-09",
+       "value": 8.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 3.0
+       },
+       {
+        "period": "2026-09",
+        "value": 8.0
        }
       ]
      },
      "08": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 1.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
         "value": 1.0
        }
       ]
      },
      "09": {
       "latest": {
-       "period": "2026-08",
-       "value": 2.0
+       "period": "2026-09",
+       "value": 4.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 2.0
+       },
+       {
+        "period": "2026-09",
+        "value": 4.0
        }
       ]
      },
      "10": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "11": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
+       "period": "2026-09",
+       "value": 2.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
+       "period": "2026-09",
+       "value": 3.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3.0
        }
       ]
      },
      "13": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
+       "period": "2026-09",
+       "value": 7.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 7.0
        }
       ]
      },
      "14": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "15": {
+      "latest": {
+       "period": "2026-09",
+       "value": 4.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 2.0
+       },
+       {
+        "period": "2026-09",
+        "value": 4.0
+       }
+      ]
+     },
+     "16": {
+      "latest": {
+       "period": "2026-09",
+       "value": 5.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 2.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5.0
+       }
+      ]
+     },
+     "17": {
+      "latest": {
+       "period": "2026-09",
+       "value": 3.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3.0
+       }
+      ]
+     },
+     "18": {
+      "latest": {
+       "period": "2026-09",
+       "value": 8.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 2.0
+       },
+       {
+        "period": "2026-09",
+        "value": 8.0
+       }
+      ]
+     },
+     "19": {
+      "latest": {
+       "period": "2026-09",
+       "value": 8.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 8.0
+       }
+      ]
+     },
+     "20": {
+      "latest": {
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
@@ -10216,96 +10470,26 @@
        {
         "period": "2026-08",
         "value": 0.0
-       }
-      ]
-     },
-     "15": {
-      "latest": {
-       "period": "2026-08",
-       "value": 2.0
-      },
-      "yoy": null,
-      "series": [
+       },
        {
-        "period": "2026-08",
-        "value": 2.0
-       }
-      ]
-     },
-     "16": {
-      "latest": {
-       "period": "2026-08",
-       "value": 2.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 2.0
-       }
-      ]
-     },
-     "17": {
-      "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "18": {
-      "latest": {
-       "period": "2026-08",
-       "value": 2.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 2.0
-       }
-      ]
-     },
-     "19": {
-      "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "20": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "21": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
@@ -10320,7 +10504,41 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "02": {
+      "latest": {
+       "period": "2026-09",
+       "value": 0.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 2.0
+       },
+       {
+        "period": "2026-09",
+        "value": 0.0
+       }
+      ]
+     },
+     "03": {
+      "latest": {
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
@@ -10328,265 +10546,315 @@
        {
         "period": "2026-08",
         "value": 0.0
-       }
-      ]
-     },
-     "02": {
-      "latest": {
-       "period": "2026-08",
-       "value": 2.0
-      },
-      "yoy": null,
-      "series": [
+       },
        {
-        "period": "2026-08",
-        "value": 2.0
-       }
-      ]
-     },
-     "03": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "04": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "05": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "06": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "07": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "08": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "09": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "10": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "11": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "12": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "13": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "14": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "15": {
-      "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "16": {
-      "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "17": {
-      "latest": {
-       "period": "2026-08",
-       "value": 7.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 7.0
-       }
-      ]
-     },
-     "18": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "19": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "20": {
-      "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 2.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 2.0
        }
       ]
      },
-     "21": {
+     "06": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "07": {
+      "latest": {
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "08": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "09": {
+      "latest": {
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "10": {
+      "latest": {
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "11": {
+      "latest": {
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 0.0
+       }
+      ]
+     },
+     "12": {
+      "latest": {
+       "period": "2026-09",
+       "value": 3.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3.0
+       }
+      ]
+     },
+     "13": {
+      "latest": {
+       "period": "2026-09",
+       "value": 12.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 12.0
+       }
+      ]
+     },
+     "14": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "15": {
+      "latest": {
+       "period": "2026-09",
+       "value": 3.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3.0
+       }
+      ]
+     },
+     "16": {
+      "latest": {
+       "period": "2026-09",
+       "value": 11.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 11.0
+       }
+      ]
+     },
+     "17": {
+      "latest": {
+       "period": "2026-09",
+       "value": 0.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 7.0
+       },
+       {
+        "period": "2026-09",
+        "value": 0.0
+       }
+      ]
+     },
+     "18": {
+      "latest": {
+       "period": "2026-09",
+       "value": 4.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 4.0
+       }
+      ]
+     },
+     "19": {
+      "latest": {
+       "period": "2026-09",
+       "value": 0.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 0.0
+       }
+      ]
+     },
+     "20": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 2.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "21": {
+      "latest": {
+       "period": "2026-09",
+       "value": 0.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
@@ -10601,8 +10869,8 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-08",
-       "value": 11.011184
+       "period": "2026-09",
+       "value": 11.010157
       },
       "yoy": null,
       "series": [
@@ -10613,13 +10881,17 @@
        {
         "period": "2026-08",
         "value": 11.011184
+       },
+       {
+        "period": "2026-09",
+        "value": 11.010157
        }
       ]
      },
      "02": {
       "latest": {
-       "period": "2026-08",
-       "value": 15.723636
+       "period": "2026-09",
+       "value": 15.711376
       },
       "yoy": null,
       "series": [
@@ -10630,12 +10902,16 @@
        {
         "period": "2026-08",
         "value": 15.723636
+       },
+       {
+        "period": "2026-09",
+        "value": 15.711376
        }
       ]
      },
      "03": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 10.320346
       },
       "yoy": null,
@@ -10647,13 +10923,17 @@
        {
         "period": "2026-08",
         "value": 10.320346
+       },
+       {
+        "period": "2026-09",
+        "value": 10.320346
        }
       ]
      },
      "04": {
       "latest": {
-       "period": "2026-08",
-       "value": 8.309159
+       "period": "2026-09",
+       "value": 8.315491
       },
       "yoy": null,
       "series": [
@@ -10664,12 +10944,16 @@
        {
         "period": "2026-08",
         "value": 8.309159
+       },
+       {
+        "period": "2026-09",
+        "value": 8.315491
        }
       ]
      },
      "05": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 10.681161
       },
       "yoy": null,
@@ -10681,13 +10965,17 @@
        {
         "period": "2026-08",
         "value": 10.681161
+       },
+       {
+        "period": "2026-09",
+        "value": 10.681161
        }
       ]
      },
      "06": {
       "latest": {
-       "period": "2026-08",
-       "value": 23.681807
+       "period": "2026-09",
+       "value": 23.669572
       },
       "yoy": null,
       "series": [
@@ -10698,13 +10986,17 @@
        {
         "period": "2026-08",
         "value": 23.681807
+       },
+       {
+        "period": "2026-09",
+        "value": 23.669572
        }
       ]
      },
      "07": {
       "latest": {
-       "period": "2026-08",
-       "value": 8.075452
+       "period": "2026-09",
+       "value": 8.07475
       },
       "yoy": null,
       "series": [
@@ -10715,13 +11007,17 @@
        {
         "period": "2026-08",
         "value": 8.075452
+       },
+       {
+        "period": "2026-09",
+        "value": 8.07475
        }
       ]
      },
      "08": {
       "latest": {
-       "period": "2026-08",
-       "value": 25.33079
+       "period": "2026-09",
+       "value": 25.342711
       },
       "yoy": null,
       "series": [
@@ -10732,13 +11028,17 @@
        {
         "period": "2026-08",
         "value": 25.33079
+       },
+       {
+        "period": "2026-09",
+        "value": 25.342711
        }
       ]
      },
      "09": {
       "latest": {
-       "period": "2026-08",
-       "value": 13.65919
+       "period": "2026-09",
+       "value": 13.625711
       },
       "yoy": null,
       "series": [
@@ -10749,13 +11049,17 @@
        {
         "period": "2026-08",
         "value": 13.65919
+       },
+       {
+        "period": "2026-09",
+        "value": 13.625711
        }
       ]
      },
      "10": {
       "latest": {
-       "period": "2026-08",
-       "value": 33.242907
+       "period": "2026-09",
+       "value": 33.25797
       },
       "yoy": null,
       "series": [
@@ -10766,13 +11070,17 @@
        {
         "period": "2026-08",
         "value": 33.242907
+       },
+       {
+        "period": "2026-09",
+        "value": 33.25797
        }
       ]
      },
      "11": {
       "latest": {
-       "period": "2026-08",
-       "value": 32.671172
+       "period": "2026-09",
+       "value": 32.676653
       },
       "yoy": null,
       "series": [
@@ -10783,13 +11091,17 @@
        {
         "period": "2026-08",
         "value": 32.671172
+       },
+       {
+        "period": "2026-09",
+        "value": 32.676653
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-08",
-       "value": 32.156724
+       "period": "2026-09",
+       "value": 32.174987
       },
       "yoy": null,
       "series": [
@@ -10800,13 +11112,17 @@
        {
         "period": "2026-08",
         "value": 32.156724
+       },
+       {
+        "period": "2026-09",
+        "value": 32.174987
        }
       ]
      },
      "13": {
       "latest": {
-       "period": "2026-08",
-       "value": 39.681592
+       "period": "2026-09",
+       "value": 39.663749
       },
       "yoy": null,
       "series": [
@@ -10817,13 +11133,17 @@
        {
         "period": "2026-08",
         "value": 39.681592
+       },
+       {
+        "period": "2026-09",
+        "value": 39.663749
        }
       ]
      },
      "14": {
       "latest": {
-       "period": "2026-08",
-       "value": 24.047619
+       "period": "2026-09",
+       "value": 24.017467
       },
       "yoy": null,
       "series": [
@@ -10834,13 +11154,17 @@
        {
         "period": "2026-08",
         "value": 24.047619
+       },
+       {
+        "period": "2026-09",
+        "value": 24.017467
        }
       ]
      },
      "15": {
       "latest": {
-       "period": "2026-08",
-       "value": 30.741285
+       "period": "2026-09",
+       "value": 30.732636
       },
       "yoy": null,
       "series": [
@@ -10851,13 +11175,17 @@
        {
         "period": "2026-08",
         "value": 30.741285
+       },
+       {
+        "period": "2026-09",
+        "value": 30.732636
        }
       ]
      },
      "16": {
       "latest": {
-       "period": "2026-08",
-       "value": 27.769439
+       "period": "2026-09",
+       "value": 27.79946
       },
       "yoy": null,
       "series": [
@@ -10868,12 +11196,16 @@
        {
         "period": "2026-08",
         "value": 27.769439
+       },
+       {
+        "period": "2026-09",
+        "value": 27.79946
        }
       ]
      },
      "17": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 36.610938
       },
       "yoy": null,
@@ -10885,12 +11217,16 @@
        {
         "period": "2026-08",
         "value": 36.610938
+       },
+       {
+        "period": "2026-09",
+        "value": 36.610938
        }
       ]
      },
      "18": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 28.180601
       },
       "yoy": null,
@@ -10902,13 +11238,17 @@
        {
         "period": "2026-08",
         "value": 28.180601
+       },
+       {
+        "period": "2026-09",
+        "value": 28.180601
        }
       ]
      },
      "19": {
       "latest": {
-       "period": "2026-08",
-       "value": 29.226619
+       "period": "2026-09",
+       "value": 29.245283
       },
       "yoy": null,
       "series": [
@@ -10919,13 +11259,17 @@
        {
         "period": "2026-08",
         "value": 29.226619
+       },
+       {
+        "period": "2026-09",
+        "value": 29.245283
        }
       ]
      },
      "20": {
       "latest": {
-       "period": "2026-08",
-       "value": 23.28391
+       "period": "2026-09",
+       "value": 23.287107
       },
       "yoy": null,
       "series": [
@@ -10936,13 +11280,17 @@
        {
         "period": "2026-08",
         "value": 23.28391
+       },
+       {
+        "period": "2026-09",
+        "value": 23.287107
        }
       ]
      },
      "21": {
       "latest": {
-       "period": "2026-08",
-       "value": 21.099554
+       "period": "2026-09",
+       "value": 21.187384
       },
       "yoy": null,
       "series": [
@@ -10953,6 +11301,10 @@
        {
         "period": "2026-08",
         "value": 21.099554
+       },
+       {
+        "period": "2026-09",
+        "value": 21.187384
        }
       ]
      }
@@ -10966,163 +11318,228 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-08",
-       "value": 1.0
+       "period": "2026-09",
+       "value": 5.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5.0
        }
       ]
      },
      "02": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "03": {
       "latest": {
-       "period": "2026-08",
-       "value": 1.0
+       "period": "2026-09",
+       "value": 2.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
        }
       ]
      },
      "04": {
       "latest": {
-       "period": "2026-08",
-       "value": 1.0
+       "period": "2026-09",
+       "value": 11.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 11.0
        }
       ]
      },
      "05": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "06": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "07": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "08": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "09": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "10": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "11": {
-      "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 1.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 1.0
+       }
+      ]
+     },
+     "06": {
+      "latest": {
+       "period": "2026-09",
+       "value": 4.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 4.0
+       }
+      ]
+     },
+     "07": {
+      "latest": {
+       "period": "2026-09",
+       "value": 5.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 5.0
+       }
+      ]
+     },
+     "08": {
+      "latest": {
+       "period": "2026-09",
+       "value": 3.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3.0
+       }
+      ]
+     },
+     "09": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "10": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "11": {
+      "latest": {
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
+       "period": "2026-09",
+       "value": 3.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3.0
        }
       ]
      },
      "13": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "14": {
+      "latest": {
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
@@ -11130,38 +11547,33 @@
        {
         "period": "2026-08",
         "value": 0.0
-       }
-      ]
-     },
-     "14": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
+       },
        {
-        "period": "2026-08",
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "15": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 1.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
         "value": 1.0
        }
       ]
      },
      "16": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 1.0
       },
       "yoy": null,
@@ -11169,38 +11581,67 @@
        {
         "period": "2026-08",
         "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
        }
       ]
      },
      "17": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
+       "period": "2026-09",
+       "value": 1.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
        }
       ]
      },
      "18": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
+       "period": "2026-09",
+       "value": 2.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
         "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
        }
       ]
      },
      "19": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "20": {
+      "latest": {
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
@@ -11208,31 +11649,26 @@
        {
         "period": "2026-08",
         "value": 0.0
-       }
-      ]
-     },
-     "20": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
+       },
        {
-        "period": "2026-08",
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "21": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
@@ -11247,137 +11683,41 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "02": {
-      "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "03": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "04": {
-      "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "05": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "06": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "07": {
-      "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "08": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 0.0
-       }
-      ]
-     },
-     "09": {
-      "latest": {
-       "period": "2026-08",
-       "value": 1.0
-      },
-      "yoy": null,
-      "series": [
-       {
-        "period": "2026-08",
-        "value": 1.0
-       }
-      ]
-     },
-     "10": {
-      "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 2.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 2.0
        }
       ]
      },
-     "11": {
+     "02": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "03": {
+      "latest": {
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
@@ -11385,64 +11725,237 @@
        {
         "period": "2026-08",
         "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 0.0
+       }
+      ]
+     },
+     "04": {
+      "latest": {
+       "period": "2026-09",
+       "value": 3.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 3.0
+       }
+      ]
+     },
+     "05": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "06": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "07": {
+      "latest": {
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "08": {
+      "latest": {
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "09": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "10": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 2.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
+       }
+      ]
+     },
+     "11": {
+      "latest": {
+       "period": "2026-09",
+       "value": 1.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "13": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 1.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 1.0
+       },
+       {
+        "period": "2026-09",
         "value": 1.0
        }
       ]
      },
      "14": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "15": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "16": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "17": {
+      "latest": {
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
@@ -11450,25 +11963,33 @@
        {
         "period": "2026-08",
         "value": 0.0
-       }
-      ]
-     },
-     "17": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
+       },
        {
-        "period": "2026-08",
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "18": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
+       "value": 2.0
+      },
+      "yoy": null,
+      "series": [
+       {
+        "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2.0
+       }
+      ]
+     },
+     "19": {
+      "latest": {
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
@@ -11476,25 +11997,16 @@
        {
         "period": "2026-08",
         "value": 0.0
-       }
-      ]
-     },
-     "19": {
-      "latest": {
-       "period": "2026-08",
-       "value": 0.0
-      },
-      "yoy": null,
-      "series": [
+       },
        {
-        "period": "2026-08",
+        "period": "2026-09",
         "value": 0.0
        }
       ]
      },
      "20": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 1.0
       },
       "yoy": null,
@@ -11502,18 +12014,26 @@
        {
         "period": "2026-08",
         "value": 1.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1.0
        }
       ]
      },
      "21": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 0.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-08",
+        "value": 0.0
+       },
+       {
+        "period": "2026-09",
         "value": 0.0
        }
       ]
@@ -11528,7 +12048,7 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 2961.0
       },
       "yoy": null,
@@ -11540,12 +12060,16 @@
        {
         "period": "2026-08",
         "value": 2961.0
+       },
+       {
+        "period": "2026-09",
+        "value": 2961.0
        }
       ]
      },
      "02": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 765.0
       },
       "yoy": null,
@@ -11557,12 +12081,16 @@
        {
         "period": "2026-08",
         "value": 765.0
+       },
+       {
+        "period": "2026-09",
+        "value": 765.0
        }
       ]
      },
      "03": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 542.0
       },
       "yoy": null,
@@ -11574,13 +12102,17 @@
        {
         "period": "2026-08",
         "value": 542.0
+       },
+       {
+        "period": "2026-09",
+        "value": 542.0
        }
       ]
      },
      "04": {
       "latest": {
-       "period": "2026-08",
-       "value": 1295.0
+       "period": "2026-09",
+       "value": 1300.0
       },
       "yoy": null,
       "series": [
@@ -11591,12 +12123,16 @@
        {
         "period": "2026-08",
         "value": 1295.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1300.0
        }
       ]
      },
      "05": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 950.0
       },
       "yoy": null,
@@ -11608,13 +12144,17 @@
        {
         "period": "2026-08",
         "value": 950.0
+       },
+       {
+        "period": "2026-09",
+        "value": 950.0
        }
       ]
      },
      "06": {
       "latest": {
-       "period": "2026-08",
-       "value": 952.0
+       "period": "2026-09",
+       "value": 954.0
       },
       "yoy": null,
       "series": [
@@ -11625,13 +12165,17 @@
        {
         "period": "2026-08",
         "value": 952.0
+       },
+       {
+        "period": "2026-09",
+        "value": 954.0
        }
       ]
      },
      "07": {
       "latest": {
-       "period": "2026-08",
-       "value": 1382.0
+       "period": "2026-09",
+       "value": 1381.0
       },
       "yoy": null,
       "series": [
@@ -11642,12 +12186,16 @@
        {
         "period": "2026-08",
         "value": 1382.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1381.0
        }
       ]
      },
      "08": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 793.0
       },
       "yoy": null,
@@ -11659,12 +12207,16 @@
        {
         "period": "2026-08",
         "value": 793.0
+       },
+       {
+        "period": "2026-09",
+        "value": 793.0
        }
       ]
      },
      "09": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 714.0
       },
       "yoy": null,
@@ -11676,13 +12228,17 @@
        {
         "period": "2026-08",
         "value": 714.0
+       },
+       {
+        "period": "2026-09",
+        "value": 714.0
        }
       ]
      },
      "10": {
       "latest": {
-       "period": "2026-08",
-       "value": 787.0
+       "period": "2026-09",
+       "value": 786.0
       },
       "yoy": null,
       "series": [
@@ -11693,12 +12249,16 @@
        {
         "period": "2026-08",
         "value": 787.0
+       },
+       {
+        "period": "2026-09",
+        "value": 786.0
        }
       ]
      },
      "11": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 1023.0
       },
       "yoy": null,
@@ -11710,13 +12270,17 @@
        {
         "period": "2026-08",
         "value": 1023.0
+       },
+       {
+        "period": "2026-09",
+        "value": 1023.0
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-08",
-       "value": 625.0
+       "period": "2026-09",
+       "value": 626.0
       },
       "yoy": null,
       "series": [
@@ -11727,13 +12291,17 @@
        {
         "period": "2026-08",
         "value": 625.0
+       },
+       {
+        "period": "2026-09",
+        "value": 626.0
        }
       ]
      },
      "13": {
       "latest": {
-       "period": "2026-08",
-       "value": 736.0
+       "period": "2026-09",
+       "value": 737.0
       },
       "yoy": null,
       "series": [
@@ -11744,12 +12312,16 @@
        {
         "period": "2026-08",
         "value": 736.0
+       },
+       {
+        "period": "2026-09",
+        "value": 737.0
        }
       ]
      },
      "14": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 227.0
       },
       "yoy": null,
@@ -11761,12 +12333,16 @@
        {
         "period": "2026-08",
         "value": 227.0
+       },
+       {
+        "period": "2026-09",
+        "value": 227.0
        }
       ]
      },
      "15": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 870.0
       },
       "yoy": null,
@@ -11778,12 +12354,16 @@
        {
         "period": "2026-08",
         "value": 870.0
+       },
+       {
+        "period": "2026-09",
+        "value": 870.0
        }
       ]
      },
      "16": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 536.0
       },
       "yoy": null,
@@ -11795,13 +12375,17 @@
        {
         "period": "2026-08",
         "value": 536.0
+       },
+       {
+        "period": "2026-09",
+        "value": 536.0
        }
       ]
      },
      "17": {
       "latest": {
-       "period": "2026-08",
-       "value": 439.0
+       "period": "2026-09",
+       "value": 440.0
       },
       "yoy": null,
       "series": [
@@ -11812,13 +12396,17 @@
        {
         "period": "2026-08",
         "value": 439.0
+       },
+       {
+        "period": "2026-09",
+        "value": 440.0
        }
       ]
      },
      "18": {
       "latest": {
-       "period": "2026-08",
-       "value": 348.0
+       "period": "2026-09",
+       "value": 346.0
       },
       "yoy": null,
       "series": [
@@ -11829,12 +12417,16 @@
        {
         "period": "2026-08",
         "value": 348.0
+       },
+       {
+        "period": "2026-09",
+        "value": 346.0
        }
       ]
      },
      "19": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 201.0
       },
       "yoy": null,
@@ -11846,12 +12438,16 @@
        {
         "period": "2026-08",
         "value": 201.0
+       },
+       {
+        "period": "2026-09",
+        "value": 201.0
        }
       ]
      },
      "20": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 718.0
       },
       "yoy": null,
@@ -11863,12 +12459,16 @@
        {
         "period": "2026-08",
         "value": 718.0
+       },
+       {
+        "period": "2026-09",
+        "value": 718.0
        }
       ]
      },
      "21": {
       "latest": {
-       "period": "2026-08",
+       "period": "2026-09",
        "value": 314.0
       },
       "yoy": null,
@@ -11879,6 +12479,10 @@
        },
        {
         "period": "2026-08",
+        "value": 314.0
+       },
+       {
+        "period": "2026-09",
         "value": 314.0
        }
       ]
@@ -11893,20 +12497,24 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-07",
-       "value": 218.0
+       "period": "2026-09",
+       "value": 223.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 218.0
+       },
+       {
+        "period": "2026-09",
+        "value": 223.0
        }
       ]
      },
      "02": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 121.0
       },
       "yoy": null,
@@ -11914,12 +12522,16 @@
        {
         "period": "2026-07",
         "value": 121.0
+       },
+       {
+        "period": "2026-09",
+        "value": 121.0
        }
       ]
      },
      "03": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 40.0
       },
       "yoy": null,
@@ -11927,51 +12539,67 @@
        {
         "period": "2026-07",
         "value": 40.0
+       },
+       {
+        "period": "2026-09",
+        "value": 40.0
        }
       ]
      },
      "04": {
       "latest": {
-       "period": "2026-07",
-       "value": 79.0
+       "period": "2026-09",
+       "value": 80.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 79.0
+       },
+       {
+        "period": "2026-09",
+        "value": 80.0
        }
       ]
      },
      "05": {
       "latest": {
-       "period": "2026-07",
-       "value": 109.0
+       "period": "2026-09",
+       "value": 110.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 109.0
+       },
+       {
+        "period": "2026-09",
+        "value": 110.0
        }
       ]
      },
      "06": {
       "latest": {
-       "period": "2026-07",
-       "value": 177.0
+       "period": "2026-09",
+       "value": 182.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 177.0
+       },
+       {
+        "period": "2026-09",
+        "value": 182.0
        }
       ]
      },
      "07": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 60.0
       },
       "yoy": null,
@@ -11979,12 +12607,16 @@
        {
         "period": "2026-07",
         "value": 60.0
+       },
+       {
+        "period": "2026-09",
+        "value": 60.0
        }
       ]
      },
      "08": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 52.0
       },
       "yoy": null,
@@ -11992,77 +12624,101 @@
        {
         "period": "2026-07",
         "value": 52.0
+       },
+       {
+        "period": "2026-09",
+        "value": 52.0
        }
       ]
      },
      "09": {
       "latest": {
-       "period": "2026-07",
-       "value": 24.0
+       "period": "2026-09",
+       "value": 72.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 24.0
+       },
+       {
+        "period": "2026-09",
+        "value": 72.0
        }
       ]
      },
      "10": {
       "latest": {
-       "period": "2026-07",
-       "value": 68.0
+       "period": "2026-09",
+       "value": 72.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 68.0
+       },
+       {
+        "period": "2026-09",
+        "value": 72.0
        }
       ]
      },
      "11": {
       "latest": {
-       "period": "2026-07",
-       "value": 85.0
+       "period": "2026-09",
+       "value": 88.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 85.0
+       },
+       {
+        "period": "2026-09",
+        "value": 88.0
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-07",
-       "value": 48.0
+       "period": "2026-09",
+       "value": 50.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 48.0
+       },
+       {
+        "period": "2026-09",
+        "value": 50.0
        }
       ]
      },
      "13": {
       "latest": {
-       "period": "2026-07",
-       "value": 79.0
+       "period": "2026-09",
+       "value": 82.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 79.0
+       },
+       {
+        "period": "2026-09",
+        "value": 82.0
        }
       ]
      },
      "14": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 16.0
       },
       "yoy": null,
@@ -12070,25 +12726,33 @@
        {
         "period": "2026-07",
         "value": 16.0
+       },
+       {
+        "period": "2026-09",
+        "value": 16.0
        }
       ]
      },
      "15": {
       "latest": {
-       "period": "2026-07",
-       "value": 133.0
+       "period": "2026-09",
+       "value": 135.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 133.0
+       },
+       {
+        "period": "2026-09",
+        "value": 135.0
        }
       ]
      },
      "16": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 28.0
       },
       "yoy": null,
@@ -12096,12 +12760,16 @@
        {
         "period": "2026-07",
         "value": 28.0
+       },
+       {
+        "period": "2026-09",
+        "value": 28.0
        }
       ]
      },
      "17": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 17.0
       },
       "yoy": null,
@@ -12109,38 +12777,50 @@
        {
         "period": "2026-07",
         "value": 17.0
+       },
+       {
+        "period": "2026-09",
+        "value": 17.0
        }
       ]
      },
      "18": {
       "latest": {
-       "period": "2026-07",
-       "value": 9.0
+       "period": "2026-09",
+       "value": 12.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 9.0
+       },
+       {
+        "period": "2026-09",
+        "value": 12.0
        }
       ]
      },
      "19": {
       "latest": {
-       "period": "2026-07",
-       "value": 7.0
+       "period": "2026-09",
+       "value": 8.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
         "value": 7.0
+       },
+       {
+        "period": "2026-09",
+        "value": 8.0
        }
       ]
      },
      "20": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 18.0
       },
       "yoy": null,
@@ -12148,18 +12828,26 @@
        {
         "period": "2026-07",
         "value": 18.0
+       },
+       {
+        "period": "2026-09",
+        "value": 18.0
        }
       ]
      },
      "21": {
       "latest": {
-       "period": "2026-07",
+       "period": "2026-09",
        "value": 17.0
       },
       "yoy": null,
       "series": [
        {
         "period": "2026-07",
+        "value": 17.0
+       },
+       {
+        "period": "2026-09",
         "value": 17.0
        }
       ]
@@ -12174,10 +12862,10 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-03",
-       "value": 1.0
+       "period": "2026-05",
+       "value": 2.0
       },
-      "yoy": -80.0,
+      "yoy": -33.333333333333336,
       "series": [
        {
         "period": "2023-01",
@@ -12322,6 +13010,10 @@
        {
         "period": "2026-03",
         "value": 1.0
+       },
+       {
+        "period": "2026-05",
+        "value": 2.0
        }
       ]
      },
@@ -12411,6 +13103,10 @@
        {
         "period": "2025-05",
         "value": 3.0
+       },
+       {
+        "period": "2025-08",
+        "value": 1.0
        },
        {
         "period": "2025-10",
@@ -12859,10 +13555,10 @@
      },
      "06": {
       "latest": {
-       "period": "2026-03",
+       "period": "2026-05",
        "value": 1.0
       },
-      "yoy": -75.0,
+      "yoy": -66.66666666666667,
       "series": [
        {
         "period": "2023-01",
@@ -12999,15 +13695,19 @@
        {
         "period": "2026-03",
         "value": 1.0
+       },
+       {
+        "period": "2026-05",
+        "value": 1.0
        }
       ]
      },
      "07": {
       "latest": {
-       "period": "2026-03",
+       "period": "2026-05",
        "value": 1.0
       },
-      "yoy": -80.0,
+      "yoy": -66.66666666666667,
       "series": [
        {
         "period": "2023-01",
@@ -13156,15 +13856,19 @@
        {
         "period": "2026-03",
         "value": 1.0
+       },
+       {
+        "period": "2026-05",
+        "value": 1.0
        }
       ]
      },
      "08": {
       "latest": {
-       "period": "2026-04",
-       "value": 4.0
+       "period": "2026-05",
+       "value": 3.0
       },
-      "yoy": 33.333333333333336,
+      "yoy": null,
       "series": [
        {
         "period": "2023-01",
@@ -13321,15 +14025,19 @@
        {
         "period": "2026-04",
         "value": 4.0
+       },
+       {
+        "period": "2026-05",
+        "value": 3.0
        }
       ]
      },
      "09": {
       "latest": {
-       "period": "2026-04",
-       "value": 11.0
+       "period": "2026-05",
+       "value": 2.0
       },
-      "yoy": 57.142857142857146,
+      "yoy": -75.0,
       "series": [
        {
         "period": "2023-01",
@@ -13490,6 +14198,10 @@
        {
         "period": "2026-04",
         "value": 11.0
+       },
+       {
+        "period": "2026-05",
+        "value": 2.0
        }
       ]
      },
@@ -13636,10 +14348,10 @@
      },
      "11": {
       "latest": {
-       "period": "2026-04",
-       "value": 2.0
+       "period": "2026-05",
+       "value": 1.0
       },
-      "yoy": -66.66666666666667,
+      "yoy": -75.0,
       "series": [
        {
         "period": "2023-01",
@@ -13796,15 +14508,19 @@
        {
         "period": "2026-04",
         "value": 2.0
+       },
+       {
+        "period": "2026-05",
+        "value": 1.0
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-03",
+       "period": "2026-05",
        "value": 1.0
       },
-      "yoy": -83.33333333333333,
+      "yoy": -50.0,
       "series": [
        {
         "period": "2023-01",
@@ -13953,6 +14669,14 @@
        {
         "period": "2026-03",
         "value": 1.0
+       },
+       {
+        "period": "2026-04",
+        "value": 1.0
+       },
+       {
+        "period": "2026-05",
+        "value": 1.0
        }
       ]
      },
@@ -14060,6 +14784,10 @@
         "value": 1.0
        },
        {
+        "period": "2025-03",
+        "value": 1.0
+       },
+       {
         "period": "2025-04",
         "value": 2.0
        },
@@ -14111,10 +14839,10 @@
      },
      "14": {
       "latest": {
-       "period": "2026-04",
+       "period": "2026-05",
        "value": 1.0
       },
-      "yoy": 0.0,
+      "yoy": -66.66666666666667,
       "series": [
        {
         "period": "2023-01",
@@ -14267,12 +14995,16 @@
        {
         "period": "2026-04",
         "value": 1.0
+       },
+       {
+        "period": "2026-05",
+        "value": 1.0
        }
       ]
      },
      "15": {
       "latest": {
-       "period": "2026-04",
+       "period": "2026-05",
        "value": 4.0
       },
       "yoy": 100.0,
@@ -14435,6 +15167,10 @@
        },
        {
         "period": "2026-04",
+        "value": 4.0
+       },
+       {
+        "period": "2026-05",
         "value": 4.0
        }
       ]
@@ -14610,10 +15346,10 @@
      },
      "17": {
       "latest": {
-       "period": "2026-03",
+       "period": "2026-05",
        "value": 1.0
       },
-      "yoy": null,
+      "yoy": -66.66666666666667,
       "series": [
        {
         "period": "2023-01",
@@ -14734,15 +15470,19 @@
        {
         "period": "2026-03",
         "value": 1.0
+       },
+       {
+        "period": "2026-05",
+        "value": 1.0
        }
       ]
      },
      "18": {
       "latest": {
-       "period": "2026-04",
-       "value": 1.0
+       "period": "2026-05",
+       "value": 2.0
       },
-      "yoy": -50.0,
+      "yoy": 0.0,
       "series": [
        {
         "period": "2023-01",
@@ -14887,6 +15627,10 @@
        {
         "period": "2026-04",
         "value": 1.0
+       },
+       {
+        "period": "2026-05",
+        "value": 2.0
        }
       ]
      },
@@ -15170,10 +15914,10 @@
      },
      "21": {
       "latest": {
-       "period": "2026-04",
-       "value": 9.0
+       "period": "2026-05",
+       "value": 4.0
       },
-      "yoy": 350.0,
+      "yoy": 100.0,
       "series": [
        {
         "period": "2023-03",
@@ -15302,6 +16046,10 @@
        {
         "period": "2026-04",
         "value": 9.0
+       },
+       {
+        "period": "2026-05",
+        "value": 4.0
        }
       ]
      }
@@ -46874,15 +47622,11 @@
     "section": "credit",
     "geo_level": "nation",
     "source_id": "ecb",
-    "period": "2026-06",
+    "period": "2026-07",
     "value": 2.89,
-    "yoy": 7.835820895522386,
-    "observations": 138,
+    "yoy": 9.88593155893537,
+    "observations": 139,
     "series": [
-     {
-      "period": "2023-07",
-      "value": 3.84
-     },
      {
       "period": "2023-08",
       "value": 3.93
@@ -47021,6 +47765,10 @@
      },
      {
       "period": "2026-06",
+      "value": 2.89
+     },
+     {
+      "period": "2026-07",
       "value": 2.89
      }
     ],
@@ -47596,15 +48344,11 @@
     "section": "work",
     "geo_level": "municipality",
     "source_id": "sepe",
-    "period": "2026-07",
-    "value": 131527.0,
-    "yoy": -0.3824830344158992,
-    "observations": 91,
+    "period": "2026-08",
+    "value": 135168.0,
+    "yoy": 0.9205958114010527,
+    "observations": 92,
     "series": [
-     {
-      "period": "2023-08",
-      "value": 142718.0
-     },
      {
       "period": "2023-09",
       "value": 143473.0
@@ -47744,9 +48488,13 @@
      {
       "period": "2026-07",
       "value": 131527.0
+     },
+     {
+      "period": "2026-08",
+      "value": 135168.0
      }
     ],
-    "z": -1.06
+    "z": -0.91
    }
   ],
   "signals": [
@@ -49807,10 +50555,10 @@
      "metric_id": "contracts_registered",
      "label": "New contracts registered",
      "expect": "up",
-     "z": -0.2142,
-     "raw": -4.8328,
+     "z": 0.0987,
+     "raw": 7.4374,
      "unit": "contracts",
-     "period": "2026-07",
+     "period": "2026-08",
      "geo_level": "municipality",
      "source_id": "sepe"
     },
@@ -49818,10 +50566,10 @@
      "metric_id": "unemployment_registered",
      "label": "Registered unemployment",
      "expect": "down",
-     "z": 0.1079,
-     "raw": -0.3825,
+     "z": 0.1944,
+     "raw": 0.9206,
      "unit": "persons",
-     "period": "2026-07",
+     "period": "2026-08",
      "geo_level": "municipality",
      "source_id": "sepe"
     },
@@ -50009,10 +50757,10 @@
      "metric_id": "unemployment_registered",
      "label": "Registered unemployment",
      "expect": "up",
-     "z": 0.1079,
-     "raw": -0.3825,
+     "z": 0.1944,
+     "raw": 0.9206,
      "unit": "persons",
-     "period": "2026-07",
+     "period": "2026-08",
      "geo_level": "municipality",
      "source_id": "sepe"
     },
@@ -50020,10 +50768,10 @@
      "metric_id": "contracts_registered",
      "label": "New contracts registered",
      "expect": "down",
-     "z": -0.2142,
-     "raw": -4.8328,
+     "z": 0.0987,
+     "raw": 7.4374,
      "unit": "contracts",
-     "period": "2026-07",
+     "period": "2026-08",
      "geo_level": "municipality",
      "source_id": "sepe"
     },
@@ -50146,10 +50894,10 @@
      "metric_id": "unemployment_registered",
      "label": "Registered unemployment",
      "expect": "down",
-     "z": 0.1079,
-     "raw": -0.3825,
+     "z": 0.1944,
+     "raw": 0.9206,
      "unit": "persons",
-     "period": "2026-07",
+     "period": "2026-08",
      "geo_level": "municipality",
      "source_id": "sepe"
     },
@@ -50256,12 +51004,12 @@
    "signal_metric": "wiki_hardship_index",
    "outcome_metric": "unemployment_registered",
    "city": "madrid",
-   "best_lag": 10,
-   "in_sample_r": 0.361,
-   "holdout_r": -0.3007,
-   "baseline_r": -0.6064,
+   "best_lag": 11,
+   "in_sample_r": 0.3605,
+   "holdout_r": -0.3762,
+   "baseline_r": -0.2812,
    "observations": 12,
-   "verdict": "no_evidence"
+   "verdict": "leading"
   },
   {
    "signal_metric": "wiki_relocation_index",
@@ -50827,8 +51575,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 609,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 616,
     "max_age_days": 120,
     "fresh": "failing"
    },
@@ -51250,8 +51998,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 609,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 616,
     "max_age_days": 120,
     "fresh": "failing"
    },
@@ -51313,8 +52061,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 244,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 251,
     "max_age_days": 120,
     "fresh": "failing"
    }
@@ -51738,8 +52486,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-01T05:54:56+00:00",
-    "staleness_days": 154,
+    "last_checked": "2026-09-08T05:56:05+00:00",
+    "staleness_days": 161,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -52161,8 +52909,8 @@
      "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-01T05:47:20+00:00",
-    "staleness_days": 244,
+    "last_checked": "2026-09-08T05:48:31+00:00",
+    "staleness_days": 251,
     "max_age_days": 60,
     "fresh": "failing"
    },
@@ -52584,8 +53332,8 @@
      "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-01T05:47:20+00:00",
-    "staleness_days": 244,
+    "last_checked": "2026-09-08T05:48:31+00:00",
+    "staleness_days": 251,
     "max_age_days": 60,
     "fresh": "failing"
    },
@@ -52605,12 +53353,12 @@
     "scope_label": "autonomous community",
     "is_city_level": false,
     "latest": {
-     "period": "2026-Q1",
-     "value": 107.296,
-     "yoy": 13.579201422703985
+     "period": "2026-Q2",
+     "value": 111.85,
+     "yoy": 12.853265530566727
     },
     "suspect": false,
-    "outlier_score": 2.14,
+    "outlier_score": 1.99,
     "suspect_note": null,
     "series": [
      {
@@ -52692,6 +53440,10 @@
      {
       "period": "2026-Q1",
       "value": 107.296
+     },
+     {
+      "period": "2026-Q2",
+      "value": 111.85
      }
     ],
     "source_id": "ine",
@@ -52702,11 +53454,11 @@
      "kind": "official",
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
-    "observation_end": "2026-03-31",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 154,
+    "observation_end": "2026-06-30",
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
-    "fresh": "stale"
+    "fresh": "fresh"
    },
    {
     "metric_id": "property_transfers",
@@ -53126,8 +53878,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -53221,8 +53973,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-09-01T05:54:56+00:00",
-    "staleness_days": 609,
+    "last_checked": "2026-09-08T05:56:05+00:00",
+    "staleness_days": 616,
     "max_age_days": 270,
     "fresh": "failing"
    }
@@ -53646,8 +54398,8 @@
      "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
     },
     "observation_end": "2026-02-28",
-    "last_checked": "2026-09-01T05:56:01+00:00",
-    "staleness_days": 185,
+    "last_checked": "2026-09-08T05:57:09+00:00",
+    "staleness_days": 192,
     "max_age_days": 120,
     "fresh": "stale"
    },
@@ -54069,8 +54821,8 @@
      "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
     },
     "observation_end": "2026-02-28",
-    "last_checked": "2026-09-01T05:56:01+00:00",
-    "staleness_days": 185,
+    "last_checked": "2026-09-08T05:57:09+00:00",
+    "staleness_days": 192,
     "max_age_days": 120,
     "fresh": "stale"
    },
@@ -54492,8 +55244,8 @@
      "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
     },
     "observation_end": "2026-02-28",
-    "last_checked": "2026-09-01T05:56:01+00:00",
-    "staleness_days": 185,
+    "last_checked": "2026-09-08T05:57:09+00:00",
+    "staleness_days": 192,
     "max_age_days": 120,
     "fresh": "stale"
    },
@@ -54631,8 +55383,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-01T05:54:56+00:00",
-    "staleness_days": 244,
+    "last_checked": "2026-09-08T05:56:05+00:00",
+    "staleness_days": 251,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -54958,8 +55710,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-01T05:54:56+00:00",
-    "staleness_days": 244,
+    "last_checked": "2026-09-08T05:56:05+00:00",
+    "staleness_days": 251,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -55285,8 +56037,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-01T05:54:56+00:00",
-    "staleness_days": 244,
+    "last_checked": "2026-09-08T05:56:05+00:00",
+    "staleness_days": 251,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -55680,8 +56432,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-01T05:54:56+00:00",
-    "staleness_days": 154,
+    "last_checked": "2026-09-08T05:56:05+00:00",
+    "staleness_days": 161,
     "max_age_days": 270,
     "fresh": "fresh"
    }
@@ -56105,8 +56857,8 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-01T05:46:18+00:00",
-    "staleness_days": 154,
+    "last_checked": "2026-09-08T05:46:12+00:00",
+    "staleness_days": 161,
     "max_age_days": 75,
     "fresh": "failing"
    },
@@ -56126,18 +56878,14 @@
     "scope_label": "Spain",
     "is_city_level": false,
     "latest": {
-     "period": "2026-06",
+     "period": "2026-07",
      "value": 2.89,
-     "yoy": 7.835820895522386
+     "yoy": 9.88593155893537
     },
     "suspect": false,
-    "outlier_score": 2.83,
+    "outlier_score": 2.36,
     "suspect_note": null,
     "series": [
-     {
-      "period": "2018-07",
-      "value": 1.89
-     },
      {
       "period": "2018-08",
       "value": 2.03
@@ -56517,6 +57265,10 @@
      {
       "period": "2026-06",
       "value": 2.89
+     },
+     {
+      "period": "2026-07",
+      "value": 2.89
      }
     ],
     "source_id": "ecb",
@@ -56527,11 +57279,11 @@
      "kind": "official",
      "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html"
     },
-    "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:47:17+00:00",
-    "staleness_days": 63,
+    "observation_end": "2026-07-31",
+    "last_checked": "2026-09-08T05:48:28+00:00",
+    "staleness_days": 39,
     "max_age_days": 60,
-    "fresh": "stale"
+    "fresh": "fresh"
    },
    {
     "metric_id": "euribor_12m",
@@ -56951,8 +57703,8 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:46:18+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:46:12+00:00",
+    "staleness_days": 70,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -57374,8 +58126,8 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-05-31",
-    "last_checked": "2026-09-01T05:46:18+00:00",
-    "staleness_days": 93,
+    "last_checked": "2026-09-08T05:46:12+00:00",
+    "staleness_days": 100,
     "max_age_days": 75,
     "fresh": "stale"
    },
@@ -57797,8 +58549,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -58154,8 +58906,8 @@
      "docs_url": "https://www.hiringlab.org/research/jobs-postings-tracker/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:47:21+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:48:31+00:00",
+    "staleness_days": 8,
     "max_age_days": 14,
     "fresh": "fresh"
    },
@@ -58175,12 +58927,12 @@
     "scope_label": "municipality",
     "is_city_level": true,
     "latest": {
-     "period": "2026-07",
-     "value": 136269.0,
-     "yoy": -4.8327734672356115
+     "period": "2026-08",
+     "value": 93665.0,
+     "yoy": 7.437400350993909
     },
     "suspect": false,
-    "outlier_score": 0.65,
+    "outlier_score": 1.1,
     "suspect_note": null,
     "series": [
      {
@@ -58546,6 +59298,10 @@
      {
       "period": "2026-07",
       "value": 136269.0
+     },
+     {
+      "period": "2026-08",
+      "value": 93665.0
      }
     ],
     "source_id": "sepe",
@@ -58556,9 +59312,9 @@
      "kind": "official",
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
-    "observation_end": "2026-07-31",
-    "last_checked": "2026-09-01T05:55:52+00:00",
-    "staleness_days": 32,
+    "observation_end": "2026-08-31",
+    "last_checked": "2026-09-08T05:57:00+00:00",
+    "staleness_days": 8,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -58792,8 +59548,8 @@
      "docs_url": "https://www.dgt.es/menusecundario/dgt-en-cifras/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-01T05:47:10+00:00",
-    "staleness_days": 32,
+    "last_checked": "2026-09-08T05:47:14+00:00",
+    "staleness_days": 39,
     "max_age_days": 90,
     "fresh": "fresh"
    },
@@ -58813,12 +59569,12 @@
     "scope_label": "municipality",
     "is_city_level": true,
     "latest": {
-     "period": "2026-07",
-     "value": 131527.0,
-     "yoy": -0.3824830344158992
+     "period": "2026-08",
+     "value": 135168.0,
+     "yoy": 0.9205958114010527
     },
     "suspect": false,
-    "outlier_score": 0.71,
+    "outlier_score": 1.29,
     "suspect_note": null,
     "series": [
      {
@@ -59184,6 +59940,10 @@
      {
       "period": "2026-07",
       "value": 131527.0
+     },
+     {
+      "period": "2026-08",
+      "value": 135168.0
      }
     ],
     "source_id": "sepe",
@@ -59194,9 +59954,9 @@
      "kind": "official",
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
-    "observation_end": "2026-07-31",
-    "last_checked": "2026-09-01T05:55:52+00:00",
-    "staleness_days": 32,
+    "observation_end": "2026-08-31",
+    "last_checked": "2026-09-08T05:57:00+00:00",
+    "staleness_days": 8,
     "max_age_days": 75,
     "fresh": "fresh"
    }
@@ -59408,8 +60168,8 @@
      "docs_url": "https://ansperformance.eu/data/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-01T05:47:20+00:00",
-    "staleness_days": 32,
+    "last_checked": "2026-09-08T05:48:30+00:00",
+    "staleness_days": 39,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -59811,8 +60571,8 @@
      "docs_url": "https://www.aena.es/es/estadisticas/inicio.html"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-01T05:46:16+00:00",
-    "staleness_days": 32,
+    "last_checked": "2026-09-08T05:46:10+00:00",
+    "staleness_days": 39,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -60118,8 +60878,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 32,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 39,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -60233,8 +60993,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 32,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 39,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -60344,8 +61104,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -60455,8 +61215,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -60762,8 +61522,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 32,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 39,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -60807,8 +61567,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:11+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:19+00:00",
+    "staleness_days": 70,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -60850,8 +61610,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:11+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:19+00:00",
+    "staleness_days": 70,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -60893,8 +61653,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:11+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:19+00:00",
+    "staleness_days": 70,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -60964,8 +61724,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -61035,8 +61795,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:54:08+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:55:16+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -61059,7 +61819,7 @@
     "is_city_level": false,
     "latest": {
      "period": "2026-09",
-     "value": 26.0,
+     "value": 141.0,
      "yoy": null
     },
     "suspect": false,
@@ -61084,7 +61844,7 @@
      },
      {
       "period": "2026-09",
-      "value": 26.0
+      "value": 141.0
      }
     ],
     "source_id": "borme",
@@ -61096,8 +61856,8 @@
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
     "observation_end": "2026-09-30",
-    "last_checked": "2026-09-01T05:46:22+00:00",
-    "staleness_days": -29,
+    "last_checked": "2026-09-08T05:46:34+00:00",
+    "staleness_days": -22,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -61118,7 +61878,7 @@
     "is_city_level": false,
     "latest": {
      "period": "2026-09",
-     "value": 73.0,
+     "value": 343.0,
      "yoy": null
     },
     "suspect": false,
@@ -61143,7 +61903,7 @@
      },
      {
       "period": "2026-09",
-      "value": 73.0
+      "value": 343.0
      }
     ],
     "source_id": "borme",
@@ -61155,8 +61915,8 @@
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
     "observation_end": "2026-09-30",
-    "last_checked": "2026-09-01T05:46:22+00:00",
-    "staleness_days": -29,
+    "last_checked": "2026-09-08T05:46:34+00:00",
+    "staleness_days": -22,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -61406,8 +62166,8 @@
      "docs_url": "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-01T05:46:29+00:00",
-    "staleness_days": 154,
+    "last_checked": "2026-09-08T05:46:39+00:00",
+    "staleness_days": 161,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -61427,8 +62187,8 @@
     "scope_label": "province",
     "is_city_level": false,
     "latest": {
-     "period": "2026-08",
-     "value": 25.0,
+     "period": "2026-09",
+     "value": 2.0,
      "yoy": null
     },
     "suspect": false,
@@ -61450,6 +62210,10 @@
      {
       "period": "2026-08",
       "value": 25.0
+     },
+     {
+      "period": "2026-09",
+      "value": 2.0
      }
     ],
     "source_id": "borme",
@@ -61460,9 +62224,9 @@
      "kind": "official",
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
-    "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:46:22+00:00",
-    "staleness_days": 1,
+    "observation_end": "2026-09-30",
+    "last_checked": "2026-09-08T05:46:34+00:00",
+    "staleness_days": -22,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -61808,8 +62572,8 @@
      "docs_url": "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-01T05:46:29+00:00",
-    "staleness_days": 154,
+    "last_checked": "2026-09-08T05:46:39+00:00",
+    "staleness_days": 161,
     "max_age_days": 210,
     "fresh": "fresh"
    }
@@ -62089,8 +62853,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:55:59+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:57:07+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -62368,8 +63132,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:55:59+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:57:07+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -62791,8 +63555,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:57:18+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:58:26+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -63070,8 +63834,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:55:59+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:57:07+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -63349,8 +64113,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:55:59+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:57:07+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -63756,8 +64520,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:56:36+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:57:44+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -64179,8 +64943,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:57:18+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:58:26+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -64586,8 +65350,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:56:36+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:57:44+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -64993,8 +65757,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:56:36+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:57:44+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -65400,8 +66164,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:56:36+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:57:44+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -65807,8 +66571,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:56:36+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:57:44+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -66214,8 +66978,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:56:36+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:57:44+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -66637,8 +67401,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:57:18+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:58:26+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -67060,8 +67824,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:57:18+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:58:26+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -67339,8 +68103,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:55:59+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:57:07+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -67618,8 +68382,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:55:59+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:57:07+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -67897,8 +68661,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-01T05:55:59+00:00",
-    "staleness_days": 63,
+    "last_checked": "2026-09-08T05:57:07+00:00",
+    "staleness_days": 70,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -68320,12 +69084,12 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-01T05:57:18+00:00",
-    "staleness_days": 1,
+    "last_checked": "2026-09-08T05:58:26+00:00",
+    "staleness_days": 8,
     "max_age_days": 45,
     "fresh": "fresh"
    }
   ]
  },
- "generated_at": "2026-09-01T05:57:19+00:00"
+ "generated_at": "2026-09-08T05:58:27+00:00"
 }

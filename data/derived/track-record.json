@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T05:57:24+00:00",
+ "generated_at": "2026-09-08T05:58:33+00:00",
  "targets_version": "targets-v1",
  "frozen": [
   {
@@ -181,9 +181,45 @@
    "pct_error": null,
    "inside_80": null,
    "direction_correct": null
+  },
+  {
+   "target_id": "unemployment_3m",
+   "question": "How many people will be signed on as unemployed in Madrid city three months from now?",
+   "issued_at": "2026-09-08T05:58:33+00:00",
+   "from_period": "2026-08",
+   "for_period": "2026-11",
+   "geo_level": "municipality",
+   "unit": "persons",
+   "model": "random_walk",
+   "model_verdict": "baseline",
+   "predicted_p50": 134092.0,
+   "p_direction_up": 0.43820224719101125,
+   "data_vintage": "sha256:e94d882c9868e8c7c48379536f5d3e0f",
+   "actual": null,
+   "pct_error": null,
+   "inside_80": null,
+   "direction_correct": null
+  },
+  {
+   "target_id": "unemployment_6m",
+   "question": "And six months out?",
+   "issued_at": "2026-09-08T05:58:33+00:00",
+   "from_period": "2026-08",
+   "for_period": "2027-02",
+   "geo_level": "municipality",
+   "unit": "persons",
+   "model": "random_walk",
+   "model_verdict": "baseline",
+   "predicted_p50": 132863.0,
+   "p_direction_up": 0.38372093023255816,
+   "data_vintage": "sha256:e94d882c9868e8c7c48379536f5d3e0f",
+   "actual": null,
+   "pct_error": null,
+   "inside_80": null,
+   "direction_correct": null
   }
  ],
  "scores": [],
- "pending": 10,
+ "pending": 12,
  "summary": {}
 }

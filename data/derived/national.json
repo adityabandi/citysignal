@@ -337,15 +337,11 @@
     "section": "work",
     "geo_level": "euro_area",
     "source_id": "ecb",
-    "period": "2026-06",
-    "value": 6.3,
+    "period": "2026-07",
+    "value": 6.4,
     "yoy": 0.0,
-    "observations": 318,
+    "observations": 319,
     "series": [
-     {
-      "period": "2023-07",
-      "value": 6.6
-     },
      {
       "period": "2023-08",
       "value": 6.6
@@ -485,9 +481,13 @@
      {
       "period": "2026-06",
       "value": 6.3
+     },
+     {
+      "period": "2026-07",
+      "value": 6.4
      }
     ],
-    "z": -1.57
+    "z": -1.5
    },
    {
     "metric_id": "eur_usd",
@@ -2284,15 +2284,11 @@
    "section": "credit",
    "geo_level": "nation",
    "source_id": "ecb",
-   "period": "2026-06",
+   "period": "2026-07",
    "value": 2.89,
-   "yoy": 7.835820895522386,
-   "observations": 138,
+   "yoy": 9.88593155893537,
+   "observations": 139,
    "series": [
-    {
-     "period": "2023-07",
-     "value": 3.84
-    },
     {
      "period": "2023-08",
      "value": 3.93
@@ -2431,6 +2427,10 @@
     },
     {
      "period": "2026-06",
+     "value": 2.89
+    },
+    {
+     "period": "2026-07",
      "value": 2.89
     }
    ],
@@ -2770,10 +2770,10 @@
    "section": "housing",
    "geo_level": "ccaa",
    "source_id": "ine",
-   "period": "2026-Q1",
-   "value": 107.296,
-   "yoy": 13.579201422703985,
-   "observations": 20,
+   "period": "2026-Q2",
+   "value": 111.85,
+   "yoy": 12.853265530566727,
+   "observations": 21,
    "series": [
     {
      "period": "2021-Q2",
@@ -2854,6 +2854,10 @@
     {
      "period": "2026-Q1",
      "value": 107.296
+    },
+    {
+     "period": "2026-Q2",
+     "value": 111.85
     }
    ],
    "z": null

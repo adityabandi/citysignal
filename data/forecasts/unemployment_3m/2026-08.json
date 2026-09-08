@@ -1,0 +1,80 @@
+{
+ "as_of": "2026-09-08",
+ "cadence": "monthly",
+ "city": "madrid",
+ "data_vintage": "sha256:e94d882c9868e8c7c48379536f5d3e0f",
+ "direction_only": false,
+ "for_period": "2026-11",
+ "from_period": "2026-08",
+ "geo_id": "mun-28079",
+ "geo_level": "municipality",
+ "horizon": 3,
+ "issued_at": "2026-09-08T05:58:33+00:00",
+ "last_observed": 135168.0,
+ "metric_id": "unemployment_registered",
+ "model": "random_walk",
+ "model_verdict": "baseline",
+ "p_direction_up": 0.43820224719101125,
+ "quantiles": {
+  "p10": 123349.6,
+  "p50": 134092.0,
+  "p90": 140348.8
+ },
+ "question": "How many people will be signed on as unemployed in Madrid city three months from now?",
+ "skill": {
+  "analog": {
+   "brier": null,
+   "coverage_80": 0.756,
+   "folds": 41,
+   "mae": 3811.905,
+   "mae_ratio": 1.2128,
+   "model": "analog",
+   "pinball": 1255.3696,
+   "pinball_ratio": 1.0203,
+   "verdict": "no_better_than_baseline"
+  },
+  "drift": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 41,
+   "mae": 3480.479,
+   "mae_ratio": 1.1074,
+   "model": "drift",
+   "pinball": 1320.794,
+   "pinball_ratio": 1.0735,
+   "verdict": "baseline"
+  },
+  "random_walk": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 41,
+   "mae": 3142.988,
+   "mae_ratio": 1.0,
+   "model": "random_walk",
+   "pinball": 1230.3886,
+   "pinball_ratio": 1.0,
+   "verdict": "baseline"
+  },
+  "seasonal_naive": {
+   "brier": null,
+   "coverage_80": 1.0,
+   "folds": 41,
+   "mae": 3202.683,
+   "mae_ratio": 1.019,
+   "model": "seasonal_naive",
+   "pinball": 3843.3493,
+   "pinball_ratio": 3.1237,
+   "verdict": "baseline"
+  }
+ },
+ "status": "issued",
+ "target_id": "unemployment_3m",
+ "targets_version": "targets-v1",
+ "unit": "persons",
+ "unit_of_horizon": "months",
+ "vintage_basis": {
+  "declared_lag": 45181,
+  "published_at": 1869
+ },
+ "why": "Labour is the transmission channel from a slow market to a distressed one. People do not default because prices fell; they default because they lost work."
+}
