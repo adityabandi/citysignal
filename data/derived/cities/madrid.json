@@ -6385,10 +6385,10 @@
     "districts": {
      "01": {
       "latest": {
-       "period": "2026-08",
-       "value": 141433.0
+       "period": "2026-09",
+       "value": 141507.0
       },
-      "yoy": -0.22152144313459896,
+      "yoy": 0.2820514637620563,
       "series": [
        {
         "period": "2023-08",
@@ -6537,15 +6537,19 @@
        {
         "period": "2026-08",
         "value": 141433.0
+       },
+       {
+        "period": "2026-09",
+        "value": 141507.0
        }
       ]
      },
      "02": {
       "latest": {
-       "period": "2026-08",
-       "value": 159926.0
+       "period": "2026-09",
+       "value": 159958.0
       },
-      "yoy": 0.9232439118279977,
+      "yoy": 1.057592681509186,
       "series": [
        {
         "period": "2023-08",
@@ -6694,15 +6698,19 @@
        {
         "period": "2026-08",
         "value": 159926.0
+       },
+       {
+        "period": "2026-09",
+        "value": 159958.0
        }
       ]
      },
      "03": {
       "latest": {
-       "period": "2026-08",
-       "value": 119157.0
+       "period": "2026-09",
+       "value": 119087.0
       },
-      "yoy": -0.11065563463521363,
+      "yoy": -0.0251853219943417,
       "series": [
        {
         "period": "2023-08",
@@ -6851,15 +6859,19 @@
        {
         "period": "2026-08",
         "value": 119157.0
+       },
+       {
+        "period": "2026-09",
+        "value": 119087.0
        }
       ]
      },
      "04": {
       "latest": {
-       "period": "2026-08",
-       "value": 146606.0
+       "period": "2026-09",
+       "value": 146433.0
       },
-      "yoy": -0.5750946057753604,
+      "yoy": -0.3762263072673588,
       "series": [
        {
         "period": "2023-08",
@@ -7008,15 +7020,19 @@
        {
         "period": "2026-08",
         "value": 146606.0
+       },
+       {
+        "period": "2026-09",
+        "value": 146433.0
        }
       ]
      },
      "05": {
       "latest": {
-       "period": "2026-08",
-       "value": 148560.0
+       "period": "2026-09",
+       "value": 148578.0
       },
-      "yoy": 0.21316208413156687,
+      "yoy": 0.43329255020718277,
       "series": [
        {
         "period": "2023-08",
@@ -7165,15 +7181,19 @@
        {
         "period": "2026-08",
         "value": 148560.0
+       },
+       {
+        "period": "2026-09",
+        "value": 148578.0
        }
       ]
      },
      "06": {
       "latest": {
-       "period": "2026-08",
-       "value": 169453.0
+       "period": "2026-09",
+       "value": 169403.0
       },
-      "yoy": 1.0356793627322378,
+      "yoy": 1.2449199139373655,
       "series": [
        {
         "period": "2023-08",
@@ -7322,15 +7342,19 @@
        {
         "period": "2026-08",
         "value": 169453.0
+       },
+       {
+        "period": "2026-09",
+        "value": 169403.0
        }
       ]
      },
      "07": {
       "latest": {
-       "period": "2026-08",
-       "value": 141007.0
+       "period": "2026-09",
+       "value": 140934.0
       },
-      "yoy": -0.3786835096048551,
+      "yoy": -0.14453938698295285,
       "series": [
        {
         "period": "2023-08",
@@ -7479,15 +7503,19 @@
        {
         "period": "2026-08",
         "value": 141007.0
+       },
+       {
+        "period": "2026-09",
+        "value": 140934.0
        }
       ]
      },
      "08": {
       "latest": {
-       "period": "2026-08",
-       "value": 257725.0
+       "period": "2026-09",
+       "value": 257547.0
       },
-      "yoy": 0.29849236061924517,
+      "yoy": 0.3921400477896321,
       "series": [
        {
         "period": "2023-08",
@@ -7636,15 +7664,19 @@
        {
         "period": "2026-08",
         "value": 257725.0
+       },
+       {
+        "period": "2026-09",
+        "value": 257547.0
        }
       ]
      },
      "09": {
       "latest": {
-       "period": "2026-08",
-       "value": 127152.0
+       "period": "2026-09",
+       "value": 127042.0
       },
-      "yoy": 0.866254164683484,
+      "yoy": 0.9551811824539097,
       "series": [
        {
         "period": "2023-08",
@@ -7793,15 +7825,19 @@
        {
         "period": "2026-08",
         "value": 127152.0
+       },
+       {
+        "period": "2026-09",
+        "value": 127042.0
        }
       ]
      },
      "10": {
       "latest": {
-       "period": "2026-08",
-       "value": 253217.0
+       "period": "2026-09",
+       "value": 253272.0
       },
-      "yoy": 0.26132714595121104,
+      "yoy": 0.4676845449893492,
       "series": [
        {
         "period": "2023-08",
@@ -7950,15 +7986,19 @@
        {
         "period": "2026-08",
         "value": 253217.0
+       },
+       {
+        "period": "2026-09",
+        "value": 253272.0
        }
       ]
      },
      "11": {
       "latest": {
-       "period": "2026-08",
-       "value": 280784.0
+       "period": "2026-09",
+       "value": 280700.0
       },
-      "yoy": 0.5151336161377508,
+      "yoy": 0.6150890373641499,
       "series": [
        {
         "period": "2023-08",
@@ -8107,15 +8147,19 @@
        {
         "period": "2026-08",
         "value": 280784.0
+       },
+       {
+        "period": "2026-09",
+        "value": 280700.0
        }
       ]
      },
      "12": {
       "latest": {
-       "period": "2026-08",
-       "value": 154514.0
+       "period": "2026-09",
+       "value": 154621.0
       },
-      "yoy": 0.7873091248279596,
+      "yoy": 1.0363642304048093,
       "series": [
        {
         "period": "2023-08",
@@ -8264,15 +8308,19 @@
        {
         "period": "2026-08",
         "value": 154514.0
+       },
+       {
+        "period": "2026-09",
+        "value": 154621.0
        }
       ]
      },
      "13": {
       "latest": {
-       "period": "2026-08",
-       "value": 259852.0
+       "period": "2026-09",
+       "value": 259877.0
       },
-      "yoy": 0.19974241711460897,
+      "yoy": 0.40722810569385254,
       "series": [
        {
         "period": "2023-08",
@@ -8421,15 +8469,19 @@
        {
         "period": "2026-08",
         "value": 259852.0
+       },
+       {
+        "period": "2026-09",
+        "value": 259877.0
        }
       ]
      },
      "14": {
       "latest": {
-       "period": "2026-08",
-       "value": 94702.0
+       "period": "2026-09",
+       "value": 94664.0
       },
-      "yoy": -0.5565356182795699,
+      "yoy": -0.4595114667563958,
       "series": [
        {
         "period": "2023-08",
@@ -8578,15 +8630,19 @@
        {
         "period": "2026-08",
         "value": 94702.0
+       },
+       {
+        "period": "2026-09",
+        "value": 94664.0
        }
       ]
      },
      "15": {
       "latest": {
-       "period": "2026-08",
-       "value": 230722.0
+       "period": "2026-09",
+       "value": 230728.0
       },
-      "yoy": -0.4869506709050209,
+      "yoy": -0.26066545339794495,
       "series": [
        {
         "period": "2023-08",
@@ -8735,15 +8791,19 @@
        {
         "period": "2026-08",
         "value": 230722.0
+       },
+       {
+        "period": "2026-09",
+        "value": 230728.0
        }
       ]
      },
      "16": {
       "latest": {
-       "period": "2026-08",
-       "value": 211174.0
+       "period": "2026-09",
+       "value": 211276.0
       },
-      "yoy": 1.0421252081379548,
+      "yoy": 1.12092813998679,
       "series": [
        {
         "period": "2023-08",
@@ -8892,15 +8952,19 @@
        {
         "period": "2026-08",
         "value": 211174.0
+       },
+       {
+        "period": "2026-09",
+        "value": 211276.0
        }
       ]
      },
      "17": {
       "latest": {
-       "period": "2026-08",
-       "value": 174939.0
+       "period": "2026-09",
+       "value": 175090.0
       },
-      "yoy": 0.9655673934874701,
+      "yoy": 1.1064016538279418,
       "series": [
        {
         "period": "2023-08",
@@ -9049,15 +9113,19 @@
        {
         "period": "2026-08",
         "value": 174939.0
+       },
+       {
+        "period": "2026-09",
+        "value": 175090.0
        }
       ]
      },
      "18": {
       "latest": {
-       "period": "2026-08",
-       "value": 129076.0
+       "period": "2026-09",
+       "value": 129101.0
       },
-      "yoy": 1.5410999315591147,
+      "yoy": 1.5623647877905833,
       "series": [
        {
         "period": "2023-08",
@@ -9206,15 +9274,19 @@
        {
         "period": "2026-08",
         "value": 129076.0
+       },
+       {
+        "period": "2026-09",
+        "value": 129101.0
        }
       ]
      },
      "19": {
       "latest": {
-       "period": "2026-08",
-       "value": 99476.0
+       "period": "2026-09",
+       "value": 99667.0
       },
-      "yoy": 2.4300836113513737,
+      "yoy": 2.6130197984124206,
       "series": [
        {
         "period": "2023-08",
@@ -9363,15 +9435,19 @@
        {
         "period": "2026-08",
         "value": 99476.0
+       },
+       {
+        "period": "2026-09",
+        "value": 99667.0
        }
       ]
      },
      "20": {
       "latest": {
-       "period": "2026-08",
-       "value": 169896.0
+       "period": "2026-09",
+       "value": 169771.0
       },
-      "yoy": 0.17689096440953797,
+      "yoy": 0.23853525184953386,
       "series": [
        {
         "period": "2023-08",
@@ -9520,15 +9596,19 @@
        {
         "period": "2026-08",
         "value": 169896.0
+       },
+       {
+        "period": "2026-09",
+        "value": 169771.0
        }
       ]
      },
      "21": {
       "latest": {
-       "period": "2026-08",
-       "value": 51099.0
+       "period": "2026-09",
+       "value": 51140.0
       },
-      "yoy": 1.1741179265829802,
+      "yoy": 1.3114624192717619,
       "series": [
        {
         "period": "2023-08",
@@ -9677,6 +9757,10 @@
        {
         "period": "2026-08",
         "value": 51099.0
+       },
+       {
+        "period": "2026-09",
+        "value": 51140.0
        }
       ]
      }
@@ -9691,7 +9775,7 @@
      "01": {
       "latest": {
        "period": "2026-09",
-       "value": 19099.0
+       "value": 19102.0
       },
       "yoy": null,
       "series": [
@@ -9705,7 +9789,7 @@
        },
        {
         "period": "2026-09",
-        "value": 19099.0
+        "value": 19102.0
        }
       ]
      },
@@ -9733,7 +9817,7 @@
      "03": {
       "latest": {
        "period": "2026-09",
-       "value": 5179.0
+       "value": 5177.0
       },
       "yoy": null,
       "series": [
@@ -9747,14 +9831,14 @@
        },
        {
         "period": "2026-09",
-        "value": 5179.0
+        "value": 5177.0
        }
       ]
      },
      "04": {
       "latest": {
        "period": "2026-09",
-       "value": 13275.0
+       "value": 13276.0
       },
       "yoy": null,
       "series": [
@@ -9768,14 +9852,14 @@
        },
        {
         "period": "2026-09",
-        "value": 13275.0
+        "value": 13276.0
        }
       ]
      },
      "05": {
       "latest": {
        "period": "2026-09",
-       "value": 8956.0
+       "value": 8958.0
       },
       "yoy": null,
       "series": [
@@ -9789,7 +9873,7 @@
        },
        {
         "period": "2026-09",
-        "value": 8956.0
+        "value": 8958.0
        }
       ]
      },
@@ -9838,7 +9922,7 @@
      "08": {
       "latest": {
        "period": "2026-09",
-       "value": 6263.0
+       "value": 6265.0
       },
       "yoy": null,
       "series": [
@@ -9852,14 +9936,14 @@
        },
        {
         "period": "2026-09",
-        "value": 6263.0
+        "value": 6265.0
        }
       ]
      },
      "09": {
       "latest": {
        "period": "2026-09",
-       "value": 5160.0
+       "value": 5161.0
       },
       "yoy": null,
       "series": [
@@ -9873,14 +9957,14 @@
        },
        {
         "period": "2026-09",
-        "value": 5160.0
+        "value": 5161.0
        }
       ]
      },
      "10": {
       "latest": {
        "period": "2026-09",
-       "value": 5904.0
+       "value": 5905.0
       },
       "yoy": null,
       "series": [
@@ -9894,7 +9978,7 @@
        },
        {
         "period": "2026-09",
-        "value": 5904.0
+        "value": 5905.0
        }
       ]
      },
@@ -9964,7 +10048,7 @@
      "14": {
       "latest": {
        "period": "2026-09",
-       "value": 1914.0
+       "value": 1913.0
       },
       "yoy": null,
       "series": [
@@ -9978,7 +10062,7 @@
        },
        {
         "period": "2026-09",
-        "value": 1914.0
+        "value": 1913.0
        }
       ]
      },
@@ -10006,7 +10090,7 @@
      "16": {
       "latest": {
        "period": "2026-09",
-       "value": 4810.0
+       "value": 4803.0
       },
       "yoy": null,
       "series": [
@@ -10020,14 +10104,14 @@
        },
        {
         "period": "2026-09",
-        "value": 4810.0
+        "value": 4803.0
        }
       ]
      },
      "17": {
       "latest": {
        "period": "2026-09",
-       "value": 4474.0
+       "value": 4475.0
       },
       "yoy": null,
       "series": [
@@ -10041,7 +10125,7 @@
        },
        {
         "period": "2026-09",
-        "value": 4474.0
+        "value": 4475.0
        }
       ]
      },
@@ -10870,7 +10954,7 @@
      "01": {
       "latest": {
        "period": "2026-09",
-       "value": 11.010157
+       "value": 11.012764
       },
       "yoy": null,
       "series": [
@@ -10884,7 +10968,7 @@
        },
        {
         "period": "2026-09",
-        "value": 11.010157
+        "value": 11.012764
        }
       ]
      },
@@ -10912,7 +10996,7 @@
      "03": {
       "latest": {
        "period": "2026-09",
-       "value": 10.320346
+       "value": 10.370499
       },
       "yoy": null,
       "series": [
@@ -10926,14 +11010,14 @@
        },
        {
         "period": "2026-09",
-        "value": 10.320346
+        "value": 10.370499
        }
       ]
      },
      "04": {
       "latest": {
        "period": "2026-09",
-       "value": 8.315491
+       "value": 8.314917
       },
       "yoy": null,
       "series": [
@@ -10947,14 +11031,14 @@
        },
        {
         "period": "2026-09",
-        "value": 8.315491
+        "value": 8.314917
        }
       ]
      },
      "05": {
       "latest": {
        "period": "2026-09",
-       "value": 10.681161
+       "value": 10.679031
       },
       "yoy": null,
       "series": [
@@ -10968,14 +11052,14 @@
        },
        {
         "period": "2026-09",
-        "value": 10.681161
+        "value": 10.679031
        }
       ]
      },
      "06": {
       "latest": {
        "period": "2026-09",
-       "value": 23.669572
+       "value": 23.675909
       },
       "yoy": null,
       "series": [
@@ -10989,14 +11073,14 @@
        },
        {
         "period": "2026-09",
-        "value": 23.669572
+        "value": 23.675909
        }
       ]
      },
      "07": {
       "latest": {
        "period": "2026-09",
-       "value": 8.07475
+       "value": 8.082739
       },
       "yoy": null,
       "series": [
@@ -11010,14 +11094,14 @@
        },
        {
         "period": "2026-09",
-        "value": 8.07475
+        "value": 8.082739
        }
       ]
      },
      "08": {
       "latest": {
        "period": "2026-09",
-       "value": 25.342711
+       "value": 25.327771
       },
       "yoy": null,
       "series": [
@@ -11031,14 +11115,14 @@
        },
        {
         "period": "2026-09",
-        "value": 25.342711
+        "value": 25.327771
        }
       ]
      },
      "09": {
       "latest": {
        "period": "2026-09",
-       "value": 13.625711
+       "value": 13.652334
       },
       "yoy": null,
       "series": [
@@ -11052,14 +11136,14 @@
        },
        {
         "period": "2026-09",
-        "value": 13.625711
+        "value": 13.652334
        }
       ]
      },
      "10": {
       "latest": {
        "period": "2026-09",
-       "value": 33.25797
+       "value": 33.25421
       },
       "yoy": null,
       "series": [
@@ -11073,7 +11157,7 @@
        },
        {
         "period": "2026-09",
-        "value": 33.25797
+        "value": 33.25421
        }
       ]
      },
@@ -11101,7 +11185,7 @@
      "12": {
       "latest": {
        "period": "2026-09",
-       "value": 32.174987
+       "value": 32.186949
       },
       "yoy": null,
       "series": [
@@ -11115,14 +11199,14 @@
        },
        {
         "period": "2026-09",
-        "value": 32.174987
+        "value": 32.186949
        }
       ]
      },
      "13": {
       "latest": {
        "period": "2026-09",
-       "value": 39.663749
+       "value": 39.66975
       },
       "yoy": null,
       "series": [
@@ -11136,14 +11220,14 @@
        },
        {
         "period": "2026-09",
-        "value": 39.663749
+        "value": 39.66975
        }
       ]
      },
      "14": {
       "latest": {
        "period": "2026-09",
-       "value": 24.017467
+       "value": 24.057166
       },
       "yoy": null,
       "series": [
@@ -11157,7 +11241,7 @@
        },
        {
         "period": "2026-09",
-        "value": 24.017467
+        "value": 24.057166
        }
       ]
      },
@@ -11185,7 +11269,7 @@
      "16": {
       "latest": {
        "period": "2026-09",
-       "value": 27.79946
+       "value": 27.915353
       },
       "yoy": null,
       "series": [
@@ -11199,14 +11283,14 @@
        },
        {
         "period": "2026-09",
-        "value": 27.79946
+        "value": 27.915353
        }
       ]
      },
      "17": {
       "latest": {
        "period": "2026-09",
-       "value": 36.610938
+       "value": 36.59677
       },
       "yoy": null,
       "series": [
@@ -11220,7 +11304,7 @@
        },
        {
         "period": "2026-09",
-        "value": 36.610938
+        "value": 36.59677
        }
       ]
      },
@@ -11269,7 +11353,7 @@
      "20": {
       "latest": {
        "period": "2026-09",
-       "value": 23.287107
+       "value": 23.308167
       },
       "yoy": null,
       "series": [
@@ -11283,14 +11367,14 @@
        },
        {
         "period": "2026-09",
-        "value": 23.287107
+        "value": 23.308167
        }
       ]
      },
      "21": {
       "latest": {
        "period": "2026-09",
-       "value": 21.187384
+       "value": 21.216617
       },
       "yoy": null,
       "series": [
@@ -11304,7 +11388,7 @@
        },
        {
         "period": "2026-09",
-        "value": 21.187384
+        "value": 21.216617
        }
       ]
      }
@@ -12049,7 +12133,7 @@
      "01": {
       "latest": {
        "period": "2026-09",
-       "value": 2961.0
+       "value": 2959.0
       },
       "yoy": null,
       "series": [
@@ -12063,7 +12147,7 @@
        },
        {
         "period": "2026-09",
-        "value": 2961.0
+        "value": 2959.0
        }
       ]
      },
@@ -12091,7 +12175,7 @@
      "03": {
       "latest": {
        "period": "2026-09",
-       "value": 542.0
+       "value": 543.0
       },
       "yoy": null,
       "series": [
@@ -12105,14 +12189,14 @@
        },
        {
         "period": "2026-09",
-        "value": 542.0
+        "value": 543.0
        }
       ]
      },
      "04": {
       "latest": {
        "period": "2026-09",
-       "value": 1300.0
+       "value": 1305.0
       },
       "yoy": null,
       "series": [
@@ -12126,7 +12210,7 @@
        },
        {
         "period": "2026-09",
-        "value": 1300.0
+        "value": 1305.0
        }
       ]
      },
@@ -12154,7 +12238,7 @@
      "06": {
       "latest": {
        "period": "2026-09",
-       "value": 954.0
+       "value": 953.0
       },
       "yoy": null,
       "series": [
@@ -12168,7 +12252,7 @@
        },
        {
         "period": "2026-09",
-        "value": 954.0
+        "value": 953.0
        }
       ]
      },
@@ -12217,7 +12301,7 @@
      "09": {
       "latest": {
        "period": "2026-09",
-       "value": 714.0
+       "value": 715.0
       },
       "yoy": null,
       "series": [
@@ -12231,7 +12315,7 @@
        },
        {
         "period": "2026-09",
-        "value": 714.0
+        "value": 715.0
        }
       ]
      },
@@ -12259,7 +12343,7 @@
      "11": {
       "latest": {
        "period": "2026-09",
-       "value": 1023.0
+       "value": 1022.0
       },
       "yoy": null,
       "series": [
@@ -12273,7 +12357,7 @@
        },
        {
         "period": "2026-09",
-        "value": 1023.0
+        "value": 1022.0
        }
       ]
      },
@@ -12385,7 +12469,7 @@
      "17": {
       "latest": {
        "period": "2026-09",
-       "value": 440.0
+       "value": 441.0
       },
       "yoy": null,
       "series": [
@@ -12399,7 +12483,7 @@
        },
        {
         "period": "2026-09",
-        "value": 440.0
+        "value": 441.0
        }
       ]
      },
@@ -51575,8 +51659,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 616,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 623,
     "max_age_days": 120,
     "fresh": "failing"
    },
@@ -51998,8 +52082,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 616,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 623,
     "max_age_days": 120,
     "fresh": "failing"
    },
@@ -52061,8 +52145,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 251,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 258,
     "max_age_days": 120,
     "fresh": "failing"
    }
@@ -52486,8 +52570,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-08T05:56:05+00:00",
-    "staleness_days": 161,
+    "last_checked": "2026-09-15T05:54:55+00:00",
+    "staleness_days": 168,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -52909,8 +52993,8 @@
      "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-08T05:48:31+00:00",
-    "staleness_days": 251,
+    "last_checked": "2026-09-15T05:48:19+00:00",
+    "staleness_days": 258,
     "max_age_days": 60,
     "fresh": "failing"
    },
@@ -53332,8 +53416,8 @@
      "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-08T05:48:31+00:00",
-    "staleness_days": 251,
+    "last_checked": "2026-09-15T05:48:19+00:00",
+    "staleness_days": 258,
     "max_age_days": 60,
     "fresh": "failing"
    },
@@ -53455,8 +53539,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -53878,8 +53962,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -53973,8 +54057,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2024-12-31",
-    "last_checked": "2026-09-08T05:56:05+00:00",
-    "staleness_days": 616,
+    "last_checked": "2026-09-15T05:54:55+00:00",
+    "staleness_days": 623,
     "max_age_days": 270,
     "fresh": "failing"
    }
@@ -54398,8 +54482,8 @@
      "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
     },
     "observation_end": "2026-02-28",
-    "last_checked": "2026-09-08T05:57:09+00:00",
-    "staleness_days": 192,
+    "last_checked": "2026-09-15T05:55:59+00:00",
+    "staleness_days": 199,
     "max_age_days": 120,
     "fresh": "stale"
    },
@@ -54821,8 +54905,8 @@
      "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
     },
     "observation_end": "2026-02-28",
-    "last_checked": "2026-09-08T05:57:09+00:00",
-    "staleness_days": 192,
+    "last_checked": "2026-09-15T05:55:59+00:00",
+    "staleness_days": 199,
     "max_age_days": 120,
     "fresh": "stale"
    },
@@ -55244,8 +55328,8 @@
      "docs_url": "https://www.transportes.gob.es/informacion-para-el-ciudadano/informacion-estadistica/vivienda-y-actuaciones-urbanas"
     },
     "observation_end": "2026-02-28",
-    "last_checked": "2026-09-08T05:57:09+00:00",
-    "staleness_days": 192,
+    "last_checked": "2026-09-15T05:55:59+00:00",
+    "staleness_days": 199,
     "max_age_days": 120,
     "fresh": "stale"
    },
@@ -55383,8 +55467,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-08T05:56:05+00:00",
-    "staleness_days": 251,
+    "last_checked": "2026-09-15T05:54:55+00:00",
+    "staleness_days": 258,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -55710,8 +55794,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-08T05:56:05+00:00",
-    "staleness_days": 251,
+    "last_checked": "2026-09-15T05:54:55+00:00",
+    "staleness_days": 258,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -56037,8 +56121,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2025-12-31",
-    "last_checked": "2026-09-08T05:56:05+00:00",
-    "staleness_days": 251,
+    "last_checked": "2026-09-15T05:54:55+00:00",
+    "staleness_days": 258,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -56432,8 +56516,8 @@
      "docs_url": "https://www.mivau.gob.es/vivienda/estadisticas"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-08T05:56:05+00:00",
-    "staleness_days": 161,
+    "last_checked": "2026-09-15T05:54:55+00:00",
+    "staleness_days": 168,
     "max_age_days": 270,
     "fresh": "fresh"
    }
@@ -56857,8 +56941,8 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-08T05:46:12+00:00",
-    "staleness_days": 161,
+    "last_checked": "2026-09-15T05:46:59+00:00",
+    "staleness_days": 168,
     "max_age_days": 75,
     "fresh": "failing"
    },
@@ -57280,8 +57364,8 @@
      "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-08T05:48:28+00:00",
-    "staleness_days": 39,
+    "last_checked": "2026-09-15T05:48:17+00:00",
+    "staleness_days": 46,
     "max_age_days": 60,
     "fresh": "fresh"
    },
@@ -57703,10 +57787,10 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:46:12+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:46:59+00:00",
+    "staleness_days": 77,
     "max_age_days": 75,
-    "fresh": "fresh"
+    "fresh": "stale"
    },
    {
     "metric_id": "mortgage_rate_new",
@@ -58126,8 +58210,8 @@
      "docs_url": "https://www.bde.es/webbe/es/estadisticas/recursos/api-estadisticas-bde.html"
     },
     "observation_end": "2026-05-31",
-    "last_checked": "2026-09-08T05:46:12+00:00",
-    "staleness_days": 100,
+    "last_checked": "2026-09-15T05:46:59+00:00",
+    "staleness_days": 107,
     "max_age_days": 75,
     "fresh": "stale"
    },
@@ -58549,8 +58633,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -58906,10 +58990,10 @@
      "docs_url": "https://www.hiringlab.org/research/jobs-postings-tracker/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:48:31+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:48:20+00:00",
+    "staleness_days": 15,
     "max_age_days": 14,
-    "fresh": "fresh"
+    "fresh": "stale"
    },
    {
     "metric_id": "contracts_registered",
@@ -59313,8 +59397,8 @@
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:57:00+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:55:49+00:00",
+    "staleness_days": 15,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -59548,8 +59632,8 @@
      "docs_url": "https://www.dgt.es/menusecundario/dgt-en-cifras/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-08T05:47:14+00:00",
-    "staleness_days": 39,
+    "last_checked": "2026-09-15T05:48:11+00:00",
+    "staleness_days": 46,
     "max_age_days": 90,
     "fresh": "fresh"
    },
@@ -59955,8 +60039,8 @@
      "docs_url": "https://www.sepe.es/HomeSepe/que-es-el-sepe/estadisticas/datos-estadisticos/municipios.html"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:57:00+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:55:49+00:00",
+    "staleness_days": 15,
     "max_age_days": 75,
     "fresh": "fresh"
    }
@@ -60168,10 +60252,10 @@
      "docs_url": "https://ansperformance.eu/data/"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-08T05:48:30+00:00",
-    "staleness_days": 39,
+    "last_checked": "2026-09-15T05:48:19+00:00",
+    "staleness_days": 46,
     "max_age_days": 45,
-    "fresh": "fresh"
+    "fresh": "stale"
    },
    {
     "metric_id": "airport_passengers",
@@ -60571,8 +60655,8 @@
      "docs_url": "https://www.aena.es/es/estadisticas/inicio.html"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-08T05:46:10+00:00",
-    "staleness_days": 39,
+    "last_checked": "2026-09-15T05:46:58+00:00",
+    "staleness_days": 46,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -60878,8 +60962,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 39,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 46,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -60904,7 +60988,7 @@
      "yoy": -2.804798962386506
     },
     "suspect": false,
-    "outlier_score": 0.71,
+    "outlier_score": 0.59,
     "suspect_note": null,
     "series": [
      {
@@ -60937,23 +61021,23 @@
      },
      {
       "period": "2025-08",
-      "value": 57.23
+      "value": 56.24
      },
      {
       "period": "2025-09",
-      "value": 64.8
+      "value": 64.0
      },
      {
       "period": "2025-10",
-      "value": 68.69
+      "value": 67.89
      },
      {
       "period": "2025-11",
-      "value": 64.59
+      "value": 63.78
      },
      {
       "period": "2025-12",
-      "value": 60.2
+      "value": 59.6
      },
      {
       "period": "2026-01",
@@ -60993,8 +61077,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 39,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 46,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -61104,8 +61188,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -61215,8 +61299,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -61522,8 +61606,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-07-31",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 39,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 46,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -61567,8 +61651,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:19+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:06+00:00",
+    "staleness_days": 77,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -61610,8 +61694,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:19+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:06+00:00",
+    "staleness_days": 77,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -61653,8 +61737,8 @@
      "docs_url": "https://insideairbnb.com/data-assumptions/"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:19+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:06+00:00",
+    "staleness_days": 77,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -61724,8 +61808,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -61795,8 +61879,8 @@
      "docs_url": "https://ine.es/dyngs/DAB/index.htm?cid=1100"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:55:16+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:54:03+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -61819,7 +61903,7 @@
     "is_city_level": false,
     "latest": {
      "period": "2026-09",
-     "value": 141.0,
+     "value": 210.0,
      "yoy": null
     },
     "suspect": false,
@@ -61844,7 +61928,7 @@
      },
      {
       "period": "2026-09",
-      "value": 141.0
+      "value": 210.0
      }
     ],
     "source_id": "borme",
@@ -61856,8 +61940,8 @@
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
     "observation_end": "2026-09-30",
-    "last_checked": "2026-09-08T05:46:34+00:00",
-    "staleness_days": -22,
+    "last_checked": "2026-09-15T05:47:36+00:00",
+    "staleness_days": -15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -61878,7 +61962,7 @@
     "is_city_level": false,
     "latest": {
      "period": "2026-09",
-     "value": 343.0,
+     "value": 719.0,
      "yoy": null
     },
     "suspect": false,
@@ -61903,7 +61987,7 @@
      },
      {
       "period": "2026-09",
-      "value": 343.0
+      "value": 719.0
      }
     ],
     "source_id": "borme",
@@ -61915,8 +61999,8 @@
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
     "observation_end": "2026-09-30",
-    "last_checked": "2026-09-08T05:46:34+00:00",
-    "staleness_days": -22,
+    "last_checked": "2026-09-15T05:47:36+00:00",
+    "staleness_days": -15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -62166,8 +62250,8 @@
      "docs_url": "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-08T05:46:39+00:00",
-    "staleness_days": 161,
+    "last_checked": "2026-09-15T05:47:41+00:00",
+    "staleness_days": 168,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -62188,7 +62272,7 @@
     "is_city_level": false,
     "latest": {
      "period": "2026-09",
-     "value": 2.0,
+     "value": 7.0,
      "yoy": null
     },
     "suspect": false,
@@ -62213,7 +62297,7 @@
      },
      {
       "period": "2026-09",
-      "value": 2.0
+      "value": 7.0
      }
     ],
     "source_id": "borme",
@@ -62225,8 +62309,8 @@
      "docs_url": "https://www.boe.es/datosabiertos/documentos/APIsumarioBORME.pdf"
     },
     "observation_end": "2026-09-30",
-    "last_checked": "2026-09-08T05:46:34+00:00",
-    "staleness_days": -22,
+    "last_checked": "2026-09-15T05:47:36+00:00",
+    "staleness_days": -15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -62572,8 +62656,8 @@
      "docs_url": "https://www.poderjudicial.es/cgpj/es/Temas/Estadistica-Judicial/"
     },
     "observation_end": "2026-03-31",
-    "last_checked": "2026-09-08T05:46:39+00:00",
-    "staleness_days": 161,
+    "last_checked": "2026-09-15T05:47:41+00:00",
+    "staleness_days": 168,
     "max_age_days": 210,
     "fresh": "fresh"
    }
@@ -62853,8 +62937,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:57:07+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:55:57+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -63132,8 +63216,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:57:07+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:55:57+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -63555,8 +63639,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:58:26+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:57:16+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -63834,8 +63918,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:57:07+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:55:57+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -64113,8 +64197,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:57:07+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:55:57+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -64520,8 +64604,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:57:44+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:56:34+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -64943,8 +65027,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:58:26+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:57:16+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -65350,8 +65434,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:57:44+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:56:34+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -65757,8 +65841,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:57:44+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:56:34+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -66164,8 +66248,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:57:44+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:56:34+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -66571,8 +66655,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:57:44+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:56:34+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -66978,8 +67062,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:57:44+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:56:34+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -67401,8 +67485,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:58:26+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:57:16+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -67824,8 +67908,8 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:58:26+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:57:16+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -68103,8 +68187,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:57:07+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:55:57+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -68382,8 +68466,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:57:07+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:55:57+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -68661,8 +68745,8 @@
      "docs_url": "https://trends.google.com/trends/explore"
     },
     "observation_end": "2026-06-30",
-    "last_checked": "2026-09-08T05:57:07+00:00",
-    "staleness_days": 70,
+    "last_checked": "2026-09-15T05:55:57+00:00",
+    "staleness_days": 77,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -69084,12 +69168,12 @@
      "docs_url": "https://wikimedia.org/api/rest_v1/"
     },
     "observation_end": "2026-08-31",
-    "last_checked": "2026-09-08T05:58:26+00:00",
-    "staleness_days": 8,
+    "last_checked": "2026-09-15T05:57:16+00:00",
+    "staleness_days": 15,
     "max_age_days": 45,
     "fresh": "fresh"
    }
   ]
  },
- "generated_at": "2026-09-08T05:58:27+00:00"
+ "generated_at": "2026-09-15T05:57:18+00:00"
 }

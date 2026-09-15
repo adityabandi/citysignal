@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-08T05:58:32+00:00",
+ "generated_at": "2026-09-15T05:57:25+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -109,6 +109,6 @@
  },
  "counts": {
   "series": 745,
-  "observations": 47316
+  "observations": 47341
  }
 }

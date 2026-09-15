@@ -13,23 +13,11 @@
     "section": "credit",
     "geo_level": "euro_area",
     "source_id": "ecb",
-    "period": "2026-06",
-    "value": 2.4,
-    "yoy": 11.627906976744187,
-    "observations": 330,
+    "period": "2026-09",
+    "value": 2.65,
+    "yoy": 23.255813953488374,
+    "observations": 333,
     "series": [
-     {
-      "period": "2023-07",
-      "value": 4.0
-     },
-     {
-      "period": "2023-08",
-      "value": 4.25
-     },
-     {
-      "period": "2023-09",
-      "value": 4.5
-     },
      {
       "period": "2023-10",
       "value": 4.5
@@ -161,9 +149,21 @@
      {
       "period": "2026-06",
       "value": 2.4
+     },
+     {
+      "period": "2026-07",
+      "value": 2.4
+     },
+     {
+      "period": "2026-08",
+      "value": 2.4
+     },
+     {
+      "period": "2026-09",
+      "value": 2.65
      }
     ],
-    "z": 0.17
+    "z": 0.3
    },
    {
     "metric_id": "euro_inflation",

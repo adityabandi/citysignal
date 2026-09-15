@@ -7,6 +7,7 @@ locales_vacancy_rate,dist-28079-01,district,2026-08,11.021493,percent,madrid_loc
 locales_vacancy_rate,dist-28079-01,district,2026-08,11.017897,percent,madrid_locales,2026-08-31,,2026-08-18,revised,2
 locales_vacancy_rate,dist-28079-01,district,2026-08,11.011184,percent,madrid_locales,2026-08-31,,2026-08-25,revised,3
 locales_vacancy_rate,dist-28079-01,district,2026-09,11.010157,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-01,district,2026-09,11.012764,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-02,district,2026-07,15.689128,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-02,district,2026-07,15.715949,percent,madrid_locales,2026-07-31,,2026-07-29,revised,1
 locales_vacancy_rate,dist-28079-02,district,2026-08,15.715949,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -18,6 +19,7 @@ locales_vacancy_rate,dist-28079-03,district,2026-08,10.36036,percent,madrid_loca
 locales_vacancy_rate,dist-28079-03,district,2026-08,10.339453,percent,madrid_locales,2026-08-31,,2026-08-18,revised,1
 locales_vacancy_rate,dist-28079-03,district,2026-08,10.320346,percent,madrid_locales,2026-08-31,,2026-08-25,revised,2
 locales_vacancy_rate,dist-28079-03,district,2026-09,10.320346,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-03,district,2026-09,10.370499,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-04,district,2026-07,8.309139,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-04,district,2026-08,8.309139,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
 locales_vacancy_rate,dist-28079-04,district,2026-08,8.312604,percent,madrid_locales,2026-08-31,,2026-08-11,revised,1
@@ -25,6 +27,7 @@ locales_vacancy_rate,dist-28079-04,district,2026-08,8.303972,percent,madrid_loca
 locales_vacancy_rate,dist-28079-04,district,2026-08,8.302825,percent,madrid_locales,2026-08-31,,2026-08-25,revised,3
 locales_vacancy_rate,dist-28079-04,district,2026-08,8.309159,percent,madrid_locales,2026-08-31,,2026-09-01,revised,4
 locales_vacancy_rate,dist-28079-04,district,2026-09,8.315491,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-04,district,2026-09,8.314917,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-05,district,2026-07,10.666534,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-05,district,2026-07,10.665469,percent,madrid_locales,2026-07-31,,2026-08-01,revised,1
 locales_vacancy_rate,dist-28079-05,district,2026-08,10.664405,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -32,6 +35,7 @@ locales_vacancy_rate,dist-28079-05,district,2026-08,10.663342,percent,madrid_loc
 locales_vacancy_rate,dist-28079-05,district,2026-08,10.672252,percent,madrid_locales,2026-08-31,,2026-08-25,revised,2
 locales_vacancy_rate,dist-28079-05,district,2026-08,10.681161,percent,madrid_locales,2026-08-31,,2026-09-01,revised,3
 locales_vacancy_rate,dist-28079-05,district,2026-09,10.681161,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-05,district,2026-09,10.679031,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-06,district,2026-07,23.689675,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-06,district,2026-07,23.694045,percent,madrid_locales,2026-07-31,,2026-08-01,revised,1
 locales_vacancy_rate,dist-28079-06,district,2026-08,23.694045,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -39,6 +43,7 @@ locales_vacancy_rate,dist-28079-06,district,2026-08,23.710655,percent,madrid_loc
 locales_vacancy_rate,dist-28079-06,district,2026-08,23.708686,percent,madrid_locales,2026-08-31,,2026-08-18,revised,2
 locales_vacancy_rate,dist-28079-06,district,2026-08,23.681807,percent,madrid_locales,2026-08-31,,2026-08-25,revised,3
 locales_vacancy_rate,dist-28079-06,district,2026-09,23.669572,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-06,district,2026-09,23.675909,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-07,district,2026-07,8.041076,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-07,district,2026-07,8.040376,percent,madrid_locales,2026-07-31,,2026-07-29,revised,1
 locales_vacancy_rate,dist-28079-07,district,2026-07,8.039676,percent,madrid_locales,2026-07-31,,2026-08-01,revised,2
@@ -48,6 +53,7 @@ locales_vacancy_rate,dist-28079-07,district,2026-08,8.077558,percent,madrid_loca
 locales_vacancy_rate,dist-28079-07,district,2026-08,8.059468,percent,madrid_locales,2026-08-31,,2026-08-25,revised,3
 locales_vacancy_rate,dist-28079-07,district,2026-08,8.075452,percent,madrid_locales,2026-08-31,,2026-09-01,revised,4
 locales_vacancy_rate,dist-28079-07,district,2026-09,8.07475,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-07,district,2026-09,8.082739,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-08,district,2026-07,25.301205,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-08,district,2026-07,25.316003,percent,madrid_locales,2026-07-31,,2026-08-01,revised,1
 locales_vacancy_rate,dist-28079-08,district,2026-08,25.316003,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -55,6 +61,7 @@ locales_vacancy_rate,dist-28079-08,district,2026-08,25.312984,percent,madrid_loc
 locales_vacancy_rate,dist-28079-08,district,2026-08,25.321888,percent,madrid_locales,2026-08-31,,2026-08-18,revised,2
 locales_vacancy_rate,dist-28079-08,district,2026-08,25.33079,percent,madrid_locales,2026-08-31,,2026-09-01,revised,3
 locales_vacancy_rate,dist-28079-08,district,2026-09,25.342711,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-08,district,2026-09,25.327771,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-09,district,2026-07,13.649305,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-09,district,2026-07,13.663764,percent,madrid_locales,2026-07-31,,2026-07-29,revised,1
 locales_vacancy_rate,dist-28079-09,district,2026-07,13.644735,percent,madrid_locales,2026-07-31,,2026-08-01,revised,2
@@ -63,10 +70,12 @@ locales_vacancy_rate,dist-28079-09,district,2026-08,13.642451,percent,madrid_loc
 locales_vacancy_rate,dist-28079-09,district,2026-08,13.647019,percent,madrid_locales,2026-08-31,,2026-08-18,revised,2
 locales_vacancy_rate,dist-28079-09,district,2026-08,13.65919,percent,madrid_locales,2026-08-31,,2026-08-25,revised,3
 locales_vacancy_rate,dist-28079-09,district,2026-09,13.625711,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-09,district,2026-09,13.652334,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-10,district,2026-07,33.235361,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-10,district,2026-08,33.235361,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
 locales_vacancy_rate,dist-28079-10,district,2026-08,33.242907,percent,madrid_locales,2026-08-31,,2026-08-25,revised,1
 locales_vacancy_rate,dist-28079-10,district,2026-09,33.25797,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-10,district,2026-09,33.25421,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-11,district,2026-07,32.654557,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-11,district,2026-07,32.660042,percent,madrid_locales,2026-07-31,,2026-08-01,revised,1
 locales_vacancy_rate,dist-28079-11,district,2026-08,32.665527,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -80,6 +89,7 @@ locales_vacancy_rate,dist-28079-12,district,2026-08,32.139075,percent,madrid_loc
 locales_vacancy_rate,dist-28079-12,district,2026-08,32.174373,percent,madrid_locales,2026-08-31,,2026-08-11,revised,1
 locales_vacancy_rate,dist-28079-12,district,2026-08,32.156724,percent,madrid_locales,2026-08-31,,2026-08-18,revised,2
 locales_vacancy_rate,dist-28079-12,district,2026-09,32.174987,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-12,district,2026-09,32.186949,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-13,district,2026-07,39.583955,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-13,district,2026-08,39.583955,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
 locales_vacancy_rate,dist-28079-13,district,2026-08,39.59992,percent,madrid_locales,2026-08-31,,2026-08-11,revised,1
@@ -87,10 +97,12 @@ locales_vacancy_rate,dist-28079-13,district,2026-08,39.605931,percent,madrid_loc
 locales_vacancy_rate,dist-28079-13,district,2026-08,39.691542,percent,madrid_locales,2026-08-31,,2026-08-25,revised,3
 locales_vacancy_rate,dist-28079-13,district,2026-08,39.681592,percent,madrid_locales,2026-08-31,,2026-09-01,revised,4
 locales_vacancy_rate,dist-28079-13,district,2026-09,39.663749,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-13,district,2026-09,39.66975,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-14,district,2026-07,24.017467,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-14,district,2026-08,24.017467,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
 locales_vacancy_rate,dist-28079-14,district,2026-08,24.047619,percent,madrid_locales,2026-08-31,,2026-08-18,revised,1
 locales_vacancy_rate,dist-28079-14,district,2026-09,24.017467,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-14,district,2026-09,24.057166,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-15,district,2026-07,30.725967,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-15,district,2026-07,30.723309,percent,madrid_locales,2026-07-31,,2026-08-01,revised,1
 locales_vacancy_rate,dist-28079-15,district,2026-08,30.723309,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -106,6 +118,7 @@ locales_vacancy_rate,dist-28079-16,district,2026-08,27.751915,percent,madrid_loc
 locales_vacancy_rate,dist-28079-16,district,2026-08,27.698544,percent,madrid_locales,2026-08-31,,2026-08-25,revised,3
 locales_vacancy_rate,dist-28079-16,district,2026-08,27.769439,percent,madrid_locales,2026-08-31,,2026-09-01,revised,4
 locales_vacancy_rate,dist-28079-16,district,2026-09,27.79946,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-16,district,2026-09,27.915353,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-17,district,2026-07,36.523465,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-17,district,2026-07,36.622714,percent,madrid_locales,2026-07-31,,2026-07-29,revised,1
 locales_vacancy_rate,dist-28079-17,district,2026-07,36.626506,percent,madrid_locales,2026-07-31,,2026-08-01,revised,2
@@ -114,6 +127,7 @@ locales_vacancy_rate,dist-28079-17,district,2026-08,36.635488,percent,madrid_loc
 locales_vacancy_rate,dist-28079-17,district,2026-08,36.630296,percent,madrid_locales,2026-08-31,,2026-08-18,revised,2
 locales_vacancy_rate,dist-28079-17,district,2026-08,36.610938,percent,madrid_locales,2026-08-31,,2026-08-25,revised,3
 locales_vacancy_rate,dist-28079-17,district,2026-09,36.610938,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-17,district,2026-09,36.59677,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-18,district,2026-07,28.185476,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-18,district,2026-07,28.188434,percent,madrid_locales,2026-07-31,,2026-07-29,revised,1
 locales_vacancy_rate,dist-28079-18,district,2026-08,28.188434,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -136,7 +150,9 @@ locales_vacancy_rate,dist-28079-20,district,2026-07,23.270181,percent,madrid_loc
 locales_vacancy_rate,dist-28079-20,district,2026-08,23.273376,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
 locales_vacancy_rate,dist-28079-20,district,2026-08,23.28391,percent,madrid_locales,2026-08-31,,2026-09-01,revised,1
 locales_vacancy_rate,dist-28079-20,district,2026-09,23.287107,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-20,district,2026-09,23.308167,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1
 locales_vacancy_rate,dist-28079-21,district,2026-07,21.070234,percent,madrid_locales,2026-07-31,,2026-07-25,ok,0
 locales_vacancy_rate,dist-28079-21,district,2026-08,21.070234,percent,madrid_locales,2026-08-31,,2026-08-04,ok,0
 locales_vacancy_rate,dist-28079-21,district,2026-08,21.099554,percent,madrid_locales,2026-08-31,,2026-08-18,revised,1
 locales_vacancy_rate,dist-28079-21,district,2026-09,21.187384,percent,madrid_locales,2026-09-30,,2026-09-08,ok,0
+locales_vacancy_rate,dist-28079-21,district,2026-09,21.216617,percent,madrid_locales,2026-09-30,,2026-09-15,revised,1

@@ -1,6 +1,6 @@
 {
- "run_id": "c9fed49564c2",
- "finished_at": "2026-09-08T05:58:26+00:00",
+ "run_id": "5b6f4b9d3a49",
+ "finished_at": "2026-09-15T05:57:16+00:00",
  "ok": [
   "aena",
   "borme",
@@ -45,7 +45,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 10.27,
+   "duration_s": 9.08,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -64,7 +64,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.59,
+   "duration_s": 1.29,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -75,16 +75,16 @@
   {
    "source_id": "borme",
    "status": "ok",
-   "records": 21,
-   "added": 11,
-   "revised": 10,
+   "records": 22,
+   "added": 1,
+   "revised": 21,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 38,
+   "plans": 63,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 22.1,
+   "duration_s": 36.73,
    "latest_observation": "2026-09",
    "metrics": [
     "company_dissolutions",
@@ -105,7 +105,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 5.15,
+   "duration_s": 5.43,
    "latest_observation": "2026-Q1",
    "metrics": [
     "evictions",
@@ -125,7 +125,7 @@
    "skipped_unchanged": 48,
    "error": null,
    "error_type": null,
-   "duration_s": 34.65,
+   "duration_s": 29.22,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -135,24 +135,21 @@
   {
    "source_id": "ecb",
    "status": "ok",
-   "records": 458,
-   "added": 2,
+   "records": 333,
+   "added": 3,
    "revised": 0,
-   "unchanged": 446,
-   "quarantined": 10,
+   "unchanged": 330,
+   "quarantined": 0,
    "plans": 10,
-   "skipped_unchanged": 8,
+   "skipped_unchanged": 9,
    "error": null,
    "error_type": null,
-   "duration_s": 73.78,
-   "latest_observation": "2026-07",
+   "duration_s": 6.05,
+   "latest_observation": "2026-09",
    "metrics": [
-    "ecb_mortgage_rate",
-    "euro_unemployment"
+    "ecb_policy_rate"
    ],
-   "notes": [
-    "10 unexpected revisions quarantined — re-run with --accept-revision ecb if the restatement is genuine"
-   ]
+   "notes": []
   },
   {
    "source_id": "eea_air",
@@ -166,7 +163,7 @@
    "skipped_unchanged": 0,
    "error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)",
    "error_type": "PayloadError",
-   "duration_s": 0.4,
+   "duration_s": 0.32,
    "latest_observation": null,
    "metrics": [],
    "notes": []
@@ -183,7 +180,7 @@
    "skipped_unchanged": 4,
    "error": null,
    "error_type": null,
-   "duration_s": 1.69,
+   "duration_s": 1.68,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -202,7 +199,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 0.68,
+   "duration_s": 0.63,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -233,19 +230,20 @@
   {
    "source_id": "ine",
    "status": "ok",
-   "records": 140,
-   "added": 7,
-   "revised": 0,
-   "unchanged": 133,
+   "records": 688,
+   "added": 0,
+   "revised": 38,
+   "unchanged": 650,
    "quarantined": 0,
    "plans": 11,
-   "skipped_unchanged": 10,
+   "skipped_unchanged": 8,
    "error": null,
    "error_type": null,
-   "duration_s": 404.96,
-   "latest_observation": "2026-Q2",
+   "duration_s": 343.25,
+   "latest_observation": "2026-07",
    "metrics": [
-    "house_price_index"
+    "hotel_occupancy_rate",
+    "hotel_revpar"
    ],
    "notes": []
   },
@@ -261,7 +259,7 @@
    "skipped_unchanged": 7,
    "error": null,
    "error_type": null,
-   "duration_s": 3.38,
+   "duration_s": 3.13,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -270,38 +268,36 @@
   },
   {
    "source_id": "madrid_licencias",
-   "status": "ok",
-   "records": 751,
-   "added": 15,
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
    "revised": 0,
-   "unchanged": 638,
-   "quarantined": 98,
+   "unchanged": 0,
+   "quarantined": 0,
    "plans": 1,
-   "skipped_unchanged": 0,
+   "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 2.03,
-   "latest_observation": "2026-05",
-   "metrics": [
-    "licences_granted"
-   ],
+   "duration_s": 1.16,
+   "latest_observation": null,
+   "metrics": [],
    "notes": [
-    "98 unexpected revisions quarantined — re-run with --accept-revision madrid_licencias if the restatement is genuine"
+    "all sources unchanged since last run"
    ]
   },
   {
    "source_id": "madrid_locales",
    "status": "ok",
    "records": 147,
-   "added": 147,
-   "revised": 0,
-   "unchanged": 0,
+   "added": 0,
+   "revised": 33,
+   "unchanged": 114,
    "quarantined": 0,
    "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 9.25,
+   "duration_s": 6.97,
    "latest_observation": "2026-09",
    "metrics": [
     "horeca_closures",
@@ -316,41 +312,41 @@
   },
   {
    "source_id": "madrid_padron",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
-   "revised": 0,
-   "unchanged": 0,
-   "quarantined": 0,
-   "plans": 36,
-   "skipped_unchanged": 36,
-   "error": null,
-   "error_type": null,
-   "duration_s": 23.08,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
-  },
-  {
-   "source_id": "madrid_vut",
    "status": "ok",
    "records": 21,
    "added": 21,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 1,
-   "skipped_unchanged": 0,
+   "plans": 36,
+   "skipped_unchanged": 35,
    "error": null,
    "error_type": null,
-   "duration_s": 1.27,
+   "duration_s": 30.41,
    "latest_observation": "2026-09",
    "metrics": [
-    "vut_licensed"
+    "padron_district"
    ],
    "notes": []
+  },
+  {
+   "source_id": "madrid_vut",
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 1,
+   "skipped_unchanged": 1,
+   "error": null,
+   "error_type": null,
+   "duration_s": 0.96,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   },
   {
    "source_id": "mivau",
@@ -364,7 +360,7 @@
    "skipped_unchanged": 5,
    "error": null,
    "error_type": null,
-   "duration_s": 10.38,
+   "duration_s": 8.8,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -383,7 +379,7 @@
    "skipped_unchanged": 0,
    "error": "HTTP 404 from https://api.ohsome.org/v1/elements/count",
    "error_type": "NotFoundError",
-   "duration_s": 0.6,
+   "duration_s": 0.62,
    "latest_observation": null,
    "metrics": [],
    "notes": []
@@ -400,7 +396,7 @@
    "skipped_unchanged": 43,
    "error": null,
    "error_type": null,
-   "duration_s": 41.47,
+   "duration_s": 43.25,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -410,23 +406,22 @@
   },
   {
    "source_id": "sepe",
-   "status": "ok",
-   "records": 16,
-   "added": 16,
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 16,
-   "skipped_unchanged": 8,
+   "skipped_unchanged": 16,
    "error": null,
    "error_type": null,
-   "duration_s": 12.17,
-   "latest_observation": "2026-08",
-   "metrics": [
-    "contracts_registered",
-    "unemployment_registered"
-   ],
-   "notes": []
+   "duration_s": 10.84,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   },
   {
    "source_id": "serpavi",
@@ -440,7 +435,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 7.67,
+   "duration_s": 7.61,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -479,7 +474,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.94,
+   "duration_s": 2.15,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -498,7 +493,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 34.59,
+   "duration_s": 34.64,
    "latest_observation": "2026-08",
    "metrics": [
     "wiki_foreign_interest",
@@ -516,13 +511,13 @@
    "records": 3328,
    "added": 0,
    "revised": 0,
-   "unchanged": 3327,
-   "quarantined": 1,
+   "unchanged": 3328,
+   "quarantined": 0,
    "plans": 85,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 42.49,
+   "duration_s": 42.44,
    "latest_observation": "2026-08",
    "metrics": [
     "wiki_barrio_views",
@@ -532,9 +527,7 @@
     "wiki_hardship_index",
     "wiki_relocation_index"
    ],
-   "notes": [
-    "1 unexpected revisions quarantined — re-run with --accept-revision wikipedia if the restatement is genuine"
-   ]
+   "notes": []
   }
  ]
 }

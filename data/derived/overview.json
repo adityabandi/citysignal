@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-08T05:58:30+00:00",
+ "generated_at": "2026-09-15T05:57:22+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -4298,6 +4298,13 @@
  ],
  "attention": [
   {
+   "source_id": "bde",
+   "status": "partial",
+   "latest_observation": "2026-06",
+   "staleness_days": 77,
+   "last_error": null
+  },
+  {
    "source_id": "eea_air",
    "status": "failed",
    "latest_observation": null,
@@ -4305,10 +4312,24 @@
    "last_error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)"
   },
   {
+   "source_id": "eurocontrol",
+   "status": "skipped",
+   "latest_observation": "2026-07",
+   "staleness_days": 46,
+   "last_error": null
+  },
+  {
    "source_id": "eurostat",
    "status": "skipped",
    "latest_observation": "2025-12",
-   "staleness_days": 251,
+   "staleness_days": 258,
+   "last_error": null
+  },
+  {
+   "source_id": "indeed",
+   "status": "ok",
+   "latest_observation": "2026-08",
+   "staleness_days": 15,
    "last_error": null
   },
   {
@@ -4320,9 +4341,9 @@
   },
   {
    "source_id": "madrid_licencias",
-   "status": "ok",
+   "status": "skipped",
    "latest_observation": "2026-05",
-   "staleness_days": 100,
+   "staleness_days": 107,
    "last_error": null
   },
   {
@@ -4343,7 +4364,7 @@
    "source_id": "ohsome",
    "status": "failed",
    "latest_observation": "2026-07",
-   "staleness_days": 39,
+   "staleness_days": 46,
    "last_error": "HTTP 404 from https://api.ohsome.org/v1/elements/count"
   },
   {
@@ -4357,7 +4378,7 @@
    "source_id": "visados",
    "status": "skipped",
    "latest_observation": "2026-02",
-   "staleness_days": 192,
+   "staleness_days": 199,
    "last_error": null
   }
  ]

@@ -6,6 +6,7 @@ horeca_stock,dist-28079-01,district,2026-08,2959,premises,madrid_locales,2026-08
 horeca_stock,dist-28079-01,district,2026-08,2960,premises,madrid_locales,2026-08-31,,2026-08-25,revised,2
 horeca_stock,dist-28079-01,district,2026-08,2961,premises,madrid_locales,2026-08-31,,2026-09-01,revised,3
 horeca_stock,dist-28079-01,district,2026-09,2961,premises,madrid_locales,2026-09-30,,2026-09-08,ok,0
+horeca_stock,dist-28079-01,district,2026-09,2959,premises,madrid_locales,2026-09-30,,2026-09-15,revised,1
 horeca_stock,dist-28079-02,district,2026-07,767,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-02,district,2026-07,766,premises,madrid_locales,2026-07-31,,2026-07-29,revised,1
 horeca_stock,dist-28079-02,district,2026-08,766,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -16,12 +17,14 @@ horeca_stock,dist-28079-03,district,2026-08,540,premises,madrid_locales,2026-08-
 horeca_stock,dist-28079-03,district,2026-08,541,premises,madrid_locales,2026-08-31,,2026-08-18,revised,1
 horeca_stock,dist-28079-03,district,2026-08,542,premises,madrid_locales,2026-08-31,,2026-08-25,revised,2
 horeca_stock,dist-28079-03,district,2026-09,542,premises,madrid_locales,2026-09-30,,2026-09-08,ok,0
+horeca_stock,dist-28079-03,district,2026-09,543,premises,madrid_locales,2026-09-30,,2026-09-15,revised,1
 horeca_stock,dist-28079-04,district,2026-07,1292,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-04,district,2026-07,1293,premises,madrid_locales,2026-07-31,,2026-08-01,revised,1
 horeca_stock,dist-28079-04,district,2026-08,1292,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
 horeca_stock,dist-28079-04,district,2026-08,1293,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-04,district,2026-08,1295,premises,madrid_locales,2026-08-31,,2026-09-01,revised,2
 horeca_stock,dist-28079-04,district,2026-09,1300,premises,madrid_locales,2026-09-30,,2026-09-08,ok,0
+horeca_stock,dist-28079-04,district,2026-09,1305,premises,madrid_locales,2026-09-30,,2026-09-15,revised,1
 horeca_stock,dist-28079-05,district,2026-07,950,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-05,district,2026-08,950,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
 horeca_stock,dist-28079-05,district,2026-08,951,premises,madrid_locales,2026-08-31,,2026-08-25,revised,1
@@ -32,6 +35,7 @@ horeca_stock,dist-28079-06,district,2026-08,951,premises,madrid_locales,2026-08-
 horeca_stock,dist-28079-06,district,2026-08,950,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-06,district,2026-08,952,premises,madrid_locales,2026-08-31,,2026-08-25,revised,2
 horeca_stock,dist-28079-06,district,2026-09,954,premises,madrid_locales,2026-09-30,,2026-09-08,ok,0
+horeca_stock,dist-28079-06,district,2026-09,953,premises,madrid_locales,2026-09-30,,2026-09-15,revised,1
 horeca_stock,dist-28079-07,district,2026-07,1379,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-07,district,2026-07,1378,premises,madrid_locales,2026-07-31,,2026-07-29,revised,1
 horeca_stock,dist-28079-07,district,2026-08,1378,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -46,6 +50,7 @@ horeca_stock,dist-28079-09,district,2026-07,715,premises,madrid_locales,2026-07-
 horeca_stock,dist-28079-09,district,2026-07,714,premises,madrid_locales,2026-07-31,,2026-08-01,revised,1
 horeca_stock,dist-28079-09,district,2026-08,714,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
 horeca_stock,dist-28079-09,district,2026-09,714,premises,madrid_locales,2026-09-30,,2026-09-08,ok,0
+horeca_stock,dist-28079-09,district,2026-09,715,premises,madrid_locales,2026-09-30,,2026-09-15,revised,1
 horeca_stock,dist-28079-10,district,2026-07,788,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-10,district,2026-07,786,premises,madrid_locales,2026-07-31,,2026-08-01,revised,1
 horeca_stock,dist-28079-10,district,2026-08,786,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
@@ -56,6 +61,7 @@ horeca_stock,dist-28079-11,district,2026-07,1022,premises,madrid_locales,2026-07
 horeca_stock,dist-28079-11,district,2026-08,1022,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
 horeca_stock,dist-28079-11,district,2026-08,1023,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
 horeca_stock,dist-28079-11,district,2026-09,1023,premises,madrid_locales,2026-09-30,,2026-09-08,ok,0
+horeca_stock,dist-28079-11,district,2026-09,1022,premises,madrid_locales,2026-09-30,,2026-09-15,revised,1
 horeca_stock,dist-28079-12,district,2026-07,623,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-12,district,2026-08,623,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
 horeca_stock,dist-28079-12,district,2026-08,624,premises,madrid_locales,2026-08-31,,2026-08-11,revised,1
@@ -82,6 +88,7 @@ horeca_stock,dist-28079-16,district,2026-09,536,premises,madrid_locales,2026-09-
 horeca_stock,dist-28079-17,district,2026-07,439,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-17,district,2026-08,439,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
 horeca_stock,dist-28079-17,district,2026-09,440,premises,madrid_locales,2026-09-30,,2026-09-08,ok,0
+horeca_stock,dist-28079-17,district,2026-09,441,premises,madrid_locales,2026-09-30,,2026-09-15,revised,1
 horeca_stock,dist-28079-18,district,2026-07,346,premises,madrid_locales,2026-07-31,,2026-07-25,ok,0
 horeca_stock,dist-28079-18,district,2026-08,346,premises,madrid_locales,2026-08-31,,2026-08-04,ok,0
 horeca_stock,dist-28079-18,district,2026-08,347,premises,madrid_locales,2026-08-31,,2026-08-18,revised,1

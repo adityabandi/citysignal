@@ -329,3 +329,6 @@ ecb_policy_rate,euro-area,euro_area,2026-03,2.15,percent,ecb,2026-03-31,,2026-08
 ecb_policy_rate,euro-area,euro_area,2026-04,2.15,percent,ecb,2026-04-30,,2026-08-01,ok,0
 ecb_policy_rate,euro-area,euro_area,2026-05,2.15,percent,ecb,2026-05-31,,2026-08-01,ok,0
 ecb_policy_rate,euro-area,euro_area,2026-06,2.4,percent,ecb,2026-06-30,,2026-08-01,ok,0
+ecb_policy_rate,euro-area,euro_area,2026-07,2.4,percent,ecb,2026-07-31,,2026-09-15,ok,0
+ecb_policy_rate,euro-area,euro_area,2026-08,2.4,percent,ecb,2026-08-31,,2026-09-15,ok,0
+ecb_policy_rate,euro-area,euro_area,2026-09,2.65,percent,ecb,2026-09-30,,2026-09-15,ok,0
