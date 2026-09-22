@@ -1,6 +1,6 @@
 {
- "run_id": "5b6f4b9d3a49",
- "finished_at": "2026-09-15T05:57:16+00:00",
+ "run_id": "44dc910096b8",
+ "finished_at": "2026-09-22T06:00:28+00:00",
  "ok": [
   "aena",
   "borme",
@@ -25,32 +25,32 @@
  ],
  "failed": [
   "eea_air",
-  "ohsome"
+  "ohsome",
+  "serpavi"
  ],
  "partial": [
   "bde",
-  "puertos",
-  "serpavi"
+  "puertos"
  ],
  "results": [
   {
    "source_id": "aena",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 8,
+   "added": 8,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 2,
-   "skipped_unchanged": 2,
+   "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 9.08,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "duration_s": 13.09,
+   "latest_observation": "2026-08",
+   "metrics": [
+    "airport_passengers"
+   ],
+   "notes": []
   },
   {
    "source_id": "bde",
@@ -64,7 +64,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.29,
+   "duration_s": 1.85,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -75,16 +75,16 @@
   {
    "source_id": "borme",
    "status": "ok",
-   "records": 22,
-   "added": 1,
+   "records": 24,
+   "added": 2,
    "revised": 21,
-   "unchanged": 0,
+   "unchanged": 1,
    "quarantined": 0,
-   "plans": 63,
+   "plans": 90,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 36.73,
+   "duration_s": 53.02,
    "latest_observation": "2026-09",
    "metrics": [
     "company_dissolutions",
@@ -105,7 +105,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 5.43,
+   "duration_s": 7.52,
    "latest_observation": "2026-Q1",
    "metrics": [
     "evictions",
@@ -115,41 +115,41 @@
   },
   {
    "source_id": "dgt",
+   "status": "ok",
+   "records": 8,
+   "added": 8,
+   "revised": 0,
+   "unchanged": 0,
+   "quarantined": 0,
+   "plans": 48,
+   "skipped_unchanged": 47,
+   "error": null,
+   "error_type": null,
+   "duration_s": 49.19,
+   "latest_observation": "2026-08",
+   "metrics": [
+    "vehicle_registrations"
+   ],
+   "notes": []
+  },
+  {
+   "source_id": "ecb",
    "status": "skipped",
    "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
-   "plans": 48,
-   "skipped_unchanged": 48,
+   "plans": 10,
+   "skipped_unchanged": 10,
    "error": null,
    "error_type": null,
-   "duration_s": 29.22,
+   "duration_s": 6.28,
    "latest_observation": null,
    "metrics": [],
    "notes": [
     "all sources unchanged since last run"
    ]
-  },
-  {
-   "source_id": "ecb",
-   "status": "ok",
-   "records": 333,
-   "added": 3,
-   "revised": 0,
-   "unchanged": 330,
-   "quarantined": 0,
-   "plans": 10,
-   "skipped_unchanged": 9,
-   "error": null,
-   "error_type": null,
-   "duration_s": 6.05,
-   "latest_observation": "2026-09",
-   "metrics": [
-    "ecb_policy_rate"
-   ],
-   "notes": []
   },
   {
    "source_id": "eea_air",
@@ -163,29 +163,29 @@
    "skipped_unchanged": 0,
    "error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)",
    "error_type": "PayloadError",
-   "duration_s": 0.32,
+   "duration_s": 0.57,
    "latest_observation": null,
    "metrics": [],
    "notes": []
   },
   {
    "source_id": "eurocontrol",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 256,
+   "added": 8,
    "revised": 0,
-   "unchanged": 0,
+   "unchanged": 248,
    "quarantined": 0,
    "plans": 4,
-   "skipped_unchanged": 4,
+   "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.68,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "duration_s": 1.87,
+   "latest_observation": "2026-08",
+   "metrics": [
+    "airport_flights"
+   ],
+   "notes": []
   },
   {
    "source_id": "eurostat",
@@ -199,7 +199,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 0.63,
+   "duration_s": 0.83,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -218,7 +218,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.53,
+   "duration_s": 0.52,
    "latest_observation": "2026-08",
    "metrics": [
     "job_postings_index"
@@ -230,20 +230,19 @@
   {
    "source_id": "ine",
    "status": "ok",
-   "records": 688,
+   "records": 536,
    "added": 0,
-   "revised": 38,
-   "unchanged": 650,
+   "revised": 0,
+   "unchanged": 536,
    "quarantined": 0,
    "plans": 11,
-   "skipped_unchanged": 8,
+   "skipped_unchanged": 10,
    "error": null,
    "error_type": null,
-   "duration_s": 343.25,
+   "duration_s": 472.11,
    "latest_observation": "2026-07",
    "metrics": [
-    "hotel_occupancy_rate",
-    "hotel_revpar"
+    "hotel_adr"
    ],
    "notes": []
   },
@@ -259,7 +258,7 @@
    "skipped_unchanged": 7,
    "error": null,
    "error_type": null,
-   "duration_s": 3.13,
+   "duration_s": 3.48,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -278,7 +277,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.16,
+   "duration_s": 2.02,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -290,14 +289,14 @@
    "status": "ok",
    "records": 147,
    "added": 0,
-   "revised": 33,
-   "unchanged": 114,
+   "revised": 39,
+   "unchanged": 108,
    "quarantined": 0,
    "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 6.97,
+   "duration_s": 9.07,
    "latest_observation": "2026-09",
    "metrics": [
     "horeca_closures",
@@ -312,22 +311,22 @@
   },
   {
    "source_id": "madrid_padron",
-   "status": "ok",
-   "records": 21,
-   "added": 21,
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 36,
-   "skipped_unchanged": 35,
+   "skipped_unchanged": 36,
    "error": null,
    "error_type": null,
-   "duration_s": 30.41,
-   "latest_observation": "2026-09",
-   "metrics": [
-    "padron_district"
-   ],
-   "notes": []
+   "duration_s": 25.66,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   },
   {
    "source_id": "madrid_vut",
@@ -341,7 +340,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 0.96,
+   "duration_s": 1.51,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -350,22 +349,22 @@
   },
   {
    "source_id": "mivau",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 882,
+   "added": 7,
    "revised": 0,
-   "unchanged": 0,
+   "unchanged": 875,
    "quarantined": 0,
    "plans": 5,
-   "skipped_unchanged": 5,
+   "skipped_unchanged": 4,
    "error": null,
    "error_type": null,
-   "duration_s": 8.8,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "duration_s": 12.27,
+   "latest_observation": "2026-Q2",
+   "metrics": [
+    "appraised_value"
+   ],
+   "notes": []
   },
   {
    "source_id": "ohsome",
@@ -379,7 +378,7 @@
    "skipped_unchanged": 0,
    "error": "HTTP 404 from https://api.ohsome.org/v1/elements/count",
    "error_type": "NotFoundError",
-   "duration_s": 0.62,
+   "duration_s": 0.72,
    "latest_observation": null,
    "metrics": [],
    "notes": []
@@ -396,7 +395,7 @@
    "skipped_unchanged": 43,
    "error": null,
    "error_type": null,
-   "duration_s": 43.25,
+   "duration_s": 43.27,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -416,7 +415,7 @@
    "skipped_unchanged": 16,
    "error": null,
    "error_type": null,
-   "duration_s": 10.84,
+   "duration_s": 12.63,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -425,23 +424,20 @@
   },
   {
    "source_id": "serpavi",
-   "status": "partial",
+   "status": "failed",
    "records": 0,
    "added": 0,
    "revised": 0,
    "unchanged": 0,
    "quarantined": 0,
    "plans": 16,
-   "skipped_unchanged": 1,
-   "error": null,
-   "error_type": null,
-   "duration_s": 7.61,
+   "skipped_unchanged": 0,
+   "error": "HTTP 404 from https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Edificaci%C3%B3n%20y%20Vivienda/Mercado%20de%20la%20Vivienda/Sistema%20Estatal%20de%20%C3%8Dndices%20de%20Referencia%20del%20Precio%20del%20Alquiler%20de%20Vivienda/2022_2023_2024_2025/INDICE%20ESTATAL%20ALQUILER%20_distritos2026.xlsx",
+   "error_type": "NotFoundError",
+   "duration_s": 2.57,
    "latest_observation": null,
    "metrics": [],
-   "notes": [
-    "15/16 optional fetches skipped: serpavi-madrid-2022: NotFoundError; serpavi-madrid-2023: NotFoundError; serpavi-madrid-2024: NotFoundError; serpavi-madrid-2025: NotFoundError; serpavi-madrid-2020: NotFoundError",
-    "fetched successfully but produced no records"
-   ]
+   "notes": []
   },
   {
    "source_id": "trends_manual",
@@ -474,7 +470,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 2.15,
+   "duration_s": 6.88,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -493,7 +489,7 @@
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 34.64,
+   "duration_s": 35.12,
    "latest_observation": "2026-08",
    "metrics": [
     "wiki_foreign_interest",
@@ -511,13 +507,13 @@
    "records": 3328,
    "added": 0,
    "revised": 0,
-   "unchanged": 3328,
-   "quarantined": 0,
+   "unchanged": 3327,
+   "quarantined": 1,
    "plans": 85,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 42.44,
+   "duration_s": 42.49,
    "latest_observation": "2026-08",
    "metrics": [
     "wiki_barrio_views",
@@ -527,7 +523,9 @@
     "wiki_hardship_index",
     "wiki_relocation_index"
    ],
-   "notes": []
+   "notes": [
+    "1 unexpected revisions quarantined — re-run with --accept-revision wikipedia if the restatement is genuine"
+   ]
   }
  ]
 }

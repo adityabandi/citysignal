@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-15T05:57:22+00:00",
+ "generated_at": "2026-09-22T06:00:31+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -30,7 +30,7 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0546,
+     "demand_momentum": 0.0276,
      "housing_pressure": 1.094,
      "supply_response": -0.9389,
      "distress": 0.0647
@@ -45,7 +45,7 @@
     "period": "2026-08"
    },
    "indices": {
-    "demand_momentum": 0.0546,
+    "demand_momentum": 0.0276,
     "housing_pressure": 1.094,
     "supply_response": -0.9389,
     "distress": 0.0647
@@ -517,7 +517,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0523,
+     "index_demand_momentum": 0.0258,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.1645
@@ -534,8 +534,8 @@
     "expression": "true",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0419,
-     "housing_pressure": 0.7197,
+     "demand_momentum": -0.0535,
+     "housing_pressure": 0.63,
      "supply_response": 0.5433,
      "distress": -0.0837
     },
@@ -549,8 +549,8 @@
     "period": "2026-08"
    },
    "indices": {
-    "demand_momentum": 0.0419,
-    "housing_pressure": 0.7197,
+    "demand_momentum": -0.0535,
+    "housing_pressure": 0.63,
     "supply_response": 0.5433,
     "distress": -0.0837
    },
@@ -569,10 +569,10 @@
       "metric_id": "appraised_value",
       "label": "Appraised housing value",
       "expect": "up",
-      "z": 1.0819,
-      "raw": 11.9616,
+      "z": 0.7498,
+      "raw": 9.6991,
       "unit": "eur_m2",
-      "period": "2026-03",
+      "period": "2026-06",
       "geo_level": "province",
       "source_id": "mivau"
      },
@@ -982,7 +982,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.023,
-     "index_housing_pressure": 1.2789,
+     "index_housing_pressure": 1.0584,
      "index_supply_response": null,
      "index_distress": 0.4041
     },
@@ -992,7 +992,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0987,
-     "index_housing_pressure": 0.9531,
+     "index_housing_pressure": 0.8684,
      "index_supply_response": null,
      "index_distress": 0.0757
     },
@@ -1002,7 +1002,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0797,
-     "index_housing_pressure": 0.7299,
+     "index_housing_pressure": 0.7382,
      "index_supply_response": null,
      "index_distress": 0.3343
     },
@@ -1021,7 +1021,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0147,
+     "index_demand_momentum": -0.0842,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.1736
@@ -1038,8 +1038,8 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0896,
-     "housing_pressure": 1.1351,
+     "demand_momentum": 0.1297,
+     "housing_pressure": 1.085,
      "supply_response": -0.6999,
      "distress": 0.0036
     },
@@ -1053,8 +1053,8 @@
     "period": "2026-08"
    },
    "indices": {
-    "demand_momentum": 0.0896,
-    "housing_pressure": 1.1351,
+    "demand_momentum": 0.1297,
+    "housing_pressure": 1.085,
     "supply_response": -0.6999,
     "distress": 0.0036
    },
@@ -1084,10 +1084,10 @@
       "metric_id": "appraised_value",
       "label": "Appraised housing value",
       "expect": "up",
-      "z": 1.8373,
-      "raw": 18.7842,
+      "z": 1.6518,
+      "raw": 17.6041,
       "unit": "eur_m2",
-      "period": "2026-03",
+      "period": "2026-06",
       "geo_level": "province",
       "source_id": "mivau"
      },
@@ -1482,11 +1482,11 @@
     },
     {
      "period": "2026-04",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "hot",
+     "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0945,
-     "index_housing_pressure": 1.4457,
+     "index_housing_pressure": 1.5316,
      "index_supply_response": null,
      "index_distress": -0.3895
     },
@@ -1496,17 +1496,17 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0031,
-     "index_housing_pressure": 0.8224,
+     "index_housing_pressure": 1.168,
      "index_supply_response": null,
      "index_distress": 0.066
     },
     {
      "period": "2026-06",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0656,
-     "index_housing_pressure": 0.6659,
+     "index_housing_pressure": 1.0767,
      "index_supply_response": null,
      "index_distress": 0.2333
     },
@@ -1525,7 +1525,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": -0.0642,
+     "index_demand_momentum": 0.0544,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.1633
@@ -1542,8 +1542,8 @@
     "expression": "housing_pressure > 0.75 and supply_response < -0.25",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.1941,
-     "housing_pressure": 0.7717,
+     "demand_momentum": 0.2093,
+     "housing_pressure": 0.7594,
      "supply_response": -0.3526,
      "distress": 0.3991
     },
@@ -1557,8 +1557,8 @@
     "period": "2026-08"
    },
    "indices": {
-    "demand_momentum": 0.1941,
-    "housing_pressure": 0.7717,
+    "demand_momentum": 0.2093,
+    "housing_pressure": 0.7594,
     "supply_response": -0.3526,
     "distress": 0.3991
    },
@@ -1588,10 +1588,10 @@
       "metric_id": "appraised_value",
       "label": "Appraised housing value",
       "expect": "up",
-      "z": 0.7971,
-      "raw": 14.2464,
+      "z": 0.7518,
+      "raw": 13.8495,
       "unit": "eur_m2",
-      "period": "2026-03",
+      "period": "2026-06",
       "geo_level": "province",
       "source_id": "mivau"
      },
@@ -1990,7 +1990,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2374,
-     "index_housing_pressure": 0.2599,
+     "index_housing_pressure": 0.4649,
      "index_supply_response": null,
      "index_distress": 0.366
     },
@@ -2000,7 +2000,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0482,
-     "index_housing_pressure": 0.6062,
+     "index_housing_pressure": 0.6669,
      "index_supply_response": null,
      "index_distress": 0.2039
     },
@@ -2010,7 +2010,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2333,
-     "index_housing_pressure": 0.4255,
+     "index_housing_pressure": 0.5615,
      "index_supply_response": null,
      "index_distress": 0.2815
     },
@@ -2029,7 +2029,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3369,
+     "index_demand_momentum": 0.1606,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.6027
@@ -2046,8 +2046,8 @@
     "expression": "true",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.1722,
-     "housing_pressure": 0.5803,
+     "demand_momentum": 0.1563,
+     "housing_pressure": 0.5811,
      "supply_response": -0.0804,
      "distress": 0.523
     },
@@ -2061,8 +2061,8 @@
     "period": "2026-08"
    },
    "indices": {
-    "demand_momentum": 0.1722,
-    "housing_pressure": 0.5803,
+    "demand_momentum": 0.1563,
+    "housing_pressure": 0.5811,
     "supply_response": -0.0804,
     "distress": 0.523
    },
@@ -2092,10 +2092,10 @@
       "metric_id": "appraised_value",
       "label": "Appraised housing value",
       "expect": "up",
-      "z": 1.022,
-      "raw": 12.8227,
+      "z": 1.0251,
+      "raw": 12.9183,
       "unit": "eur_m2",
-      "period": "2026-03",
+      "period": "2026-06",
       "geo_level": "province",
       "source_id": "mivau"
      },
@@ -2494,17 +2494,17 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2607,
-     "index_housing_pressure": 0.8787,
+     "index_housing_pressure": 0.9397,
      "index_supply_response": null,
      "index_distress": 0.3611
     },
     {
      "period": "2026-05",
-     "rule_id": "hot_decelerating",
-     "label": "Hot but decelerating",
+     "rule_id": "hot",
+     "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0711,
-     "index_housing_pressure": 0.7827,
+     "index_housing_pressure": 0.8837,
      "index_supply_response": null,
      "index_distress": 0.1855
     },
@@ -2514,7 +2514,7 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.3154,
-     "index_housing_pressure": 0.276,
+     "index_housing_pressure": 0.5881,
      "index_supply_response": null,
      "index_distress": 0.3563
     },
@@ -2533,7 +2533,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.1777,
+     "index_demand_momentum": 0.1599,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.5747
@@ -2550,8 +2550,8 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.028,
-     "housing_pressure": 0.934,
+     "demand_momentum": -0.0018,
+     "housing_pressure": 0.9347,
      "supply_response": -0.0774,
      "distress": 0.2387
     },
@@ -2565,8 +2565,8 @@
     "period": "2026-08"
    },
    "indices": {
-    "demand_momentum": -0.028,
-    "housing_pressure": 0.934,
+    "demand_momentum": -0.0018,
+    "housing_pressure": 0.9347,
     "supply_response": -0.0774,
     "distress": 0.2387
    },
@@ -2596,10 +2596,10 @@
       "metric_id": "appraised_value",
       "label": "Appraised housing value",
       "expect": "up",
-      "z": 0.8188,
-      "raw": 13.085,
+      "z": 0.8211,
+      "raw": 13.1488,
       "unit": "eur_m2",
-      "period": "2026-03",
+      "period": "2026-06",
       "geo_level": "province",
       "source_id": "mivau"
      },
@@ -2978,7 +2978,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1524,
-     "index_housing_pressure": 0.8514,
+     "index_housing_pressure": 0.8387,
      "index_supply_response": null,
      "index_distress": 0.1956
     },
@@ -2988,7 +2988,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.1355,
-     "index_housing_pressure": 0.886,
+     "index_housing_pressure": 0.8589,
      "index_supply_response": null,
      "index_distress": 0.0564
     },
@@ -2998,7 +2998,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0447,
-     "index_housing_pressure": 1.1228,
+     "index_housing_pressure": 0.9971,
      "index_supply_response": null,
      "index_distress": 0.1002
     },
@@ -3017,7 +3017,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0959,
+     "index_demand_momentum": 0.0618,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.2275
@@ -3034,8 +3034,8 @@
     "expression": "housing_pressure > 0.75 and supply_response < -0.25",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.5875,
-     "housing_pressure": 1.2029,
+     "demand_momentum": 0.6222,
+     "housing_pressure": 1.084,
      "supply_response": -0.3312,
      "distress": 0.2301
     },
@@ -3049,8 +3049,8 @@
     "period": "2026-08"
    },
    "indices": {
-    "demand_momentum": 0.5875,
-    "housing_pressure": 1.2029,
+    "demand_momentum": 0.6222,
+    "housing_pressure": 1.084,
     "supply_response": -0.3312,
     "distress": 0.2301
    },
@@ -3069,10 +3069,10 @@
       "metric_id": "airport_flights",
       "label": "Airport flights (daily traffic)",
       "expect": "up",
-      "z": 2.1903,
-      "raw": 13.5995,
+      "z": 2.4099,
+      "raw": 15.7801,
       "unit": "flights",
-      "period": "2026-07",
+      "period": "2026-08",
       "geo_level": "airport",
       "source_id": "eurocontrol"
      }
@@ -3417,17 +3417,17 @@
      "label": "No clear regime",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2252,
-     "index_housing_pressure": 0.4254,
+     "index_housing_pressure": 0.6271,
      "index_supply_response": null,
      "index_distress": 0.2203
     },
     {
      "period": "2026-05",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "hot_decelerating",
+     "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.3846,
-     "index_housing_pressure": 0.6657,
+     "index_housing_pressure": 0.7673,
      "index_supply_response": null,
      "index_distress": -0.0014
     },
@@ -3437,7 +3437,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.0154,
-     "index_housing_pressure": 1.2087,
+     "index_housing_pressure": 1.084,
      "index_supply_response": null,
      "index_distress": 0.0303
     },
@@ -3453,10 +3453,10 @@
     },
     {
      "period": "2026-08",
-     "rule_id": "neutral",
-     "label": "No clear regime",
+     "rule_id": "expansion",
+     "label": "Expansion",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.3585,
+     "index_demand_momentum": 0.7688,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.2251
@@ -3473,8 +3473,8 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.2608,
-     "housing_pressure": 1.3916,
+     "demand_momentum": 0.1639,
+     "housing_pressure": 1.3404,
      "supply_response": 0.9588,
      "distress": 0.4199
     },
@@ -3488,8 +3488,8 @@
     "period": "2026-08"
    },
    "indices": {
-    "demand_momentum": 0.2608,
-    "housing_pressure": 1.3916,
+    "demand_momentum": 0.1639,
+    "housing_pressure": 1.3404,
     "supply_response": 0.9588,
     "distress": 0.4199
    },
@@ -3519,10 +3519,10 @@
       "metric_id": "appraised_value",
       "label": "Appraised housing value",
       "expect": "up",
-      "z": 1.3627,
-      "raw": 15.9981,
+      "z": 1.1735,
+      "raw": 14.4446,
       "unit": "eur_m2",
-      "period": "2026-03",
+      "period": "2026-06",
       "geo_level": "province",
       "source_id": "mivau"
      },
@@ -3911,7 +3911,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": 0.2753,
-     "index_housing_pressure": 1.1359,
+     "index_housing_pressure": 1.1516,
      "index_supply_response": null,
      "index_distress": 0.169
     },
@@ -3921,7 +3921,7 @@
      "label": "Hot but decelerating",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0026,
-     "index_housing_pressure": 0.9504,
+     "index_housing_pressure": 1.0434,
      "index_supply_response": null,
      "index_distress": 0.0215
     },
@@ -3931,7 +3931,7 @@
      "label": "Hot",
      "held_by_hysteresis": false,
      "index_demand_momentum": -0.0064,
-     "index_housing_pressure": 1.2225,
+     "index_housing_pressure": 1.2021,
      "index_supply_response": null,
      "index_distress": -0.0376
     },
@@ -3950,7 +3950,7 @@
      "rule_id": "neutral",
      "label": "No clear regime",
      "held_by_hysteresis": false,
-     "index_demand_momentum": 0.0173,
+     "index_demand_momentum": 0.1519,
      "index_housing_pressure": null,
      "index_supply_response": null,
      "index_distress": 0.0047
@@ -4301,7 +4301,7 @@
    "source_id": "bde",
    "status": "partial",
    "latest_observation": "2026-06",
-   "staleness_days": 77,
+   "staleness_days": 84,
    "last_error": null
   },
   {
@@ -4312,24 +4312,17 @@
    "last_error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)"
   },
   {
-   "source_id": "eurocontrol",
-   "status": "skipped",
-   "latest_observation": "2026-07",
-   "staleness_days": 46,
-   "last_error": null
-  },
-  {
    "source_id": "eurostat",
    "status": "skipped",
    "latest_observation": "2025-12",
-   "staleness_days": 258,
+   "staleness_days": 265,
    "last_error": null
   },
   {
    "source_id": "indeed",
    "status": "ok",
    "latest_observation": "2026-08",
-   "staleness_days": 15,
+   "staleness_days": 22,
    "last_error": null
   },
   {
@@ -4343,7 +4336,7 @@
    "source_id": "madrid_licencias",
    "status": "skipped",
    "latest_observation": "2026-05",
-   "staleness_days": 107,
+   "staleness_days": 114,
    "last_error": null
   },
   {
@@ -4364,7 +4357,7 @@
    "source_id": "ohsome",
    "status": "failed",
    "latest_observation": "2026-07",
-   "staleness_days": 46,
+   "staleness_days": 53,
    "last_error": "HTTP 404 from https://api.ohsome.org/v1/elements/count"
   },
   {
@@ -4375,10 +4368,17 @@
    "last_error": "Registradores statistics portal page loaded but no data files found. The quarterly data may not be published in machine-readable format yet."
   },
   {
+   "source_id": "serpavi",
+   "status": "failed",
+   "latest_observation": "2026",
+   "staleness_days": -100,
+   "last_error": "HTTP 404 from https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Edificaci%C3%B3n%20y%20Vivienda/Mercado%20de%20la%20Vivienda/Sistema%20Estatal%20de%20%C3%8Dndices%20de%20Referencia%20del%20Precio%20del%20Alquiler%20de%20Vivienda/2022_2023_2024_2025/INDICE%20ESTATAL%20ALQUILER%20_distritos2026.xlsx"
+  },
+  {
    "source_id": "visados",
    "status": "skipped",
    "latest_observation": "2026-02",
-   "staleness_days": 199,
+   "staleness_days": 206,
    "last_error": null
   }
  ]

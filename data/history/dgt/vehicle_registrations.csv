@@ -48,6 +48,7 @@ vehicle_registrations,prov-07,province,2026-04,5443,vehicles,dgt,2026-04-30,,202
 vehicle_registrations,prov-07,province,2026-05,4643,vehicles,dgt,2026-05-31,,2026-07-25,ok,0
 vehicle_registrations,prov-07,province,2026-06,4985,vehicles,dgt,2026-06-30,,2026-07-25,ok,0
 vehicle_registrations,prov-07,province,2026-07,3839,vehicles,dgt,2026-07-31,,2026-08-18,ok,0
+vehicle_registrations,prov-07,province,2026-08,3066,vehicles,dgt,2026-08-31,,2026-09-22,ok,0
 vehicle_registrations,prov-08,province,2022-07,13548,vehicles,dgt,2022-07-31,,2026-07-25,ok,0
 vehicle_registrations,prov-08,province,2022-08,8527,vehicles,dgt,2022-08-31,,2026-07-25,ok,0
 vehicle_registrations,prov-08,province,2022-09,12724,vehicles,dgt,2022-09-30,,2026-07-25,ok,0
@@ -97,6 +98,7 @@ vehicle_registrations,prov-08,province,2026-04,20063,vehicles,dgt,2026-04-30,,20
 vehicle_registrations,prov-08,province,2026-05,20840,vehicles,dgt,2026-05-31,,2026-07-25,ok,0
 vehicle_registrations,prov-08,province,2026-06,24622,vehicles,dgt,2026-06-30,,2026-07-25,ok,0
 vehicle_registrations,prov-08,province,2026-07,22679,vehicles,dgt,2026-07-31,,2026-08-18,ok,0
+vehicle_registrations,prov-08,province,2026-08,13291,vehicles,dgt,2026-08-31,,2026-09-22,ok,0
 vehicle_registrations,prov-28,province,2022-07,39685,vehicles,dgt,2022-07-31,,2026-07-25,ok,0
 vehicle_registrations,prov-28,province,2022-08,27825,vehicles,dgt,2022-08-31,,2026-07-25,ok,0
 vehicle_registrations,prov-28,province,2022-09,36717,vehicles,dgt,2022-09-30,,2026-07-25,ok,0
@@ -146,6 +148,7 @@ vehicle_registrations,prov-28,province,2026-04,60218,vehicles,dgt,2026-04-30,,20
 vehicle_registrations,prov-28,province,2026-05,65284,vehicles,dgt,2026-05-31,,2026-07-25,ok,0
 vehicle_registrations,prov-28,province,2026-06,76026,vehicles,dgt,2026-06-30,,2026-07-25,ok,0
 vehicle_registrations,prov-28,province,2026-07,55098,vehicles,dgt,2026-07-31,,2026-08-18,ok,0
+vehicle_registrations,prov-28,province,2026-08,33576,vehicles,dgt,2026-08-31,,2026-09-22,ok,0
 vehicle_registrations,prov-29,province,2022-07,4102,vehicles,dgt,2022-07-31,,2026-07-25,ok,0
 vehicle_registrations,prov-29,province,2022-08,3358,vehicles,dgt,2022-08-31,,2026-07-25,ok,0
 vehicle_registrations,prov-29,province,2022-09,3754,vehicles,dgt,2022-09-30,,2026-07-25,ok,0
@@ -195,6 +198,7 @@ vehicle_registrations,prov-29,province,2026-04,5689,vehicles,dgt,2026-04-30,,202
 vehicle_registrations,prov-29,province,2026-05,5755,vehicles,dgt,2026-05-31,,2026-07-25,ok,0
 vehicle_registrations,prov-29,province,2026-06,6645,vehicles,dgt,2026-06-30,,2026-07-25,ok,0
 vehicle_registrations,prov-29,province,2026-07,6045,vehicles,dgt,2026-07-31,,2026-08-18,ok,0
+vehicle_registrations,prov-29,province,2026-08,4491,vehicles,dgt,2026-08-31,,2026-09-22,ok,0
 vehicle_registrations,prov-41,province,2022-07,2939,vehicles,dgt,2022-07-31,,2026-07-25,ok,0
 vehicle_registrations,prov-41,province,2022-08,2126,vehicles,dgt,2022-08-31,,2026-07-25,ok,0
 vehicle_registrations,prov-41,province,2022-09,3035,vehicles,dgt,2022-09-30,,2026-07-25,ok,0
@@ -244,6 +248,7 @@ vehicle_registrations,prov-41,province,2026-04,4397,vehicles,dgt,2026-04-30,,202
 vehicle_registrations,prov-41,province,2026-05,4564,vehicles,dgt,2026-05-31,,2026-07-25,ok,0
 vehicle_registrations,prov-41,province,2026-06,5239,vehicles,dgt,2026-06-30,,2026-07-25,ok,0
 vehicle_registrations,prov-41,province,2026-07,5015,vehicles,dgt,2026-07-31,,2026-08-18,ok,0
+vehicle_registrations,prov-41,province,2026-08,3639,vehicles,dgt,2026-08-31,,2026-09-22,ok,0
 vehicle_registrations,prov-46,province,2022-07,4444,vehicles,dgt,2022-07-31,,2026-07-25,ok,0
 vehicle_registrations,prov-46,province,2022-08,3120,vehicles,dgt,2022-08-31,,2026-07-25,ok,0
 vehicle_registrations,prov-46,province,2022-09,3983,vehicles,dgt,2022-09-30,,2026-07-25,ok,0
@@ -293,6 +298,7 @@ vehicle_registrations,prov-46,province,2026-04,5468,vehicles,dgt,2026-04-30,,202
 vehicle_registrations,prov-46,province,2026-05,6253,vehicles,dgt,2026-05-31,,2026-07-25,ok,0
 vehicle_registrations,prov-46,province,2026-06,6861,vehicles,dgt,2026-06-30,,2026-07-25,ok,0
 vehicle_registrations,prov-46,province,2026-07,7268,vehicles,dgt,2026-07-31,,2026-08-18,ok,0
+vehicle_registrations,prov-46,province,2026-08,4447,vehicles,dgt,2026-08-31,,2026-09-22,ok,0
 vehicle_registrations,prov-48,province,2022-07,1734,vehicles,dgt,2022-07-31,,2026-07-25,ok,0
 vehicle_registrations,prov-48,province,2022-08,1148,vehicles,dgt,2022-08-31,,2026-07-25,ok,0
 vehicle_registrations,prov-48,province,2022-09,1560,vehicles,dgt,2022-09-30,,2026-07-25,ok,0
@@ -342,6 +348,7 @@ vehicle_registrations,prov-48,province,2026-04,1976,vehicles,dgt,2026-04-30,,202
 vehicle_registrations,prov-48,province,2026-05,2202,vehicles,dgt,2026-05-31,,2026-07-25,ok,0
 vehicle_registrations,prov-48,province,2026-06,2618,vehicles,dgt,2026-06-30,,2026-07-25,ok,0
 vehicle_registrations,prov-48,province,2026-07,2467,vehicles,dgt,2026-07-31,,2026-08-18,ok,0
+vehicle_registrations,prov-48,province,2026-08,1444,vehicles,dgt,2026-08-31,,2026-09-22,ok,0
 vehicle_registrations,prov-50,province,2022-07,1974,vehicles,dgt,2022-07-31,,2026-07-25,ok,0
 vehicle_registrations,prov-50,province,2022-08,1349,vehicles,dgt,2022-08-31,,2026-07-25,ok,0
 vehicle_registrations,prov-50,province,2022-09,2016,vehicles,dgt,2022-09-30,,2026-07-25,ok,0
@@ -391,3 +398,4 @@ vehicle_registrations,prov-50,province,2026-04,2766,vehicles,dgt,2026-04-30,,202
 vehicle_registrations,prov-50,province,2026-05,2997,vehicles,dgt,2026-05-31,,2026-07-25,ok,0
 vehicle_registrations,prov-50,province,2026-06,3688,vehicles,dgt,2026-06-30,,2026-07-25,ok,0
 vehicle_registrations,prov-50,province,2026-07,3612,vehicles,dgt,2026-07-31,,2026-08-18,ok,0
+vehicle_registrations,prov-50,province,2026-08,2603,vehicles,dgt,2026-08-31,,2026-09-22,ok,0
