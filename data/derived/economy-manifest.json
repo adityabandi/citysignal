@@ -6,19 +6,19 @@
       "file": "economy-panel.csv",
       "storage_file": "economy-panel.csv.gz",
       "storage_encoding": "gzip",
-      "sha256": "9ae34a5cab902facd40dc3d1c9caa7ef3af8086f5973177b14600bf772d8fd18",
-      "bytes": 8704882
+      "sha256": "fee3236084690d011cc91b44296bf75070271b1e235a172cc8c0f45697fa0751",
+      "bytes": 11161919
     },
     {
       "file": "economy-vintages.csv",
       "storage_file": "economy-vintages.csv.gz",
       "storage_encoding": "gzip",
-      "sha256": "9ae34a5cab902facd40dc3d1c9caa7ef3af8086f5973177b14600bf772d8fd18",
-      "bytes": 8704882
+      "sha256": "cfab5f64791da88fd69612e79a2a4e1f4a648080360bc19ffe9926f020a76752",
+      "bytes": 11162011
     }
   ],
-  "current_observations": 98550,
-  "captured_rows": 98550,
+  "current_observations": 123713,
+  "captured_rows": 123714,
   "countries": {
     "au": "Australia",
     "br": "Brazil",
@@ -51,7 +51,7 @@
   },
   "metrics": {
     "bis_cpi": {
-      "label": "Consumer prices",
+      "label": "National CPI",
       "plain": "BIS national consumer-price inflation, annual percentage change. National CPI definitions; monthly observations.",
       "unit": "percent",
       "cadence": "monthly",
@@ -93,6 +93,21 @@
       "range": [
         -20,
         1000
+      ]
+    },
+    "de_truck_mileage": {
+      "label": "Truck mileage",
+      "plain": "German motorway mileage of trucks with at least four axles; calendar and seasonally adjusted, 2021=100. Daily data updated weekly. Measures road freight activity.",
+      "unit": "index",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "source_id": "destatis_freight",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        500
       ]
     },
     "ecb_mortgage_rate": {
@@ -185,6 +200,96 @@
       "direction": 1,
       "lag": "coincident"
     },
+    "in_bank_toll_value": {
+      "label": "Bank-linked toll payments · value",
+      "plain": "RBI monthly bank-linked toll payments. NETC payments linked to bank accounts only. Excludes prepaid-wallet toll payments; passenger and freight traffic combined. Original units converted from lakh transactions to millions and INR crore to billions. Not seasonally adjusted.",
+      "unit": "INR billion",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "rbi_payments",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000000.0
+      ]
+    },
+    "in_bank_toll_volume": {
+      "label": "Bank-linked toll payments · transactions",
+      "plain": "RBI monthly bank-linked toll payments. NETC payments linked to bank accounts only. Excludes prepaid-wallet toll payments; passenger and freight traffic combined. Original units converted from lakh transactions to millions and INR crore to billions. Not seasonally adjusted.",
+      "unit": "million transactions",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "rbi_payments",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000000.0
+      ]
+    },
+    "in_card_value": {
+      "label": "Credit-card spending · value",
+      "plain": "RBI monthly credit-card spending. Credit-card purchases, including point-of-sale and other payments; nominal value. Original units converted from lakh transactions to millions and INR crore to billions. Not seasonally adjusted.",
+      "unit": "INR billion",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "rbi_payments",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000000.0
+      ]
+    },
+    "in_card_volume": {
+      "label": "Credit-card spending · transactions",
+      "plain": "RBI monthly credit-card spending. Credit-card purchases, including point-of-sale and other payments; nominal value. Original units converted from lakh transactions to millions and INR crore to billions. Not seasonally adjusted.",
+      "unit": "million transactions",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "rbi_payments",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000000.0
+      ]
+    },
+    "in_upi_value": {
+      "label": "UPI · value",
+      "plain": "RBI monthly upi. Person-to-person and merchant payments combined; growth includes payment adoption. Original units converted from lakh transactions to millions and INR crore to billions. Not seasonally adjusted.",
+      "unit": "INR billion",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "rbi_payments",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000000.0
+      ]
+    },
+    "in_upi_volume": {
+      "label": "UPI · transactions",
+      "plain": "RBI monthly upi. Person-to-person and merchant payments combined; growth includes payment adoption. Original units converted from lakh transactions to millions and INR crore to billions. Not seasonally adjusted.",
+      "unit": "million transactions",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "rbi_payments",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000000.0
+      ]
+    },
     "macro_employment": {
       "label": "Employment",
       "plain": "Persons employed, domestic concept; quarter-on-quarter change, seasonally and calendar adjusted.",
@@ -246,7 +351,7 @@
       ]
     },
     "macro_inflation": {
-      "label": "Consumer prices",
+      "label": "HICP inflation",
       "plain": "All-items HICP, annual rate of change; ECOICOP 2.",
       "unit": "percent",
       "cadence": "monthly",
@@ -305,6 +410,21 @@
         100
       ]
     },
+    "oecd_bond_yield": {
+      "label": "10-year government yield",
+      "plain": "Long-term government-bond yield, generally ten-year maturity; monthly average of daily rates. Country instrument definitions follow OECD metadata.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -10,
+        100
+      ]
+    },
     "oecd_cli": {
       "label": "Composite leading indicator",
       "plain": "OECD amplitude-adjusted composite leading indicator. Long-run trend=100; harmonised methodology. Tracks cyclical turning points relative to trend.",
@@ -318,6 +438,141 @@
       "range": [
         0,
         300
+      ]
+    },
+    "oecd_consumption": {
+      "label": "Household consumption",
+      "plain": "Real final consumption of households and NPISH, seasonally adjusted, quarter-on-quarter growth.",
+      "unit": "percent",
+      "cadence": "quarterly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "oecd_equities": {
+      "label": "Equity prices",
+      "plain": "OECD national share-price index, monthly average of daily prices. Displayed as three-month change in monthly averages; excludes dividend reinvestment.",
+      "unit": "index",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000.0
+      ]
+    },
+    "oecd_euro_fx": {
+      "label": "Euro versus USD",
+      "plain": "Monthly average euro per US dollar. Shared currency series, displayed as three-month euro appreciation: prior quote / current quote minus one. Positive means a stronger euro.",
+      "unit": "local currency per USD",
+      "cadence": "monthly",
+      "geo_level": "euro_area",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000.0
+      ]
+    },
+    "oecd_fx": {
+      "label": "Currency versus USD",
+      "plain": "Monthly average national currency units per US dollar. Displayed as three-month currency appreciation: prior quote / current quote minus one. Positive means a stronger local currency.",
+      "unit": "local currency per USD",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000000000.0
+      ]
+    },
+    "oecd_gdp": {
+      "label": "Real GDP",
+      "plain": "Real GDP growth, seasonally adjusted, quarter-on-quarter, not annualised.",
+      "unit": "percent",
+      "cadence": "quarterly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "oecd_industry": {
+      "label": "Industrial production",
+      "plain": "Industrial production excluding construction (ISIC B–E), seasonally adjusted volume index. Publisher reference year; displayed as annual growth.",
+      "unit": "index",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000
+      ]
+    },
+    "oecd_investment": {
+      "label": "Fixed investment",
+      "plain": "Real gross fixed capital formation, seasonally adjusted, quarter-on-quarter growth.",
+      "unit": "percent",
+      "cadence": "quarterly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -100,
+        100
+      ]
+    },
+    "oecd_retail": {
+      "label": "Retail sales",
+      "plain": "Retail trade volume (ISIC G47), seasonally adjusted index. Publisher reference year; displayed as annual growth.",
+      "unit": "index",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        1000
+      ]
+    },
+    "oecd_unemployment": {
+      "label": "Unemployment",
+      "plain": "Harmonised unemployment rate, age 15+, all sexes, seasonally adjusted.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "oecd_activity",
+      "section": "economy",
+      "direction": -1,
+      "lag": "coincident",
+      "range": [
+        0,
+        100
       ]
     },
     "power_carbon_intensity": {
@@ -485,6 +740,81 @@
         10000000000
       ]
     },
+    "uk_supplier_overdue": {
+      "label": "Supplier invoices overdue",
+      "plain": "Median company percentage of invoices paid after agreed terms. Same month-end reporting panel as payment time. Company-weighted, not invoice-weighted; changes also reflect panel membership.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "uk_payments",
+      "section": "alternative",
+      "direction": -1,
+      "lag": "coincident",
+      "range": [
+        0,
+        100
+      ]
+    },
+    "uk_supplier_panel": {
+      "label": "Payment disclosure panel",
+      "plain": "Number of companies in the month-end supplier-payment panel. One latest report per company, filed by month-end with filing and report end within 12 months.",
+      "unit": "companies",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "uk_payments",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        100000
+      ]
+    },
+    "uk_supplier_payment_days": {
+      "label": "Supplier payment time",
+      "plain": "Median average payment days across reporting UK companies. Month-end panel: latest report per company filed by that date, filing and report end within 12 months. Company-weighted; underlying reports span different periods.",
+      "unit": "days",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "uk_payments",
+      "section": "alternative",
+      "direction": -1,
+      "lag": "coincident",
+      "range": [
+        0,
+        730
+      ]
+    },
+    "us_withheld_tax": {
+      "label": "Withheld tax receipts",
+      "plain": "US Treasury cash receipts of withheld individual income and FICA taxes, nominal USD million. Tax rates, bonuses and payment schedules affect receipts. Monthly values use the last reporting day’s month-to-date total; partial months excluded.",
+      "unit": "USD million",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "treasury_receipts",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -10000000.0,
+        1000000000000.0
+      ]
+    },
+    "us_withheld_tax_daily": {
+      "label": "Withheld tax receipts · daily",
+      "plain": "US Treasury cash receipts of withheld individual income and FICA taxes, nominal USD million. Tax rates, bonuses and payment schedules affect receipts. Monthly values use the last reporting day’s month-to-date total; partial months excluded.",
+      "unit": "USD million",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "source_id": "treasury_receipts",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -10000000.0,
+        1000000000000.0
+      ]
+    },
     "wb_gdp_growth": {
       "label": "Real GDP growth · annual",
       "plain": "Annual real GDP growth from World Bank WDI; historical benchmark, not a current-quarter estimate.",
@@ -587,6 +917,19 @@
       "max_age_days": 100,
       "redistribute": true
     },
+    "destatis_freight": {
+      "source_id": "destatis_freight",
+      "publisher": "Destatis / Bundesbank / BALM",
+      "license": "Data licence Germany attribution 2.0",
+      "attribution": "Source: Destatis, Deutsche Bundesbank and BALM",
+      "docs_url": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Industrie-Verarbeitendes-Gewerbe/Tabellen/Lkw-Maut-Fahrleistungsindex-Daten.html",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "max_age_days": 21,
+      "redistribute": true,
+      "kind": "official",
+      "notes": "Daily mileage of trucks with at least four axles on German motorways. Calendar and seasonally adjusted; 2021=100. Updated weekly."
+    },
     "ecb": {
       "publisher": "European Central Bank",
       "license": "ECB copyright, data available under CC BY 4.0",
@@ -646,6 +989,19 @@
       "kind": "research",
       "notes": "Daily seasonally adjusted total and new job posting indices. 1 February 2020=100; publisher uses a seven-day moving average. Platform coverage is not the whole labour market."
     },
+    "oecd_activity": {
+      "source_id": "oecd_activity",
+      "publisher": "OECD",
+      "license": "OECD terms of use; attribution",
+      "attribution": "Source: OECD, national accounts and short-term statistics",
+      "docs_url": "https://data-explorer.oecd.org/",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "max_age_days": 120,
+      "redistribute": true,
+      "kind": "official",
+      "notes": "Seasonally adjusted real GDP, household consumption, investment, industry, retail volume and harmonised unemployment. GDP growth is quarter-on-quarter, not annualised."
+    },
     "oecd_cli": {
       "publisher": "OECD",
       "license": "OECD terms of use; attribution",
@@ -669,6 +1025,19 @@
       "notes": "Monthly AIS-estimated physical imports, exports and port calls. Covered ports only; includes transshipment. Not customs trade, dollar values, seasonally adjusted data or a GDP forecast.",
       "redistribute": false
     },
+    "rbi_payments": {
+      "source_id": "rbi_payments",
+      "publisher": "Reserve Bank of India",
+      "license": "RBI website copyright and reuse terms; attribution",
+      "attribution": "Source: Reserve Bank of India, Payment System Indicators",
+      "docs_url": "https://www.rbi.org.in/Scripts/PSIUserView.aspx",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "max_age_days": 90,
+      "redistribute": true,
+      "kind": "official",
+      "notes": "UPI includes transfers and merchant payments. Credit-card spending is nominal. NETC series covers bank-linked payments, not all FASTag transactions. Platform adoption and scope changes affect growth."
+    },
     "ree": {
       "source_id": "ree",
       "publisher": "Red Eléctrica",
@@ -681,6 +1050,32 @@
       "redistribute": true,
       "kind": "official",
       "notes": "National daily electricity demand (MWh) and mainland corrected large-user electricity index (>450 kW). Electricity is a proxy, affected by weather, efficiency and sector mix."
+    },
+    "treasury_receipts": {
+      "source_id": "treasury_receipts",
+      "publisher": "US Treasury, Bureau of the Fiscal Service",
+      "license": "US government public data",
+      "attribution": "Source: US Treasury, Daily Treasury Statement",
+      "docs_url": "https://fiscal.treasury.gov/accounting/daily-treasury-statement",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "max_age_days": 10,
+      "redistribute": true,
+      "kind": "official",
+      "notes": "Nominal cash receipts of withheld individual income and FICA taxes. Treasury reporting days; tax rules, bonuses and payment calendars affect the series."
+    },
+    "uk_payments": {
+      "source_id": "uk_payments",
+      "publisher": "UK Department for Business and Trade",
+      "license": "Open Government Licence v3.0",
+      "attribution": "Source: UK Payment Practices Reporting; calculations by CitySignal",
+      "docs_url": "https://www.gov.uk/check-when-businesses-pay-invoices",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "max_age_days": 75,
+      "redistribute": true,
+      "kind": "official",
+      "notes": "Month-end panel of large-company payment disclosures filed by that date. Latest report per company, report end and filing within 12 months. Company medians, not invoice-weighted estimates; reporting periods and panel membership vary."
     },
     "worldbank": {
       "source_id": "worldbank",
@@ -696,7 +1091,7 @@
       "notes": "Annual GDP growth, consumer inflation, modelled unemployment, population, PPP-adjusted real GDP per person and trade openness for 28 major markets. Historical benchmarks, excluded from the activity reading."
     }
   },
-  "availability_policy": "Use fetched_at as the first capture date for each revision, not as a historical publication timestamp. Missing published_at means unknown. Backfilled observations were not available to this system before their capture date. Daily capture dates do not support intraday replay.",
+  "availability_policy": "Use fetched_at as the first capture of each revision, separately from source publication. Missing published_at means unknown. Backfilled observations were not available to this system before capture. New captures carry UTC timestamps; legacy date-only captures have daily precision.",
   "derived_metrics": {
     "hiring_flow_gap": "28-day new-posting growth minus total-posting growth (pp). Inputs: hiring_new, hiring_total.",
     "trade_flow_gap": "Export tonnage y/y growth minus import tonnage y/y growth (pp), matching months. Inputs: shipping_exports, shipping_imports. These computed spreads are available in the dashboard; CSV files preserve their raw inputs."

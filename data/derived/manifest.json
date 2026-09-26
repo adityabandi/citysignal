@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-26T12:24:07+00:00",
+ "generated_at": "2026-09-26T14:27:38+00:00",
  "cities": [
   "madrid",
   "barcelona",
@@ -21,6 +21,7 @@
   "company_dissolutions",
   "company_incorporations",
   "contracts_registered",
+  "de_truck_mileage",
   "dwelling_stock",
   "ecb_mortgage_rate",
   "ecb_policy_rate",
@@ -53,6 +54,12 @@
   "house_price_index",
   "housing_completions",
   "housing_starts",
+  "in_bank_toll_value",
+  "in_bank_toll_volume",
+  "in_card_value",
+  "in_card_volume",
+  "in_upi_value",
+  "in_upi_volume",
   "insolvencies",
   "job_postings_index",
   "land_price",
@@ -73,7 +80,17 @@
   "mortgage_rate_new",
   "mortgages_count",
   "npl_ratio",
+  "oecd_bond_yield",
   "oecd_cli",
+  "oecd_consumption",
+  "oecd_equities",
+  "oecd_euro_fx",
+  "oecd_fx",
+  "oecd_gdp",
+  "oecd_industry",
+  "oecd_investment",
+  "oecd_retail",
+  "oecd_unemployment",
   "osm_cafe_bar_ratio",
   "osm_food_count",
   "osm_food_share",
@@ -110,7 +127,12 @@
   "str_multi_host_share",
   "tourist_dwelling_places",
   "tourist_dwellings",
+  "uk_supplier_overdue",
+  "uk_supplier_panel",
+  "uk_supplier_payment_days",
   "unemployment_registered",
+  "us_withheld_tax",
+  "us_withheld_tax_daily",
   "vehicle_registrations",
   "visados_area",
   "visados_budget",
@@ -142,7 +164,7 @@
   "leadlag": "leadlag-v1"
  },
  "counts": {
-  "series": 1346,
-  "observations": 145801
+  "series": 1562,
+  "observations": 170964
  }
 }

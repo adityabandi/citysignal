@@ -1,0 +1,25 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
+in_upi_volume,in,nation,2024-09,15041.747,million transactions,rbi_payments,2024-09-30,,2026-09-26,ok,0
+in_upi_volume,in,nation,2024-10,16584.966,million transactions,rbi_payments,2024-10-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2024-11,15482.021,million transactions,rbi_payments,2024-11-30,,2026-09-26,ok,0
+in_upi_volume,in,nation,2024-12,16730.009,million transactions,rbi_payments,2024-12-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-01,16996.001,million transactions,rbi_payments,2025-01-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-02,16106.193,million transactions,rbi_payments,2025-02-28,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-03,18301.508,million transactions,rbi_payments,2025-03-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-04,17893.424,million transactions,rbi_payments,2025-04-30,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-05,18677.46,million transactions,rbi_payments,2025-05-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-06,18395.006,million transactions,rbi_payments,2025-06-30,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-07,19467.948,million transactions,rbi_payments,2025-07-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-08,20008.31,million transactions,rbi_payments,2025-08-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-09,19633.433,million transactions,rbi_payments,2025-09-30,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-10,20700.921,million transactions,rbi_payments,2025-10-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-11,20466.979,million transactions,rbi_payments,2025-11-30,,2026-09-26,ok,0
+in_upi_volume,in,nation,2025-12,21634.668,million transactions,rbi_payments,2025-12-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2026-01,21703.445,million transactions,rbi_payments,2026-01-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2026-02,20394.184,million transactions,rbi_payments,2026-02-28,,2026-09-26,ok,0
+in_upi_volume,in,nation,2026-03,22641.108,million transactions,rbi_payments,2026-03-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2026-04,22346.797,million transactions,rbi_payments,2026-04-30,,2026-09-26,ok,0
+in_upi_volume,in,nation,2026-05,23201.928,million transactions,rbi_payments,2026-05-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2026-06,22716.066,million transactions,rbi_payments,2026-06-30,,2026-09-26,ok,0
+in_upi_volume,in,nation,2026-07,23658.353,million transactions,rbi_payments,2026-07-31,,2026-09-26,ok,0
+in_upi_volume,in,nation,2026-08,24508.958,million transactions,rbi_payments,2026-08-31,,2026-09-26,ok,0

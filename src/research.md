@@ -17,6 +17,48 @@ display(el("div", { class: "ec-app" }, [nav("research")]));
 ```js
 const families = [
   [
+    "Real activity",
+    "OECD / national statistical offices",
+    "macro_gdp",
+    "Quarterly real GDP, household consumption and investment; monthly industry, retail volume and harmonised unemployment. Eurostat retained for existing European series.",
+    "monthly / quarterly",
+  ],
+  [
+    "Market prices",
+    "OECD",
+    "oecd_bond_yield",
+    "Long-term government yields, equity prices and currency moves. Monthly averages; three-month FX changes use a common appreciation convention.",
+    "monthly",
+  ],
+  [
+    "Road freight",
+    "Destatis / Bundesbank / BALM",
+    "de_truck_mileage",
+    "Calendar- and seasonally adjusted large-truck mileage; dashboard uses a complete 28-day average.",
+    "daily",
+  ],
+  [
+    "Tax receipts",
+    "US Treasury",
+    "us_withheld_tax",
+    "Withheld individual income and FICA cash receipts. Monthly totals from Treasury month-to-date reporting; annual nominal growth.",
+    "daily / monthly",
+  ],
+  [
+    "Payments",
+    "Reserve Bank of India",
+    "in_upi_value",
+    "UPI, credit-card spending and bank-linked NETC toll payments. Values and transaction volumes; annual growth. UPI includes transfers; payment adoption affects growth.",
+    "monthly",
+  ],
+  [
+    "Supplier payments",
+    "UK Department for Business and Trade",
+    "uk_supplier_payment_days",
+    "Company-weighted medians of payment days and overdue-invoice shares; rolling panel with one latest eligible disclosure per company.",
+    "monthly panel",
+  ],
+  [
     "Labour demand",
     "Indeed Hiring Lab",
     "hiring_total",
@@ -98,7 +140,7 @@ display(
 ```
 
 <div class="ec-app">
-<div class="ec-section-heading"><h2>Forecast experiments</h2><span class="ec-muted">Spain · monthly targets · revised history</span></div>
+<div class="ec-section-heading"><h2>Forecast experiments</h2><span class="ec-muted">Spain & Germany · monthly targets · revised history</span></div>
 <p class="ec-muted">Expanding-window evaluation. Error reduction is measured against the autoregressive baseline on matching test months.</p>
 </div>
 
@@ -108,6 +150,7 @@ display(
     table(
       [
         "Specification",
+        "Market / horizon",
         "Test period",
         "Months",
         "Model RMSE",
@@ -118,6 +161,7 @@ display(
       research.tests.map((t) =>
         el("tr", {}, [
           txt("td", t.label),
+          txt("td", `${t.country.toUpperCase()} / ${t.horizon}m`),
           txt("td", t.test_start ? `${t.test_start} – ${t.test_end}` : "—"),
           txt("td", String(t.test_observations)),
           txt("td", t.rmse?.toFixed(2) ?? "—"),

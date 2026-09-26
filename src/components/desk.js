@@ -15,7 +15,9 @@ export const metricOf = (c, id) =>
   seriesOf(c).find((m) => m.id === id) ||
   (id === "bis_policy_rate"
     ? seriesOf(c).find((m) => m.id === "bis_euro_policy_rate")
-    : null);
+    : id === "oecd_fx"
+      ? seriesOf(c).find((m) => m.id === "oecd_euro_fx")
+      : null);
 export const link = (label, href, cls = "ec-link") =>
   el("a", { href, text: label, class: cls });
 export function button(label, action, cls = "ec-button") {

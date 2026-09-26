@@ -75,7 +75,8 @@ def test_collected_global_panel_has_real_non_european_signals(repo_root):
         assert 'wb_gdp_growth' in {m['id'] for m in c['metrics']}
         assert {'power_demand', 'shipping_exports', 'shipping_imports'} <= {m['id'] for m in c['alternative']}
         assert all(m['series'] and m['source_url'] and m['period'] for m in c['metrics'] + c['alternative'])
-    assert countries['us']['activity']['value'] is None
+    assert countries['us']['activity']['available'] == 4
+    assert {'macro_gdp', 'macro_industry', 'macro_retail', 'macro_unemployment'} <= {m['id'] for m in countries['us']['metrics']}
     assert not countries['pt']['cities']  # Spanish local data cannot leak across countries.
     overview = json.loads((repo_root/'data/derived/economy-overview.json').read_text())
     assert not any(m['series'] for c in overview['countries'] for m in c['alternative'])

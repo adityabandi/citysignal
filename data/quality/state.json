@@ -181,6 +181,13 @@
   "last_modified": null,
   "sha256": "9547a7b0eada9ff72a80c2e4852b3605a673ab153ed90bd57342c0cc05ba6743"
  },
+ "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/deposits_withdrawals_operating_cash?filter=record_date%3Agte%3A2023-02-14%2Ctransaction_type%3Aeq%3ADeposits%2Ctransaction_catg%3Aeq%3ATaxes+-+Withheld+Individual%2FFICA&sort=record_date&page%5Bsize%5D=10000": {
+  "bytes": 502606,
+  "etag": null,
+  "last_checked": "2026-09-26T14:07:26+00:00",
+  "last_modified": null,
+  "sha256": "b9a3d976fcb365065aefef1b4c605232b0aa77e40e8bfdcc80853f9604f7b451"
+ },
  "https://api.ohsome.org/v1/elements/count?bboxes=-3.628,40.447,-3.525,40.512&filter=amenity=bar or amenity=pub&time=2019-01-01/2026-06-01/P1M": {
   "bytes": 6281,
   "etag": null,
@@ -2155,6 +2162,13 @@
   "last_modified": "Thu, 17 Sep 2026 14:46:28 GMT",
   "sha256": "21af4264fd80d617857885032a9a3164c19935dfb18afacf3d9b08647ba68a0b"
  },
+ "https://check-payment-practices.service.gov.uk/export/csv/": {
+  "bytes": 102784197,
+  "etag": null,
+  "last_checked": "2026-09-26T14:07:37+00:00",
+  "last_modified": null,
+  "sha256": "b86ce10f864a37aa5e9e5a0677e2817cb1a1c8161aa44ab6790cd5730e6c866e"
+ },
  "https://data-api.ecb.europa.eu/service/data/EXR/M.CHF.EUR.SP00.A?format=jsondata&startPeriod=1999-01": {
   "bytes": 52070,
   "etag": null,
@@ -2771,12 +2785,47 @@
   "last_modified": null,
   "sha256": "b44516338e6d291b0547fd172a20365cfd2f8cba8dc2f514779cb7b4342bcbce"
  },
+ "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.NAD,DSD_NAMAIN1@DF_QNA_EXPENDITURE_GROWTH_OECD,1.1/Q.Y.AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.S1+S1M.S1.B1GQ+P3+P51G._Z.._Z+_T.PC.L.G1.T0102?startPeriod=2015-Q1&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
+  "bytes": 469984,
+  "etag": null,
+  "last_checked": "2026-09-26T14:18:59+00:00",
+  "last_modified": "2023-12-05",
+  "sha256": "6f89bd0c26f497b397b79681eb7f912627e3930294cf00a9de83e2d0f08b2484"
+ },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_CLI,4.1/.?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 4738220,
   "etag": null,
   "last_checked": "2026-09-26T12:10:12+00:00",
   "last_modified": "2024-03-07",
   "sha256": "fafc62fb92656b9d3bfcdbe8cb1014363fae92dae1861f6c495eab90460d094f"
+ },
+ "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_FINMARK,4.0/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA+EA20.M.IRLT+CC+SHARE.._Z._Z._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
+  "bytes": 905206,
+  "etag": null,
+  "last_checked": "2026-09-26T14:19:03+00:00",
+  "last_modified": "2023-11-08",
+  "sha256": "bcb37c7478cc05854d1a28ce1310e504493949bbbedf2831bafb546d85407d21"
+ },
+ "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_INDSERV,4.3/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.M.PRVM.IX.BTE.Y._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
+  "bytes": 273086,
+  "etag": null,
+  "last_checked": "2026-09-26T14:18:59+00:00",
+  "last_modified": "2026-05-04",
+  "sha256": "386d95134553de00004e3b31641bd86fc23e45fb338d9760c106574304c5d0e5"
+ },
+ "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_INDSERV,4.3/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.M.TOVM.IX.G47.Y._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
+  "bytes": 270496,
+  "etag": null,
+  "last_checked": "2026-09-26T14:19:00+00:00",
+  "last_modified": "2026-05-04",
+  "sha256": "10eca8b87664ac431fca7f93291c327f8d266a8ae10213fccaae495516902d54"
+ },
+ "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_UNE_M,1.0/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.UNE_LF_M.PT_LF_SUB._Z.Y._T.Y_GE15._Z.M?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
+  "bytes": 261609,
+  "etag": null,
+  "last_checked": "2026-09-26T14:19:00+00:00",
+  "last_modified": "2023-11-14",
+  "sha256": "2b100502a6f104df343db2783d0be7a2666d1cbcd14355ed05856c38c718ab42"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ARE'": {
   "bytes": 47625,
@@ -18269,6 +18318,13 @@
   "last_modified": null,
   "sha256": "5b4c923fff68799e3613c43881430f21275b51bfaa4c79291088adf2eaa052fd"
  },
+ "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Industrie-Verarbeitendes-Gewerbe/Publikationen/Downloads-Konjunktur/statistischer-bericht-lkw-maut-fahrleistungsindex-5421901.xlsx?__blob=publicationFile&v=24": {
+  "bytes": 948673,
+  "etag": "\"984275efc16cc93ee35cc0b8904228f1\"",
+  "last_checked": "2026-09-26T14:21:41+00:00",
+  "last_modified": "Thu, 24 Sep 2026 09:46:09 GMT",
+  "sha256": "e358666345c38427888583fd539e1e47b9b532eebbcbfe90965dfb49aaef00a9"
+ },
  "https://www.dgt.es/microdatos/salida/2022/10/vehiculos/matriculaciones/export_mensual_mat_202210.zip": {
   "bytes": 11622977,
   "etag": "\"b15a41-620bd7e43939d\"",
@@ -19087,6 +19143,90 @@
   "last_checked": "2026-09-22T05:58:40+00:00",
   "last_modified": "Mon, 24 Aug 2026 11:31:20 GMT",
   "sha256": "e700988cded8d5de4ddbd57c5de83ff7f4b8af2977483bb068faa0d4f6491204"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=52": {
+  "bytes": 154445,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:33+00:00",
+  "last_modified": null,
+  "sha256": "b98602029a6017e2064ea6bd6776a5504427bc4db473682b2067a3277370ef60"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=53": {
+  "bytes": 155430,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:34+00:00",
+  "last_modified": null,
+  "sha256": "519bacad5ebe2f29abda917dd705c472e7d2f518c6576b620c5b7680e438cd65"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=54": {
+  "bytes": 154380,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:35+00:00",
+  "last_modified": null,
+  "sha256": "374d463c48f84112bba8b13976281230a7303c1302ad5de35205daa6a67120e6"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=55": {
+  "bytes": 154828,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:36+00:00",
+  "last_modified": null,
+  "sha256": "14846e0a13cb4090e832dd334cd43ed154a41a15ccbb05821e391b120a54e586"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=56": {
+  "bytes": 155976,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:36+00:00",
+  "last_modified": null,
+  "sha256": "f4e1037ed97ca031d6c01afdac1a174052b0b372d36e34afd63d71d51ab60599"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=57": {
+  "bytes": 157166,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:37+00:00",
+  "last_modified": null,
+  "sha256": "6a245a5b469cb8b198d286eff8429201d20c1a02af43a7554bbfb537f2e183e1"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=58": {
+  "bytes": 155843,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:38+00:00",
+  "last_modified": null,
+  "sha256": "47e0b057e42b2efe5ba0486bf6e4c61f62a6edf37c3f7bd692ee2d7a889a8034"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=59": {
+  "bytes": 157055,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:39+00:00",
+  "last_modified": null,
+  "sha256": "cfe515429e67ae79389a46667abedfc2376074a706a5900278b9c536ff7276d4"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=60": {
+  "bytes": 155971,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:40+00:00",
+  "last_modified": null,
+  "sha256": "f78eab9526171611e21d9a5de8b8aa7513510639ffb7da6139e3ce40185209ba"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=61": {
+  "bytes": 156810,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:40+00:00",
+  "last_modified": null,
+  "sha256": "841d91df1763a63cee0f8141be2788d5c0af530924b3c22f7a63038cd0bfbe75"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=62": {
+  "bytes": 157762,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:41+00:00",
+  "last_modified": null,
+  "sha256": "f01e039404bd882e8623c9d356be432936e289d1f634bac7dc4dd633800edffb"
+ },
+ "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=63": {
+  "bytes": 157328,
+  "etag": null,
+  "last_checked": "2026-09-26T14:08:43+00:00",
+  "last_modified": null,
+  "sha256": "3919ca2716cd44e140b85f57a486a395745644f98db2fb7438d8f27e51e6da4d"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:01f76dd1-c457-47ac-af43-f9da5dc3479c/MUNI_BALEARES_0526.xls": {
   "bytes": 35328,

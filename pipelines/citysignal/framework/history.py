@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import csv
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Iterable, Sequence
 
@@ -117,6 +117,11 @@ def merge_records(
             merged.append(record.to_row())
             outcome.added += 1
             continue
+
+        # Missing publication metadata in a later response does not erase a
+        # known publication date for an unchanged value.
+        if record.published_at is None and prior.get('published_at') and _values_equal(prior.get('value', ''), record.value):
+            record = replace(record, published_at=prior['published_at'])
 
         prior_quality = prior.get("quality_flag", "ok")
         if prior_quality == "revised":

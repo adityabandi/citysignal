@@ -21,6 +21,7 @@ from .leadlag import LeadLagLab
 from .rules import classify
 from .desk import DeskBuilder
 from .economy import EconomyBuilder
+from .updates import build_updates
 from .research import build_research
 from .store import SCOPE_LABELS, HistoryStore
 from .transforms import robust_outlier_score, yoy
@@ -385,6 +386,7 @@ class DeriveEngine:
         _write(out_dir / "national.json", self.desk.build_national(list(self.config.cities)))
         economy = EconomyBuilder(self.config, self.store, self.health)
         country_data = economy.build()
+        (out_dir / 'updates.json.gz').write_bytes(gzip.compress(json.dumps(build_updates(self.config, country_data['countries'], economy.today), ensure_ascii=False).encode(), mtime=0))
         # The homepage ships metadata and annual comparison points only. Full
         # histories are fetched on demand, one country at a time.
         overview = {**country_data, 'countries': []}
@@ -399,11 +401,15 @@ class DeriveEngine:
             country_path.write_bytes(gzip.compress(json.dumps(country, ensure_ascii=False).encode(), mtime=0))
             country_path.with_suffix('').unlink(missing_ok=True)
             overview['countries'].append({**country, **{
-                group: [{**m, 'series': m['series'] if m['cadence'] == 'annual' else []} for m in country[group]]
+                group: [{**{k:v for k,v in m.items() if k not in {'historical_position', 'raw_value', 'raw_unit', 'source_status', 'last_checked', 'kind', 'license', 'max_age_days', 'age_days', 'geo_id', 'published_at', 'transform'}}, 'series': m['series'] if m['cadence'] == 'annual' else []} for m in country[group]]
                 for group in ('metrics', 'alternative')
             }})
+            assessment = country['assessment']
+            overview['countries'][-1]['assessment'] = {
+                'as_of':assessment['as_of'], 'families':assessment['families'],
+                'pillars':[{k:p[k] for k in ('id', 'headline', 'direction')} for p in assessment['pillars']]}
         (out_dir / "screener.json.gz").write_bytes(gzip.compress(json.dumps(screener, separators=(',', ':')).encode(), mtime=0))
-        _write(out_dir / "economy-overview.json", overview)
+        (out_dir / 'economy-overview.json').write_text(json.dumps(overview, ensure_ascii=False, separators=(',', ':')) + '\n')
         (out_dir / "economy.json.gz").write_bytes(gzip.compress(json.dumps(country_data, ensure_ascii=False).encode(), mtime=0))
         (out_dir / "economy.json").unlink(missing_ok=True)
         economy.export(out_dir)

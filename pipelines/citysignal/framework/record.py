@@ -220,7 +220,7 @@ class CanonicalRecord:
         if self.observation_end is None:
             object.__setattr__(self, "observation_end", period_end(self.period).isoformat())
         if self.fetched_at is None:
-            object.__setattr__(self, "fetched_at", utc_today().isoformat())
+            object.__setattr__(self, "fetched_at", datetime.now(timezone.utc).isoformat(timespec='seconds'))
         if self.value is not None:
             object.__setattr__(self, "value", float(self.value))
 

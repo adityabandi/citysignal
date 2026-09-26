@@ -1,5 +1,6 @@
 import * as d3 from "npm:d3";
 import { globalOverview } from "./global.js";
+import { countryAssessment } from "./assessment.js";
 import {
   el,
   txt as text,
@@ -33,7 +34,13 @@ const dateOf = (p) =>
       : `${p.length === 4 ? p + "-01-01" : p.length === 7 ? p + "-01" : p}T00:00:00Z`,
   );
 
-export function countryDashboard(data, cities, loadCountry, loadScreener) {
+export function countryDashboard(
+  data,
+  cities,
+  loadCountry,
+  loadScreener,
+  loadUpdates,
+) {
   const root = el("div", { class: "ec-app desk-app" }),
     loaded = new Set(),
     globalState = {};
@@ -81,7 +88,13 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
     const version = ++renderVersion;
     if (!data.countries.some((c) => c.code === state.country)) {
       root.replaceChildren(
-        globalOverview(data, openCountry, loadScreener, globalState),
+        globalOverview(
+          data,
+          openCountry,
+          loadScreener,
+          globalState,
+          loadUpdates,
+        ),
       );
       return;
     }
@@ -108,6 +121,7 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
           "Growth",
           "Prices",
           "Monetary policy",
+          "Markets",
           "Hiring",
           "Labour",
           "Trade",
@@ -115,6 +129,10 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
           "Geopolitics",
           "Production",
           "Consumption",
+          "Investment",
+          "Payments",
+          "Corporate payments",
+          "Tax receipts",
           "Energy exposure",
           "Energy costs",
           "Business electricity",
@@ -129,6 +147,7 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
             "Growth",
             "Prices",
             "Monetary policy",
+            "Markets",
             "Hiring",
             "Labour",
             "Trade",
@@ -136,6 +155,10 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
             "Geopolitics",
             "Production",
             "Consumption",
+            "Investment",
+            "Payments",
+            "Corporate payments",
+            "Tax receipts",
             "Energy exposure",
             "Energy costs",
             "Business electricity",
@@ -186,6 +209,16 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
       ["alternative", "Alternative"],
       ["derived", "Derived"],
     ]);
+    const availability = select(
+      "Observation coverage",
+      [
+        ["current", "Current observations"],
+        ["all", "Include historical coverage"],
+      ],
+      all.find((m) => m.id === state.metric)?.historical_only
+        ? "all"
+        : "current",
+    );
     const list = el("div", { class: "desk-series" }),
       detail = el("section", {
         class: "desk-detail",
@@ -197,17 +230,32 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
           text("h2", "Indicators"),
           text("span", `${all.length} series`, "ec-muted"),
         ]),
-        el("div", { class: "desk-series-controls" }, [search, group, kind]),
+        el("div", { class: "desk-series-controls" }, [
+          search,
+          group,
+          kind,
+          availability,
+        ]),
         list,
       ]),
       detail,
     ]);
-    root.append(layout);
+    root.append(
+      countryAssessment(country, (id) => {
+        state.metric = id;
+        state.peers.clear();
+        updateList();
+        updateDetail();
+        detail.scrollIntoView({ behavior: "instant", block: "start" });
+      }),
+      layout,
+    );
     function updateList() {
       const shown = all.filter(
         (m) =>
           (!group.value || m.group === group.value) &&
           (!kind.value || m.signal_type === kind.value) &&
+          (availability.value === "all" || !m.historical_only) &&
           `${m.label} ${m.group} ${m.source}`
             .toLowerCase()
             .includes(search.value.toLowerCase()),
@@ -309,9 +357,14 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
           return b;
         }),
       );
+      const comparisonId =
+        m.id === "oecd_euro_fx"
+          ? "oecd_fx"
+          : m.id === "bis_euro_policy_rate"
+            ? "bis_policy_rate"
+            : m.id;
       const peerOptions = data.countries.filter(
-        (c) =>
-          c.code !== country.code && seriesOf(c).some((v) => v.id === m.id),
+        (c) => c.code !== country.code && metricOf(c, comparisonId),
       );
       const peers = el("details", { class: "desk-comparison" }, [
         text(
@@ -367,6 +420,12 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
             "Source unit": m.raw_unit,
             "Observation period": m.period,
             "Capture date": m.fetched_at,
+            "Publisher release": m.published_at,
+            "Raw metric ID": m.raw_metric_id,
+            "Signal family": m.family,
+            "Historical percentile": m.historical_position
+              ? `${m.historical_position.percentile} / 100 · ${m.historical_position.window} · ${m.historical_position.observations} preceding observations · ${m.historical_position.basis}`
+              : null,
             "Source check": m.last_checked,
             "Observation status": m.quality,
             Freshness: m.freshness,
@@ -416,7 +475,10 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
           { name: country.name, points: m.series },
           ...codes.map((code) => {
             const c = data.countries.find((c) => c.code === code);
-            return { name: c.name, points: metricOf(c, m.id)?.series || [] };
+            return {
+              name: c.name,
+              points: metricOf(c, comparisonId)?.series || [],
+            };
           }),
         ];
         chart.replaceChildren(
@@ -428,6 +490,7 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
     search.oninput = updateList;
     group.onchange = updateList;
     kind.onchange = updateList;
+    availability.onchange = updateList;
     updateList();
     updateDetail();
     if (country.cities.length) {

@@ -1713,7 +1713,7 @@ metrics:
     - 0
     - 100
   macro_inflation:
-    label: Consumer prices
+    label: HICP inflation
     plain: All-items HICP, annual rate of change; ECOICOP 2.
     unit: percent
     cadence: monthly
@@ -2045,7 +2045,7 @@ metrics:
     - 0
     - 300
   bis_cpi:
-    label: Consumer prices
+    label: National CPI
     plain: BIS national consumer-price inflation, annual percentage change. National
       CPI definitions; monthly observations.
     unit: percent
@@ -2157,3 +2157,326 @@ metrics:
     range:
     - 0
     - 10000000000
+
+  oecd_gdp:
+    label: Real GDP
+    plain: Real GDP growth, seasonally adjusted, quarter-on-quarter, not annualised.
+    unit: percent
+    cadence: quarterly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -100
+    - 100
+  oecd_consumption:
+    label: Household consumption
+    plain: Real final consumption of households and NPISH, seasonally adjusted, quarter-on-quarter
+      growth.
+    unit: percent
+    cadence: quarterly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -100
+    - 100
+  oecd_investment:
+    label: Fixed investment
+    plain: Real gross fixed capital formation, seasonally adjusted, quarter-on-quarter
+      growth.
+    unit: percent
+    cadence: quarterly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -100
+    - 100
+  oecd_industry:
+    label: Industrial production
+    plain: Industrial production excluding construction (ISIC B–E), seasonally adjusted
+      volume index. Publisher reference year; displayed as annual growth.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000
+  oecd_retail:
+    label: Retail sales
+    plain: Retail trade volume (ISIC G47), seasonally adjusted index. Publisher reference
+      year; displayed as annual growth.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000
+  oecd_unemployment:
+    label: Unemployment
+    plain: Harmonised unemployment rate, age 15+, all sexes, seasonally adjusted.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: -1
+    lag: coincident
+    range:
+    - 0
+    - 100
+  de_truck_mileage:
+    label: Truck mileage
+    plain: German motorway mileage of trucks with at least four axles; calendar and
+      seasonally adjusted, 2021=100. Daily data updated weekly. Measures road freight
+      activity.
+    unit: index
+    cadence: daily
+    geo_level: nation
+    source_id: destatis_freight
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 500
+  us_withheld_tax:
+    label: Withheld tax receipts
+    plain: US Treasury cash receipts of withheld individual income and FICA taxes, nominal
+      USD million. Tax rates, bonuses and payment schedules affect receipts. Monthly
+      values use the last reporting day’s month-to-date total; partial months excluded.
+    unit: USD million
+    cadence: monthly
+    geo_level: nation
+    source_id: treasury_receipts
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - -10000000.0
+    - 1000000000000.0
+  us_withheld_tax_daily:
+    label: Withheld tax receipts · daily
+    plain: US Treasury cash receipts of withheld individual income and FICA taxes, nominal
+      USD million. Tax rates, bonuses and payment schedules affect receipts. Monthly
+      values use the last reporting day’s month-to-date total; partial months excluded.
+    unit: USD million
+    cadence: daily
+    geo_level: nation
+    source_id: treasury_receipts
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - -10000000.0
+    - 1000000000000.0
+  in_upi_volume:
+    label: UPI · transactions
+    plain: RBI monthly upi. Person-to-person and merchant payments combined; growth
+      includes payment adoption. Original units converted from lakh transactions to
+      millions and INR crore to billions. Not seasonally adjusted.
+    unit: million transactions
+    cadence: monthly
+    geo_level: nation
+    source_id: rbi_payments
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000000.0
+  in_upi_value:
+    label: UPI · value
+    plain: RBI monthly upi. Person-to-person and merchant payments combined; growth
+      includes payment adoption. Original units converted from lakh transactions to
+      millions and INR crore to billions. Not seasonally adjusted.
+    unit: INR billion
+    cadence: monthly
+    geo_level: nation
+    source_id: rbi_payments
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000000.0
+  in_card_volume:
+    label: Credit-card spending · transactions
+    plain: RBI monthly credit-card spending. Credit-card purchases, including point-of-sale
+      and other payments; nominal value. Original units converted from lakh transactions
+      to millions and INR crore to billions. Not seasonally adjusted.
+    unit: million transactions
+    cadence: monthly
+    geo_level: nation
+    source_id: rbi_payments
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000000.0
+  in_card_value:
+    label: Credit-card spending · value
+    plain: RBI monthly credit-card spending. Credit-card purchases, including point-of-sale
+      and other payments; nominal value. Original units converted from lakh transactions
+      to millions and INR crore to billions. Not seasonally adjusted.
+    unit: INR billion
+    cadence: monthly
+    geo_level: nation
+    source_id: rbi_payments
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000000.0
+  in_bank_toll_volume:
+    label: Bank-linked toll payments · transactions
+    plain: RBI monthly bank-linked toll payments. NETC payments linked to bank accounts
+      only. Excludes prepaid-wallet toll payments; passenger and freight traffic combined.
+      Original units converted from lakh transactions to millions and INR crore to billions.
+      Not seasonally adjusted.
+    unit: million transactions
+    cadence: monthly
+    geo_level: nation
+    source_id: rbi_payments
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000000.0
+  in_bank_toll_value:
+    label: Bank-linked toll payments · value
+    plain: RBI monthly bank-linked toll payments. NETC payments linked to bank accounts
+      only. Excludes prepaid-wallet toll payments; passenger and freight traffic combined.
+      Original units converted from lakh transactions to millions and INR crore to billions.
+      Not seasonally adjusted.
+    unit: INR billion
+    cadence: monthly
+    geo_level: nation
+    source_id: rbi_payments
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000000.0
+  uk_supplier_payment_days:
+    label: Supplier payment time
+    plain: 'Median average payment days across reporting UK companies. Month-end panel:
+      latest report per company filed by that date, filing and report end within 12
+      months. Company-weighted; underlying reports span different periods.'
+    unit: days
+    cadence: monthly
+    geo_level: nation
+    source_id: uk_payments
+    section: alternative
+    direction: -1
+    lag: coincident
+    range:
+    - 0
+    - 730
+  uk_supplier_overdue:
+    label: Supplier invoices overdue
+    plain: Median company percentage of invoices paid after agreed terms. Same month-end
+      reporting panel as payment time. Company-weighted, not invoice-weighted; changes
+      also reflect panel membership.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: uk_payments
+    section: alternative
+    direction: -1
+    lag: coincident
+    range:
+    - 0
+    - 100
+  uk_supplier_panel:
+    label: Payment disclosure panel
+    plain: Number of companies in the month-end supplier-payment panel. One latest report
+      per company, filed by month-end with filing and report end within 12 months.
+    unit: companies
+    cadence: monthly
+    geo_level: nation
+    source_id: uk_payments
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 100000
+
+  oecd_bond_yield:
+    label: 10-year government yield
+    plain: Long-term government-bond yield, generally ten-year maturity; monthly average
+      of daily rates. Country instrument definitions follow OECD metadata.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -10
+    - 100
+  oecd_equities:
+    label: Equity prices
+    plain: OECD national share-price index, monthly average of daily prices. Displayed
+      as three-month change in monthly averages; excludes dividend reinvestment.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000.0
+  oecd_fx:
+    label: Currency versus USD
+    plain: 'Monthly average national currency units per US dollar. Displayed as three-month
+      currency appreciation: prior quote / current quote minus one. Positive means a
+      stronger local currency.'
+    unit: local currency per USD
+    cadence: monthly
+    geo_level: nation
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000.0
+  oecd_euro_fx:
+    label: Euro versus USD
+    plain: 'Monthly average euro per US dollar. Shared currency series, displayed as
+      three-month euro appreciation: prior quote / current quote minus one. Positive
+      means a stronger euro.'
+    unit: local currency per USD
+    cadence: monthly
+    geo_level: euro_area
+    source_id: oecd_activity
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 1000000000.0

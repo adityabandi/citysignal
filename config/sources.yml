@@ -517,3 +517,76 @@ sources:
     cadence: monthly
     max_age_days: 75
     redistribute: true
+
+  oecd_activity:
+    source_id: oecd_activity
+    publisher: OECD
+    license: OECD terms of use; attribution
+    attribution: 'Source: OECD, national accounts and short-term statistics'
+    docs_url: https://data-explorer.oecd.org/
+    cadence: monthly
+    geo_level: nation
+    max_age_days: 120
+    redistribute: true
+    kind: official
+    notes: Seasonally adjusted real GDP, household consumption, investment, industry,
+      retail volume and harmonised unemployment. GDP growth is quarter-on-quarter, not
+      annualised.
+
+  treasury_receipts:
+    source_id: treasury_receipts
+    publisher: US Treasury, Bureau of the Fiscal Service
+    license: US government public data
+    attribution: 'Source: US Treasury, Daily Treasury Statement'
+    docs_url: https://fiscal.treasury.gov/accounting/daily-treasury-statement
+    cadence: daily
+    geo_level: nation
+    max_age_days: 10
+    redistribute: true
+    kind: official
+    notes: Nominal cash receipts of withheld individual income and FICA taxes. Treasury
+      reporting days; tax rules, bonuses and payment calendars affect the series.
+
+  destatis_freight:
+    source_id: destatis_freight
+    publisher: Destatis / Bundesbank / BALM
+    license: Data licence Germany attribution 2.0
+    attribution: 'Source: Destatis, Deutsche Bundesbank and BALM'
+    docs_url: https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Industrie-Verarbeitendes-Gewerbe/Tabellen/Lkw-Maut-Fahrleistungsindex-Daten.html
+    cadence: daily
+    geo_level: nation
+    max_age_days: 21
+    redistribute: true
+    kind: official
+    notes: Daily mileage of trucks with at least four axles on German motorways. Calendar
+      and seasonally adjusted; 2021=100. Updated weekly.
+
+  rbi_payments:
+    source_id: rbi_payments
+    publisher: Reserve Bank of India
+    license: RBI website copyright and reuse terms; attribution
+    attribution: 'Source: Reserve Bank of India, Payment System Indicators'
+    docs_url: https://www.rbi.org.in/Scripts/PSIUserView.aspx
+    cadence: monthly
+    geo_level: nation
+    max_age_days: 90
+    redistribute: true
+    kind: official
+    notes: UPI includes transfers and merchant payments. Credit-card spending is nominal.
+      NETC series covers bank-linked payments, not all FASTag transactions. Platform
+      adoption and scope changes affect growth.
+
+  uk_payments:
+    source_id: uk_payments
+    publisher: UK Department for Business and Trade
+    license: Open Government Licence v3.0
+    attribution: 'Source: UK Payment Practices Reporting; calculations by CitySignal'
+    docs_url: https://www.gov.uk/check-when-businesses-pay-invoices
+    cadence: monthly
+    geo_level: nation
+    max_age_days: 75
+    redistribute: true
+    kind: official
+    notes: Month-end panel of large-company payment disclosures filed by that date.
+      Latest report per company, report end and filing within 12 months. Company medians,
+      not invoice-weighted estimates; reporting periods and panel membership vary.

@@ -1,0 +1,25 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
+in_card_volume,in,nation,2024-09,392.162,million transactions,rbi_payments,2024-09-30,,2026-09-26,ok,0
+in_card_volume,in,nation,2024-10,433.214,million transactions,rbi_payments,2024-10-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2024-11,393.604,million transactions,rbi_payments,2024-11-30,,2026-09-26,ok,0
+in_card_volume,in,nation,2024-12,432.85,million transactions,rbi_payments,2024-12-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-01,430.572,million transactions,rbi_payments,2025-01-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-02,396.959,million transactions,rbi_payments,2025-02-28,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-03,458.65,million transactions,rbi_payments,2025-03-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-04,450.27,million transactions,rbi_payments,2025-04-30,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-05,467.693,million transactions,rbi_payments,2025-05-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-06,458.71,million transactions,rbi_payments,2025-06-30,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-07,486.181,million transactions,rbi_payments,2025-07-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-08,493.577,million transactions,rbi_payments,2025-08-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-09,495.241,million transactions,rbi_payments,2025-09-30,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-10,518.29,million transactions,rbi_payments,2025-10-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-11,502.984,million transactions,rbi_payments,2025-11-30,,2026-09-26,ok,0
+in_card_volume,in,nation,2025-12,539.834,million transactions,rbi_payments,2025-12-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2026-01,539.711,million transactions,rbi_payments,2026-01-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2026-02,493.795,million transactions,rbi_payments,2026-02-28,,2026-09-26,ok,0
+in_card_volume,in,nation,2026-03,577.476,million transactions,rbi_payments,2026-03-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2026-04,559.527,million transactions,rbi_payments,2026-04-30,,2026-09-26,ok,0
+in_card_volume,in,nation,2026-05,595.502,million transactions,rbi_payments,2026-05-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2026-06,581.259,million transactions,rbi_payments,2026-06-30,,2026-09-26,ok,0
+in_card_volume,in,nation,2026-07,605.267,million transactions,rbi_payments,2026-07-31,,2026-09-26,ok,0
+in_card_volume,in,nation,2026-08,632.447,million transactions,rbi_payments,2026-08-31,,2026-09-26,ok,0

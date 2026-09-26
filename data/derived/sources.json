@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-26T12:24:07+00:00",
+ "generated_at": "2026-09-26T14:27:38+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -169,6 +169,41 @@
     "cadence": "quarterly",
     "max_age_days": 210,
     "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: Destatis, Deutsche Bundesbank and BALM",
+   "cadence": "daily",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Industrie-Verarbeitendes-Gewerbe/Tabellen/Lkw-Maut-Fahrleistungsindex-Daten.html",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T14:21:41+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T14:21:41+00:00",
+   "latest_observation": "2026-09-19",
+   "license": "Data licence Germany attribution 2.0",
+   "max_age_days": 21,
+   "metrics": [
+    "de_truck_mileage"
+   ],
+   "publisher": "Destatis / Bundesbank / BALM",
+   "source_id": "destatis_freight",
+   "staleness_days": 7,
+   "status": "ok",
+   "declared": {
+    "source_id": "destatis_freight",
+    "publisher": "Destatis / Bundesbank / BALM",
+    "license": "Data licence Germany attribution 2.0",
+    "attribution": "Source: Destatis, Deutsche Bundesbank and BALM",
+    "docs_url": "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Industrie-Verarbeitendes-Gewerbe/Tabellen/Lkw-Maut-Fahrleistungsindex-Daten.html",
+    "cadence": "daily",
+    "geo_level": "nation",
+    "max_age_days": 21,
+    "redistribute": true,
+    "kind": "official",
+    "notes": "Daily mileage of trucks with at least four axles on German motorways. Calendar and seasonally adjusted; 2021=100. Updated weekly."
    }
   },
   {
@@ -884,6 +919,44 @@
    }
   },
   {
+   "attribution": "Source: OECD, national accounts and short-term statistics",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://data-explorer.oecd.org/",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T14:19:03+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T14:19:03+00:00",
+   "latest_observation": "2026-08",
+   "license": "OECD terms of use; attribution",
+   "max_age_days": 120,
+   "metrics": [
+    "oecd_bond_yield",
+    "oecd_equities",
+    "oecd_euro_fx",
+    "oecd_fx"
+   ],
+   "publisher": "OECD",
+   "source_id": "oecd_activity",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "source_id": "oecd_activity",
+    "publisher": "OECD",
+    "license": "OECD terms of use; attribution",
+    "attribution": "Source: OECD, national accounts and short-term statistics",
+    "docs_url": "https://data-explorer.oecd.org/",
+    "cadence": "monthly",
+    "geo_level": "nation",
+    "max_age_days": 120,
+    "redistribute": true,
+    "kind": "official",
+    "notes": "Seasonally adjusted real GDP, household consumption, investment, industry, retail volume and harmonised unemployment. GDP growth is quarter-on-quarter, not annualised."
+   }
+  },
+  {
    "attribution": "Source: OECD, Composite Leading Indicators",
    "cadence": "monthly",
    "consecutive_failures": 0,
@@ -1026,6 +1099,47 @@
    }
   },
   {
+   "attribution": "Source: Reserve Bank of India, Payment System Indicators",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.rbi.org.in/Scripts/PSIUserView.aspx",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T14:08:43+00:00",
+   "last_error": null,
+   "last_error_type": "AdapterFailure",
+   "last_success": "2026-09-26T14:08:43+00:00",
+   "latest_observation": "2026-08",
+   "license": "RBI website copyright and reuse terms; attribution",
+   "max_age_days": 90,
+   "metrics": [
+    "in_bank_toll_value",
+    "in_bank_toll_volume",
+    "in_card_value",
+    "in_card_volume",
+    "in_upi_value",
+    "in_upi_volume"
+   ],
+   "publisher": "Reserve Bank of India",
+   "source_id": "rbi_payments",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "source_id": "rbi_payments",
+    "publisher": "Reserve Bank of India",
+    "license": "RBI website copyright and reuse terms; attribution",
+    "attribution": "Source: Reserve Bank of India, Payment System Indicators",
+    "docs_url": "https://www.rbi.org.in/Scripts/PSIUserView.aspx",
+    "cadence": "monthly",
+    "geo_level": "nation",
+    "max_age_days": 90,
+    "redistribute": true,
+    "kind": "official",
+    "notes": "UPI includes transfers and merchant payments. Credit-card spending is nominal. NETC series covers bank-linked payments, not all FASTag transactions. Platform adoption and scope changes affect growth."
+   }
+  },
+  {
    "attribution": "Source: Red Eléctrica, REData",
    "cadence": "daily",
    "consecutive_failures": 0,
@@ -1151,6 +1265,42 @@
    }
   },
   {
+   "attribution": "Source: US Treasury, Daily Treasury Statement",
+   "cadence": "daily",
+   "consecutive_failures": 0,
+   "docs_url": "https://fiscal.treasury.gov/accounting/daily-treasury-statement",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T14:07:26+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T14:07:26+00:00",
+   "latest_observation": "2026-09-24",
+   "license": "US government public data",
+   "max_age_days": 10,
+   "metrics": [
+    "us_withheld_tax",
+    "us_withheld_tax_daily"
+   ],
+   "publisher": "US Treasury, Bureau of the Fiscal Service",
+   "source_id": "treasury_receipts",
+   "staleness_days": 2,
+   "status": "ok",
+   "declared": {
+    "source_id": "treasury_receipts",
+    "publisher": "US Treasury, Bureau of the Fiscal Service",
+    "license": "US government public data",
+    "attribution": "Source: US Treasury, Daily Treasury Statement",
+    "docs_url": "https://fiscal.treasury.gov/accounting/daily-treasury-statement",
+    "cadence": "daily",
+    "geo_level": "nation",
+    "max_age_days": 10,
+    "redistribute": true,
+    "kind": "official",
+    "notes": "Nominal cash receipts of withheld individual income and FICA taxes. Treasury reporting days; tax rules, bonuses and payment calendars affect the series."
+   }
+  },
+  {
    "attribution": "Source: Google Trends, exported manually",
    "cadence": "monthly",
    "consecutive_failures": 0,
@@ -1189,6 +1339,43 @@
     "max_age_days": 120,
     "redistribute": false,
     "notes": "Reads hand-exported baskets from data/manual/trends/. This source reads hand-exported CSVs from data/manual/trends/; with none present it has nothing to do, and leaving it enabled would keep a failure issue open permanently for a state that is not a failure. Drop a file in that directory and set enabled: true. The unofficial Trends endpoints rate-limit on the first request, which makes them unfit for a scheduled build; a manual export is allowed, reproducible and never breaks the weekly run. Trends rescales 0-100 per request, so each file is its own series and is never compared across files.\n"
+   }
+  },
+  {
+   "attribution": "Source: UK Payment Practices Reporting; calculations by CitySignal",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.gov.uk/check-when-businesses-pay-invoices",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T14:07:37+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T14:07:37+00:00",
+   "latest_observation": "2026-08",
+   "license": "Open Government Licence v3.0",
+   "max_age_days": 75,
+   "metrics": [
+    "uk_supplier_overdue",
+    "uk_supplier_panel",
+    "uk_supplier_payment_days"
+   ],
+   "publisher": "UK Department for Business and Trade",
+   "source_id": "uk_payments",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "source_id": "uk_payments",
+    "publisher": "UK Department for Business and Trade",
+    "license": "Open Government Licence v3.0",
+    "attribution": "Source: UK Payment Practices Reporting; calculations by CitySignal",
+    "docs_url": "https://www.gov.uk/check-when-businesses-pay-invoices",
+    "cadence": "monthly",
+    "geo_level": "nation",
+    "max_age_days": 75,
+    "redistribute": true,
+    "kind": "official",
+    "notes": "Month-end panel of large-company payment disclosures filed by that date. Latest report per company, report end and filing within 12 months. Company medians, not invoice-weighted estimates; reporting periods and panel membership vary."
    }
   },
   {

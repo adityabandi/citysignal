@@ -35,6 +35,7 @@ class Series:
     observation_end: str | None = None
     fetched_at: str | None = None
     quality_flags: dict[str, str] | None = None
+    observations: dict[str, dict] | None = None
 
     @property
     def latest_period(self) -> str | None:
@@ -88,6 +89,7 @@ class HistoryStore:
                         source_id=row["source_id"],
                         unit=row["unit"],
                         quality_flags={},
+                        observations={},
                     )
                     self._series[key] = series
                 try:
@@ -96,6 +98,7 @@ class HistoryStore:
                     continue
                 if row.get("quality_flag") and row["quality_flag"] != "ok":
                     series.quality_flags[row["period"]] = row["quality_flag"]  # type: ignore[index]
+                series.observations[row['period']] = {k: row.get(k) or None for k in ('published_at', 'fetched_at', 'revision')}
                 if row.get("fetched_at"):
                     series.fetched_at = max(series.fetched_at or "", row["fetched_at"])
 

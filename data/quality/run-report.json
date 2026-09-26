@@ -1,30 +1,28 @@
 {
- "run_id": "490a9c5b8f82",
- "finished_at": "2026-09-26T12:15:56+00:00",
+ "run_id": "43fde28c194d",
+ "finished_at": "2026-09-26T14:21:41+00:00",
  "ok": [
-  "bis_macro"
+  "destatis_freight"
  ],
  "failed": [],
  "partial": [],
  "results": [
   {
-   "source_id": "bis_macro",
+   "source_id": "destatis_freight",
    "status": "ok",
-   "records": 6679,
-   "added": 3902,
-   "revised": 0,
-   "unchanged": 2777,
+   "records": 2819,
+   "added": 0,
+   "revised": 1,
+   "unchanged": 2818,
    "quarantined": 0,
-   "plans": 2,
+   "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 1.31,
-   "latest_observation": "2026-08",
+   "duration_s": 1.6,
+   "latest_observation": "2026-09-19",
    "metrics": [
-    "bis_cpi",
-    "bis_euro_policy_rate",
-    "bis_policy_rate"
+    "de_truck_mileage"
    ],
    "notes": []
   }

@@ -1,10 +1,11 @@
-name: weekly refresh
+name: market data refresh
 
 # A non-round minute keeps this off the top-of-hour stampede that delays
 # scheduled runs on shared infrastructure.
 on:
   schedule:
     - cron: "43 5 * * 2"
+    - cron: "43 21 * * 1-5"
   workflow_dispatch:
     inputs:
       source:
@@ -46,10 +47,20 @@ jobs:
       # in the run report and leaves its history untouched, rather than stopping
       # the pipeline. Only framework-level breakage exits non-zero here.
       - name: Fetch
+        env:
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+          REQUESTED_SOURCE: ${{ inputs.source }}
+          FORCE_FETCH: ${{ inputs.force }}
         run: |
-          uv run citysignal fetch \
-            ${{ inputs.source && format('--source {0}', inputs.source) || '' }} \
-            ${{ inputs.force && '--force' || '' }}
+          args=()
+          if [ -n "$REQUESTED_SOURCE" ]; then
+            args+=(--source "$REQUESTED_SOURCE")
+          elif [ "$TRIGGER_SCHEDULE" = "43 21 * * 1-5" ]; then
+            args+=(--source indeed_daily --source treasury_receipts --source destatis_freight
+              --source oecd_activity --source oecd_cli --source bis_macro --source eurostat_macro)
+          fi
+          if [ "$FORCE_FETCH" = "true" ]; then args+=(--force); fi
+          uv run citysignal fetch "${args[@]}"
 
       - name: Derive
         run: uv run citysignal derive
@@ -78,7 +89,7 @@ jobs:
             echo "No data changed this run."
             exit 0
           fi
-          git commit -m "data: weekly refresh $(date -u +%F)"
+          git commit -m "data: market refresh $(date -u +%F)"
 
           # Fetching every source takes many minutes, so main can move while this
           # job runs. Everything under data/ is regenerated from scratch each run,
@@ -110,7 +121,7 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow enable "weekly refresh" || true
+        run: gh workflow enable "market data refresh" || true
 
   build-deploy:
     concurrency:

@@ -17,12 +17,42 @@ import {
 
 const LENSES = {
   "Activity & prices": [
+    "macro_gdp",
+    "macro_industry",
     "oecd_cli",
     "bis_cpi",
     "bis_policy_rate",
     "shipping_exports",
     "hiring_total",
     "geopolitical_risk",
+  ],
+  Demand: [
+    "macro_retail",
+    "oecd_consumption",
+    "oecd_investment",
+    "in_card_value",
+    "in_upi_value",
+  ],
+  Markets: [
+    "oecd_bond_yield",
+    "oecd_fx",
+    "oecd_equities",
+    "bis_policy_rate",
+    "bis_cpi",
+  ],
+  "Payments & cash flow": [
+    "us_withheld_tax",
+    "uk_supplier_payment_days",
+    "uk_supplier_overdue",
+    "in_card_value",
+    "in_upi_value",
+  ],
+  Freight: [
+    "shipping_container_exports",
+    "shipping_container_imports",
+    "de_truck_mileage",
+    "in_bank_toll_volume",
+    "shipping_calls",
   ],
   Trade: [
     "shipping_exports",
@@ -63,6 +93,22 @@ const LENSES = {
   ],
 };
 const SHORT = {
+  macro_gdp: "Real GDP",
+  oecd_bond_yield: "10-year yield",
+  oecd_fx: "Currency vs USD",
+  oecd_equities: "Equity prices",
+  macro_industry: "Industrial production",
+  macro_retail: "Retail volume",
+  oecd_consumption: "Household consumption",
+  oecd_investment: "Fixed investment",
+  de_truck_mileage: "Truck mileage",
+  us_withheld_tax: "Withheld tax receipts",
+  uk_supplier_payment_days: "Supplier payment time",
+  uk_supplier_overdue: "Overdue invoices",
+  in_card_value: "Credit-card spending",
+  in_upi_value: "UPI payment value",
+  in_bank_toll_volume: "Bank-linked toll payments",
+  shipping_container_imports: "Container imports",
   oecd_cli: "Leading indicator",
   bis_cpi: "CPI",
   bis_policy_rate: "Policy rate",
@@ -90,7 +136,13 @@ const SHORT = {
   wb_trade: "Trade / GDP",
 };
 
-export function globalOverview(data, openCountry, loadScreener, state = {}) {
+export function globalOverview(
+  data,
+  openCountry,
+  loadScreener,
+  state = {},
+  loadUpdates,
+) {
   state.lens ||= "Activity & prices";
   state.mode ||= "Overview";
   if (!state.watch) {
@@ -222,6 +274,14 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
   function metricCell(c, id) {
     const m = metricOf(c, id);
     if (!m) return txt("td", "—", "desk-missing");
+    if (m.historical_only)
+      return el("td", {}, [
+        button(
+          `History · ${formatPeriod(m.period)}`,
+          () => openCountry(c.code, m.id),
+          "ec-link",
+        ),
+      ]);
     const b = button("", () => openCountry(c.code, m.id), "desk-reading");
     b.title = `${m.source} · ${m.scope}\n${m.description}\n${m.change_window}: ${signed(m.change)} ${m.change_unit}`;
     b.setAttribute(
@@ -249,22 +309,31 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
     state.search = search.value;
     state.region = region.value;
     state.universe = universe.value;
-    const rows = filtered();
+    const rows = filtered().filter(
+      (c) =>
+        !["Overview", "Monitor"].includes(state.mode) ||
+        state.lens !== "Payments & cash flow" ||
+        LENSES[state.lens].some(
+          (id) => metricOf(c, id) && !metricOf(c, id).historical_only,
+        ),
+    );
     exportRows = [];
     exportButton.disabled = false;
     modes.replaceChildren(
-      ...["Overview", "Monitor", "Screener", "Coverage"].map((mode) => {
-        const b = button(
-          mode,
-          () => {
-            state.mode = mode;
-            update();
-          },
-          `ec-range ${state.mode === mode ? "active" : ""}`,
-        );
-        b.setAttribute("aria-pressed", String(state.mode === mode));
-        return b;
-      }),
+      ...["Overview", "Monitor", "Screener", "Updates", "Coverage"].map(
+        (mode) => {
+          const b = button(
+            mode,
+            () => {
+              state.mode = mode;
+              update();
+            },
+            `ec-range ${state.mode === mode ? "active" : ""}`,
+          );
+          b.setAttribute("aria-pressed", String(state.mode === mode));
+          return b;
+        },
+      ),
     );
     lensTabs.replaceChildren();
     screenControls.replaceChildren();
@@ -289,6 +358,15 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
             ? ["oecd_cli", "shipping_exports"]
             : LENSES[state.lens].slice(0, 2)
           : LENSES[state.lens];
+      const shownIds = (c) =>
+        state.mode === "Overview" &&
+        ["Payments & cash flow", "Freight"].includes(state.lens)
+          ? LENSES[state.lens]
+              .filter(
+                (id) => metricOf(c, id) && !metricOf(c, id).historical_only,
+              )
+              .slice(0, 2)
+          : ids;
       status.textContent = `${rows.length} markets · Latest observations · Δ versus indicated prior period`;
       if (state.mode === "Overview") {
         status.textContent = `${rows.length} markets · Country A–Z · Latest observations`;
@@ -324,7 +402,7 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
                 el(
                   "div",
                   { class: "gw-market-readings" },
-                  ids.map((id) => {
+                  shownIds(c).map((id) => {
                     const m = metricOf(c, id);
                     const item = button(
                       "",
@@ -334,18 +412,39 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
                     item.setAttribute("aria-label", `${c.name}: ${SHORT[id]}`);
                     item.append(
                       txt("span", SHORT[id]),
-                      txt("strong", m ? num(m.value, 1) : "—"),
+                      txt(
+                        "strong",
+                        m && !m.historical_only ? num(m.value, 1) : "—",
+                      ),
                       txt(
                         "small",
-                        m ? `${m.unit} · ${formatPeriod(m.period)}` : "—",
+                        m
+                          ? `${m.historical_only ? "History" : m.unit} · ${formatPeriod(m.period)}`
+                          : "—",
                       ),
                     );
                     return item;
                   }),
                 ),
+                ...(state.lens === "Activity & prices" && c.assessment
+                  ? [
+                      txt(
+                        "p",
+                        c.assessment.pillars
+                          .filter(
+                            (p) =>
+                              ["growth", "inflation"].includes(p.id) &&
+                              p.direction !== "missing",
+                          )
+                          .map((p) => p.headline)
+                          .join(" · "),
+                        "gw-assessment",
+                      ),
+                    ]
+                  : []),
                 txt(
                   "span",
-                  `${c.alternative.length} alternative / ${c.metrics.length} official series`,
+                  `${c.assessment?.families.length || 0} signal families · ${seriesOf(c).filter((m) => !m.historical_only).length} current series`,
                   "gw-coverage",
                 ),
               ]);
@@ -375,25 +474,114 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
         );
       }
       exportRows = rows.flatMap((c) =>
-        ids.map((id) => {
+        shownIds(c).map((id) => {
           const m = metricOf(c, id);
           return {
             country: c.name,
             iso3: c.iso3,
             metric_id: m?.id || id,
+            raw_metric_id: m?.raw_metric_id,
             period: m?.period,
-            value: m?.value,
+            value: m?.historical_only ? null : m?.value,
             unit: m?.unit,
-            change: m?.change,
+            change: m?.historical_only ? null : m?.change,
             change_unit: m?.change_unit,
             change_window: m?.change_window,
             source: m?.source,
             scope: m?.scope,
             quality: m?.quality,
             captured_at: m?.fetched_at,
+            historical_only: m?.historical_only,
           };
         }),
       );
+    } else if (state.mode === "Updates") {
+      if (!state.updates) {
+        status.textContent = "Loading observation updates…";
+        body.replaceChildren();
+        exportButton.disabled = true;
+        try {
+          state.updates = await (state.updatesLoading ||= loadUpdates());
+          if (state.mode === "Updates") update();
+        } catch {
+          state.updatesLoading = null;
+          status.textContent = "Observation updates unavailable.";
+          body.replaceChildren(button("Retry", update));
+        }
+        return;
+      }
+      const type = select(
+        "Update type",
+        [
+          ["", "All updates"],
+          ["Revision", "Revisions"],
+          ["Observation", "Observations"],
+          ["Metadata", "Metadata updates"],
+        ],
+        state.updateType || "",
+      );
+      type.onchange = () => {
+        state.updateType = type.value;
+        update();
+      };
+      screenControls.append(field("Update type", type));
+      const codes = new Set(rows.map((c) => c.code));
+      const events = state.updates.events.filter(
+        (e) => codes.has(e.country) && (!type.value || e.event === type.value),
+      );
+      exportRows = events;
+      status.textContent = `${events.length} updates · Raw source units · Publication and collection dates shown separately`;
+      body.replaceChildren(
+        table(
+          [
+            "Market / series",
+            "Observation",
+            "Value",
+            "Revision Δ",
+            "Published",
+            "Collected",
+          ],
+          events
+            .slice(0, 150)
+            .map((e) =>
+              el("tr", {}, [
+                el("td", {}, [
+                  button(
+                    `${e.country_name} / ${e.label}`,
+                    () => openCountry(e.country, e.metric_id),
+                    "ec-country-link",
+                  ),
+                  txt("small", `${e.source} · ${e.event}`),
+                ]),
+                txt("td", formatPeriod(e.period)),
+                el("td", {}, [
+                  txt("strong", num(e.value)),
+                  txt("small", e.unit),
+                ]),
+                txt("td", signed(e.revision_change)),
+                txt(
+                  "td",
+                  e.published_at
+                    ? formatPeriod(e.published_at.slice(0, 10))
+                    : "—",
+                ),
+                txt(
+                  "td",
+                  e.captured_at?.replace("T", " ").replace("+00:00", " UTC") ||
+                    "—",
+                ),
+              ]),
+            ),
+        ),
+      );
+      if (events.length > 150)
+        body.append(
+          txt(
+            "p",
+            `Showing 150 of ${events.length}. Filter markets or export all matching updates.`,
+            "ec-muted",
+          ),
+        );
     } else if (state.mode === "Coverage") {
       const providers = [
         ...new Set(
@@ -411,6 +599,11 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
         eurostat_macro: "Eurostat",
         ree: "REE",
         ecb: "ECB",
+        oecd_activity: "OECD activity",
+        treasury_receipts: "US Treasury",
+        rbi_payments: "RBI",
+        destatis_freight: "Destatis freight",
+        uk_payments: "UK payments",
       };
       status.textContent = `${rows.length} markets · ${providers.length} sources · Series count / latest observation`;
       body.replaceChildren(
@@ -476,7 +669,9 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
         metric.countries[c.code] ||
         (state.metric === "bis_policy_rate"
           ? index.bis_euro_policy_rate?.countries[c.code]
-          : null);
+          : state.metric === "oecd_fx"
+            ? index.oecd_euro_fx?.countries[c.code]
+            : null);
       const choose = select(
         "Indicator",
         options.map((m) => [m.id, `${m.group} / ${m.label} · ${m.cadence}`]),

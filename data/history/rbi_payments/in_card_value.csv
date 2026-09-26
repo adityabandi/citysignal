@@ -1,0 +1,25 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
+in_card_value,in,nation,2024-09,1762.02,INR billion,rbi_payments,2024-09-30,,2026-09-26,ok,0
+in_card_value,in,nation,2024-10,2017.89,INR billion,rbi_payments,2024-10-31,,2026-09-26,ok,0
+in_card_value,in,nation,2024-11,1692.98,INR billion,rbi_payments,2024-11-30,,2026-09-26,ok,0
+in_card_value,in,nation,2024-12,1879.49,INR billion,rbi_payments,2024-12-31,,2026-09-26,ok,0
+in_card_value,in,nation,2025-01,1841.26,INR billion,rbi_payments,2025-01-31,,2026-09-26,ok,0
+in_card_value,in,nation,2025-02,1672.08,INR billion,rbi_payments,2025-02-28,,2026-09-26,ok,0
+in_card_value,in,nation,2025-03,2014.94,INR billion,rbi_payments,2025-03-31,,2026-09-26,ok,0
+in_card_value,in,nation,2025-04,1842.37,INR billion,rbi_payments,2025-04-30,,2026-09-26,ok,0
+in_card_value,in,nation,2025-05,1898.32,INR billion,rbi_payments,2025-05-31,,2026-09-26,ok,0
+in_card_value,in,nation,2025-06,1830.88,INR billion,rbi_payments,2025-06-30,,2026-09-26,ok,0
+in_card_value,in,nation,2025-07,1938.49,INR billion,rbi_payments,2025-07-31,,2026-09-26,ok,0
+in_card_value,in,nation,2025-08,1911.7,INR billion,rbi_payments,2025-08-31,,2026-09-26,ok,0
+in_card_value,in,nation,2025-09,2167.07,INR billion,rbi_payments,2025-09-30,,2026-09-26,ok,0
+in_card_value,in,nation,2025-10,2142.3,INR billion,rbi_payments,2025-10-31,,2026-09-26,ok,0
+in_card_value,in,nation,2025-11,1887.99,INR billion,rbi_payments,2025-11-30,,2026-09-26,ok,0
+in_card_value,in,nation,2025-12,2046.87,INR billion,rbi_payments,2025-12-31,,2026-09-26,ok,0
+in_card_value,in,nation,2026-01,1990.85,INR billion,rbi_payments,2026-01-31,,2026-09-26,ok,0
+in_card_value,in,nation,2026-02,1772.92,INR billion,rbi_payments,2026-02-28,,2026-09-26,ok,0
+in_card_value,in,nation,2026-03,2194.95,INR billion,rbi_payments,2026-03-31,,2026-09-26,ok,0
+in_card_value,in,nation,2026-04,1972.74,INR billion,rbi_payments,2026-04-30,,2026-09-26,ok,0
+in_card_value,in,nation,2026-05,2027.42,INR billion,rbi_payments,2026-05-31,,2026-09-26,ok,0
+in_card_value,in,nation,2026-06,2013.62,INR billion,rbi_payments,2026-06-30,,2026-09-26,ok,0
+in_card_value,in,nation,2026-07,2081.86,INR billion,rbi_payments,2026-07-31,,2026-09-26,ok,0
+in_card_value,in,nation,2026-08,2024.49,INR billion,rbi_payments,2026-08-31,,2026-09-26,ok,0

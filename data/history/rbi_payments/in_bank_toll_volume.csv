@@ -1,0 +1,25 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision
+in_bank_toll_volume,in,nation,2024-09,13.486,million transactions,rbi_payments,2024-09-30,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2024-10,13.698,million transactions,rbi_payments,2024-10-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2024-11,14.251,million transactions,rbi_payments,2024-11-30,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2024-12,14.997,million transactions,rbi_payments,2024-12-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-01,14.683,million transactions,rbi_payments,2025-01-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-02,14.603,million transactions,rbi_payments,2025-02-28,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-03,14.697,million transactions,rbi_payments,2025-03-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-04,14.324,million transactions,rbi_payments,2025-04-30,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-05,15.258,million transactions,rbi_payments,2025-05-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-06,14.47,million transactions,rbi_payments,2025-06-30,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-07,13.911,million transactions,rbi_payments,2025-07-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-08,13.951,million transactions,rbi_payments,2025-08-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-09,12.16,million transactions,rbi_payments,2025-09-30,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-10,13.182,million transactions,rbi_payments,2025-10-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-11,13.203,million transactions,rbi_payments,2025-11-30,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2025-12,13.685,million transactions,rbi_payments,2025-12-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2026-01,13.329,million transactions,rbi_payments,2026-01-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2026-02,12.325,million transactions,rbi_payments,2026-02-28,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2026-03,12.721,million transactions,rbi_payments,2026-03-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2026-04,12.656,million transactions,rbi_payments,2026-04-30,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2026-05,16.32,million transactions,rbi_payments,2026-05-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2026-06,14.888,million transactions,rbi_payments,2026-06-30,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2026-07,14.294,million transactions,rbi_payments,2026-07-31,,2026-09-26,ok,0
+in_bank_toll_volume,in,nation,2026-08,14.335,million transactions,rbi_payments,2026-08-31,,2026-09-26,ok,0
