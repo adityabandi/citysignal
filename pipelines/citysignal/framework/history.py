@@ -118,7 +118,14 @@ def merge_records(
             outcome.added += 1
             continue
 
-        if _values_equal(prior.get("value", ""), record.value):
+        prior_quality = prior.get("quality_flag", "ok")
+        if prior_quality == "revised":
+            prior_quality = "ok"
+        same_metadata = (
+            prior_quality == record.quality_flag
+            and (prior.get("published_at") or None) == record.published_at
+        )
+        if _values_equal(prior.get("value", ""), record.value) and same_metadata:
             outcome.unchanged += 1
             continue
 
@@ -134,8 +141,8 @@ def merge_records(
 
         revised = record.to_row()
         revised["revision"] = int(prior.get("revision") or 0) + 1
-        revised["quality_flag"] = "revised"
-        # Preserve the original ingestion date of the series point we are restating.
+        revised["quality_flag"] = record.quality_flag if record.quality_flag != "ok" else "revised"
+        # Each revision keeps its own capture date; prior rows remain untouched.
         merged.append(revised)
         outcome.revised += 1
 

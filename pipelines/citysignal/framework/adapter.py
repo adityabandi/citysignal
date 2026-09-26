@@ -136,6 +136,7 @@ class BaseAdapter(ABC):
         started = time.perf_counter()
         result = AdapterResult(source_id=self.manifest.source_id)
         collected: list[CanonicalRecord] = []
+        cache_before = ctx.state.snapshot()
 
         try:
             plans = self.discover(ctx)
@@ -177,7 +178,7 @@ class BaseAdapter(ABC):
                 self._merge(collected, ctx, result)
                 result.latest_observation = max(r.period for r in collected)
                 result.metrics = sorted({r.metric_id for r in collected})
-                result.status = "ok"
+                result.status = "partial" if failed_plans else "ok"
             elif result.skipped_unchanged and result.skipped_unchanged == result.plans:
                 result.status = "skipped"
                 result.notes.append("all sources unchanged since last run")
@@ -186,10 +187,16 @@ class BaseAdapter(ABC):
                 result.notes.append("fetched successfully but produced no records")
 
         except Exception as exc:  # noqa: BLE001 — isolation is the point
+            # Never cache a rejected payload as ingested: a later run would
+            # otherwise skip bytes that never made it into canonical history.
+            ctx.state.restore(cache_before)
             result.status = "failed"
             result.error = str(exc)[:900]
             result.error_type = type(exc).__name__
             log.warning("adapter %s failed: %s", self.manifest.source_id, exc)
+
+        if ctx.dry_run or result.quarantined or (not collected and result.status == "partial"):
+            ctx.state.restore(cache_before)
 
         result.duration_s = round(time.perf_counter() - started, 2)
         ctx.health.record(result, manifest=self.manifest.to_dict())
@@ -225,7 +232,8 @@ class BaseAdapter(ABC):
             expected_columns=self.manifest.expected_columns if plan.fmt == "csv" else (),
         )
         frame = self.parse(payload, ctx)
-        collected.extend(self.normalize(frame, plan, ctx))
+        records = list(self.normalize(frame, plan, ctx))
+        collected.extend(records)
         ctx.state.put(key, payload, checked=now_iso())
 
     def _merge(self, records: Sequence[CanonicalRecord], ctx: RunContext, result: AdapterResult) -> None:

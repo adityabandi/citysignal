@@ -31,7 +31,7 @@ const headline = overview.headline;
 display(
   headline
     ? el("div", {class: "cs-headline"}, [
-        el("div", {class: "cs-kicker", text: "Largest verified change this build"}),
+        el("div", {class: "cs-kicker", text: "Largest reported change"}),
         el("div", {class: "cs-headline-text"}, [
           document.createTextNode(headline.lead + " "),
           el("span", {class: "cs-headline-figure cs-num", text: headline.figure}),

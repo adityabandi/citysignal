@@ -13,7 +13,10 @@ from dataclasses import dataclass, field, asdict
 from datetime import date, datetime, timezone
 from typing import Iterable, Literal
 
+from ..countries import COUNTRIES
+
 GeoLevel = Literal[
+    "electricity_system",
     "municipality",
     "district",
     "barrio",
@@ -55,12 +58,13 @@ _PERIOD_PATTERNS: dict[str, re.Pattern[str]] = {
 }
 
 _GEO_PATTERNS: dict[str, re.Pattern[str]] = {
+    "electricity_system": re.compile(r"^grid-es-mainland$"),
     "municipality": re.compile(r"^mun-\d{5}$"),
     "district": re.compile(r"^dist-\d{5}-\d{2}$"),
     "barrio": re.compile(r"^barrio-\d{5}-\d{3}$"),
     "province": re.compile(r"^prov-\d{2}$"),
     "ccaa": re.compile(r"^ccaa-\d{2}$"),
-    "nation": re.compile(r"^(es|eu)$"),
+    "nation": re.compile(r"^(" + "|".join([*COUNTRIES, "eu"]) + r")$"),
     # Conditions Spain receives rather than sets.
     "euro_area": re.compile(r"^euro-area$"),
     "world": re.compile(r"^world$"),

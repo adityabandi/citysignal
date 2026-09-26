@@ -1,17 +1,18 @@
 # CitySignal
 
-**What is changing in housing demand, economic stress, tourism and supply across eight Spanish cities — using auditable evidence, exact geographies and visible data freshness.**
+**Global economic and alternative-data monitor.**
+
+Monitor 28 major markets across the Americas, Europe, Asia Pacific, the Middle East and Africa. Compare OECD leading indicators, BIS inflation and policy rates, maritime trade, hiring, energy and geopolitical-news exposure. The dashboard includes period-aligned screening, source coverage, user-selected markets, country histories, comparisons and CSV exports. Eight Spanish local markets retain city and district drill-downs. See [coverage and data contract](docs/institutional-data.md).
 
 Madrid · Barcelona · València · Málaga · Sevilla · Palma · Bilbao · Zaragoza
 
 CitySignal is a public monitor with no server, no database and no paid API. A weekly
-GitHub Action pulls official statistics, normalises them into small city-level time
+GitHub Action pulls country and local datasets, normalises them into time
 series that are **committed to this repository**, and rebuilds a static site. Git is
 the historical data store and the audit trail: every number the site shows can be
 traced to a commit, a source and an observation date.
 
-It does not predict a crash. It tells you what is happening, how fresh the evidence
-is, and which of a city's signals currently disagree with each other.
+Country screening and histories sit alongside regional indices, forecasts and model evaluation.
 
 ## How it works
 

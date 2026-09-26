@@ -22,7 +22,7 @@ export const CITY_COLORS = {
   sevilla: "#d55181",
   palma: "#008300",
   bilbao: "#9085e9",
-  zaragoza: "#e66767"
+  zaragoza: "#e66767",
 };
 
 export const cityColor = (slug) => CITY_COLORS[slug] ?? INK_3;
@@ -35,17 +35,47 @@ export const cityColor = (slug) => CITY_COLORS[slug] ?? INK_3;
 // hue alone. Any regime the rules can emit must appear here, or it falls through
 // to neutral and a real state is rendered as "nothing happening".
 export const REGIMES = {
-  expansion: {label: "Expansion", color: "#0ca30c", glyph: "▲", rank: 0},
-  orderly_cooling: {label: "Orderly cooling", color: "#898781", glyph: "▽", rank: 0.5},
-  affordability_improving: {label: "Easing", color: "#0ca30c", glyph: "▼", rank: 1},
-  supply_catching_up: {label: "Supply catching up", color: "#0ca30c", glyph: "▼", rank: 2},
-  cooling_reversing: {label: "Cheap but tightening", color: "#898781", glyph: "△", rank: 3},
-  hot: {label: "Hot", color: "#fab219", glyph: "◆", rank: 4},
-  hot_decelerating: {label: "Hot but decelerating", color: "#fab219", glyph: "◇", rank: 5},
-  supply_squeeze: {label: "Pressure without supply", color: "#ec835a", glyph: "◉", rank: 6},
-  stress: {label: "Stress", color: "#d03b3b", glyph: "✖", rank: 7},
-  dislocation: {label: "Dislocation", color: "#d03b3b", glyph: "‼", rank: 8},
-  neutral: {label: "No clear regime", color: "#6e6e6b", glyph: "·", rank: 9}
+  expansion: { label: "Expansion", color: "#0ca30c", glyph: "▲", rank: 0 },
+  orderly_cooling: {
+    label: "Orderly cooling",
+    color: "#898781",
+    glyph: "▽",
+    rank: 0.5,
+  },
+  affordability_improving: {
+    label: "Easing",
+    color: "#0ca30c",
+    glyph: "▼",
+    rank: 1,
+  },
+  supply_catching_up: {
+    label: "Supply catching up",
+    color: "#0ca30c",
+    glyph: "▼",
+    rank: 2,
+  },
+  cooling_reversing: {
+    label: "Cheap but tightening",
+    color: "#898781",
+    glyph: "△",
+    rank: 3,
+  },
+  hot: { label: "Hot", color: "#fab219", glyph: "◆", rank: 4 },
+  hot_decelerating: {
+    label: "Hot but decelerating",
+    color: "#fab219",
+    glyph: "◇",
+    rank: 5,
+  },
+  supply_squeeze: {
+    label: "Pressure without supply",
+    color: "#ec835a",
+    glyph: "◉",
+    rank: 6,
+  },
+  stress: { label: "Stress", color: "#d03b3b", glyph: "✖", rank: 7 },
+  dislocation: { label: "Dislocation", color: "#d03b3b", glyph: "‼", rank: 8 },
+  neutral: { label: "No clear regime", color: "#6e6e6b", glyph: "·", rank: 9 },
 };
 
 export const REGIME_ORDER = Object.entries(REGIMES)
@@ -55,10 +85,10 @@ export const REGIME_ORDER = Object.entries(REGIMES)
 export const regime = (id) => REGIMES[id] ?? REGIMES.neutral;
 
 export const FRESHNESS = {
-  fresh: {label: "fresh", className: "cs-fresh"},
-  stale: {label: "stale", className: "cs-stale"},
-  failing: {label: "not updating", className: "cs-failing"},
-  unknown: {label: "unknown", className: "cs-unknown"}
+  fresh: { label: "fresh", className: "cs-fresh" },
+  stale: { label: "stale", className: "cs-stale" },
+  failing: { label: "not updating", className: "cs-failing" },
+  unknown: { label: "unknown", className: "cs-unknown" },
 };
 
 const UNIT_SUFFIX = {
@@ -68,7 +98,7 @@ const UNIT_SUFFIX = {
   eur_m2: " €/m²",
   eur_m2_month: " €/m²/mo",
   index: "",
-  tone: ""
+  tone: "",
 };
 
 export function formatValue(value, unit) {
@@ -77,7 +107,8 @@ export function formatValue(value, unit) {
   const magnitude = Math.abs(value);
   let text;
   if (magnitude >= 1_000_000) text = (value / 1_000_000).toFixed(2) + "M";
-  else if (magnitude >= 10_000) text = Math.round(value).toLocaleString("en-GB");
+  else if (magnitude >= 10_000)
+    text = Math.round(value).toLocaleString("en-GB");
   else if (magnitude >= 100) text = Math.round(value).toLocaleString("en-GB");
   else if (magnitude >= 10) text = value.toFixed(1);
   else text = value.toFixed(2);
@@ -110,12 +141,29 @@ export function deltaArrow(value) {
   return value > 0 ? "↑" : "↓";
 }
 
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const MONTHS = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 
 export function formatPeriod(period) {
   if (!period) return "—";
   if (/^\d{4}$/.test(period)) return period;
   if (/^\d{4}-Q[1-4]$/.test(period)) return period.replace("-", " ");
+  if (/^\d{4}-\d{2}-\d{2}$/.test(period)) {
+    const [year, month, day] = period.split("-");
+    return `${Number(day)} ${MONTHS[+month - 1]} ${year}`;
+  }
   const [year, month] = period.split("-");
   if (month && MONTHS[+month - 1]) return `${MONTHS[+month - 1]} ${year}`;
   return period;
@@ -123,9 +171,12 @@ export function formatPeriod(period) {
 
 // Periods are strings by design (2026-Q2, 2026-03, 2026); charts need a date.
 export function periodToDate(period) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(period))
+    return new Date(`${period}T00:00:00Z`);
   if (/^\d{4}$/.test(period)) return new Date(Date.UTC(+period, 6, 1));
   const quarter = period.match(/^(\d{4})-Q([1-4])$/);
-  if (quarter) return new Date(Date.UTC(+quarter[1], (+quarter[2] - 1) * 3 + 1, 1));
+  if (quarter)
+    return new Date(Date.UTC(+quarter[1], (+quarter[2] - 1) * 3 + 1, 1));
   const [year, month] = period.split("-");
   return new Date(Date.UTC(+year, +month - 1, 15));
 }
@@ -133,14 +184,17 @@ export function periodToDate(period) {
 // "+1.25 σ" is not a fact about a city, it is a fact about a distribution. These
 // turn the statistics back into the sentence a person would actually say.
 
-export function describeZ(z, {noun = "This"} = {}) {
+export function describeZ(z, { noun = "This" } = {}) {
   if (z == null) return "Not enough history yet to judge what is normal here.";
   const magnitude = Math.abs(z);
   const side = z > 0 ? "higher" : "lower";
   if (magnitude < 0.5) return `${noun} is about normal for this city.`;
-  if (magnitude < 1) return `${noun} is a little ${side} than normal for this city.`;
-  if (magnitude < 2) return `${noun} is clearly ${side} than this city's own record.`;
-  if (magnitude < 3) return `${noun} is far ${side} than anything usual for this city.`;
+  if (magnitude < 1)
+    return `${noun} is a little ${side} than normal for this city.`;
+  if (magnitude < 2)
+    return `${noun} is clearly ${side} than this city's own record.`;
+  if (magnitude < 3)
+    return `${noun} is far ${side} than anything usual for this city.`;
   return `${noun} is at an extreme against this city's own history.`;
 }
 
@@ -160,27 +214,28 @@ export const INDEX_PLAIN = {
   demand_momentum: {
     high: "More people are arriving, working and buying than usual here.",
     low: "Fewer people are arriving, working and buying than usual here.",
-    flat: "Arrivals, jobs and purchases are running at about the usual pace."
+    flat: "Arrivals, jobs and purchases are running at about the usual pace.",
   },
   housing_pressure: {
     high: "Housing costs more, and is fought over harder, than is normal here.",
     low: "The squeeze on housing has eased below what is normal here.",
-    flat: "Housing is about as tight as it usually is here."
+    flat: "Housing is about as tight as it usually is here.",
   },
   supply_response: {
     high: "Building is running ahead of its usual pace here.",
     low: "Building has slowed below its usual pace here.",
-    flat: "Building is running at about its usual pace."
+    flat: "Building is running at about its usual pace.",
   },
   distress: {
     high: "More people are losing jobs, homes or businesses than is normal here.",
     low: "Fewer people are losing jobs, homes or businesses than is normal here.",
-    flat: "Job, home and business losses are at about their usual level."
-  }
+    flat: "Job, home and business losses are at about their usual level.",
+  },
 };
 
 export function describeIndex(indexId, value) {
-  if (value == null) return "Not enough of this index's inputs are reporting yet.";
+  if (value == null)
+    return "Not enough of this index's inputs are reporting yet.";
   const copy = INDEX_PLAIN[indexId];
   if (!copy) return describeZ(value);
   if (value > 0.5) return copy.high;

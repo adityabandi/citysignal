@@ -9,6 +9,7 @@ output, which is what makes the committed result reviewable in a diff.
 from __future__ import annotations
 
 import json
+import gzip
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -19,6 +20,8 @@ from .indices import IndexEngine, SignatureEngine
 from .leadlag import LeadLagLab
 from .rules import classify
 from .desk import DeskBuilder
+from .economy import EconomyBuilder
+from .research import build_research
 from .store import SCOPE_LABELS, HistoryStore
 from .transforms import robust_outlier_score, yoy
 
@@ -122,6 +125,8 @@ class DeriveEngine:
 
         sections: dict[str, list[dict[str, Any]]] = {}
         for metric_id, meta in self.config.metrics.items():
+            if meta.get("section") in {"economy", "alternative"}:
+                continue  # country indicators have a dedicated, unit-aware view
             series = self.store.for_city(city, metric_id)
             if series is None or not series.values:
                 continue
@@ -378,6 +383,31 @@ class DeriveEngine:
         overview = self._overview(cities_payloads)
         _write(out_dir / "overview.json", overview)
         _write(out_dir / "national.json", self.desk.build_national(list(self.config.cities)))
+        economy = EconomyBuilder(self.config, self.store, self.health)
+        country_data = economy.build()
+        # The homepage ships metadata and annual comparison points only. Full
+        # histories are fetched on demand, one country at a time.
+        overview = {**country_data, 'countries': []}
+        screener = {}
+        for country in country_data['countries']:
+            for metric in country['metrics'] + country['alternative']:
+                observations = metric.pop('screening', [])
+                entry = screener.setdefault(metric['id'], {k: metric[k] for k in ('id', 'label', 'unit', 'cadence', 'change_unit', 'change_window', 'group', 'signal_type')})
+                entry.setdefault('countries', {})[country['code']] = observations
+            country_path = out_dir / "countries" / f"{country['code']}.json.gz"
+            country_path.parent.mkdir(parents=True, exist_ok=True)
+            country_path.write_bytes(gzip.compress(json.dumps(country, ensure_ascii=False).encode(), mtime=0))
+            country_path.with_suffix('').unlink(missing_ok=True)
+            overview['countries'].append({**country, **{
+                group: [{**m, 'series': m['series'] if m['cadence'] == 'annual' else []} for m in country[group]]
+                for group in ('metrics', 'alternative')
+            }})
+        (out_dir / "screener.json.gz").write_bytes(gzip.compress(json.dumps(screener, separators=(',', ':')).encode(), mtime=0))
+        _write(out_dir / "economy-overview.json", overview)
+        (out_dir / "economy.json.gz").write_bytes(gzip.compress(json.dumps(country_data, ensure_ascii=False).encode(), mtime=0))
+        (out_dir / "economy.json").unlink(missing_ok=True)
+        economy.export(out_dir)
+        _write(out_dir / "research.json", build_research(self.store))
         _write(out_dir / "sources.json", self._sources())
         _write(out_dir / "signals.json", self._signals(cities_payloads))
 
@@ -401,7 +431,7 @@ class DeriveEngine:
         return {
             "cities": len(cities_payloads),
             "metrics": len(self.store.metric_ids),
-            "output_files": len(cities_payloads) + 4,
+            "output_files": len(list(out_dir.rglob("*.json"))) + len(list(out_dir.glob("*.csv"))),
         }
 
     def _overview(self, payloads: list[dict[str, Any]]) -> dict[str, Any]:

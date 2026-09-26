@@ -13,6 +13,7 @@ from citysignal.derive.rules import RuleEvaluator
 from citysignal.framework.registry import discover_adapters
 
 VALID_LEVELS = {
+    "electricity_system",
     "municipality",
     "district",
     "barrio",

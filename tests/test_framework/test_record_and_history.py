@@ -151,3 +151,18 @@ def test_float_formatting_is_stable(tmp_path):
     assert read_history(path)[0]["value"] == "100"
     outcome = merge_records(path, [_record("2026-01", 100.0000000001)], revisions_allowed=False)
     assert outcome.unchanged == 1
+
+
+def test_revision_preserves_provisional_flag_and_capture_dates(tmp_path):
+    path = tmp_path / 'metric.csv'
+    merge_records(path, [_record('2026-01', 100, quality_flag='estimated', fetched_at='2026-02-01')], revisions_allowed=True)
+    result = merge_records(path, [_record('2026-01', 101, quality_flag='estimated', fetched_at='2026-02-10')], revisions_allowed=True)
+    assert result.revised == 1
+    rows = read_history(path)
+    assert rows[-1]['quality_flag'] == 'estimated'
+    assert [r['fetched_at'] for r in rows] == ['2026-02-01', '2026-02-10']
+    # Finalisation is a meaningful revision even when the value is unchanged.
+    final = merge_records(path, [_record('2026-01', 101, fetched_at='2026-03-01')], revisions_allowed=True)
+    assert final.revised == 1
+    repeat = merge_records(path, [_record('2026-01', 101, fetched_at='2026-03-02')], revisions_allowed=True)
+    assert repeat.unchanged == 1

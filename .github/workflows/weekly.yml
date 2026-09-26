@@ -113,6 +113,9 @@ jobs:
         run: gh workflow enable "weekly refresh" || true
 
   build-deploy:
+    concurrency:
+      group: citysignal-pages
+      cancel-in-progress: false
     needs: pipeline
     runs-on: ubuntu-latest
     environment:

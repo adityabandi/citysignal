@@ -1,12 +1,4 @@
-# Metric registry. Every canonical record must name a metric_id defined here, and
-# its unit and cadence must match. `direction` is +1 when a rising value means a
-# hotter/stronger market and -1 when rising means weaker or more distressed —
-# the derive engine uses it to orient z-scores before combining them.
-# `lag` records whether the measure leads, coincides with, or lags the cycle;
-# the lead-lag lab can demote a "leading" claim that stops holding.
-
 metrics:
-  # ---------------------------------------------------------------- population
   population_padron:
     label: Population (padrón)
     plain: How many people are officially registered as living in the city.
@@ -18,7 +10,9 @@ metrics:
     section: people
     direction: 1
     lag: lagging
-    range: [1000, 4000000]
+    range:
+    - 1000
+    - 4000000
   population_foreign_share:
     label: Foreign-national share
     plain: What share of registered residents hold a foreign nationality.
@@ -29,7 +23,9 @@ metrics:
     section: people
     direction: 1
     lag: lagging
-    range: [0, 80]
+    range:
+    - 0
+    - 80
   net_migration:
     label: Net migration
     plain: People moving in minus people moving out.
@@ -40,10 +36,13 @@ metrics:
     section: people
     direction: 1
     lag: coincident
-    range: [-200000, 200000]
+    range:
+    - -200000
+    - 200000
   births:
     label: Births
-    plain: How many babies were born to mothers living here. Housing demand two decades ahead, and household formation now.
+    plain: How many babies were born to mothers living here. Housing demand two decades
+      ahead, and household formation now.
     unit: births
     cadence: monthly
     geo_level: province
@@ -51,10 +50,13 @@ metrics:
     section: people
     direction: 1
     lag: leading
-    range: [0, 20000]
+    range:
+    - 0
+    - 20000
   marriages:
     label: Marriages
-    plain: How many couples were married. Signals household formation and demand for homes together.
+    plain: How many couples were married. Signals household formation and demand for
+      homes together.
     unit: marriages
     cadence: monthly
     geo_level: province
@@ -62,12 +64,13 @@ metrics:
     section: people
     direction: 1
     lag: leading
-    range: [0, 10000]
-
-  # ------------------------------------------------------------------- housing
+    range:
+    - 0
+    - 10000
   rent_reference:
     label: Reference rent
-    plain: What a square metre of rented housing costs per month, from the government's rent index.
+    plain: What a square metre of rented housing costs per month, from the government's
+      rent index.
     label_es: Precio de referencia del alquiler
     unit: eur_m2_month
     cadence: annual
@@ -76,7 +79,9 @@ metrics:
     section: housing
     direction: 1
     lag: coincident
-    range: [1, 60]
+    range:
+    - 1
+    - 60
   dwelling_stock:
     label: Dwelling stock
     plain: How many homes exist in total.
@@ -87,13 +92,16 @@ metrics:
     section: supply
     direction: 1
     lag: lagging
-    range: [500, 4000000]
-    note: >
-      Published by province only — there is no municipal breakdown in the
-      ministry's estimate. Madrid province holds about 3.05 million dwellings
-      against roughly 1.5 million in the municipality, so this is provincial
-      context rather than a count of homes in the city. Per-dwelling ratios built
-      on it inherit that scope and are labelled accordingly.
+    range:
+    - 500
+    - 4000000
+    note: 'Published by province only — there is no municipal breakdown in the ministry''s
+      estimate. Madrid province holds about 3.05 million dwellings against roughly
+      1.5 million in the municipality, so this is provincial context rather than a
+      count of homes in the city. Per-dwelling ratios built on it inherit that scope
+      and are labelled accordingly.
+
+      '
   housing_transactions:
     label: Housing transactions
     plain: How many homes changed hands.
@@ -104,16 +112,20 @@ metrics:
     section: housing
     direction: 1
     lag: leading
-    range: [0, 60000]
-    note: >
-      Not currently collected. The ministry's transactions file only carries
-      counts for one subsidised-housing category, which would misrepresent total
-      market volume if published as "housing transactions". INE's registered
-      property transfers cover the same ground honestly and are used instead.
-      The metric stays declared so the gap is visible rather than forgotten.
+    range:
+    - 0
+    - 60000
+    note: 'Not currently collected. The ministry''s transactions file only carries
+      counts for one subsidised-housing category, which would misrepresent total market
+      volume if published as "housing transactions". INE''s registered property transfers
+      cover the same ground honestly and are used instead. The metric stays declared
+      so the gap is visible rather than forgotten.
+
+      '
   appraised_value:
     label: Appraised housing value
-    plain: What valuers say a square metre of housing is worth — the number banks lend against.
+    plain: What valuers say a square metre of housing is worth — the number banks
+      lend against.
     unit: eur_m2
     cadence: quarterly
     geo_level: province
@@ -121,10 +133,13 @@ metrics:
     section: housing
     direction: 1
     lag: lagging
-    range: [200, 8000]
+    range:
+    - 200
+    - 8000
   land_price:
     label: Urban land price
-    plain: What building land costs per square metre. It moves before construction does.
+    plain: What building land costs per square metre. It moves before construction
+      does.
     unit: eur_m2
     cadence: quarterly
     geo_level: province
@@ -132,7 +147,9 @@ metrics:
     section: supply
     direction: 1
     lag: leading
-    range: [10, 5000]
+    range:
+    - 10
+    - 5000
   housing_starts:
     label: Housing starts
     plain: How many homes builders began. The earliest signal that supply is coming.
@@ -143,7 +160,9 @@ metrics:
     section: supply
     direction: 1
     lag: leading
-    range: [0, 60000]
+    range:
+    - 0
+    - 60000
   housing_completions:
     label: Housing completions
     plain: How many homes were finished and can actually be lived in.
@@ -154,7 +173,9 @@ metrics:
     section: supply
     direction: 1
     lag: lagging
-    range: [0, 60000]
+    range:
+    - 0
+    - 60000
   rent_district_m2:
     label: District rental price per square metre
     plain: What a square metre of rented housing costs per month, by district.
@@ -165,7 +186,9 @@ metrics:
     section: housing
     direction: 1
     lag: coincident
-    range: [1, 60]
+    range:
+    - 1
+    - 60
   rent_district_total:
     label: District total monthly rent
     plain: The average total monthly rent for a full dwelling, by district.
@@ -176,7 +199,9 @@ metrics:
     section: housing
     direction: 1
     lag: coincident
-    range: [100, 6000]
+    range:
+    - 100
+    - 6000
   rent_district_dwellings:
     label: Rented dwellings observed
     plain: How many rented dwellings were surveyed to build the district average rent.
@@ -187,10 +212,13 @@ metrics:
     section: housing
     direction: 1
     lag: coincident
-    range: [0, 200000]
+    range:
+    - 0
+    - 200000
   house_price_index:
     label: House price index
-    plain: The official measure of how house prices are moving, set to 100 in a base year.
+    plain: The official measure of how house prices are moving, set to 100 in a base
+      year.
     unit: index
     cadence: quarterly
     geo_level: ccaa
@@ -198,10 +226,13 @@ metrics:
     section: housing
     direction: 1
     lag: lagging
-    range: [30, 400]
+    range:
+    - 30
+    - 400
   property_transfers:
     label: Property transfers (registered)
-    plain: How many properties were legally transferred, from the land registry. Faster than the price statistics.
+    plain: How many properties were legally transferred, from the land registry. Faster
+      than the price statistics.
     unit: transactions
     cadence: monthly
     geo_level: province
@@ -209,7 +240,9 @@ metrics:
     section: housing
     direction: 1
     lag: leading
-    range: [0, 40000]
+    range:
+    - 0
+    - 40000
   mortgages_count:
     label: New mortgages on dwellings
     plain: How many new mortgages were signed on homes.
@@ -220,7 +253,9 @@ metrics:
     section: credit
     direction: 1
     lag: leading
-    range: [0, 30000]
+    range:
+    - 0
+    - 30000
   mortgage_amount_avg:
     label: Average mortgage amount
     plain: The average size of a new mortgage.
@@ -231,10 +266,13 @@ metrics:
     section: credit
     direction: 1
     lag: coincident
-    range: [20000, 700000]
+    range:
+    - 20000
+    - 700000
   visados_new_build:
     label: Building permit visas (new construction buildings)
-    plain: How many buildings received construction permits for new housing — the earliest signal of supply arriving.
+    plain: How many buildings received construction permits for new housing — the
+      earliest signal of supply arriving.
     unit: buildings
     cadence: monthly
     geo_level: ccaa
@@ -242,10 +280,13 @@ metrics:
     section: supply
     direction: 1
     lag: leading
-    range: [0, 2000]
+    range:
+    - 0
+    - 2000
   visados_area:
     label: Building permits, construction area
-    plain: The total area of new construction receiving permits, measured in square metres.
+    plain: The total area of new construction receiving permits, measured in square
+      metres.
     unit: m2
     cadence: monthly
     geo_level: ccaa
@@ -253,10 +294,13 @@ metrics:
     section: supply
     direction: 1
     lag: leading
-    range: [0, 5000000]
+    range:
+    - 0
+    - 5000000
   visados_budget:
     label: Building permits, execution budget
-    plain: The estimated total budget for execution of newly permitted construction projects.
+    plain: The estimated total budget for execution of newly permitted construction
+      projects.
     unit: eur
     cadence: monthly
     geo_level: ccaa
@@ -264,10 +308,13 @@ metrics:
     section: supply
     direction: 1
     lag: leading
-    range: [0, 3000000000]
+    range:
+    - 0
+    - 3000000000
   notary_sales:
     label: Housing sales (notary records)
-    plain: How many housing sales were signed before a notary — leading the land registry by about 2 months.
+    plain: How many housing sales were signed before a notary — leading the land registry
+      by about 2 months.
     unit: transactions
     cadence: monthly
     geo_level: province
@@ -275,7 +322,9 @@ metrics:
     section: housing
     direction: 1
     lag: leading
-    range: [0, 40000]
+    range:
+    - 0
+    - 40000
   notary_price_m2:
     label: Housing price per square metre (notary records)
     plain: The price per square metre of housing sold, from notary records.
@@ -286,9 +335,9 @@ metrics:
     section: housing
     direction: 1
     lag: leading
-    range: [200, 8000]
-
-  # -------------------------------------------------------------------- labour
+    range:
+    - 200
+    - 8000
   unemployment_registered:
     label: Registered unemployment
     plain: How many people are signed on as unemployed at the job office.
@@ -300,10 +349,13 @@ metrics:
     section: work
     direction: -1
     lag: coincident
-    range: [0, 600000]
+    range:
+    - 0
+    - 600000
   contracts_registered:
     label: New contracts registered
-    plain: How many new employment contracts were registered. Hiring shows up here first.
+    plain: How many new employment contracts were registered. Hiring shows up here
+      first.
     unit: contracts
     cadence: monthly
     geo_level: municipality
@@ -311,10 +363,13 @@ metrics:
     section: work
     direction: 1
     lag: leading
-    range: [0, 400000]
+    range:
+    - 0
+    - 400000
   affiliations:
     label: Social Security affiliations
-    plain: How many people are paying into social security — the closest thing to a live headcount of who is working.
+    plain: How many people are paying into social security — the closest thing to
+      a live headcount of who is working.
     unit: persons
     cadence: monthly
     geo_level: province
@@ -322,9 +377,9 @@ metrics:
     section: work
     direction: 1
     lag: coincident
-    range: [1000, 4000000]
-
-  # ------------------------------------------------------------------- tourism
+    range:
+    - 1000
+    - 4000000
   hotel_travellers:
     label: Hotel travellers
     plain: How many guests checked into hotels.
@@ -335,10 +390,13 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [0, 2000000]
+    range:
+    - 0
+    - 2000000
   hotel_nights:
     label: Hotel overnight stays
-    plain: How many nights guests actually stayed. Catches longer trips that guest counts miss.
+    plain: How many nights guests actually stayed. Catches longer trips that guest
+      counts miss.
     unit: nights
     cadence: monthly
     geo_level: municipality
@@ -346,7 +404,9 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [0, 6000000]
+    range:
+    - 0
+    - 6000000
   hotel_international_share:
     label: International share of hotel nights
     plain: What share of hotel nights are booked by visitors from outside Spain.
@@ -357,7 +417,9 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   hotel_occupancy_rate:
     label: Hotel occupancy rate
     plain: What share of hotel rooms were filled.
@@ -368,7 +430,9 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   hotel_adr:
     label: Average daily rate
     plain: The average price paid for a hotel room per night.
@@ -379,10 +443,13 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [10, 600]
+    range:
+    - 10
+    - 600
   hotel_revpar:
     label: Revenue per available room
-    plain: Room revenue per available room — price and occupancy combined, so it falls if either does.
+    plain: Room revenue per available room — price and occupancy combined, so it falls
+      if either does.
     unit: eur
     cadence: monthly
     geo_level: municipality
@@ -390,7 +457,9 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [0, 500]
+    range:
+    - 0
+    - 500
   airport_passengers:
     label: Airport passengers
     plain: How many passengers passed through the city's airport.
@@ -401,10 +470,13 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [0, 8000000]
+    range:
+    - 0
+    - 8000000
   airport_flights:
     label: Airport flights (daily traffic)
-    plain: How many flights the airport handled. Counted daily, so it arrives weeks before passenger figures.
+    plain: How many flights the airport handled. Counted daily, so it arrives weeks
+      before passenger figures.
     unit: flights
     cadence: monthly
     geo_level: airport
@@ -412,7 +484,9 @@ metrics:
     section: tourism
     direction: 1
     lag: leading
-    range: [0, 60000]
+    range:
+    - 0
+    - 60000
   port_passengers:
     label: Port passengers
     plain: How many passengers came through the port, including cruise arrivals.
@@ -423,9 +497,9 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [0, 1500000]
-
-  # ----------------------------------------------------------- short-term rent
+    range:
+    - 0
+    - 1500000
   tourist_dwellings:
     label: Tourist dwellings (official)
     plain: How many homes are officially registered as tourist lets.
@@ -436,7 +510,9 @@ metrics:
     section: str
     direction: 1
     lag: coincident
-    range: [0, 100000]
+    range:
+    - 0
+    - 100000
   tourist_dwelling_places:
     label: Tourist dwelling bed places
     plain: How many beds those registered tourist lets offer.
@@ -447,10 +523,13 @@ metrics:
     section: str
     direction: 1
     lag: coincident
-    range: [0, 500000]
+    range:
+    - 0
+    - 500000
   str_listings:
     label: Airbnb listings (research)
-    plain: How many Airbnb listings are visible in the city. A scraped snapshot, not an official register.
+    plain: How many Airbnb listings are visible in the city. A scraped snapshot, not
+      an official register.
     unit: listings
     cadence: monthly
     geo_level: municipality
@@ -458,10 +537,13 @@ metrics:
     section: str
     direction: 1
     lag: leading
-    range: [0, 100000]
+    range:
+    - 0
+    - 100000
   str_entire_home_share:
     label: Entire-home share of listings
-    plain: What share of Airbnb listings are whole homes rather than a spare room — whole homes are the ones taken off the long-term market.
+    plain: What share of Airbnb listings are whole homes rather than a spare room
+      — whole homes are the ones taken off the long-term market.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -469,10 +551,13 @@ metrics:
     section: str
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   str_multi_host_share:
     label: Multi-listing host share
-    plain: What share of listings belong to hosts running several. High means professional operators, not people letting a spare room.
+    plain: What share of listings belong to hosts running several. High means professional
+      operators, not people letting a spare room.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -480,12 +565,13 @@ metrics:
     section: str
     direction: 1
     lag: leading
-    range: [0, 100]
-
-  # ------------------------------------------------------------------- credit
+    range:
+    - 0
+    - 100
   hicp_rents:
     label: Harmonised Consumer Price Index - actual rents
-    plain: The harmonised index of consumer prices for actual rents on housing, set to 100 in a base year. Shows tenant-cost trend across the Eurozone.
+    plain: The harmonised index of consumer prices for actual rents on housing, set
+      to 100 in a base year. Shows tenant-cost trend across the Eurozone.
     unit: index
     cadence: monthly
     geo_level: nation
@@ -493,10 +579,14 @@ metrics:
     section: housing
     direction: 1
     lag: coincident
-    range: [80, 130]
+    range:
+    - 0
+    - 1000
   hicp_maintenance:
     label: Harmonised Consumer Price Index - maintenance and repair
-    plain: The harmonised index of consumer prices for housing maintenance and repair costs, set to 100 in a base year. Renovation spending moves before property transactions do.
+    plain: The harmonised index of consumer prices for housing maintenance and repair
+      costs, set to 100 in a base year. Renovation spending moves before property
+      transactions do.
     unit: index
     cadence: monthly
     geo_level: nation
@@ -504,10 +594,13 @@ metrics:
     section: housing
     direction: 1
     lag: leading
-    range: [80, 130]
+    range:
+    - 0
+    - 1000
   euribor_12m:
     label: Euribor 12-month
-    plain: The interest rate most Spanish variable-rate mortgages are priced off. When this rises, monthly repayments follow.
+    plain: The interest rate most Spanish variable-rate mortgages are priced off.
+      When this rises, monthly repayments follow.
     unit: percent
     cadence: monthly
     geo_level: nation
@@ -515,10 +608,13 @@ metrics:
     section: credit
     direction: -1
     lag: leading
-    range: [-1.5, 20]
+    range:
+    - -1.5
+    - 20
   eur_gbp:
     label: EUR/GBP
-    plain: How many pounds a euro buys. When this rises a British buyer's budget on the Costa del Sol shrinks, before any housing statistic notices.
+    plain: How many pounds a euro buys. When this rises a British buyer's budget on
+      the Costa del Sol shrinks, before any housing statistic notices.
     unit: rate
     cadence: monthly
     geo_level: euro_area
@@ -526,10 +622,13 @@ metrics:
     section: credit
     direction: 1
     lag: leading
-    range: [0.5, 1.2]
+    range:
+    - 0.5
+    - 1.2
   eur_usd:
     label: EUR/USD
-    plain: How many dollars a euro buys. Sets what American and dollar-pegged buyers can afford here.
+    plain: How many dollars a euro buys. Sets what American and dollar-pegged buyers
+      can afford here.
     unit: rate
     cadence: monthly
     geo_level: euro_area
@@ -537,10 +636,14 @@ metrics:
     section: credit
     direction: 1
     lag: leading
-    range: [0.7, 1.8]
+    range:
+    - 0.7
+    - 1.8
   eur_jpy:
     label: EUR/JPY
-    plain: How many yen a euro buys. The yen funds the world's carry trades, so a sharp fall here means those trades are unwinding and capital is leaving risky assets.
+    plain: How many yen a euro buys. The yen funds the world's carry trades, so a
+      sharp fall here means those trades are unwinding and capital is leaving risky
+      assets.
     unit: rate
     cadence: monthly
     geo_level: euro_area
@@ -548,10 +651,13 @@ metrics:
     section: credit
     direction: 1
     lag: leading
-    range: [80, 220]
+    range:
+    - 80
+    - 220
   eur_sek:
     label: EUR/SEK
-    plain: How many Swedish krona a euro buys. Swedish buyers concentrate on the Mediterranean coast.
+    plain: How many Swedish krona a euro buys. Swedish buyers concentrate on the Mediterranean
+      coast.
     unit: rate
     cadence: monthly
     geo_level: euro_area
@@ -559,7 +665,9 @@ metrics:
     section: credit
     direction: 1
     lag: leading
-    range: [7, 15]
+    range:
+    - 7
+    - 15
   eur_nok:
     label: EUR/NOK
     plain: How many Norwegian krone a euro buys. Norwegian buyers, same coast.
@@ -570,7 +678,9 @@ metrics:
     section: credit
     direction: 1
     lag: leading
-    range: [7, 15]
+    range:
+    - 7
+    - 15
   eur_chf:
     label: EUR/CHF
     plain: How many Swiss francs a euro buys.
@@ -581,10 +691,13 @@ metrics:
     section: credit
     direction: 1
     lag: leading
-    range: [0.7, 1.8]
+    range:
+    - 0.7
+    - 1.8
   ecb_policy_rate:
     label: ECB policy rate
-    plain: The rate the European Central Bank charges banks. Everything Spanish borrowers pay is built on top of it.
+    plain: The rate the European Central Bank charges banks. Everything Spanish borrowers
+      pay is built on top of it.
     unit: percent
     cadence: monthly
     geo_level: euro_area
@@ -592,14 +705,18 @@ metrics:
     section: credit
     direction: -1
     lag: leading
-    range: [-1, 10]
-    note: >
-      Published by the ECB only when the rate actually changes, dated to the day.
-      Forward-filled here to the rate in force in each month, which is the true
+    range:
+    - -1
+    - 10
+    note: 'Published by the ECB only when the rate actually changes, dated to the
+      day. Forward-filled here to the rate in force in each month, which is the true
       statement and the only form that fits a monthly series.
+
+      '
   euro_inflation:
     label: Euro-area inflation
-    plain: How fast prices are rising across the euro area, which is what the central bank is actually reacting to.
+    plain: How fast prices are rising across the euro area, which is what the central
+      bank is actually reacting to.
     unit: percent
     cadence: monthly
     geo_level: euro_area
@@ -607,10 +724,13 @@ metrics:
     section: credit
     direction: -1
     lag: leading
-    range: [-2, 15]
+    range:
+    - -2
+    - 15
   euro_unemployment:
     label: Euro-area unemployment
-    plain: The share of euro-area workers without a job — the backdrop Spain's own labour market sits against.
+    plain: The share of euro-area workers without a job — the backdrop Spain's own
+      labour market sits against.
     unit: percent
     cadence: monthly
     geo_level: euro_area
@@ -618,10 +738,13 @@ metrics:
     section: work
     direction: -1
     lag: coincident
-    range: [0, 30]
+    range:
+    - 0
+    - 30
   ecb_mortgage_rate:
     label: ECB mortgage rate (Spain)
-    plain: The interest rate banks are charging on new mortgages to households, sourced from the ECB's Monetary Interest Rates dataset.
+    plain: The interest rate banks are charging on new mortgages to households, sourced
+      from the ECB's Monetary Interest Rates dataset.
     unit: percent
     cadence: monthly
     geo_level: nation
@@ -629,7 +752,9 @@ metrics:
     section: credit
     direction: -1
     lag: leading
-    range: [0, 20]
+    range:
+    - 0
+    - 20
   mortgage_rate_new:
     label: New mortgage rate
     plain: The interest rate banks are charging on new mortgages.
@@ -640,10 +765,13 @@ metrics:
     section: credit
     direction: -1
     lag: leading
-    range: [0, 20]
+    range:
+    - 0
+    - 20
   npl_ratio:
     label: Doubtful loan ratio
-    plain: What share of bank loans are not being repaid. Rises late, after trouble has already happened.
+    plain: What share of bank loans are not being repaid. Rises late, after trouble
+      has already happened.
     unit: percent
     cadence: monthly
     geo_level: nation
@@ -651,12 +779,13 @@ metrics:
     section: credit
     direction: -1
     lag: lagging
-    range: [0, 25]
-
-  # ------------------------------------------------------------------ distress
+    range:
+    - 0
+    - 25
   foreclosures:
     label: Mortgage foreclosures filed
-    plain: How many times a lender started court proceedings to take a home over unpaid mortgage debt.
+    plain: How many times a lender started court proceedings to take a home over unpaid
+      mortgage debt.
     label_es: Ejecuciones hipotecarias
     unit: cases
     cadence: quarterly
@@ -665,7 +794,9 @@ metrics:
     section: distress
     direction: -1
     lag: lagging
-    range: [0, 20000]
+    range:
+    - 0
+    - 20000
   evictions:
     label: Evictions carried out
     plain: How many evictions courts actually carried out.
@@ -677,15 +808,18 @@ metrics:
     section: distress
     direction: -1
     lag: lagging
-    range: [0, 20000]
-    note: >
-      Evictions actually carried out, which is the sum of the mortgage, rental-law
+    range:
+    - 0
+    - 20000
+    note: 'Evictions actually carried out, which is the sum of the mortgage, rental-law
       and other categories CGPJ publishes. It moves separately from eviction orders
-      received, because each court district works through its own enforcement
-      backlog: in the first quarter of 2026, orders received rose sharply almost
-      everywhere while executions fell in Zaragoza and the Balearics and rose in
-      Madrid and Bizkaia. The most recent quarter is provisional and is usually
-      revised upward, so treat it as incomplete rather than as a turning point.
+      received, because each court district works through its own enforcement backlog:
+      in the first quarter of 2026, orders received rose sharply almost everywhere
+      while executions fell in Zaragoza and the Balearics and rose in Madrid and Bizkaia.
+      The most recent quarter is provisional and is usually revised upward, so treat
+      it as incomplete rather than as a turning point.
+
+      '
   auctions_realestate:
     label: Judicial property auctions
     plain: How many properties were put up for judicial auction.
@@ -696,7 +830,9 @@ metrics:
     section: distress
     direction: -1
     lag: coincident
-    range: [0, 5000]
+    range:
+    - 0
+    - 5000
   company_incorporations:
     label: Companies incorporated
     plain: How many new companies were registered.
@@ -707,7 +843,9 @@ metrics:
     section: distress
     direction: 1
     lag: leading
-    range: [0, 12000]
+    range:
+    - 0
+    - 12000
   company_dissolutions:
     label: Companies dissolved
     plain: How many companies were wound up.
@@ -718,7 +856,9 @@ metrics:
     section: distress
     direction: -1
     lag: coincident
-    range: [0, 8000]
+    range:
+    - 0
+    - 8000
   insolvencies:
     label: Insolvency proceedings
     plain: How many businesses formally went insolvent.
@@ -729,9 +869,9 @@ metrics:
     section: distress
     direction: -1
     lag: lagging
-    range: [0, 4000]
-
-  # ----------------------------------------------------- attention (not demand)
+    range:
+    - 0
+    - 4000
   wiki_city_views:
     label: Wikipedia views, city article (all languages)
     plain: How many times people read this city's Wikipedia article.
@@ -742,10 +882,13 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 20000000]
+    range:
+    - 0
+    - 20000000
   wiki_city_foreign_share:
     label: Non-Spanish share of city article views
-    plain: What share of the city's Wikipedia readers are reading in a language other than Spanish — a rough read on interest from abroad.
+    plain: What share of the city's Wikipedia readers are reading in a language other
+      than Spanish — a rough read on interest from abroad.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -753,10 +896,13 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   wiki_city_attention:
     label: City attention share
-    plain: How much of Wikipedia's traffic goes to this city, so years can be compared as reading habits change.
+    plain: How much of Wikipedia's traffic goes to this city, so years can be compared
+      as reading habits change.
     unit: per_million
     cadence: monthly
     geo_level: municipality
@@ -764,14 +910,18 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 10000]
-    note: >
-      City article views per million views of the same language editions. Raw
-      pageview counts fell about 45% between 2021 and 2026 as search behaviour
-      changed, so only the share is comparable across years.
+    range:
+    - 0
+    - 10000
+    note: 'City article views per million views of the same language editions. Raw
+      pageview counts fell about 45% between 2021 and 2026 as search behaviour changed,
+      so only the share is comparable across years.
+
+      '
   wiki_hardship_index:
     label: Hardship attention (Euribor, eviction, benefits)
-    plain: How often people look up Euribor, evictions, mortgages and unemployment benefits. Worry, not hardship itself.
+    plain: How often people look up Euribor, evictions, mortgages and unemployment
+      benefits. Worry, not hardship itself.
     unit: per_million
     cadence: monthly
     geo_level: nation
@@ -779,10 +929,13 @@ metrics:
     section: attention
     direction: -1
     lag: leading
-    range: [0, 10000]
+    range:
+    - 0
+    - 10000
   wiki_relocation_index:
     label: Relocation attention (padrón, NIE, visas)
-    plain: How often people look up residency registration, visas and foreigner ID — the paperwork of moving to Spain.
+    plain: How often people look up residency registration, visas and foreigner ID
+      — the paperwork of moving to Spain.
     unit: per_million
     cadence: monthly
     geo_level: nation
@@ -790,10 +943,14 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 10000]
+    range:
+    - 0
+    - 10000
   wiki_barrio_views:
     label: Madrid neighbourhood Wikipedia views
-    plain: How many times people read about a Madrid neighbourhood. Gentrification signals that lead rents, with attention to Malasaña, Lavapiés, Chueca and Salamanca indicating shifting desirability.
+    plain: How many times people read about a Madrid neighbourhood. Gentrification
+      signals that lead rents, with attention to Malasaña, Lavapiés, Chueca and Salamanca
+      indicating shifting desirability.
     unit: views
     cadence: monthly
     geo_level: district
@@ -801,11 +958,14 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 1000000]
-    note: >
-      District-level Wikipedia pageviews for Madrid neighbourhoods. Covers Malasaña,
-      Lavapiés, Chueca (Centro, 01), Barrio de Salamanca (04), Chamberí (07),
-      Carabanchel (11), Usera (12), and Tetuán (06). History back to 2018.
+    range:
+    - 0
+    - 1000000
+    note: 'District-level Wikipedia pageviews for Madrid neighbourhoods. Covers Malasaña,
+      Lavapiés, Chueca (Centro, 01), Barrio de Salamanca (04), Chamberí (07), Carabanchel
+      (11), Usera (12), and Tetuán (06). History back to 2018.
+
+      '
   search_rental_pressure:
     label: Rental search pressure
     plain: How hard people are searching for somewhere to rent here.
@@ -816,7 +976,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   search_buy_momentum:
     label: Buyer search momentum
     plain: How hard people are searching to buy here.
@@ -827,7 +989,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   search_relocation:
     label: Relocation search intent
     plain: How hard people are searching about moving here.
@@ -838,10 +1002,13 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   search_room_share:
     label: Room-vs-flat search spread
-    plain: How often people search for a room compared with a whole flat. Rising means households are compressing — taking a room because a flat is out of reach.
+    plain: How often people search for a room compared with a whole flat. Rising means
+      households are compressing — taking a room because a flat is out of reach.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -849,10 +1016,13 @@ metrics:
     section: attention
     direction: -1
     lag: leading
-    range: [0, 400]
+    range:
+    - 0
+    - 400
   search_tenure_switch:
     label: Buy-vs-rent search spread
-    plain: How often people search to buy compared with to rent. Rising means attention is shifting from renting toward buying.
+    plain: How often people search to buy compared with to rent. Rising means attention
+      is shifting from renting toward buying.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -860,10 +1030,13 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 400]
+    range:
+    - 0
+    - 400
   search_commercial_rent:
     label: Commercial premises search
-    plain: How hard people are searching for a commercial unit to rent in Madrid — shops and bars looking for a home.
+    plain: How hard people are searching for a commercial unit to rent in Madrid —
+      shops and bars looking for a home.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -871,10 +1044,13 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   search_eviction:
     label: Eviction search attention
-    plain: How often people across Spain look up evictions. Worry and legal research, not evictions themselves.
+    plain: How often people across Spain look up evictions. Worry and legal research,
+      not evictions themselves.
     unit: index
     cadence: monthly
     geo_level: nation
@@ -882,10 +1058,13 @@ metrics:
     section: attention
     direction: -1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   search_barrio_attention:
     label: Neighbourhood search attention
-    plain: How often people search for flats in this specific neighbourhood, rather than the city as a whole.
+    plain: How often people search for flats in this specific neighbourhood, rather
+      than the city as a whole.
     unit: index
     cadence: monthly
     geo_level: district
@@ -893,7 +1072,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   search_hardship:
     label: Household hardship search
     plain: How hard people are searching for help with money — benefits, debt, eviction.
@@ -904,7 +1085,9 @@ metrics:
     section: attention
     direction: -1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   search_travel_intent:
     label: Inbound travel search intent
     plain: How hard people are searching about visiting.
@@ -915,10 +1098,13 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   search_commercial_distress:
     label: Business-exit search (traspaso local)
-    plain: How hard people are searching to hand over a business lease, which is how a struggling shop or bar exits.
+    plain: How hard people are searching to hand over a business lease, which is how
+      a struggling shop or bar exits.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -926,8 +1112,9 @@ metrics:
     section: attention
     direction: -1
     lag: leading
-    range: [0, 100]
-
+    range:
+    - 0
+    - 100
   news_volume:
     label: News coverage volume
     plain: How much news coverage the city is getting.
@@ -938,7 +1125,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   news_tone:
     label: News coverage tone
     plain: Whether coverage of the city reads positive or negative.
@@ -949,7 +1138,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [-25, 25]
+    range:
+    - -25
+    - 25
   news_housing_volume:
     label: Housing-themed coverage volume
     plain: How much of the city's coverage is about housing, rents and evictions.
@@ -960,11 +1151,13 @@ metrics:
     section: attention
     direction: -1
     lag: leading
-    range: [0, 100]
-
+    range:
+    - 0
+    - 100
   traffic_intensity:
     label: Traffic intensity
-    plain: How many vehicles moved through the city, aggregated from thousands of sensors to a monthly mean.
+    plain: How many vehicles moved through the city, aggregated from thousands of
+      sensors to a monthly mean.
     unit: index
     cadence: monthly
     geo_level: municipality
@@ -972,16 +1165,19 @@ metrics:
     section: work
     direction: 1
     lag: coincident
-    range: [0, 10000]
-    note: >
-      Monthly mean of hourly vehicle counts across all traffic sensors. This is a live
-      activity proxy: traffic volume tracks commuting and commercial movement in real time,
-      and cannot be gamed like survey data. The 2020 COVID lockdown produces a clear 60-80%
-      collapse in April-May.
+    range:
+    - 0
+    - 10000
+    note: 'Monthly mean of hourly vehicle counts across all traffic sensors. This
+      is a live activity proxy: traffic volume tracks commuting and commercial movement
+      in real time, and cannot be gamed like survey data. The 2020 COVID lockdown
+      produces a clear 60-80% collapse in April-May.
 
+      '
   no2_level:
     label: Air quality NO2
-    plain: Nitrogen dioxide concentration, an overwhelmingly traffic-generated pollution proxy and genuine liveability measure.
+    plain: Nitrogen dioxide concentration, an overwhelmingly traffic-generated pollution
+      proxy and genuine liveability measure.
     unit: micrograms_m3
     cadence: monthly
     geo_level: municipality
@@ -989,17 +1185,20 @@ metrics:
     section: work
     direction: -1
     lag: coincident
-    range: [0, 200]
-    note: >
-      Monthly mean of NO2 measurements from European Environment Agency monitoring stations.
-      NO2 is traffic-generated and independent of other measures, making it a hard-to-game
-      activity proxy. Shows clear 2020 COVID lockdown collapse and strong winter>summer
-      seasonal pattern. Data sourced from EEA Air Quality Download Service (successor to
-      the disabled madrid_aire adapter which was rate-limited).
+    range:
+    - 0
+    - 200
+    note: 'Monthly mean of NO2 measurements from European Environment Agency monitoring
+      stations. NO2 is traffic-generated and independent of other measures, making
+      it a hard-to-game activity proxy. Shows clear 2020 COVID lockdown collapse and
+      strong winter>summer seasonal pattern. Data sourced from EEA Air Quality Download
+      Service (successor to the disabled madrid_aire adapter which was rate-limited).
 
+      '
   vehicle_registrations:
     label: New vehicle registrations
-    plain: How many vehicles were newly registered — a fast, keyless read on household and business confidence.
+    plain: How many vehicles were newly registered — a fast, keyless read on household
+      and business confidence.
     label_es: Matriculaciones de vehículos
     unit: vehicles
     cadence: monthly
@@ -1008,30 +1207,32 @@ metrics:
     section: work
     direction: 1
     lag: leading
-    range: [0, 200000]
-    note: >
-      Not "new cars sold". Counts DGT transaction code 1 ("Matriculación
-      ordinaria y de ciclomotores") only — genuine new registrations, never
-      transfers of ownership, temporary plates, re-registrations or
-      de-registrations, which are separate transaction codes and excluded.
-      But that transaction code spans nearly every vehicle class, not cars
-      alone: in a sampled month, passenger cars were about 69% of qualifying
-      rows, motorcycles and mopeds about 14%, vans about 9%, and the
-      remainder trucks, buses, trailers, agricultural machinery and a
-      handful of historic and special vehicles. The province is where the
-      registration was filed (DGT's own COD_PROVINCIA_MAT), not the vehicle
-      owner's home province (COD_PROVINCIA_MAT and COD_PROVINCIA_VEH are
-      different fields in the source file) — Madrid runs 3-4x above
-      Barcelona because national fleet, leasing and rental-car operators
-      file their registrations there administratively regardless of where
-      the vehicle will actually operate. That is a real, widely-reported
-      feature of Spanish registration statistics, not a data error: this
-      adapter's province-level annual totals were cross-checked against
-      DGT's own published "Matriculación por provincias" table and matched
+    range:
+    - 0
+    - 200000
+    note: 'Not "new cars sold". Counts DGT transaction code 1 ("Matriculación ordinaria
+      y de ciclomotores") only — genuine new registrations, never transfers of ownership,
+      temporary plates, re-registrations or de-registrations, which are separate transaction
+      codes and excluded. But that transaction code spans nearly every vehicle class,
+      not cars alone: in a sampled month, passenger cars were about 69% of qualifying
+      rows, motorcycles and mopeds about 14%, vans about 9%, and the remainder trucks,
+      buses, trailers, agricultural machinery and a handful of historic and special
+      vehicles. The province is where the registration was filed (DGT''s own COD_PROVINCIA_MAT),
+      not the vehicle owner''s home province (COD_PROVINCIA_MAT and COD_PROVINCIA_VEH
+      are different fields in the source file) — Madrid runs 3-4x above Barcelona
+      because national fleet, leasing and rental-car operators file their registrations
+      there administratively regardless of where the vehicle will actually operate.
+      That is a real, widely-reported feature of Spanish registration statistics,
+      not a data error: this adapter''s province-level annual totals were cross-checked
+      against DGT''s own published "Matriculación por provincias" table and matched
       to within the one month DGT itself never published.
+
+      '
   job_postings_index:
     label: Job postings index
-    plain: Index level of total job postings on Indeed for Spain (100 = February 2020), seasonally adjusted and 7-day lagged. A forward-looking indicator of hiring intent.
+    plain: Index level of total job postings on Indeed for Spain (100 = February 2020),
+      seasonally adjusted and 7-day lagged. A forward-looking indicator of hiring
+      intent.
     unit: index
     cadence: monthly
     geo_level: nation
@@ -1039,13 +1240,15 @@ metrics:
     section: work
     direction: 1
     lag: leading
-    range: [0, 200]
-    note: >
-      Indeed publishes daily observations for both 'total postings' and 'new postings';
-      we use 'total postings'. The index is seasonally adjusted. February 2020 baseline = 100.
-      Recent months are withheld until Indeed's data is complete (before the month ends).
+    range:
+    - 0
+    - 200
+    note: 'Indeed publishes daily observations for both ''total postings'' and ''new
+      postings''; we use ''total postings''. The index is seasonally adjusted. February
+      2020 baseline = 100. Recent months are withheld until Indeed''s data is complete
+      (before the month ends).
 
-  # ------------------------------------------------------------ Madrid deep dive
+      '
   padron_district:
     label: Population by district (monthly)
     plain: How many people are registered as living in each district of the city.
@@ -1056,7 +1259,9 @@ metrics:
     section: people
     direction: 1
     lag: coincident
-    range: [1000, 500000]
+    range:
+    - 1000
+    - 500000
   locales_stock:
     label: Business premises in use
     plain: How many business premises are in use.
@@ -1067,7 +1272,9 @@ metrics:
     section: work
     direction: 1
     lag: coincident
-    range: [0, 60000]
+    range:
+    - 0
+    - 60000
   locales_openings:
     label: Business premises opened
     plain: How many business premises opened.
@@ -1078,7 +1285,9 @@ metrics:
     section: work
     direction: 1
     lag: leading
-    range: [0, 5000]
+    range:
+    - 0
+    - 5000
   locales_closures:
     label: Business premises closed
     plain: How many business premises closed.
@@ -1089,7 +1298,9 @@ metrics:
     section: work
     direction: -1
     lag: leading
-    range: [0, 5000]
+    range:
+    - 0
+    - 5000
   locales_vacancy_rate:
     label: Storefront vacancy rate
     plain: What share of business premises sit empty — shuttered shopfronts, counted.
@@ -1100,7 +1311,9 @@ metrics:
     section: work
     direction: -1
     lag: coincident
-    range: [0, 100]
+    range:
+    - 0
+    - 100
   horeca_openings:
     label: Restaurants and bars opened
     plain: How many bars, cafés and restaurants opened.
@@ -1111,7 +1324,9 @@ metrics:
     section: work
     direction: 1
     lag: leading
-    range: [0, 2000]
+    range:
+    - 0
+    - 2000
   horeca_closures:
     label: Restaurants and bars closed
     plain: How many bars, cafés and restaurants closed.
@@ -1122,7 +1337,9 @@ metrics:
     section: work
     direction: -1
     lag: leading
-    range: [0, 2000]
+    range:
+    - 0
+    - 2000
   horeca_stock:
     label: Restaurants and bars in use
     plain: How many bars, cafés and restaurants are trading.
@@ -1133,7 +1350,9 @@ metrics:
     section: work
     direction: 1
     lag: coincident
-    range: [0, 20000]
+    range:
+    - 0
+    - 20000
   vut_licensed:
     label: Licensed tourist dwellings
     plain: How many homes hold a licence to operate as a tourist let.
@@ -1144,7 +1363,9 @@ metrics:
     section: str
     direction: 1
     lag: coincident
-    range: [0, 20000]
+    range:
+    - 0
+    - 20000
   licences_granted:
     label: Urban planning licences granted
     plain: How many urban planning licences the city granted for construction or renovation.
@@ -1155,16 +1376,18 @@ metrics:
     section: supply
     direction: 1
     lag: leading
-    range: [0, 5000]
-    note: >
-      Recent months are withheld until the council's registration catches up.
-      Trailing months below ~40% of the preceding 12-month median are dropped
-      to prevent false collapses from appearing in the data due to registration lag.
+    range:
+    - 0
+    - 5000
+    note: 'Recent months are withheld until the council''s registration catches up.
+      Trailing months below ~40% of the preceding 12-month median are dropped to prevent
+      false collapses from appearing in the data due to registration lag.
 
-  # --------------------------------- OpenStreetMap POI historical density
+      '
   osm_food_count:
     label: OpenStreetMap food POI count
-    plain: How many restaurants, cafés, bars and fast-food outlets are mapped in OpenStreetMap within this district's boundary.
+    plain: How many restaurants, cafés, bars and fast-food outlets are mapped in OpenStreetMap
+      within this district's boundary.
     unit: count
     cadence: monthly
     geo_level: district
@@ -1172,16 +1395,20 @@ metrics:
     section: supply
     direction: 1
     lag: lagging
-    range: [0, 5000]
-    note: >
-      Raw OSM counts are mapping-effort-contaminated before ~2019 — the 2014–2018 rise
-      reflects volunteer mapper activity adding retroactive data, not commercial growth.
-      The ratio (osm_food_share) is the published metric; this raw count is available
-      for research and audit. Drawn from district bounding boxes; osm_food_share is
-      the normalized comparison metric.
+    range:
+    - 0
+    - 5000
+    note: 'Raw OSM counts are mapping-effort-contaminated before ~2019 — the 2014–2018
+      rise reflects volunteer mapper activity adding retroactive data, not commercial
+      growth. The ratio (osm_food_share) is the published metric; this raw count is
+      available for research and audit. Drawn from district bounding boxes; osm_food_share
+      is the normalized comparison metric.
+
+      '
   osm_food_share:
     label: OpenStreetMap food POI share
-    plain: What share of all mapped POI in this district are food-related amenities (restaurants, cafés, bars, fast food).
+    plain: What share of all mapped POI in this district are food-related amenities
+      (restaurants, cafés, bars, fast food).
     unit: percent
     cadence: monthly
     geo_level: district
@@ -1189,16 +1416,20 @@ metrics:
     section: supply
     direction: 1
     lag: lagging
-    range: [0, 100]
-    note: >
-      Food POI count divided by total POI count (all nodes with any amenity tag).
-      Normalization by total POI absorbs mapping-effort variation: a mapper surge adds
-      to both numerator and denominator, leaving the ratio level. This exposes genuine
-      shifts in commercial mix (e.g. Centro has higher food share than Villaverde).
+    range:
+    - 0
+    - 100
+    note: 'Food POI count divided by total POI count (all nodes with any amenity tag).
+      Normalization by total POI absorbs mapping-effort variation: a mapper surge
+      adds to both numerator and denominator, leaving the ratio level. This exposes
+      genuine shifts in commercial mix (e.g. Centro has higher food share than Villaverde).
       Monthly data from 2019-01 onward; earlier data is less trustworthy.
+
+      '
   osm_tourist_retail:
     label: Souvenir retail concentration
-    plain: Souvenir shops per 100 pharmacies — a ratio that reveals touristification rather than size.
+    plain: Souvenir shops per 100 pharmacies — a ratio that reveals touristification
+      rather than size.
     unit: index
     cadence: monthly
     geo_level: district
@@ -1206,18 +1437,23 @@ metrics:
     section: tourism
     direction: 1
     lag: coincident
-    range: [0, 500]
-    note: >
-      Numerator: shop=gift (souvenir and gift shops). Denominator: amenity=pharmacy.
+    range:
+    - 0
+    - 500
+    note: 'Numerator: shop=gift (souvenir and gift shops). Denominator: amenity=pharmacy.
       Spanish pharmacies are licence-capped by law (minimum distance rules, population-based
-      allocation), so their count is pinned to legally-recognised residential population and
-      controlled by the same volunteer mapper pool. This makes pharmacy count an unusually
-      stable denominator that absorbs mapping-effort variation. Rising ratio indicates a
-      neighbourhood is shifting from residential to tourist-serving retail. Discriminates
-      between Central Madrid (high touristification) and outer residential districts.
+      allocation), so their count is pinned to legally-recognised residential population
+      and controlled by the same volunteer mapper pool. This makes pharmacy count
+      an unusually stable denominator that absorbs mapping-effort variation. Rising
+      ratio indicates a neighbourhood is shifting from residential to tourist-serving
+      retail. Discriminates between Central Madrid (high touristification) and outer
+      residential districts.
+
+      '
   osm_cafe_bar_ratio:
     label: Café-to-bar mix
-    plain: How many cafés there are for every hundred bars and pubs — the balance between daytime and evening hospitality.
+    plain: How many cafés there are for every hundred bars and pubs — the balance
+      between daytime and evening hospitality.
     unit: index
     cadence: monthly
     geo_level: district
@@ -1225,21 +1461,22 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 400]
-    note: >
-      Published as a description of hospitality mix, NOT as a gentrification or
-      affluence measure. An early bounding-box test suggested it tracked
-      affluence (Salamanca high, Vallecas low), but measured on real district
-      polygons that ordering does not hold: Salamanca does lead at 84 per 100,
-      yet Villaverde reaches 60 and Puente de Vallecas 54, both above Centro at
-      49 and Chamberí at 49. The bounding boxes had bled across district edges.
-      What the series honestly measures is the café-versus-bar balance; what it
-      does not measure is wealth.
+    range:
+    - 0
+    - 400
+    note: 'Published as a description of hospitality mix, NOT as a gentrification
+      or affluence measure. An early bounding-box test suggested it tracked affluence
+      (Salamanca high, Vallecas low), but measured on real district polygons that
+      ordering does not hold: Salamanca does lead at 84 per 100, yet Villaverde reaches
+      60 and Puente de Vallecas 54, both above Centro at 49 and Chamberí at 49. The
+      bounding boxes had bled across district edges. What the series honestly measures
+      is the café-versus-bar balance; what it does not measure is wealth.
 
-  # ------ Wikipedia language demand matrix (origin-market attention proxy)
+      '
   wiki_lang_views_en:
     label: Madrid views on English Wikipedia
-    plain: How many people reading in English looked at this city's Wikipedia article, as a share of total English Wikipedia traffic.
+    plain: How many people reading in English looked at this city's Wikipedia article,
+      as a share of total English Wikipedia traffic.
     unit: per_million
     cadence: monthly
     geo_level: municipality
@@ -1247,7 +1484,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_de:
     label: Madrid views on German Wikipedia
     plain: German-language demand for information about this city.
@@ -1258,7 +1497,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_fr:
     label: Madrid views on French Wikipedia
     plain: French-language demand for information about this city.
@@ -1269,7 +1510,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_it:
     label: Madrid views on Italian Wikipedia
     plain: Italian-language demand for information about this city.
@@ -1280,7 +1523,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_pt:
     label: Madrid views on Portuguese Wikipedia
     plain: Portuguese-language demand for information about this city.
@@ -1291,7 +1536,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_nl:
     label: Madrid views on Dutch Wikipedia
     plain: Dutch-language demand for information about this city.
@@ -1302,7 +1549,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_pl:
     label: Madrid views on Polish Wikipedia
     plain: Polish-language demand for information about this city.
@@ -1313,7 +1562,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_sv:
     label: Madrid views on Swedish Wikipedia
     plain: Swedish-language demand for information about this city.
@@ -1324,7 +1575,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_da:
     label: Madrid views on Danish Wikipedia
     plain: Danish-language demand for information about this city.
@@ -1335,7 +1588,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_ru:
     label: Madrid views on Russian Wikipedia
     plain: Russian-language demand for information about this city.
@@ -1346,7 +1601,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_ja:
     label: Madrid views on Japanese Wikipedia
     plain: Japanese-language demand for information about this city.
@@ -1357,7 +1614,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_zh:
     label: Madrid views on Chinese Wikipedia
     plain: Chinese-language demand for information about this city.
@@ -1368,7 +1627,9 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_lang_views_ar:
     label: Madrid views on Arabic Wikipedia
     plain: Arabic-language demand for information about this city.
@@ -1379,10 +1640,13 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 50000]
+    range:
+    - 0
+    - 50000
   wiki_foreign_interest:
     label: Foreign interest ratio
-    plain: Non-Spanish-language Wikipedia views about this city, divided by Spanish-language views — a rising ratio means the world is paying more attention than Spain itself.
+    plain: Non-Spanish-language Wikipedia views about this city, divided by Spanish-language
+      views — a rising ratio means the world is paying more attention than Spain itself.
     unit: percent
     cadence: monthly
     geo_level: municipality
@@ -1390,17 +1654,20 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 1000]
-    note: >
-      Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia views) × 100.
-      A rising ratio signals rising foreign interest; the absolute value is harder to interpret
-      because it depends on platform-wide usage patterns. Used to track whether a city's interest
-      is shifting toward or away from foreign origin markets (relocation, tourism, investment).
+    range:
+    - 0
+    - 1000
+    note: 'Computed as (sum of non-Spanish language edition views) ÷ (Spanish Wikipedia
+      views) × 100. A rising ratio signals rising foreign interest; the absolute value
+      is harder to interpret because it depends on platform-wide usage patterns. Used
+      to track whether a city''s interest is shifting toward or away from foreign
+      origin markets (relocation, tourism, investment).
 
-  # --------- Wikipedia article-to-article navigation (revealed intent)
+      '
   wiki_intent_clicks:
     label: Clicks to relocation and housing articles
-    plain: How many times readers clicked from this city's Wikipedia article to articles about cost of living, housing, visas, or relocation to Spain.
+    plain: How many times readers clicked from this city's Wikipedia article to articles
+      about cost of living, housing, visas, or relocation to Spain.
     unit: clicks
     cadence: monthly
     geo_level: municipality
@@ -1408,11 +1675,485 @@ metrics:
     section: attention
     direction: 1
     lag: leading
-    range: [0, 100000]
-    note: >
-      Extracted from Wikimedia's aggregated clickstream dumps (monthly, 12 months trailing).
-      Counts clicks FROM city articles TO housing/relocation intent articles (cost of living,
-      real estate, visas, immigration, etc.). Reveals intent more directly than pageviews alone.
-      Published only when dumps are available and parseable. Metric is optional; not all months
-      may have data if the source is disabled or dumps are unavailable.
+    range:
+    - 0
+    - 100000
+    note: 'Extracted from Wikimedia''s aggregated clickstream dumps (monthly, 12 months
+      trailing). Counts clicks FROM city articles TO housing/relocation intent articles
+      (cost of living, real estate, visas, immigration, etc.). Reveals intent more
+      directly than pageviews alone. Published only when dumps are available and parseable.
+      Metric is optional; not all months may have data if the source is disabled or
+      dumps are unavailable.
 
+      '
+  macro_gdp:
+    label: Real GDP
+    plain: Quarter-on-quarter real GDP growth; seasonally and calendar adjusted.
+    unit: percent
+    cadence: quarterly
+    geo_level: nation
+    source_id: eurostat_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -50
+    - 50
+  macro_unemployment:
+    label: Unemployment
+    plain: Share of the labour force unemployed; seasonally adjusted.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: eurostat_macro
+    section: economy
+    direction: -1
+    lag: coincident
+    range:
+    - 0
+    - 100
+  macro_inflation:
+    label: Consumer prices
+    plain: All-items HICP, annual rate of change; ECOICOP 2.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: eurostat_macro
+    section: economy
+    direction: -1
+    lag: coincident
+    range:
+    - -20
+    - 100
+  macro_industry:
+    label: Industrial production
+    plain: Production excluding construction; seasonally and calendar adjusted, 2021=100.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: eurostat_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 400
+  macro_retail:
+    label: Retail sales
+    plain: Retail trade volume, excluding motor vehicles; seasonally and calendar
+      adjusted, 2021=100.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: eurostat_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 400
+  macro_sentiment:
+    label: Economic sentiment
+    plain: DG ECFIN survey composite; long-run average=100. Expectations, not realised
+      output.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: eurostat_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 200
+  macro_house_prices:
+    label: House prices
+    plain: Annual change in transacted prices of new and existing dwellings; unadjusted.
+    unit: percent
+    cadence: quarterly
+    geo_level: nation
+    source_id: eurostat_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -50
+    - 100
+  macro_employment:
+    label: Employment
+    plain: Persons employed, domestic concept; quarter-on-quarter change, seasonally
+      and calendar adjusted.
+    unit: percent
+    cadence: quarterly
+    geo_level: nation
+    source_id: eurostat_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -50
+    - 50
+  wb_population:
+    label: Population
+    plain: Total population; annual World Bank estimate.
+    unit: persons
+    cadence: annual
+    geo_level: nation
+    source_id: worldbank
+    section: economy
+    direction: 1
+    lag: lagging
+    range:
+    - 0
+    - 10000000000.0
+  wb_gdp_per_capita:
+    label: GDP per person · PPP
+    plain: Constant 2021 international dollars per person, adjusted for purchasing
+      power.
+    unit: international_dollars
+    cadence: annual
+    geo_level: nation
+    source_id: worldbank
+    section: economy
+    direction: 1
+    lag: lagging
+    range:
+    - 0
+    - 1000000.0
+  wb_trade:
+    label: Trade openness
+    plain: Exports plus imports of goods and services as a share of GDP; annual.
+    unit: percent
+    cadence: annual
+    geo_level: nation
+    source_id: worldbank
+    section: economy
+    direction: 1
+    lag: lagging
+    range:
+    - 0
+    - 1000
+  electricity_demand:
+    label: Electricity load · daily
+    plain: National electricity consumption in MWh, including data centres. Unadjusted
+      for weather, electrification, efficiency and sector composition.
+    unit: mwh
+    cadence: daily
+    geo_level: nation
+    source_id: ree
+    range:
+    - 0
+    - 2000000
+    section: alternative
+    direction: 1
+    lag: coincident
+  electricity_large_users:
+    label: Large-user power demand
+    plain: Publisher-corrected electricity index for mainland Spanish businesses with
+      contracted power above 450 kW. 2021=100.
+    unit: index
+    cadence: monthly
+    geo_level: electricity_system
+    source_id: ree
+    range:
+    - 0
+    - 400
+    section: alternative
+    direction: 1
+    lag: coincident
+  hiring_total:
+    label: Hiring intentions
+    plain: Seasonally adjusted total job postings, seven-day average. February 2020=100.
+    unit: index
+    cadence: daily
+    geo_level: nation
+    source_id: indeed_daily
+    range:
+    - 0
+    - 2000
+    section: alternative
+    direction: 1
+    lag: coincident
+  hiring_new:
+    label: New job postings
+    plain: Seasonally adjusted new job postings, seven-day average. February 2020=100.
+    unit: index
+    cadence: daily
+    geo_level: nation
+    source_id: indeed_daily
+    range:
+    - 0
+    - 2000
+    section: alternative
+    direction: 1
+    lag: coincident
+  wb_gdp_growth:
+    label: Real GDP growth · annual
+    plain: Annual real GDP growth from World Bank WDI; historical benchmark, not a
+      current-quarter estimate.
+    unit: percent
+    cadence: annual
+    geo_level: nation
+    source_id: worldbank
+    section: economy
+    direction: 1
+    lag: lagging
+    range:
+    - -100
+    - 300
+  wb_inflation:
+    label: Consumer inflation · annual
+    plain: Annual consumer-price inflation from World Bank WDI. Different definition
+      and frequency from monthly Eurostat HICP.
+    unit: percent
+    cadence: annual
+    geo_level: nation
+    source_id: worldbank
+    section: economy
+    direction: 1
+    lag: lagging
+    range:
+    - -100
+    - 10000
+  wb_unemployment:
+    label: Unemployment · annual
+    plain: Annual ILO-modelled unemployment rate. Annual context, not a monthly labour-market
+      reading.
+    unit: percent
+    cadence: annual
+    geo_level: nation
+    source_id: worldbank
+    section: economy
+    direction: 1
+    lag: lagging
+    range:
+    - 0
+    - 100
+  power_demand:
+    label: Electricity load · monthly
+    plain: Aggregate electricity consumption, including data centres. Weather, electrification,
+      efficiency and sector composition are not controlled. Energy demand exposure.
+    unit: twh
+    cadence: monthly
+    geo_level: nation
+    source_id: ember
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 10000
+  power_fossil_share:
+    label: Fossil power exposure
+    plain: Share of electricity generated from fossil fuels. Exposure to fuel costs
+      and energy transitions; not a direct measure of GDP.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: ember
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 100
+  power_carbon_intensity:
+    label: Power carbon intensity
+    plain: Emissions per unit of electricity generated. A lens on industrial carbon
+      exposure and changes in the generation mix.
+    unit: gco2_kwh
+    cadence: monthly
+    geo_level: nation
+    source_id: ember
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 2000
+  power_price:
+    label: Wholesale power price
+    plain: Monthly day-ahead electricity price in euros per MWh, where reported by
+      Ember. Not an end-user tariff.
+    unit: eur_mwh
+    cadence: monthly
+    geo_level: nation
+    source_id: ember
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - -1000
+    - 3000
+  shipping_imports:
+    label: Seaborne imports
+    plain: Monthly AIS-estimated seaborne imports at covered ports. Sum of five vessel
+      categories in IMF PortWatch. Includes transshipment; not official customs trade.
+      Not seasonally adjusted.
+    unit: tonnes
+    cadence: monthly
+    geo_level: nation
+    source_id: portwatch
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 10000000000
+  shipping_exports:
+    label: Seaborne exports
+    plain: Monthly AIS-estimated seaborne exports at covered ports. Sum of five vessel
+      categories in IMF PortWatch. Includes transshipment; not official customs trade.
+      Not seasonally adjusted.
+    unit: tonnes
+    cadence: monthly
+    geo_level: nation
+    source_id: portwatch
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 10000000000
+  shipping_calls:
+    label: Port traffic
+    plain: Monthly AIS-estimated port traffic at covered ports. Sum of five vessel
+      categories in IMF PortWatch. Includes transshipment; not official customs trade.
+      Not seasonally adjusted.
+    unit: calls
+    cadence: monthly
+    geo_level: nation
+    source_id: portwatch
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 10000000000
+  oecd_cli:
+    label: Composite leading indicator
+    plain: OECD amplitude-adjusted composite leading indicator. Long-run trend=100;
+      harmonised methodology. Tracks cyclical turning points relative to trend.
+    unit: index
+    cadence: monthly
+    geo_level: nation
+    source_id: oecd_cli
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 300
+  bis_cpi:
+    label: Consumer prices
+    plain: BIS national consumer-price inflation, annual percentage change. National
+      CPI definitions; monthly observations.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: bis_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -100
+    - 100000
+  bis_policy_rate:
+    label: Policy rate
+    plain: BIS central-bank policy rate, end of month. Instrument definitions vary
+      by monetary authority.
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: bis_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -20
+    - 1000
+  bis_euro_policy_rate:
+    label: ECB policy rate
+    plain: BIS policy-rate series for the euro area, end of month. Shared monetary
+      policy; see BIS instrument definitions.
+    unit: percent
+    cadence: monthly
+    geo_level: euro_area
+    source_id: bis_macro
+    section: economy
+    direction: 1
+    lag: coincident
+    range:
+    - -20
+    - 1000
+  geopolitical_risk:
+    label: Geopolitical news exposure
+    plain: 'Country-specific geopolitical risk: share of newspaper articles mentioning
+      geopolitical risk and the country or major cities. US newspaper perspective.
+      Caldara and Iacoviello.'
+    unit: percent
+    cadence: monthly
+    geo_level: nation
+    source_id: gpr
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 100
+  shipping_container_imports:
+    label: Container imports
+    plain: Monthly AIS-estimated container-vessel imports at covered ports, in tonnes.
+      Includes transshipment. Cargo classified by vessel type; not seasonally adjusted.
+    unit: tonnes
+    cadence: monthly
+    geo_level: nation
+    source_id: portwatch
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 10000000000
+  shipping_container_exports:
+    label: Container exports
+    plain: Monthly AIS-estimated container-vessel exports at covered ports, in tonnes.
+      Includes transshipment. Cargo classified by vessel type; not seasonally adjusted.
+    unit: tonnes
+    cadence: monthly
+    geo_level: nation
+    source_id: portwatch
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 10000000000
+  shipping_tanker_imports:
+    label: Tanker imports
+    plain: Monthly AIS-estimated tanker-vessel imports at covered ports, in tonnes.
+      Includes transshipment. Cargo classified by vessel type; not seasonally adjusted.
+    unit: tonnes
+    cadence: monthly
+    geo_level: nation
+    source_id: portwatch
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 10000000000
+  shipping_tanker_exports:
+    label: Tanker exports
+    plain: Monthly AIS-estimated tanker-vessel exports at covered ports, in tonnes.
+      Includes transshipment. Cargo classified by vessel type; not seasonally adjusted.
+    unit: tonnes
+    cadence: monthly
+    geo_level: nation
+    source_id: portwatch
+    section: alternative
+    direction: 1
+    lag: coincident
+    range:
+    - 0
+    - 10000000000

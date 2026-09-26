@@ -51,6 +51,7 @@ class EurostatAdapter(BaseAdapter):
         formats=("json",),
         kind="official",
         redistribute=True,
+        revisions_allowed=True,
         min_rows=1,
         notes=(
             "Monthly housing-cost indicators for Spain: actual rents (COICOP CP041) "
@@ -63,7 +64,7 @@ class EurostatAdapter(BaseAdapter):
         def plan(dataset: str, coicop: str, metric_id: str, label: str) -> FetchPlan:
             url = (
                 f"{BASE_API}/{dataset}"
-                f"?format=JSON&lang=EN&geo=ES&coicop={coicop}&unit=I15&sinceTimePeriod=2015-01"
+                f"?format=JSON&lang=EN&geo=ES&coicop18={coicop}&unit=I15&sinceTimePeriod=2015-01"
             )
             return FetchPlan(
                 url=url,
@@ -74,8 +75,8 @@ class EurostatAdapter(BaseAdapter):
             )
 
         return [
-            plan("prc_hicp_midx", "CP041", "hicp_rents", "HICP rents (CP041)"),
-            plan("prc_hicp_midx", "CP043", "hicp_maintenance", "HICP maintenance (CP043)"),
+            plan("prc_hicp_minr", "CP041", "hicp_rents", "HICP rents (CP041, ECOICOP 2)"),
+            plan("prc_hicp_minr", "CP043", "hicp_maintenance", "HICP maintenance (CP043, ECOICOP 2)"),
         ]
 
     def parse(self, payload: RawPayload, ctx: RunContext) -> pd.DataFrame:

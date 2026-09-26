@@ -1,9 +1,11 @@
-import {readFileSync} from "node:fs";
+import { readFileSync } from "node:fs";
 
 // City routes come from the same registry the pipeline uses, so a city added in
 // config/cities.yml appears on the site without touching this file.
 const cityBlock = readFileSync("./config/cities.yml", "utf-8");
-const cities = [...cityBlock.matchAll(/^\s*-\s*slug:\s*(\S+)\s*$/gm)].map((m) => m[1]);
+const cities = [...cityBlock.matchAll(/^\s*-\s*slug:\s*(\S+)\s*$/gm)].map(
+  (m) => m[1],
+);
 
 export default {
   title: "CitySignal",
@@ -14,29 +16,33 @@ export default {
   base: process.env.CI ? "/citysignal/" : "/",
   dynamicPaths: cities.map((slug) => `/cities/${slug}`),
   head: `<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="What is changing in housing demand, economic stress, tourism and supply across eight Spanish cities — with auditable sources, exact geographies and visible data freshness.">
+<meta name="description" content="Country economic intelligence and alternative signals across major global markets. Explore official benchmarks, hiring, shipping, electricity demand and energy exposure, and Spanish local markets.">
 <meta name="color-scheme" content="dark light">`,
   style: "styles.css",
   pages: [
-    {name: "The desk", path: "/"},
-    {name: "Today", path: "/today"},
-    {name: "Compare", path: "/compare"},
+    { name: "Market monitor", path: "/" },
+    { name: "Research", path: "/research" },
+    { name: "Data catalog", path: "/data-room" },
+    { name: "Data quality", path: "/sources" },
     {
-      name: "Cities",
-      pages: cities.map((slug) => ({
-        name: slug[0].toUpperCase() + slug.slice(1),
-        path: `/cities/${slug}`
-      }))
+      name: "Regional research",
+      open: false,
+      pages: [
+        { name: "Spain overview", path: "/today" },
+        { name: "City comparison", path: "/compare" },
+        ...cities.map((slug) => ({
+          name: slug[0].toUpperCase() + slug.slice(1),
+          path: `/cities/${slug}`,
+        })),
+        { name: "Forecasts", path: "/forecast" },
+        { name: "Track record", path: "/track-record" },
+        { name: "Madrid districts", path: "/madrid-map" },
+        { name: "Local signals", path: "/signals" },
+        { name: "Methodology", path: "/methodology" },
+      ],
     },
-    {name: "Forecast", path: "/forecast"},
-    {name: "Track record", path: "/track-record"},
-    {name: "Madrid districts", path: "/madrid-map"},
-    {name: "Signals", path: "/signals"},
-    {name: "Sources", path: "/sources"},
-    {name: "Method", path: "/methodology"}
   ],
   footer: () =>
-    `Built from official statistics. Every figure carries its source, its geographic scope and its observation date. ` +
-    `<a href="https://github.com/adityabandi/citysignal">Source and data on GitHub</a>.`,
-  search: true
+    `<a href="https://github.com/adityabandi/citysignal">CitySignal · source & documentation</a>`,
+  search: true,
 };

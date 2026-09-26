@@ -13,6 +13,8 @@ const city = all[observable.params.city];
 const hue = cityColor(city.slug);
 ```
 
+<nav class="ec-breadcrumb" aria-label="Breadcrumb"><a href="../">Countries</a><span>/</span><a href="../">Spain</a><span>/</span><span>${city.name}</span></nav>
+
 <span class="cs-kicker">${city.province} · ${city.ccaa}</span>
 
 # ${city.name}

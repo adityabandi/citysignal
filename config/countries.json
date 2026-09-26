@@ -1,0 +1,142 @@
+{
+  "au": {
+    "name": "Australia",
+    "iso3": "AUS",
+    "region": "Asia Pacific"
+  },
+  "br": {
+    "name": "Brazil",
+    "iso3": "BRA",
+    "region": "Americas"
+  },
+  "ca": {
+    "name": "Canada",
+    "iso3": "CAN",
+    "region": "Americas"
+  },
+  "cn": {
+    "name": "China",
+    "iso3": "CHN",
+    "region": "Asia Pacific"
+  },
+  "fr": {
+    "name": "France",
+    "iso3": "FRA",
+    "region": "Europe"
+  },
+  "de": {
+    "name": "Germany",
+    "iso3": "DEU",
+    "region": "Europe"
+  },
+  "in": {
+    "name": "India",
+    "iso3": "IND",
+    "region": "Asia Pacific"
+  },
+  "id": {
+    "name": "Indonesia",
+    "iso3": "IDN",
+    "region": "Asia Pacific"
+  },
+  "ie": {
+    "name": "Ireland",
+    "iso3": "IRL",
+    "region": "Europe"
+  },
+  "it": {
+    "name": "Italy",
+    "iso3": "ITA",
+    "region": "Europe"
+  },
+  "jp": {
+    "name": "Japan",
+    "iso3": "JPN",
+    "region": "Asia Pacific"
+  },
+  "mx": {
+    "name": "Mexico",
+    "iso3": "MEX",
+    "region": "Americas"
+  },
+  "nl": {
+    "name": "Netherlands",
+    "iso3": "NLD",
+    "region": "Europe"
+  },
+  "no": {
+    "name": "Norway",
+    "iso3": "NOR",
+    "region": "Europe"
+  },
+  "pl": {
+    "name": "Poland",
+    "iso3": "POL",
+    "region": "Europe"
+  },
+  "pt": {
+    "name": "Portugal",
+    "iso3": "PRT",
+    "region": "Europe"
+  },
+  "ru": {
+    "name": "Russia",
+    "iso3": "RUS",
+    "region": "Europe"
+  },
+  "sa": {
+    "name": "Saudi Arabia",
+    "iso3": "SAU",
+    "region": "Middle East & Africa"
+  },
+  "sg": {
+    "name": "Singapore",
+    "iso3": "SGP",
+    "region": "Asia Pacific"
+  },
+  "za": {
+    "name": "South Africa",
+    "iso3": "ZAF",
+    "region": "Middle East & Africa"
+  },
+  "kr": {
+    "name": "South Korea",
+    "iso3": "KOR",
+    "region": "Asia Pacific"
+  },
+  "es": {
+    "name": "Spain",
+    "iso3": "ESP",
+    "region": "Europe"
+  },
+  "se": {
+    "name": "Sweden",
+    "iso3": "SWE",
+    "region": "Europe"
+  },
+  "ch": {
+    "name": "Switzerland",
+    "iso3": "CHE",
+    "region": "Europe"
+  },
+  "tr": {
+    "name": "Türkiye",
+    "iso3": "TUR",
+    "region": "Europe"
+  },
+  "ae": {
+    "name": "United Arab Emirates",
+    "iso3": "ARE",
+    "region": "Middle East & Africa"
+  },
+  "gb": {
+    "name": "United Kingdom",
+    "iso3": "GBR",
+    "region": "Europe"
+  },
+  "us": {
+    "name": "United States",
+    "iso3": "USA",
+    "region": "Americas"
+  }
+}

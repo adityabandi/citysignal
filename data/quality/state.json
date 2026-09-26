@@ -1945,6 +1945,181 @@
   "last_modified": null,
   "sha256": "906b644c5404684ad778676af453a736df73ebc1007368ae71c703e9c52b4439"
  },
+ "https://api.worldbank.org/v2/country/es;pt;fr;de;it;nl/indicator/NE.TRD.GNFS.ZS?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 13686,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:31+00:00",
+  "last_modified": "Sat, 26 Sep 2026 09:46:31 GMT",
+  "sha256": "45f0e18a7fc55fd1154486dd1deda6704c71a1e5dd24ed234229ebf50d823469"
+ },
+ "https://api.worldbank.org/v2/country/es;pt;fr;de;it;nl/indicator/NY.GDP.PCAP.PP.KD?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 16193,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:31+00:00",
+  "last_modified": "Sat, 26 Sep 2026 09:46:31 GMT",
+  "sha256": "911cad0f3fb92590231c2bb2d0f1f7cf67bde0150cc8fbb63f7100814b274496"
+ },
+ "https://api.worldbank.org/v2/country/es;pt;fr;de;it;nl/indicator/SP.POP.TOTL?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 13030,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:10+00:00",
+  "last_modified": "Sat, 26 Sep 2026 09:45:42 GMT",
+  "sha256": "bf20f00636d67b44ea810ec784152064732320501fc8e2f2eebd80b4806f501b"
+ },
+ "https://api.worldbank.org/v2/country/es;pt;us;cn;in;jp;de;gb;fr;it;ca;au;br;mx;kr;id;sa;tr;za;ru;nl;ch;se;no;pl;sg;ae;ie/indicator/FP.CPI.TOTL.ZG?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 70608,
+  "etag": null,
+  "last_checked": "2026-09-26T11:30:58+00:00",
+  "last_modified": "Sat, 26 Sep 2026 11:30:58 GMT",
+  "sha256": "a0cb17c52d089f5b2be597f12f36edb4bf3c9dcc29b267023faa6d0154965a50"
+ },
+ "https://api.worldbank.org/v2/country/es;pt;us;cn;in;jp;de;gb;fr;it;ca;au;br;mx;kr;id;sa;tr;za;ru;nl;ch;se;no;pl;sg;ae;ie/indicator/NE.TRD.GNFS.ZS?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 63992,
+  "etag": null,
+  "last_checked": "2026-09-26T11:31:00+00:00",
+  "last_modified": "Sat, 26 Sep 2026 11:31:00 GMT",
+  "sha256": "35ec9271e55983c982d167783d63c2854bb5f8e9ae0eccbae7370f77dcf26c7f"
+ },
+ "https://api.worldbank.org/v2/country/es;pt;us;cn;in;jp;de;gb;fr;it;ca;au;br;mx;kr;id;sa;tr;za;ru;nl;ch;se;no;pl;sg;ae;ie/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 66567,
+  "etag": null,
+  "last_checked": "2026-09-26T11:30:57+00:00",
+  "last_modified": "Sat, 26 Sep 2026 11:30:32 GMT",
+  "sha256": "7fa4c08bd80f2ddf3b9254a06e284dcef420145fbdc11cc65b66b0d472dcf2d9"
+ },
+ "https://api.worldbank.org/v2/country/es;pt;us;cn;in;jp;de;gb;fr;it;ca;au;br;mx;kr;id;sa;tr;za;ru;nl;ch;se;no;pl;sg;ae;ie/indicator/NY.GDP.PCAP.PP.KD?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 75718,
+  "etag": null,
+  "last_checked": "2026-09-26T11:31:00+00:00",
+  "last_modified": "Sat, 26 Sep 2026 11:30:59 GMT",
+  "sha256": "de939920880c41b00418d6844b986a623a10073c89ab362e5e6251f4bb74e6a5"
+ },
+ "https://api.worldbank.org/v2/country/es;pt;us;cn;in;jp;de;gb;fr;it;ca;au;br;mx;kr;id;sa;tr;za;ru;nl;ch;se;no;pl;sg;ae;ie/indicator/SL.UEM.TOTL.ZS?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 76370,
+  "etag": null,
+  "last_checked": "2026-09-26T11:30:59+00:00",
+  "last_modified": "Sat, 26 Sep 2026 11:30:59 GMT",
+  "sha256": "c15c2adebeb5d7f36de71857dde9a797f4e9bd0833f0c22103d5bde676ef4071"
+ },
+ "https://api.worldbank.org/v2/country/es;pt;us;cn;in;jp;de;gb;fr;it;ca;au;br;mx;kr;id;sa;tr;za;ru;nl;ch;se;no;pl;sg;ae;ie/indicator/SP.POP.TOTL?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 61059,
+  "etag": null,
+  "last_checked": "2026-09-26T11:30:59+00:00",
+  "last_modified": "Sat, 26 Sep 2026 11:30:59 GMT",
+  "sha256": "428896b903dc3c6a21581de908b6210ef43735f7aab3abfe2dd6c31da6c4ab78"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2019-01-01T00:00&end_date=2019-12-31T23:59&time_trunc=day": {
+  "bytes": 30859,
+  "etag": null,
+  "last_checked": "2026-09-26T09:48:24+00:00",
+  "last_modified": null,
+  "sha256": "b98d73fb463b1cc42f854dd3a69c6f11868f2d80373355ee6c8abddc8b59e71d"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2020-01-01T00:00&end_date=2020-12-31T23:59&time_trunc=day": {
+  "bytes": 31055,
+  "etag": null,
+  "last_checked": "2026-09-26T09:48:40+00:00",
+  "last_modified": null,
+  "sha256": "6e5fad67d0394fa4c44ff80e89db05e8e81622409958fa686507010fe7cb8f19"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2021-01-01T00:00&end_date=2021-12-31T23:59&time_trunc=day": {
+  "bytes": 30836,
+  "etag": null,
+  "last_checked": "2026-09-26T09:48:55+00:00",
+  "last_modified": null,
+  "sha256": "b1e78a69443278d936ae34656cbb7b6e3940f6fb5cbc911ce1d3c0c8b149c4ea"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2022-01-01T00:00&end_date=2022-12-31T23:59&time_trunc=day": {
+  "bytes": 30797,
+  "etag": null,
+  "last_checked": "2026-09-26T09:49:09+00:00",
+  "last_modified": null,
+  "sha256": "2b082799b46f52b00b356b87eb9b6fa5866ee893dd71e431841cf3812ebb8454"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2023-01-01T00:00&end_date=2023-12-31T23:59&time_trunc=day": {
+  "bytes": 30869,
+  "etag": null,
+  "last_checked": "2026-09-26T09:49:24+00:00",
+  "last_modified": null,
+  "sha256": "9891839578731f0b5a7dd31394d9778ad3615154eda6699e633fc14236a9b634"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2024-01-01T00:00&end_date=2024-12-31T23:59&time_trunc=day": {
+  "bytes": 30982,
+  "etag": null,
+  "last_checked": "2026-09-26T09:49:42+00:00",
+  "last_modified": null,
+  "sha256": "e567ddec7d7a3e40fe2a2b9fa09d5f1e113614226c3fda3db20641955f52c949"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2025-01-01T00:00&end_date=2025-12-31T23:59&time_trunc=day": {
+  "bytes": 30890,
+  "etag": null,
+  "last_checked": "2026-09-26T09:50:01+00:00",
+  "last_modified": null,
+  "sha256": "0f72b4d28b7b09b717333de08be5c48172abae2c2facde41a5f56ca01aa7f93c"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2026-01-01T00:00&end_date=2026-09-25T23:59&time_trunc=day": {
+  "bytes": 22701,
+  "etag": null,
+  "last_checked": "2026-09-26T09:50:11+00:00",
+  "last_modified": null,
+  "sha256": "d680ace840765bfb3f5f7170b06fe0b6dffb715c6e0f8a395fc2a3b4536386d3"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2019-01-01T00:00&end_date=2019-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 5849,
+  "etag": null,
+  "last_checked": "2026-09-26T09:48:25+00:00",
+  "last_modified": null,
+  "sha256": "a69901192ce84f132a6d05d74d40751a79eb3acdfaf9fa90b2b1fc44422e02b6"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2020-01-01T00:00&end_date=2020-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 5832,
+  "etag": null,
+  "last_checked": "2026-09-26T09:48:40+00:00",
+  "last_modified": null,
+  "sha256": "c7915ee0f1aac3e818c3f446c301732fced61314966e064d2687b29a74f738eb"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2021-01-01T00:00&end_date=2021-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 5828,
+  "etag": null,
+  "last_checked": "2026-09-26T09:48:55+00:00",
+  "last_modified": null,
+  "sha256": "8756b4641343d0542c7207b93c03e64db6983a6a263fd3ecc17eb689b1994f1b"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2022-01-01T00:00&end_date=2022-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 5827,
+  "etag": null,
+  "last_checked": "2026-09-26T09:49:10+00:00",
+  "last_modified": null,
+  "sha256": "32c1e9a105c485a83004f6a901119a21dba15aed73ae1c3538af733fff8d700f"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2023-01-01T00:00&end_date=2023-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 5817,
+  "etag": null,
+  "last_checked": "2026-09-26T09:49:25+00:00",
+  "last_modified": null,
+  "sha256": "a00d143d632af26f8bd0d95f534b5c379144098dbe88d3cfd08c97994d6381b2"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2024-01-01T00:00&end_date=2024-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 5795,
+  "etag": null,
+  "last_checked": "2026-09-26T09:49:43+00:00",
+  "last_modified": null,
+  "sha256": "3f9349534b59d9d8e22c0c1934bffce3dcffa92fa3202797ac3806d928a289a8"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2025-01-01T00:00&end_date=2025-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 5811,
+  "etag": null,
+  "last_checked": "2026-09-26T09:50:01+00:00",
+  "last_modified": null,
+  "sha256": "f716f3dd3cbd94e9d43ec9938d1f3ffd2060560b20aad2613d0cf8ddb6b10648"
+ },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2026-01-01T00:00&end_date=2026-09-25T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 4371,
+  "etag": null,
+  "last_checked": "2026-09-26T09:50:12+00:00",
+  "last_modified": null,
+  "sha256": "f7f1167a50ab4ee5a1df5d732c937b4100e4e5ed282d7a54c935379e7f142d3a"
+ },
  "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP001_01.csv": {
   "bytes": 37788115,
   "etag": "0x8DEB7E15ED4225D",
@@ -2049,6 +2224,20 @@
   "last_checked": "2026-09-22T05:49:09+00:00",
   "last_modified": "Wed, 02 Sep 2026 08:00:00 GMT",
   "sha256": "c32bac2e973ccd93a2da7ec83625f39968f0b3298b464ed290f6b2ad1670f352"
+ },
+ "https://data.bis.org/static/bulk/WS_CBPOL_csv_col.zip": {
+  "bytes": 284555,
+  "etag": "W/\"4578b-1a0d88c3d05\"",
+  "last_checked": "2026-09-26T12:15:56+00:00",
+  "last_modified": "Fri, 25 Sep 2026 12:31:04 GMT",
+  "sha256": "d8fdf2fca5df3219a34e1b9bb9346549e3471d12009bdacb907334f5448f460c"
+ },
+ "https://data.bis.org/static/bulk/WS_LONG_CPI_csv_col.zip": {
+  "bytes": 462424,
+  "etag": "W/\"70e58-1a0d88cdc9a\"",
+  "last_checked": "2026-09-26T12:15:55+00:00",
+  "last_modified": "Fri, 25 Sep 2026 12:31:45 GMT",
+  "sha256": "b4d89c76c7eabccd783fde0385f5ae604790688c5736798ae2d4cec77854e6e8"
  },
  "https://data.insideairbnb.com/spain/andaluc\u00eda/malaga/2026-06-30/data/listings.csv.gz": {
   "bytes": 5439939,
@@ -2421,6 +2610,27 @@
   "last_modified": "Mon, 07 Sep 2026 10:38:08 GMT",
   "sha256": "07c8abfebfac5578c3d9461d4d4b6fa8bc50bca1f574378599416a56d730a5da"
  },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic=BS-ESI-I&s_adj=SA": {
+  "bytes": 17712,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:08+00:00",
+  "last_modified": null,
+  "sha256": "dc59c946faa8cf15a6ec19ba58dea68cc6868ecdb80bc2184186ab0d6fb18633"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA": {
+  "bytes": 7835,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:06+00:00",
+  "last_modified": null,
+  "sha256": "c7fc3af8f2cd38abc95b1867a23b7d0eaa5f00e75463fa9373e01f2613e043c9"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_pe?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&na_item=EMP_DC&unit=PCH_PRE_PER&s_adj=SCA": {
+  "bytes": 6754,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:09+00:00",
+  "last_modified": null,
+  "sha256": "596d6b794f5338ac64492f4563f02383bc0086b03c21aa67485217b35110de62"
+ },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx?format=JSON&lang=EN&geo=ES&coicop=CP041&unit=I15&sinceTimePeriod=2015-01": {
   "bytes": 9816,
   "etag": null,
@@ -2435,12 +2645,334 @@
   "last_modified": null,
   "sha256": "d6cc82a6fd34874b8f901cf10feb93a29ca0a9de425d14f61808a48bb02a7038"
  },
- "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/ES/aggregate_job_postings_ES.csv": {
-  "bytes": 199544,
-  "etag": "W/\"6ebbe29ec77aca16b421393b641a8f3770e6cac5adaa2d7cbb1cf5e38582a37f\"",
-  "last_checked": "2026-09-22T05:49:18+00:00",
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&geo=ES&coicop18=CP041&unit=I15&sinceTimePeriod=2015-01": {
+  "bytes": 10767,
+  "etag": null,
+  "last_checked": "2026-09-26T10:00:55+00:00",
   "last_modified": null,
-  "sha256": "4b8c12c212dc19c60f9df1eeb248ba7f050401667e27c9e0edb133bc699213ee"
+  "sha256": "1e60c07eb60c910ea8632ee42b086115ac39ca0ae84c1404ea3879b769196980"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&geo=ES&coicop18=CP043&unit=I15&sinceTimePeriod=2015-01": {
+  "bytes": 10787,
+  "etag": null,
+  "last_checked": "2026-09-26T10:00:55+00:00",
+  "last_modified": null,
+  "sha256": "6e1f27277078d35c3a13b0216b74c35917b54196bc8786437c5702eb761efce4"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&coicop18=TOTAL&unit=RCH_A": {
+  "bytes": 17848,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:07+00:00",
+  "last_modified": null,
+  "sha256": "2dc5856aa4ade9c593b1adc54a6a4f4aefddd3dcbdb003f5c81f17900dfffed1"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hpi_q?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&purchase=TOTAL&unit=RCH_A": {
+  "bytes": 7182,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:09+00:00",
+  "last_modified": null,
+  "sha256": "b63439e44f7b62c95562e6ae016f5ffc56340a90b9ae512480e0cebfe9eaf83f"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic_bt=PRD&nace_r2=B-D&unit=I21&s_adj=SCA": {
+  "bytes": 19595,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:07+00:00",
+  "last_modified": null,
+  "sha256": "755a84b37873ecccb3fdc4842e5a1a3b0fe5d0a84a1e3c846a0af0e0052c86a5"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_trtu_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic_bt=VOL_SLS&nace_r2=G47&unit=I21&s_adj=SCA": {
+  "bytes": 20803,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:08+00:00",
+  "last_modified": null,
+  "sha256": "e054f211d266b22c5ab87815af5643a94ff1dbc56dd448b13d0fae028f9c2605"
+ },
+ "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&age=TOTAL&sex=T&unit=PC_ACT&s_adj=SA": {
+  "bytes": 16930,
+  "etag": null,
+  "last_checked": "2026-09-26T09:46:06+00:00",
+  "last_modified": null,
+  "sha256": "55289dcec6cb297a1359d87ec629ea34dc163cd77033324912d97c253e04c0e2"
+ },
+ "https://files.ember-energy.org/public-downloads/monthly_full_release_long_format.csv": {
+  "bytes": 70337486,
+  "etag": "\"146861639c8c0a51d9115065e09bf35a\"",
+  "last_checked": "2026-09-26T11:31:12+00:00",
+  "last_modified": "Tue, 07 Jul 2026 15:44:07 GMT",
+  "sha256": "2615fea2b9b644a9703bb19e1c24be370b04131a1a9cceae71e471a298ba2246"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/AU/aggregate_job_postings_AU.csv": {
+  "bytes": 201177,
+  "etag": "W/\"2b43d9093af2e36d5e24ff2c28f0e3ea3299c0bff7f0a3ea711e0280b88fe4a4\"",
+  "last_checked": "2026-09-26T11:31:04+00:00",
+  "last_modified": null,
+  "sha256": "aa7077165887417d33280eb3b7b42c570391291d9aa63b4672194d01cd5a53a6"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/CA/aggregate_job_postings_CA.csv": {
+  "bytes": 200071,
+  "etag": "W/\"970e3cda6636881fb9920c9529c071a8ce723e8f0fcf8c516cb06afb3e202b09\"",
+  "last_checked": "2026-09-26T11:31:04+00:00",
+  "last_modified": null,
+  "sha256": "63aab90ee8ed4cb67e9aa4e9663f4f417331580c26ea37c450c57a0f8cb2c129"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/DE/aggregate_job_postings_DE.csv": {
+  "bytes": 200961,
+  "etag": "W/\"76868bc2d3a1428a4ff0bc784ac455678aacd19a652817272e02bee965bb8669\"",
+  "last_checked": "2026-09-26T11:31:01+00:00",
+  "last_modified": null,
+  "sha256": "5a832ed3b234ada34ff5f3b8a58c540be679da60d41f0cce3dcc7715f70b7ca4"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/ES/aggregate_job_postings_ES.csv": {
+  "bytes": 200132,
+  "etag": "W/\"d8e5f818efdecc336abdd5f3ffd5824cc75c7a11eee7789b146b4c7ec3099572\"",
+  "last_checked": "2026-09-26T11:31:00+00:00",
+  "last_modified": null,
+  "sha256": "d811342d07a84009afbf6c2ecb91c836559d884b436ef8a83cabed08d9719db9"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/FR/aggregate_job_postings_FR.csv": {
+  "bytes": 199973,
+  "etag": "W/\"cf6770df4f01cba63c90833ba1e75073135df54016b942225ed1386683f85750\"",
+  "last_checked": "2026-09-26T11:31:01+00:00",
+  "last_modified": null,
+  "sha256": "f2b235adc3a467323d8b47641d7225a14df14c0d841a7b24fc2c4bb33b685804"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/GB/aggregate_job_postings_GB.csv": {
+  "bytes": 197622,
+  "etag": "W/\"fd8fb3f8c53baa0d5feacedbdd2ea9ec093e2fd3ddaf26baa4c2bb044952027a\"",
+  "last_checked": "2026-09-26T11:31:03+00:00",
+  "last_modified": null,
+  "sha256": "d156155ceb4141995652972a980c8ef48785ad1adfda39f26050f7677efc66a8"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/IE/aggregate_job_postings_IE.csv": {
+  "bytes": 200246,
+  "etag": "W/\"3a24815dc60039a155169a7e232b8befaa58abc20af86a9fa9489390af9aaa9e\"",
+  "last_checked": "2026-09-26T11:31:05+00:00",
+  "last_modified": null,
+  "sha256": "d3a482216642c44383fd0f8aeb43f338c4e0eb2386ec875f7b4d9d8d35fd2d0c"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/IT/aggregate_job_postings_IT.csv": {
+  "bytes": 200611,
+  "etag": "W/\"e0123fc0ad2174388ed7ddf0d55546a24400a541a255b6a88d7295feafcb5b8e\"",
+  "last_checked": "2026-09-26T11:31:02+00:00",
+  "last_modified": null,
+  "sha256": "6c8212a1af86e3421569d7cda3b0bdcbbf3e9abd4d9594b9195d2fd06377cf05"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/NL/aggregate_job_postings_NL.csv": {
+  "bytes": 200651,
+  "etag": "W/\"6847da1991041e258165e6f03cbbf126426f17283e1ac870346f308e898c4668\"",
+  "last_checked": "2026-09-26T11:31:02+00:00",
+  "last_modified": null,
+  "sha256": "4d1a3e697f8bb9fb63909e5384b96d7782a340fc76463ff7a48a28f1586030a1"
+ },
+ "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/US/aggregate_job_postings_US.csv": {
+  "bytes": 200956,
+  "etag": "W/\"7c7ab2c57adad6617a9d625c43e1490646944146128e5465ab78ec60604cf603\"",
+  "last_checked": "2026-09-26T11:31:03+00:00",
+  "last_modified": null,
+  "sha256": "b44516338e6d291b0547fd172a20365cfd2f8cba8dc2f514779cb7b4342bcbce"
+ },
+ "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_CLI,4.1/.?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
+  "bytes": 4738220,
+  "etag": null,
+  "last_checked": "2026-09-26T12:10:12+00:00",
+  "last_modified": "2024-03-07",
+  "sha256": "fafc62fb92656b9d3bfcdbe8cb1014363fae92dae1861f6c495eab90460d094f"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ARE'": {
+  "bytes": 47625,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:24+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "c980bc6927c4d42e84f7951e46094833ec04f6b2e4e8472b25cc44e43f765b7e"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='AUS'": {
+  "bytes": 47986,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:12+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "6db2f41548cdac1833479086a268ee7fcac9d7b25f105b037026413c47b474ae"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='BRA'": {
+  "bytes": 47863,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:12+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "aecb293b5b86172c4e0d0fcc133424b0ae08b89f4c5da9bee82db790dc91640a"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='CAN'": {
+  "bytes": 47504,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:13+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "2ee1d8a05b296008c694c2e26df8a328100a25ae2225d940c9395acd3671faa3"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='CHE'": {
+  "bytes": 131,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:23+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "c53ef10d869afeee183a8d1426db6430199b6a9b74dbceb29f29b6434628f18f"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='CHN'": {
+  "bytes": 49090,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:13+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "af32b17b588e142bf7fa1a3054a610efbaefed17bf96905f0554c6bf55c68942"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='DEU'": {
+  "bytes": 47660,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:14+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "034b32bcd28a98a676a0fe3cf140bd10f53e4484f84ff0c1570970862f77b3ee"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ESP'": {
+  "bytes": 47973,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:22+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "d27dd42e38c00d09c14a1106e5510c8d35fbe0dafd2d48839232e03eaf2fa887"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='FRA'": {
+  "bytes": 47591,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:14+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "bffc1ee3037d159d27f8f2dfc07b0ac8e088ea26c73e8fc1bd4ae78b29238d1b"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='GBR'": {
+  "bytes": 47813,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:25+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "97d61263948d0b58dba68f91678a27a719e910d31e4085c9289c3503b7b24bab"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='IDN'": {
+  "bytes": 48172,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:15+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "08c9375038ff77b0c2c497e86796844fd77bbd9618d59c407ef7d20eabb46a48"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='IND'": {
+  "bytes": 47598,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:15+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "fac1108edf1c1b8480b26e60fe26f4157ba89bbe8bde283a1100ea94daded069"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='IRL'": {
+  "bytes": 46430,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:16+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "3e1bfa67774e137e2d826227ebfec8ffac9953153bd83511f3140957aa7556f2"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ITA'": {
+  "bytes": 47754,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:16+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "1d5f3c418d2db6950c417a4e43ce0fdb508fdd2a59617dbc1984f44f28cd2df0"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='JPN'": {
+  "bytes": 48677,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:17+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "2b87c87d5f899f175130fd155bb0532be9e3daff544d9c09961215a6b6c951cd"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='KOR'": {
+  "bytes": 48299,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:22+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "0fd1d9aa40c0062cf22d1732c7bc6c4da9391c249927eb59890cf217f13f90a1"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='MEX'": {
+  "bytes": 47531,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:17+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "847da2f6045eb171caa38cb28a93490b62622a7624f921f62d35e4d2264330ff"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='NLD'": {
+  "bytes": 47951,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:18+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "b9e8d649ab272cd96f5bfdbe6445fc974533010594e827541915a9b5f74bdcf3"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='NOR'": {
+  "bytes": 47441,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:18+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "5c8f8c0ab1742029c921f2112e37b0f41a29203f37fcc132d90af8a51189695a"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='POL'": {
+  "bytes": 47159,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:19+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "47e92f58546917129534cc93b38bc9a13ec9a3c7249bfea123cd74ed8db36f14"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='PRT'": {
+  "bytes": 46939,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:19+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "fac975171410782efeb5d9dc197a6b422d06a596c92b83e50c4c01c7dc24853b"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='RUS'": {
+  "bytes": 47861,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:20+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "ab2b24e43e217cfa64c32c57e50abe2fa74473ec67563a45c8d83634171cc5cc"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='SAU'": {
+  "bytes": 47457,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:20+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "6a7daac47e507ef7e09aa94d3457dcf6542c9e984ab383e063ba03f249f51498"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='SGP'": {
+  "bytes": 47988,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:21+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "d0feb4d95319bdb82e66236b0866fb2389bb452f81f56610ed6cc90e9514070b"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='SWE'": {
+  "bytes": 47260,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:23+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "4cd199e07b396853d9efa98544567fbc71b76e67c73c2ee97503944aeeb0889e"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='TUR'": {
+  "bytes": 48187,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:24+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "266c821aad04016ac78fa5e10401eac2dda0cfa54d0468d5943900a6414dcaa2"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='USA'": {
+  "bytes": 48611,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:25+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "e98b35ef4c8c65730b3fc60af436a57e26d45d501e6ecc84faa11bb7e189c404"
+ },
+ "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ZAF'": {
+  "bytes": 47270,
+  "etag": "sd2067_-2039378688",
+  "last_checked": "2026-09-26T12:10:21+00:00",
+  "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
+  "sha256": "733b165be7e8345b7904ab64e156320df249ab6bba5a1b6bc99aeffe05c8fac0"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/2078?det=2&nult=250&tip=AM": {
   "bytes": 18220317,
@@ -18121,6 +18653,13 @@
   "last_checked": "2026-09-15T05:55:51+00:00",
   "last_modified": "Fri, 10 Apr 2026 14:15:28 GMT",
   "sha256": "3a5ef84ec377d3bccfb469b1f818901490734d7c5b143e0512d7b975cc8ab833"
+ },
+ "https://www.matteoiacoviello.com/gpr_files/data_gpr_export.xls": {
+  "bytes": 2714112,
+  "etag": "\"6ab6eccf-296a00\"",
+  "last_checked": "2026-09-26T12:10:07+00:00",
+  "last_modified": "Fri, 25 Sep 2026 21:51:11 GMT",
+  "sha256": "6ff388db4aa34eb66433d4c13c9f82d88316714889a1fc9e6a8c0ce1158d5eae"
  },
  "https://www.poderjudicial.es/stfls/ESTADISTICA/FICHEROS/Crisis/Series%20-%20Efecto%20de%20la%20crisis%20en%20los%20organos%20judiciales%20por%20provincias%201T-2026_revisado.xlsx?t=202607280603": {
   "bytes": 2023872,

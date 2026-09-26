@@ -1,0 +1,705 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-26",
+  "files": [
+    {
+      "file": "economy-panel.csv",
+      "storage_file": "economy-panel.csv.gz",
+      "storage_encoding": "gzip",
+      "sha256": "9ae34a5cab902facd40dc3d1c9caa7ef3af8086f5973177b14600bf772d8fd18",
+      "bytes": 8704882
+    },
+    {
+      "file": "economy-vintages.csv",
+      "storage_file": "economy-vintages.csv.gz",
+      "storage_encoding": "gzip",
+      "sha256": "9ae34a5cab902facd40dc3d1c9caa7ef3af8086f5973177b14600bf772d8fd18",
+      "bytes": 8704882
+    }
+  ],
+  "current_observations": 98550,
+  "captured_rows": 98550,
+  "countries": {
+    "au": "Australia",
+    "br": "Brazil",
+    "ca": "Canada",
+    "cn": "China",
+    "fr": "France",
+    "de": "Germany",
+    "in": "India",
+    "id": "Indonesia",
+    "ie": "Ireland",
+    "it": "Italy",
+    "jp": "Japan",
+    "mx": "Mexico",
+    "nl": "Netherlands",
+    "no": "Norway",
+    "pl": "Poland",
+    "pt": "Portugal",
+    "ru": "Russia",
+    "sa": "Saudi Arabia",
+    "sg": "Singapore",
+    "za": "South Africa",
+    "kr": "South Korea",
+    "es": "Spain",
+    "se": "Sweden",
+    "ch": "Switzerland",
+    "tr": "Türkiye",
+    "ae": "United Arab Emirates",
+    "gb": "United Kingdom",
+    "us": "United States"
+  },
+  "metrics": {
+    "bis_cpi": {
+      "label": "Consumer prices",
+      "plain": "BIS national consumer-price inflation, annual percentage change. National CPI definitions; monthly observations.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "bis_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -100,
+        100000
+      ]
+    },
+    "bis_euro_policy_rate": {
+      "label": "ECB policy rate",
+      "plain": "BIS policy-rate series for the euro area, end of month. Shared monetary policy; see BIS instrument definitions.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "euro_area",
+      "source_id": "bis_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -20,
+        1000
+      ]
+    },
+    "bis_policy_rate": {
+      "label": "Policy rate",
+      "plain": "BIS central-bank policy rate, end of month. Instrument definitions vary by monetary authority.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "bis_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -20,
+        1000
+      ]
+    },
+    "ecb_mortgage_rate": {
+      "label": "ECB mortgage rate (Spain)",
+      "plain": "The interest rate banks are charging on new mortgages to households, sourced from the ECB's Monetary Interest Rates dataset.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "ecb",
+      "section": "credit",
+      "direction": -1,
+      "lag": "leading",
+      "range": [
+        0,
+        20
+      ]
+    },
+    "electricity_demand": {
+      "label": "Electricity load · daily",
+      "plain": "National electricity consumption in MWh, including data centres. Unadjusted for weather, electrification, efficiency and sector composition.",
+      "unit": "mwh",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "source_id": "ree",
+      "range": [
+        0,
+        2000000
+      ],
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident"
+    },
+    "electricity_large_users": {
+      "label": "Large-user power demand",
+      "plain": "Publisher-corrected electricity index for mainland Spanish businesses with contracted power above 450 kW. 2021=100.",
+      "unit": "index",
+      "cadence": "monthly",
+      "geo_level": "electricity_system",
+      "source_id": "ree",
+      "range": [
+        0,
+        400
+      ],
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident"
+    },
+    "geopolitical_risk": {
+      "label": "Geopolitical news exposure",
+      "plain": "Country-specific geopolitical risk: share of newspaper articles mentioning geopolitical risk and the country or major cities. US newspaper perspective. Caldara and Iacoviello.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "gpr",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        100
+      ]
+    },
+    "hiring_new": {
+      "label": "New job postings",
+      "plain": "Seasonally adjusted new job postings, seven-day average. February 2020=100.",
+      "unit": "index",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "source_id": "indeed_daily",
+      "range": [
+        0,
+        2000
+      ],
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident"
+    },
+    "hiring_total": {
+      "label": "Hiring intentions",
+      "plain": "Seasonally adjusted total job postings, seven-day average. February 2020=100.",
+      "unit": "index",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "source_id": "indeed_daily",
+      "range": [
+        0,
+        2000
+      ],
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident"
+    },
+    "macro_employment": {
+      "label": "Employment",
+      "plain": "Persons employed, domestic concept; quarter-on-quarter change, seasonally and calendar adjusted.",
+      "unit": "percent",
+      "cadence": "quarterly",
+      "geo_level": "nation",
+      "source_id": "eurostat_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -50,
+        50
+      ]
+    },
+    "macro_gdp": {
+      "label": "Real GDP",
+      "plain": "Quarter-on-quarter real GDP growth; seasonally and calendar adjusted.",
+      "unit": "percent",
+      "cadence": "quarterly",
+      "geo_level": "nation",
+      "source_id": "eurostat_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -50,
+        50
+      ]
+    },
+    "macro_house_prices": {
+      "label": "House prices",
+      "plain": "Annual change in transacted prices of new and existing dwellings; unadjusted.",
+      "unit": "percent",
+      "cadence": "quarterly",
+      "geo_level": "nation",
+      "source_id": "eurostat_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -50,
+        100
+      ]
+    },
+    "macro_industry": {
+      "label": "Industrial production",
+      "plain": "Production excluding construction; seasonally and calendar adjusted, 2021=100.",
+      "unit": "index",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "eurostat_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        400
+      ]
+    },
+    "macro_inflation": {
+      "label": "Consumer prices",
+      "plain": "All-items HICP, annual rate of change; ECOICOP 2.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "eurostat_macro",
+      "section": "economy",
+      "direction": -1,
+      "lag": "coincident",
+      "range": [
+        -20,
+        100
+      ]
+    },
+    "macro_retail": {
+      "label": "Retail sales",
+      "plain": "Retail trade volume, excluding motor vehicles; seasonally and calendar adjusted, 2021=100.",
+      "unit": "index",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "eurostat_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        400
+      ]
+    },
+    "macro_sentiment": {
+      "label": "Economic sentiment",
+      "plain": "DG ECFIN survey composite; long-run average=100. Expectations, not realised output.",
+      "unit": "index",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "eurostat_macro",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        200
+      ]
+    },
+    "macro_unemployment": {
+      "label": "Unemployment",
+      "plain": "Share of the labour force unemployed; seasonally adjusted.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "eurostat_macro",
+      "section": "economy",
+      "direction": -1,
+      "lag": "coincident",
+      "range": [
+        0,
+        100
+      ]
+    },
+    "oecd_cli": {
+      "label": "Composite leading indicator",
+      "plain": "OECD amplitude-adjusted composite leading indicator. Long-run trend=100; harmonised methodology. Tracks cyclical turning points relative to trend.",
+      "unit": "index",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "oecd_cli",
+      "section": "economy",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        300
+      ]
+    },
+    "power_carbon_intensity": {
+      "label": "Power carbon intensity",
+      "plain": "Emissions per unit of electricity generated. A lens on industrial carbon exposure and changes in the generation mix.",
+      "unit": "gco2_kwh",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "ember",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        2000
+      ]
+    },
+    "power_demand": {
+      "label": "Electricity load · monthly",
+      "plain": "Aggregate electricity consumption, including data centres. Weather, electrification, efficiency and sector composition are not controlled. Energy demand exposure.",
+      "unit": "twh",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "ember",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        10000
+      ]
+    },
+    "power_fossil_share": {
+      "label": "Fossil power exposure",
+      "plain": "Share of electricity generated from fossil fuels. Exposure to fuel costs and energy transitions; not a direct measure of GDP.",
+      "unit": "percent",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "ember",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        100
+      ]
+    },
+    "power_price": {
+      "label": "Wholesale power price",
+      "plain": "Monthly day-ahead electricity price in euros per MWh, where reported by Ember. Not an end-user tariff.",
+      "unit": "eur_mwh",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "ember",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        -1000,
+        3000
+      ]
+    },
+    "shipping_calls": {
+      "label": "Port traffic",
+      "plain": "Monthly AIS-estimated port traffic at covered ports. Sum of five vessel categories in IMF PortWatch. Includes transshipment; not official customs trade. Not seasonally adjusted.",
+      "unit": "calls",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "portwatch",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        10000000000
+      ]
+    },
+    "shipping_container_exports": {
+      "label": "Container exports",
+      "plain": "Monthly AIS-estimated container-vessel exports at covered ports, in tonnes. Includes transshipment. Cargo classified by vessel type; not seasonally adjusted.",
+      "unit": "tonnes",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "portwatch",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        10000000000
+      ]
+    },
+    "shipping_container_imports": {
+      "label": "Container imports",
+      "plain": "Monthly AIS-estimated container-vessel imports at covered ports, in tonnes. Includes transshipment. Cargo classified by vessel type; not seasonally adjusted.",
+      "unit": "tonnes",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "portwatch",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        10000000000
+      ]
+    },
+    "shipping_exports": {
+      "label": "Seaborne exports",
+      "plain": "Monthly AIS-estimated seaborne exports at covered ports. Sum of five vessel categories in IMF PortWatch. Includes transshipment; not official customs trade. Not seasonally adjusted.",
+      "unit": "tonnes",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "portwatch",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        10000000000
+      ]
+    },
+    "shipping_imports": {
+      "label": "Seaborne imports",
+      "plain": "Monthly AIS-estimated seaborne imports at covered ports. Sum of five vessel categories in IMF PortWatch. Includes transshipment; not official customs trade. Not seasonally adjusted.",
+      "unit": "tonnes",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "portwatch",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        10000000000
+      ]
+    },
+    "shipping_tanker_exports": {
+      "label": "Tanker exports",
+      "plain": "Monthly AIS-estimated tanker-vessel exports at covered ports, in tonnes. Includes transshipment. Cargo classified by vessel type; not seasonally adjusted.",
+      "unit": "tonnes",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "portwatch",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        10000000000
+      ]
+    },
+    "shipping_tanker_imports": {
+      "label": "Tanker imports",
+      "plain": "Monthly AIS-estimated tanker-vessel imports at covered ports, in tonnes. Includes transshipment. Cargo classified by vessel type; not seasonally adjusted.",
+      "unit": "tonnes",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "source_id": "portwatch",
+      "section": "alternative",
+      "direction": 1,
+      "lag": "coincident",
+      "range": [
+        0,
+        10000000000
+      ]
+    },
+    "wb_gdp_growth": {
+      "label": "Real GDP growth · annual",
+      "plain": "Annual real GDP growth from World Bank WDI; historical benchmark, not a current-quarter estimate.",
+      "unit": "percent",
+      "cadence": "annual",
+      "geo_level": "nation",
+      "source_id": "worldbank",
+      "section": "economy",
+      "direction": 1,
+      "lag": "lagging",
+      "range": [
+        -100,
+        300
+      ]
+    },
+    "wb_gdp_per_capita": {
+      "label": "GDP per person · PPP",
+      "plain": "Constant 2021 international dollars per person, adjusted for purchasing power.",
+      "unit": "international_dollars",
+      "cadence": "annual",
+      "geo_level": "nation",
+      "source_id": "worldbank",
+      "section": "economy",
+      "direction": 1,
+      "lag": "lagging",
+      "range": [
+        0,
+        1000000.0
+      ]
+    },
+    "wb_inflation": {
+      "label": "Consumer inflation · annual",
+      "plain": "Annual consumer-price inflation from World Bank WDI. Different definition and frequency from monthly Eurostat HICP.",
+      "unit": "percent",
+      "cadence": "annual",
+      "geo_level": "nation",
+      "source_id": "worldbank",
+      "section": "economy",
+      "direction": 1,
+      "lag": "lagging",
+      "range": [
+        -100,
+        10000
+      ]
+    },
+    "wb_population": {
+      "label": "Population",
+      "plain": "Total population; annual World Bank estimate.",
+      "unit": "persons",
+      "cadence": "annual",
+      "geo_level": "nation",
+      "source_id": "worldbank",
+      "section": "economy",
+      "direction": 1,
+      "lag": "lagging",
+      "range": [
+        0,
+        10000000000.0
+      ]
+    },
+    "wb_trade": {
+      "label": "Trade openness",
+      "plain": "Exports plus imports of goods and services as a share of GDP; annual.",
+      "unit": "percent",
+      "cadence": "annual",
+      "geo_level": "nation",
+      "source_id": "worldbank",
+      "section": "economy",
+      "direction": 1,
+      "lag": "lagging",
+      "range": [
+        0,
+        1000
+      ]
+    },
+    "wb_unemployment": {
+      "label": "Unemployment · annual",
+      "plain": "Annual ILO-modelled unemployment rate. Annual context, not a monthly labour-market reading.",
+      "unit": "percent",
+      "cadence": "annual",
+      "geo_level": "nation",
+      "source_id": "worldbank",
+      "section": "economy",
+      "direction": 1,
+      "lag": "lagging",
+      "range": [
+        0,
+        100
+      ]
+    }
+  },
+  "sources": {
+    "bis_macro": {
+      "publisher": "Bank for International Settlements",
+      "license": "BIS terms of use; attribution",
+      "attribution": "Source: BIS",
+      "docs_url": "https://data.bis.org/bulkdownload",
+      "kind": "official",
+      "cadence": "monthly",
+      "max_age_days": 100,
+      "redistribute": true
+    },
+    "ecb": {
+      "publisher": "European Central Bank",
+      "license": "ECB copyright, data available under CC BY 4.0",
+      "attribution": "Source: ECB Data Portal",
+      "docs_url": "https://www.ecb.europa.eu/stats/ecb_statistics/info/services/html/index.en.html",
+      "kind": "official",
+      "cadence": "monthly",
+      "max_age_days": 60,
+      "redistribute": true
+    },
+    "ember": {
+      "source_id": "ember",
+      "publisher": "Ember",
+      "license": "Ember data terms; CC BY 4.0",
+      "attribution": "Source: Ember, Monthly Electricity Data",
+      "docs_url": "https://ember-energy.org/data/monthly-electricity-data/",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "max_age_days": 150,
+      "kind": "research",
+      "notes": "National monthly electricity demand, fossil generation share, carbon intensity and available day-ahead prices. Source lags vary by country. Demand is not weather-adjusted; energy mix is exposure, not a growth forecast.",
+      "redistribute": true
+    },
+    "eurostat_macro": {
+      "source_id": "eurostat_macro",
+      "publisher": "Eurostat / European Commission DG ECFIN",
+      "license": "Eurostat reuse policy (attribution)",
+      "attribution": "Source: Eurostat; ESI: DG ECFIN",
+      "docs_url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-introduction",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "max_age_days": 100,
+      "redistribute": true,
+      "kind": "official",
+      "notes": "GDP, jobs, prices, industry, retail, sentiment and housing for six European countries. Quarterly series use their own freshness limits in the country dashboard."
+    },
+    "gpr": {
+      "publisher": "Caldara & Iacoviello",
+      "license": "Creative Commons Attribution; credit authors",
+      "attribution": "Source: Dario Caldara and Matteo Iacoviello, Geopolitical Risk Index",
+      "docs_url": "https://www.matteoiacoviello.com/gpr_country.htm",
+      "kind": "research",
+      "cadence": "monthly",
+      "max_age_days": 75,
+      "redistribute": true
+    },
+    "indeed_daily": {
+      "source_id": "indeed_daily",
+      "publisher": "Indeed Hiring Lab",
+      "license": "CC BY 4.0 (Hiring Lab repository); verify redistribution before commercial delivery",
+      "attribution": "Source: Indeed Hiring Lab",
+      "docs_url": "https://github.com/hiring-lab/job_postings_tracker",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "max_age_days": 21,
+      "redistribute": true,
+      "kind": "research",
+      "notes": "Daily seasonally adjusted total and new job posting indices. 1 February 2020=100; publisher uses a seven-day moving average. Platform coverage is not the whole labour market."
+    },
+    "oecd_cli": {
+      "publisher": "OECD",
+      "license": "OECD terms of use; attribution",
+      "attribution": "Source: OECD, Composite Leading Indicators",
+      "docs_url": "https://www.oecd.org/en/data/datasets/oecd-composite-leading-indicators-clis.html",
+      "kind": "official",
+      "cadence": "monthly",
+      "max_age_days": 100,
+      "redistribute": true
+    },
+    "portwatch": {
+      "source_id": "portwatch",
+      "publisher": "IMF PortWatch / UN Global Platform",
+      "license": "IMF terms of use; confirm applicable commercial redistribution rights",
+      "attribution": "Sources: UN Global Platform; IMF PortWatch (portwatch.imf.org). Country aggregates calculated by CitySignal.",
+      "docs_url": "https://portwatch.imf.org/pages/data-and-methodology",
+      "cadence": "monthly",
+      "geo_level": "nation",
+      "max_age_days": 100,
+      "kind": "research",
+      "notes": "Monthly AIS-estimated physical imports, exports and port calls. Covered ports only; includes transshipment. Not customs trade, dollar values, seasonally adjusted data or a GDP forecast.",
+      "redistribute": false
+    },
+    "ree": {
+      "source_id": "ree",
+      "publisher": "Red Eléctrica",
+      "license": "Red Eléctrica legal notice; commercial redistribution requires review",
+      "attribution": "Source: Red Eléctrica, REData",
+      "docs_url": "https://www.ree.es/en/datos/apidata",
+      "cadence": "daily",
+      "geo_level": "nation",
+      "max_age_days": 10,
+      "redistribute": true,
+      "kind": "official",
+      "notes": "National daily electricity demand (MWh) and mainland corrected large-user electricity index (>450 kW). Electricity is a proxy, affected by weather, efficiency and sector mix."
+    },
+    "worldbank": {
+      "source_id": "worldbank",
+      "publisher": "World Bank — World Development Indicators",
+      "license": "CC BY 4.0 (World Bank open data terms)",
+      "attribution": "Source: World Bank, World Development Indicators",
+      "docs_url": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+      "cadence": "annual",
+      "geo_level": "nation",
+      "max_age_days": 900,
+      "redistribute": true,
+      "kind": "official",
+      "notes": "Annual GDP growth, consumer inflation, modelled unemployment, population, PPP-adjusted real GDP per person and trade openness for 28 major markets. Historical benchmarks, excluded from the activity reading."
+    }
+  },
+  "availability_policy": "Use fetched_at as the first capture date for each revision, not as a historical publication timestamp. Missing published_at means unknown. Backfilled observations were not available to this system before their capture date. Daily capture dates do not support intraday replay.",
+  "derived_metrics": {
+    "hiring_flow_gap": "28-day new-posting growth minus total-posting growth (pp). Inputs: hiring_new, hiring_total.",
+    "trade_flow_gap": "Export tonnage y/y growth minus import tonnage y/y growth (pp), matching months. Inputs: shipping_exports, shipping_imports. These computed spreads are available in the dashboard; CSV files preserve their raw inputs."
+  },
+  "commercial_status": "Source-specific attribution and redistribution terms are recorded in the source registry."
+}

@@ -9,6 +9,7 @@ empty series.
 from __future__ import annotations
 
 import hashlib
+from copy import deepcopy
 import json
 import logging
 import time
@@ -61,6 +62,7 @@ class FetchPlan:
     encoding: str | None = None
     params: dict[str, Any] | None = None
     meta: dict[str, Any] = field(default_factory=dict)
+    headers: dict[str, str] = field(default_factory=dict)
     optional: bool = False
     """One of many interchangeable fetches. A failure is noted, not fatal.
 
@@ -71,10 +73,11 @@ class FetchPlan:
 
     @property
     def cache_key(self) -> str:
-        if not self.params:
-            return self.url
-        query = "&".join(f"{k}={v}" for k, v in sorted(self.params.items()))
-        return f"{self.url}?{query}"
+        query = "&".join(f"{k}={v}" for k, v in sorted((self.params or {}).items()))
+        key = f"{self.url}?{query}" if query else self.url
+        if self.headers:
+            key += "#headers=" + json.dumps(self.headers, sort_keys=True)
+        return key
 
 
 @dataclass(slots=True)
@@ -160,6 +163,12 @@ class StateStore:
 
     def entry(self, key: str) -> dict[str, Any]:
         return self._data.get(key, {})
+
+    def snapshot(self) -> dict[str, dict[str, Any]]:
+        return deepcopy(self._data)
+
+    def restore(self, snapshot: dict[str, dict[str, Any]]) -> None:
+        self._data = deepcopy(snapshot)
 
     def hash_for(self, key: str) -> str | None:
         return self.entry(key).get("sha256")
@@ -265,7 +274,7 @@ class Fetcher:
                 response = self._client.get(
                     plan.url,
                     params=plan.params,
-                    headers=headers or {},
+                    headers={**plan.headers, **(headers or {})},
                     timeout=timeout or self._client.timeout,
                 )
                 if response.status_code == 304:

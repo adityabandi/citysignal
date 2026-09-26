@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "observable preview",
     "build": "observable build",
-    "clean": "rimraf src/.observablehq/cache"
+    "clean": "rimraf src/.observablehq/cache",
+    "prebuild": "node scripts/clear-data-cache.mjs",
+    "predev": "node scripts/clear-data-cache.mjs"
   },
   "dependencies": {
     "@observablehq/framework": "^1.13.0",

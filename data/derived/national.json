@@ -2446,43 +2446,11 @@
    "section": "housing",
    "geo_level": "nation",
    "source_id": "eurostat",
-   "period": "2025-12",
-   "value": 114.78,
-   "yoy": 2.445555158871827,
-   "observations": 132,
+   "period": "2026-08",
+   "value": 116.82,
+   "yoy": 2.545646067415723,
+   "observations": 140,
    "series": [
-    {
-     "period": "2023-01",
-     "value": 107.51
-    },
-    {
-     "period": "2023-02",
-     "value": 107.71
-    },
-    {
-     "period": "2023-03",
-     "value": 107.98
-    },
-    {
-     "period": "2023-04",
-     "value": 108.18
-    },
-    {
-     "period": "2023-05",
-     "value": 108.39
-    },
-    {
-     "period": "2023-06",
-     "value": 108.55
-    },
-    {
-     "period": "2023-07",
-     "value": 108.73
-    },
-    {
-     "period": "2023-08",
-     "value": 108.79
-    },
     {
      "period": "2023-09",
      "value": 108.93
@@ -2594,9 +2562,41 @@
     {
      "period": "2025-12",
      "value": 114.78
+    },
+    {
+     "period": "2026-01",
+     "value": 115.04
+    },
+    {
+     "period": "2026-02",
+     "value": 115.34
+    },
+    {
+     "period": "2026-03",
+     "value": 115.64
+    },
+    {
+     "period": "2026-04",
+     "value": 115.91
+    },
+    {
+     "period": "2026-05",
+     "value": 116.18
+    },
+    {
+     "period": "2026-06",
+     "value": 116.43
+    },
+    {
+     "period": "2026-07",
+     "value": 116.62
+    },
+    {
+     "period": "2026-08",
+     "value": 116.82
     }
    ],
-   "z": 2.3
+   "z": 2.31
   },
   {
    "metric_id": "hicp_maintenance",
@@ -2608,43 +2608,11 @@
    "section": "housing",
    "geo_level": "nation",
    "source_id": "eurostat",
-   "period": "2025-12",
-   "value": 128.68,
-   "yoy": 3.018173084620935,
-   "observations": 132,
+   "period": "2026-08",
+   "value": 131.64,
+   "yoy": 3.125734430082241,
+   "observations": 140,
    "series": [
-    {
-     "period": "2023-01",
-     "value": 117.87
-    },
-    {
-     "period": "2023-02",
-     "value": 118.64
-    },
-    {
-     "period": "2023-03",
-     "value": 119.28
-    },
-    {
-     "period": "2023-04",
-     "value": 119.76
-    },
-    {
-     "period": "2023-05",
-     "value": 120.15
-    },
-    {
-     "period": "2023-06",
-     "value": 120.23
-    },
-    {
-     "period": "2023-07",
-     "value": 120.45
-    },
-    {
-     "period": "2023-08",
-     "value": 120.66
-    },
     {
      "period": "2023-09",
      "value": 120.83
@@ -2756,9 +2724,41 @@
     {
      "period": "2025-12",
      "value": 128.68
+    },
+    {
+     "period": "2026-01",
+     "value": 129.17
+    },
+    {
+     "period": "2026-02",
+     "value": 129.57
+    },
+    {
+     "period": "2026-03",
+     "value": 130.02
+    },
+    {
+     "period": "2026-04",
+     "value": 130.32
+    },
+    {
+     "period": "2026-05",
+     "value": 130.78
+    },
+    {
+     "period": "2026-06",
+     "value": 131.11
+    },
+    {
+     "period": "2026-07",
+     "value": 131.45
+    },
+    {
+     "period": "2026-08",
+     "value": 131.64
     }
    ],
-   "z": 2.04
+   "z": 2.03
   },
   {
    "metric_id": "house_price_index",

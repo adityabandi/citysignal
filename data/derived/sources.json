@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22T06:00:33+00:00",
+ "generated_at": "2026-09-26T12:24:07+00:00",
  "sources": [
   {
    "attribution": "Source: Aena",
@@ -65,6 +65,40 @@
     "kind": "official",
     "cadence": "monthly",
     "max_age_days": 75,
+    "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: BIS Data Portal",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://data.bis.org/bulkdownload",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T12:15:56+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T12:15:56+00:00",
+   "latest_observation": "2026-08",
+   "license": "BIS terms of permitted use of statistics",
+   "max_age_days": 100,
+   "metrics": [
+    "bis_cpi",
+    "bis_euro_policy_rate",
+    "bis_policy_rate"
+   ],
+   "publisher": "Bank for International Settlements",
+   "source_id": "bis_macro",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "publisher": "Bank for International Settlements",
+    "license": "BIS terms of use; attribution",
+    "attribution": "Source: BIS",
+    "docs_url": "https://data.bis.org/bulkdownload",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 100,
     "redistribute": true
    }
   },
@@ -233,6 +267,44 @@
    }
   },
   {
+   "attribution": "Source: Ember, Monthly Electricity Data",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://ember-energy.org/data/monthly-electricity-data/",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "research",
+   "last_checked": "2026-09-26T11:31:12+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T11:31:12+00:00",
+   "latest_observation": "2026-06",
+   "license": "Ember data terms; CC BY 4.0",
+   "max_age_days": 150,
+   "metrics": [
+    "power_carbon_intensity",
+    "power_demand",
+    "power_fossil_share",
+    "power_price"
+   ],
+   "publisher": "Ember",
+   "source_id": "ember",
+   "staleness_days": 88,
+   "status": "ok",
+   "declared": {
+    "source_id": "ember",
+    "publisher": "Ember",
+    "license": "Ember data terms; CC BY 4.0",
+    "attribution": "Source: Ember, Monthly Electricity Data",
+    "docs_url": "https://ember-energy.org/data/monthly-electricity-data/",
+    "cadence": "monthly",
+    "geo_level": "nation",
+    "max_age_days": 150,
+    "kind": "research",
+    "notes": "National monthly electricity demand, fossil generation share, carbon intensity and available day-ahead prices. Source lags vary by country. Demand is not weather-adjusted; energy mix is exposure, not a growth forecast.",
+    "redistribute": true
+   }
+  },
+  {
    "attribution": "Source: EUROCONTROL Aviation Intelligence Portal",
    "cadence": "monthly",
    "consecutive_failures": 0,
@@ -269,13 +341,14 @@
    "cadence": "monthly",
    "consecutive_failures": 0,
    "docs_url": "https://ec.europa.eu/eurostat/web/json-and-unicode-web-services/getting-started/rest-request",
-   "fresh": false,
+   "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-09-22T05:49:18+00:00",
+   "last_checked": "2026-09-26T10:00:55+00:00",
    "last_error": null,
-   "last_success": "2026-09-22T05:49:18+00:00",
-   "latest_observation": "2025-12",
+   "last_error_type": "ValidationError",
+   "last_success": "2026-09-26T10:00:55+00:00",
+   "latest_observation": "2026-08",
    "license": "CC BY 4.0",
    "max_age_days": 60,
    "metrics": [
@@ -284,8 +357,8 @@
    ],
    "publisher": "Eurostat (European Commission)",
    "source_id": "eurostat",
-   "staleness_days": 265,
-   "status": "skipped",
+   "staleness_days": 26,
+   "status": "ok",
    "declared": {
     "publisher": "Eurostat (European Commission)",
     "license": "CC BY 4.0",
@@ -295,6 +368,48 @@
     "cadence": "monthly",
     "max_age_days": 60,
     "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: Eurostat; ESI: DG ECFIN",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-introduction",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T09:46:09+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T09:46:09+00:00",
+   "latest_observation": "2026-Q2",
+   "license": "Eurostat reuse policy (attribution)",
+   "max_age_days": 100,
+   "metrics": [
+    "macro_employment",
+    "macro_gdp",
+    "macro_house_prices",
+    "macro_industry",
+    "macro_inflation",
+    "macro_retail",
+    "macro_sentiment",
+    "macro_unemployment"
+   ],
+   "publisher": "Eurostat / European Commission DG ECFIN",
+   "source_id": "eurostat_macro",
+   "staleness_days": 88,
+   "status": "ok",
+   "declared": {
+    "source_id": "eurostat_macro",
+    "publisher": "Eurostat / European Commission DG ECFIN",
+    "license": "Eurostat reuse policy (attribution)",
+    "attribution": "Source: Eurostat; ESI: DG ECFIN",
+    "docs_url": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-introduction",
+    "cadence": "monthly",
+    "geo_level": "nation",
+    "max_age_days": 100,
+    "redistribute": true,
+    "kind": "official",
+    "notes": "GDP, jobs, prices, industry, retail, sentiment and housing for six European countries. Quarterly series use their own freshness limits in the country dashboard."
    }
   },
   {
@@ -334,6 +449,38 @@
    }
   },
   {
+   "attribution": "Caldara and Iacoviello (2022), Measuring Geopolitical Risk; country extension by Caldara et al. (2023).",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.matteoiacoviello.com/gpr_country.htm",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "research",
+   "last_checked": "2026-09-26T12:10:07+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T12:10:07+00:00",
+   "latest_observation": "2026-08",
+   "license": "Creative Commons BY; author attribution",
+   "max_age_days": 75,
+   "metrics": [
+    "geopolitical_risk"
+   ],
+   "publisher": "Caldara & Iacoviello",
+   "source_id": "gpr",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "publisher": "Caldara & Iacoviello",
+    "license": "Creative Commons Attribution; credit authors",
+    "attribution": "Source: Dario Caldara and Matteo Iacoviello, Geopolitical Risk Index",
+    "docs_url": "https://www.matteoiacoviello.com/gpr_country.htm",
+    "kind": "research",
+    "cadence": "monthly",
+    "max_age_days": 75,
+    "redistribute": true
+   }
+  },
+  {
    "attribution": "Source: Indeed Hiring Lab",
    "cadence": "monthly",
    "consecutive_failures": 0,
@@ -364,6 +511,42 @@
     "cadence": "monthly",
     "max_age_days": 14,
     "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: Indeed Hiring Lab",
+   "cadence": "daily",
+   "consecutive_failures": 0,
+   "docs_url": "https://github.com/hiring-lab/job_postings_tracker",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "research",
+   "last_checked": "2026-09-26T11:31:05+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T11:31:05+00:00",
+   "latest_observation": "2026-09-18",
+   "license": "CC BY 4.0 (Hiring Lab repository); verify redistribution before commercial delivery",
+   "max_age_days": 21,
+   "metrics": [
+    "hiring_new",
+    "hiring_total"
+   ],
+   "publisher": "Indeed Hiring Lab",
+   "source_id": "indeed_daily",
+   "staleness_days": 8,
+   "status": "ok",
+   "declared": {
+    "source_id": "indeed_daily",
+    "publisher": "Indeed Hiring Lab",
+    "license": "CC BY 4.0 (Hiring Lab repository); verify redistribution before commercial delivery",
+    "attribution": "Source: Indeed Hiring Lab",
+    "docs_url": "https://github.com/hiring-lab/job_postings_tracker",
+    "cadence": "daily",
+    "geo_level": "nation",
+    "max_age_days": 21,
+    "redistribute": true,
+    "kind": "research",
+    "notes": "Daily seasonally adjusted total and new job posting indices. 1 February 2020=100; publisher uses a seven-day moving average. Platform coverage is not the whole labour market."
    }
   },
   {
@@ -701,6 +884,38 @@
    }
   },
   {
+   "attribution": "Source: OECD, Composite Leading Indicators",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.oecd.org/en/data/datasets/oecd-composite-leading-indicators-clis.html",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T12:10:12+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T12:10:12+00:00",
+   "latest_observation": "2026-08",
+   "license": "OECD terms of use; attribution",
+   "max_age_days": 100,
+   "metrics": [
+    "oecd_cli"
+   ],
+   "publisher": "OECD",
+   "source_id": "oecd_cli",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "publisher": "OECD",
+    "license": "OECD terms of use; attribution",
+    "attribution": "Source: OECD, Composite Leading Indicators",
+    "docs_url": "https://www.oecd.org/en/data/datasets/oecd-composite-leading-indicators-clis.html",
+    "kind": "official",
+    "cadence": "monthly",
+    "max_age_days": 100,
+    "redistribute": true
+   }
+  },
+  {
    "attribution": "Source: ohsome API (openstreetmap.org), HeiGIT",
    "cadence": "monthly",
    "consecutive_failures": 4,
@@ -738,6 +953,47 @@
    }
   },
   {
+   "attribution": "Sources: UN Global Platform; IMF PortWatch (portwatch.imf.org). Country aggregates calculated by CitySignal.",
+   "cadence": "monthly",
+   "consecutive_failures": 0,
+   "docs_url": "https://portwatch.imf.org/pages/data-and-methodology",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "research",
+   "last_checked": "2026-09-26T12:10:25+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T12:10:25+00:00",
+   "latest_observation": "2026-08",
+   "license": "IMF terms of use; confirm applicable commercial redistribution rights",
+   "max_age_days": 100,
+   "metrics": [
+    "shipping_calls",
+    "shipping_container_exports",
+    "shipping_container_imports",
+    "shipping_exports",
+    "shipping_imports",
+    "shipping_tanker_exports",
+    "shipping_tanker_imports"
+   ],
+   "publisher": "IMF PortWatch / UN Global Platform",
+   "source_id": "portwatch",
+   "staleness_days": 26,
+   "status": "ok",
+   "declared": {
+    "source_id": "portwatch",
+    "publisher": "IMF PortWatch / UN Global Platform",
+    "license": "IMF terms of use; confirm applicable commercial redistribution rights",
+    "attribution": "Sources: UN Global Platform; IMF PortWatch (portwatch.imf.org). Country aggregates calculated by CitySignal.",
+    "docs_url": "https://portwatch.imf.org/pages/data-and-methodology",
+    "cadence": "monthly",
+    "geo_level": "nation",
+    "max_age_days": 100,
+    "kind": "research",
+    "notes": "Monthly AIS-estimated physical imports, exports and port calls. Covered ports only; includes transshipment. Not customs trade, dollar values, seasonally adjusted data or a GDP forecast.",
+    "redistribute": false
+   }
+  },
+  {
    "attribution": "Source: Puertos del Estado",
    "cadence": "monthly",
    "consecutive_failures": 0,
@@ -767,6 +1023,42 @@
     "cadence": "monthly",
     "max_age_days": 120,
     "redistribute": true
+   }
+  },
+  {
+   "attribution": "Source: Red Eléctrica, REData",
+   "cadence": "daily",
+   "consecutive_failures": 0,
+   "docs_url": "https://www.ree.es/en/datos/apidata",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T09:50:12+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T09:50:12+00:00",
+   "latest_observation": "2026-09-25",
+   "license": "Red Eléctrica legal notice; commercial redistribution requires review",
+   "max_age_days": 10,
+   "metrics": [
+    "electricity_demand",
+    "electricity_large_users"
+   ],
+   "publisher": "Red Eléctrica",
+   "source_id": "ree",
+   "staleness_days": 1,
+   "status": "ok",
+   "declared": {
+    "source_id": "ree",
+    "publisher": "Red Eléctrica",
+    "license": "Red Eléctrica legal notice; commercial redistribution requires review",
+    "attribution": "Source: Red Eléctrica, REData",
+    "docs_url": "https://www.ree.es/en/datos/apidata",
+    "cadence": "daily",
+    "geo_level": "nation",
+    "max_age_days": 10,
+    "redistribute": true,
+    "kind": "official",
+    "notes": "National daily electricity demand (MWh) and mainland corrected large-user electricity index (>450 kW). Electricity is a proxy, affected by weather, efficiency and sector mix."
    }
   },
   {
@@ -1009,6 +1301,46 @@
     "max_age_days": 45,
     "redistribute": true,
     "notes": "Attention, not demand. Pageviews respond to news and seasonality as well as to intent; the lead-lag lab publishes whether each basket actually leads an observable outcome, and demotes it when it stops.\n"
+   }
+  },
+  {
+   "attribution": "Source: World Bank, World Development Indicators",
+   "cadence": "annual",
+   "consecutive_failures": 0,
+   "docs_url": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+   "fresh": true,
+   "geo_level": "nation",
+   "kind": "official",
+   "last_checked": "2026-09-26T11:31:00+00:00",
+   "last_error": null,
+   "last_success": "2026-09-26T11:31:00+00:00",
+   "latest_observation": "2025",
+   "license": "CC BY 4.0 (World Bank open data terms)",
+   "max_age_days": 900,
+   "metrics": [
+    "wb_gdp_growth",
+    "wb_gdp_per_capita",
+    "wb_inflation",
+    "wb_population",
+    "wb_trade",
+    "wb_unemployment"
+   ],
+   "publisher": "World Bank — World Development Indicators",
+   "source_id": "worldbank",
+   "staleness_days": 269,
+   "status": "ok",
+   "declared": {
+    "source_id": "worldbank",
+    "publisher": "World Bank — World Development Indicators",
+    "license": "CC BY 4.0 (World Bank open data terms)",
+    "attribution": "Source: World Bank, World Development Indicators",
+    "docs_url": "https://datahelpdesk.worldbank.org/knowledgebase/topics/125589",
+    "cadence": "annual",
+    "geo_level": "nation",
+    "max_age_days": 900,
+    "redistribute": true,
+    "kind": "official",
+    "notes": "Annual GDP growth, consumer inflation, modelled unemployment, population, PPP-adjusted real GDP per person and trade openness for 28 major markets. Historical benchmarks, excluded from the activity reading."
    }
   }
  ]
