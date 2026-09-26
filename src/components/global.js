@@ -12,6 +12,7 @@ import {
   table,
   download,
   formatPeriod,
+  masthead,
 } from "./desk.js";
 
 const LENSES = {
@@ -91,7 +92,7 @@ const SHORT = {
 
 export function globalOverview(data, openCountry, loadScreener, state = {}) {
   state.lens ||= "Activity & prices";
-  state.mode ||= "Monitor";
+  state.mode ||= "Overview";
   if (!state.watch) {
     try {
       state.watch = new Set(
@@ -107,16 +108,28 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
   const root = el("div", { class: "desk-global" });
   const count = data.countries.reduce((n, c) => n + seriesOf(c).length, 0);
   root.append(
+    masthead(data.as_of),
     nav(),
-    el("header", { class: "desk-heading" }, [
+    el("header", { class: "gw-hero" }, [
       el("div", {}, [
-        txt("span", "CITYSIGNAL / GLOBAL MACRO", "ec-eyebrow"),
-        txt("h1", "Market monitor"),
+        txt("span", "GLOBAL ECONOMIES / ALTERNATIVE DATA", "ec-eyebrow"),
+        txt("h1", "Global market monitor"),
+        txt(
+          "p",
+          "Macroeconomic indicators, trade, hiring and risk across major economies.",
+          "ec-subtitle",
+        ),
       ]),
-      txt(
-        "p",
-        `${data.countries.length} markets · ${count} series · Snapshot ${data.as_of}`,
-        "ec-muted",
+      el(
+        "div",
+        { class: "gw-stats" },
+        [
+          [data.countries.length, "markets"],
+          [count, "country series"],
+          [data.sources.length, "data sources"],
+        ].map(([value, label]) =>
+          el("div", {}, [txt("strong", String(value)), txt("span", label)]),
+        ),
       ),
     ]),
   );
@@ -240,7 +253,7 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
     exportRows = [];
     exportButton.disabled = false;
     modes.replaceChildren(
-      ...["Monitor", "Screener", "Coverage"].map((mode) => {
+      ...["Overview", "Monitor", "Screener", "Coverage"].map((mode) => {
         const b = button(
           mode,
           () => {
@@ -255,7 +268,7 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
     );
     lensTabs.replaceChildren();
     screenControls.replaceChildren();
-    if (state.mode === "Monitor") {
+    if (state.mode === "Monitor" || state.mode === "Overview") {
       lensTabs.append(
         ...Object.keys(LENSES).map((lens) => {
           const b = button(
@@ -270,24 +283,97 @@ export function globalOverview(data, openCountry, loadScreener, state = {}) {
           return b;
         }),
       );
-      const ids = LENSES[state.lens];
+      const ids =
+        state.mode === "Overview"
+          ? state.lens === "Activity & prices"
+            ? ["oecd_cli", "shipping_exports"]
+            : LENSES[state.lens].slice(0, 2)
+          : LENSES[state.lens];
       status.textContent = `${rows.length} markets · Latest observations · Δ versus indicated prior period`;
-      body.replaceChildren(
-        table(
-          [
-            "Market",
-            ...ids.map((id) =>
-              el("div", {}, [
-                txt("span", SHORT[id]),
-                txt("small", allMetrics.get(id)?.unit || "%"),
+      if (state.mode === "Overview") {
+        status.textContent = `${rows.length} markets · Country A–Z · Latest observations`;
+        body.replaceChildren(
+          el(
+            "div",
+            { class: "gw-market-grid" },
+            rows.map((c) => {
+              const check = el("input", {
+                type: "checkbox",
+                "aria-label": `Select ${c.name}`,
+              });
+              check.checked = state.watch.has(c.code);
+              check.onchange = () => {
+                check.checked
+                  ? state.watch.add(c.code)
+                  : state.watch.delete(c.code);
+                try {
+                  localStorage.setItem(
+                    "citysignal-markets",
+                    JSON.stringify([...state.watch]),
+                  );
+                } catch {}
+                update();
+              };
+              const card = el("article", { class: "gw-market" }, [
+                el("div", { class: "gw-market-top" }, [
+                  txt("span", c.iso3, "gw-code"),
+                  check,
+                ]),
+                button(c.name, () => openCountry(c.code), "gw-country-name"),
+                txt("p", c.region, "ec-muted"),
+                el(
+                  "div",
+                  { class: "gw-market-readings" },
+                  ids.map((id) => {
+                    const m = metricOf(c, id);
+                    const item = button(
+                      "",
+                      () => openCountry(c.code, m?.id || id),
+                      "gw-card-reading",
+                    );
+                    item.setAttribute("aria-label", `${c.name}: ${SHORT[id]}`);
+                    item.append(
+                      txt("span", SHORT[id]),
+                      txt("strong", m ? num(m.value, 1) : "—"),
+                      txt(
+                        "small",
+                        m ? `${m.unit} · ${formatPeriod(m.period)}` : "—",
+                      ),
+                    );
+                    return item;
+                  }),
+                ),
+                txt(
+                  "span",
+                  `${c.alternative.length} alternative / ${c.metrics.length} official series`,
+                  "gw-coverage",
+                ),
+              ]);
+              return card;
+            }),
+          ),
+        );
+      } else {
+        body.replaceChildren(
+          table(
+            [
+              "Market",
+              ...ids.map((id) =>
+                el("div", {}, [
+                  txt("span", SHORT[id]),
+                  txt("small", allMetrics.get(id)?.unit || "%"),
+                ]),
+              ),
+            ],
+            rows.map((c) =>
+              el("tr", {}, [
+                rowsBase(c),
+                ...ids.map((id) => metricCell(c, id)),
               ]),
             ),
-          ],
-          rows.map((c) =>
-            el("tr", {}, [rowsBase(c), ...ids.map((id) => metricCell(c, id))]),
           ),
-        ),
-      );
+        );
+      }
       exportRows = rows.flatMap((c) =>
         ids.map((id) => {
           const m = metricOf(c, id);

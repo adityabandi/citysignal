@@ -78,3 +78,17 @@ export function table(headers, rows) {
     ]),
   ]);
 }
+
+export function masthead(asOf) {
+  return el("header", { class: "ec-topbar" }, [
+    el("div", { class: "ec-wordmark" }, [
+      txt("span", "▥", "ec-mark"),
+      txt("span", "CITYSIGNAL"),
+      txt("span", "GLOBAL DESK", "ec-tag"),
+    ]),
+    el("div", { class: "ec-actions" }, [
+      txt("span", `Snapshot ${formatPeriod(asOf)}`, "ec-muted"),
+      link("Data catalog ↗", "./data-room", "ec-button"),
+    ]),
+  ]);
+}

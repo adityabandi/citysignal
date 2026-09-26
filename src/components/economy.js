@@ -15,10 +15,11 @@ import {
   table,
   download,
   formatPeriod,
+  masthead,
 } from "./desk.js";
 const COLORS = [
-  "#80b5fa",
-  "#dfb980",
+  "#a4e6ce",
+  "#e6ad78",
   "#b3a2e4",
   "#83c6ba",
   "#dd8faa",
@@ -154,8 +155,9 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
     );
     countrySelect.onchange = () => openCountry(countrySelect.value);
     root.replaceChildren(
+      masthead(data.as_of),
       nav(),
-      el("header", { class: "desk-heading" }, [
+      el("header", { class: "desk-heading country-heading" }, [
         el("div", {}, [
           button("← All markets", () => openCountry("world"), "ec-link"),
           text("h1", country.name),
@@ -189,8 +191,12 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
         class: "desk-detail",
         "aria-label": "Selected series",
       });
-    const layout = el("div", { class: "desk-country-layout" }, [
+    const layout = el("div", { class: "desk-country-layout card-layout" }, [
       el("section", { class: "desk-series-panel" }, [
+        el("div", { class: "ec-section-heading" }, [
+          text("h2", "Indicators"),
+          text("span", `${all.length} series`, "ec-muted"),
+        ]),
         el("div", { class: "desk-series-controls" }, [search, group, kind]),
         list,
       ]),
@@ -207,34 +213,46 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
             .includes(search.value.toLowerCase()),
       );
       list.replaceChildren(
-        table(
-          ["Series / period", "Latest"],
+        el(
+          "div",
+          { class: "ec-metrics" },
           shown.map((m) => {
-            const b = button(
-              m.label,
+            const alternative = m.signal_type !== "official";
+            const card = button(
+              "",
               () => {
                 state.metric = m.id;
                 state.peers.clear();
                 updateList();
                 updateDetail();
+                detail.scrollIntoView({
+                  behavior: window.matchMedia(
+                    "(prefers-reduced-motion: reduce)",
+                  ).matches
+                    ? "instant"
+                    : "smooth",
+                  block: "start",
+                });
               },
-              "desk-series-name",
+              `ec-metric ${alternative ? "is-alternative" : ""} ${state.metric === m.id ? "selected" : ""}`,
             );
-            b.setAttribute("aria-pressed", String(m.id === state.metric));
-            return el(
-              "tr",
-              { class: m.id === state.metric ? "selected" : "" },
-              [
-                el("td", {}, [
-                  b,
-                  text("small", `${m.group} · ${formatPeriod(m.period)}`),
-                ]),
-                el("td", {}, [
-                  text("strong", fmt(m.value)),
-                  text("small", m.unit),
-                ]),
-              ],
+            card.setAttribute("aria-label", m.label);
+            card.setAttribute("aria-pressed", String(state.metric === m.id));
+            card.append(
+              el("div", { class: "ec-metric-top" }, [
+                text("span", m.group),
+                text("span", m.signal_type, "ec-tag"),
+              ]),
+              text("h3", m.label),
+              text("strong", fmt(m.value, 1), "ec-metric-value"),
+              text("span", m.unit, "ec-metric-unit"),
+              spark(m.series, alternative ? COLORS[1] : COLORS[0]),
+              el("div", { class: "ec-metric-foot" }, [
+                text("span", `${formatPeriod(m.period)} · ${m.cadence}`),
+                text("span", m.source),
+              ]),
             );
+            return card;
           }),
         ),
       );
@@ -430,6 +448,39 @@ export function countryDashboard(data, cities, loadCountry, loadScreener) {
   }
   render();
   return root;
+}
+
+function spark(points, color) {
+  const values = points.slice(-36);
+  const svg = d3
+    .create("svg")
+    .attr("viewBox", "0 0 180 38")
+    .attr("class", "ec-spark")
+    .attr("aria-hidden", "true");
+  if (values.length < 2) return svg.node();
+  const x = d3.scaleUtc(
+    d3.extent(values, (d) => dateOf(d.period)),
+    [1, 179],
+  );
+  const extent = d3.extent(values, (d) => d.value);
+  if (extent[0] === extent[1]) {
+    extent[0] -= 1;
+    extent[1] += 1;
+  }
+  const y = d3.scaleLinear(extent, [34, 4]);
+  svg
+    .append("path")
+    .attr(
+      "d",
+      d3
+        .line()
+        .x((d) => x(dateOf(d.period)))
+        .y((d) => y(d.value))(values),
+    )
+    .attr("fill", "none")
+    .attr("stroke", color)
+    .attr("stroke-width", 1.6);
+  return svg.node();
 }
 
 export function historyChart(series, unit, years = 3, width = 680) {
