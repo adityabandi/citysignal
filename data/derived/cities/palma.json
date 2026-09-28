@@ -5594,7 +5594,7 @@
     },
     "observation_end": "2024-12-31",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 634,
+    "staleness_days": 636,
     "max_age_days": 120,
     "fresh": "failing"
    },
@@ -6017,7 +6017,7 @@
     },
     "observation_end": "2024-12-31",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 634,
+    "staleness_days": 636,
     "max_age_days": 120,
     "fresh": "failing"
    },
@@ -6080,7 +6080,7 @@
     },
     "observation_end": "2025-12-31",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 269,
+    "staleness_days": 271,
     "max_age_days": 120,
     "fresh": "failing"
    }
@@ -6505,7 +6505,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:58:04+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 270,
     "fresh": "fresh"
    },
@@ -6928,7 +6928,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-26T10:00:55+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 60,
     "fresh": "fresh"
    },
@@ -7351,7 +7351,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-26T10:00:55+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 60,
     "fresh": "fresh"
    },
@@ -7474,7 +7474,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -7897,7 +7897,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -7992,7 +7992,7 @@
     },
     "observation_end": "2024-12-31",
     "last_checked": "2026-09-22T05:58:04+00:00",
-    "staleness_days": 634,
+    "staleness_days": 636,
     "max_age_days": 270,
     "fresh": "failing"
    }
@@ -8133,9 +8133,9 @@
     },
     "observation_end": "2025-12-31",
     "last_checked": "2026-09-22T05:58:04+00:00",
-    "staleness_days": 269,
+    "staleness_days": 271,
     "max_age_days": 270,
-    "fresh": "fresh"
+    "fresh": "stale"
    },
    {
     "metric_id": "housing_completions",
@@ -8460,9 +8460,9 @@
     },
     "observation_end": "2025-12-31",
     "last_checked": "2026-09-22T05:58:04+00:00",
-    "staleness_days": 269,
+    "staleness_days": 271,
     "max_age_days": 270,
-    "fresh": "fresh"
+    "fresh": "stale"
    },
    {
     "metric_id": "housing_starts",
@@ -8787,9 +8787,9 @@
     },
     "observation_end": "2025-12-31",
     "last_checked": "2026-09-22T05:58:04+00:00",
-    "staleness_days": 269,
+    "staleness_days": 271,
     "max_age_days": 270,
-    "fresh": "fresh"
+    "fresh": "stale"
    },
    {
     "metric_id": "land_price",
@@ -9178,7 +9178,7 @@
     },
     "observation_end": "2026-03-31",
     "last_checked": "2026-09-22T05:58:04+00:00",
-    "staleness_days": 179,
+    "staleness_days": 181,
     "max_age_days": 270,
     "fresh": "fresh"
    }
@@ -9603,7 +9603,7 @@
     },
     "observation_end": "2026-03-31",
     "last_checked": "2026-09-22T05:47:19+00:00",
-    "staleness_days": 179,
+    "staleness_days": 181,
     "max_age_days": 75,
     "fresh": "failing"
    },
@@ -10026,7 +10026,7 @@
     },
     "observation_end": "2026-07-31",
     "last_checked": "2026-09-22T05:49:15+00:00",
-    "staleness_days": 57,
+    "staleness_days": 59,
     "max_age_days": 60,
     "fresh": "fresh"
    },
@@ -10449,7 +10449,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:47:19+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 75,
     "fresh": "stale"
    },
@@ -10872,7 +10872,7 @@
     },
     "observation_end": "2026-05-31",
     "last_checked": "2026-09-22T05:47:19+00:00",
-    "staleness_days": 118,
+    "staleness_days": 120,
     "max_age_days": 75,
     "fresh": "stale"
    },
@@ -11295,7 +11295,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -11652,7 +11652,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:49:18+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 14,
     "fresh": "stale"
    },
@@ -12059,7 +12059,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:59:01+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -12298,7 +12298,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:49:08+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 90,
     "fresh": "fresh"
    },
@@ -12705,7 +12705,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:59:01+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 75,
     "fresh": "fresh"
    }
@@ -12922,7 +12922,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:49:17+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -13329,7 +13329,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:47:17+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 75,
     "fresh": "fresh"
    },
@@ -13636,7 +13636,7 @@
     },
     "observation_end": "2026-07-31",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 57,
+    "staleness_days": 59,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -13751,7 +13751,7 @@
     },
     "observation_end": "2026-07-31",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 57,
+    "staleness_days": 59,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -13862,7 +13862,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -13973,7 +13973,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -14280,7 +14280,7 @@
     },
     "observation_end": "2026-07-31",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 57,
+    "staleness_days": 59,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -14325,7 +14325,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:14+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -14368,7 +14368,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:14+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -14411,7 +14411,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:14+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -14482,7 +14482,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -14553,7 +14553,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:57:10+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    }
@@ -14614,7 +14614,7 @@
     },
     "observation_end": "2026-09-30",
     "last_checked": "2026-09-22T05:48:12+00:00",
-    "staleness_days": -4,
+    "staleness_days": -2,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -14673,7 +14673,7 @@
     },
     "observation_end": "2026-09-30",
     "last_checked": "2026-09-22T05:48:12+00:00",
-    "staleness_days": -4,
+    "staleness_days": -2,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -14924,7 +14924,7 @@
     },
     "observation_end": "2026-03-31",
     "last_checked": "2026-09-22T05:48:19+00:00",
-    "staleness_days": 179,
+    "staleness_days": 181,
     "max_age_days": 210,
     "fresh": "fresh"
    },
@@ -14983,7 +14983,7 @@
     },
     "observation_end": "2026-09-30",
     "last_checked": "2026-09-22T05:48:12+00:00",
-    "staleness_days": -4,
+    "staleness_days": -2,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -15330,7 +15330,7 @@
     },
     "observation_end": "2026-03-31",
     "last_checked": "2026-09-22T05:48:19+00:00",
-    "staleness_days": 179,
+    "staleness_days": 181,
     "max_age_days": 210,
     "fresh": "fresh"
    }
@@ -15755,7 +15755,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T06:00:28+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -16034,7 +16034,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:59:04+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -16441,7 +16441,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:59:46+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -16864,7 +16864,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T06:00:28+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -17271,7 +17271,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:59:46+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -17678,7 +17678,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:59:46+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -18085,7 +18085,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:59:46+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -18492,7 +18492,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:59:46+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -18899,7 +18899,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T05:59:46+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -19322,7 +19322,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T06:00:28+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -19745,7 +19745,7 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T06:00:28+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    },
@@ -20024,7 +20024,7 @@
     },
     "observation_end": "2026-06-30",
     "last_checked": "2026-09-22T05:59:04+00:00",
-    "staleness_days": 88,
+    "staleness_days": 90,
     "max_age_days": 120,
     "fresh": "fresh"
    },
@@ -20447,11 +20447,11 @@
     },
     "observation_end": "2026-08-31",
     "last_checked": "2026-09-22T06:00:28+00:00",
-    "staleness_days": 26,
+    "staleness_days": 28,
     "max_age_days": 45,
     "fresh": "fresh"
    }
   ]
  },
- "generated_at": "2026-09-26T12:24:01+00:00"
+ "generated_at": "2026-09-28T21:44:43+00:00"
 }

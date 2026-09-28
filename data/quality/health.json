@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-26T14:21:41+00:00",
+ "generated_at": "2026-09-28T21:44:39+00:00",
  "sources": {
   "aena": {
    "attribution": "Source: Aena",
@@ -56,9 +56,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-09-26T12:15:56+00:00",
+   "last_checked": "2026-09-28T21:44:34+00:00",
    "last_error": null,
-   "last_success": "2026-09-26T12:15:56+00:00",
+   "last_success": "2026-09-28T21:44:34+00:00",
    "latest_observation": "2026-08",
    "license": "BIS terms of permitted use of statistics",
    "max_age_days": 100,
@@ -69,8 +69,8 @@
    ],
    "publisher": "Bank for International Settlements",
    "source_id": "bis_macro",
-   "staleness_days": 26,
-   "status": "ok"
+   "staleness_days": 28,
+   "status": "skipped"
   },
   "borme": {
    "attribution": "Source: BORME (boe.es)",
@@ -129,9 +129,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-09-26T14:21:41+00:00",
+   "last_checked": "2026-09-28T21:44:31+00:00",
    "last_error": null,
-   "last_success": "2026-09-26T14:21:41+00:00",
+   "last_success": "2026-09-28T21:44:31+00:00",
    "latest_observation": "2026-09-19",
    "license": "Data licence Germany attribution 2.0",
    "max_age_days": 21,
@@ -140,8 +140,8 @@
    ],
    "publisher": "Destatis / Bundesbank / BALM",
    "source_id": "destatis_freight",
-   "staleness_days": 7,
-   "status": "ok"
+   "staleness_days": 9,
+   "status": "skipped"
   },
   "dgt": {
    "attribution": "Source: DGT (dgt.es)",
@@ -286,25 +286,19 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-09-26T09:46:09+00:00",
+   "last_checked": "2026-09-28T21:44:39+00:00",
    "last_error": null,
-   "last_success": "2026-09-26T09:46:09+00:00",
+   "last_success": "2026-09-28T21:44:39+00:00",
    "latest_observation": "2026-Q2",
    "license": "Eurostat reuse policy (attribution)",
    "max_age_days": 100,
    "metrics": [
     "macro_employment",
-    "macro_gdp",
-    "macro_house_prices",
-    "macro_industry",
-    "macro_inflation",
-    "macro_retail",
-    "macro_sentiment",
-    "macro_unemployment"
+    "macro_gdp"
    ],
    "publisher": "Eurostat / European Commission DG ECFIN",
    "source_id": "eurostat_macro",
-   "staleness_days": 88,
+   "staleness_days": 90,
    "status": "ok"
   },
   "gdelt": {
@@ -384,9 +378,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "research",
-   "last_checked": "2026-09-26T11:31:05+00:00",
+   "last_checked": "2026-09-28T21:44:29+00:00",
    "last_error": null,
-   "last_success": "2026-09-26T11:31:05+00:00",
+   "last_success": "2026-09-28T21:44:29+00:00",
    "latest_observation": "2026-09-18",
    "license": "CC BY 4.0 (Hiring Lab repository); verify redistribution before commercial delivery",
    "max_age_days": 21,
@@ -396,8 +390,8 @@
    ],
    "publisher": "Indeed Hiring Lab",
    "source_id": "indeed_daily",
-   "staleness_days": 8,
-   "status": "ok"
+   "staleness_days": 10,
+   "status": "skipped"
   },
   "ine": {
    "attribution": "Source: INE (ine.es)",
@@ -633,9 +627,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-09-26T14:19:03+00:00",
+   "last_checked": "2026-09-28T21:44:33+00:00",
    "last_error": null,
-   "last_success": "2026-09-26T14:19:03+00:00",
+   "last_success": "2026-09-28T21:44:33+00:00",
    "latest_observation": "2026-08",
    "license": "OECD terms of use; attribution",
    "max_age_days": 120,
@@ -647,8 +641,8 @@
    ],
    "publisher": "OECD",
    "source_id": "oecd_activity",
-   "staleness_days": 26,
-   "status": "ok"
+   "staleness_days": 28,
+   "status": "skipped"
   },
   "oecd_cli": {
    "attribution": "Source: OECD, Composite Leading Indicators",
@@ -658,9 +652,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-09-26T12:10:12+00:00",
+   "last_checked": "2026-09-28T21:44:34+00:00",
    "last_error": null,
-   "last_success": "2026-09-26T12:10:12+00:00",
+   "last_success": "2026-09-28T21:44:34+00:00",
    "latest_observation": "2026-08",
    "license": "OECD terms of use; attribution",
    "max_age_days": 100,
@@ -669,8 +663,8 @@
    ],
    "publisher": "OECD",
    "source_id": "oecd_cli",
-   "staleness_days": 26,
-   "status": "ok"
+   "staleness_days": 28,
+   "status": "skipped"
   },
   "ohsome": {
    "attribution": "Source: ohsome API (openstreetmap.org), HeiGIT",
@@ -875,10 +869,10 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-09-26T14:07:26+00:00",
+   "last_checked": "2026-09-28T21:44:30+00:00",
    "last_error": null,
-   "last_success": "2026-09-26T14:07:26+00:00",
-   "latest_observation": "2026-09-24",
+   "last_success": "2026-09-28T21:44:30+00:00",
+   "latest_observation": "2026-09-25",
    "license": "US government public data",
    "max_age_days": 10,
    "metrics": [
@@ -887,7 +881,7 @@
    ],
    "publisher": "US Treasury, Bureau of the Fiscal Service",
    "source_id": "treasury_receipts",
-   "staleness_days": 2,
+   "staleness_days": 3,
    "status": "ok"
   },
   "trends_manual": {

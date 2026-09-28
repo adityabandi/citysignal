@@ -182,11 +182,11 @@
   "sha256": "9547a7b0eada9ff72a80c2e4852b3605a673ab153ed90bd57342c0cc05ba6743"
  },
  "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/deposits_withdrawals_operating_cash?filter=record_date%3Agte%3A2023-02-14%2Ctransaction_type%3Aeq%3ADeposits%2Ctransaction_catg%3Aeq%3ATaxes+-+Withheld+Individual%2FFICA&sort=record_date&page%5Bsize%5D=10000": {
-  "bytes": 502606,
+  "bytes": 503158,
   "etag": null,
-  "last_checked": "2026-09-26T14:07:26+00:00",
+  "last_checked": "2026-09-28T21:44:30+00:00",
   "last_modified": null,
-  "sha256": "b9a3d976fcb365065aefef1b4c605232b0aa77e40e8bfdcc80853f9604f7b451"
+  "sha256": "b600130d037a35142b397f5f32c7fc9dea360ff4891ef3ee47c5377da134c68d"
  },
  "https://api.ohsome.org/v1/elements/count?bboxes=-3.628,40.447,-3.525,40.512&filter=amenity=bar or amenity=pub&time=2019-01-01/2026-06-01/P1M": {
   "bytes": 6281,
@@ -2242,14 +2242,14 @@
  "https://data.bis.org/static/bulk/WS_CBPOL_csv_col.zip": {
   "bytes": 284555,
   "etag": "W/\"4578b-1a0d88c3d05\"",
-  "last_checked": "2026-09-26T12:15:56+00:00",
+  "last_checked": "2026-09-28T21:44:34+00:00",
   "last_modified": "Fri, 25 Sep 2026 12:31:04 GMT",
   "sha256": "d8fdf2fca5df3219a34e1b9bb9346549e3471d12009bdacb907334f5448f460c"
  },
  "https://data.bis.org/static/bulk/WS_LONG_CPI_csv_col.zip": {
   "bytes": 462424,
   "etag": "W/\"70e58-1a0d88cdc9a\"",
-  "last_checked": "2026-09-26T12:15:55+00:00",
+  "last_checked": "2026-09-28T21:44:34+00:00",
   "last_modified": "Fri, 25 Sep 2026 12:31:45 GMT",
   "sha256": "b4d89c76c7eabccd783fde0385f5ae604790688c5736798ae2d4cec77854e6e8"
  },
@@ -2627,23 +2627,23 @@
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic=BS-ESI-I&s_adj=SA": {
   "bytes": 17712,
   "etag": null,
-  "last_checked": "2026-09-26T09:46:08+00:00",
+  "last_checked": "2026-09-28T21:44:37+00:00",
   "last_modified": null,
   "sha256": "dc59c946faa8cf15a6ec19ba58dea68cc6868ecdb80bc2184186ab0d6fb18633"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA": {
   "bytes": 7835,
   "etag": null,
-  "last_checked": "2026-09-26T09:46:06+00:00",
+  "last_checked": "2026-09-28T21:44:35+00:00",
   "last_modified": null,
-  "sha256": "c7fc3af8f2cd38abc95b1867a23b7d0eaa5f00e75463fa9373e01f2613e043c9"
+  "sha256": "58d2e83b5b474fb110dbe7c286f5d5568a98de6e4173b027483965e07979f0bf"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_pe?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&na_item=EMP_DC&unit=PCH_PRE_PER&s_adj=SCA": {
   "bytes": 6754,
   "etag": null,
-  "last_checked": "2026-09-26T09:46:09+00:00",
+  "last_checked": "2026-09-28T21:44:39+00:00",
   "last_modified": null,
-  "sha256": "596d6b794f5338ac64492f4563f02383bc0086b03c21aa67485217b35110de62"
+  "sha256": "6e7ca46e9b3557265322b3c244bb57b416e3e0682660e4023d41b0ae0ddebcd0"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_midx?format=JSON&lang=EN&geo=ES&coicop=CP041&unit=I15&sinceTimePeriod=2015-01": {
   "bytes": 9816,
@@ -2676,35 +2676,35 @@
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&coicop18=TOTAL&unit=RCH_A": {
   "bytes": 17848,
   "etag": null,
-  "last_checked": "2026-09-26T09:46:07+00:00",
+  "last_checked": "2026-09-28T21:44:36+00:00",
   "last_modified": null,
   "sha256": "2dc5856aa4ade9c593b1adc54a6a4f4aefddd3dcbdb003f5c81f17900dfffed1"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hpi_q?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&purchase=TOTAL&unit=RCH_A": {
   "bytes": 7182,
   "etag": null,
-  "last_checked": "2026-09-26T09:46:09+00:00",
+  "last_checked": "2026-09-28T21:44:38+00:00",
   "last_modified": null,
   "sha256": "b63439e44f7b62c95562e6ae016f5ffc56340a90b9ae512480e0cebfe9eaf83f"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic_bt=PRD&nace_r2=B-D&unit=I21&s_adj=SCA": {
   "bytes": 19595,
   "etag": null,
-  "last_checked": "2026-09-26T09:46:07+00:00",
+  "last_checked": "2026-09-28T21:44:36+00:00",
   "last_modified": null,
   "sha256": "755a84b37873ecccb3fdc4842e5a1a3b0fe5d0a84a1e3c846a0af0e0052c86a5"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_trtu_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic_bt=VOL_SLS&nace_r2=G47&unit=I21&s_adj=SCA": {
   "bytes": 20803,
   "etag": null,
-  "last_checked": "2026-09-26T09:46:08+00:00",
+  "last_checked": "2026-09-28T21:44:37+00:00",
   "last_modified": null,
   "sha256": "e054f211d266b22c5ab87815af5643a94ff1dbc56dd448b13d0fae028f9c2605"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&age=TOTAL&sex=T&unit=PC_ACT&s_adj=SA": {
   "bytes": 16930,
   "etag": null,
-  "last_checked": "2026-09-26T09:46:06+00:00",
+  "last_checked": "2026-09-28T21:44:35+00:00",
   "last_modified": null,
   "sha256": "55289dcec6cb297a1359d87ec629ea34dc163cd77033324912d97c253e04c0e2"
  },
@@ -2718,112 +2718,112 @@
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/AU/aggregate_job_postings_AU.csv": {
   "bytes": 201177,
   "etag": "W/\"2b43d9093af2e36d5e24ff2c28f0e3ea3299c0bff7f0a3ea711e0280b88fe4a4\"",
-  "last_checked": "2026-09-26T11:31:04+00:00",
+  "last_checked": "2026-09-28T21:44:28+00:00",
   "last_modified": null,
   "sha256": "aa7077165887417d33280eb3b7b42c570391291d9aa63b4672194d01cd5a53a6"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/CA/aggregate_job_postings_CA.csv": {
   "bytes": 200071,
   "etag": "W/\"970e3cda6636881fb9920c9529c071a8ce723e8f0fcf8c516cb06afb3e202b09\"",
-  "last_checked": "2026-09-26T11:31:04+00:00",
+  "last_checked": "2026-09-28T21:44:28+00:00",
   "last_modified": null,
   "sha256": "63aab90ee8ed4cb67e9aa4e9663f4f417331580c26ea37c450c57a0f8cb2c129"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/DE/aggregate_job_postings_DE.csv": {
   "bytes": 200961,
   "etag": "W/\"76868bc2d3a1428a4ff0bc784ac455678aacd19a652817272e02bee965bb8669\"",
-  "last_checked": "2026-09-26T11:31:01+00:00",
+  "last_checked": "2026-09-28T21:44:25+00:00",
   "last_modified": null,
   "sha256": "5a832ed3b234ada34ff5f3b8a58c540be679da60d41f0cce3dcc7715f70b7ca4"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/ES/aggregate_job_postings_ES.csv": {
   "bytes": 200132,
   "etag": "W/\"d8e5f818efdecc336abdd5f3ffd5824cc75c7a11eee7789b146b4c7ec3099572\"",
-  "last_checked": "2026-09-26T11:31:00+00:00",
+  "last_checked": "2026-09-28T21:44:24+00:00",
   "last_modified": null,
   "sha256": "d811342d07a84009afbf6c2ecb91c836559d884b436ef8a83cabed08d9719db9"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/FR/aggregate_job_postings_FR.csv": {
   "bytes": 199973,
   "etag": "W/\"cf6770df4f01cba63c90833ba1e75073135df54016b942225ed1386683f85750\"",
-  "last_checked": "2026-09-26T11:31:01+00:00",
+  "last_checked": "2026-09-28T21:44:25+00:00",
   "last_modified": null,
   "sha256": "f2b235adc3a467323d8b47641d7225a14df14c0d841a7b24fc2c4bb33b685804"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/GB/aggregate_job_postings_GB.csv": {
   "bytes": 197622,
   "etag": "W/\"fd8fb3f8c53baa0d5feacedbdd2ea9ec093e2fd3ddaf26baa4c2bb044952027a\"",
-  "last_checked": "2026-09-26T11:31:03+00:00",
+  "last_checked": "2026-09-28T21:44:27+00:00",
   "last_modified": null,
   "sha256": "d156155ceb4141995652972a980c8ef48785ad1adfda39f26050f7677efc66a8"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/IE/aggregate_job_postings_IE.csv": {
   "bytes": 200246,
   "etag": "W/\"3a24815dc60039a155169a7e232b8befaa58abc20af86a9fa9489390af9aaa9e\"",
-  "last_checked": "2026-09-26T11:31:05+00:00",
+  "last_checked": "2026-09-28T21:44:29+00:00",
   "last_modified": null,
   "sha256": "d3a482216642c44383fd0f8aeb43f338c4e0eb2386ec875f7b4d9d8d35fd2d0c"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/IT/aggregate_job_postings_IT.csv": {
   "bytes": 200611,
   "etag": "W/\"e0123fc0ad2174388ed7ddf0d55546a24400a541a255b6a88d7295feafcb5b8e\"",
-  "last_checked": "2026-09-26T11:31:02+00:00",
+  "last_checked": "2026-09-28T21:44:26+00:00",
   "last_modified": null,
   "sha256": "6c8212a1af86e3421569d7cda3b0bdcbbf3e9abd4d9594b9195d2fd06377cf05"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/NL/aggregate_job_postings_NL.csv": {
   "bytes": 200651,
   "etag": "W/\"6847da1991041e258165e6f03cbbf126426f17283e1ac870346f308e898c4668\"",
-  "last_checked": "2026-09-26T11:31:02+00:00",
+  "last_checked": "2026-09-28T21:44:26+00:00",
   "last_modified": null,
   "sha256": "4d1a3e697f8bb9fb63909e5384b96d7782a340fc76463ff7a48a28f1586030a1"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/US/aggregate_job_postings_US.csv": {
   "bytes": 200956,
   "etag": "W/\"7c7ab2c57adad6617a9d625c43e1490646944146128e5465ab78ec60604cf603\"",
-  "last_checked": "2026-09-26T11:31:03+00:00",
+  "last_checked": "2026-09-28T21:44:27+00:00",
   "last_modified": null,
   "sha256": "b44516338e6d291b0547fd172a20365cfd2f8cba8dc2f514779cb7b4342bcbce"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.NAD,DSD_NAMAIN1@DF_QNA_EXPENDITURE_GROWTH_OECD,1.1/Q.Y.AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.S1+S1M.S1.B1GQ+P3+P51G._Z.._Z+_T.PC.L.G1.T0102?startPeriod=2015-Q1&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 469984,
   "etag": null,
-  "last_checked": "2026-09-26T14:18:59+00:00",
+  "last_checked": "2026-09-28T21:44:32+00:00",
   "last_modified": "2023-12-05",
   "sha256": "6f89bd0c26f497b397b79681eb7f912627e3930294cf00a9de83e2d0f08b2484"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_CLI,4.1/.?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 4738220,
   "etag": null,
-  "last_checked": "2026-09-26T12:10:12+00:00",
+  "last_checked": "2026-09-28T21:44:34+00:00",
   "last_modified": "2024-03-07",
   "sha256": "fafc62fb92656b9d3bfcdbe8cb1014363fae92dae1861f6c495eab90460d094f"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_FINMARK,4.0/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA+EA20.M.IRLT+CC+SHARE.._Z._Z._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 905206,
   "etag": null,
-  "last_checked": "2026-09-26T14:19:03+00:00",
+  "last_checked": "2026-09-28T21:44:33+00:00",
   "last_modified": "2023-11-08",
   "sha256": "bcb37c7478cc05854d1a28ce1310e504493949bbbedf2831bafb546d85407d21"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_INDSERV,4.3/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.M.PRVM.IX.BTE.Y._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 273086,
   "etag": null,
-  "last_checked": "2026-09-26T14:18:59+00:00",
+  "last_checked": "2026-09-28T21:44:32+00:00",
   "last_modified": "2026-05-04",
   "sha256": "386d95134553de00004e3b31641bd86fc23e45fb338d9760c106574304c5d0e5"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_INDSERV,4.3/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.M.TOVM.IX.G47.Y._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 270496,
   "etag": null,
-  "last_checked": "2026-09-26T14:19:00+00:00",
+  "last_checked": "2026-09-28T21:44:32+00:00",
   "last_modified": "2026-05-04",
   "sha256": "10eca8b87664ac431fca7f93291c327f8d266a8ae10213fccaae495516902d54"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_UNE_M,1.0/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.UNE_LF_M.PT_LF_SUB._Z.Y._T.Y_GE15._Z.M?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 261609,
   "etag": null,
-  "last_checked": "2026-09-26T14:19:00+00:00",
+  "last_checked": "2026-09-28T21:44:33+00:00",
   "last_modified": "2023-11-14",
   "sha256": "2b100502a6f104df343db2783d0be7a2666d1cbcd14355ed05856c38c718ab42"
  },
@@ -18321,7 +18321,7 @@
  "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Industrie-Verarbeitendes-Gewerbe/Publikationen/Downloads-Konjunktur/statistischer-bericht-lkw-maut-fahrleistungsindex-5421901.xlsx?__blob=publicationFile&v=24": {
   "bytes": 948673,
   "etag": "\"984275efc16cc93ee35cc0b8904228f1\"",
-  "last_checked": "2026-09-26T14:21:41+00:00",
+  "last_checked": "2026-09-28T21:44:31+00:00",
   "last_modified": "Thu, 24 Sep 2026 09:46:09 GMT",
   "sha256": "e358666345c38427888583fd539e1e47b9b532eebbcbfe90965dfb49aaef00a9"
  },
