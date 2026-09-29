@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28T21:44:55+00:00",
+ "generated_at": "2026-09-29T06:08:01+00:00",
  "targets_version": "targets-v1",
  "frozen": [
   {
@@ -217,9 +217,45 @@
    "pct_error": null,
    "inside_80": null,
    "direction_correct": null
+  },
+  {
+   "target_id": "transfers_3m",
+   "question": "How many homes will change hands in Madrid province three months from now?",
+   "issued_at": "2026-09-29T06:08:01+00:00",
+   "from_period": "2026-07",
+   "for_period": "2026-10",
+   "geo_level": "province",
+   "unit": "transactions",
+   "model": "random_walk",
+   "model_verdict": "baseline",
+   "predicted_p50": 11262.0,
+   "p_direction_up": 0.47844827586206895,
+   "data_vintage": "sha256:53ee6d35d56ef217578172bfa33da0dc",
+   "actual": null,
+   "pct_error": null,
+   "inside_80": null,
+   "direction_correct": null
+  },
+  {
+   "target_id": "transfers_6m",
+   "question": "How many homes will change hands in Madrid province six months from now?",
+   "issued_at": "2026-09-29T06:08:01+00:00",
+   "from_period": "2026-07",
+   "for_period": "2027-01",
+   "geo_level": "province",
+   "unit": "transactions",
+   "model": "random_walk",
+   "model_verdict": "baseline",
+   "predicted_p50": 11288.0,
+   "p_direction_up": 0.4890829694323144,
+   "data_vintage": "sha256:53ee6d35d56ef217578172bfa33da0dc",
+   "actual": null,
+   "pct_error": null,
+   "inside_80": null,
+   "direction_correct": null
   }
  ],
  "scores": [],
- "pending": 12,
+ "pending": 14,
  "summary": {}
 }

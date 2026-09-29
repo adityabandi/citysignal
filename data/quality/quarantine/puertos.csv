@@ -1,0 +1,2 @@
+metric_id,geo_id,geo_level,period,value,unit,source_id,observation_end,published_at,fetched_at,quality_flag,revision,prior_value,reason
+port_passengers,port-AGP,port,2026-04,69559,passengers,puertos,2026-04-30,,2026-09-29T06:02:41+00:00,ok,0,69527,unexpected_revision

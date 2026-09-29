@@ -93,98 +93,98 @@
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/barrio__dist-28079-07.csv": {
   "bytes": 730,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "9294e9138992efb93e95918ecd86ea23ac71a0d6647d1d70600d77f91bccabed"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/barrio__dist-28079-13.csv": {
   "bytes": 797,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "28c14d077e758613dd02d978ed635dee712c0d55cd879d082d83139efc753998"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/commercial__mun-28079.csv": {
   "bytes": 798,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "2ad65d20b8cb4718505ed46586ca1d309b427baed4a430e69d949850b8506680"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/distress__es.csv": {
   "bytes": 796,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "0bd0318cdd95fb4d6cd6b8cd55c0d7002898293d6d07e5b0e9714aefe39e6c83"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/housing__mun-07040.csv": {
   "bytes": 1304,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "7a051e24b5289f10f5db7079775b50156ca9766e6b2ba20e364ad2ec3bef44c3"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/housing__mun-08019.csv": {
   "bytes": 1581,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "a7fd808a6b197d808f1fede678b41b9134d39684aed64ab1674b487825366ab1"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/housing__mun-28079.csv": {
   "bytes": 1589,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "733132a8e20b93daff190af7b1d9e2d73260e3d10536fe108112338de16c7381"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/housing__mun-29067.csv": {
   "bytes": 1356,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "0f9871b726a4997ea639fd4e0bafe138b4f232240b3d5fdfcc2678fbeb964c57"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/housing__mun-41091.csv": {
   "bytes": 1353,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "e752ec3e00df613953370f37cd2a37dbc7af3d6fa83c56aa4b26a802b4ab487f"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/housing__mun-46250.csv": {
   "bytes": 1396,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "552d0d9a92605b925a63c2415f183e9540d592b81756484c6e96f6c62940d720"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/housing__mun-48020.csv": {
   "bytes": 1332,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "fda4eb197bb6e852e3a7b7d7f9906e7fd4a037f14ef82b31740e89d13e6c9ebe"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/housing__mun-50297.csv": {
   "bytes": 1357,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "92bf33918ddb428a2237d3ceea1cb9fa926dc77c471242ed55303e981cfefb5b"
  },
  "file:///home/runner/work/citysignal/citysignal/data/manual/trends/relocation__mun-28079.csv": {
   "bytes": 1108,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:04+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "9547a7b0eada9ff72a80c2e4852b3605a673ab153ed90bd57342c0cc05ba6743"
  },
  "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/dts/deposits_withdrawals_operating_cash?filter=record_date%3Agte%3A2023-02-14%2Ctransaction_type%3Aeq%3ADeposits%2Ctransaction_catg%3Aeq%3ATaxes+-+Withheld+Individual%2FFICA&sort=record_date&page%5Bsize%5D=10000": {
   "bytes": 503158,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:30+00:00",
+  "last_checked": "2026-09-29T06:06:09+00:00",
   "last_modified": null,
   "sha256": "b600130d037a35142b397f5f32c7fc9dea360ff4891ef3ee47c5377da134c68d"
  },
@@ -1952,6 +1952,48 @@
   "last_modified": null,
   "sha256": "906b644c5404684ad778676af453a736df73ebc1007368ae71c703e9c52b4439"
  },
+ "https://api.worldbank.org/v2/country/au;br;ca;cn;fr;de;in;id;ie;it;jp;mx;nl;no;pl;pt;ru;sa;sg;za;kr;es;se;ch;tr;ae;gb;us/indicator/FP.CPI.TOTL.ZG?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 70608,
+  "etag": null,
+  "last_checked": "2026-09-29T06:07:40+00:00",
+  "last_modified": "Tue, 29 Sep 2026 06:07:40 GMT",
+  "sha256": "a0cb17c52d089f5b2be597f12f36edb4bf3c9dcc29b267023faa6d0154965a50"
+ },
+ "https://api.worldbank.org/v2/country/au;br;ca;cn;fr;de;in;id;ie;it;jp;mx;nl;no;pl;pt;ru;sa;sg;za;kr;es;se;ch;tr;ae;gb;us/indicator/NE.TRD.GNFS.ZS?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 63992,
+  "etag": null,
+  "last_checked": "2026-09-29T06:07:42+00:00",
+  "last_modified": "Tue, 29 Sep 2026 06:07:42 GMT",
+  "sha256": "35ec9271e55983c982d167783d63c2854bb5f8e9ae0eccbae7370f77dcf26c7f"
+ },
+ "https://api.worldbank.org/v2/country/au;br;ca;cn;fr;de;in;id;ie;it;jp;mx;nl;no;pl;pt;ru;sa;sg;za;kr;es;se;ch;tr;ae;gb;us/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 66567,
+  "etag": null,
+  "last_checked": "2026-09-29T06:07:40+00:00",
+  "last_modified": "Tue, 29 Sep 2026 06:07:40 GMT",
+  "sha256": "7fa4c08bd80f2ddf3b9254a06e284dcef420145fbdc11cc65b66b0d472dcf2d9"
+ },
+ "https://api.worldbank.org/v2/country/au;br;ca;cn;fr;de;in;id;ie;it;jp;mx;nl;no;pl;pt;ru;sa;sg;za;kr;es;se;ch;tr;ae;gb;us/indicator/NY.GDP.PCAP.PP.KD?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 75718,
+  "etag": null,
+  "last_checked": "2026-09-29T06:07:42+00:00",
+  "last_modified": "Tue, 29 Sep 2026 06:07:42 GMT",
+  "sha256": "de939920880c41b00418d6844b986a623a10073c89ab362e5e6251f4bb74e6a5"
+ },
+ "https://api.worldbank.org/v2/country/au;br;ca;cn;fr;de;in;id;ie;it;jp;mx;nl;no;pl;pt;ru;sa;sg;za;kr;es;se;ch;tr;ae;gb;us/indicator/SL.UEM.TOTL.ZS?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 76370,
+  "etag": null,
+  "last_checked": "2026-09-29T06:07:41+00:00",
+  "last_modified": "Tue, 29 Sep 2026 06:07:41 GMT",
+  "sha256": "c15c2adebeb5d7f36de71857dde9a797f4e9bd0833f0c22103d5bde676ef4071"
+ },
+ "https://api.worldbank.org/v2/country/au;br;ca;cn;fr;de;in;id;ie;it;jp;mx;nl;no;pl;pt;ru;sa;sg;za;kr;es;se;ch;tr;ae;gb;us/indicator/SP.POP.TOTL?format=json&date=2015:2100&per_page=10000": {
+  "bytes": 61059,
+  "etag": null,
+  "last_checked": "2026-09-29T06:07:41+00:00",
+  "last_modified": "Tue, 29 Sep 2026 06:07:41 GMT",
+  "sha256": "428896b903dc3c6a21581de908b6210ef43735f7aab3abfe2dd6c31da6c4ab78"
+ },
  "https://api.worldbank.org/v2/country/es;pt;fr;de;it;nl/indicator/NE.TRD.GNFS.ZS?format=json&date=2015:2100&per_page=10000": {
   "bytes": 13686,
   "etag": null,
@@ -2016,53 +2058,53 @@
   "sha256": "428896b903dc3c6a21581de908b6210ef43735f7aab3abfe2dd6c31da6c4ab78"
  },
  "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2019-01-01T00:00&end_date=2019-12-31T23:59&time_trunc=day": {
-  "bytes": 30859,
+  "bytes": 30891,
   "etag": null,
-  "last_checked": "2026-09-26T09:48:24+00:00",
+  "last_checked": "2026-09-29T06:03:37+00:00",
   "last_modified": null,
-  "sha256": "b98d73fb463b1cc42f854dd3a69c6f11868f2d80373355ee6c8abddc8b59e71d"
+  "sha256": "fa5e40415eed318ec6af1bf5224174897e81bcac132d0558f6f435c3425c2e62"
  },
  "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2020-01-01T00:00&end_date=2020-12-31T23:59&time_trunc=day": {
-  "bytes": 31055,
+  "bytes": 31087,
   "etag": null,
-  "last_checked": "2026-09-26T09:48:40+00:00",
+  "last_checked": "2026-09-29T06:04:00+00:00",
   "last_modified": null,
-  "sha256": "6e5fad67d0394fa4c44ff80e89db05e8e81622409958fa686507010fe7cb8f19"
+  "sha256": "238442288a1c49f104665cb7c1fbd2fe7e96540571c50bc020def3a43f1cfea6"
  },
  "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2021-01-01T00:00&end_date=2021-12-31T23:59&time_trunc=day": {
   "bytes": 30836,
   "etag": null,
-  "last_checked": "2026-09-26T09:48:55+00:00",
+  "last_checked": "2026-09-29T06:04:20+00:00",
   "last_modified": null,
-  "sha256": "b1e78a69443278d936ae34656cbb7b6e3940f6fb5cbc911ce1d3c0c8b149c4ea"
+  "sha256": "08acdb80f8487f14c6e209f0518661c8dcff843f51d51f50bad081c3c6c977e3"
  },
  "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2022-01-01T00:00&end_date=2022-12-31T23:59&time_trunc=day": {
   "bytes": 30797,
   "etag": null,
-  "last_checked": "2026-09-26T09:49:09+00:00",
+  "last_checked": "2026-09-29T06:04:35+00:00",
   "last_modified": null,
-  "sha256": "2b082799b46f52b00b356b87eb9b6fa5866ee893dd71e431841cf3812ebb8454"
+  "sha256": "63917bb3a5fcbdbc49f64739c1e5d4b07229b12da5cf5097c11020f5ff975a40"
  },
  "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2023-01-01T00:00&end_date=2023-12-31T23:59&time_trunc=day": {
   "bytes": 30869,
   "etag": null,
-  "last_checked": "2026-09-26T09:49:24+00:00",
+  "last_checked": "2026-09-29T06:04:51+00:00",
   "last_modified": null,
-  "sha256": "9891839578731f0b5a7dd31394d9778ad3615154eda6699e633fc14236a9b634"
+  "sha256": "bfef284ab22588c310bab7949f75863b95462d3b7d87489ad1985edfd2ca9b2f"
  },
  "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2024-01-01T00:00&end_date=2024-12-31T23:59&time_trunc=day": {
   "bytes": 30982,
   "etag": null,
-  "last_checked": "2026-09-26T09:49:42+00:00",
+  "last_checked": "2026-09-29T06:05:16+00:00",
   "last_modified": null,
-  "sha256": "e567ddec7d7a3e40fe2a2b9fa09d5f1e113614226c3fda3db20641955f52c949"
+  "sha256": "62a3ce0e3ff15aa49c98c52d1b3ccaa20e5c6af0fb8da5393cefedc959c87306"
  },
  "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2025-01-01T00:00&end_date=2025-12-31T23:59&time_trunc=day": {
   "bytes": 30890,
   "etag": null,
-  "last_checked": "2026-09-26T09:50:01+00:00",
+  "last_checked": "2026-09-29T06:05:36+00:00",
   "last_modified": null,
-  "sha256": "0f72b4d28b7b09b717333de08be5c48172abae2c2facde41a5f56ca01aa7f93c"
+  "sha256": "212097aa220a7dc41d752dc8bbea8799f7a7bcf5e54162c076e161a75c74eda1"
  },
  "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2026-01-01T00:00&end_date=2026-09-25T23:59&time_trunc=day": {
   "bytes": 22701,
@@ -2071,52 +2113,59 @@
   "last_modified": null,
   "sha256": "d680ace840765bfb3f5f7170b06fe0b6dffb715c6e0f8a395fc2a3b4536386d3"
  },
+ "https://apidatos.ree.es/en/datos/demanda/evolucion?start_date=2026-01-01T00:00&end_date=2026-09-28T23:59&time_trunc=day": {
+  "bytes": 23038,
+  "etag": null,
+  "last_checked": "2026-09-29T06:05:53+00:00",
+  "last_modified": null,
+  "sha256": "43de0506c3490e233b36c4c6dd92446e4bd46163aebf0139e49cade8ca007da7"
+ },
  "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2019-01-01T00:00&end_date=2019-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
   "bytes": 5849,
   "etag": null,
-  "last_checked": "2026-09-26T09:48:25+00:00",
+  "last_checked": "2026-09-29T06:03:38+00:00",
   "last_modified": null,
   "sha256": "a69901192ce84f132a6d05d74d40751a79eb3acdfaf9fa90b2b1fc44422e02b6"
  },
  "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2020-01-01T00:00&end_date=2020-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
   "bytes": 5832,
   "etag": null,
-  "last_checked": "2026-09-26T09:48:40+00:00",
+  "last_checked": "2026-09-29T06:04:00+00:00",
   "last_modified": null,
   "sha256": "c7915ee0f1aac3e818c3f446c301732fced61314966e064d2687b29a74f738eb"
  },
  "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2021-01-01T00:00&end_date=2021-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
   "bytes": 5828,
   "etag": null,
-  "last_checked": "2026-09-26T09:48:55+00:00",
+  "last_checked": "2026-09-29T06:04:20+00:00",
   "last_modified": null,
   "sha256": "8756b4641343d0542c7207b93c03e64db6983a6a263fd3ecc17eb689b1994f1b"
  },
  "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2022-01-01T00:00&end_date=2022-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
   "bytes": 5827,
   "etag": null,
-  "last_checked": "2026-09-26T09:49:10+00:00",
+  "last_checked": "2026-09-29T06:04:36+00:00",
   "last_modified": null,
   "sha256": "32c1e9a105c485a83004f6a901119a21dba15aed73ae1c3538af733fff8d700f"
  },
  "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2023-01-01T00:00&end_date=2023-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
   "bytes": 5817,
   "etag": null,
-  "last_checked": "2026-09-26T09:49:25+00:00",
+  "last_checked": "2026-09-29T06:04:51+00:00",
   "last_modified": null,
   "sha256": "a00d143d632af26f8bd0d95f534b5c379144098dbe88d3cfd08c97994d6381b2"
  },
  "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2024-01-01T00:00&end_date=2024-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
   "bytes": 5795,
   "etag": null,
-  "last_checked": "2026-09-26T09:49:43+00:00",
+  "last_checked": "2026-09-29T06:05:17+00:00",
   "last_modified": null,
   "sha256": "3f9349534b59d9d8e22c0c1934bffce3dcffa92fa3202797ac3806d928a289a8"
  },
  "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2025-01-01T00:00&end_date=2025-12-31T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
   "bytes": 5811,
   "etag": null,
-  "last_checked": "2026-09-26T09:50:01+00:00",
+  "last_checked": "2026-09-29T06:05:36+00:00",
   "last_modified": null,
   "sha256": "f716f3dd3cbd94e9d43ec9938d1f3ffd2060560b20aad2613d0cf8ddb6b10648"
  },
@@ -2127,194 +2176,201 @@
   "last_modified": null,
   "sha256": "f7f1167a50ab4ee5a1df5d732c937b4100e4e5ed282d7a54c935379e7f142d3a"
  },
+ "https://apidatos.ree.es/en/datos/demanda/ire-general?start_date=2026-01-01T00:00&end_date=2026-09-28T23:59&time_trunc=month&geo_trunc=electric_system&geo_limit=peninsular&geo_ids=8741": {
+  "bytes": 4371,
+  "etag": null,
+  "last_checked": "2026-09-29T06:05:54+00:00",
+  "last_modified": null,
+  "sha256": "f7f1167a50ab4ee5a1df5d732c937b4100e4e5ed282d7a54c935379e7f142d3a"
+ },
  "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP001_01.csv": {
   "bytes": 37788115,
   "etag": "0x8DEB7E15ED4225D",
-  "last_checked": "2026-09-22T05:57:56+00:00",
+  "last_checked": "2026-09-29T06:01:39+00:00",
   "last_modified": "Fri, 22 May 2026 09:06:11 GMT",
   "sha256": "c53994b28ee3426c82c311b6f9ad599794981e6cf5f4356517ef00d2144caa61"
  },
  "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP002_01.csv": {
   "bytes": 233382,
   "etag": null,
-  "last_checked": "2026-09-22T05:57:59+00:00",
+  "last_checked": "2026-09-29T06:01:41+00:00",
   "last_modified": "Fri, 26 Jun 2026 09:29:21 GMT",
   "sha256": "2eda9bafa3f56a5406da5032ab9a10d1de12df9105ff6845e5de9110ff92f7eb"
  },
  "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP004_01.csv": {
   "bytes": 1775469,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:01+00:00",
+  "last_checked": "2026-09-29T06:01:43+00:00",
   "last_modified": "Mon, 29 Jun 2026 11:52:37 GMT",
   "sha256": "685e1cef2876af253d8742d8475be3db324cd0c3158aeb1e885f57bc017aeced"
  },
  "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP005_01.csv": {
   "bytes": 2693507,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:03+00:00",
+  "last_checked": "2026-09-29T06:01:44+00:00",
   "last_modified": "Thu, 14 May 2026 10:01:56 GMT",
   "sha256": "755ad55f149a47b690e19134239f7aa6faa8c129a89dec572c6d31f561097568"
  },
  "https://cdn.mivau.gob.es/portal-web-mivau/Datos_MIVAU/CSV/VDP006_01.csv": {
   "bytes": 688965,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:04+00:00",
+  "last_checked": "2026-09-29T06:01:46+00:00",
   "last_modified": "Thu, 17 Sep 2026 14:46:28 GMT",
   "sha256": "21af4264fd80d617857885032a9a3164c19935dfb18afacf3d9b08647ba68a0b"
  },
  "https://check-payment-practices.service.gov.uk/export/csv/": {
-  "bytes": 102784197,
+  "bytes": 102856862,
   "etag": null,
-  "last_checked": "2026-09-26T14:07:37+00:00",
+  "last_checked": "2026-09-29T06:06:17+00:00",
   "last_modified": null,
-  "sha256": "b86ce10f864a37aa5e9e5a0677e2817cb1a1c8161aa44ab6790cd5730e6c866e"
+  "sha256": "1787cf94e3d7a0aa1ec7d5af94d61e22034a764d6815ec2d0074c492b63f94e2"
  },
  "https://data-api.ecb.europa.eu/service/data/EXR/M.CHF.EUR.SP00.A?format=jsondata&startPeriod=1999-01": {
   "bytes": 52070,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:12+00:00",
+  "last_checked": "2026-09-29T05:52:21+00:00",
   "last_modified": "Mon, 31 Aug 2026 14:20:06 GMT",
   "sha256": "9f23c39643f861c657924f1009dc6c890a1ce9782452066899895bf385fc7bbc"
  },
  "https://data-api.ecb.europa.eu/service/data/EXR/M.GBP.EUR.SP00.A?format=jsondata&startPeriod=1999-01": {
   "bytes": 52098,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:10+00:00",
+  "last_checked": "2026-09-29T05:52:18+00:00",
   "last_modified": "Mon, 31 Aug 2026 14:20:06 GMT",
   "sha256": "51c58e2a97aed4d1b333383ba989fe98c7c078e42271531781e2160f02714beb"
  },
  "https://data-api.ecb.europa.eu/service/data/EXR/M.JPY.EUR.SP00.A?format=jsondata&startPeriod=1999-01": {
   "bytes": 52527,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:11+00:00",
+  "last_checked": "2026-09-29T05:52:19+00:00",
   "last_modified": "Mon, 31 Aug 2026 14:20:06 GMT",
   "sha256": "ba98b0185eddad9c99f3167b07d6d96168fd6cb3be427e6783dbca3ef6c7e165"
  },
  "https://data-api.ecb.europa.eu/service/data/EXR/M.NOK.EUR.SP00.A?format=jsondata&startPeriod=1999-01": {
   "bytes": 52130,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:12+00:00",
+  "last_checked": "2026-09-29T05:52:20+00:00",
   "last_modified": "Mon, 31 Aug 2026 14:20:06 GMT",
   "sha256": "b2f87dbc1983cd36872d0733fddb13ce50c3014353ae94c095c485c09a8ae57d"
  },
  "https://data-api.ecb.europa.eu/service/data/EXR/M.SEK.EUR.SP00.A?format=jsondata&startPeriod=1999-01": {
   "bytes": 52162,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:11+00:00",
+  "last_checked": "2026-09-29T05:52:20+00:00",
   "last_modified": "Mon, 31 Aug 2026 14:20:06 GMT",
   "sha256": "f7da4a35b366c474656a097d627812ebc847165273220984368bd9d6ba587bcc"
  },
  "https://data-api.ecb.europa.eu/service/data/EXR/M.USD.EUR.SP00.A?format=jsondata&startPeriod=1999-01": {
   "bytes": 51969,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:10+00:00",
+  "last_checked": "2026-09-29T05:52:18+00:00",
   "last_modified": "Mon, 31 Aug 2026 14:20:06 GMT",
   "sha256": "7c85a4166eb72d0639b70e0fe9bdc068bf1c03902b86f87c07af2aaf3910ecf3"
  },
  "https://data-api.ecb.europa.eu/service/data/FM/B.U2.EUR.4F.KR.MRR_FR.LEV?format=jsondata&startPeriod=1999-01": {
   "bytes": 10656,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:13+00:00",
+  "last_checked": "2026-09-29T05:52:21+00:00",
   "last_modified": "Thu, 10 Sep 2026 14:22:33 GMT",
   "sha256": "499d0858b8c466be709e91b50bba42a7001c2e5ed127256a402e82cd02ed57d1"
  },
  "https://data-api.ecb.europa.eu/service/data/ICP/M.U2.N.000000.4.ANR?format=jsondata&startPeriod=1999-01": {
   "bytes": 50238,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:13+00:00",
+  "last_checked": "2026-09-29T05:52:22+00:00",
   "last_modified": "Mon, 19 Jan 2026 10:05:23 GMT",
   "sha256": "5dac5df771aa2cc78e50269be588fcfdfbf4a98dc4bc3724c704e8dec745ee9a"
  },
  "https://data-api.ecb.europa.eu/service/data/LFSI/M.I9.S.UNEHRT.TOTAL0.15_74.T?format=jsondata&startPeriod=1999-01": {
   "bytes": 46629,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:15+00:00",
+  "last_checked": "2026-09-29T05:52:23+00:00",
   "last_modified": "Tue, 01 Sep 2026 09:00:00 GMT",
   "sha256": "12fd0fa8c37bd3ef000b5868a2faa87aee690c2bfc4a030b2d3b0f351015bf83"
  },
  "https://data-api.ecb.europa.eu/service/data/MIR/M.ES.B.A2C.A.R.A.2250.EUR.N?format=jsondata&startPeriod=2015-01": {
   "bytes": 23272,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:09+00:00",
+  "last_checked": "2026-09-29T05:52:17+00:00",
   "last_modified": "Wed, 02 Sep 2026 08:00:00 GMT",
   "sha256": "c32bac2e973ccd93a2da7ec83625f39968f0b3298b464ed290f6b2ad1670f352"
  },
  "https://data.bis.org/static/bulk/WS_CBPOL_csv_col.zip": {
   "bytes": 284555,
   "etag": "W/\"4578b-1a0d88c3d05\"",
-  "last_checked": "2026-09-28T21:44:34+00:00",
+  "last_checked": "2026-09-29T05:50:26+00:00",
   "last_modified": "Fri, 25 Sep 2026 12:31:04 GMT",
   "sha256": "d8fdf2fca5df3219a34e1b9bb9346549e3471d12009bdacb907334f5448f460c"
  },
  "https://data.bis.org/static/bulk/WS_LONG_CPI_csv_col.zip": {
   "bytes": 462424,
   "etag": "W/\"70e58-1a0d88cdc9a\"",
-  "last_checked": "2026-09-28T21:44:34+00:00",
+  "last_checked": "2026-09-29T05:50:26+00:00",
   "last_modified": "Fri, 25 Sep 2026 12:31:45 GMT",
   "sha256": "b4d89c76c7eabccd783fde0385f5ae604790688c5736798ae2d4cec77854e6e8"
  },
  "https://data.insideairbnb.com/spain/andaluc\u00eda/malaga/2026-06-30/data/listings.csv.gz": {
   "bytes": 5439939,
   "etag": "\"2c862748b702253ea09ff6cc82a0dfe2\"",
-  "last_checked": "2026-09-22T05:57:12+00:00",
+  "last_checked": "2026-09-29T06:00:43+00:00",
   "last_modified": "Fri, 03 Jul 2026 20:54:37 GMT",
   "sha256": "12081d04662fd2b2033474e43a445804eb9dab536b859413204f0472d97b6d2a"
  },
  "https://data.insideairbnb.com/spain/andaluc\u00eda/sevilla/2026-06-30/data/listings.csv.gz": {
   "bytes": 5185076,
   "etag": "\"a5f28b255f17f105ea9002db0c21e98b\"",
-  "last_checked": "2026-09-22T05:57:13+00:00",
+  "last_checked": "2026-09-29T06:00:44+00:00",
   "last_modified": "Fri, 03 Jul 2026 20:20:44 GMT",
   "sha256": "af1788a955eb869f29b3c66e515a348b9ffeecaadff7480c1cdffe71a9856519"
  },
  "https://data.insideairbnb.com/spain/catalonia/barcelona/2026-06-24/data/listings.csv.gz": {
   "bytes": 8175620,
   "etag": "\"a64c0f42ed4d5458a5934e20c74f478d\"",
-  "last_checked": "2026-09-22T05:57:11+00:00",
+  "last_checked": "2026-09-29T06:00:42+00:00",
   "last_modified": "Fri, 03 Jul 2026 06:38:07 GMT",
   "sha256": "aefc9848413a265973255a3ba6e43b650b645f9ee558a2474912e9c9d06a77fa"
  },
  "https://data.insideairbnb.com/spain/comunidad-de-madrid/madrid/2026-06-20/data/listings.csv.gz": {
   "bytes": 10368398,
   "etag": "\"9788be1f0bbcbe9a08ac749cde145064-2\"",
-  "last_checked": "2026-09-22T05:57:11+00:00",
+  "last_checked": "2026-09-29T06:00:42+00:00",
   "last_modified": "Thu, 02 Jul 2026 03:56:52 GMT",
   "sha256": "18e0f5c631759b6588503b513f21af6045fd883467a39b2d9903bc97d36bd9a9"
  },
  "https://data.insideairbnb.com/spain/islas-baleares/mallorca/2026-06-23/data/listings.csv.gz": {
   "bytes": 10034232,
   "etag": "\"31b67baf6159fbb2077500bf74d8ce16-2\"",
-  "last_checked": "2026-09-22T05:57:13+00:00",
+  "last_checked": "2026-09-29T06:00:44+00:00",
   "last_modified": "Thu, 02 Jul 2026 22:04:33 GMT",
   "sha256": "3b4d231a3d3eed646b7a4096c499b992781b81a96e1f3aab2114eff33f2dd1c7"
  },
  "https://data.insideairbnb.com/spain/pv/euskadi/2026-06-30/data/listings.csv.gz": {
   "bytes": 3524680,
   "etag": "\"c412b39db27d2b397617aa3ccb6b22a3\"",
-  "last_checked": "2026-09-22T05:57:14+00:00",
+  "last_checked": "2026-09-29T06:00:45+00:00",
   "last_modified": "Fri, 03 Jul 2026 00:21:04 GMT",
   "sha256": "395ae96d285b972e22326302c943f330232ca288bddb6c28bd8355c34ff68935"
  },
  "https://data.insideairbnb.com/spain/vc/valencia/2026-06-26/data/listings.csv.gz": {
   "bytes": 4363480,
   "etag": "\"f2de2c3f432258c476e0ecaa3f841fdd\"",
-  "last_checked": "2026-09-22T05:57:12+00:00",
+  "last_checked": "2026-09-29T06:00:43+00:00",
   "last_modified": "Fri, 03 Jul 2026 03:39:58 GMT",
   "sha256": "1e8b8c2fe84b1be886825160561469d51d117707ea1a3748e0ca2ff3e1a55d4f"
  },
  "https://datos.comunidad.madrid/dataset/6e5b1601-1af0-49bf-813b-227a093b7af1/resource/532735ad-4ce6-4a29-ad11-bb86916c0cf4/download/extraccionesvisados-de-direccion-de-obra-nueva-por-uso-de-la-edificacion.-comunidad-de-madrid-y-.csv": {
   "bytes": 5780689,
   "etag": "\"1777443046.97-5780689-530191682\"",
-  "last_checked": "2026-09-22T05:59:11+00:00",
+  "last_checked": "2026-09-29T06:06:22+00:00",
   "last_modified": "Wed, 29 Apr 2026 06:10:46 GMT",
   "sha256": "cf35925f104f073b21b57a17e1c32fdea319755f1dc17bfd5f0d3e3a0c0f7dfa"
  },
  "https://datos.madrid.es/dataset/200085-0-censo-locales/resource/200085-5-censo-locales/download/200085-5-censo-locales.csv": {
-  "bytes": 124987034,
-  "etag": "\"1790055582.1021128-124987034-2379288616\"",
-  "last_checked": "2026-09-22T05:57:25+00:00",
-  "last_modified": "Tue, 22 Sep 2026 05:39:42 GMT",
-  "sha256": "0935fe16b52fbae6cde159adb2adc7a93517dc296e9036251219b234ed9a25b5"
+  "bytes": 125005445,
+  "etag": "\"1790660225.3695457-125005445-2379288616\"",
+  "last_checked": "2026-09-29T06:00:58+00:00",
+  "last_modified": "Tue, 29 Sep 2026 05:37:05 GMT",
+  "sha256": "3f90dbe78db265015c520518240e5e0711c6731191051ced3083a74a92b57035"
  },
  "https://datos.madrid.es/dataset/201410-0-calidad-aire-diario/resource/201410-59-calidad-aire-diario-csv/download/201410-59-calidad-aire-diario-csv.csv": {
   "bytes": 226007,
@@ -2613,35 +2669,35 @@
  "https://datos.madrid.es/dataset/300694-0-viviendas-turisticas-geoportal/resource/300694-0-viviendas-turisticas-geoportal/download/300694-0-viviendas-turisticas-geoportal.zip": {
   "bytes": 72808,
   "etag": "\"11c68-65ae1cf347741\"",
-  "last_checked": "2026-09-22T05:57:52+00:00",
+  "last_checked": "2026-09-29T06:01:37+00:00",
   "last_modified": "Mon, 07 Sep 2026 10:09:10 GMT",
   "sha256": "7463ab7af3169ef0e0f5a4689e4a19d3ebd3220378ca071c899b164f4dbc2a41"
  },
  "https://datos.madrid.es/dataset/640505-0-licencias-urbanisticas-otorgadas/resource/640505-1-licencias-urbanisticas-otorgadas/download/640505-1-licencias-urbanisticas-otorgadas.csv": {
   "bytes": 2861363,
   "etag": "\"1788777488.8912456-2861363-240064466\"",
-  "last_checked": "2026-09-22T05:57:16+00:00",
+  "last_checked": "2026-09-29T06:00:47+00:00",
   "last_modified": "Mon, 07 Sep 2026 10:38:08 GMT",
   "sha256": "07c8abfebfac5578c3d9461d4d4b6fa8bc50bca1f574378599416a56d730a5da"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ei_bssi_m_r2?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic=BS-ESI-I&s_adj=SA": {
   "bytes": 17712,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:37+00:00",
+  "last_checked": "2026-09-29T05:52:30+00:00",
   "last_modified": null,
   "sha256": "dc59c946faa8cf15a6ec19ba58dea68cc6868ecdb80bc2184186ab0d6fb18633"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_gdp?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&na_item=B1GQ&unit=CLV_PCH_PRE&s_adj=SCA": {
   "bytes": 7835,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:35+00:00",
+  "last_checked": "2026-09-29T05:52:27+00:00",
   "last_modified": null,
   "sha256": "58d2e83b5b474fb110dbe7c286f5d5568a98de6e4173b027483965e07979f0bf"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/namq_10_pe?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&na_item=EMP_DC&unit=PCH_PRE_PER&s_adj=SCA": {
   "bytes": 6754,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:39+00:00",
+  "last_checked": "2026-09-29T05:52:31+00:00",
   "last_modified": null,
   "sha256": "6e7ca46e9b3557265322b3c244bb57b416e3e0682660e4023d41b0ae0ddebcd0"
  },
@@ -2662,441 +2718,441 @@
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&geo=ES&coicop18=CP041&unit=I15&sinceTimePeriod=2015-01": {
   "bytes": 10767,
   "etag": null,
-  "last_checked": "2026-09-26T10:00:55+00:00",
+  "last_checked": "2026-09-29T05:52:26+00:00",
   "last_modified": null,
   "sha256": "1e60c07eb60c910ea8632ee42b086115ac39ca0ae84c1404ea3879b769196980"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&geo=ES&coicop18=CP043&unit=I15&sinceTimePeriod=2015-01": {
   "bytes": 10787,
   "etag": null,
-  "last_checked": "2026-09-26T10:00:55+00:00",
+  "last_checked": "2026-09-29T05:52:27+00:00",
   "last_modified": null,
   "sha256": "6e1f27277078d35c3a13b0216b74c35917b54196bc8786437c5702eb761efce4"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_minr?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&coicop18=TOTAL&unit=RCH_A": {
   "bytes": 17848,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:36+00:00",
+  "last_checked": "2026-09-29T05:52:28+00:00",
   "last_modified": null,
   "sha256": "2dc5856aa4ade9c593b1adc54a6a4f4aefddd3dcbdb003f5c81f17900dfffed1"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hpi_q?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&purchase=TOTAL&unit=RCH_A": {
   "bytes": 7182,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:38+00:00",
+  "last_checked": "2026-09-29T05:52:30+00:00",
   "last_modified": null,
   "sha256": "b63439e44f7b62c95562e6ae016f5ffc56340a90b9ae512480e0cebfe9eaf83f"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_inpr_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic_bt=PRD&nace_r2=B-D&unit=I21&s_adj=SCA": {
   "bytes": 19595,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:36+00:00",
+  "last_checked": "2026-09-29T05:52:29+00:00",
   "last_modified": null,
   "sha256": "755a84b37873ecccb3fdc4842e5a1a3b0fe5d0a84a1e3c846a0af0e0052c86a5"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sts_trtu_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&indic_bt=VOL_SLS&nace_r2=G47&unit=I21&s_adj=SCA": {
   "bytes": 20803,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:37+00:00",
+  "last_checked": "2026-09-29T05:52:29+00:00",
   "last_modified": null,
   "sha256": "e054f211d266b22c5ab87815af5643a94ff1dbc56dd448b13d0fae028f9c2605"
  },
  "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_m?format=JSON&lang=EN&geo=ES&geo=PT&geo=FR&geo=DE&geo=IT&geo=NL&sinceTimePeriod=2015&age=TOTAL&sex=T&unit=PC_ACT&s_adj=SA": {
   "bytes": 16930,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:35+00:00",
+  "last_checked": "2026-09-29T05:52:28+00:00",
   "last_modified": null,
   "sha256": "55289dcec6cb297a1359d87ec629ea34dc163cd77033324912d97c253e04c0e2"
  },
  "https://files.ember-energy.org/public-downloads/monthly_full_release_long_format.csv": {
   "bytes": 70337486,
   "etag": "\"146861639c8c0a51d9115065e09bf35a\"",
-  "last_checked": "2026-09-26T11:31:12+00:00",
+  "last_checked": "2026-09-29T05:52:24+00:00",
   "last_modified": "Tue, 07 Jul 2026 15:44:07 GMT",
   "sha256": "2615fea2b9b644a9703bb19e1c24be370b04131a1a9cceae71e471a298ba2246"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/AU/aggregate_job_postings_AU.csv": {
   "bytes": 201177,
   "etag": "W/\"2b43d9093af2e36d5e24ff2c28f0e3ea3299c0bff7f0a3ea711e0280b88fe4a4\"",
-  "last_checked": "2026-09-28T21:44:28+00:00",
+  "last_checked": "2026-09-29T05:52:36+00:00",
   "last_modified": null,
   "sha256": "aa7077165887417d33280eb3b7b42c570391291d9aa63b4672194d01cd5a53a6"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/CA/aggregate_job_postings_CA.csv": {
   "bytes": 200071,
   "etag": "W/\"970e3cda6636881fb9920c9529c071a8ce723e8f0fcf8c516cb06afb3e202b09\"",
-  "last_checked": "2026-09-28T21:44:28+00:00",
+  "last_checked": "2026-09-29T05:52:35+00:00",
   "last_modified": null,
   "sha256": "63aab90ee8ed4cb67e9aa4e9663f4f417331580c26ea37c450c57a0f8cb2c129"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/DE/aggregate_job_postings_DE.csv": {
   "bytes": 200961,
   "etag": "W/\"76868bc2d3a1428a4ff0bc784ac455678aacd19a652817272e02bee965bb8669\"",
-  "last_checked": "2026-09-28T21:44:25+00:00",
+  "last_checked": "2026-09-29T05:52:33+00:00",
   "last_modified": null,
   "sha256": "5a832ed3b234ada34ff5f3b8a58c540be679da60d41f0cce3dcc7715f70b7ca4"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/ES/aggregate_job_postings_ES.csv": {
   "bytes": 200132,
   "etag": "W/\"d8e5f818efdecc336abdd5f3ffd5824cc75c7a11eee7789b146b4c7ec3099572\"",
-  "last_checked": "2026-09-28T21:44:24+00:00",
+  "last_checked": "2026-09-29T05:52:32+00:00",
   "last_modified": null,
   "sha256": "d811342d07a84009afbf6c2ecb91c836559d884b436ef8a83cabed08d9719db9"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/FR/aggregate_job_postings_FR.csv": {
   "bytes": 199973,
   "etag": "W/\"cf6770df4f01cba63c90833ba1e75073135df54016b942225ed1386683f85750\"",
-  "last_checked": "2026-09-28T21:44:25+00:00",
+  "last_checked": "2026-09-29T05:52:33+00:00",
   "last_modified": null,
   "sha256": "f2b235adc3a467323d8b47641d7225a14df14c0d841a7b24fc2c4bb33b685804"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/GB/aggregate_job_postings_GB.csv": {
   "bytes": 197622,
   "etag": "W/\"fd8fb3f8c53baa0d5feacedbdd2ea9ec093e2fd3ddaf26baa4c2bb044952027a\"",
-  "last_checked": "2026-09-28T21:44:27+00:00",
+  "last_checked": "2026-09-29T05:52:35+00:00",
   "last_modified": null,
   "sha256": "d156155ceb4141995652972a980c8ef48785ad1adfda39f26050f7677efc66a8"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/IE/aggregate_job_postings_IE.csv": {
   "bytes": 200246,
   "etag": "W/\"3a24815dc60039a155169a7e232b8befaa58abc20af86a9fa9489390af9aaa9e\"",
-  "last_checked": "2026-09-28T21:44:29+00:00",
+  "last_checked": "2026-09-29T05:52:36+00:00",
   "last_modified": null,
   "sha256": "d3a482216642c44383fd0f8aeb43f338c4e0eb2386ec875f7b4d9d8d35fd2d0c"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/IT/aggregate_job_postings_IT.csv": {
   "bytes": 200611,
   "etag": "W/\"e0123fc0ad2174388ed7ddf0d55546a24400a541a255b6a88d7295feafcb5b8e\"",
-  "last_checked": "2026-09-28T21:44:26+00:00",
+  "last_checked": "2026-09-29T05:52:33+00:00",
   "last_modified": null,
   "sha256": "6c8212a1af86e3421569d7cda3b0bdcbbf3e9abd4d9594b9195d2fd06377cf05"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/NL/aggregate_job_postings_NL.csv": {
   "bytes": 200651,
   "etag": "W/\"6847da1991041e258165e6f03cbbf126426f17283e1ac870346f308e898c4668\"",
-  "last_checked": "2026-09-28T21:44:26+00:00",
+  "last_checked": "2026-09-29T05:52:34+00:00",
   "last_modified": null,
   "sha256": "4d1a3e697f8bb9fb63909e5384b96d7782a340fc76463ff7a48a28f1586030a1"
  },
  "https://raw.githubusercontent.com/hiring-lab/job_postings_tracker/master/US/aggregate_job_postings_US.csv": {
   "bytes": 200956,
   "etag": "W/\"7c7ab2c57adad6617a9d625c43e1490646944146128e5465ab78ec60604cf603\"",
-  "last_checked": "2026-09-28T21:44:27+00:00",
+  "last_checked": "2026-09-29T05:52:34+00:00",
   "last_modified": null,
   "sha256": "b44516338e6d291b0547fd172a20365cfd2f8cba8dc2f514779cb7b4342bcbce"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.NAD,DSD_NAMAIN1@DF_QNA_EXPENDITURE_GROWTH_OECD,1.1/Q.Y.AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.S1+S1M.S1.B1GQ+P3+P51G._Z.._Z+_T.PC.L.G1.T0102?startPeriod=2015-Q1&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 469984,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:32+00:00",
+  "last_checked": "2026-09-29T06:01:46+00:00",
   "last_modified": "2023-12-05",
   "sha256": "6f89bd0c26f497b397b79681eb7f912627e3930294cf00a9de83e2d0f08b2484"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_CLI,4.1/.?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 4738220,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:34+00:00",
+  "last_checked": "2026-09-29T06:01:49+00:00",
   "last_modified": "2024-03-07",
   "sha256": "fafc62fb92656b9d3bfcdbe8cb1014363fae92dae1861f6c495eab90460d094f"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_FINMARK,4.0/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA+EA20.M.IRLT+CC+SHARE.._Z._Z._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 905206,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:33+00:00",
+  "last_checked": "2026-09-29T06:01:48+00:00",
   "last_modified": "2023-11-08",
   "sha256": "bcb37c7478cc05854d1a28ce1310e504493949bbbedf2831bafb546d85407d21"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_INDSERV,4.3/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.M.PRVM.IX.BTE.Y._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 273086,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:32+00:00",
+  "last_checked": "2026-09-29T06:01:47+00:00",
   "last_modified": "2026-05-04",
   "sha256": "386d95134553de00004e3b31641bd86fc23e45fb338d9760c106574304c5d0e5"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.STES,DSD_STES@DF_INDSERV,4.3/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.M.TOVM.IX.G47.Y._Z._Z.N?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 270496,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:32+00:00",
+  "last_checked": "2026-09-29T06:01:47+00:00",
   "last_modified": "2026-05-04",
   "sha256": "10eca8b87664ac431fca7f93291c327f8d266a8ae10213fccaae495516902d54"
  },
  "https://sdmx.oecd.org/public/rest/v1/data/OECD.SDD.TPS,DSD_LFS@DF_IALFS_UNE_M,1.0/AUS+BRA+CAN+CHN+FRA+DEU+IND+IDN+IRL+ITA+JPN+MEX+NLD+NOR+POL+PRT+RUS+SAU+SGP+ZAF+KOR+ESP+SWE+CHE+TUR+ARE+GBR+USA.UNE_LF_M.PT_LF_SUB._Z.Y._T.Y_GE15._Z.M?startPeriod=2015-01&dimensionAtObservation=AllDimensions#headers={\"Accept\": \"text/csv\"}": {
   "bytes": 261609,
   "etag": null,
-  "last_checked": "2026-09-28T21:44:33+00:00",
+  "last_checked": "2026-09-29T06:01:48+00:00",
   "last_modified": "2023-11-14",
   "sha256": "2b100502a6f104df343db2783d0be7a2666d1cbcd14355ed05856c38c718ab42"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ARE'": {
   "bytes": 47625,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:24+00:00",
+  "last_checked": "2026-09-29T06:02:02+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "c980bc6927c4d42e84f7951e46094833ec04f6b2e4e8472b25cc44e43f765b7e"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='AUS'": {
   "bytes": 47986,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:12+00:00",
+  "last_checked": "2026-09-29T06:01:49+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "6db2f41548cdac1833479086a268ee7fcac9d7b25f105b037026413c47b474ae"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='BRA'": {
   "bytes": 47863,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:12+00:00",
+  "last_checked": "2026-09-29T06:01:50+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "aecb293b5b86172c4e0d0fcc133424b0ae08b89f4c5da9bee82db790dc91640a"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='CAN'": {
   "bytes": 47504,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:13+00:00",
+  "last_checked": "2026-09-29T06:01:51+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "2ee1d8a05b296008c694c2e26df8a328100a25ae2225d940c9395acd3671faa3"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='CHE'": {
   "bytes": 131,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:23+00:00",
+  "last_checked": "2026-09-29T06:02:01+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "c53ef10d869afeee183a8d1426db6430199b6a9b74dbceb29f29b6434628f18f"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='CHN'": {
   "bytes": 49090,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:13+00:00",
+  "last_checked": "2026-09-29T06:01:51+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "af32b17b588e142bf7fa1a3054a610efbaefed17bf96905f0554c6bf55c68942"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='DEU'": {
   "bytes": 47660,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:14+00:00",
+  "last_checked": "2026-09-29T06:01:52+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "034b32bcd28a98a676a0fe3cf140bd10f53e4484f84ff0c1570970862f77b3ee"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ESP'": {
   "bytes": 47973,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:22+00:00",
+  "last_checked": "2026-09-29T06:02:00+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "d27dd42e38c00d09c14a1106e5510c8d35fbe0dafd2d48839232e03eaf2fa887"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='FRA'": {
   "bytes": 47591,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:14+00:00",
+  "last_checked": "2026-09-29T06:01:52+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "bffc1ee3037d159d27f8f2dfc07b0ac8e088ea26c73e8fc1bd4ae78b29238d1b"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='GBR'": {
   "bytes": 47813,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:25+00:00",
+  "last_checked": "2026-09-29T06:02:03+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "97d61263948d0b58dba68f91678a27a719e910d31e4085c9289c3503b7b24bab"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='IDN'": {
   "bytes": 48172,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:15+00:00",
+  "last_checked": "2026-09-29T06:01:53+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "08c9375038ff77b0c2c497e86796844fd77bbd9618d59c407ef7d20eabb46a48"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='IND'": {
   "bytes": 47598,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:15+00:00",
+  "last_checked": "2026-09-29T06:01:53+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "fac1108edf1c1b8480b26e60fe26f4157ba89bbe8bde283a1100ea94daded069"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='IRL'": {
   "bytes": 46430,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:16+00:00",
+  "last_checked": "2026-09-29T06:01:54+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "3e1bfa67774e137e2d826227ebfec8ffac9953153bd83511f3140957aa7556f2"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ITA'": {
   "bytes": 47754,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:16+00:00",
+  "last_checked": "2026-09-29T06:01:54+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "1d5f3c418d2db6950c417a4e43ce0fdb508fdd2a59617dbc1984f44f28cd2df0"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='JPN'": {
   "bytes": 48677,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:17+00:00",
+  "last_checked": "2026-09-29T06:01:55+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "2b87c87d5f899f175130fd155bb0532be9e3daff544d9c09961215a6b6c951cd"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='KOR'": {
   "bytes": 48299,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:22+00:00",
+  "last_checked": "2026-09-29T06:02:00+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "0fd1d9aa40c0062cf22d1732c7bc6c4da9391c249927eb59890cf217f13f90a1"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='MEX'": {
   "bytes": 47531,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:17+00:00",
+  "last_checked": "2026-09-29T06:01:55+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "847da2f6045eb171caa38cb28a93490b62622a7624f921f62d35e4d2264330ff"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='NLD'": {
   "bytes": 47951,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:18+00:00",
+  "last_checked": "2026-09-29T06:01:56+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "b9e8d649ab272cd96f5bfdbe6445fc974533010594e827541915a9b5f74bdcf3"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='NOR'": {
   "bytes": 47441,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:18+00:00",
+  "last_checked": "2026-09-29T06:01:56+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "5c8f8c0ab1742029c921f2112e37b0f41a29203f37fcc132d90af8a51189695a"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='POL'": {
   "bytes": 47159,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:19+00:00",
+  "last_checked": "2026-09-29T06:01:57+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "47e92f58546917129534cc93b38bc9a13ec9a3c7249bfea123cd74ed8db36f14"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='PRT'": {
   "bytes": 46939,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:19+00:00",
+  "last_checked": "2026-09-29T06:01:57+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "fac975171410782efeb5d9dc197a6b422d06a596c92b83e50c4c01c7dc24853b"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='RUS'": {
   "bytes": 47861,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:20+00:00",
+  "last_checked": "2026-09-29T06:01:58+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "ab2b24e43e217cfa64c32c57e50abe2fa74473ec67563a45c8d83634171cc5cc"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='SAU'": {
   "bytes": 47457,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:20+00:00",
+  "last_checked": "2026-09-29T06:01:58+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "6a7daac47e507ef7e09aa94d3457dcf6542c9e984ab383e063ba03f249f51498"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='SGP'": {
   "bytes": 47988,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:21+00:00",
+  "last_checked": "2026-09-29T06:01:59+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "d0feb4d95319bdb82e66236b0866fb2389bb452f81f56610ed6cc90e9514070b"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='SWE'": {
   "bytes": 47260,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:23+00:00",
+  "last_checked": "2026-09-29T06:02:01+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "4cd199e07b396853d9efa98544567fbc71b76e67c73c2ee97503944aeeb0889e"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='TUR'": {
   "bytes": 48187,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:24+00:00",
+  "last_checked": "2026-09-29T06:02:02+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "266c821aad04016ac78fa5e10401eac2dda0cfa54d0468d5943900a6414dcaa2"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='USA'": {
   "bytes": 48611,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:25+00:00",
+  "last_checked": "2026-09-29T06:02:03+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "e98b35ef4c8c65730b3fc60af436a57e26d45d501e6ecc84faa11bb7e189c404"
  },
  "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Monthly_TradeNow/FeatureServer/0/query?f=json&orderByFields=date&outFields=ISO3,date,ais_import_container,ais_import_general_cargo,ais_import_dry_bulk,ais_import_roro,ais_import_tanker,ais_export_container,ais_export_general_cargo,ais_export_dry_bulk,ais_export_roro,ais_export_tanker,ais_portcalls_container,ais_portcalls_general_cargo,ais_portcalls_dry_bulk,ais_portcalls_roro,ais_portcalls_tanker&resultRecordCount=1000&returnGeometry=false&where=ISO3='ZAF'": {
   "bytes": 47270,
   "etag": "sd2067_-2039378688",
-  "last_checked": "2026-09-26T12:10:21+00:00",
+  "last_checked": "2026-09-29T06:01:59+00:00",
   "last_modified": "Tue, 22 Sep 2026 11:56:37 GMT",
   "sha256": "733b165be7e8345b7904ab64e156320df249ab6bba5a1b6bc99aeffe05c8fac0"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/2078?det=2&nult=250&tip=AM": {
-  "bytes": 18220317,
-  "etag": "\"1789451381:dtagent103432607151238112TlV\"",
-  "last_checked": "2026-09-22T05:51:59+00:00",
-  "last_modified": "Tue, 15 Sep 2026 05:49:40 GMT",
-  "sha256": "821bdfbabcf5eeac510b1508a72a056ee2d6d094ab92c50ebcae6b058ac52b74"
+  "bytes": 18244151,
+  "etag": "\"1790661274:dtagent103452608101703302rUq\"",
+  "last_checked": "2026-09-29T05:55:24+00:00",
+  "last_modified": "Tue, 29 Sep 2026 05:54:33 GMT",
+  "sha256": "38a7db55369ad10f1e5169d3d8fef27098710c4a9289aa906e16783186ff047a"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/29005?det=2&nult=6&tip=AM": {
   "bytes": 40802038,
   "etag": "\"1785075389:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-09-22T05:51:09+00:00",
+  "last_checked": "2026-09-29T05:54:30+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:28 GMT",
   "sha256": "bb06d283a27f07411f3f9448ba23cbf2bf710804e7b0a67d805f8bfa7d276969"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/39363?det=2&nult=8&tip=AM": {
   "bytes": 45564210,
   "etag": "\"1785075411:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-09-22T05:56:33+00:00",
+  "last_checked": "2026-09-29T06:00:04+00:00",
   "last_modified": "Sun, 26 Jul 2026 14:16:50 GMT",
   "sha256": "694424c8511e8a5dde8b90394e232122c497022ef3a30f57f518a455deb9896c"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/46298?det=2&nult=250&tip=AM": {
-  "bytes": 2559032,
-  "etag": "\"1790056337:dtagent103452608101703302rUq\"",
-  "last_checked": "2026-09-22T05:52:24+00:00",
-  "last_modified": "Tue, 22 Sep 2026 05:52:16 GMT",
-  "sha256": "36a5d9ea89324cfee097ee6540bdfa94718c2a84ba57fb66ff9a67c4d427313d"
+  "bytes": 2593716,
+  "etag": "\"1790661336:dtagent103452608101703302rUq\"",
+  "last_checked": "2026-09-29T05:55:43+00:00",
+  "last_modified": "Tue, 29 Sep 2026 05:55:35 GMT",
+  "sha256": "1a046cab37b3b5c7593067a02bf990d1663fd92b3624f31c6a50e516b38af50e"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/46301?det=2&nult=250&tip=AM": {
-  "bytes": 2568289,
-  "etag": "\"1789451438:dtagent103432607151238112TlV\"",
-  "last_checked": "2026-09-22T05:52:31+00:00",
-  "last_modified": "Tue, 15 Sep 2026 05:50:37 GMT",
-  "sha256": "b96238f0810356dbbc67de831c23b858863cdee16e6d389ad5ed2e2d9adf7ce2"
+  "bytes": 2602972,
+  "etag": "\"1790661343:dtagent103452608101703302rUq\"",
+  "last_checked": "2026-09-29T05:55:50+00:00",
+  "last_modified": "Tue, 29 Sep 2026 05:55:42 GMT",
+  "sha256": "d8ef403ab34f24b89343aa9e8bae1a0c6e5905e46c9800918eb5b8704fc99fcc"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6149?det=2&nult=240&tip=AM": {
-  "bytes": 17047726,
-  "etag": "\"1787032951:dtagent103432607151238112TlV\"",
-  "last_checked": "2026-09-22T05:54:28+00:00",
-  "last_modified": "Tue, 18 Aug 2026 06:02:30 GMT",
-  "sha256": "7c2df511d0cf2811717581d80d3a55b07801b205b828514c372dda8cc867ad3a"
+  "bytes": 17117141,
+  "etag": "\"1790661428:dtagent103452608101703302rUq\"",
+  "last_checked": "2026-09-29T05:57:55+00:00",
+  "last_modified": "Tue, 29 Sep 2026 05:57:07 GMT",
+  "sha256": "5febafbdce5ab3492edd2030d35031463ca5332a3bd17ed1eaa3df52d19875e0"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6524?det=2&nult=600&tip=AM": {
   "bytes": 5419441,
   "etag": "\"1785079847:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-09-22T05:56:52+00:00",
+  "last_checked": "2026-09-29T06:00:23+00:00",
   "last_modified": "Sun, 26 Jul 2026 15:30:46 GMT",
   "sha256": "d9a5815e778f93f1e50234af94d350bc31767d43f9f9eda51901bb5534b752a3"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/6540?det=2&nult=600&tip=AM": {
   "bytes": 5406649,
   "etag": "\"1785079852:dtagent10341260622154106wSIL\"",
-  "last_checked": "2026-09-22T05:57:10+00:00",
+  "last_checked": "2026-09-29T06:00:41+00:00",
   "last_modified": "Sun, 26 Jul 2026 15:30:51 GMT",
   "sha256": "433eaa699fd1d359b9456345c6833d8570a6aa677e39f9a9211804fd36f471a9"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/75198?det=2&nult=250&tip=AM": {
-  "bytes": 3763617,
-  "etag": "\"1789451418:dtagent103432607151238112TlV\"",
-  "last_checked": "2026-09-22T05:52:13+00:00",
-  "last_modified": "Tue, 15 Sep 2026 05:50:17 GMT",
-  "sha256": "2dc9c7272dd114c3639007965fbe0947bbad6f8b9ac48b68aad1879573552eba"
+  "bytes": 3925029,
+  "etag": "\"1790661325:dtagent103452608101703302rUq\"",
+  "last_checked": "2026-09-29T05:55:35+00:00",
+  "last_modified": "Tue, 29 Sep 2026 05:55:24 GMT",
+  "sha256": "85ef8e9cb26812bdd3e36f65d5c88b520d4f48d11b75c88d6578c64d97af6e24"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/76317?det=2&nult=240&tip=AM": {
-  "bytes": 25913614,
-  "etag": "\"1788241807:dtagent103432607151238112TlV\"",
-  "last_checked": "2026-09-22T05:53:41+00:00",
-  "last_modified": "Tue, 01 Sep 2026 05:50:06 GMT",
-  "sha256": "b01c2d5c38dccea4a7dcdb094c8b8536e66d5c86677d4bf0a25b2c2916e5bba3"
+  "bytes": 25910074,
+  "etag": "\"1790661354:dtagent103452608101703302rUq\"",
+  "last_checked": "2026-09-29T05:57:04+00:00",
+  "last_modified": "Tue, 29 Sep 2026 05:55:53 GMT",
+  "sha256": "3850e0ddea1ea75a5754429ffc38afeefa7ab888247aa11c41e5cf1a822ccbf6"
  },
  "https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/80270?det=2&nult=20&tip=AM": {
   "bytes": 885908,
   "etag": "\"1788846780:dtagent103432607151238112TlV\"",
-  "last_checked": "2026-09-22T05:54:31+00:00",
+  "last_checked": "2026-09-29T05:57:58+00:00",
   "last_modified": "Tue, 08 Sep 2026 05:52:59 GMT",
   "sha256": "e2695421726b0c01bb79fce1de4e48546a30c35e6c2d83957a7991a5591ffed8"
  },
@@ -3184,6 +3240,13 @@
   "last_modified": null,
   "sha256": "47fb53fcd8c12b6be6a0adf44fe525eda125354a111534a3de014587c290e6ab"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/ar.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12062,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:50+00:00",
+  "last_modified": null,
+  "sha256": "47fb53fcd8c12b6be6a0adf44fe525eda125354a111534a3de014587c290e6ab"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/da.wikipedia/all-access/user/monthly/2019010100/2026072600": {
   "bytes": 11711,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -3265,6 +3328,13 @@
   "bytes": 11971,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
   "last_checked": "2026-09-22T05:59:40+00:00",
+  "last_modified": null,
+  "sha256": "9970ee5e8afd369e12ac41246d62ff262aebcda4b43390cde1218458ce06f051"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/da.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 11971,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:51+00:00",
   "last_modified": null,
   "sha256": "9970ee5e8afd369e12ac41246d62ff262aebcda4b43390cde1218458ce06f051"
  },
@@ -3436,6 +3506,13 @@
   "last_modified": null,
   "sha256": "da1055a82567d7b60fd5a639c4dda302b2ffbc30743df7f503d67b245efa3fb0"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/de.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12072,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:51+00:00",
+  "last_modified": null,
+  "sha256": "da1055a82567d7b60fd5a639c4dda302b2ffbc30743df7f503d67b245efa3fb0"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/en.wikipedia/all-access/user/monthly/2018010100/2026072600": {
   "bytes": 13475,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -3601,6 +3678,13 @@
   "bytes": 12155,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
   "last_checked": "2026-09-22T05:59:41+00:00",
+  "last_modified": null,
+  "sha256": "bc68f5175974a2b80ec83af2ea8d9da9e7a73292810879a7306f39c04154b1e9"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/en.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12155,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:52+00:00",
   "last_modified": null,
   "sha256": "bc68f5175974a2b80ec83af2ea8d9da9e7a73292810879a7306f39c04154b1e9"
  },
@@ -3772,6 +3856,13 @@
   "last_modified": null,
   "sha256": "04053287c4e8d0d72b616ab0ee11842150ad00242bdd7d22d1f3e305896e9f48"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/es.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12083,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:52+00:00",
+  "last_modified": null,
+  "sha256": "04053287c4e8d0d72b616ab0ee11842150ad00242bdd7d22d1f3e305896e9f48"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/fr.wikipedia/all-access/user/monthly/2018010100/2026072600": {
   "bytes": 13373,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -3937,6 +4028,13 @@
   "bytes": 12063,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
   "last_checked": "2026-09-22T05:59:42+00:00",
+  "last_modified": null,
+  "sha256": "12ce72a1c6c864c0892ea078d1227d9759fa2b7225e8f5392eb40b6bf80671ac"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/fr.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12063,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:53+00:00",
   "last_modified": null,
   "sha256": "12ce72a1c6c864c0892ea078d1227d9759fa2b7225e8f5392eb40b6bf80671ac"
  },
@@ -4108,6 +4206,13 @@
   "last_modified": null,
   "sha256": "c080e612043e8ceb43a37d455dad03fb99627f6a295273987c8abf131f1a86b5"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/it.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12063,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:53+00:00",
+  "last_modified": null,
+  "sha256": "c080e612043e8ceb43a37d455dad03fb99627f6a295273987c8abf131f1a86b5"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/ja.wikipedia/all-access/user/monthly/2019010100/2026072600": {
   "bytes": 11842,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -4189,6 +4294,13 @@
   "bytes": 12104,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
   "last_checked": "2026-09-22T05:59:43+00:00",
+  "last_modified": null,
+  "sha256": "a3dd19649785c937d223189f6e4412036b8268ba7d6ca82ca24a2d6b39b8a772"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/ja.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12104,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:54+00:00",
   "last_modified": null,
   "sha256": "a3dd19649785c937d223189f6e4412036b8268ba7d6ca82ca24a2d6b39b8a772"
  },
@@ -4360,6 +4472,13 @@
   "last_modified": null,
   "sha256": "76b2dadeac5a0f4156cf60b08c2f9e0490d0e31aabf1a219e131a13cd11f0019"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/nl.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12058,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:54+00:00",
+  "last_modified": null,
+  "sha256": "76b2dadeac5a0f4156cf60b08c2f9e0490d0e31aabf1a219e131a13cd11f0019"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/pl.wikipedia/all-access/user/monthly/2019010100/2026072600": {
   "bytes": 11801,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -4441,6 +4560,13 @@
   "bytes": 12063,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
   "last_checked": "2026-09-22T05:59:44+00:00",
+  "last_modified": null,
+  "sha256": "f7cb5a6791ff44f6876f0c0339653c6c1c971a3a633f0cbf38e298bc72c897a8"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/pl.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12063,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:55+00:00",
   "last_modified": null,
   "sha256": "f7cb5a6791ff44f6876f0c0339653c6c1c971a3a633f0cbf38e298bc72c897a8"
  },
@@ -4612,6 +4738,13 @@
   "last_modified": null,
   "sha256": "8bef92735c912e64f93f63521ee854ec8198e4c182820c92110f231477c4a8db"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/pt.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12063,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:55+00:00",
+  "last_modified": null,
+  "sha256": "8bef92735c912e64f93f63521ee854ec8198e4c182820c92110f231477c4a8db"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/ru.wikipedia/all-access/user/monthly/2019010100/2026072600": {
   "bytes": 11806,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -4693,6 +4826,13 @@
   "bytes": 12068,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
   "last_checked": "2026-09-22T05:59:45+00:00",
+  "last_modified": null,
+  "sha256": "5de695ae842dc66babc8181f1eeb0c544fdc1792842236097b83b6cb14d1a619"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/ru.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12068,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:56+00:00",
   "last_modified": null,
   "sha256": "5de695ae842dc66babc8181f1eeb0c544fdc1792842236097b83b6cb14d1a619"
  },
@@ -4780,6 +4920,13 @@
   "last_modified": null,
   "sha256": "e396cd6262f363e24c5f58acbf7e05240fa00121b58f66076466e868c4130c70"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/sv.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 11978,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:56+00:00",
+  "last_modified": null,
+  "sha256": "e396cd6262f363e24c5f58acbf7e05240fa00121b58f66076466e868c4130c70"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/zh.wikipedia/all-access/user/monthly/2019010100/2026072600": {
   "bytes": 11801,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -4854,6 +5001,13 @@
   "bytes": 12063,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
   "last_checked": "2026-09-22T05:59:46+00:00",
+  "last_modified": null,
+  "sha256": "aeb532432b92fb5377cc84e1ba99ee135f6266673898b8b7937cbfbf91dbe740"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/aggregate/zh.wikipedia/all-access/user/monthly/2019010100/2026092900": {
+  "bytes": 12063,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:57+00:00",
   "last_modified": null,
   "sha256": "aeb532432b92fb5377cc84e1ba99ee135f6266673898b8b7937cbfbf91dbe740"
  },
@@ -5025,6 +5179,13 @@
   "last_modified": null,
   "sha256": "1ce9077b15bce54df9a76325344d89bbe710e1f0d1ea297b8e423d9bc511cf42"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Barcelona/monthly/2019010100/2026092900": {
+  "bytes": 13868,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:26+00:00",
+  "last_modified": null,
+  "sha256": "3be3cfea00ac9c448c7d48d8857ab1e1b530bc4527462da979113f18af1ae9c4"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Bilbao/monthly/2018010100/2026072600": {
   "bytes": 15009,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -5185,6 +5346,13 @@
   "last_checked": "2026-09-22T05:59:33+00:00",
   "last_modified": null,
   "sha256": "d71c8aaa1d67e713460462d81d2bdd6f06341f34f470f113b9555f0ed5ef2673"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Bilbao/monthly/2019010100/2026092900": {
+  "bytes": 13550,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:44+00:00",
+  "last_modified": null,
+  "sha256": "99a2d9927cfa3e186e5f949e6244add51eeac12635133e6609f0814ff7446559"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/M%C3%A1laga/monthly/2018010100/2026072600": {
   "bytes": 15138,
@@ -5354,6 +5522,13 @@
   "last_modified": null,
   "sha256": "92072dfc0ef47708bf1dd371c1a3fcef2fb46236b0389f3005fe6ba895086754"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/M%C3%A1laga/monthly/2019010100/2026092900": {
+  "bytes": 13668,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:33+00:00",
+  "last_modified": null,
+  "sha256": "f795db8f2f3210ad85ea167354dd80d34fbafbe52ac5f32eb450ee4865b72e11"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Madrid/monthly/2018010100/2026072600": {
   "bytes": 15049,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -5521,6 +5696,13 @@
   "last_checked": "2026-09-22T05:59:12+00:00",
   "last_modified": null,
   "sha256": "2a06aadcf3030ae6e0cb2be91fdfc5307866140501a493d8c882d5939c03d631"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Madrid/monthly/2019010100/2026092900": {
+  "bytes": 13589,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:23+00:00",
+  "last_modified": null,
+  "sha256": "639983a069068afe215a235f050cc8a3dbdee7112ba83af9faaa166813ecee3a"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Palma/monthly/2018010100/2026072600": {
   "bytes": 14876,
@@ -5690,6 +5872,13 @@
   "last_modified": null,
   "sha256": "9be0b98a4e9f8b0daab9861f9b55cbe05925c40ca3d988550575a49c56097f22"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Palma/monthly/2019010100/2026092900": {
+  "bytes": 13428,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:40+00:00",
+  "last_modified": null,
+  "sha256": "7213d128f62661bc0528a6667f9e2f2e933daa63c3c4a84020a635314bd7868e"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Saragossa/monthly/2018010100/2026072600": {
   "bytes": 15256,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -5857,6 +6046,13 @@
   "last_checked": "2026-09-22T05:59:36+00:00",
   "last_modified": null,
   "sha256": "c6d98cada0c655c4a4c5326efc4592d411186b697d7925b442158483a5dfdc2d"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Saragossa/monthly/2019010100/2026092900": {
+  "bytes": 13776,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:47+00:00",
+  "last_modified": null,
+  "sha256": "9d1b3c74af7f47c7ee666f44b81962002ff6a5e21f66caa9595388710c0407fe"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Sevilla/monthly/2018010100/2026072600": {
   "bytes": 15135,
@@ -6026,6 +6222,13 @@
   "last_modified": null,
   "sha256": "d289d93a3da346c66cf46ee38ebd32c91477e6efd07c0a8419b3eeff84d01231"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Sevilla/monthly/2019010100/2026092900": {
+  "bytes": 13664,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:37+00:00",
+  "last_modified": null,
+  "sha256": "5616cf1906e85a902e34be77aeb15e6ff148c25a0277280335b9cbd118c29e1c"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Valencia/monthly/2018010100/2026072600": {
   "bytes": 15247,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -6187,6 +6390,13 @@
   "last_modified": null,
   "sha256": "49447b3cdaa4d9ef0cd93667159ce368807429866e150f6e9d412a96fc2c5c6d"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/de.wikipedia/all-access/user/Valencia/monthly/2019010100/2026092900": {
+  "bytes": 13767,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:30+00:00",
+  "last_modified": null,
+  "sha256": "832eb43e4afcbc97a426633c8212d0b84a6cc690f73e878f7c34edd1918bb599"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Barcelona/monthly/2018010100/2026072600": {
   "bytes": 15438,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -6347,6 +6557,13 @@
   "last_checked": "2026-09-22T05:59:15+00:00",
   "last_modified": null,
   "sha256": "70d41c112d672232f95d16592fe7e0b28b690fa9cc542bb9093cb95bf5ef2f4e"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Barcelona/monthly/2019010100/2026092900": {
+  "bytes": 13936,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:26+00:00",
+  "last_modified": null,
+  "sha256": "dae40771e8007f3eaf4efd0553c0ea4088bc3424b81088d5a88d9512a7305462"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bilbao/monthly/2018010100/2026072600": {
   "bytes": 15049,
@@ -6516,6 +6733,13 @@
   "last_modified": null,
   "sha256": "ccae292c845a7d4c436a6d28d93c0da1dea62ab6839cd4faea386adf9ee971bd"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bilbao/monthly/2019010100/2026092900": {
+  "bytes": 13589,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:44+00:00",
+  "last_modified": null,
+  "sha256": "e9f1cc1213feb8324183e697a5b01a7d1c1a39f9d8562f540b9ae84e89db42ec"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/M%C3%A1laga/monthly/2018010100/2026072600": {
   "bytes": 15152,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -6683,6 +6907,13 @@
   "last_checked": "2026-09-22T05:59:22+00:00",
   "last_modified": null,
   "sha256": "380eda0bb321da0c5a05b9eb75e512bc6e673faab626b58d64538ae61b343ad0"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/M%C3%A1laga/monthly/2019010100/2026092900": {
+  "bytes": 13682,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:33+00:00",
+  "last_modified": null,
+  "sha256": "6474d56109bf40703ab8efd83d77d8eba669d6daf696d53c055e26a27e56aca1"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Madrid/monthly/2018010100/2026072600": {
   "bytes": 15064,
@@ -6852,6 +7083,13 @@
   "last_modified": null,
   "sha256": "8bca1b23cacafb188c65b5af0fc9a85cafca36a29bf63da956261cc5837e6a0d"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Madrid/monthly/2019010100/2026092900": {
+  "bytes": 13604,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:23+00:00",
+  "last_modified": null,
+  "sha256": "df7f2828db52fb6e766c77475cab5e7cde713f6404af13aca74ff7cf840d96dd"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Palma_de_Mallorca/monthly/2018010100/2026072600": {
   "bytes": 16177,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -7019,6 +7257,13 @@
   "last_checked": "2026-09-22T05:59:29+00:00",
   "last_modified": null,
   "sha256": "bd799d9d31bfa9acfdee6b89a229662c37b03f59179d91611ebe2a1e077ce896"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Palma_de_Mallorca/monthly/2019010100/2026092900": {
+  "bytes": 14612,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:40+00:00",
+  "last_modified": null,
+  "sha256": "cb7187ad2fb687b20b991570b95484a93d2013f60742e73e60c4176e2f8ef59e"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Seville/monthly/2018010100/2026072600": {
   "bytes": 15153,
@@ -7188,6 +7433,13 @@
   "last_modified": null,
   "sha256": "2e078eabbccc22f5c5c0bbfb39a2b73dd5bdd9d37890c03a4ea390ce69f5305b"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Seville/monthly/2019010100/2026092900": {
+  "bytes": 13683,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:36+00:00",
+  "last_modified": null,
+  "sha256": "e075a0243edaa673e0891c8dcc473453ca69acd9586c2c705d9457982c523250"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Valencia/monthly/2018010100/2026072600": {
   "bytes": 15257,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -7355,6 +7607,13 @@
   "last_checked": "2026-09-22T05:59:18+00:00",
   "last_modified": null,
   "sha256": "674ed2bc521455d5d99d3b8dc1876e48b3c0291d4173468d8b16f20c6139c71b"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Valencia/monthly/2019010100/2026092900": {
+  "bytes": 13777,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:29+00:00",
+  "last_modified": null,
+  "sha256": "17b88bd2ee1cc87b2364eeb4e24c3fd0cafd555b8bd803cc25558e4fe2775616"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Zaragoza/monthly/2018010100/2026072600": {
   "bytes": 15255,
@@ -7524,6 +7783,13 @@
   "last_modified": null,
   "sha256": "37b9b1e25be2440424eaa4d8b0149a4b1c7b12c4897f0945127968a4ac9c3d69"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Zaragoza/monthly/2019010100/2026092900": {
+  "bytes": 13775,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:47+00:00",
+  "last_modified": null,
+  "sha256": "d883e0d43b14f60df910023cbbb4b47a27034add0f81c0d65619e558a7bd795e"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Barcelona/monthly/2018010100/2026072600": {
   "bytes": 15362,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -7691,6 +7957,13 @@
   "last_checked": "2026-09-22T05:59:18+00:00",
   "last_modified": null,
   "sha256": "76b3648aaf53e2bd8253edd831c09a4ae62cff7855496bb17b6ae998e7f76b11"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Barcelona/monthly/2019010100/2026092900": {
+  "bytes": 13872,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:29+00:00",
+  "last_modified": null,
+  "sha256": "e2e06a949a342d99113b35435ed3b19fbf2af3476067893a5fabe7e23d83d8dd"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Barrio_de_Salamanca/monthly/2018010100/2026072600": {
   "bytes": 16119,
@@ -7943,6 +8216,13 @@
   "last_checked": "2026-09-22T05:59:35+00:00",
   "last_modified": null,
   "sha256": "178f41c5060e0a370afc4190993294a36d2183f22531009377fccc73e85050dc"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Bilbao/monthly/2019010100/2026092900": {
+  "bytes": 13589,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:46+00:00",
+  "last_modified": null,
+  "sha256": "6c2c9d6c273624c8d80179223253ec7ad31ab1836de5c91c47b51e55e6a0b557"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Carabanchel/monthly/2018010100/2026072600": {
   "bytes": 15462,
@@ -9085,6 +9365,13 @@
   "last_modified": null,
   "sha256": "4a85b3b6f575f6b816be8b5dfdb48c6cfd8fa199b4652d11993aa36ecfa2548b"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/M%C3%A1laga/monthly/2019010100/2026092900": {
+  "bytes": 13682,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:36+00:00",
+  "last_modified": null,
+  "sha256": "bf424ef440e5fb79cd662a149e37dceacc1dd1822eab474fdfb053553ab713b2"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Madrid/monthly/2018010100/2026072600": {
   "bytes": 15079,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -9252,6 +9539,13 @@
   "last_checked": "2026-09-22T05:59:14+00:00",
   "last_modified": null,
   "sha256": "5e15489610c37893abb3ac52502853a85d438d34d7f388c54310f669075f03d4"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Madrid/monthly/2019010100/2026092900": {
+  "bytes": 13611,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:25+00:00",
+  "last_modified": null,
+  "sha256": "ad30329916cf1eddafb282bd93c113cd94f1c4b173a683eb5bb6eee41b00fd3b"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Malasa%C3%B1a/monthly/2018010100/2026072600": {
   "bytes": 15152,
@@ -9757,6 +10051,13 @@
   "last_modified": null,
   "sha256": "1d53f00cd0f26b0b8938bc5b7e9c90c427ec00e9f7e35a768874e01b5371cace"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Palma_de_Mallorca/monthly/2019010100/2026092900": {
+  "bytes": 14604,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:43+00:00",
+  "last_modified": null,
+  "sha256": "92913d5e8a8b09e138dead6f2db9593c51b0a56e72155a1c00354db7fe67aa94"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Permiso_de_residencia/monthly/2018010100/2026072600": {
   "bytes": 9648,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -10085,6 +10386,13 @@
   "last_checked": "2026-09-22T05:59:28+00:00",
   "last_modified": null,
   "sha256": "714ee08835c7553af595b82b832777c4f912c475440e04ee2c3b893e9c0f4b28"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Sevilla/monthly/2019010100/2026092900": {
+  "bytes": 13682,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:39+00:00",
+  "last_modified": null,
+  "sha256": "674e3e58df95573dc4087b59b9a1f0a71fb4d07878611f8baa71a48bbd72cbd6"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Tetu%C3%A1n/monthly/2018010100/2026072600": {
   "bytes": 15051,
@@ -10429,6 +10737,13 @@
   "last_modified": null,
   "sha256": "043142a62b98f49e6864f9c46ac15d8103762d88072df7d57534713bbbf20db3"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Valencia/monthly/2019010100/2026092900": {
+  "bytes": 13776,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:32+00:00",
+  "last_modified": null,
+  "sha256": "0f29027bacf138eda4878a37ef561d9185fb835cc5dce1539d240e0df35a4696"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Visado/monthly/2018010100/2026072600": {
   "bytes": 14815,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -10681,6 +10996,13 @@
   "last_modified": null,
   "sha256": "2e2e2f77bc3befb4f4f9f0faba6f9b1445dc192158f34041df73fe2f3c4de391"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/es.wikipedia/all-access/user/Zaragoza/monthly/2019010100/2026092900": {
+  "bytes": 13775,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:50+00:00",
+  "last_modified": null,
+  "sha256": "224f4906cce81c787d0554751f2c922512db77283508d338b711a91a4157c6f4"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Barcelone/monthly/2018010100/2026072600": {
   "bytes": 15358,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -10848,6 +11170,13 @@
   "last_checked": "2026-09-22T05:59:16+00:00",
   "last_modified": null,
   "sha256": "e3bcbfd178f2d6bacd7e9b7f18cf0df9cc781a1360edfda1c21feb85f3fa7bc9"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Barcelone/monthly/2019010100/2026092900": {
+  "bytes": 13868,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:27+00:00",
+  "last_modified": null,
+  "sha256": "9e7c4dbb2d05b9062a6a6f242ec1efb1326df69713207a1e72230c8d41e53565"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Bilbao/monthly/2018010100/2026072600": {
   "bytes": 14963,
@@ -11017,6 +11346,13 @@
   "last_modified": null,
   "sha256": "ecfcbbde699f159172a6c47b7480bec33e1048dce9df54f5bc9ef2719800b38a"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Bilbao/monthly/2019010100/2026092900": {
+  "bytes": 13510,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:44+00:00",
+  "last_modified": null,
+  "sha256": "81463a4b527cb67eff532344af331b3f74119501e11392b18e586ef619081265"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Madrid/monthly/2018010100/2026072600": {
   "bytes": 15049,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -11184,6 +11520,13 @@
   "last_checked": "2026-09-22T05:59:12+00:00",
   "last_modified": null,
   "sha256": "ca02fed8ffbfada56c3efab4f4603842773b8ae81c1aa964b7260bf7e465f86c"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Madrid/monthly/2019010100/2026092900": {
+  "bytes": 13589,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:23+00:00",
+  "last_modified": null,
+  "sha256": "a6399d9ccbd7d9311103e90bd070879aec771a38dae2268839c007c75a72c666"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Malaga/monthly/2018010100/2026072600": {
   "bytes": 15015,
@@ -11353,6 +11696,13 @@
   "last_modified": null,
   "sha256": "ed2e2b6a9fdb42488276268a2da9ce097871d15bdfe474d1b3ff438729e3dcd0"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Malaga/monthly/2019010100/2026092900": {
+  "bytes": 13556,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:34+00:00",
+  "last_modified": null,
+  "sha256": "a0b935dc573c17316ac98dc1f921bec81f99b0306b979e95ff9bf9bead646d0c"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Palma/monthly/2018010100/2026072600": {
   "bytes": 14847,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -11520,6 +11870,13 @@
   "last_checked": "2026-09-22T05:59:30+00:00",
   "last_modified": null,
   "sha256": "4a335e8edb1de8b0ab2accf66f830cc53ea5a4a1c0b994a35a7bdde06ed56827"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Palma/monthly/2019010100/2026092900": {
+  "bytes": 13406,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:41+00:00",
+  "last_modified": null,
+  "sha256": "bcbcbc6e0da5ce30a02404440efce83e943e6b08de932838eb9e86d4a60b8d4e"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/S%C3%A9ville/monthly/2018010100/2026072600": {
   "bytes": 15242,
@@ -11689,6 +12046,13 @@
   "last_modified": null,
   "sha256": "49fc1bf90852dbcaf955a1ce80f901d888eb00b3d5c2af4c179857d8fdc38e5a"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/S%C3%A9ville/monthly/2019010100/2026092900": {
+  "bytes": 13761,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:37+00:00",
+  "last_modified": null,
+  "sha256": "eb527ea6d334f17357daf068c3fc0bdf9d40b86b5c956d3a8f0c67d447fe4540"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Saragosse/monthly/2018010100/2026072600": {
   "bytes": 15263,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -11857,6 +12221,13 @@
   "last_modified": null,
   "sha256": "5938cc42f10523053358e1b064952cfeb74b76c021711fca14520c9f125ba3c1"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Saragosse/monthly/2019010100/2026092900": {
+  "bytes": 13782,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:48+00:00",
+  "last_modified": null,
+  "sha256": "52d5eba815233157f499251d3b0e65b42e3ed86d000224aa6a3db8fdbfdc4403"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Valence_%28Espagne%29/monthly/2018010100/2026072600": {
   "bytes": 16178,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -12017,6 +12388,13 @@
   "last_checked": "2026-09-22T05:59:19+00:00",
   "last_modified": null,
   "sha256": "7af08e729467406aba3f0f38273cb37387bccf83f004e2f08a7c56528f688ab7"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/fr.wikipedia/all-access/user/Valence_%28Espagne%29/monthly/2019010100/2026092900": {
+  "bytes": 14608,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:30+00:00",
+  "last_modified": null,
+  "sha256": "6c3632712bf54bb20b5fffe6055cf5f021ded789f2c7c8322eafb1dd33e5bc42"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Barcellona/monthly/2018010100/2026072600": {
   "bytes": 15460,
@@ -12186,6 +12564,13 @@
   "last_modified": null,
   "sha256": "427b1b47e9a6f711179bb2ed405c3247d0a373b17708ecab2cc58f1b52fd7eed"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Barcellona/monthly/2019010100/2026092900": {
+  "bytes": 13959,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:27+00:00",
+  "last_modified": null,
+  "sha256": "527f28fed155d8b23e80ffb943aac573146d6e11255fcd2b1edf6a41225b9376"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Bilbao/monthly/2018010100/2026072600": {
   "bytes": 14951,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -12346,6 +12731,13 @@
   "last_checked": "2026-09-22T05:59:34+00:00",
   "last_modified": null,
   "sha256": "9dbea4eb95dcad8de7fb82d83e47e5c27b9c45c53117c27ac655486b9711e518"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Bilbao/monthly/2019010100/2026092900": {
+  "bytes": 13500,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:45+00:00",
+  "last_modified": null,
+  "sha256": "e1bdc659443c4a58d62a08951bebc09711ff1404edab89e3a2fac5715854d84c"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Madrid/monthly/2018010100/2026072600": {
   "bytes": 15045,
@@ -12515,6 +12907,13 @@
   "last_modified": null,
   "sha256": "bbe6b1c0069406a51a52b188ed6217fee77f2bda8f62878ed620a29bf719f8de"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Madrid/monthly/2019010100/2026092900": {
+  "bytes": 13586,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:24+00:00",
+  "last_modified": null,
+  "sha256": "547b242fa1ce9656ac7d305949bd2b26098c69e99eacd24ab519b60b5daac908"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Malaga/monthly/2018010100/2026072600": {
   "bytes": 14978,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -12682,6 +13081,13 @@
   "last_checked": "2026-09-22T05:59:23+00:00",
   "last_modified": null,
   "sha256": "02381a93b1c1c92e4cc298d684a0ccb08fa308469106305de8a41d726b97a9a6"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Malaga/monthly/2019010100/2026092900": {
+  "bytes": 13522,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:34+00:00",
+  "last_modified": null,
+  "sha256": "66ee442afe524ebf221ff889e81f270fa3620f747893513fb14eb8947c5ff070"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Palma_di_Maiorca/monthly/2018010100/2026072600": {
   "bytes": 16000,
@@ -12851,6 +13257,13 @@
   "last_modified": null,
   "sha256": "c93d22f3d515400e52ab36f5c9692199d0a328ab435d177506efbbaf717ec259"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Palma_di_Maiorca/monthly/2019010100/2026092900": {
+  "bytes": 14443,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:41+00:00",
+  "last_modified": null,
+  "sha256": "cac4d117a9355bddcfe37b784c37294af1f48d67c578a56777fa3003160d2df9"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Saragozza/monthly/2018010100/2026072600": {
   "bytes": 15255,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -13018,6 +13431,13 @@
   "last_checked": "2026-09-22T05:59:37+00:00",
   "last_modified": null,
   "sha256": "5664ced46fae6c9b2907d3c094b45b5d612b23d9470bd6b0f37e43d3961831b9"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Saragozza/monthly/2019010100/2026092900": {
+  "bytes": 13775,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:48+00:00",
+  "last_modified": null,
+  "sha256": "f3fa4e6f79c93df4d2b7d74035953f78e951eb4dbe390037ab8b1bbde91bfe0e"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Siviglia/monthly/2018010100/2026072600": {
   "bytes": 15218,
@@ -13187,6 +13607,13 @@
   "last_modified": null,
   "sha256": "8fb320ea6256251c8441868670d46c43a6e3e2b0615927154b7bec7164769827"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Siviglia/monthly/2019010100/2026092900": {
+  "bytes": 13736,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:38+00:00",
+  "last_modified": null,
+  "sha256": "8ecba09a42d613c18a7518c0a19a16952f63e047c7a629a02e44db77c958fbf4"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Valencia/monthly/2018010100/2026072600": {
   "bytes": 15240,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -13347,6 +13774,13 @@
   "last_checked": "2026-09-22T05:59:20+00:00",
   "last_modified": null,
   "sha256": "b801075324a682c16068529dd2b886b5f6f7979c651672b84ec662c18a3d29fa"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/it.wikipedia/all-access/user/Valencia/monthly/2019010100/2026092900": {
+  "bytes": 13760,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:31+00:00",
+  "last_modified": null,
+  "sha256": "ec448c7dee6b2b306442d8a72202aa9019278c4cdc61f1440ed4624e8983d633"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Barcelona/monthly/2018010100/2026072600": {
   "bytes": 15191,
@@ -13516,6 +13950,13 @@
   "last_modified": null,
   "sha256": "c7ceb68dfcc4f7546570f048b760279ac5523a27e7aa9991d61ecaf5acbc16de"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Barcelona/monthly/2019010100/2026092900": {
+  "bytes": 13723,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:28+00:00",
+  "last_modified": null,
+  "sha256": "c09214f362ac2d8168c783258f60fe704683d7bc91bd638abec40673dcd28f57"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Bilbao/monthly/2018010100/2026072600": {
   "bytes": 14947,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -13683,6 +14124,13 @@
   "last_checked": "2026-09-22T05:59:35+00:00",
   "last_modified": null,
   "sha256": "8a68ba3c3390fde47295c98d469721098ce119e8156978eddb89482ef149833a"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Bilbao/monthly/2019010100/2026092900": {
+  "bytes": 13497,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:46+00:00",
+  "last_modified": null,
+  "sha256": "fe8ffbcad4cd1aca8c0d5d612f8c850c94b621439e4608c7f476e876ebc44f31"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/M%C3%A1laga/monthly/2018010100/2026072600": {
   "bytes": 14750,
@@ -13852,6 +14300,13 @@
   "last_modified": null,
   "sha256": "7740663ec48438d6e9edeacb11a9180a8bfddb8a60c115ad63fae4f13dfc0ba7"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/M%C3%A1laga/monthly/2019010100/2026092900": {
+  "bytes": 13314,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:35+00:00",
+  "last_modified": null,
+  "sha256": "c70ebc3bb799581b303a516452b86518b1d64561e9bd100b29fec0b0f62e69c2"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Madrid/monthly/2018010100/2026072600": {
   "bytes": 14835,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -14020,6 +14475,13 @@
   "last_modified": null,
   "sha256": "2abccc50fbd042920253dbd499bcacda5239961b1ac81185814a386f5aa90b1f"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Madrid/monthly/2019010100/2026092900": {
+  "bytes": 13393,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:25+00:00",
+  "last_modified": null,
+  "sha256": "1abeb2950e4d2a87e15bb882599fca7e8241a0192fe8ae53d60be0e3ae5b82f7"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Palma_de_Mallorca/monthly/2018010100/2026072600": {
   "bytes": 15955,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -14173,6 +14635,13 @@
   "last_checked": "2026-09-22T05:59:31+00:00",
   "last_modified": null,
   "sha256": "d1c6f945f4f14635dd7a47ea0443eaaa4e692890e0848dccee8476ff85af79b8"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Palma_de_Mallorca/monthly/2019010100/2026092900": {
+  "bytes": 14393,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:42+00:00",
+  "last_modified": null,
+  "sha256": "c1c41797c9a52db62b54ba8855908c3f437b6af81d4263eec7fdfabe3b95ee80"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Sevilla/monthly/2018010100/2026072600": {
   "bytes": 14889,
@@ -14342,6 +14811,13 @@
   "last_modified": null,
   "sha256": "771a447272f15271f3081e8d74fb7ff61fefa4fcbbe903358f9c8009c561fee6"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Sevilla/monthly/2019010100/2026092900": {
+  "bytes": 13437,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:39+00:00",
+  "last_modified": null,
+  "sha256": "471bacf70980c8d02a334099672beafc39b02e6e2ba83aca41f3bcee33c83f5d"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Valencia_%28stad%29/monthly/2018010100/2026072600": {
   "bytes": 15882,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -14509,6 +14985,13 @@
   "last_checked": "2026-09-22T05:59:21+00:00",
   "last_modified": null,
   "sha256": "969ade7e59b15cea61f0191d6492800b788e6b6840d4cef2a9735b16da889ab0"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Valencia_%28stad%29/monthly/2019010100/2026092900": {
+  "bytes": 14337,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:32+00:00",
+  "last_modified": null,
+  "sha256": "a8d7ec7a6c93e74b580152f739da5b1bdb1209c2ff77f170ec2d8a62ca106129"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Zaragoza/monthly/2018010100/2026072600": {
   "bytes": 14947,
@@ -14678,6 +15161,13 @@
   "last_modified": null,
   "sha256": "a9c5cb9e6b44893e9c248d6fc62d5264a7f466123894035437507de6d35f587e"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/nl.wikipedia/all-access/user/Zaragoza/monthly/2019010100/2026092900": {
+  "bytes": 13497,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:49+00:00",
+  "last_modified": null,
+  "sha256": "f30034f780381d61bca159159ccec82e83a9a70953a14b94dab103f2a8b2a9f7"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Barcelona/monthly/2018010100/2026072600": {
   "bytes": 15313,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -14845,6 +15335,13 @@
   "last_checked": "2026-09-22T05:59:17+00:00",
   "last_modified": null,
   "sha256": "86a18794f250f340d8d1811ae5af4caa9d9001f5012d51efb67c40d75ef58843"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Barcelona/monthly/2019010100/2026092900": {
+  "bytes": 13821,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:28+00:00",
+  "last_modified": null,
+  "sha256": "f89380778e9fdf856fa0fba39bf9a17696a596b1202c746e4153cb034384c951"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Bilbau/monthly/2018010100/2026072600": {
   "bytes": 14946,
@@ -15014,6 +15511,13 @@
   "last_modified": null,
   "sha256": "70adcbd2da5f2a491a9f7ea527b69ad74971d7a4d4c5a5aec7067e231c185745"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Bilbau/monthly/2019010100/2026092900": {
+  "bytes": 13496,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:45+00:00",
+  "last_modified": null,
+  "sha256": "7c434d6099a5cdf1efda105f736f5d7fd0cbf0a97e36be636b13ee5263ed9713"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/M%C3%A1laga/monthly/2018010100/2026072600": {
   "bytes": 15049,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -15181,6 +15685,13 @@
   "last_checked": "2026-09-22T05:59:24+00:00",
   "last_modified": null,
   "sha256": "c930d2a6d47ae8ea9176b30304f0bcc50bd9e494a829fba261df50ea12cbdc80"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/M%C3%A1laga/monthly/2019010100/2026092900": {
+  "bytes": 13589,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:35+00:00",
+  "last_modified": null,
+  "sha256": "3c6295097ff1988e14106e374bb6407492e4d20d32418436c0c860e7014e253b"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Madrid/monthly/2018010100/2026072600": {
   "bytes": 14961,
@@ -15350,6 +15861,13 @@
   "last_modified": null,
   "sha256": "b092d9c44ef32b6501400087aeb08585c814d8ac2ad5f236ac3f53f4d98ce8ac"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Madrid/monthly/2019010100/2026092900": {
+  "bytes": 13503,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:24+00:00",
+  "last_modified": null,
+  "sha256": "d80e66aa20271ebeb232bf160348bee26580c2c1dc26725513fe32edcda9bf96"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Palma_de_Maiorca/monthly/2018010100/2026072600": {
   "bytes": 15931,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -15517,6 +16035,13 @@
   "last_checked": "2026-09-22T05:59:31+00:00",
   "last_modified": null,
   "sha256": "812e60816b60abd5f3ec91a0ba9b5841be05e13d161dde1280c90c23874a4b0d"
+ },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Palma_de_Maiorca/monthly/2019010100/2026092900": {
+  "bytes": 14393,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:42+00:00",
+  "last_modified": null,
+  "sha256": "5a73b10ce019d48e08cc99cb1e8ad82667e4c5821053a23b1f07d853b02d24d3"
  },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Sarago%C3%A7a/monthly/2018010100/2026072600": {
   "bytes": 15255,
@@ -15686,6 +16211,13 @@
   "last_modified": null,
   "sha256": "064b55dcd21c91b597ba0dfb17a8dbca31f3bbc405fceadfbdf2155b05acf514"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Sarago%C3%A7a/monthly/2019010100/2026092900": {
+  "bytes": 13775,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:49+00:00",
+  "last_modified": null,
+  "sha256": "759308d08a0970ed412425ef255ac01d7acbc92d06354bb0325b4df345d8266b"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Sevilha/monthly/2018010100/2026072600": {
   "bytes": 15050,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -15854,6 +16386,13 @@
   "last_modified": null,
   "sha256": "48a57efb44f12ae3b56c1f671e5760b8c01056ab6ec849444f83b6b6eff61b10"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Sevilha/monthly/2019010100/2026092900": {
+  "bytes": 13590,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:38+00:00",
+  "last_modified": null,
+  "sha256": "209c6346d51dce63554b3f11464e693b7f893f2aeae10ad808b29ecfeb5e6d44"
+ },
  "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Val%C3%AAncia_%28Espanha%29/monthly/2018010100/2026072600": {
   "bytes": 16182,
   "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
@@ -16008,6 +16547,13 @@
   "last_modified": null,
   "sha256": "a75b2c6e3c77ff0b86704f5c68e85cecd91fe1fdb2a45b6a19871b7b8bc5322f"
  },
+ "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/pt.wikipedia/all-access/user/Val%C3%AAncia_%28Espanha%29/monthly/2019010100/2026092900": {
+  "bytes": 14612,
+  "etag": "W/\"20-da39a3ee5e6b4b0d3255bfef95601890afd80709\"",
+  "last_checked": "2026-09-29T06:06:31+00:00",
+  "last_modified": null,
+  "sha256": "7b6906aa2b381018792ca8bb9707e049c8d0c947d3c06b230a619e56b8673c16"
+ },
  "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874341349&ssbinary=true": {
   "bytes": 73668,
   "etag": "\"1781258056:dtagent10337260526121002qq2K\"",
@@ -16032,14 +16578,14 @@
  "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874747198&ssbinary=true": {
   "bytes": 74160,
   "etag": "\"1786527478:dtagent10341260622154106WYAH\"",
-  "last_checked": "2026-09-22T05:47:16+00:00",
+  "last_checked": "2026-09-29T05:50:21+00:00",
   "last_modified": "Wed, 12 Aug 2026 09:37:57 GMT",
   "sha256": "08490cf08c92db1c464839aeff40dc904a04dea9005b9f2333126c4f0b042782"
  },
  "https://www.aena.es/sites/Satellite?blobcol=urldata&blobkey=id&blobtable=MungoBlobs&blobwhere=1576874982299&ssbinary=true": {
   "bytes": 65074,
   "etag": "\"1789484554:dtagent10341260622154106WYAH\"",
-  "last_checked": "2026-09-22T05:47:17+00:00",
+  "last_checked": "2026-09-29T05:50:22+00:00",
   "last_modified": "Tue, 15 Sep 2026 15:02:33 GMT",
   "sha256": "a08cefb4041326552efda0f66ade5ecd829e15e41f1a9554a04592e2e5ff4cbe"
  },
@@ -17691,658 +18237,854 @@
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-168-07": {
   "bytes": 26843,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:27+00:00",
+  "last_checked": "2026-09-29T05:50:37+00:00",
   "last_modified": null,
   "sha256": "65401e0e32a2628586b2955bfca37a5b0752d0f9bcab59eedfe1648ce1f15196"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-168-08": {
   "bytes": 111205,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:28+00:00",
+  "last_checked": "2026-09-29T05:50:38+00:00",
   "last_modified": null,
   "sha256": "24d9c3b03db731a34a34f2e0d3725f7c6e005d929ace23d857d0d3fcd63073e1"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-168-28": {
   "bytes": 128562,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:28+00:00",
+  "last_checked": "2026-09-29T05:50:39+00:00",
   "last_modified": null,
   "sha256": "df48b20628d2166ffe31089b588e9e52937b3505d6d2bc4804d42a07e6b5d222"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-168-29": {
   "bytes": 28926,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:29+00:00",
+  "last_checked": "2026-09-29T05:50:39+00:00",
   "last_modified": null,
   "sha256": "2f3dd3e991af73182903997c3d352d86788082893e5c2147af63a3c05588343b"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-168-46": {
   "bytes": 43836,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:29+00:00",
+  "last_checked": "2026-09-29T05:50:39+00:00",
   "last_modified": null,
   "sha256": "ed32b02203f3a4b6feab349723142a48a17f465b1f70a28b7244730c9f6628f7"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-169-08": {
   "bytes": 113197,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:30+00:00",
+  "last_checked": "2026-09-29T05:50:40+00:00",
   "last_modified": null,
   "sha256": "fae1eb9f1cd36ff4a670cadb9aa9bca5a4fd9444b03d1833f6b9c8cc4e2feee7"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-169-28": {
   "bytes": 117211,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:30+00:00",
+  "last_checked": "2026-09-29T05:50:41+00:00",
   "last_modified": null,
   "sha256": "05277addc4079b3f8e352239c8b0395fa2e13aaf3e82ad372a572bdfabc19c38"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-169-29": {
   "bytes": 20395,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:31+00:00",
+  "last_checked": "2026-09-29T05:50:41+00:00",
   "last_modified": null,
   "sha256": "492c0601ca185c13a6afb5cd250d233fc215428611c0e644acf569988406b4df"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-169-46": {
   "bytes": 36336,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:31+00:00",
+  "last_checked": "2026-09-29T05:50:41+00:00",
   "last_modified": null,
   "sha256": "533a50b8a259805c5064f78c986f3044306ccda936cc915a4462c469704b87b9"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-169-48": {
   "bytes": 32216,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:32+00:00",
+  "last_checked": "2026-09-29T05:50:42+00:00",
   "last_modified": null,
   "sha256": "9151bbdad8a4b7f0ef93edaa10a773e7ed7e200b6beae17164aeeff6ede494c8"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-169-50": {
   "bytes": 35622,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:32+00:00",
+  "last_checked": "2026-09-29T05:50:43+00:00",
   "last_modified": null,
   "sha256": "daaca09149862e876f40968e5986177e2569e8c4b9e42f3edb598e8c70c713f5"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-170-07": {
   "bytes": 20922,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:33+00:00",
+  "last_checked": "2026-09-29T05:50:43+00:00",
   "last_modified": null,
   "sha256": "2172a99a2ac33d77b29757c068a95887ee7bfee33fe78d190aa7d110bf1ae72d"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-170-08": {
   "bytes": 114274,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:33+00:00",
+  "last_checked": "2026-09-29T05:50:44+00:00",
   "last_modified": null,
   "sha256": "e9624461cf1270c49e1d5da67b54c75967a4455f0880035ad4ac8f6980dc5e09"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-170-28": {
   "bytes": 147555,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:34+00:00",
+  "last_checked": "2026-09-29T05:50:44+00:00",
   "last_modified": null,
   "sha256": "2129f686839dfd0e81d527b2ee616164308518c17210125ef16b2d636839dcd8"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-170-29": {
   "bytes": 27100,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:34+00:00",
+  "last_checked": "2026-09-29T05:50:44+00:00",
   "last_modified": null,
   "sha256": "a345d3373c58b7efa35839669675cc40464bd0f095145600fc0ed9de3ca0fbb9"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-170-41": {
   "bytes": 103318,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:35+00:00",
+  "last_checked": "2026-09-29T05:50:45+00:00",
   "last_modified": null,
   "sha256": "daf7ca0ddd59e27274d0549f6ba5ddc1044efbf2ba24181bd628b3a44965c35b"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-170-46": {
   "bytes": 30017,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:35+00:00",
+  "last_checked": "2026-09-29T05:50:45+00:00",
   "last_modified": null,
   "sha256": "533f593edf8115d9345f39c36535cfb8491202e92326a6a767d7834866697d96"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-170-50": {
   "bytes": 17315,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:36+00:00",
+  "last_checked": "2026-09-29T05:50:46+00:00",
   "last_modified": null,
   "sha256": "503f2d13d92accb3f8b12a4bed1d51d2ac95ddc4df5233c35f1518b0d28121c4"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-171-07": {
   "bytes": 15444,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:36+00:00",
+  "last_checked": "2026-09-29T05:50:46+00:00",
   "last_modified": null,
   "sha256": "b7492d4820f9fe064d80b7388d66b72f4aebf9b03a4cf2026b6b275cb3146515"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-171-08": {
   "bytes": 103702,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:37+00:00",
+  "last_checked": "2026-09-29T05:50:47+00:00",
   "last_modified": null,
   "sha256": "a9ef6e651957789865b2003591941e2bf145cf8c08e7de910e5bac750b2732e2"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-171-28": {
   "bytes": 106960,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:37+00:00",
+  "last_checked": "2026-09-29T05:50:47+00:00",
   "last_modified": null,
   "sha256": "3a6c21f537a84e8f3ca3e1d251d9c01b9ffaca94331fa1b0dea992b692acd39b"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-171-29": {
   "bytes": 14127,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:38+00:00",
+  "last_checked": "2026-09-29T05:50:48+00:00",
   "last_modified": null,
   "sha256": "83e5768dfa36dca21da79357b0492355388a04f9a3f0ecf2f18fd5a43cc0411c"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-171-41": {
   "bytes": 20934,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:38+00:00",
+  "last_checked": "2026-09-29T05:50:48+00:00",
   "last_modified": null,
   "sha256": "11f52a79d170b1c83c1c0982a97ad8de3d0e5b42f20102f71e4bdc47f1ddd78c"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-171-46": {
   "bytes": 35279,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:39+00:00",
+  "last_checked": "2026-09-29T05:50:49+00:00",
   "last_modified": null,
   "sha256": "fc05817153003e3e65fa0337450b4198c0a459d0755c0592234dfefa666700e4"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-172-07": {
   "bytes": 12164,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:39+00:00",
+  "last_checked": "2026-09-29T05:50:49+00:00",
   "last_modified": null,
   "sha256": "43c5ce9bd2bc41b03631c00f567644f32b2bdfa6bdf0c33993353c731e2e7141"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-172-08": {
   "bytes": 65652,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:40+00:00",
+  "last_checked": "2026-09-29T05:50:50+00:00",
   "last_modified": null,
   "sha256": "1e13c440670940f791c7c9343aa689635861e040a8334c9e1dd0149c513d6e56"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-172-28": {
   "bytes": 101773,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:40+00:00",
+  "last_checked": "2026-09-29T05:50:51+00:00",
   "last_modified": null,
   "sha256": "04604d711483dddbcfbd65503f324bac6cbe1bcc71b903ac261b4f08bff90d97"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-172-29": {
   "bytes": 7763,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:41+00:00",
+  "last_checked": "2026-09-29T05:50:51+00:00",
   "last_modified": null,
   "sha256": "17aa2bb79011fcd1427ad716b2c193389057d97d06b359e50c0ce707cbd372c1"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-172-41": {
   "bytes": 16662,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:41+00:00",
+  "last_checked": "2026-09-29T05:50:51+00:00",
   "last_modified": null,
   "sha256": "24e4dedcb11ae13d7a6889b7836104d01487c04843669c2386df49de23ea9210"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-172-46": {
   "bytes": 21139,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:42+00:00",
+  "last_checked": "2026-09-29T05:50:52+00:00",
   "last_modified": null,
   "sha256": "8c0263a42481cf97edcdc0ae1b8032571e67277c38163889e9b1bc0872ee9fb5"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-172-50": {
   "bytes": 13695,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:42+00:00",
+  "last_checked": "2026-09-29T05:50:52+00:00",
   "last_modified": null,
   "sha256": "22587b4859ae3b196ece3040a0f4e97723437e3e738befcf67844659ee35e7a3"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-173-07": {
   "bytes": 15525,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:43+00:00",
+  "last_checked": "2026-09-29T05:50:53+00:00",
   "last_modified": null,
   "sha256": "d999e0f6c5bbc406cb87010e02f87c85c96d9e8484b6568a83ec09e2c30280e0"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-173-08": {
   "bytes": 84225,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:43+00:00",
+  "last_checked": "2026-09-29T05:50:54+00:00",
   "last_modified": null,
   "sha256": "c7327065fd8e189148d9ea84db450f4707181f9b7475f3dc888f28bae041176d"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-173-28": {
   "bytes": 149008,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:44+00:00",
+  "last_checked": "2026-09-29T05:50:54+00:00",
   "last_modified": null,
   "sha256": "317c7dfdfc1d41773dd621104fc90c97fccf1f45cc7d68ccfb0b4cc8230bef36"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-173-29": {
   "bytes": 31043,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:44+00:00",
+  "last_checked": "2026-09-29T05:50:54+00:00",
   "last_modified": null,
   "sha256": "56ffbc5bf2fb59915ccdde23f0420376e4ab8e3e5fd1fd8b1dc59f0e7a6af3e0"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-173-41": {
   "bytes": 17681,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:45+00:00",
+  "last_checked": "2026-09-29T05:50:55+00:00",
   "last_modified": null,
   "sha256": "c5e1f1cbfc8ebebd67ff9643fee57f26dac9ede8b9d22e482bef7c2a5beb5445"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-173-48": {
   "bytes": 10339,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:45+00:00",
+  "last_checked": "2026-09-29T05:50:55+00:00",
   "last_modified": null,
   "sha256": "6a6ce1256ca50d576b5922fa90a64a40809a2b0b22360f926b2bc43941f34c60"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-173-50": {
   "bytes": 18357,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:46+00:00",
+  "last_checked": "2026-09-29T05:50:56+00:00",
   "last_modified": null,
   "sha256": "07c8488cb842d9f6dcb51594afde4a3406bcc3daac78df9a1bb3ba2ace3d283d"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-174-07": {
   "bytes": 11188,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:46+00:00",
+  "last_checked": "2026-09-29T05:50:56+00:00",
   "last_modified": null,
   "sha256": "cf8aa559013f2f22a3507e0fd42dab95503f85a0edd9a24646a6b0a81e2615a6"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-174-08": {
   "bytes": 60612,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:47+00:00",
+  "last_checked": "2026-09-29T05:50:57+00:00",
   "last_modified": null,
   "sha256": "ae78ffcd44637ddaa626a5baa3c770f5b96785b5525f8f0c05211239fb4c40ed"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-174-28": {
   "bytes": 133036,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:47+00:00",
+  "last_checked": "2026-09-29T05:50:58+00:00",
   "last_modified": null,
   "sha256": "422da47663f8341b9b9754922c22f105b10e4a7c6e8fc711c89be3e6276698c7"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-174-29": {
   "bytes": 22954,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:48+00:00",
+  "last_checked": "2026-09-29T05:50:58+00:00",
   "last_modified": null,
   "sha256": "fab23d4a97ccae87204e37e50346a5a19f91f3a7c5af8421d27c0b2362edbfac"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-175-07": {
   "bytes": 45816,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:48+00:00",
+  "last_checked": "2026-09-29T05:50:58+00:00",
   "last_modified": null,
   "sha256": "8c341330593bec1e3f8f608d7429dc3afa9a5b54ae18bb7b0ec7629de1862780"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-175-28": {
   "bytes": 150365,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:49+00:00",
+  "last_checked": "2026-09-29T05:50:59+00:00",
   "last_modified": null,
   "sha256": "d6c13abe55a93be70af087b28370ab279c8fa52be4695bb307915ed4af030244"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-175-29": {
   "bytes": 56432,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:49+00:00",
+  "last_checked": "2026-09-29T05:50:59+00:00",
   "last_modified": null,
   "sha256": "adee8937ef936a8b4d3f89940275d6455d659d914807eb5a831dba59b5f4960c"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-175-41": {
   "bytes": 55962,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:50+00:00",
+  "last_checked": "2026-09-29T05:51:00+00:00",
   "last_modified": null,
   "sha256": "7650acd24657dc2128f67e9890494ca6e3eddce40230837d2b6ae615ae136e4d"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-175-48": {
   "bytes": 47733,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:50+00:00",
+  "last_checked": "2026-09-29T05:51:00+00:00",
   "last_modified": null,
   "sha256": "87b37902f135c0f5d628e990f80710463ebdb8761b8de084eec20b0a8a35f6d8"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-176-08": {
   "bytes": 123609,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:51+00:00",
+  "last_checked": "2026-09-29T05:51:01+00:00",
   "last_modified": null,
   "sha256": "20d12403c2f6d924bc90494e644e48ded1f67d276ede17f2abf21605bbd95761"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-176-28": {
   "bytes": 105839,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:51+00:00",
+  "last_checked": "2026-09-29T05:51:02+00:00",
   "last_modified": null,
   "sha256": "07f656d3b2dfa492410cc561a9dad635d8d2098e4df162ef5395c24250c613a0"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-176-29": {
   "bytes": 23514,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:52+00:00",
+  "last_checked": "2026-09-29T05:51:02+00:00",
   "last_modified": null,
   "sha256": "2e50ca59e92a241d6548d3b80ed0fc21d1a9f453b2d76af6aa57688ca7ba257d"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-176-41": {
   "bytes": 16055,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:52+00:00",
+  "last_checked": "2026-09-29T05:51:02+00:00",
   "last_modified": null,
   "sha256": "56cc1ba50194d3cc207d4c04efafdbe6fee7f657e54a864da691400391bc22ab"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-176-50": {
   "bytes": 18056,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:53+00:00",
+  "last_checked": "2026-09-29T05:51:03+00:00",
   "last_modified": null,
   "sha256": "20b34a612c0329f84be5bf5772bdd344f396607a8ed19684c42e98ebcc559666"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-177-07": {
   "bytes": 4985,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:53+00:00",
+  "last_checked": "2026-09-29T05:51:03+00:00",
   "last_modified": null,
   "sha256": "0873c42f60a14082f806c940d02256392b65c650d6864bfb10b3cba221eaf912"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-177-08": {
   "bytes": 51639,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:54+00:00",
+  "last_checked": "2026-09-29T05:51:04+00:00",
   "last_modified": null,
   "sha256": "8a3e900549ac64c21bb1f8bd8b98300656258b7b8de01680c2d2e275c4a72fb8"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-177-28": {
   "bytes": 132409,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:54+00:00",
+  "last_checked": "2026-09-29T05:51:05+00:00",
   "last_modified": null,
   "sha256": "4d882f5cfb70f0ffaf4fb257b19794db5bddf7f09346294cf70aed336b03503f"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-177-46": {
   "bytes": 170670,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:55+00:00",
+  "last_checked": "2026-09-29T05:51:05+00:00",
   "last_modified": null,
   "sha256": "b68c2d148457e53111be746b9d1b076d0bb74370ac3ca1907fbf0ff4cf662c12"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-178-07": {
   "bytes": 17615,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:55+00:00",
+  "last_checked": "2026-09-29T05:51:05+00:00",
   "last_modified": null,
   "sha256": "61bc5a438ef46cfbe77e608e0a9f0af4e71cd7ca9e3f26eb040e4c018609ebbe"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-178-08": {
   "bytes": 61755,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:56+00:00",
+  "last_checked": "2026-09-29T05:51:06+00:00",
   "last_modified": null,
   "sha256": "19ea9d7cfece35e1be0cb53fb1c07a2ff534003cb730c6c753de8d61281eedc4"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-178-28": {
   "bytes": 161839,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:56+00:00",
+  "last_checked": "2026-09-29T05:51:07+00:00",
   "last_modified": null,
   "sha256": "dc803e3eefea1a52943d0cb5caede821330864b58706bb64c2e176efe6fbe1fe"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-178-41": {
   "bytes": 25614,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:57+00:00",
+  "last_checked": "2026-09-29T05:51:07+00:00",
   "last_modified": null,
   "sha256": "d0a0e1356836403fbc117c9cf8aca0f41a2f485049035167a4658863a9b050ff"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-178-46": {
   "bytes": 45401,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:57+00:00",
+  "last_checked": "2026-09-29T05:51:07+00:00",
   "last_modified": null,
   "sha256": "f352acbd9ac0d7139cda8b267da549b0cd64a491bef4adf6175dd6a928ca83d8"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-178-48": {
   "bytes": 42233,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:58+00:00",
+  "last_checked": "2026-09-29T05:51:08+00:00",
   "last_modified": null,
   "sha256": "3e4db2abc289d8897cfd5c2b60b96d2bd4c1a7cbf72390e2f101441db31327bd"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-178-50": {
   "bytes": 20426,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:58+00:00",
+  "last_checked": "2026-09-29T05:51:08+00:00",
   "last_modified": null,
   "sha256": "e9e0c18def0a7fbfbda53bcc9772369516917c5de815ee5b32ea9357ab053a22"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-179-07": {
   "bytes": 27156,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:59+00:00",
+  "last_checked": "2026-09-29T05:51:09+00:00",
   "last_modified": null,
   "sha256": "15f30741ae8f5f2037d9893ffa20cb4cd444fe7bcee1062a2440253d25cef3d7"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-179-08": {
   "bytes": 77813,
   "etag": null,
-  "last_checked": "2026-09-22T05:47:59+00:00",
+  "last_checked": "2026-09-29T05:51:10+00:00",
   "last_modified": null,
   "sha256": "386862a6a82762cb410d32d1223f000d51c7d18cc6e3d5d30c78f341fe74d772"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-179-28": {
   "bytes": 180594,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:00+00:00",
+  "last_checked": "2026-09-29T05:51:10+00:00",
   "last_modified": null,
   "sha256": "3b851b16790fd4ea64faefe156ab8182a395b1844ad926a25c973a7f257dd98a"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-179-29": {
   "bytes": 16733,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:00+00:00",
+  "last_checked": "2026-09-29T05:51:10+00:00",
   "last_modified": null,
   "sha256": "6ab680033f314254537053cdc204d7e6fd6682c02891dd375958c745c9f875f9"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-180-07": {
   "bytes": 27744,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:01+00:00",
+  "last_checked": "2026-09-29T05:51:11+00:00",
   "last_modified": null,
   "sha256": "4f603101fc31ef309d087d5c50b42f3cc4c688932a8c2fe5d5cdc7eb26c1e81b"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-180-28": {
   "bytes": 165713,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:01+00:00",
+  "last_checked": "2026-09-29T05:51:12+00:00",
   "last_modified": null,
   "sha256": "3111e4e5dd6e8cd9c79d0e85552d7cb18a53fbcd36493c78d3e0b59f9e493620"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-180-29": {
   "bytes": 40620,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:02+00:00",
+  "last_checked": "2026-09-29T05:51:12+00:00",
   "last_modified": null,
   "sha256": "eed9e6377e7008cb8aa72816ae155d3da9a8e4ab0d0df4e4006af2a7f5788bcf"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-180-41": {
   "bytes": 32224,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:02+00:00",
+  "last_checked": "2026-09-29T05:51:12+00:00",
   "last_modified": null,
   "sha256": "56d6c2d61eaec427a367a8d0de8136f66abf12d7dabaef53f82e4d4b146559b1"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-180-46": {
   "bytes": 90714,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:03+00:00",
+  "last_checked": "2026-09-29T05:51:13+00:00",
   "last_modified": null,
   "sha256": "683e634cb81a5c6e8f711525adafd4d5b2fe76a0fe0d11ae365ef0ecf6fc9d47"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-180-48": {
   "bytes": 23122,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:03+00:00",
+  "last_checked": "2026-09-29T05:51:13+00:00",
   "last_modified": null,
   "sha256": "29fb1b5e0330b67e62c8a8596ec11c2687c614ecc2419d6321ea65238b185cac"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-180-50": {
   "bytes": 22420,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:04+00:00",
+  "last_checked": "2026-09-29T05:51:14+00:00",
   "last_modified": null,
   "sha256": "89d37ca62e4eae8535ee408f5c1ab6c028362fd1b567a31f0b7fbe6147a4dc51"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-181-07": {
   "bytes": 18380,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:04+00:00",
+  "last_checked": "2026-09-29T05:51:14+00:00",
   "last_modified": null,
   "sha256": "ddfeb398654691a695e53b1e4aa9d7b1c016cb38e12d179285c7a01923b41246"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-181-08": {
   "bytes": 74710,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:05+00:00",
+  "last_checked": "2026-09-29T05:51:15+00:00",
   "last_modified": null,
   "sha256": "7aec330f532095a5e2c2d8d7d0a386ce2476e6655776f5ca3673862a469a3e24"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-181-28": {
   "bytes": 207304,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:05+00:00",
+  "last_checked": "2026-09-29T05:51:16+00:00",
   "last_modified": null,
   "sha256": "cb2036e1c77cb5fab30edf83c9ac13f732b0fdd270a9f905e706559e0d7cc206"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-181-41": {
   "bytes": 19951,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:06+00:00",
+  "last_checked": "2026-09-29T05:51:16+00:00",
   "last_modified": null,
   "sha256": "05c1c121c7a9505943f591213505c83030b2322334904fa9ea30dee4bd1bcb70"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-182-07": {
   "bytes": 12286,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:06+00:00",
+  "last_checked": "2026-09-29T05:51:16+00:00",
   "last_modified": null,
   "sha256": "c2974a4df4cd903162646b732d6edc771be4f7cb4cb2d8e67caa4d17a132e519"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-182-08": {
   "bytes": 66496,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:07+00:00",
+  "last_checked": "2026-09-29T05:51:17+00:00",
   "last_modified": null,
   "sha256": "70fe8726aa3e43626ae89082cb9cb35a5f786a6c4fc8b8c02849728fdb15f4c0"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-182-28": {
   "bytes": 172806,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:07+00:00",
+  "last_checked": "2026-09-29T05:51:18+00:00",
   "last_modified": null,
   "sha256": "36bb10c243b059da89855dd588fb69e996ccd4b07cf8d909b434631540bc02f3"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-182-29": {
   "bytes": 31058,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:08+00:00",
+  "last_checked": "2026-09-29T05:51:18+00:00",
   "last_modified": null,
   "sha256": "2d67758998bb0f6a533a22385cd9abfead63be88832e8c1813bf3f5e064f9989"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-182-46": {
   "bytes": 77832,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:08+00:00",
+  "last_checked": "2026-09-29T05:51:18+00:00",
   "last_modified": null,
   "sha256": "1c94b4369c57644e2c11dbfd3cc94df9dea2a0b9c57051dc2d6fc26df69388d7"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-183-07": {
   "bytes": 23064,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:09+00:00",
+  "last_checked": "2026-09-29T05:51:19+00:00",
   "last_modified": null,
   "sha256": "92bb063d5f272449d26231f9aad2c7509ce8a7bb1de2a86fcac22b229d80c1fc"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-183-08": {
   "bytes": 75495,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:09+00:00",
+  "last_checked": "2026-09-29T05:51:20+00:00",
   "last_modified": null,
   "sha256": "e41d96becf210e8b0cb6eac708176dc2b31dbcf86fa0c6d0b3896da98ed8e2ed"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-183-28": {
   "bytes": 182113,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:10+00:00",
+  "last_checked": "2026-09-29T05:51:20+00:00",
   "last_modified": null,
   "sha256": "c41e657bbfc60697e3082a5ea9ac99cf8e2ca8b74bbd2f9fd31e875db91969cf"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-183-29": {
   "bytes": 40501,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:10+00:00",
+  "last_checked": "2026-09-29T05:51:20+00:00",
   "last_modified": null,
   "sha256": "261c84e02939c4583c87c859d4c8f6343a1e17757882a83e78a7a6d59b2ca66b"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-183-46": {
   "bytes": 59031,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:11+00:00",
+  "last_checked": "2026-09-29T05:51:21+00:00",
   "last_modified": null,
   "sha256": "a3806829492c81711b394bd5816f652b99cc82efb2581e5d94de9f73dfa69361"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-183-48": {
   "bytes": 46427,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:11+00:00",
+  "last_checked": "2026-09-29T05:51:21+00:00",
   "last_modified": null,
   "sha256": "e3fff3b02244d87a36c04324750671accecc1bd0aff2299d001f67e005b3861c"
  },
  "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-183-50": {
   "bytes": 18908,
   "etag": null,
-  "last_checked": "2026-09-22T05:48:12+00:00",
+  "last_checked": "2026-09-29T05:51:22+00:00",
   "last_modified": null,
   "sha256": "5b4c923fff68799e3613c43881430f21275b51bfaa4c79291088adf2eaa052fd"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-184-07": {
+  "bytes": 49941,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:23+00:00",
+  "last_modified": null,
+  "sha256": "cdcf67a751b0b982bda174ef718cbc4dd89d63bd9918cb3f8c5e69da502a29b3"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-184-08": {
+  "bytes": 124688,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:23+00:00",
+  "last_modified": null,
+  "sha256": "42359922ffd1b7e9634458e2da1d5a06c92e44179a1ed45a013ec1133f8b2192"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-184-28": {
+  "bytes": 173039,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:24+00:00",
+  "last_modified": null,
+  "sha256": "7c5349296256b2eb06b74822eb678c33bf6a0b52c8e4252082a25916eef2e21f"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-184-29": {
+  "bytes": 36583,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:24+00:00",
+  "last_modified": null,
+  "sha256": "82ef5bc96034e6a93180cad38ebb8bb08ab9c3bcad89de8b53fa7770e4b36b36"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-184-41": {
+  "bytes": 54250,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:24+00:00",
+  "last_modified": null,
+  "sha256": "d4c486dd75be6607a47afe0cf4ac8ac0648cb0118f7f483109255588c9493f72"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-184-46": {
+  "bytes": 48015,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:25+00:00",
+  "last_modified": null,
+  "sha256": "826a2967147fe5bfe264b74298ea85ae532bec5fe434430db824b65ac941ceb3"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-185-07": {
+  "bytes": 21642,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:25+00:00",
+  "last_modified": null,
+  "sha256": "9d8c2ca377d1870296d0ef71e13382021d0b3ba27386817329c8d47c7baae727"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-185-08": {
+  "bytes": 111635,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:26+00:00",
+  "last_modified": null,
+  "sha256": "81d7c1edef0b8fad82c5357d3f71adb541651ace863f59503457006087cef189"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-185-28": {
+  "bytes": 211944,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:27+00:00",
+  "last_modified": null,
+  "sha256": "ae282eb3b1502fa17dd795636acae74c49c02bc3c9bdc36e2d219a5da8575a5f"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-185-29": {
+  "bytes": 86517,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:27+00:00",
+  "last_modified": null,
+  "sha256": "d81146038c76f82c882fe74f6c26637461a8dbb5f96440e1eae7f901d879b1e6"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-185-41": {
+  "bytes": 20943,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:27+00:00",
+  "last_modified": null,
+  "sha256": "1ba9051381c3f88fa10dd0e02437444271d2cb58ce101f55520946c1cebfb27b"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-185-46": {
+  "bytes": 86246,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:28+00:00",
+  "last_modified": null,
+  "sha256": "77b9833e3ede8c4507fad5983247210e3ccb10833897d239f7d812cc2a040392"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-185-48": {
+  "bytes": 30976,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:28+00:00",
+  "last_modified": null,
+  "sha256": "fd460d01e5d54699879141f064108ba753721b790ffd0610871cad7e5589d949"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-186-07": {
+  "bytes": 7425,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:29+00:00",
+  "last_modified": null,
+  "sha256": "f5b44101f9aad3ed83ef92f8e383b701e5c58ee419d9a868a309048ce4f79fbe"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-186-08": {
+  "bytes": 131292,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:30+00:00",
+  "last_modified": null,
+  "sha256": "54d9b7536b8021112e55b60a48b4326e0a7c043f7776703a8e1ef38cf90abf68"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-186-28": {
+  "bytes": 181206,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:30+00:00",
+  "last_modified": null,
+  "sha256": "01b400e9659d79115dacb9a9abc87de2d89c7df5ce60cb89caadc9fae09380e7"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-187-07": {
+  "bytes": 21548,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:30+00:00",
+  "last_modified": null,
+  "sha256": "b3303a8e91cd70cef4349c1aafc97f0399cb3c6e876477b0527247003c9a83b1"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-187-08": {
+  "bytes": 106380,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:31+00:00",
+  "last_modified": null,
+  "sha256": "eaa0f79d5c352bccbe3a41c7d7f19f697dbf05432aebbf0521a9e52e97277861"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-187-28": {
+  "bytes": 191352,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:32+00:00",
+  "last_modified": null,
+  "sha256": "cfcbf86f41d468712a25ef2bcfba6b8e9dd532a46dc450ea91d373de247b2ca1"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-187-29": {
+  "bytes": 25898,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:32+00:00",
+  "last_modified": null,
+  "sha256": "673300a7957501dafec8a3ffc2267bd02bbf69dd770ee0b335fa42526869f7ca"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-187-46": {
+  "bytes": 57818,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:32+00:00",
+  "last_modified": null,
+  "sha256": "dd7d6ff36b0186b0ba23c3975646e1aa9f8af670f54892efff59e2f2978a0263"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-187-50": {
+  "bytes": 59217,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:33+00:00",
+  "last_modified": null,
+  "sha256": "b42917bdcc4ba9b001446825947f16e624610423911bc97d41d5e215427ff4c0"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-188-08": {
+  "bytes": 113614,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:34+00:00",
+  "last_modified": null,
+  "sha256": "bd5dd273e1bc9e6ad10f9f5a470c2cbe3bef0e664825525a9f8ee8255e3f32e8"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-188-28": {
+  "bytes": 208494,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:34+00:00",
+  "last_modified": null,
+  "sha256": "dfb2162cd1b74f4e25d78f0698d87c9da537ef9d7dce3e65de7537c40c479475"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-188-29": {
+  "bytes": 41372,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:34+00:00",
+  "last_modified": null,
+  "sha256": "ed135a05f28105511cff5afc708fa763743c554596da472f3ff42fe378f79b47"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-188-41": {
+  "bytes": 85321,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:35+00:00",
+  "last_modified": null,
+  "sha256": "050283dcff623dd05e994175f9d1ecab9996a43ac9c8ed7871328d3bcd739f69"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-188-46": {
+  "bytes": 58140,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:35+00:00",
+  "last_modified": null,
+  "sha256": "4263c3ce6e530167e1db668ea99ed7ff72050d98e36083ba2ee1fdb58d333677"
+ },
+ "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-188-48": {
+  "bytes": 56037,
+  "etag": null,
+  "last_checked": "2026-09-29T05:51:36+00:00",
+  "last_modified": null,
+  "sha256": "ad097fdf543ab3191fcc76c268ac47f10575e5276223323ae4dcdc86a1120ca4"
  },
  "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Industrie-Verarbeitendes-Gewerbe/Publikationen/Downloads-Konjunktur/statistischer-bericht-lkw-maut-fahrleistungsindex-5421901.xlsx?__blob=publicationFile&v=24": {
   "bytes": 948673,
   "etag": "\"984275efc16cc93ee35cc0b8904228f1\"",
-  "last_checked": "2026-09-28T21:44:31+00:00",
+  "last_checked": "2026-09-29T05:51:44+00:00",
   "last_modified": "Thu, 24 Sep 2026 09:46:09 GMT",
   "sha256": "e358666345c38427888583fd539e1e47b9b532eebbcbfe90965dfb49aaef00a9"
  },
  "https://www.dgt.es/microdatos/salida/2022/10/vehiculos/matriculaciones/export_mensual_mat_202210.zip": {
   "bytes": 11622977,
   "etag": "\"b15a41-620bd7e43939d\"",
-  "last_checked": "2026-09-22T05:49:07+00:00",
+  "last_checked": "2026-09-29T05:52:15+00:00",
   "last_modified": "Wed, 28 Aug 2024 12:28:19 GMT",
   "sha256": "fca233a173fbc44dfd1cdbf40fe60a6e608534dbac28afa1a8c9c93b14b3b643"
  },
  "https://www.dgt.es/microdatos/salida/2022/11/vehiculos/matriculaciones/export_mensual_mat_202211.zip": {
   "bytes": 12320701,
   "etag": "\"bbffbd-620bd7e6d1379\"",
-  "last_checked": "2026-09-22T05:49:07+00:00",
+  "last_checked": "2026-09-29T05:52:14+00:00",
   "last_modified": "Wed, 28 Aug 2024 12:28:22 GMT",
   "sha256": "73cbf82eb47f1db41aa60a7dd8e95795dcb6132a9747f9bc463724342236f2f4"
  },
  "https://www.dgt.es/microdatos/salida/2022/12/vehiculos/matriculaciones/export_mensual_mat_202212.zip": {
   "bytes": 11879733,
   "etag": "\"b54535-6214a456619e0\"",
-  "last_checked": "2026-09-22T05:49:06+00:00",
+  "last_checked": "2026-09-29T05:52:13+00:00",
   "last_modified": "Wed, 04 Sep 2024 12:25:35 GMT",
   "sha256": "e691f0c00631ba8a75318b6b1266baf2a8ca45d1b8ef0320ed2adb3c5d5221e1"
  },
@@ -18363,343 +19105,343 @@
  "https://www.dgt.es/microdatos/salida/2022/9/vehiculos/matriculaciones/export_mensual_mat_202209.zip": {
   "bytes": 11548836,
   "etag": "\"b038a4-620bd7e1e327a\"",
-  "last_checked": "2026-09-22T05:49:08+00:00",
+  "last_checked": "2026-09-29T05:52:16+00:00",
   "last_modified": "Wed, 28 Aug 2024 12:28:17 GMT",
   "sha256": "09a657d92fb1c30786b69e6259b5a280fcf773e85ad1be554616a361db0de7d6"
  },
  "https://www.dgt.es/microdatos/salida/2023/1/vehiculos/matriculaciones/export_mensual_mat_202301.zip": {
   "bytes": 10669157,
   "etag": "\"a2cc65-5f4b8104724c4\"",
-  "last_checked": "2026-09-22T05:49:05+00:00",
+  "last_checked": "2026-09-29T05:52:13+00:00",
   "last_modified": "Wed, 15 Feb 2023 07:31:07 GMT",
   "sha256": "ce6977f9bbf855d5620c2a21e6ffe548f4501727267e311a77c64bc778f2bc8a"
  },
  "https://www.dgt.es/microdatos/salida/2023/10/vehiculos/matriculaciones/export_mensual_mat_202310.zip": {
   "bytes": 13981813,
   "etag": "\"d55875-60a2bb8e03f20\"",
-  "last_checked": "2026-09-22T05:48:57+00:00",
+  "last_checked": "2026-09-29T05:52:05+00:00",
   "last_modified": "Wed, 15 Nov 2023 07:19:21 GMT",
   "sha256": "9b63812277037fb4b132e7169671316c4f569d3eebe341c88d135d1293ddd452"
  },
  "https://www.dgt.es/microdatos/salida/2023/11/vehiculos/matriculaciones/export_mensual_mat_202311.zip": {
   "bytes": 13450329,
   "etag": "\"cd3c59-60c8761bb4e43\"",
-  "last_checked": "2026-09-22T05:48:56+00:00",
+  "last_checked": "2026-09-29T05:52:05+00:00",
   "last_modified": "Fri, 15 Dec 2023 07:31:00 GMT",
   "sha256": "400589eab3acea1ac31964d5d24ee1e2d34f35d5ee5bd41ed6995ee7f9456179"
  },
  "https://www.dgt.es/microdatos/salida/2023/12/vehiculos/matriculaciones/export_mensual_mat_202312.zip": {
   "bytes": 12491425,
   "etag": "\"be9aa1-60ef6ff355677\"",
-  "last_checked": "2026-09-22T05:48:55+00:00",
+  "last_checked": "2026-09-29T05:52:03+00:00",
   "last_modified": "Mon, 15 Jan 2024 07:31:06 GMT",
   "sha256": "dd92c020ddf1ca03dcb5a4c46d28189329778ae98a535d8165ce3b8019a65235"
  },
  "https://www.dgt.es/microdatos/salida/2023/2/vehiculos/matriculaciones/export_mensual_mat_202302.zip": {
   "bytes": 11593485,
   "etag": "\"b0e70d-5f6eb537a9817\"",
-  "last_checked": "2026-09-22T05:49:04+00:00",
+  "last_checked": "2026-09-29T05:52:12+00:00",
   "last_modified": "Wed, 15 Mar 2023 07:31:01 GMT",
   "sha256": "439eb88686f77394dfbc4476e502eba3ad86c622f40bf3ae500c6d9f2ec94c7b"
  },
  "https://www.dgt.es/microdatos/salida/2023/3/vehiculos/matriculaciones/export_mensual_mat_202303.zip": {
   "bytes": 14897911,
   "etag": "\"e352f7-5f95a18cc95f8\"",
-  "last_checked": "2026-09-22T05:49:03+00:00",
+  "last_checked": "2026-09-29T05:52:11+00:00",
   "last_modified": "Sat, 15 Apr 2023 06:30:41 GMT",
   "sha256": "bd009cea76100943e7dbb4a2ff8090c56ac7ca84abc8ac2a7d99ccf10b9eea90"
  },
  "https://www.dgt.es/microdatos/salida/2023/4/vehiculos/matriculaciones/export_mensual_mat_202304.zip": {
   "bytes": 11578875,
   "etag": "\"b0adfb-5fbb591ab1e0a\"",
-  "last_checked": "2026-09-22T05:49:02+00:00",
+  "last_checked": "2026-09-29T05:52:11+00:00",
   "last_modified": "Mon, 15 May 2023 06:28:55 GMT",
   "sha256": "93379ca8bbf5030a5599e152b4fa87bc20891565186be2f579958c7b3f6a4c32"
  },
  "https://www.dgt.es/microdatos/salida/2023/5/vehiculos/matriculaciones/export_mensual_mat_202305.zip": {
   "bytes": 14486943,
   "etag": "\"dd0d9f-5fe2528b46762\"",
-  "last_checked": "2026-09-22T05:49:01+00:00",
+  "last_checked": "2026-09-29T05:52:09+00:00",
   "last_modified": "Thu, 15 Jun 2023 06:27:13 GMT",
   "sha256": "4015e7a632bb3058725c0f8fe233d4afdcc9734a8850ac958c69effa5916d8ba"
  },
  "https://www.dgt.es/microdatos/salida/2023/6/vehiculos/matriculaciones/export_mensual_mat_202306.zip": {
   "bytes": 15597016,
   "etag": "\"edfdd8-60080a16e609f\"",
-  "last_checked": "2026-09-22T05:49:00+00:00",
+  "last_checked": "2026-09-29T05:52:09+00:00",
   "last_modified": "Sat, 15 Jul 2023 06:25:24 GMT",
   "sha256": "1704d9e6039bb5a35526733bbfa5c8ec1ececcf98427ad462e31d1cb3f37ed68"
  },
  "https://www.dgt.es/microdatos/salida/2023/7/vehiculos/matriculaciones/export_mensual_mat_202307.zip": {
   "bytes": 13592421,
   "etag": "\"cf6765-602f0385aacfb\"",
-  "last_checked": "2026-09-22T05:48:59+00:00",
+  "last_checked": "2026-09-29T05:52:08+00:00",
   "last_modified": "Tue, 15 Aug 2023 06:23:41 GMT",
   "sha256": "ccb02fa644278324fbdb06580eb91e6737d8fbaf75885b1d5d21febd1afbb414"
  },
  "https://www.dgt.es/microdatos/salida/2023/8/vehiculos/matriculaciones/export_mensual_mat_202308.zip": {
   "bytes": 10036656,
   "etag": "\"9925b0-6055fceeac848\"",
-  "last_checked": "2026-09-22T05:48:58+00:00",
+  "last_checked": "2026-09-29T05:52:07+00:00",
   "last_modified": "Fri, 15 Sep 2023 06:21:51 GMT",
   "sha256": "676909f80aa1d808d9f514fa770714d659927b735d1caab65e678fce4008552b"
  },
  "https://www.dgt.es/microdatos/salida/2023/9/vehiculos/matriculaciones/export_mensual_mat_202309.zip": {
   "bytes": 11207144,
   "etag": "\"ab01e8-607bb477c2c3c\"",
-  "last_checked": "2026-09-22T05:48:57+00:00",
+  "last_checked": "2026-09-29T05:52:06+00:00",
   "last_modified": "Sun, 15 Oct 2023 06:19:59 GMT",
   "sha256": "04a6b3f28c1a17604c29ed3de301110dca889e06af539dc09ecd3bc87e83af18"
  },
  "https://www.dgt.es/microdatos/salida/2024/1/vehiculos/matriculaciones/export_mensual_mat_202401.zip": {
   "bytes": 11526509,
   "etag": "\"afe16d-611669c11c89b\"",
-  "last_checked": "2026-09-22T05:48:54+00:00",
+  "last_checked": "2026-09-29T05:52:03+00:00",
   "last_modified": "Thu, 15 Feb 2024 07:31:03 GMT",
   "sha256": "657694077b17f6c9304d5cde41af313e18e0824789369c399765edb908e667eb"
  },
  "https://www.dgt.es/microdatos/salida/2024/10/vehiculos/matriculaciones/export_mensual_mat_202410.zip": {
   "bytes": 15359645,
   "etag": "\"ea5e9d-626f0a4f04e73\"",
-  "last_checked": "2026-09-22T05:48:46+00:00",
+  "last_checked": "2026-09-29T05:51:57+00:00",
   "last_modified": "Fri, 15 Nov 2024 10:01:01 GMT",
   "sha256": "e970153184b9da12c6ecec45bf1606fe8e6abf101cc4f53828ef72a55d730bdd"
  },
  "https://www.dgt.es/microdatos/salida/2024/11/vehiculos/matriculaciones/export_mensual_mat_202411.zip": {
   "bytes": 14045512,
   "etag": "\"d65148-6294a0b621b2e\"",
-  "last_checked": "2026-09-22T05:48:45+00:00",
+  "last_checked": "2026-09-29T05:51:57+00:00",
   "last_modified": "Sun, 15 Dec 2024 07:30:55 GMT",
   "sha256": "33913ee9abda080e7a421885b8c787d122352dc934d9e71025dd3edbb04a35b7"
  },
  "https://www.dgt.es/microdatos/salida/2024/12/vehiculos/matriculaciones/export_mensual_mat_202412.zip": {
   "bytes": 16083171,
   "etag": "\"f568e3-62bb9a8ee036e\"",
-  "last_checked": "2026-09-22T05:48:44+00:00",
+  "last_checked": "2026-09-29T05:51:57+00:00",
   "last_modified": "Wed, 15 Jan 2025 07:31:03 GMT",
   "sha256": "fb8c5d8d862fc0eac6ea242ee1ee3c9e622d8e4c3cf1355436350fa8b33d7f9f"
  },
  "https://www.dgt.es/microdatos/salida/2024/2/vehiculos/matriculaciones/export_mensual_mat_202402.zip": {
   "bytes": 12990032,
   "etag": "\"c63650-613adfd9160ee\"",
-  "last_checked": "2026-09-22T05:48:53+00:00",
+  "last_checked": "2026-09-29T05:52:02+00:00",
   "last_modified": "Fri, 15 Mar 2024 07:31:04 GMT",
   "sha256": "93c80c53efc555f14f056528385c781166306842fbb79ba17f97fd9091313f2b"
  },
  "https://www.dgt.es/microdatos/salida/2024/3/vehiculos/matriculaciones/export_mensual_mat_202403.zip": {
   "bytes": 13935951,
   "etag": "\"d4a54f-6161cc3e52386\"",
-  "last_checked": "2026-09-22T05:48:52+00:00",
+  "last_checked": "2026-09-29T05:52:01+00:00",
   "last_modified": "Mon, 15 Apr 2024 06:31:01 GMT",
   "sha256": "fe828becb93394b46227e58192700c446067ef7bc17bc98ef5f956ba0b5c0af8"
  },
  "https://www.dgt.es/microdatos/salida/2024/4/vehiculos/matriculaciones/export_mensual_mat_202404.zip": {
   "bytes": 14822688,
   "etag": "\"e22d20-618784343ac03\"",
-  "last_checked": "2026-09-22T05:48:51+00:00",
+  "last_checked": "2026-09-29T05:52:01+00:00",
   "last_modified": "Wed, 15 May 2024 06:31:03 GMT",
   "sha256": "d8380e6788d2034bb948b9d57348a4e02242ff22f113f14ffba5fa7becab946e"
  },
  "https://www.dgt.es/microdatos/salida/2024/5/vehiculos/matriculaciones/export_mensual_mat_202405.zip": {
   "bytes": 15307448,
   "etag": "\"e992b8-61ae7e0107b1a\"",
-  "last_checked": "2026-09-22T05:48:50+00:00",
+  "last_checked": "2026-09-29T05:52:00+00:00",
   "last_modified": "Sat, 15 Jun 2024 06:30:59 GMT",
   "sha256": "4804fe4ade0d3dd0c54b44f2583d4b0fa7f9ea5d1909875e822f4cc658ce803d"
  },
  "https://www.dgt.es/microdatos/salida/2024/6/vehiculos/matriculaciones/export_mensual_mat_202406.zip": {
   "bytes": 15996117,
   "etag": "\"f414d5-61d435f26e97d\"",
-  "last_checked": "2026-09-22T05:48:49+00:00",
+  "last_checked": "2026-09-29T05:52:00+00:00",
   "last_modified": "Mon, 15 Jul 2024 06:30:56 GMT",
   "sha256": "512b4de5022662a91ccc0d091973840afc5b35784e495b6cef5626107105e9c4"
  },
  "https://www.dgt.es/microdatos/salida/2024/7/vehiculos/matriculaciones/export_mensual_mat_202407.zip": {
   "bytes": 14962508,
   "etag": "\"e44f4c-61fb2fcb34438\"",
-  "last_checked": "2026-09-22T05:48:49+00:00",
+  "last_checked": "2026-09-29T05:52:00+00:00",
   "last_modified": "Thu, 15 Aug 2024 06:31:04 GMT",
   "sha256": "bcc19f567e96d6d3dc58bea973d6bf048b4edbdf9ed29e32ca0e8b7fd0c6bc6f"
  },
  "https://www.dgt.es/microdatos/salida/2024/8/vehiculos/matriculaciones/export_mensual_mat_202408.zip": {
   "bytes": 9947893,
   "etag": "\"97caf5-62222999719be\"",
-  "last_checked": "2026-09-22T05:48:48+00:00",
+  "last_checked": "2026-09-29T05:51:58+00:00",
   "last_modified": "Sun, 15 Sep 2024 06:31:01 GMT",
   "sha256": "b98dcfa4cd6cb7e1ee2a05c3c80809137ca4634cbd6864fec7dc4d1f0dca253c"
  },
  "https://www.dgt.es/microdatos/salida/2024/9/vehiculos/matriculaciones/export_mensual_mat_202409.zip": {
   "bytes": 12988950,
   "etag": "\"c63216-6247e191ca398\"",
-  "last_checked": "2026-09-22T05:48:47+00:00",
+  "last_checked": "2026-09-29T05:51:58+00:00",
   "last_modified": "Tue, 15 Oct 2024 06:31:06 GMT",
   "sha256": "9ec0697b1c66da1fa395eb40fc85e37922052442c68adc83dc322863d2afc472"
  },
  "https://www.dgt.es/microdatos/salida/2025/1/vehiculos/matriculaciones/export_mensual_mat_202501.zip": {
   "bytes": 11944086,
   "etag": "\"b64096-62e2945b82752\"",
-  "last_checked": "2026-09-22T05:48:43+00:00",
+  "last_checked": "2026-09-29T05:51:56+00:00",
   "last_modified": "Sat, 15 Feb 2025 07:30:58 GMT",
   "sha256": "85617eef0757b4daf0a889e5bc7936c178aac25a6068d76cfa5590853afa21ca"
  },
  "https://www.dgt.es/microdatos/salida/2025/10/vehiculos/matriculaciones/export_mensual_mat_202510.zip": {
   "bytes": 16729524,
   "etag": "\"ff45b4-6439d18d34c7b\"",
-  "last_checked": "2026-09-22T05:48:36+00:00",
+  "last_checked": "2026-09-29T05:51:50+00:00",
   "last_modified": "Sat, 15 Nov 2025 07:31:05 GMT",
   "sha256": "5b9a377a8011f49da83ea20eaf3e584df980f69c686dfa52582e4ee010eaa39b"
  },
  "https://www.dgt.es/microdatos/salida/2025/11/vehiculos/matriculaciones/export_mensual_mat_202511.zip": {
   "bytes": 15009322,
   "etag": "\"e5062a-645f898245d95\"",
-  "last_checked": "2026-09-22T05:48:34+00:00",
+  "last_checked": "2026-09-29T05:51:50+00:00",
   "last_modified": "Mon, 15 Dec 2025 07:31:06 GMT",
   "sha256": "dee0b2fd3d0cb307cb2bbc031c188e997938235b4bb42f03a11d6cd019324f09"
  },
  "https://www.dgt.es/microdatos/salida/2025/12/vehiculos/matriculaciones/export_mensual_mat_202512.zip": {
   "bytes": 15210116,
   "etag": "\"e81684-64868360b60a8\"",
-  "last_checked": "2026-09-22T05:48:33+00:00",
+  "last_checked": "2026-09-29T05:51:49+00:00",
   "last_modified": "Thu, 15 Jan 2026 07:31:20 GMT",
   "sha256": "e4f5deddd88c820a2850c300d7bff6e4b2f086e6e5d39e73bb35e8892f441586"
  },
  "https://www.dgt.es/microdatos/salida/2025/2/vehiculos/matriculaciones/export_mensual_mat_202502.zip": {
   "bytes": 13476038,
   "etag": "\"cda0c6-6305c899d1c8c\"",
-  "last_checked": "2026-09-22T05:48:42+00:00",
+  "last_checked": "2026-09-29T05:51:55+00:00",
   "last_modified": "Sat, 15 Mar 2025 07:31:04 GMT",
   "sha256": "a9143598a58dcf7366c40c0573b592eb2ad921b3d72454045154044648ad84a0"
  },
  "https://www.dgt.es/microdatos/salida/2025/3/vehiculos/matriculaciones/export_mensual_mat_202503.zip": {
   "bytes": 15847400,
   "etag": "\"f1cfe8-632cb50058aad\"",
-  "last_checked": "2026-09-22T05:48:41+00:00",
+  "last_checked": "2026-09-29T05:51:55+00:00",
   "last_modified": "Tue, 15 Apr 2025 06:31:02 GMT",
   "sha256": "554ba736bc59dba4d119a7fa110b9cb766ae08e496c9e6549240616439563bc4"
  },
  "https://www.dgt.es/microdatos/salida/2025/4/vehiculos/matriculaciones/export_mensual_mat_202504.zip": {
   "bytes": 14451943,
   "etag": "\"dc84e7-63526cf59c2f3\"",
-  "last_checked": "2026-09-22T05:48:40+00:00",
+  "last_checked": "2026-09-29T05:51:54+00:00",
   "last_modified": "Thu, 15 May 2025 06:31:04 GMT",
   "sha256": "8902cebf703d2327ffd1e6fe0cf23fd7b1f9425a6e8eb8a46f78d325c1953b70"
  },
  "https://www.dgt.es/microdatos/salida/2025/5/vehiculos/matriculaciones/export_mensual_mat_202505.zip": {
   "bytes": 16501912,
   "etag": "\"fbcc98-637966c43303e\"",
-  "last_checked": "2026-09-22T05:48:40+00:00",
+  "last_checked": "2026-09-29T05:51:54+00:00",
   "last_modified": "Sun, 15 Jun 2025 06:31:01 GMT",
   "sha256": "fc9cba59cce5d2703a0f545d5522e84dc4f9c23799614b4f024de19a55ebafc9"
  },
  "https://www.dgt.es/microdatos/salida/2025/6/vehiculos/matriculaciones/export_mensual_mat_202506.zip": {
   "bytes": 17321954,
   "etag": "\"1084fe2-639f1eb5018aa\"",
-  "last_checked": "2026-09-22T05:48:39+00:00",
+  "last_checked": "2026-09-29T05:51:54+00:00",
   "last_modified": "Tue, 15 Jul 2025 06:30:58 GMT",
   "sha256": "46ef6cd8753ee2bb09de792bf4349b14bf2839f27a682e4586e99b3e3a7838de"
  },
  "https://www.dgt.es/microdatos/salida/2025/7/vehiculos/matriculaciones/export_mensual_mat_202507.zip": {
   "bytes": 16784935,
   "etag": "\"1001e27-63c6188cd353a\"",
-  "last_checked": "2026-09-22T05:48:38+00:00",
+  "last_checked": "2026-09-29T05:51:52+00:00",
   "last_modified": "Fri, 15 Aug 2025 06:31:04 GMT",
   "sha256": "02f4c98ff1f4e4f096492f6d75a183a456e83aeb190a821737e18699d9f2fc9f"
  },
  "https://www.dgt.es/microdatos/salida/2025/8/vehiculos/matriculaciones/export_mensual_mat_202508.zip": {
   "bytes": 10735469,
   "etag": "\"a3cf6d-63ed12573a45e\"",
-  "last_checked": "2026-09-22T05:48:38+00:00",
+  "last_checked": "2026-09-29T05:51:51+00:00",
   "last_modified": "Mon, 15 Sep 2025 06:30:57 GMT",
   "sha256": "9d25a194a058b50604109632dcdec9ff2c9e90054bf9a64c1edb50c1558e6c19"
  },
  "https://www.dgt.es/microdatos/salida/2025/9/vehiculos/matriculaciones/export_mensual_mat_202509.zip": {
   "bytes": 14412414,
   "etag": "\"dbea7e-6412ca4dc920a\"",
-  "last_checked": "2026-09-22T05:48:37+00:00",
+  "last_checked": "2026-09-29T05:51:51+00:00",
   "last_modified": "Wed, 15 Oct 2025 06:31:00 GMT",
   "sha256": "0d220d15202d5d5fb0f71fe5bac5dbf2b9e6b7c187b3a58c972ca1a8cd0de8a7"
  },
  "https://www.dgt.es/microdatos/salida/2026/1/vehiculos/matriculaciones/export_mensual_mat_202601.zip": {
   "bytes": 12218198,
   "etag": "\"ba6f56-64ad7d224b398\"",
-  "last_checked": "2026-09-22T05:48:33+00:00",
+  "last_checked": "2026-09-29T05:51:49+00:00",
   "last_modified": "Sun, 15 Feb 2026 07:31:04 GMT",
   "sha256": "a3204bedf03cda0008dee3bb5be2c3c589a7a24aec959b6e96fa07f0338ddec7"
  },
  "https://www.dgt.es/microdatos/salida/2026/2/vehiculos/matriculaciones/export_mensual_mat_202602.zip": {
   "bytes": 14724174,
   "etag": "\"e0ac4e-64d0b155acce0\"",
-  "last_checked": "2026-09-22T05:48:32+00:00",
+  "last_checked": "2026-09-29T05:51:49+00:00",
   "last_modified": "Sun, 15 Mar 2026 07:30:58 GMT",
   "sha256": "dfa40d2d0014ea810830115293b1b9e339733799ae7a3bc212134abe338cfa03"
  },
  "https://www.dgt.es/microdatos/salida/2026/3/vehiculos/matriculaciones/export_mensual_mat_202603.zip": {
   "bytes": 18782350,
   "etag": "\"11e988e-64f79dc17c69f\"",
-  "last_checked": "2026-09-22T05:48:31+00:00",
+  "last_checked": "2026-09-29T05:51:47+00:00",
   "last_modified": "Wed, 15 Apr 2026 06:31:02 GMT",
   "sha256": "70b01875b6beed7a50e827b9ebcc0d85d1f955773d2ba7fce9c9566f966a27d0"
  },
  "https://www.dgt.es/microdatos/salida/2026/4/vehiculos/matriculaciones/export_mensual_mat_202604.zip": {
   "bytes": 16389678,
   "etag": "\"fa162e-651d55bef543e\"",
-  "last_checked": "2026-09-22T05:48:30+00:00",
+  "last_checked": "2026-09-29T05:51:47+00:00",
   "last_modified": "Fri, 15 May 2026 06:31:12 GMT",
   "sha256": "e5bef264616bc6be36c42ef61a51b635a566c8c3dc1082ec79bb1c7bbd1941a3"
  },
  "https://www.dgt.es/microdatos/salida/2026/5/vehiculos/matriculaciones/export_mensual_mat_202605.zip": {
   "bytes": 17332519,
   "etag": "\"1087927-65444f8fbf036\"",
-  "last_checked": "2026-09-22T05:48:29+00:00",
+  "last_checked": "2026-09-29T05:51:46+00:00",
   "last_modified": "Mon, 15 Jun 2026 06:31:12 GMT",
   "sha256": "272b7576fbd4ebd0825dbc2632dda88ba590835f7f8bef7afe6650ce2bfe246f"
  },
  "https://www.dgt.es/microdatos/salida/2026/6/vehiculos/matriculaciones/export_mensual_mat_202606.zip": {
   "bytes": 19658972,
   "etag": "\"12bf8dc-656a0784881d6\"",
-  "last_checked": "2026-09-22T05:48:28+00:00",
+  "last_checked": "2026-09-29T05:51:46+00:00",
   "last_modified": "Wed, 15 Jul 2026 06:31:13 GMT",
   "sha256": "3b54c225827ab3213b265fcb186778a641ae0098ad6ac9c81c74ea945d65a6cf"
  },
  "https://www.dgt.es/microdatos/salida/2026/7/vehiculos/matriculaciones/export_mensual_mat_202607.zip": {
   "bytes": 17837719,
   "etag": "\"1102e97-65910157c03b2\"",
-  "last_checked": "2026-09-22T05:48:27+00:00",
+  "last_checked": "2026-09-29T05:51:45+00:00",
   "last_modified": "Sat, 15 Aug 2026 06:31:15 GMT",
   "sha256": "9e32f705904dc17dbee21af336b098703323f5fbfe23116d43e4235fffb06000"
  },
  "https://www.dgt.es/microdatos/salida/2026/8/vehiculos/matriculaciones/export_mensual_mat_202608.zip": {
   "bytes": 12021955,
   "etag": "\"b770c3-65b7fb1775b13\"",
-  "last_checked": "2026-09-22T05:48:26+00:00",
+  "last_checked": "2026-09-29T05:51:45+00:00",
   "last_modified": "Tue, 15 Sep 2026 06:30:56 GMT",
   "sha256": "e1fe9bb91abcc20e2b452a56183dbc7ec08cd760b9c4330e0ba3cf5265c79a4a"
  },
  "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2023.csv": {
   "bytes": 7225803,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:15+00:00",
+  "last_checked": "2026-09-29T05:52:24+00:00",
   "last_modified": "Sun, 17 Mar 2024 22:32:28 GMT",
   "sha256": "7d6657ed8ecf47676ce25080cec7095e6c1c13bb173a6e119c59facd98e80526"
  },
  "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2024.csv": {
   "bytes": 8200707,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:16+00:00",
+  "last_checked": "2026-09-29T05:52:25+00:00",
   "last_modified": "Sat, 19 Sep 2026 06:38:48 GMT",
   "sha256": "399e19bc7ad521c5410757a9b598a4e63a4797eacba0264542b014e1c54a5f0f"
  },
  "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2025.csv": {
   "bytes": 8275390,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:17+00:00",
+  "last_checked": "2026-09-29T05:52:25+00:00",
   "last_modified": "Sat, 19 Sep 2026 06:38:48 GMT",
   "sha256": "b9dae4924d77e7229b8cea43e6219a62c2ef914ed5bae3c6760b39902a6402c1"
  },
  "https://www.eurocontrol.int/performance/data/download/csv/airport_traffic_2026.csv": {
   "bytes": 5559149,
   "etag": null,
-  "last_checked": "2026-09-22T05:49:17+00:00",
+  "last_checked": "2026-09-29T05:52:26+00:00",
   "last_modified": "Sat, 19 Sep 2026 06:38:49 GMT",
   "sha256": "17edc6282f3a8b9a1865d83d3da9651833e2a93f0803f02a17eaf593d1af4fcf"
  },
@@ -18713,7 +19455,7 @@
  "https://www.matteoiacoviello.com/gpr_files/data_gpr_export.xls": {
   "bytes": 2714112,
   "etag": "\"6ab6eccf-296a00\"",
-  "last_checked": "2026-09-26T12:10:07+00:00",
+  "last_checked": "2026-09-29T05:52:31+00:00",
   "last_modified": "Fri, 25 Sep 2026 21:51:11 GMT",
   "sha256": "6ff388db4aa34eb66433d4c13c9f82d88316714889a1fc9e6a8c0ce1158d5eae"
  },
@@ -18798,6 +19540,13 @@
   "bytes": 2023872,
   "etag": "\"141e19c1-1ee1c0-654d1e1e4374c\"",
   "last_checked": "2026-09-22T05:48:19+00:00",
+  "last_modified": "Mon, 22 Jun 2026 06:37:54 GMT",
+  "sha256": "065ba5674539dad999dda6e15e93ba0b41884162115c7cfe20e23672c2f8c5a7"
+ },
+ "https://www.poderjudicial.es/stfls/ESTADISTICA/FICHEROS/Crisis/Series%20-%20Efecto%20de%20la%20crisis%20en%20los%20organos%20judiciales%20por%20provincias%201T-2026_revisado.xlsx?t=202609293751": {
+  "bytes": 2023872,
+  "etag": "\"d773c4b-1ee1c0-654d1e1e436bf\"",
+  "last_checked": "2026-09-29T05:51:43+00:00",
   "last_modified": "Mon, 22 Jun 2026 06:37:54 GMT",
   "sha256": "065ba5674539dad999dda6e15e93ba0b41884162115c7cfe20e23672c2f8c5a7"
  },
@@ -19147,86 +19896,86 @@
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=52": {
   "bytes": 154445,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:33+00:00",
+  "last_checked": "2026-09-29T06:02:59+00:00",
   "last_modified": null,
-  "sha256": "b98602029a6017e2064ea6bd6776a5504427bc4db473682b2067a3277370ef60"
+  "sha256": "d810e087ffade2ccf15c06bafcc62ccea8a1c319c4ce9089b56a13ae67cab11a"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=53": {
   "bytes": 155430,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:34+00:00",
+  "last_checked": "2026-09-29T06:03:01+00:00",
   "last_modified": null,
-  "sha256": "519bacad5ebe2f29abda917dd705c472e7d2f518c6576b620c5b7680e438cd65"
+  "sha256": "c7e6068041503342dbafd0e05cfe083a88e26fe5c507ec04b4824f5f45784ca7"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=54": {
   "bytes": 154380,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:35+00:00",
+  "last_checked": "2026-09-29T06:03:02+00:00",
   "last_modified": null,
-  "sha256": "374d463c48f84112bba8b13976281230a7303c1302ad5de35205daa6a67120e6"
+  "sha256": "58fad4948413530cc8e4a23206e68732b842c025d11c9b9e3bf51c41f08da55a"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=55": {
   "bytes": 154828,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:36+00:00",
+  "last_checked": "2026-09-29T06:03:04+00:00",
   "last_modified": null,
-  "sha256": "14846e0a13cb4090e832dd334cd43ed154a41a15ccbb05821e391b120a54e586"
+  "sha256": "1ba2f622f91a435f5dce65a0c6812d6c4ce4959e6199c6cb91a66ebc22e20912"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=56": {
   "bytes": 155976,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:36+00:00",
+  "last_checked": "2026-09-29T06:03:06+00:00",
   "last_modified": null,
-  "sha256": "f4e1037ed97ca031d6c01afdac1a174052b0b372d36e34afd63d71d51ab60599"
+  "sha256": "76c1089d479be7f493214fd22ac3f945110461c6eb3dfb91d20f9e29d40cb4a7"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=57": {
   "bytes": 157166,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:37+00:00",
+  "last_checked": "2026-09-29T06:03:07+00:00",
   "last_modified": null,
-  "sha256": "6a245a5b469cb8b198d286eff8429201d20c1a02af43a7554bbfb537f2e183e1"
+  "sha256": "2fbb5f9335a5d0c90d88365ccbb1d36e2b6ced47fe64de1dac92c31d2f62953f"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=58": {
   "bytes": 155843,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:38+00:00",
+  "last_checked": "2026-09-29T06:03:09+00:00",
   "last_modified": null,
-  "sha256": "47e0b057e42b2efe5ba0486bf6e4c61f62a6edf37c3f7bd692ee2d7a889a8034"
+  "sha256": "71a7f5487f66ec356a95747eb46146120759387494c3d7a627732d0d2880f10a"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=59": {
-  "bytes": 157055,
+  "bytes": 155496,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:39+00:00",
+  "last_checked": "2026-09-29T06:03:10+00:00",
   "last_modified": null,
-  "sha256": "cfe515429e67ae79389a46667abedfc2376074a706a5900278b9c536ff7276d4"
+  "sha256": "f77c74205e01b321cdc3524cec57760e3a774b2cf314586cbacb7bdd37849a99"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=60": {
   "bytes": 155971,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:40+00:00",
+  "last_checked": "2026-09-29T06:03:12+00:00",
   "last_modified": null,
-  "sha256": "f78eab9526171611e21d9a5de8b8aa7513510639ffb7da6139e3ce40185209ba"
+  "sha256": "46f15e23c7a7d2abebaa35553836e1062d50a637ee795672b49ab60e4be09471"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=61": {
   "bytes": 156810,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:40+00:00",
+  "last_checked": "2026-09-29T06:03:16+00:00",
   "last_modified": null,
-  "sha256": "841d91df1763a63cee0f8141be2788d5c0af530924b3c22f7a63038cd0bfbe75"
+  "sha256": "c97e52eee836423df046c281d00604cd175e9182d7d400445e549e0da629dc8d"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=62": {
   "bytes": 157762,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:41+00:00",
+  "last_checked": "2026-09-29T06:03:17+00:00",
   "last_modified": null,
-  "sha256": "f01e039404bd882e8623c9d356be432936e289d1f634bac7dc4dd633800edffb"
+  "sha256": "b664195a83de9cb8f8f46e2bd2160b8125a78c5f2bba068ee795d351f6f8a30d"
  },
  "https://www.rbi.org.in/Scripts/PSIUserView.aspx?Id=63": {
-  "bytes": 157328,
+  "bytes": 155769,
   "etag": null,
-  "last_checked": "2026-09-26T14:08:43+00:00",
+  "last_checked": "2026-09-29T06:03:21+00:00",
   "last_modified": null,
-  "sha256": "3919ca2716cd44e140b85f57a486a395745644f98db2fb7438d8f27e51e6da4d"
+  "sha256": "bc4a78fe1b97f448738cfc35f967fb878cff9e231dddd7a7ebb990e61e7f3bc1"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:01f76dd1-c457-47ac-af43-f9da5dc3479c/MUNI_BALEARES_0526.xls": {
   "bytes": 35328,
@@ -19238,28 +19987,28 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:04ecd64f-6638-4d01-ba65-3807156885de/MUNI_VALENCIA_0826.xls": {
   "bytes": 107520,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:01+00:00",
+  "last_checked": "2026-09-29T06:06:05+00:00",
   "last_modified": "Mon, 07 Sep 2026 07:23:30 GMT",
   "sha256": "6b201bd5a1846b8f166f5e93caeafce2873566d638e2914ddf386ff35e4a84ba"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:0797b57b-f3a4-421c-b5f0-8a904e75a69b/MUNI_ZARAGOZA_0826.xls": {
   "bytes": 130560,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:01+00:00",
+  "last_checked": "2026-09-29T06:06:06+00:00",
   "last_modified": "Mon, 07 Sep 2026 07:23:31 GMT",
   "sha256": "840c9bb8c2ba81033ab88880d64e773c8788a46476ac14128f6523be091f3a1f"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:0f2e0920-0c7c-4bc2-bea1-81b0fb26f787/MUNI_BALEARES_0726.xls": {
   "bytes": 35328,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:55+00:00",
+  "last_checked": "2026-09-29T06:05:59+00:00",
   "last_modified": "Mon, 10 Aug 2026 09:08:28 GMT",
   "sha256": "2089040162b51b971f6ef4f8252a178d5fb65f4e047a60afa9b0368d48289f71"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:180ed13e-38b6-4282-94e8-785883b9f589/MUNI_MALAGA_0726.xls": {
   "bytes": 46080,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:56+00:00",
+  "last_checked": "2026-09-29T06:06:00+00:00",
   "last_modified": "Mon, 10 Aug 2026 09:08:43 GMT",
   "sha256": "d46f95a0177a683111f7dd2c2f38aa920a524684631cc9347281dcabf9dfc82b"
  },
@@ -19280,7 +20029,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:2a7ef1cc-4c0d-4acb-b407-7b37951013a7/MUNI_ZARAGOZA_0726.xls": {
   "bytes": 130560,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:57+00:00",
+  "last_checked": "2026-09-29T06:06:02+00:00",
   "last_modified": "Mon, 10 Aug 2026 09:08:54 GMT",
   "sha256": "b13ec2289e0dd0e657a9c95697270ff9912070e187ec059bffa698f0ea6aa9b1"
  },
@@ -19294,14 +20043,14 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:318c2933-9f53-4074-aa35-ab6a7ff960ae/MUNI_BARCELONA_0826.xls": {
   "bytes": 124416,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:58+00:00",
+  "last_checked": "2026-09-29T06:06:02+00:00",
   "last_modified": "Mon, 07 Sep 2026 07:23:15 GMT",
   "sha256": "268c4044349a1b5f4a9137d8d841dc2d5ae52c7d1b083be9409c96be07426a07"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:56b7d1b8-a660-4f33-8edd-f5825a588dd3/MUNI_MADRID_0826.xls": {
   "bytes": 74240,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:59+00:00",
+  "last_checked": "2026-09-29T06:06:04+00:00",
   "last_modified": "Mon, 07 Sep 2026 07:23:24 GMT",
   "sha256": "834933f8a9ac92c35a65cc16119162975a54628f4ad9ccd421d62b87ae664d2b"
  },
@@ -19315,7 +20064,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:63cdcd1b-4305-4d5d-84a5-3c991ed58106/MUNI_BIZKAIA_0826.xls": {
   "bytes": 51712,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:58+00:00",
+  "last_checked": "2026-09-29T06:06:03+00:00",
   "last_modified": "Mon, 07 Sep 2026 07:23:15 GMT",
   "sha256": "ef30bf1d26632c7e73b09e8baab694825638fca6c0ccf4323e6227d8ca367a08"
  },
@@ -19329,7 +20078,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:71482f10-3a32-4ade-bfd5-728b1afbacaf/MUNI_BARCELONA_0726.xls": {
   "bytes": 123392,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:54+00:00",
+  "last_checked": "2026-09-29T06:05:58+00:00",
   "last_modified": "Mon, 10 Aug 2026 09:08:29 GMT",
   "sha256": "f5ec023490240fad3c3855bfc0c5e06d072c9bca039e51da3db6339c09ce1de9"
  },
@@ -19357,14 +20106,14 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:7a2431cb-acbf-4239-bc8c-b44152027907/MUNI_BALEARES_0826.xls": {
   "bytes": 35328,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:59+00:00",
+  "last_checked": "2026-09-29T06:06:03+00:00",
   "last_modified": "Mon, 07 Sep 2026 07:23:14 GMT",
   "sha256": "1cc89e530cf539db2ff2dd4ee69b148a0cdae64c3734b9519b8fe3705e73ecb9"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:89d69ede-ff3e-4b5b-a6f4-14df59a11b82/MUNI_SEVILLA_0726.xls": {
   "bytes": 43520,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:56+00:00",
+  "last_checked": "2026-09-29T06:06:01+00:00",
   "last_modified": "Mon, 10 Aug 2026 09:08:49 GMT",
   "sha256": "f93fd7603b93d7e4d6cb578c12e65d4a0a209f5eb3cb2671d1a103616d1bb470"
  },
@@ -19378,7 +20127,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:aeb006ca-6264-4995-91d1-ec706a7653ef/MUNI_MALAGA_0826.xls": {
   "bytes": 46592,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:00+00:00",
+  "last_checked": "2026-09-29T06:06:04+00:00",
   "last_modified": "Mon, 07 Sep 2026 07:23:24 GMT",
   "sha256": "46a6b70fb680a0425ef827f33d747cfd922dac9a3d2496e27cb52506a47c088b"
  },
@@ -19413,7 +20162,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:dcd011be-9397-43dd-b0bb-9cc7993c5051/MUNI_BIZKAIA_0726.xls": {
   "bytes": 51200,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:54+00:00",
+  "last_checked": "2026-09-29T06:05:59+00:00",
   "last_modified": "Mon, 10 Aug 2026 09:08:29 GMT",
   "sha256": "9ca9a62192993d337ab2d8686aa53b9e2c3bdff35af59ccf4d00d34f0de742d7"
  },
@@ -19427,14 +20176,14 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:e55d9ff3-64cb-4e6d-818f-4e88b4e41488/MUNI_VALENCIA_0726.xls": {
   "bytes": 105472,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:57+00:00",
+  "last_checked": "2026-09-29T06:06:01+00:00",
   "last_modified": "Mon, 10 Aug 2026 09:08:52 GMT",
   "sha256": "a14be999fbc53615e9f1259f1b15ffc59451114e3518294730b4945ec0c307b9"
  },
  "https://www.sepe.es/HomeSepe/dam/jcr:e684a40c-8a87-42cc-9136-58da305af7ac/MUNI_MADRID_0726.xls": {
   "bytes": 73728,
   "etag": null,
-  "last_checked": "2026-09-22T05:58:55+00:00",
+  "last_checked": "2026-09-29T06:06:00+00:00",
   "last_modified": "Mon, 10 Aug 2026 09:08:43 GMT",
   "sha256": "c666ab97ef40c6ac82023a076b72b42beadc889bb2d9bbf981d4c1b5ce845e3c"
  },
@@ -19448,7 +20197,7 @@
  "https://www.sepe.es/HomeSepe/dam/jcr:fcfa5f44-dfae-485c-9f41-755a02d4a018/MUNI_SEVILLA_0826.xls": {
   "bytes": 44032,
   "etag": null,
-  "last_checked": "2026-09-22T05:59:00+00:00",
+  "last_checked": "2026-09-29T06:06:05+00:00",
   "last_modified": "Mon, 07 Sep 2026 07:23:27 GMT",
   "sha256": "5258e63547a50094d981226bda52f610fd1cc83f48a95e8ed15e84c3a7665136"
  }
