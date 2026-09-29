@@ -72,7 +72,7 @@
    "rmse": 2.563,
    "baseline_rmse": 1.965,
    "persistence_rmse": 1.549,
-   "skill": -30.4,
+   "skill": -30.5,
    "test_start": "2024-06",
    "test_end": "2026-07"
   },
@@ -187,38 +187,10 @@
    "id": "hiring_flow_gap",
    "country": "au",
    "label": "Hiring flow gap",
-   "value": 3.319,
-   "period": "2026-09-18",
+   "value": 4.127,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": 2.871
-    },
-    {
-     "period": "2024-07-12",
-     "value": 3.491
-    },
-    {
-     "period": "2024-07-13",
-     "value": 3.308
-    },
-    {
-     "period": "2024-07-14",
-     "value": 3.695
-    },
-    {
-     "period": "2024-07-15",
-     "value": 4.334
-    },
-    {
-     "period": "2024-07-16",
-     "value": 3.88
-    },
-    {
-     "period": "2024-07-17",
-     "value": 3.505
-    },
     {
      "period": "2024-07-18",
      "value": 2.408
@@ -3390,6 +3362,34 @@
     {
      "period": "2026-09-18",
      "value": 3.319
+    },
+    {
+     "period": "2026-09-19",
+     "value": 3.653
+    },
+    {
+     "period": "2026-09-20",
+     "value": 4.111
+    },
+    {
+     "period": "2026-09-21",
+     "value": 3.917
+    },
+    {
+     "period": "2026-09-22",
+     "value": 4.084
+    },
+    {
+     "period": "2026-09-23",
+     "value": 4.002
+    },
+    {
+     "period": "2026-09-24",
+     "value": 3.936
+    },
+    {
+     "period": "2026-09-25",
+     "value": 4.127
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -3400,38 +3400,10 @@
    "id": "hiring_flow_gap",
    "country": "ca",
    "label": "Hiring flow gap",
-   "value": -1.724,
-   "period": "2026-09-18",
+   "value": 6.692,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": 5.195
-    },
-    {
-     "period": "2024-07-12",
-     "value": 6.364
-    },
-    {
-     "period": "2024-07-13",
-     "value": 6.987
-    },
-    {
-     "period": "2024-07-14",
-     "value": 6.867
-    },
-    {
-     "period": "2024-07-15",
-     "value": 7.007
-    },
-    {
-     "period": "2024-07-16",
-     "value": 6.487
-    },
-    {
-     "period": "2024-07-17",
-     "value": 6.19
-    },
     {
      "period": "2024-07-18",
      "value": 5.941
@@ -6603,6 +6575,34 @@
     {
      "period": "2026-09-18",
      "value": -1.724
+    },
+    {
+     "period": "2026-09-19",
+     "value": -0.027
+    },
+    {
+     "period": "2026-09-20",
+     "value": 2.013
+    },
+    {
+     "period": "2026-09-21",
+     "value": 4.248
+    },
+    {
+     "period": "2026-09-22",
+     "value": 4.826
+    },
+    {
+     "period": "2026-09-23",
+     "value": 5.204
+    },
+    {
+     "period": "2026-09-24",
+     "value": 5.891
+    },
+    {
+     "period": "2026-09-25",
+     "value": 6.692
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -6613,38 +6613,10 @@
    "id": "hiring_flow_gap",
    "country": "fr",
    "label": "Hiring flow gap",
-   "value": -6.203,
-   "period": "2026-09-18",
+   "value": 0.306,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": -0.97
-    },
-    {
-     "period": "2024-07-12",
-     "value": -1.484
-    },
-    {
-     "period": "2024-07-13",
-     "value": -1.858
-    },
-    {
-     "period": "2024-07-14",
-     "value": -1.993
-    },
-    {
-     "period": "2024-07-15",
-     "value": -1.217
-    },
-    {
-     "period": "2024-07-16",
-     "value": 0.178
-    },
-    {
-     "period": "2024-07-17",
-     "value": 2.031
-    },
     {
      "period": "2024-07-18",
      "value": 3.333
@@ -9816,6 +9788,34 @@
     {
      "period": "2026-09-18",
      "value": -6.203
+    },
+    {
+     "period": "2026-09-19",
+     "value": -7.561
+    },
+    {
+     "period": "2026-09-20",
+     "value": -7.083
+    },
+    {
+     "period": "2026-09-21",
+     "value": -5.857
+    },
+    {
+     "period": "2026-09-22",
+     "value": -4.653
+    },
+    {
+     "period": "2026-09-23",
+     "value": -3.351
+    },
+    {
+     "period": "2026-09-24",
+     "value": -1.602
+    },
+    {
+     "period": "2026-09-25",
+     "value": 0.306
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -9826,38 +9826,10 @@
    "id": "hiring_flow_gap",
    "country": "de",
    "label": "Hiring flow gap",
-   "value": -4.58,
-   "period": "2026-09-18",
+   "value": -2.777,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": -5.85
-    },
-    {
-     "period": "2024-07-12",
-     "value": -6.218
-    },
-    {
-     "period": "2024-07-13",
-     "value": -5.885
-    },
-    {
-     "period": "2024-07-14",
-     "value": -4.747
-    },
-    {
-     "period": "2024-07-15",
-     "value": -3.616
-    },
-    {
-     "period": "2024-07-16",
-     "value": -2.654
-    },
-    {
-     "period": "2024-07-17",
-     "value": -1.591
-    },
     {
      "period": "2024-07-18",
      "value": -0.311
@@ -13029,6 +13001,34 @@
     {
      "period": "2026-09-18",
      "value": -4.58
+    },
+    {
+     "period": "2026-09-19",
+     "value": -4.802
+    },
+    {
+     "period": "2026-09-20",
+     "value": -4.343
+    },
+    {
+     "period": "2026-09-21",
+     "value": -4.089
+    },
+    {
+     "period": "2026-09-22",
+     "value": -3.658
+    },
+    {
+     "period": "2026-09-23",
+     "value": -3.255
+    },
+    {
+     "period": "2026-09-24",
+     "value": -3.347
+    },
+    {
+     "period": "2026-09-25",
+     "value": -2.777
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -13039,38 +13039,10 @@
    "id": "hiring_flow_gap",
    "country": "ie",
    "label": "Hiring flow gap",
-   "value": 2.556,
-   "period": "2026-09-18",
+   "value": 5.795,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": -0.04
-    },
-    {
-     "period": "2024-07-12",
-     "value": -0.205
-    },
-    {
-     "period": "2024-07-13",
-     "value": -0.176
-    },
-    {
-     "period": "2024-07-14",
-     "value": 0.147
-    },
-    {
-     "period": "2024-07-15",
-     "value": 0.238
-    },
-    {
-     "period": "2024-07-16",
-     "value": 1.843
-    },
-    {
-     "period": "2024-07-17",
-     "value": 3.235
-    },
     {
      "period": "2024-07-18",
      "value": 3.965
@@ -16242,6 +16214,34 @@
     {
      "period": "2026-09-18",
      "value": 2.556
+    },
+    {
+     "period": "2026-09-19",
+     "value": 4.028
+    },
+    {
+     "period": "2026-09-20",
+     "value": 5.014
+    },
+    {
+     "period": "2026-09-21",
+     "value": 5.662
+    },
+    {
+     "period": "2026-09-22",
+     "value": 6.254
+    },
+    {
+     "period": "2026-09-23",
+     "value": 6.394
+    },
+    {
+     "period": "2026-09-24",
+     "value": 6.181
+    },
+    {
+     "period": "2026-09-25",
+     "value": 5.795
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -16252,38 +16252,10 @@
    "id": "hiring_flow_gap",
    "country": "it",
    "label": "Hiring flow gap",
-   "value": -2.404,
-   "period": "2026-09-18",
+   "value": -10.776,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": -5.576
-    },
-    {
-     "period": "2024-07-12",
-     "value": -4.319
-    },
-    {
-     "period": "2024-07-13",
-     "value": -2.994
-    },
-    {
-     "period": "2024-07-14",
-     "value": -1.696
-    },
-    {
-     "period": "2024-07-15",
-     "value": -1.504
-    },
-    {
-     "period": "2024-07-16",
-     "value": -1.552
-    },
-    {
-     "period": "2024-07-17",
-     "value": -1.177
-    },
     {
      "period": "2024-07-18",
      "value": -1.104
@@ -16294,7 +16266,7 @@
     },
     {
      "period": "2024-07-20",
-     "value": -1.335
+     "value": -1.33
     },
     {
      "period": "2024-07-21",
@@ -16310,7 +16282,7 @@
     },
     {
      "period": "2024-07-24",
-     "value": -0.248
+     "value": -0.243
     },
     {
      "period": "2024-07-25",
@@ -16322,15 +16294,15 @@
     },
     {
      "period": "2024-07-27",
-     "value": 1.546
+     "value": 1.552
     },
     {
      "period": "2024-07-28",
-     "value": 2.198
+     "value": 2.203
     },
     {
      "period": "2024-07-29",
-     "value": 2.66
+     "value": 2.665
     },
     {
      "period": "2024-07-30",
@@ -16342,15 +16314,15 @@
     },
     {
      "period": "2024-08-01",
-     "value": 0.375
+     "value": 0.38
     },
     {
      "period": "2024-08-02",
-     "value": -0.178
+     "value": -0.172
     },
     {
      "period": "2024-08-03",
-     "value": -1.193
+     "value": -1.188
     },
     {
      "period": "2024-08-04",
@@ -16394,7 +16366,7 @@
     },
     {
      "period": "2024-08-14",
-     "value": -2.058
+     "value": -2.063
     },
     {
      "period": "2024-08-15",
@@ -16406,7 +16378,7 @@
     },
     {
      "period": "2024-08-17",
-     "value": -9.462
+     "value": -9.468
     },
     {
      "period": "2024-08-18",
@@ -16422,7 +16394,7 @@
     },
     {
      "period": "2024-08-21",
-     "value": -24.831
+     "value": -24.837
     },
     {
      "period": "2024-08-22",
@@ -16434,15 +16406,15 @@
     },
     {
      "period": "2024-08-24",
-     "value": -18.304
+     "value": -18.309
     },
     {
      "period": "2024-08-25",
-     "value": -13.985
+     "value": -13.991
     },
     {
      "period": "2024-08-26",
-     "value": -10.411
+     "value": -10.417
     },
     {
      "period": "2024-08-27",
@@ -16454,15 +16426,15 @@
     },
     {
      "period": "2024-08-29",
-     "value": -2.227
+     "value": -2.233
     },
     {
      "period": "2024-08-30",
-     "value": -1.119
+     "value": -1.125
     },
     {
      "period": "2024-08-31",
-     "value": 0.211
+     "value": 0.205
     },
     {
      "period": "2024-09-01",
@@ -19455,6 +19427,34 @@
     {
      "period": "2026-09-18",
      "value": -2.404
+    },
+    {
+     "period": "2026-09-19",
+     "value": -5.141
+    },
+    {
+     "period": "2026-09-20",
+     "value": -6.996
+    },
+    {
+     "period": "2026-09-21",
+     "value": -7.909
+    },
+    {
+     "period": "2026-09-22",
+     "value": -8.563
+    },
+    {
+     "period": "2026-09-23",
+     "value": -8.999
+    },
+    {
+     "period": "2026-09-24",
+     "value": -9.666
+    },
+    {
+     "period": "2026-09-25",
+     "value": -10.776
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -19465,38 +19465,10 @@
    "id": "hiring_flow_gap",
    "country": "nl",
    "label": "Hiring flow gap",
-   "value": 1.442,
-   "period": "2026-09-18",
+   "value": -8.541,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": -2.586
-    },
-    {
-     "period": "2024-07-12",
-     "value": -2.013
-    },
-    {
-     "period": "2024-07-13",
-     "value": -1.508
-    },
-    {
-     "period": "2024-07-14",
-     "value": -1.37
-    },
-    {
-     "period": "2024-07-15",
-     "value": -1.437
-    },
-    {
-     "period": "2024-07-16",
-     "value": -1.149
-    },
-    {
-     "period": "2024-07-17",
-     "value": -1.477
-    },
     {
      "period": "2024-07-18",
      "value": -2.27
@@ -22668,6 +22640,34 @@
     {
      "period": "2026-09-18",
      "value": 1.442
+    },
+    {
+     "period": "2026-09-19",
+     "value": -0.429
+    },
+    {
+     "period": "2026-09-20",
+     "value": -2.26
+    },
+    {
+     "period": "2026-09-21",
+     "value": -3.932
+    },
+    {
+     "period": "2026-09-22",
+     "value": -5.55
+    },
+    {
+     "period": "2026-09-23",
+     "value": -7.003
+    },
+    {
+     "period": "2026-09-24",
+     "value": -8.435
+    },
+    {
+     "period": "2026-09-25",
+     "value": -8.541
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -22678,129 +22678,101 @@
    "id": "hiring_flow_gap",
    "country": "es",
    "label": "Hiring flow gap",
-   "value": -5.839,
-   "period": "2026-09-18",
+   "value": 2.134,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
     {
-     "period": "2024-07-11",
-     "value": 3.907
-    },
-    {
-     "period": "2024-07-12",
-     "value": 1.985
-    },
-    {
-     "period": "2024-07-13",
-     "value": -0.114
-    },
-    {
-     "period": "2024-07-14",
-     "value": -2.208
-    },
-    {
-     "period": "2024-07-15",
-     "value": -3.453
-    },
-    {
-     "period": "2024-07-16",
-     "value": -4.392
-    },
-    {
-     "period": "2024-07-17",
-     "value": -5.08
-    },
-    {
      "period": "2024-07-18",
-     "value": -6.061
+     "value": -6.032
     },
     {
      "period": "2024-07-19",
-     "value": -6.44
+     "value": -6.397
     },
     {
      "period": "2024-07-20",
-     "value": -6.335
+     "value": -6.285
     },
     {
      "period": "2024-07-21",
-     "value": -6.214
+     "value": -6.164
     },
     {
      "period": "2024-07-22",
-     "value": -6.687
+     "value": -6.63
     },
     {
      "period": "2024-07-23",
-     "value": -6.078
+     "value": -6.028
     },
     {
      "period": "2024-07-24",
-     "value": -5.125
+     "value": -5.075
     },
     {
      "period": "2024-07-25",
-     "value": -3.341
+     "value": -3.291
     },
     {
      "period": "2024-07-26",
-     "value": -1.415
+     "value": -1.358
     },
     {
      "period": "2024-07-27",
-     "value": -0.166
+     "value": -0.109
     },
     {
      "period": "2024-07-28",
-     "value": 1.344
+     "value": 1.394
     },
     {
      "period": "2024-07-29",
-     "value": 3.161
+     "value": 3.218
     },
     {
      "period": "2024-07-30",
-     "value": 3.196
+     "value": 3.261
     },
     {
      "period": "2024-07-31",
-     "value": 2.618
+     "value": 2.682
     },
     {
      "period": "2024-08-01",
-     "value": 1.428
+     "value": 1.486
     },
     {
      "period": "2024-08-02",
-     "value": -0.245
+     "value": -0.174
     },
     {
      "period": "2024-08-03",
-     "value": -1.641
+     "value": -1.591
     },
     {
      "period": "2024-08-04",
-     "value": -2.795
+     "value": -2.745
     },
     {
      "period": "2024-08-05",
-     "value": -3.758
+     "value": -3.722
     },
     {
      "period": "2024-08-06",
-     "value": -4.521
+     "value": -4.493
     },
     {
      "period": "2024-08-07",
-     "value": -4.407
+     "value": -4.392
     },
     {
      "period": "2024-08-08",
-     "value": -4.204
+     "value": -4.196
     },
     {
      "period": "2024-08-09",
-     "value": -3.37
+     "value": -3.377
     },
     {
      "period": "2024-08-10",
@@ -22816,99 +22788,99 @@
     },
     {
      "period": "2024-08-13",
-     "value": 3.164
+     "value": 3.15
     },
     {
      "period": "2024-08-14",
-     "value": 5.296
+     "value": 5.275
     },
     {
      "period": "2024-08-15",
-     "value": 8.724
+     "value": 8.695
     },
     {
      "period": "2024-08-16",
-     "value": 10.609
+     "value": 10.566
     },
     {
      "period": "2024-08-17",
-     "value": 10.604
+     "value": 10.553
     },
     {
      "period": "2024-08-18",
-     "value": 10.38
+     "value": 10.329
     },
     {
      "period": "2024-08-19",
-     "value": 9.838
+     "value": 9.78
     },
     {
      "period": "2024-08-20",
-     "value": 7.87
+     "value": 7.812
     },
     {
      "period": "2024-08-21",
-     "value": 5.382
+     "value": 5.324
     },
     {
      "period": "2024-08-22",
-     "value": 1.522
+     "value": 1.464
     },
     {
      "period": "2024-08-23",
-     "value": -0.85
+     "value": -0.908
     },
     {
      "period": "2024-08-24",
-     "value": -1.357
+     "value": -1.422
     },
     {
      "period": "2024-08-25",
-     "value": -2.182
+     "value": -2.239
     },
     {
      "period": "2024-08-26",
-     "value": -3.128
+     "value": -3.193
     },
     {
      "period": "2024-08-27",
-     "value": -2.552
+     "value": -2.617
     },
     {
      "period": "2024-08-28",
-     "value": -1.701
+     "value": -1.773
     },
     {
      "period": "2024-08-29",
-     "value": -0.12
+     "value": -0.184
     },
     {
      "period": "2024-08-30",
-     "value": 0.533
-    },
-    {
-     "period": "2024-08-31",
-     "value": 0.516
-    },
-    {
-     "period": "2024-09-01",
-     "value": 0.436
-    },
-    {
-     "period": "2024-09-02",
      "value": 0.462
     },
     {
+     "period": "2024-08-31",
+     "value": 0.46
+    },
+    {
+     "period": "2024-09-01",
+     "value": 0.387
+    },
+    {
+     "period": "2024-09-02",
+     "value": 0.427
+    },
+    {
      "period": "2024-09-03",
-     "value": -0.057
+     "value": -0.086
     },
     {
      "period": "2024-09-04",
-     "value": -0.717
+     "value": -0.739
     },
     {
      "period": "2024-09-05",
-     "value": -0.783
+     "value": -0.79
     },
     {
      "period": "2024-09-06",
@@ -25881,6 +25853,34 @@
     {
      "period": "2026-09-18",
      "value": -5.839
+    },
+    {
+     "period": "2026-09-19",
+     "value": -6.68
+    },
+    {
+     "period": "2026-09-20",
+     "value": -4.832
+    },
+    {
+     "period": "2026-09-21",
+     "value": -2.182
+    },
+    {
+     "period": "2026-09-22",
+     "value": -0.452
+    },
+    {
+     "period": "2026-09-23",
+     "value": 0.447
+    },
+    {
+     "period": "2026-09-24",
+     "value": 1.647
+    },
+    {
+     "period": "2026-09-25",
+     "value": 2.134
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -25891,38 +25891,10 @@
    "id": "hiring_flow_gap",
    "country": "gb",
    "label": "Hiring flow gap",
-   "value": 3.348,
-   "period": "2026-09-18",
+   "value": 5.388,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": -0.783
-    },
-    {
-     "period": "2024-07-12",
-     "value": -0.613
-    },
-    {
-     "period": "2024-07-13",
-     "value": -0.732
-    },
-    {
-     "period": "2024-07-14",
-     "value": -0.682
-    },
-    {
-     "period": "2024-07-15",
-     "value": -0.657
-    },
-    {
-     "period": "2024-07-16",
-     "value": -0.528
-    },
-    {
-     "period": "2024-07-17",
-     "value": -0.489
-    },
     {
      "period": "2024-07-18",
      "value": -0.603
@@ -29094,6 +29066,34 @@
     {
      "period": "2026-09-18",
      "value": 3.348
+    },
+    {
+     "period": "2026-09-19",
+     "value": 4.145
+    },
+    {
+     "period": "2026-09-20",
+     "value": 5.618
+    },
+    {
+     "period": "2026-09-21",
+     "value": 6.591
+    },
+    {
+     "period": "2026-09-22",
+     "value": 7.207
+    },
+    {
+     "period": "2026-09-23",
+     "value": 7.266
+    },
+    {
+     "period": "2026-09-24",
+     "value": 6.677
+    },
+    {
+     "period": "2026-09-25",
+     "value": 5.388
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -29104,38 +29104,10 @@
    "id": "hiring_flow_gap",
    "country": "us",
    "label": "Hiring flow gap",
-   "value": -5.396,
-   "period": "2026-09-18",
+   "value": 0.504,
+   "period": "2026-09-25",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-11",
-     "value": -2.471
-    },
-    {
-     "period": "2024-07-12",
-     "value": -3.727
-    },
-    {
-     "period": "2024-07-13",
-     "value": -4.976
-    },
-    {
-     "period": "2024-07-14",
-     "value": -5.342
-    },
-    {
-     "period": "2024-07-15",
-     "value": -4.91
-    },
-    {
-     "period": "2024-07-16",
-     "value": -5.15
-    },
-    {
-     "period": "2024-07-17",
-     "value": -5.284
-    },
     {
      "period": "2024-07-18",
      "value": -4.713
@@ -29174,7 +29146,7 @@
     },
     {
      "period": "2024-07-27",
-     "value": -6.59
+     "value": -6.581
     },
     {
      "period": "2024-07-28",
@@ -29182,7 +29154,7 @@
     },
     {
      "period": "2024-07-29",
-     "value": -6.527
+     "value": -6.518
     },
     {
      "period": "2024-07-30",
@@ -29214,7 +29186,7 @@
     },
     {
      "period": "2024-08-06",
-     "value": -3.068
+     "value": -3.059
     },
     {
      "period": "2024-08-07",
@@ -29286,7 +29258,7 @@
     },
     {
      "period": "2024-08-24",
-     "value": 0.23
+     "value": 0.221
     },
     {
      "period": "2024-08-25",
@@ -29294,7 +29266,7 @@
     },
     {
      "period": "2024-08-26",
-     "value": 1.55
+     "value": 1.542
     },
     {
      "period": "2024-08-27",
@@ -29326,7 +29298,7 @@
     },
     {
      "period": "2024-09-03",
-     "value": 1.045
+     "value": 1.037
     },
     {
      "period": "2024-09-04",
@@ -29666,7 +29638,7 @@
     },
     {
      "period": "2024-11-27",
-     "value": -0.408
+     "value": -0.399
     },
     {
      "period": "2024-11-28",
@@ -29778,7 +29750,7 @@
     },
     {
      "period": "2024-12-25",
-     "value": -0.719
+     "value": -0.728
     },
     {
      "period": "2024-12-26",
@@ -30214,7 +30186,7 @@
     },
     {
      "period": "2025-04-13",
-     "value": 2.238
+     "value": 2.248
     },
     {
      "period": "2025-04-14",
@@ -30326,7 +30298,7 @@
     },
     {
      "period": "2025-05-11",
-     "value": -4.34
+     "value": -4.349
     },
     {
      "period": "2025-05-12",
@@ -30886,7 +30858,7 @@
     },
     {
      "period": "2025-09-28",
-     "value": 0.549
+     "value": 0.559
     },
     {
      "period": "2025-09-29",
@@ -30998,7 +30970,7 @@
     },
     {
      "period": "2025-10-26",
-     "value": -0.722
+     "value": -0.732
     },
     {
      "period": "2025-10-27",
@@ -32307,6 +32279,34 @@
     {
      "period": "2026-09-18",
      "value": -5.396
+    },
+    {
+     "period": "2026-09-19",
+     "value": -3.618
+    },
+    {
+     "period": "2026-09-20",
+     "value": -1.371
+    },
+    {
+     "period": "2026-09-21",
+     "value": 0.893
+    },
+    {
+     "period": "2026-09-22",
+     "value": 0.55
+    },
+    {
+     "period": "2026-09-23",
+     "value": 0.141
+    },
+    {
+     "period": "2026-09-24",
+     "value": 0.264
+    },
+    {
+     "period": "2026-09-25",
+     "value": 0.504
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
