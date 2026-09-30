@@ -53,13 +53,13 @@
    "horizon": 1,
    "label": "Hiring intentions → consumption",
    "status": "Evaluated",
-   "test_observations": 28,
-   "rmse": 2.266,
-   "baseline_rmse": 1.564,
-   "persistence_rmse": 1.574,
-   "skill": -44.9,
+   "test_observations": 29,
+   "rmse": 2.298,
+   "baseline_rmse": 1.595,
+   "persistence_rmse": 1.552,
+   "skill": -44.0,
    "test_start": "2024-04",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "hiring_total",
@@ -68,13 +68,13 @@
    "horizon": 2,
    "label": "Hiring intentions → consumption",
    "status": "Evaluated",
-   "test_observations": 26,
-   "rmse": 2.563,
-   "baseline_rmse": 1.965,
-   "persistence_rmse": 1.549,
-   "skill": -30.5,
+   "test_observations": 27,
+   "rmse": 2.689,
+   "baseline_rmse": 2.089,
+   "persistence_rmse": 1.529,
+   "skill": -28.7,
    "test_start": "2024-06",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "hiring_total",
@@ -83,13 +83,13 @@
    "horizon": 3,
    "label": "Hiring intentions → consumption",
    "status": "Evaluated",
-   "test_observations": 24,
-   "rmse": 1.883,
-   "baseline_rmse": 1.947,
-   "persistence_rmse": 2.016,
-   "skill": 3.3,
+   "test_observations": 25,
+   "rmse": 1.997,
+   "baseline_rmse": 2.04,
+   "persistence_rmse": 2.015,
+   "skill": 2.1,
    "test_start": "2024-08",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "hiring_new",

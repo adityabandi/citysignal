@@ -1,6 +1,6 @@
 {
- "run_id": "741cd56b7c66",
- "finished_at": "2026-09-29T21:46:05+00:00",
+ "run_id": "1c053ac1ff33",
+ "finished_at": "2026-09-30T21:47:56+00:00",
  "ok": [
   "indeed_daily",
   "treasury_receipts",
@@ -15,38 +15,37 @@
  "results": [
   {
    "source_id": "indeed_daily",
-   "status": "ok",
-   "records": 48580,
-   "added": 140,
-   "revised": 107,
-   "unchanged": 48333,
+   "status": "skipped",
+   "records": 0,
+   "added": 0,
+   "revised": 0,
+   "unchanged": 0,
    "quarantined": 0,
    "plans": 10,
-   "skipped_unchanged": 0,
+   "skipped_unchanged": 10,
    "error": null,
    "error_type": null,
-   "duration_s": 5.39,
-   "latest_observation": "2026-09-25",
-   "metrics": [
-    "hiring_new",
-    "hiring_total"
-   ],
-   "notes": []
+   "duration_s": 4.87,
+   "latest_observation": null,
+   "metrics": [],
+   "notes": [
+    "all sources unchanged since last run"
+   ]
   },
   {
    "source_id": "treasury_receipts",
    "status": "ok",
-   "records": 952,
+   "records": 953,
    "added": 1,
    "revised": 0,
-   "unchanged": 951,
+   "unchanged": 952,
    "quarantined": 0,
    "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.84,
-   "latest_observation": "2026-09-28",
+   "duration_s": 0.9,
+   "latest_observation": "2026-09-29",
    "metrics": [
     "us_withheld_tax",
     "us_withheld_tax_daily"
@@ -65,7 +64,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.04,
+   "duration_s": 1.37,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -84,7 +83,7 @@
    "skipped_unchanged": 5,
    "error": null,
    "error_type": null,
-   "duration_s": 2.14,
+   "duration_s": 2.2,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -122,7 +121,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 1.37,
+   "duration_s": 1.41,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -132,23 +131,22 @@
   {
    "source_id": "eurostat_macro",
    "status": "ok",
-   "records": 2973,
-   "added": 6,
-   "revised": 168,
-   "unchanged": 2799,
+   "records": 2131,
+   "added": 3,
+   "revised": 41,
+   "unchanged": 2087,
    "quarantined": 0,
    "plans": 8,
-   "skipped_unchanged": 3,
+   "skipped_unchanged": 4,
    "error": null,
    "error_type": null,
-   "duration_s": 6.71,
+   "duration_s": 4.25,
    "latest_observation": "2026-Q2",
    "metrics": [
     "macro_employment",
     "macro_gdp",
     "macro_industry",
-    "macro_retail",
-    "macro_sentiment"
+    "macro_retail"
    ],
    "notes": []
   }
