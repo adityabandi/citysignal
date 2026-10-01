@@ -738,6 +738,8 @@ macro_retail,nl,nation,2026-04,102.5,index,eurostat_macro,2026-04-30,,2026-09-26
 macro_retail,nl,nation,2026-05,102.6,index,eurostat_macro,2026-05-31,,2026-09-26,estimated,0
 macro_retail,nl,nation,2026-06,102.8,index,eurostat_macro,2026-06-30,,2026-09-26,estimated,0
 macro_retail,nl,nation,2026-07,103,index,eurostat_macro,2026-07-31,,2026-09-26,estimated,0
+macro_retail,nl,nation,2026-07,102.6,index,eurostat_macro,2026-07-31,,2026-10-01T21:47:48+00:00,estimated,1
+macro_retail,nl,nation,2026-08,103.3,index,eurostat_macro,2026-08-31,,2026-10-01T21:47:48+00:00,estimated,0
 macro_retail,pt,nation,2015-01,87.5,index,eurostat_macro,2015-01-31,,2026-09-26,ok,0
 macro_retail,pt,nation,2015-02,87.1,index,eurostat_macro,2015-02-28,,2026-09-26,ok,0
 macro_retail,pt,nation,2015-03,86.6,index,eurostat_macro,2015-03-31,,2026-09-26,ok,0
@@ -876,4 +878,7 @@ macro_retail,pt,nation,2026-03,119.8,index,eurostat_macro,2026-03-31,,2026-09-26
 macro_retail,pt,nation,2026-04,119.1,index,eurostat_macro,2026-04-30,,2026-09-26,ok,0
 macro_retail,pt,nation,2026-05,118.8,index,eurostat_macro,2026-05-31,,2026-09-26,ok,0
 macro_retail,pt,nation,2026-06,120.4,index,eurostat_macro,2026-06-30,,2026-09-26,ok,0
+macro_retail,pt,nation,2026-06,120,index,eurostat_macro,2026-06-30,,2026-10-01T21:47:48+00:00,revised,1
 macro_retail,pt,nation,2026-07,120.4,index,eurostat_macro,2026-07-31,,2026-09-26,ok,0
+macro_retail,pt,nation,2026-07,119.9,index,eurostat_macro,2026-07-31,,2026-10-01T21:47:48+00:00,revised,1
+macro_retail,pt,nation,2026-08,119.1,index,eurostat_macro,2026-08-31,,2026-10-01T21:47:48+00:00,ok,0
