@@ -139,6 +139,7 @@ macro_inflation,de,nation,2026-05,2.7,percent,eurostat_macro,2026-05-31,,2026-09
 macro_inflation,de,nation,2026-06,2.4,percent,eurostat_macro,2026-06-30,,2026-09-26,ok,0
 macro_inflation,de,nation,2026-07,2.8,percent,eurostat_macro,2026-07-31,,2026-09-26,ok,0
 macro_inflation,de,nation,2026-08,2.9,percent,eurostat_macro,2026-08-31,,2026-09-26,ok,0
+macro_inflation,de,nation,2026-09,3.3,percent,eurostat_macro,2026-09-30,,2026-10-02T21:46:16+00:00,estimated,0
 macro_inflation,es,nation,2015-01,-1.5,percent,eurostat_macro,2015-01-31,,2026-09-26,ok,0
 macro_inflation,es,nation,2015-02,-1.2,percent,eurostat_macro,2015-02-28,,2026-09-26,ok,0
 macro_inflation,es,nation,2015-03,-0.8,percent,eurostat_macro,2015-03-31,,2026-09-26,ok,0
@@ -279,6 +280,7 @@ macro_inflation,es,nation,2026-05,3.6,percent,eurostat_macro,2026-05-31,,2026-09
 macro_inflation,es,nation,2026-06,3.6,percent,eurostat_macro,2026-06-30,,2026-09-26,ok,0
 macro_inflation,es,nation,2026-07,3.9,percent,eurostat_macro,2026-07-31,,2026-09-26,ok,0
 macro_inflation,es,nation,2026-08,4.6,percent,eurostat_macro,2026-08-31,,2026-09-26,ok,0
+macro_inflation,es,nation,2026-09,5,percent,eurostat_macro,2026-09-30,,2026-10-02T21:46:16+00:00,estimated,0
 macro_inflation,fr,nation,2015-01,-0.4,percent,eurostat_macro,2015-01-31,,2026-09-26,estimated,0
 macro_inflation,fr,nation,2015-02,-0.3,percent,eurostat_macro,2015-02-28,,2026-09-26,estimated,0
 macro_inflation,fr,nation,2015-03,0,percent,eurostat_macro,2015-03-31,,2026-09-26,estimated,0
@@ -419,6 +421,7 @@ macro_inflation,fr,nation,2026-05,2.8,percent,eurostat_macro,2026-05-31,,2026-09
 macro_inflation,fr,nation,2026-06,2,percent,eurostat_macro,2026-06-30,,2026-09-26,ok,0
 macro_inflation,fr,nation,2026-07,2.4,percent,eurostat_macro,2026-07-31,,2026-09-26,ok,0
 macro_inflation,fr,nation,2026-08,2.6,percent,eurostat_macro,2026-08-31,,2026-09-26,ok,0
+macro_inflation,fr,nation,2026-09,3.4,percent,eurostat_macro,2026-09-30,,2026-10-02T21:46:16+00:00,estimated,0
 macro_inflation,it,nation,2015-01,-0.4,percent,eurostat_macro,2015-01-31,,2026-09-26,ok,0
 macro_inflation,it,nation,2015-02,0.1,percent,eurostat_macro,2015-02-28,,2026-09-26,ok,0
 macro_inflation,it,nation,2015-03,0,percent,eurostat_macro,2015-03-31,,2026-09-26,ok,0
@@ -559,6 +562,7 @@ macro_inflation,it,nation,2026-05,3.2,percent,eurostat_macro,2026-05-31,,2026-09
 macro_inflation,it,nation,2026-06,3,percent,eurostat_macro,2026-06-30,,2026-09-26,ok,0
 macro_inflation,it,nation,2026-07,2.9,percent,eurostat_macro,2026-07-31,,2026-09-26,ok,0
 macro_inflation,it,nation,2026-08,3.2,percent,eurostat_macro,2026-08-31,,2026-09-26,ok,0
+macro_inflation,it,nation,2026-09,4.1,percent,eurostat_macro,2026-09-30,,2026-10-02T21:46:16+00:00,estimated,0
 macro_inflation,nl,nation,2015-01,-0.7,percent,eurostat_macro,2015-01-31,,2026-09-26,ok,0
 macro_inflation,nl,nation,2015-02,-0.5,percent,eurostat_macro,2015-02-28,,2026-09-26,ok,0
 macro_inflation,nl,nation,2015-03,-0.3,percent,eurostat_macro,2015-03-31,,2026-09-26,ok,0
@@ -699,6 +703,7 @@ macro_inflation,nl,nation,2026-05,3.4,percent,eurostat_macro,2026-05-31,,2026-09
 macro_inflation,nl,nation,2026-06,2.5,percent,eurostat_macro,2026-06-30,,2026-09-26,ok,0
 macro_inflation,nl,nation,2026-07,3,percent,eurostat_macro,2026-07-31,,2026-09-26,ok,0
 macro_inflation,nl,nation,2026-08,2.8,percent,eurostat_macro,2026-08-31,,2026-09-26,ok,0
+macro_inflation,nl,nation,2026-09,3,percent,eurostat_macro,2026-09-30,,2026-10-02T21:46:16+00:00,estimated,0
 macro_inflation,pt,nation,2015-01,-0.4,percent,eurostat_macro,2015-01-31,,2026-09-26,ok,0
 macro_inflation,pt,nation,2015-02,-0.1,percent,eurostat_macro,2015-02-28,,2026-09-26,ok,0
 macro_inflation,pt,nation,2015-03,0.4,percent,eurostat_macro,2015-03-31,,2026-09-26,ok,0
@@ -839,3 +844,4 @@ macro_inflation,pt,nation,2026-05,3.1,percent,eurostat_macro,2026-05-31,,2026-09
 macro_inflation,pt,nation,2026-06,3.1,percent,eurostat_macro,2026-06-30,,2026-09-26,ok,0
 macro_inflation,pt,nation,2026-07,3.1,percent,eurostat_macro,2026-07-31,,2026-09-26,ok,0
 macro_inflation,pt,nation,2026-08,3.6,percent,eurostat_macro,2026-08-31,,2026-09-26,ok,0
+macro_inflation,pt,nation,2026-09,3.6,percent,eurostat_macro,2026-09-30,,2026-10-02T21:46:16+00:00,estimated,0
