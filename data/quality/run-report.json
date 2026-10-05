@@ -1,6 +1,6 @@
 {
- "run_id": "e3ee4fb77bba",
- "finished_at": "2026-10-02T21:46:18+00:00",
+ "run_id": "408ecd106a6b",
+ "finished_at": "2026-10-05T21:48:11+00:00",
  "ok": [
   "indeed_daily",
   "treasury_receipts",
@@ -25,7 +25,7 @@
    "skipped_unchanged": 10,
    "error": null,
    "error_type": null,
-   "duration_s": 4.57,
+   "duration_s": 4.81,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -35,17 +35,17 @@
   {
    "source_id": "treasury_receipts",
    "status": "ok",
-   "records": 956,
+   "records": 957,
    "added": 1,
    "revised": 0,
-   "unchanged": 955,
+   "unchanged": 956,
    "quarantined": 0,
    "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.72,
-   "latest_observation": "2026-10-01",
+   "duration_s": 0.78,
+   "latest_observation": "2026-10-02",
    "metrics": [
     "us_withheld_tax",
     "us_withheld_tax_daily"
@@ -64,7 +64,7 @@
    "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 1.15,
+   "duration_s": 1.31,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -83,7 +83,7 @@
    "skipped_unchanged": 5,
    "error": null,
    "error_type": null,
-   "duration_s": 2.15,
+   "duration_s": 2.16,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -121,7 +121,7 @@
    "skipped_unchanged": 2,
    "error": null,
    "error_type": null,
-   "duration_s": 1.29,
+   "duration_s": 1.4,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -131,24 +131,21 @@
   {
    "source_id": "eurostat_macro",
    "status": "ok",
-   "records": 3821,
-   "added": 8,
-   "revised": 10,
-   "unchanged": 3803,
+   "records": 1300,
+   "added": 0,
+   "revised": 29,
+   "unchanged": 1271,
    "quarantined": 0,
    "plans": 8,
-   "skipped_unchanged": 2,
+   "skipped_unchanged": 5,
    "error": null,
    "error_type": null,
-   "duration_s": 4.55,
+   "duration_s": 5.88,
    "latest_observation": "2026-Q2",
    "metrics": [
     "macro_employment",
     "macro_gdp",
-    "macro_industry",
-    "macro_inflation",
-    "macro_retail",
-    "macro_unemployment"
+    "macro_retail"
    ],
    "notes": []
   }

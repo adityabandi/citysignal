@@ -1,24 +1,24 @@
 {
   "schema_version": 1,
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-05",
   "files": [
     {
       "file": "economy-panel.csv",
       "storage_file": "economy-panel.csv.gz",
       "storage_encoding": "gzip",
-      "sha256": "859d928bb3755e3cc2e932be54a1b8fce24b080ffe2441d3b2540a262bd7d520",
-      "bytes": 11188941
+      "sha256": "f171f405ed0b6ef04d55a7f5ed670ba2e7c5d22d1026b1c935b75bc02fad0c17",
+      "bytes": 11189648
     },
     {
       "file": "economy-vintages.csv",
       "storage_file": "economy-vintages.csv.gz",
       "storage_encoding": "gzip",
-      "sha256": "7c74e95ced6c79e334765b0fa09b7bbcd9d6d064d94af69e3ccd79c87bd46889",
-      "bytes": 11225059
+      "sha256": "ac41b9f3691aa4415967cf9d3e02ffab3f4c7374a2beafd4357cd9c2938ad709",
+      "bytes": 11228208
     }
   ],
-  "current_observations": 123899,
-  "captured_rows": 124305,
+  "current_observations": 123900,
+  "captured_rows": 124335,
   "countries": {
     "au": "Australia",
     "br": "Brazil",
