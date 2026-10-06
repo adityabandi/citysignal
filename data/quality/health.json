@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T06:05:11+00:00",
+ "generated_at": "2026-10-06T21:46:08+00:00",
  "sources": {
   "aena": {
    "attribution": "Source: Aena",
@@ -57,9 +57,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-10-06T05:51:05+00:00",
+   "last_checked": "2026-10-06T21:46:03+00:00",
    "last_error": null,
-   "last_success": "2026-10-06T05:51:05+00:00",
+   "last_success": "2026-10-06T21:46:03+00:00",
    "latest_observation": "2026-08",
    "license": "BIS terms of permitted use of statistics",
    "max_age_days": 100,
@@ -129,9 +129,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-10-06T05:51:24+00:00",
+   "last_checked": "2026-10-06T21:45:59+00:00",
    "last_error": null,
-   "last_success": "2026-10-06T05:51:24+00:00",
+   "last_success": "2026-10-06T21:45:59+00:00",
    "latest_observation": "2026-09-26",
    "license": "Data licence Germany attribution 2.0",
    "max_age_days": 21,
@@ -293,21 +293,22 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-10-06T05:52:05+00:00",
+   "last_checked": "2026-10-06T21:46:08+00:00",
    "last_error": null,
-   "last_success": "2026-10-06T05:52:05+00:00",
+   "last_success": "2026-10-06T21:46:08+00:00",
    "latest_observation": "2026-Q2",
    "license": "Eurostat reuse policy (attribution)",
    "max_age_days": 100,
    "metrics": [
     "macro_employment",
     "macro_gdp",
+    "macro_industry",
     "macro_retail"
    ],
    "publisher": "Eurostat / European Commission DG ECFIN",
    "source_id": "eurostat_macro",
    "staleness_days": 98,
-   "status": "skipped"
+   "status": "ok"
   },
   "gdelt": {
    "attribution": "Source: The GDELT Project (gdeltproject.org)",
@@ -386,10 +387,10 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "research",
-   "last_checked": "2026-10-06T05:52:11+00:00",
+   "last_checked": "2026-10-06T21:45:56+00:00",
    "last_error": null,
-   "last_success": "2026-10-06T05:52:11+00:00",
-   "latest_observation": "2026-09-25",
+   "last_success": "2026-10-06T21:45:56+00:00",
+   "latest_observation": "2026-10-02",
    "license": "CC BY 4.0 (Hiring Lab repository); verify redistribution before commercial delivery",
    "max_age_days": 21,
    "metrics": [
@@ -398,8 +399,8 @@
    ],
    "publisher": "Indeed Hiring Lab",
    "source_id": "indeed_daily",
-   "staleness_days": 11,
-   "status": "skipped"
+   "staleness_days": 4,
+   "status": "ok"
   },
   "ine": {
    "attribution": "Source: INE (ine.es)",
@@ -635,9 +636,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-10-06T05:59:30+00:00",
+   "last_checked": "2026-10-06T21:46:01+00:00",
    "last_error": null,
-   "last_success": "2026-10-06T05:59:30+00:00",
+   "last_success": "2026-10-06T21:46:01+00:00",
    "latest_observation": "2026-08",
    "license": "OECD terms of use; attribution",
    "max_age_days": 120,
@@ -660,9 +661,9 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-10-06T05:59:31+00:00",
+   "last_checked": "2026-10-06T21:46:01+00:00",
    "last_error": null,
-   "last_success": "2026-10-06T05:59:31+00:00",
+   "last_success": "2026-10-06T21:46:01+00:00",
    "latest_observation": "2026-08",
    "license": "OECD terms of use; attribution",
    "max_age_days": 100,
@@ -878,10 +879,10 @@
    "fresh": true,
    "geo_level": "nation",
    "kind": "official",
-   "last_checked": "2026-10-06T06:03:03+00:00",
+   "last_checked": "2026-10-06T21:45:57+00:00",
    "last_error": null,
-   "last_success": "2026-10-06T06:03:03+00:00",
-   "latest_observation": "2026-10-02",
+   "last_success": "2026-10-06T21:45:57+00:00",
+   "latest_observation": "2026-10-05",
    "license": "US government public data",
    "max_age_days": 10,
    "metrics": [
@@ -890,8 +891,8 @@
    ],
    "publisher": "US Treasury, Bureau of the Fiscal Service",
    "source_id": "treasury_receipts",
-   "staleness_days": 4,
-   "status": "skipped"
+   "staleness_days": 1,
+   "status": "ok"
   },
   "trends_manual": {
    "attribution": "Source: Google Trends, exported manually",

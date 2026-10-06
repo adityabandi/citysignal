@@ -187,38 +187,10 @@
    "id": "hiring_flow_gap",
    "country": "au",
    "label": "Hiring flow gap",
-   "value": 4.127,
-   "period": "2026-09-25",
+   "value": 2.003,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": 2.408
-    },
-    {
-     "period": "2024-07-19",
-     "value": 0.972
-    },
-    {
-     "period": "2024-07-20",
-     "value": 0.344
-    },
-    {
-     "period": "2024-07-21",
-     "value": -0.594
-    },
-    {
-     "period": "2024-07-22",
-     "value": -1.416
-    },
-    {
-     "period": "2024-07-23",
-     "value": -2.302
-    },
-    {
-     "period": "2024-07-24",
-     "value": -3.35
-    },
     {
      "period": "2024-07-25",
      "value": -3.254
@@ -3390,6 +3362,34 @@
     {
      "period": "2026-09-25",
      "value": 4.127
+    },
+    {
+     "period": "2026-09-26",
+     "value": 3.748
+    },
+    {
+     "period": "2026-09-27",
+     "value": 3.802
+    },
+    {
+     "period": "2026-09-28",
+     "value": 4.23
+    },
+    {
+     "period": "2026-09-29",
+     "value": 3.606
+    },
+    {
+     "period": "2026-09-30",
+     "value": 3.505
+    },
+    {
+     "period": "2026-10-01",
+     "value": 3.151
+    },
+    {
+     "period": "2026-10-02",
+     "value": 2.003
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -3400,38 +3400,10 @@
    "id": "hiring_flow_gap",
    "country": "ca",
    "label": "Hiring flow gap",
-   "value": 6.692,
-   "period": "2026-09-25",
+   "value": 3.036,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": 5.941
-    },
-    {
-     "period": "2024-07-19",
-     "value": 5.782
-    },
-    {
-     "period": "2024-07-20",
-     "value": 5.964
-    },
-    {
-     "period": "2024-07-21",
-     "value": 6.511
-    },
-    {
-     "period": "2024-07-22",
-     "value": 6.677
-    },
-    {
-     "period": "2024-07-23",
-     "value": 7.052
-    },
-    {
-     "period": "2024-07-24",
-     "value": 7.058
-    },
     {
      "period": "2024-07-25",
      "value": 6.646
@@ -6603,6 +6575,34 @@
     {
      "period": "2026-09-25",
      "value": 6.692
+    },
+    {
+     "period": "2026-09-26",
+     "value": 7.508
+    },
+    {
+     "period": "2026-09-27",
+     "value": 8.169
+    },
+    {
+     "period": "2026-09-28",
+     "value": 8.352
+    },
+    {
+     "period": "2026-09-29",
+     "value": 7.353
+    },
+    {
+     "period": "2026-09-30",
+     "value": 7.611
+    },
+    {
+     "period": "2026-10-01",
+     "value": 6.382
+    },
+    {
+     "period": "2026-10-02",
+     "value": 3.036
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -6613,38 +6613,10 @@
    "id": "hiring_flow_gap",
    "country": "fr",
    "label": "Hiring flow gap",
-   "value": 0.306,
-   "period": "2026-09-25",
+   "value": 1.169,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": 3.333
-    },
-    {
-     "period": "2024-07-19",
-     "value": 5.257
-    },
-    {
-     "period": "2024-07-20",
-     "value": 6.632
-    },
-    {
-     "period": "2024-07-21",
-     "value": 7.953
-    },
-    {
-     "period": "2024-07-22",
-     "value": 7.323
-    },
-    {
-     "period": "2024-07-23",
-     "value": 5.637
-    },
-    {
-     "period": "2024-07-24",
-     "value": 3.456
-    },
     {
      "period": "2024-07-25",
      "value": 0.889
@@ -9816,6 +9788,34 @@
     {
      "period": "2026-09-25",
      "value": 0.306
+    },
+    {
+     "period": "2026-09-26",
+     "value": 2.302
+    },
+    {
+     "period": "2026-09-27",
+     "value": 2.95
+    },
+    {
+     "period": "2026-09-28",
+     "value": 3.018
+    },
+    {
+     "period": "2026-09-29",
+     "value": 3.089
+    },
+    {
+     "period": "2026-09-30",
+     "value": 2.961
+    },
+    {
+     "period": "2026-10-01",
+     "value": 1.994
+    },
+    {
+     "period": "2026-10-02",
+     "value": 1.169
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -9826,38 +9826,10 @@
    "id": "hiring_flow_gap",
    "country": "de",
    "label": "Hiring flow gap",
-   "value": -2.777,
-   "period": "2026-09-25",
+   "value": -3.775,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": -0.311
-    },
-    {
-     "period": "2024-07-19",
-     "value": 0.721
-    },
-    {
-     "period": "2024-07-20",
-     "value": 1.372
-    },
-    {
-     "period": "2024-07-21",
-     "value": 1.452
-    },
-    {
-     "period": "2024-07-22",
-     "value": 2.054
-    },
-    {
-     "period": "2024-07-23",
-     "value": 3.212
-    },
-    {
-     "period": "2024-07-24",
-     "value": 3.523
-    },
     {
      "period": "2024-07-25",
      "value": 2.948
@@ -13029,6 +13001,34 @@
     {
      "period": "2026-09-25",
      "value": -2.777
+    },
+    {
+     "period": "2026-09-26",
+     "value": -2.629
+    },
+    {
+     "period": "2026-09-27",
+     "value": -2.915
+    },
+    {
+     "period": "2026-09-28",
+     "value": -2.867
+    },
+    {
+     "period": "2026-09-29",
+     "value": -2.873
+    },
+    {
+     "period": "2026-09-30",
+     "value": -3.229
+    },
+    {
+     "period": "2026-10-01",
+     "value": -3.337
+    },
+    {
+     "period": "2026-10-02",
+     "value": -3.775
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -13039,38 +13039,10 @@
    "id": "hiring_flow_gap",
    "country": "ie",
    "label": "Hiring flow gap",
-   "value": 5.795,
-   "period": "2026-09-25",
+   "value": 0.236,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": 3.965
-    },
-    {
-     "period": "2024-07-19",
-     "value": 4.575
-    },
-    {
-     "period": "2024-07-20",
-     "value": 5.422
-    },
-    {
-     "period": "2024-07-21",
-     "value": 5.664
-    },
-    {
-     "period": "2024-07-22",
-     "value": 5.867
-    },
-    {
-     "period": "2024-07-23",
-     "value": 5.293
-    },
-    {
-     "period": "2024-07-24",
-     "value": 5.287
-    },
     {
      "period": "2024-07-25",
      "value": 4.953
@@ -16242,6 +16214,34 @@
     {
      "period": "2026-09-25",
      "value": 5.795
+    },
+    {
+     "period": "2026-09-26",
+     "value": 5.017
+    },
+    {
+     "period": "2026-09-27",
+     "value": 4.086
+    },
+    {
+     "period": "2026-09-28",
+     "value": 3.126
+    },
+    {
+     "period": "2026-09-29",
+     "value": 2.549
+    },
+    {
+     "period": "2026-09-30",
+     "value": 1.741
+    },
+    {
+     "period": "2026-10-01",
+     "value": 0.853
+    },
+    {
+     "period": "2026-10-02",
+     "value": 0.236
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -16252,38 +16252,10 @@
    "id": "hiring_flow_gap",
    "country": "it",
    "label": "Hiring flow gap",
-   "value": -10.776,
-   "period": "2026-09-25",
+   "value": -13.235,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": -1.104
-    },
-    {
-     "period": "2024-07-19",
-     "value": -1.128
-    },
-    {
-     "period": "2024-07-20",
-     "value": -1.33
-    },
-    {
-     "period": "2024-07-21",
-     "value": -1.598
-    },
-    {
-     "period": "2024-07-22",
-     "value": -1.786
-    },
-    {
-     "period": "2024-07-23",
-     "value": -1.209
-    },
-    {
-     "period": "2024-07-24",
-     "value": -0.243
-    },
     {
      "period": "2024-07-25",
      "value": 0.348
@@ -19455,6 +19427,34 @@
     {
      "period": "2026-09-25",
      "value": -10.776
+    },
+    {
+     "period": "2026-09-26",
+     "value": -11.903
+    },
+    {
+     "period": "2026-09-27",
+     "value": -12.678
+    },
+    {
+     "period": "2026-09-28",
+     "value": -13.934
+    },
+    {
+     "period": "2026-09-29",
+     "value": -14.524
+    },
+    {
+     "period": "2026-09-30",
+     "value": -14.68
+    },
+    {
+     "period": "2026-10-01",
+     "value": -14.334
+    },
+    {
+     "period": "2026-10-02",
+     "value": -13.235
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -19465,38 +19465,10 @@
    "id": "hiring_flow_gap",
    "country": "nl",
    "label": "Hiring flow gap",
-   "value": -8.541,
-   "period": "2026-09-25",
+   "value": -6.798,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": -2.27
-    },
-    {
-     "period": "2024-07-19",
-     "value": -3.432
-    },
-    {
-     "period": "2024-07-20",
-     "value": -4.556
-    },
-    {
-     "period": "2024-07-21",
-     "value": -5.143
-    },
-    {
-     "period": "2024-07-22",
-     "value": -5.914
-    },
-    {
-     "period": "2024-07-23",
-     "value": -5.905
-    },
-    {
-     "period": "2024-07-24",
-     "value": -5.395
-    },
     {
      "period": "2024-07-25",
      "value": -3.574
@@ -22668,6 +22640,34 @@
     {
      "period": "2026-09-25",
      "value": -8.541
+    },
+    {
+     "period": "2026-09-26",
+     "value": -8.389
+    },
+    {
+     "period": "2026-09-27",
+     "value": -8.411
+    },
+    {
+     "period": "2026-09-28",
+     "value": -8.063
+    },
+    {
+     "period": "2026-09-29",
+     "value": -7.62
+    },
+    {
+     "period": "2026-09-30",
+     "value": -7.078
+    },
+    {
+     "period": "2026-10-01",
+     "value": -6.557
+    },
+    {
+     "period": "2026-10-02",
+     "value": -6.798
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -22678,38 +22678,10 @@
    "id": "hiring_flow_gap",
    "country": "es",
    "label": "Hiring flow gap",
-   "value": 2.134,
-   "period": "2026-09-25",
+   "value": 2.043,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": -6.032
-    },
-    {
-     "period": "2024-07-19",
-     "value": -6.397
-    },
-    {
-     "period": "2024-07-20",
-     "value": -6.285
-    },
-    {
-     "period": "2024-07-21",
-     "value": -6.164
-    },
-    {
-     "period": "2024-07-22",
-     "value": -6.63
-    },
-    {
-     "period": "2024-07-23",
-     "value": -6.028
-    },
-    {
-     "period": "2024-07-24",
-     "value": -5.075
-    },
     {
      "period": "2024-07-25",
      "value": -3.291
@@ -25881,6 +25853,34 @@
     {
      "period": "2026-09-25",
      "value": 2.134
+    },
+    {
+     "period": "2026-09-26",
+     "value": 2.452
+    },
+    {
+     "period": "2026-09-27",
+     "value": 1.661
+    },
+    {
+     "period": "2026-09-28",
+     "value": 0.738
+    },
+    {
+     "period": "2026-09-29",
+     "value": 0.389
+    },
+    {
+     "period": "2026-09-30",
+     "value": 1.184
+    },
+    {
+     "period": "2026-10-01",
+     "value": 0.891
+    },
+    {
+     "period": "2026-10-02",
+     "value": 2.043
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -25891,38 +25891,10 @@
    "id": "hiring_flow_gap",
    "country": "gb",
    "label": "Hiring flow gap",
-   "value": 5.388,
-   "period": "2026-09-25",
+   "value": 3.224,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": -0.603
-    },
-    {
-     "period": "2024-07-19",
-     "value": -0.637
-    },
-    {
-     "period": "2024-07-20",
-     "value": -0.62
-    },
-    {
-     "period": "2024-07-21",
-     "value": -0.653
-    },
-    {
-     "period": "2024-07-22",
-     "value": -0.816
-    },
-    {
-     "period": "2024-07-23",
-     "value": -0.876
-    },
-    {
-     "period": "2024-07-24",
-     "value": -0.43
-    },
     {
      "period": "2024-07-25",
      "value": -0.234
@@ -29094,6 +29066,34 @@
     {
      "period": "2026-09-25",
      "value": 5.388
+    },
+    {
+     "period": "2026-09-26",
+     "value": 3.495
+    },
+    {
+     "period": "2026-09-27",
+     "value": 1.261
+    },
+    {
+     "period": "2026-09-28",
+     "value": -0.872
+    },
+    {
+     "period": "2026-09-29",
+     "value": -1.06
+    },
+    {
+     "period": "2026-09-30",
+     "value": -0.51
+    },
+    {
+     "period": "2026-10-01",
+     "value": 0.74
+    },
+    {
+     "period": "2026-10-02",
+     "value": 3.224
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
@@ -29104,38 +29104,10 @@
    "id": "hiring_flow_gap",
    "country": "us",
    "label": "Hiring flow gap",
-   "value": 0.504,
-   "period": "2026-09-25",
+   "value": 0.531,
+   "period": "2026-10-02",
    "unit": "pp",
    "series": [
-    {
-     "period": "2024-07-18",
-     "value": -4.713
-    },
-    {
-     "period": "2024-07-19",
-     "value": -4.811
-    },
-    {
-     "period": "2024-07-20",
-     "value": -4.316
-    },
-    {
-     "period": "2024-07-21",
-     "value": -3.875
-    },
-    {
-     "period": "2024-07-22",
-     "value": -4.084
-    },
-    {
-     "period": "2024-07-23",
-     "value": -4.548
-    },
-    {
-     "period": "2024-07-24",
-     "value": -4.929
-    },
     {
      "period": "2024-07-25",
      "value": -5.712
@@ -32307,6 +32279,34 @@
     {
      "period": "2026-09-25",
      "value": 0.504
+    },
+    {
+     "period": "2026-09-26",
+     "value": 0.44
+    },
+    {
+     "period": "2026-09-27",
+     "value": 0.377
+    },
+    {
+     "period": "2026-09-28",
+     "value": 0.419
+    },
+    {
+     "period": "2026-09-29",
+     "value": 1.529
+    },
+    {
+     "period": "2026-09-30",
+     "value": 2.217
+    },
+    {
+     "period": "2026-10-01",
+     "value": 1.701
+    },
+    {
+     "period": "2026-10-02",
+     "value": 0.531
     }
    ],
    "definition": "28-day percentage growth in new postings minus 28-day percentage growth in all postings. Positive means fresh hiring intent is growing faster than the outstanding pool. It does not measure vacancies filled.",
