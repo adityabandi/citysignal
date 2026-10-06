@@ -89,8 +89,10 @@ shipping_calls,ae,nation,2026-03,525,calls,portwatch,2026-03-31,,2026-09-26,esti
 shipping_calls,ae,nation,2026-04,783,calls,portwatch,2026-04-30,,2026-09-26,estimated,0
 shipping_calls,ae,nation,2026-05,648,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,ae,nation,2026-06,960,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
+shipping_calls,ae,nation,2026-06,961,calls,portwatch,2026-06-30,,2026-10-06T05:59:44+00:00,estimated,1
 shipping_calls,ae,nation,2026-07,1137,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
 shipping_calls,ae,nation,2026-08,1095,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
+shipping_calls,ae,nation,2026-08,1096,calls,portwatch,2026-08-31,,2026-10-06T05:59:44+00:00,estimated,1
 shipping_calls,au,nation,2019-01,2265,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,au,nation,2019-02,2047,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
 shipping_calls,au,nation,2019-03,2248,calls,portwatch,2019-03-31,,2026-09-26,estimated,0
@@ -457,8 +459,11 @@ shipping_calls,cn,nation,2026-03,22989,calls,portwatch,2026-03-31,,2026-09-26,es
 shipping_calls,cn,nation,2026-04,22073,calls,portwatch,2026-04-30,,2026-09-26,estimated,0
 shipping_calls,cn,nation,2026-05,20354,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,cn,nation,2026-06,20539,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
+shipping_calls,cn,nation,2026-06,20540,calls,portwatch,2026-06-30,,2026-10-06T05:59:33+00:00,estimated,1
 shipping_calls,cn,nation,2026-07,19401,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
+shipping_calls,cn,nation,2026-07,19406,calls,portwatch,2026-07-31,,2026-10-06T05:59:33+00:00,estimated,1
 shipping_calls,cn,nation,2026-08,18744,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
+shipping_calls,cn,nation,2026-08,18765,calls,portwatch,2026-08-31,,2026-10-06T05:59:33+00:00,estimated,1
 shipping_calls,de,nation,2019-01,2400,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,de,nation,2019-02,2310,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
 shipping_calls,de,nation,2019-03,2465,calls,portwatch,2019-03-31,,2026-09-26,estimated,0
@@ -633,6 +638,7 @@ shipping_calls,es,nation,2025-07,3901,calls,portwatch,2025-07-31,,2026-09-26,est
 shipping_calls,es,nation,2025-08,3685,calls,portwatch,2025-08-31,,2026-09-26,estimated,0
 shipping_calls,es,nation,2025-09,3800,calls,portwatch,2025-09-30,,2026-09-26,estimated,0
 shipping_calls,es,nation,2025-10,4003,calls,portwatch,2025-10-31,,2026-09-26,estimated,0
+shipping_calls,es,nation,2025-10,4004,calls,portwatch,2025-10-31,,2026-10-06T05:59:42+00:00,estimated,1
 shipping_calls,es,nation,2025-11,3934,calls,portwatch,2025-11-30,,2026-09-26,estimated,0
 shipping_calls,es,nation,2025-12,3761,calls,portwatch,2025-12-31,,2026-09-26,estimated,0
 shipping_calls,es,nation,2026-01,3316,calls,portwatch,2026-01-31,,2026-09-26,estimated,0
@@ -642,7 +648,9 @@ shipping_calls,es,nation,2026-04,3800,calls,portwatch,2026-04-30,,2026-09-26,est
 shipping_calls,es,nation,2026-05,3902,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,es,nation,2026-06,3661,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
 shipping_calls,es,nation,2026-07,3721,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
+shipping_calls,es,nation,2026-07,3720,calls,portwatch,2026-07-31,,2026-10-06T05:59:42+00:00,estimated,1
 shipping_calls,es,nation,2026-08,3723,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
+shipping_calls,es,nation,2026-08,3724,calls,portwatch,2026-08-31,,2026-10-06T05:59:42+00:00,estimated,1
 shipping_calls,fr,nation,2019-01,1575,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,fr,nation,2019-02,1606,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
 shipping_calls,fr,nation,2019-03,1760,calls,portwatch,2019-03-31,,2026-09-26,estimated,0
@@ -919,6 +927,7 @@ shipping_calls,id,nation,2026-05,6378,calls,portwatch,2026-05-31,,2026-09-26,est
 shipping_calls,id,nation,2026-06,6355,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
 shipping_calls,id,nation,2026-07,6675,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
 shipping_calls,id,nation,2026-08,6579,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
+shipping_calls,id,nation,2026-08,6580,calls,portwatch,2026-08-31,,2026-10-06T05:59:35+00:00,estimated,1
 shipping_calls,ie,nation,2019-01,341,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,ie,nation,2019-02,335,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
 shipping_calls,ie,nation,2019-03,359,calls,portwatch,2019-03-31,,2026-09-26,estimated,0
@@ -1102,6 +1111,7 @@ shipping_calls,in,nation,2026-04,2358,calls,portwatch,2026-04-30,,2026-09-26,est
 shipping_calls,in,nation,2026-05,3520,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,in,nation,2026-06,3506,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
 shipping_calls,in,nation,2026-07,3456,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
+shipping_calls,in,nation,2026-07,3455,calls,portwatch,2026-07-31,,2026-10-06T05:59:34+00:00,estimated,1
 shipping_calls,in,nation,2026-08,3422,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
 shipping_calls,it,nation,2019-01,2254,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,it,nation,2019-02,2162,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
@@ -1285,6 +1295,7 @@ shipping_calls,jp,nation,2026-03,23268,calls,portwatch,2026-03-31,,2026-09-26,es
 shipping_calls,jp,nation,2026-04,21604,calls,portwatch,2026-04-30,,2026-09-26,estimated,0
 shipping_calls,jp,nation,2026-05,22497,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,jp,nation,2026-06,22000,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
+shipping_calls,jp,nation,2026-06,21999,calls,portwatch,2026-06-30,,2026-10-06T05:59:36+00:00,estimated,1
 shipping_calls,jp,nation,2026-07,23902,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
 shipping_calls,jp,nation,2026-08,21784,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
 shipping_calls,kr,nation,2019-01,3797,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
@@ -1379,6 +1390,7 @@ shipping_calls,kr,nation,2026-05,6137,calls,portwatch,2026-05-31,,2026-09-26,est
 shipping_calls,kr,nation,2026-06,6097,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
 shipping_calls,kr,nation,2026-07,6226,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
 shipping_calls,kr,nation,2026-08,5978,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
+shipping_calls,kr,nation,2026-08,5979,calls,portwatch,2026-08-31,,2026-10-06T05:59:41+00:00,estimated,1
 shipping_calls,mx,nation,2019-01,1128,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,mx,nation,2019-02,1016,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
 shipping_calls,mx,nation,2019-03,1182,calls,portwatch,2019-03-31,,2026-09-26,estimated,0
@@ -1562,6 +1574,7 @@ shipping_calls,nl,nation,2026-04,4370,calls,portwatch,2026-04-30,,2026-09-26,est
 shipping_calls,nl,nation,2026-05,4697,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,nl,nation,2026-06,4445,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
 shipping_calls,nl,nation,2026-07,4813,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
+shipping_calls,nl,nation,2026-07,4812,calls,portwatch,2026-07-31,,2026-10-06T05:59:37+00:00,estimated,1
 shipping_calls,nl,nation,2026-08,4698,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
 shipping_calls,no,nation,2019-01,2136,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,no,nation,2019-02,2020,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
@@ -1929,8 +1942,11 @@ shipping_calls,ru,nation,2026-03,2006,calls,portwatch,2026-03-31,,2026-09-26,est
 shipping_calls,ru,nation,2026-04,1939,calls,portwatch,2026-04-30,,2026-09-26,estimated,0
 shipping_calls,ru,nation,2026-05,2166,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,ru,nation,2026-06,2175,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
+shipping_calls,ru,nation,2026-06,2176,calls,portwatch,2026-06-30,,2026-10-06T05:59:39+00:00,estimated,1
 shipping_calls,ru,nation,2026-07,2109,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
+shipping_calls,ru,nation,2026-07,2108,calls,portwatch,2026-07-31,,2026-10-06T05:59:39+00:00,estimated,1
 shipping_calls,ru,nation,2026-08,1903,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
+shipping_calls,ru,nation,2026-08,1906,calls,portwatch,2026-08-31,,2026-10-06T05:59:39+00:00,estimated,1
 shipping_calls,sa,nation,2019-01,921,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,sa,nation,2019-02,849,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
 shipping_calls,sa,nation,2019-03,943,calls,portwatch,2019-03-31,,2026-09-26,estimated,0
@@ -2206,6 +2222,7 @@ shipping_calls,sg,nation,2026-04,4190,calls,portwatch,2026-04-30,,2026-09-26,est
 shipping_calls,sg,nation,2026-05,4381,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,sg,nation,2026-06,4228,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
 shipping_calls,sg,nation,2026-07,4181,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
+shipping_calls,sg,nation,2026-07,4180,calls,portwatch,2026-07-31,,2026-10-06T05:59:40+00:00,estimated,1
 shipping_calls,sg,nation,2026-08,4069,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
 shipping_calls,tr,nation,2019-01,3809,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,tr,nation,2019-02,3523,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
@@ -2297,8 +2314,11 @@ shipping_calls,tr,nation,2026-03,3938,calls,portwatch,2026-03-31,,2026-09-26,est
 shipping_calls,tr,nation,2026-04,3976,calls,portwatch,2026-04-30,,2026-09-26,estimated,0
 shipping_calls,tr,nation,2026-05,4289,calls,portwatch,2026-05-31,,2026-09-26,estimated,0
 shipping_calls,tr,nation,2026-06,4339,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
+shipping_calls,tr,nation,2026-06,4340,calls,portwatch,2026-06-30,,2026-10-06T05:59:43+00:00,estimated,1
 shipping_calls,tr,nation,2026-07,4226,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
+shipping_calls,tr,nation,2026-07,4227,calls,portwatch,2026-07-31,,2026-10-06T05:59:43+00:00,estimated,1
 shipping_calls,tr,nation,2026-08,3830,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
+shipping_calls,tr,nation,2026-08,3835,calls,portwatch,2026-08-31,,2026-10-06T05:59:43+00:00,estimated,1
 shipping_calls,us,nation,2019-01,5969,calls,portwatch,2019-01-31,,2026-09-26,estimated,0
 shipping_calls,us,nation,2019-02,4984,calls,portwatch,2019-02-28,,2026-09-26,estimated,0
 shipping_calls,us,nation,2019-03,5648,calls,portwatch,2019-03-31,,2026-09-26,estimated,0
@@ -2483,3 +2503,4 @@ shipping_calls,za,nation,2026-05,634,calls,portwatch,2026-05-31,,2026-09-26,esti
 shipping_calls,za,nation,2026-06,622,calls,portwatch,2026-06-30,,2026-09-26,estimated,0
 shipping_calls,za,nation,2026-07,613,calls,portwatch,2026-07-31,,2026-09-26,estimated,0
 shipping_calls,za,nation,2026-08,616,calls,portwatch,2026-08-31,,2026-09-26,estimated,0
+shipping_calls,za,nation,2026-08,617,calls,portwatch,2026-08-31,,2026-10-06T05:59:41+00:00,estimated,1

@@ -62,6 +62,7 @@ licences_granted,dist-28079-02,district,2025-11,3,licences,madrid_licencias,2025
 licences_granted,dist-28079-02,district,2025-12,1,licences,madrid_licencias,2025-12-31,,2026-07-26,ok,0
 licences_granted,dist-28079-02,district,2026-01,1,licences,madrid_licencias,2026-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-02,district,2026-02,2,licences,madrid_licencias,2026-02-28,,2026-07-26,ok,0
+licences_granted,dist-28079-02,district,2026-03,1,licences,madrid_licencias,2026-03-31,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-03,district,2023-01,6,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-03,district,2023-02,3,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-03,district,2023-03,9,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -99,6 +100,7 @@ licences_granted,dist-28079-03,district,2026-01,2,licences,madrid_licencias,2026
 licences_granted,dist-28079-03,district,2026-02,3,licences,madrid_licencias,2026-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-03,district,2026-03,3,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-03,district,2026-04,1,licences,madrid_licencias,2026-04-30,,2026-07-26,ok,0
+licences_granted,dist-28079-03,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-04,district,2023-01,1,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-04,district,2023-02,3,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-04,district,2023-04,1,licences,madrid_licencias,2023-04-30,,2026-07-26,ok,0
@@ -196,6 +198,7 @@ licences_granted,dist-28079-06,district,2026-01,2,licences,madrid_licencias,2026
 licences_granted,dist-28079-06,district,2026-02,2,licences,madrid_licencias,2026-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-06,district,2026-03,1,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-06,district,2026-05,1,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-06,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-07,district,2023-01,5,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-07,district,2023-02,5,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-07,district,2023-03,5,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -233,7 +236,9 @@ licences_granted,dist-28079-07,district,2025-12,3,licences,madrid_licencias,2025
 licences_granted,dist-28079-07,district,2026-01,2,licences,madrid_licencias,2026-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-07,district,2026-02,4,licences,madrid_licencias,2026-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-07,district,2026-03,1,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
+licences_granted,dist-28079-07,district,2026-04,2,licences,madrid_licencias,2026-04-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-07,district,2026-05,1,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-07,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-08,district,2023-01,6,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-08,district,2023-02,10,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-08,district,2023-03,8,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -274,6 +279,7 @@ licences_granted,dist-28079-08,district,2026-02,4,licences,madrid_licencias,2026
 licences_granted,dist-28079-08,district,2026-03,8,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-08,district,2026-04,4,licences,madrid_licencias,2026-04-30,,2026-07-26,ok,0
 licences_granted,dist-28079-08,district,2026-05,3,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-08,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-09,district,2023-01,6,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-09,district,2023-02,12,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-09,district,2023-03,15,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -341,6 +347,7 @@ licences_granted,dist-28079-10,district,2024-12,5,licences,madrid_licencias,2024
 licences_granted,dist-28079-10,district,2025-01,1,licences,madrid_licencias,2025-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-10,district,2025-02,6,licences,madrid_licencias,2025-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-10,district,2025-03,1,licences,madrid_licencias,2025-03-31,,2026-07-26,ok,0
+licences_granted,dist-28079-10,district,2025-04,1,licences,madrid_licencias,2025-04-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-10,district,2025-06,3,licences,madrid_licencias,2025-06-30,,2026-07-26,ok,0
 licences_granted,dist-28079-10,district,2025-07,2,licences,madrid_licencias,2025-07-31,,2026-07-26,ok,0
 licences_granted,dist-28079-10,district,2025-08,1,licences,madrid_licencias,2025-08-31,,2026-07-26,ok,0
@@ -388,6 +395,7 @@ licences_granted,dist-28079-11,district,2026-02,4,licences,madrid_licencias,2026
 licences_granted,dist-28079-11,district,2026-03,4,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-11,district,2026-04,2,licences,madrid_licencias,2026-04-30,,2026-07-26,ok,0
 licences_granted,dist-28079-11,district,2026-05,1,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-11,district,2026-06,4,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-12,district,2023-01,5,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-12,district,2023-03,6,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-12,district,2023-04,18,licences,madrid_licencias,2023-04-30,,2026-07-26,ok,0
@@ -427,6 +435,7 @@ licences_granted,dist-28079-12,district,2026-02,4,licences,madrid_licencias,2026
 licences_granted,dist-28079-12,district,2026-03,1,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-12,district,2026-04,1,licences,madrid_licencias,2026-04-30,,2026-09-08,ok,0
 licences_granted,dist-28079-12,district,2026-05,1,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-12,district,2026-06,12,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-13,district,2023-01,5,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-13,district,2023-02,4,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-13,district,2023-03,4,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -459,11 +468,13 @@ licences_granted,dist-28079-13,district,2025-07,4,licences,madrid_licencias,2025
 licences_granted,dist-28079-13,district,2025-08,1,licences,madrid_licencias,2025-08-31,,2026-07-26,ok,0
 licences_granted,dist-28079-13,district,2025-09,1,licences,madrid_licencias,2025-09-30,,2026-07-26,ok,0
 licences_granted,dist-28079-13,district,2025-10,3,licences,madrid_licencias,2025-10-31,,2026-07-26,ok,0
+licences_granted,dist-28079-13,district,2025-11,1,licences,madrid_licencias,2025-11-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-13,district,2025-12,4,licences,madrid_licencias,2025-12-31,,2026-07-26,ok,0
 licences_granted,dist-28079-13,district,2026-01,2,licences,madrid_licencias,2026-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-13,district,2026-02,3,licences,madrid_licencias,2026-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-13,district,2026-03,3,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-13,district,2026-04,1,licences,madrid_licencias,2026-04-30,,2026-07-26,ok,0
+licences_granted,dist-28079-13,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-14,district,2023-01,5,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-14,district,2023-02,2,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-14,district,2023-03,9,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -503,6 +514,7 @@ licences_granted,dist-28079-14,district,2026-02,1,licences,madrid_licencias,2026
 licences_granted,dist-28079-14,district,2026-03,1,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-14,district,2026-04,1,licences,madrid_licencias,2026-04-30,,2026-08-04,ok,0
 licences_granted,dist-28079-14,district,2026-05,1,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-14,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-15,district,2023-01,3,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-15,district,2023-02,3,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-15,district,2023-03,6,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -544,6 +556,7 @@ licences_granted,dist-28079-15,district,2026-02,4,licences,madrid_licencias,2026
 licences_granted,dist-28079-15,district,2026-03,3,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-15,district,2026-04,4,licences,madrid_licencias,2026-04-30,,2026-07-26,ok,0
 licences_granted,dist-28079-15,district,2026-05,4,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-15,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-16,district,2023-01,6,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-16,district,2023-02,2,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-16,district,2023-03,8,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -615,6 +628,7 @@ licences_granted,dist-28079-17,district,2025-12,5,licences,madrid_licencias,2025
 licences_granted,dist-28079-17,district,2026-02,4,licences,madrid_licencias,2026-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-17,district,2026-03,1,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-17,district,2026-05,1,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-17,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-18,district,2023-01,5,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-18,district,2023-02,1,licences,madrid_licencias,2023-02-28,,2026-07-26,ok,0
 licences_granted,dist-28079-18,district,2023-03,3,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
@@ -652,6 +666,7 @@ licences_granted,dist-28079-18,district,2026-02,1,licences,madrid_licencias,2026
 licences_granted,dist-28079-18,district,2026-03,3,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-18,district,2026-04,1,licences,madrid_licencias,2026-04-30,,2026-07-26,ok,0
 licences_granted,dist-28079-18,district,2026-05,2,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-18,district,2026-06,2,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-19,district,2023-01,1,licences,madrid_licencias,2023-01-31,,2026-07-26,ok,0
 licences_granted,dist-28079-19,district,2023-03,2,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-19,district,2023-05,2,licences,madrid_licencias,2023-05-31,,2026-07-26,ok,0
@@ -716,7 +731,10 @@ licences_granted,dist-28079-20,district,2025-10,2,licences,madrid_licencias,2025
 licences_granted,dist-28079-20,district,2025-11,1,licences,madrid_licencias,2025-11-30,,2026-07-26,ok,0
 licences_granted,dist-28079-20,district,2025-12,2,licences,madrid_licencias,2025-12-31,,2026-07-26,ok,0
 licences_granted,dist-28079-20,district,2026-01,2,licences,madrid_licencias,2026-01-31,,2026-07-26,ok,0
+licences_granted,dist-28079-20,district,2026-02,2,licences,madrid_licencias,2026-02-28,,2026-10-06T05:58:45+00:00,ok,0
+licences_granted,dist-28079-20,district,2026-03,3,licences,madrid_licencias,2026-03-31,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-20,district,2026-04,2,licences,madrid_licencias,2026-04-30,,2026-07-26,ok,0
+licences_granted,dist-28079-20,district,2026-06,1,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0
 licences_granted,dist-28079-21,district,2023-03,8,licences,madrid_licencias,2023-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-21,district,2023-04,1,licences,madrid_licencias,2023-04-30,,2026-07-26,ok,0
 licences_granted,dist-28079-21,district,2023-05,1,licences,madrid_licencias,2023-05-31,,2026-07-26,ok,0
@@ -750,3 +768,4 @@ licences_granted,dist-28079-21,district,2026-02,3,licences,madrid_licencias,2026
 licences_granted,dist-28079-21,district,2026-03,3,licences,madrid_licencias,2026-03-31,,2026-07-26,ok,0
 licences_granted,dist-28079-21,district,2026-04,9,licences,madrid_licencias,2026-04-30,,2026-07-26,ok,0
 licences_granted,dist-28079-21,district,2026-05,4,licences,madrid_licencias,2026-05-31,,2026-09-08,ok,0
+licences_granted,dist-28079-21,district,2026-06,3,licences,madrid_licencias,2026-06-30,,2026-10-06T05:58:45+00:00,ok,0

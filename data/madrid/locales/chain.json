@@ -28,6 +28,17 @@
       "removed": 0,
       "state_changed": 96,
       "state_sha256": "c9e4f7820dd96cb97df6cc7531940ad53f09da57cc542b4de49ce654ff8edd9a"
+    },
+    {
+      "added": 86,
+      "diff_sha256": "17bdba93e7582cc4cf92c1aeca0a840c61c96df460964aa1186b7bfdf7d0de79",
+      "epigraph_changed": 1236,
+      "file": "diffs/2026-10.csv",
+      "period": "2026-10",
+      "prev_state_sha256": "c9e4f7820dd96cb97df6cc7531940ad53f09da57cc542b4de49ce654ff8edd9a",
+      "removed": 0,
+      "state_changed": 146,
+      "state_sha256": "74b2e9237e417d6dac51f6fe7c31ddbc0ddc3d7edcde51d3275e4d5181e31a68"
     }
   ]
 }

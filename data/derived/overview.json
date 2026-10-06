@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-05T21:48:18+00:00",
+ "generated_at": "2026-10-06T06:05:18+00:00",
  "headline": {
   "city": "zaragoza",
   "city_name": "Zaragoza",
@@ -30,10 +30,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0424,
+     "demand_momentum": -0.028,
      "housing_pressure": 1.094,
      "supply_response": -0.9389,
-     "distress": 0.0647
+     "distress": -0.4047
     },
     "available_indices": [
      "demand_momentum",
@@ -42,13 +42,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-08"
+    "period": "2026-09"
    },
    "indices": {
-    "demand_momentum": -0.0424,
+    "demand_momentum": -0.028,
     "housing_pressure": 1.094,
     "supply_response": -0.9389,
-    "distress": 0.0647
+    "distress": -0.4047
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -534,10 +534,10 @@
     "expression": "true",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.1322,
+     "demand_momentum": -0.1537,
      "housing_pressure": 0.63,
      "supply_response": 0.5433,
-     "distress": -0.0837
+     "distress": -0.5531
     },
     "available_indices": [
      "demand_momentum",
@@ -546,35 +546,46 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-08"
+    "period": "2026-09"
    },
    "indices": {
-    "demand_momentum": -0.1322,
+    "demand_momentum": -0.1537,
     "housing_pressure": 0.63,
     "supply_response": 0.5433,
-    "distress": -0.0837
+    "distress": -0.5531
    },
    "top_signature": {
-    "archetype_id": "overheating",
-    "label": "Overheating",
-    "summary": "The boom's second act: prices and short-term-rental supply keep climbing while the things that fund them stop. Transactions and permits roll over first, and the storefront churn rate rises before net closures do.",
-    "firing": 2,
-    "available": 8,
-    "total": 13,
-    "coverage": 0.615,
-    "score": 0.25,
+    "archetype_id": "distress",
+    "label": "Distress",
+    "summary": "Jobs go first, then the storefronts, then the courts. Foreclosures, evictions and insolvencies rise together while hiring and business formation fall; hardship attention climbs before the judicial series, which are the slowest evidence we have.",
+    "firing": 3,
+    "available": 9,
+    "total": 19,
+    "coverage": 0.474,
+    "score": 0.333,
     "insufficient_coverage": false,
     "signals_firing": [
      {
-      "metric_id": "appraised_value",
-      "label": "Appraised housing value",
+      "metric_id": "foreclosures",
+      "label": "Mortgage foreclosures filed",
       "expect": "up",
-      "z": 0.7498,
-      "raw": 9.6991,
-      "unit": "eur_m2",
-      "period": "2026-06",
+      "z": 1.0156,
+      "raw": 74.4214,
+      "unit": "cases",
+      "period": "2026-03",
       "geo_level": "province",
-      "source_id": "mivau"
+      "source_id": "cgpj"
+     },
+     {
+      "metric_id": "wiki_hardship_index",
+      "label": "Hardship attention (Euribor, eviction, benefits)",
+      "expect": "up",
+      "z": 4.0,
+      "raw": 55.4254,
+      "unit": "per_million",
+      "period": "2026-09",
+      "geo_level": "nation",
+      "source_id": "wikipedia"
      },
      {
       "metric_id": "euribor_12m",
@@ -590,26 +601,37 @@
     ],
     "signals_against": [
      {
-      "metric_id": "rent_reference",
-      "label": "Reference rent",
+      "metric_id": "unemployment_registered",
+      "label": "Registered unemployment",
       "expect": "up",
-      "z": 0.4302,
-      "raw": 3.8422,
-      "unit": "eur_m2_month",
-      "period": "2024-12",
-      "geo_level": "municipality",
-      "source_id": "mivau"
-     },
-     {
-      "metric_id": "hotel_adr",
-      "label": "Average daily rate",
-      "expect": "up",
-      "z": -0.6043,
-      "raw": 3.5354,
-      "unit": "eur",
+      "z": 0.1807,
+      "raw": 3.6529,
+      "unit": "persons",
       "period": "2026-08",
       "geo_level": "municipality",
-      "source_id": "ine"
+      "source_id": "sepe"
+     },
+     {
+      "metric_id": "contracts_registered",
+      "label": "New contracts registered",
+      "expect": "down",
+      "z": 0.2043,
+      "raw": 7.318,
+      "unit": "contracts",
+      "period": "2026-08",
+      "geo_level": "municipality",
+      "source_id": "sepe"
+     },
+     {
+      "metric_id": "evictions",
+      "label": "Evictions carried out",
+      "expect": "up",
+      "z": -0.3331,
+      "raw": -66.4928,
+      "unit": "cases",
+      "period": "2026-03",
+      "geo_level": "province",
+      "source_id": "cgpj"
      },
      {
       "metric_id": "mortgages_count",
@@ -623,17 +645,6 @@
       "source_id": "ine"
      },
      {
-      "metric_id": "housing_starts",
-      "label": "Housing starts",
-      "expect": "down",
-      "z": 0.7781,
-      "raw": 38.6789,
-      "unit": "dwellings",
-      "period": "2025-12",
-      "geo_level": "province",
-      "source_id": "mivau"
-     },
-     {
       "metric_id": "search_room_share",
       "label": "Room-vs-flat search spread",
       "expect": "up",
@@ -645,11 +656,11 @@
       "source_id": "trends_manual"
      },
      {
-      "metric_id": "search_tenure_switch",
-      "label": "Buy-vs-rent search spread",
-      "expect": "up",
-      "z": -1.3196,
-      "raw": -8.3367,
+      "metric_id": "search_rental_pressure",
+      "label": "Rental search pressure",
+      "expect": "down",
+      "z": 0.4256,
+      "raw": -11.6492,
       "unit": "index",
       "period": "2026-06",
       "geo_level": "municipality",
@@ -658,10 +669,15 @@
     ],
     "signals_unavailable": [
      "affiliations",
+     "auctions_realestate",
+     "company_dissolutions",
+     "company_incorporations",
+     "horeca_closures",
      "housing_transactions",
-     "population_padron",
-     "str_listings",
-     "tourist_dwellings"
+     "insolvencies",
+     "locales_closures",
+     "locales_vacancy_rate",
+     "news_tone"
     ],
     "signatures_version": "signatures-v2"
    },
@@ -1038,10 +1054,10 @@
     "expression": "housing_pressure > 0.75 and delta(housing_pressure, 2) < 0",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0022,
+     "demand_momentum": 0.0054,
      "housing_pressure": 1.085,
      "supply_response": -0.6999,
-     "distress": 0.0036
+     "distress": -0.4659
     },
     "available_indices": [
      "demand_momentum",
@@ -1050,13 +1066,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-08"
+    "period": "2026-09"
    },
    "indices": {
-    "demand_momentum": -0.0022,
+    "demand_momentum": 0.0054,
     "housing_pressure": 1.085,
     "supply_response": -0.6999,
-    "distress": 0.0036
+    "distress": -0.4659
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -1542,10 +1558,10 @@
     "expression": "housing_pressure > 0.75 and supply_response < -0.25",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0182,
+     "demand_momentum": -0.0308,
      "housing_pressure": 0.7594,
      "supply_response": -0.3526,
-     "distress": 0.3991
+     "distress": -0.0703
     },
     "available_indices": [
      "demand_momentum",
@@ -1554,13 +1570,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-08"
+    "period": "2026-09"
    },
    "indices": {
-    "demand_momentum": 0.0182,
+    "demand_momentum": -0.0308,
     "housing_pressure": 0.7594,
     "supply_response": -0.3526,
-    "distress": 0.3991
+    "distress": -0.0703
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -2046,10 +2062,10 @@
     "expression": "true",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.1659,
+     "demand_momentum": 0.1959,
      "housing_pressure": 0.5811,
      "supply_response": -0.0804,
-     "distress": 0.523
+     "distress": 0.0536
     },
     "available_indices": [
      "demand_momentum",
@@ -2058,13 +2074,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-08"
+    "period": "2026-09"
    },
    "indices": {
-    "demand_momentum": 0.1659,
+    "demand_momentum": 0.1959,
     "housing_pressure": 0.5811,
     "supply_response": -0.0804,
-    "distress": 0.523
+    "distress": 0.0536
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -2550,10 +2566,10 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": -0.0607,
+     "demand_momentum": -0.0854,
      "housing_pressure": 0.9347,
      "supply_response": -0.0774,
-     "distress": 0.2387
+     "distress": -0.2699
     },
     "available_indices": [
      "demand_momentum",
@@ -2562,13 +2578,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-08"
+    "period": "2026-09"
    },
    "indices": {
-    "demand_momentum": -0.0607,
+    "demand_momentum": -0.0854,
     "housing_pressure": 0.9347,
     "supply_response": -0.0774,
-    "distress": 0.2387
+    "distress": -0.2699
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -3034,10 +3050,10 @@
     "expression": "housing_pressure > 0.75 and supply_response < -0.25",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.4758,
+     "demand_momentum": 0.3419,
      "housing_pressure": 1.084,
      "supply_response": -0.3312,
-     "distress": 0.2301
+     "distress": -0.2784
     },
     "available_indices": [
      "demand_momentum",
@@ -3046,13 +3062,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-08"
+    "period": "2026-09"
    },
    "indices": {
-    "demand_momentum": 0.4758,
+    "demand_momentum": 0.3419,
     "housing_pressure": 1.084,
     "supply_response": -0.3312,
-    "distress": 0.2301
+    "distress": -0.2784
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -3518,10 +3534,10 @@
     "expression": "housing_pressure > 0.75",
     "rules_version": "regimes-v3",
     "inputs": {
-     "demand_momentum": 0.0975,
+     "demand_momentum": 0.0282,
      "housing_pressure": 1.3404,
      "supply_response": 0.9588,
-     "distress": 0.4199
+     "distress": -0.0886
     },
     "available_indices": [
      "demand_momentum",
@@ -3530,13 +3546,13 @@
      "distress"
     ],
     "confident": true,
-    "period": "2026-08"
+    "period": "2026-09"
    },
    "indices": {
-    "demand_momentum": 0.0975,
+    "demand_momentum": 0.0282,
     "housing_pressure": 1.3404,
     "supply_response": 0.9588,
-    "distress": 0.4199
+    "distress": -0.0886
    },
    "top_signature": {
     "archetype_id": "overheating",
@@ -4005,6 +4021,34 @@
  ],
  "movers": [
   {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "visados_new_build",
+   "geo_id": "ccaa-13",
+   "label": "Building permit visas (new construction buildings)",
+   "yoy": 317.39130434782606,
+   "value": 192.0,
+   "unit": "buildings",
+   "period": "2026-04",
+   "geo_level": "ccaa",
+   "scope_label": "autonomous community",
+   "direction": 1
+  },
+  {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "visados_budget",
+   "geo_id": "ccaa-13",
+   "label": "Building permits, execution budget",
+   "yoy": 110.53750163257068,
+   "value": 177321000.0,
+   "unit": "eur",
+   "period": "2026-04",
+   "geo_level": "ccaa",
+   "scope_label": "autonomous community",
+   "direction": 1
+  },
+  {
    "city": "zaragoza",
    "city_name": "Zaragoza",
    "metric_id": "housing_completions",
@@ -4035,6 +4079,20 @@
   {
    "city": "madrid",
    "city_name": "Madrid",
+   "metric_id": "visados_area",
+   "geo_id": "ccaa-13",
+   "label": "Building permits, construction area",
+   "yoy": 63.14463648450074,
+   "value": 233150.0,
+   "unit": "m2",
+   "period": "2026-04",
+   "geo_level": "ccaa",
+   "scope_label": "autonomous community",
+   "direction": 1
+  },
+  {
+   "city": "madrid",
+   "city_name": "Madrid",
    "metric_id": "housing_starts",
    "geo_id": "prov-28",
    "label": "Housing starts",
@@ -4045,6 +4103,20 @@
    "geo_level": "province",
    "scope_label": "province",
    "direction": 1
+  },
+  {
+   "city": "madrid",
+   "city_name": "Madrid",
+   "metric_id": "wiki_hardship_index",
+   "geo_id": "es",
+   "label": "Hardship attention (Euribor, eviction, benefits)",
+   "yoy": 55.425381349268754,
+   "value": 9.8835,
+   "unit": "per_million",
+   "period": "2026-09",
+   "geo_level": "nation",
+   "scope_label": "Spain",
+   "direction": -1
   },
   {
    "city": "malaga",
@@ -4075,29 +4147,15 @@
    "direction": 1
   },
   {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "wiki_lang_views_fr",
-   "geo_id": "mun-48020",
-   "label": "Madrid views on French Wikipedia",
-   "yoy": 48.2,
-   "value": 22.23,
+   "city": "valencia",
+   "city_name": "València",
+   "metric_id": "wiki_lang_views_pt",
+   "geo_id": "mun-46250",
+   "label": "Madrid views on Portuguese Wikipedia",
+   "yoy": 47.5609756097561,
+   "value": 1.21,
    "unit": "per_million",
-   "period": "2026-08",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "wiki_lang_views_de",
-   "geo_id": "mun-48020",
-   "label": "Madrid views on German Wikipedia",
-   "yoy": 46.55172413793104,
-   "value": 22.1,
-   "unit": "per_million",
-   "period": "2026-08",
+   "period": "2026-09",
    "geo_level": "municipality",
    "scope_label": "municipality",
    "direction": 1
@@ -4117,15 +4175,15 @@
    "direction": 1
   },
   {
-   "city": "palma",
-   "city_name": "Palma",
-   "metric_id": "wiki_lang_views_fr",
-   "geo_id": "mun-07040",
-   "label": "Madrid views on French Wikipedia",
-   "yoy": 43.83735705209657,
-   "value": 11.32,
+   "city": "bilbao",
+   "city_name": "Bilbao",
+   "metric_id": "wiki_lang_views_pt",
+   "geo_id": "mun-48020",
+   "label": "Madrid views on Portuguese Wikipedia",
+   "yoy": -43.8527284681131,
+   "value": 8.54,
    "unit": "per_million",
-   "period": "2026-08",
+   "period": "2026-09",
    "geo_level": "municipality",
    "scope_label": "municipality",
    "direction": 1
@@ -4285,20 +4343,6 @@
    "direction": -1
   },
   {
-   "city": "bilbao",
-   "city_name": "Bilbao",
-   "metric_id": "wiki_foreign_interest",
-   "geo_id": "mun-48020",
-   "label": "Foreign interest ratio",
-   "yoy": 32.04007205940506,
-   "value": 300.51,
-   "unit": "percent",
-   "period": "2026-08",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
    "city": "zaragoza",
    "city_name": "Zaragoza",
    "metric_id": "hotel_revpar",
@@ -4311,34 +4355,6 @@
    "geo_level": "municipality",
    "scope_label": "municipality",
    "direction": 1
-  },
-  {
-   "city": "madrid",
-   "city_name": "Madrid",
-   "metric_id": "tourist_dwelling_places",
-   "geo_id": "mun-28079",
-   "label": "Tourist dwelling bed places",
-   "yoy": -31.207130608745356,
-   "value": 38513.0,
-   "unit": "places",
-   "period": "2026-Q2",
-   "geo_level": "municipality",
-   "scope_label": "municipality",
-   "direction": 1
-  },
-  {
-   "city": "madrid",
-   "city_name": "Madrid",
-   "metric_id": "land_price",
-   "geo_id": "prov-28",
-   "label": "Urban land price",
-   "yoy": 30.087764955040655,
-   "value": 724.81,
-   "unit": "eur_m2",
-   "period": "2026-Q1",
-   "geo_level": "province",
-   "scope_label": "province",
-   "direction": 1
   }
  ],
  "attention": [
@@ -4346,7 +4362,7 @@
    "source_id": "bde",
    "status": "failed",
    "latest_observation": "2026-06",
-   "staleness_days": 91,
+   "staleness_days": 98,
    "last_error": "all 3 optional fetches failed; first: euribor-12m: AdapterFailure"
   },
   {
@@ -4357,13 +4373,6 @@
    "last_error": "https://eeadmz1-downloads-webapp.azurewebsites.net/api/download?country=ES&pollutant=8&year_from=2015&year_to=2026&format=csv returned an HTML document where csv was expected (cookie wall or error page)"
   },
   {
-   "source_id": "indeed",
-   "status": "ok",
-   "latest_observation": "2026-08",
-   "staleness_days": 29,
-   "last_error": null
-  },
-  {
    "source_id": "madrid_aire",
    "status": "failed",
    "latest_observation": "2002-12",
@@ -4372,9 +4381,9 @@
   },
   {
    "source_id": "madrid_licencias",
-   "status": "skipped",
-   "latest_observation": "2026-05",
-   "staleness_days": 121,
+   "status": "ok",
+   "latest_observation": "2026-06",
+   "staleness_days": 98,
    "last_error": null
   },
   {
@@ -4395,8 +4404,15 @@
    "source_id": "ohsome",
    "status": "failed",
    "latest_observation": "2026-07",
-   "staleness_days": 60,
+   "staleness_days": 67,
    "last_error": "HTTP 404 from https://api.ohsome.org/v1/elements/count"
+  },
+  {
+   "source_id": "puertos",
+   "status": "failed",
+   "latest_observation": "2026-08",
+   "staleness_days": 36,
+   "last_error": "puertos: no monthly XLSX links found on any year's listing page"
   },
   {
    "source_id": "registradores",
@@ -4409,14 +4425,14 @@
    "source_id": "serpavi",
    "status": "failed",
    "latest_observation": "2026",
-   "staleness_days": -93,
+   "staleness_days": -86,
    "last_error": "HTTP 404 from https://www.madrid.es/UnidadesDescentralizadas/UDCEstadistica/Nuevaweb/Edificaci%C3%B3n%20y%20Vivienda/Mercado%20de%20la%20Vivienda/Sistema%20Estatal%20de%20%C3%8Dndices%20de%20Referencia%20del%20Precio%20del%20Alquiler%20de%20Vivienda/2022_2023_2024_2025/INDICE%20ESTATAL%20ALQUILER%20_distritos2026.xlsx"
   },
   {
    "source_id": "visados",
-   "status": "skipped",
-   "latest_observation": "2026-02",
-   "staleness_days": 213,
+   "status": "ok",
+   "latest_observation": "2026-04",
+   "staleness_days": 159,
    "last_error": null
   }
  ]

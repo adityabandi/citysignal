@@ -91,3 +91,4 @@ uk_supplier_payment_days,gb,nation,2026-05,31,days,uk_payments,2026-05-31,,2026-
 uk_supplier_payment_days,gb,nation,2026-06,31,days,uk_payments,2026-06-30,,2026-09-26,ok,0
 uk_supplier_payment_days,gb,nation,2026-07,31,days,uk_payments,2026-07-31,,2026-09-26,ok,0
 uk_supplier_payment_days,gb,nation,2026-08,31,days,uk_payments,2026-08-31,,2026-09-26,ok,0
+uk_supplier_payment_days,gb,nation,2026-09,31,days,uk_payments,2026-09-30,,2026-10-06T06:03:19+00:00,ok,0
