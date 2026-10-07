@@ -8,13 +8,13 @@
    "horizon": 1,
    "label": "Business power → industrial output",
    "status": "Evaluated",
-   "test_observations": 41,
-   "rmse": 2.429,
-   "baseline_rmse": 2.111,
-   "persistence_rmse": 2.389,
-   "skill": -15.1,
+   "test_observations": 42,
+   "rmse": 2.394,
+   "baseline_rmse": 2.09,
+   "persistence_rmse": 2.367,
+   "skill": -14.5,
    "test_start": "2023-03",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "electricity_large_users",
@@ -23,13 +23,13 @@
    "horizon": 2,
    "label": "Business power → industrial output",
    "status": "Evaluated",
-   "test_observations": 39,
-   "rmse": 2.058,
-   "baseline_rmse": 1.899,
-   "persistence_rmse": 2.378,
-   "skill": -8.4,
+   "test_observations": 40,
+   "rmse": 2.029,
+   "baseline_rmse": 1.885,
+   "persistence_rmse": 2.341,
+   "skill": -7.7,
    "test_start": "2023-05",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "electricity_large_users",
@@ -38,13 +38,13 @@
    "horizon": 3,
    "label": "Business power → industrial output",
    "status": "Evaluated",
-   "test_observations": 37,
-   "rmse": 1.899,
-   "baseline_rmse": 1.781,
-   "persistence_rmse": 2.065,
-   "skill": -6.6,
+   "test_observations": 38,
+   "rmse": 1.881,
+   "baseline_rmse": 1.772,
+   "persistence_rmse": 2.063,
+   "skill": -6.1,
    "test_start": "2023-07",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "hiring_total",
@@ -98,13 +98,13 @@
    "horizon": 1,
    "label": "New hiring → industrial output",
    "status": "Evaluated",
-   "test_observations": 28,
-   "rmse": 2.759,
-   "baseline_rmse": 1.772,
-   "persistence_rmse": 1.925,
-   "skill": -55.7,
+   "test_observations": 29,
+   "rmse": 2.757,
+   "baseline_rmse": 1.753,
+   "persistence_rmse": 1.903,
+   "skill": -57.3,
    "test_start": "2024-04",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "hiring_new",
@@ -113,13 +113,13 @@
    "horizon": 2,
    "label": "New hiring → industrial output",
    "status": "Evaluated",
-   "test_observations": 26,
-   "rmse": 2.615,
-   "baseline_rmse": 1.937,
-   "persistence_rmse": 1.912,
-   "skill": -35.0,
+   "test_observations": 27,
+   "rmse": 2.573,
+   "baseline_rmse": 1.903,
+   "persistence_rmse": 1.863,
+   "skill": -35.2,
    "test_start": "2024-06",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "hiring_new",
@@ -128,13 +128,13 @@
    "horizon": 3,
    "label": "New hiring → industrial output",
    "status": "Evaluated",
-   "test_observations": 24,
-   "rmse": 1.633,
-   "baseline_rmse": 1.59,
-   "persistence_rmse": 2.173,
-   "skill": -2.7,
+   "test_observations": 25,
+   "rmse": 1.604,
+   "baseline_rmse": 1.563,
+   "persistence_rmse": 2.16,
+   "skill": -2.6,
    "test_start": "2024-08",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "de_truck_mileage",
