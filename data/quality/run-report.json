@@ -1,6 +1,6 @@
 {
- "run_id": "4fa65ac1b5c1",
- "finished_at": "2026-10-07T21:48:02+00:00",
+ "run_id": "4e53d64f29ce",
+ "finished_at": "2026-10-08T21:48:57+00:00",
  "ok": [
   "indeed_daily",
   "treasury_receipts",
@@ -25,7 +25,7 @@
    "skipped_unchanged": 10,
    "error": null,
    "error_type": null,
-   "duration_s": 4.63,
+   "duration_s": 4.58,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -35,17 +35,17 @@
   {
    "source_id": "treasury_receipts",
    "status": "ok",
-   "records": 959,
+   "records": 960,
    "added": 1,
    "revised": 0,
-   "unchanged": 958,
+   "unchanged": 959,
    "quarantined": 0,
    "plans": 1,
    "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.93,
-   "latest_observation": "2026-10-06",
+   "duration_s": 0.94,
+   "latest_observation": "2026-10-07",
    "metrics": [
     "us_withheld_tax",
     "us_withheld_tax_daily"
@@ -54,22 +54,22 @@
   },
   {
    "source_id": "destatis_freight",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 2833,
+   "added": 7,
    "revised": 0,
-   "unchanged": 0,
+   "unchanged": 2826,
    "quarantined": 0,
    "plans": 1,
-   "skipped_unchanged": 1,
+   "skipped_unchanged": 0,
    "error": null,
    "error_type": null,
-   "duration_s": 0.97,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "duration_s": 3.25,
+   "latest_observation": "2026-10-03",
+   "metrics": [
+    "de_truck_mileage"
+   ],
+   "notes": []
   },
   {
    "source_id": "oecd_activity",
@@ -83,7 +83,7 @@
    "skipped_unchanged": 5,
    "error": null,
    "error_type": null,
-   "duration_s": 2.19,
+   "duration_s": 2.23,
    "latest_observation": null,
    "metrics": [],
    "notes": [
@@ -111,41 +111,41 @@
   },
   {
    "source_id": "bis_macro",
-   "status": "skipped",
-   "records": 0,
-   "added": 0,
+   "status": "ok",
+   "records": 2794,
+   "added": 17,
    "revised": 0,
-   "unchanged": 0,
+   "unchanged": 2777,
    "quarantined": 0,
    "plans": 2,
-   "skipped_unchanged": 2,
+   "skipped_unchanged": 1,
    "error": null,
    "error_type": null,
-   "duration_s": 7.33,
-   "latest_observation": null,
-   "metrics": [],
-   "notes": [
-    "all sources unchanged since last run"
-   ]
+   "duration_s": 3.3,
+   "latest_observation": "2026-09",
+   "metrics": [
+    "bis_euro_policy_rate",
+    "bis_policy_rate"
+   ],
+   "notes": []
   },
   {
    "source_id": "eurostat_macro",
    "status": "ok",
-   "records": 1297,
-   "added": 2,
-   "revised": 49,
-   "unchanged": 1246,
+   "records": 1678,
+   "added": 1,
+   "revised": 1,
+   "unchanged": 1676,
    "quarantined": 0,
    "plans": 8,
-   "skipped_unchanged": 5,
+   "skipped_unchanged": 6,
    "error": null,
    "error_type": null,
-   "duration_s": 4.64,
-   "latest_observation": "2026-Q2",
+   "duration_s": 4.46,
+   "latest_observation": "2026-08",
    "metrics": [
-    "macro_employment",
-    "macro_gdp",
-    "macro_industry"
+    "macro_industry",
+    "macro_unemployment"
    ],
    "notes": []
   }

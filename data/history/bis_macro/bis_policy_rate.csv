@@ -279,6 +279,7 @@ bis_policy_rate,br,nation,2026-05,14.5,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,br,nation,2026-06,14.25,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,br,nation,2026-07,14.25,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,br,nation,2026-08,14,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,br,nation,2026-09,13.75,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,ca,nation,2015-01,0.75,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,ca,nation,2015-02,0.75,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,ca,nation,2015-03,0.75,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -419,6 +420,7 @@ bis_policy_rate,ca,nation,2026-05,2.25,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,ca,nation,2026-06,2.25,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,ca,nation,2026-07,2.25,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,ca,nation,2026-08,2.25,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,ca,nation,2026-09,2.25,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,ch,nation,2015-01,-0.75,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,ch,nation,2015-02,-0.75,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,ch,nation,2015-03,-0.75,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -559,6 +561,7 @@ bis_policy_rate,ch,nation,2026-05,0,percent,bis_macro,2026-05-31,,2026-09-26,ok,
 bis_policy_rate,ch,nation,2026-06,0,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,ch,nation,2026-07,0,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,ch,nation,2026-08,0,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,ch,nation,2026-09,0,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,cn,nation,2015-01,5.6,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,cn,nation,2015-02,5.6,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,cn,nation,2015-03,5.35,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -699,6 +702,7 @@ bis_policy_rate,cn,nation,2026-05,3,percent,bis_macro,2026-05-31,,2026-09-26,ok,
 bis_policy_rate,cn,nation,2026-06,3,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,cn,nation,2026-07,3,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,cn,nation,2026-08,3,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,cn,nation,2026-09,3,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,gb,nation,2015-01,0.5,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,gb,nation,2015-02,0.5,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,gb,nation,2015-03,0.5,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -839,6 +843,7 @@ bis_policy_rate,gb,nation,2026-05,3.75,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,gb,nation,2026-06,3.75,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,gb,nation,2026-07,3.75,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,gb,nation,2026-08,3.75,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,gb,nation,2026-09,3.75,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,id,nation,2015-01,7.75,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,id,nation,2015-02,7.5,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,id,nation,2015-03,7.5,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -979,6 +984,7 @@ bis_policy_rate,id,nation,2026-05,5.25,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,id,nation,2026-06,5.75,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,id,nation,2026-07,5.75,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,id,nation,2026-08,5.75,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,id,nation,2026-09,5.75,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,in,nation,2015-01,7.75,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,in,nation,2015-02,7.75,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,in,nation,2015-03,7.5,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -1237,6 +1243,7 @@ bis_policy_rate,jp,nation,2026-05,0.75,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,jp,nation,2026-06,1,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,jp,nation,2026-07,1,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,jp,nation,2026-08,1,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,jp,nation,2026-09,1.25,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,kr,nation,2015-01,2,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,kr,nation,2015-02,2,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,kr,nation,2015-03,1.75,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -1516,6 +1523,7 @@ bis_policy_rate,mx,nation,2026-05,6.5,percent,bis_macro,2026-05-31,,2026-09-26,o
 bis_policy_rate,mx,nation,2026-06,6.5,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,mx,nation,2026-07,6.5,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,mx,nation,2026-08,6.5,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,mx,nation,2026-09,6.5,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,no,nation,2015-01,1.25,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,no,nation,2015-02,1.25,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,no,nation,2015-03,1.25,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -1656,6 +1664,7 @@ bis_policy_rate,no,nation,2026-05,4.25,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,no,nation,2026-06,4.25,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,no,nation,2026-07,4.25,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,no,nation,2026-08,4.25,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,no,nation,2026-09,4.5,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,pl,nation,2015-01,2,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,pl,nation,2015-02,2,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,pl,nation,2015-03,1.5,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -1796,6 +1805,7 @@ bis_policy_rate,pl,nation,2026-05,3.75,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,pl,nation,2026-06,3.75,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,pl,nation,2026-07,3.75,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,pl,nation,2026-08,3.75,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,pl,nation,2026-09,3.75,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,ru,nation,2015-01,17,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,ru,nation,2015-02,15,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,ru,nation,2015-03,14,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -1936,6 +1946,7 @@ bis_policy_rate,ru,nation,2026-05,14.5,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,ru,nation,2026-06,14.25,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,ru,nation,2026-07,14,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,ru,nation,2026-08,14,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,ru,nation,2026-09,14,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,sa,nation,2015-01,2,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,sa,nation,2015-02,2,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,sa,nation,2015-03,2,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -2076,6 +2087,7 @@ bis_policy_rate,sa,nation,2026-05,4.25,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,sa,nation,2026-06,4.25,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,sa,nation,2026-07,4.25,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,sa,nation,2026-08,4.25,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,sa,nation,2026-09,4.5,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,se,nation,2015-01,0,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,se,nation,2015-02,-0.1,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,se,nation,2015-03,-0.25,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -2216,6 +2228,7 @@ bis_policy_rate,se,nation,2026-05,1.75,percent,bis_macro,2026-05-31,,2026-09-26,
 bis_policy_rate,se,nation,2026-06,1.75,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,se,nation,2026-07,1.75,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,se,nation,2026-08,1.75,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,se,nation,2026-09,1.75,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,tr,nation,2015-01,7.75,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,tr,nation,2015-02,7.5,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,tr,nation,2015-03,7.5,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -2356,6 +2369,7 @@ bis_policy_rate,tr,nation,2026-05,37,percent,bis_macro,2026-05-31,,2026-09-26,ok
 bis_policy_rate,tr,nation,2026-06,37,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,tr,nation,2026-07,37,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,tr,nation,2026-08,37,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,tr,nation,2026-09,37,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,us,nation,2015-01,0.125,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,us,nation,2015-02,0.125,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,us,nation,2015-03,0.125,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -2496,6 +2510,7 @@ bis_policy_rate,us,nation,2026-05,3.625,percent,bis_macro,2026-05-31,,2026-09-26
 bis_policy_rate,us,nation,2026-06,3.625,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,us,nation,2026-07,3.625,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,us,nation,2026-08,3.625,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,us,nation,2026-09,3.875,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0
 bis_policy_rate,za,nation,2015-01,5.75,percent,bis_macro,2015-01-31,,2026-09-26,ok,0
 bis_policy_rate,za,nation,2015-02,5.75,percent,bis_macro,2015-02-28,,2026-09-26,ok,0
 bis_policy_rate,za,nation,2015-03,5.75,percent,bis_macro,2015-03-31,,2026-09-26,ok,0
@@ -2636,3 +2651,4 @@ bis_policy_rate,za,nation,2026-05,7,percent,bis_macro,2026-05-31,,2026-09-26,ok,
 bis_policy_rate,za,nation,2026-06,7,percent,bis_macro,2026-06-30,,2026-09-26,ok,0
 bis_policy_rate,za,nation,2026-07,7,percent,bis_macro,2026-07-31,,2026-09-26,ok,0
 bis_policy_rate,za,nation,2026-08,7,percent,bis_macro,2026-08-31,,2026-09-26,ok,0
+bis_policy_rate,za,nation,2026-09,7.25,percent,bis_macro,2026-09-30,,2026-10-08T21:48:52+00:00,ok,0

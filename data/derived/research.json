@@ -143,13 +143,13 @@
    "horizon": 1,
    "label": "Truck mileage → industrial output",
    "status": "Evaluated",
-   "test_observations": 41,
-   "rmse": 2.093,
-   "baseline_rmse": 2.102,
-   "persistence_rmse": 2.338,
-   "skill": 0.4,
+   "test_observations": 42,
+   "rmse": 2.112,
+   "baseline_rmse": 2.123,
+   "persistence_rmse": 2.358,
+   "skill": 0.6,
    "test_start": "2023-03",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "de_truck_mileage",
@@ -158,13 +158,13 @@
    "horizon": 2,
    "label": "Truck mileage → industrial output",
    "status": "Evaluated",
-   "test_observations": 39,
-   "rmse": 1.951,
-   "baseline_rmse": 1.915,
-   "persistence_rmse": 1.827,
+   "test_observations": 40,
+   "rmse": 1.953,
+   "baseline_rmse": 1.916,
+   "persistence_rmse": 1.817,
    "skill": -1.9,
    "test_start": "2023-05",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   },
   {
    "signal": "de_truck_mileage",
@@ -173,13 +173,13 @@
    "horizon": 3,
    "label": "Truck mileage → industrial output",
    "status": "Evaluated",
-   "test_observations": 37,
-   "rmse": 2.104,
-   "baseline_rmse": 2.438,
-   "persistence_rmse": 2.518,
-   "skill": 13.7,
+   "test_observations": 38,
+   "rmse": 2.086,
+   "baseline_rmse": 2.429,
+   "persistence_rmse": 2.497,
+   "skill": 14.1,
    "test_start": "2023-07",
-   "test_end": "2026-07"
+   "test_end": "2026-08"
   }
  ],
  "recipes": [

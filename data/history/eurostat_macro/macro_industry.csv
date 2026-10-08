@@ -138,6 +138,8 @@ macro_industry,de,nation,2026-04,90.7,index,eurostat_macro,2026-04-30,,2026-09-2
 macro_industry,de,nation,2026-05,91.6,index,eurostat_macro,2026-05-31,,2026-09-26,ok,0
 macro_industry,de,nation,2026-06,91.9,index,eurostat_macro,2026-06-30,,2026-09-26,ok,0
 macro_industry,de,nation,2026-07,90.5,index,eurostat_macro,2026-07-31,,2026-09-26,ok,0
+macro_industry,de,nation,2026-07,90.3,index,eurostat_macro,2026-07-31,,2026-10-08T21:48:55+00:00,revised,1
+macro_industry,de,nation,2026-08,90.7,index,eurostat_macro,2026-08-31,,2026-10-08T21:48:55+00:00,ok,0
 macro_industry,es,nation,2015-01,93.2,index,eurostat_macro,2015-01-31,,2026-09-26,estimated,0
 macro_industry,es,nation,2015-02,94.8,index,eurostat_macro,2015-02-28,,2026-09-26,estimated,0
 macro_industry,es,nation,2015-03,97.4,index,eurostat_macro,2015-03-31,,2026-09-26,estimated,0
